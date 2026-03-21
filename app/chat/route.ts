@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getStoryLLM } from "../../src/lib/llm";
+import { getStoryLLM } from "../../src/lib/Init";
 import { storyWorkerPrompt } from "../../src/lib/prompt";
 import { HumanMessage, AIMessage } from "@langchain/core/messages";
 

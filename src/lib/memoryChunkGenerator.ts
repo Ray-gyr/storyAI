@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { memoryExtractorPrompt } from "./prompt";
-import { getManagerLLM } from "./llm";
+import { getManagerLLM } from "./Init";
 import { StoryState } from "./currentState";
 import { randomUUID } from "crypto";
 
@@ -36,10 +36,16 @@ export const MemoryRecordSchema = z.object({
     start_turn: z.number(), // 由外部传入：该记忆片段开始的对话轮次
     end_turn: z.number(), // 由外部传入：该记忆片段结束的对话轮次
 
-    // memorySchema 直接作为 final Schema 的一部分
-    memory: LLMExtractedMemorySchema,
+    // 扁平化的 LLM 提取字段，适配 Pinecone Metadata 结构
+    location: z.string(),
+    characters_involved: z.array(z.string()),
+    items_involved: z.array(z.string()),
+    has_new_entity: z.boolean(),
+    is_irreversible: z.boolean(),
+    advances_plot: z.boolean(),
+    dense_summary: z.string(),
 
-    created_at: z.date(), // 提取时间
+    created_at: z.number(), // 提取时间戳
     access_count: z.number().default(0) // 每次被召回时更新
 });
 
@@ -80,8 +86,16 @@ export async function extractAndStoreMemory(
             original_text: storyText,
             start_turn: startTurn,
             end_turn: endTurn,
-            memory: memoryData,
-            created_at: new Date(),
+
+            location: memoryData.location,
+            characters_involved: memoryData.characters_involved,
+            items_involved: memoryData.items_involved,
+            has_new_entity: memoryData.semantic_signals.has_new_entity,
+            is_irreversible: memoryData.semantic_signals.is_irreversible,
+            advances_plot: memoryData.semantic_signals.advances_plot,
+            dense_summary: memoryData.dense_summary,
+
+            created_at: Date.now(),
             access_count: 0
         };
     } catch (error) {
