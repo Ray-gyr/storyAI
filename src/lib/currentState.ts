@@ -53,9 +53,9 @@ export const StateChangeSchema = z.object({
     added_locations: z.array(EntityInfoSchema).describe("仅当剧情中出现了【全新的】、不在原 known_locations 中的地点时才提取到这里。若无，返回 []。"),
     added_items: z.array(EntityInfoSchema).describe("仅当出现了【全新的】、且主角获取或必需记录的物品时才提取到这里。若无，返回 []。"),
 
-    updated_characters: z.array(EntityInfoSchema).default([]).describe("对于已存在于 known_characters 中的角色，如果其状态、身份发生了重大改变，将其名称放入并更新 description。若无改变，返回 []。"),
-    updated_locations: z.array(EntityInfoSchema).default([]).describe("对于已存在于 known_locations 中的地点，如果其环境发生了重大改变（如被破坏），将其名称放入并更新 description。若无改变，返回 []。"),
-    updated_items: z.array(EntityInfoSchema).default([]).describe("对于已存在于 known_items 中的物品，如果其状态、性质发生了重大改变，将其名称放入并更新 description。若无改变，返回 []。"),
+    updated_characters: z.array(EntityInfoSchema).describe("对于已存在于 known_characters 中的角色，如果其状态、身份发生了重大改变，将其名称放入并更新 description。若无改变，必须返回 []。"),
+    updated_locations: z.array(EntityInfoSchema).describe("对于已存在于 known_locations 中的地点，如果其环境发生了重大改变（如被破坏），将其名称放入并更新 description。若无改变，必须返回 []。"),
+    updated_items: z.array(EntityInfoSchema).describe("对于已存在于 known_items 中的物品，如果其状态、性质发生了重大改变，将其名称放入并更新 description。若无改变，必须返回 []。"),
 
     new_current_location: z.string().describe("如果主角移动到了新的地点，填入对应名称(需绝对匹配已注册实体)；如果未移动，必须返回空字符串 ''。"),
     new_current_task: z.string().describe("如果主角的任务发生了变化，填入新任务；如果任务仍是之前的且未突变，必须返回空字符串 ''。"),

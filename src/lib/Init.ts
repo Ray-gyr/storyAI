@@ -1,4 +1,5 @@
-import { ChatOpenAI } from "@langchain/openai";
+import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
+import { Pinecone } from "@pinecone-database/pinecone";
 import "dotenv/config";
 
 // 这是一个工厂函数，或者配置导出，可以用来集中管理模型实例化
@@ -24,4 +25,25 @@ export const getStoryLLM = (customKey?: string) => {
     });
 };
 
+export const getEmbeddings = () => {
+    return new OpenAIEmbeddings({
+        modelName: "text-embedding-3-small",
+        openAIApiKey: process.env.OPENAI_API_KEY,
+    });
+};
 
+export const getPineconeIndex = () => {
+    if (!process.env.PINECONE_API_KEY) {
+        throw new Error("Missing PINECONE_API_KEY in environment");
+    }
+    const pc = new Pinecone({ apiKey: process.env.PINECONE_API_KEY });
+    return pc.index("story-memory");
+};
+
+/**
+ * 用于测试或重置环境：清空整个 story-memory 数据库的所有记录
+ */
+export const clearPineconeIndex = async (sessionId?: string) => {
+    console.log("[VectorDB] ⚠️ 警告：Pinecone Serverless 免费版/无服务器索引底层受限，原生不支持 API 级的 deleteAll()。");
+    console.log("[VectorDB] 📝 建议：在测试或实际新开故事时，直接生成使用全新的 sessionId 作为 Namespace 即可实现纯天然物理隔离。");
+};

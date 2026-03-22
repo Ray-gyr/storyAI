@@ -3,6 +3,7 @@ import { storyChunkingPrompt, StoryChunkingSchema } from "./prompt";
 import { getManagerLLM } from "./Init";
 import { extractAndStoreMemory, MemoryRecord } from "./memoryChunkGenerator";
 import { StoryState } from "./currentState";
+import { storeMemoryRecord } from "./vectorDBManager";
 
 export const WINDOW_SIZE = 10;
 export const CHUNK_OVERLAP = 2;
@@ -24,7 +25,7 @@ export class MemoryManager {
      * 追加对话。如果超出滑动窗口，自动移入归档区。
      * 当归档区积累满了，自动触发大模型切分及记忆提取。
      */
-    public async addTurn(turn: ChatTurn, currentState: StoryState): Promise<MemoryRecord[]> {
+    public async addTurn(turn: ChatTurn, currentState: StoryState, sessionId: string): Promise<MemoryRecord[]> {
         this.chatHistory.push(turn);
 
         let extractedRecords: MemoryRecord[] = [];
@@ -39,7 +40,7 @@ export class MemoryManager {
 
         // 当积攒了一定数量后触发语义切分（这里设定满了一个 WINDOW_SIZE 就切一次）
         if (this.unprocessedArchive.length >= WINDOW_SIZE) {
-            extractedRecords = await this.processArchive(currentState);
+            extractedRecords = await this.processArchive(currentState, sessionId);
         }
 
         return extractedRecords;
@@ -48,7 +49,7 @@ export class MemoryManager {
     /**
      * 主动强行处理当前所有的待归档数据
      */
-    public async processArchive(currentState: StoryState): Promise<MemoryRecord[]> {
+    public async processArchive(currentState: StoryState, sessionId: string): Promise<MemoryRecord[]> {
         if (this.unprocessedArchive.length === 0) return [];
 
         const managerLLM = getManagerLLM();
@@ -114,6 +115,10 @@ export class MemoryManager {
                 actualStartTurn,
                 actualEndTurn
             );
+
+            // 自动存入 Pinecone 向量数据库的指定 sessionId Namespace 中
+            await storeMemoryRecord(record, sessionId);
+
             records.push(record);
 
             // 更新这轮作为接下来的历史锚点储备
