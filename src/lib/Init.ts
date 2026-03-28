@@ -1,6 +1,5 @@
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { Pinecone } from "@pinecone-database/pinecone";
-import "dotenv/config";
 
 // 这是一个工厂函数，或者配置导出，可以用来集中管理模型实例化
 export const getManagerLLM = () => {

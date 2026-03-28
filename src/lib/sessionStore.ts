@@ -3,21 +3,70 @@ import { MemoryManager } from "./memoryManager";
 import { StoryState, StoryStateSchema } from "./currentState";
 import { getStoryLLM } from "./Init";
 import { storyInitPrompt, storyStartPrompt } from "./prompt";
+import { Redis } from "@upstash/redis";
+import { z } from "zod";
+
+const redis = Redis.fromEnv();
 
 export interface SessionData {
     memoryManager: MemoryManager;
     currentState: StoryState;
+    metadata?: {
+        title: string;
+        style: string;
+    };
 }
 
-// 使用 globalThis 防止 Next.js 开发环境下热更新 (Fast Refresh) 导致模块缓存被清空而丢失数据
-const _global = globalThis as any;
-if (!_global.sessionsMap) {
-    _global.sessionsMap = new Map<string, SessionData>();
+interface SerializedSessionData {
+    memoryManager: {
+        chatHistory: any[];
+        unprocessedArchive: any[];
+        lastProcessedOverlapTurns: any[];
+    };
+    currentState: StoryState;
+    metadata?: {
+        title: string;
+        style: string;
+    };
 }
-const sessions: Map<string, SessionData> = _global.sessionsMap;
 
-export function getSession(sessionId: string): SessionData | undefined {
-    return sessions.get(sessionId);
+/**
+ * 从 Redis 获取会话数据并反序列化实例化
+ */
+export async function getSession(sessionId: string): Promise<SessionData | null> {
+    const rawData = await redis.get<SerializedSessionData>(sessionId);
+    if (!rawData) return null;
+
+    // Rehydrate MemoryManager
+    const memoryManager = new MemoryManager();
+    if (rawData.memoryManager) {
+        memoryManager.chatHistory = rawData.memoryManager.chatHistory || [];
+        memoryManager.unprocessedArchive = rawData.memoryManager.unprocessedArchive || [];
+        (memoryManager as any).lastProcessedOverlapTurns = rawData.memoryManager.lastProcessedOverlapTurns || [];
+    }
+
+    return {
+        memoryManager,
+        currentState: rawData.currentState,
+        metadata: rawData.metadata
+    };
+}
+
+/**
+ * 将最新的会话数据同步到 Redis
+ */
+export async function updateSession(sessionId: string, sessionData: SessionData): Promise<void> {
+    const payload: SerializedSessionData = {
+        memoryManager: {
+            chatHistory: sessionData.memoryManager.chatHistory,
+            unprocessedArchive: sessionData.memoryManager.unprocessedArchive,
+            lastProcessedOverlapTurns: (sessionData.memoryManager as any).lastProcessedOverlapTurns,
+        },
+        currentState: sessionData.currentState,
+        metadata: sessionData.metadata
+    };
+    // Store in Redis (permanent storage for story)
+    await redis.set(sessionId, JSON.stringify(payload));
 }
 
 /**
@@ -26,12 +75,12 @@ export function getSession(sessionId: string): SessionData | undefined {
  */
 export async function createSession(sessionId: string, storySetting: string): Promise<{ sessionData: SessionData, firstPrompt: string }> {
     const memoryManager = new MemoryManager();
-    
+
     // 1. WorkerLLM (gpt-5-mini) -> 生成初始 CurrentState
     console.log(`[SessionStore] Initializing state with gpt-5-mini (Worker role)...`);
     const stateLLM = getStoryLLM().withStructuredOutput(StoryStateSchema);
     const stateChain = storyInitPrompt.pipe(stateLLM);
-    
+
     const currentState = await stateChain.invoke({
         text: storySetting
     });
@@ -40,13 +89,33 @@ export async function createSession(sessionId: string, storySetting: string): Pr
     console.log(`[SessionStore] Generating first story prompt with gpt-5-mini (Story role)...`);
     const storyLLM = getStoryLLM().pipe(new StringOutputParser());
     const storyChain = storyStartPrompt.pipe(storyLLM);
-    
+
     const firstPrompt = await storyChain.invoke({
         storySetting: storySetting
     });
 
-    const sessionData = { memoryManager, currentState };
-    sessions.set(sessionId, sessionData);
-    
+    // 3. Generate Title and Style
+    console.log(`[SessionStore] Generating story title and style...`);
+    const TitleSchema = z.object({
+        title: z.string().describe("A concise and catchy short title for the story in English"),
+        style: z.string().describe("The genre/style of the story in 2-4 words in English")
+    });
+
+    let metadata = { title: sessionId.slice(-6), style: "UNKNOWN" };
+    try {
+        const titleLLM = getStoryLLM().withStructuredOutput(TitleSchema);
+        const titleResult = await titleLLM.invoke(
+            `Based on the following story setting or background, generate a highly concise and catchy title (2-6 words) and a short genre/style label (2-4 words).\n\nSetting:\n${storySetting}`
+        );
+        metadata = titleResult;
+    } catch (e) {
+        console.warn("[SessionStore] Failed to generate title, falling back to defaults", e);
+    }
+
+    const sessionData: SessionData = { memoryManager, currentState, metadata };
+
+    // 立即保存到 Redis
+    await updateSession(sessionId, sessionData);
+
     return { sessionData, firstPrompt };
 }

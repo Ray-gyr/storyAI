@@ -6,6 +6,7 @@ import { MemoryManager } from "./memoryManager";
 import { translateUserIntent } from "./query";
 import { retrieveMemories } from "./vectorDBManager";
 import { storyWorkerPrompt, storyUpdatePrompt } from "./prompt";
+import { updateSession, SessionData } from "./sessionStore";
 
 /**
  * 推进故事的一回合 (Orchestrator)
@@ -13,17 +14,16 @@ import { storyWorkerPrompt, storyUpdatePrompt } from "./prompt";
  * 随后自动将新的问答对存入 MemoryManager 进行长线生命周期管理。
  * 
  * @param userInput 玩家的行动指令或对话
- * @param currentState 当前的“上帝视角”设定表（短路缓存与核心指导）
- * @param memoryManager 管理所有聊天轮次、滑窗入库的管家实例
+ * @param session 包含状态和记忆的全套会话数据
  * @param sessionId 当前正在运行的存档 ID（用于 Pinecone 隔离）
  * @returns 大模型新生成的剧情文本
  */
 export async function* generateNextStoryTurnStream(
     userInput: string,
-    currentState: StoryState,
-    memoryManager: MemoryManager,
+    session: SessionData,
     sessionId: string
 ): AsyncGenerator<string, void, unknown> {
+    const { currentState, memoryManager, metadata } = session;
     console.log(`\n======================================================`);
 
     // ⏱️ [计时节点 T0] - 接收玩家输入 (开始点)
@@ -79,7 +79,7 @@ export async function* generateNextStoryTurnStream(
     console.log(`[StoryGenerator] Calling main model to continue the story... (streaming)`);
     // 创建流对象 (异步)
     const stream = await chain.stream({
-        worldBible: JSON.stringify(currentState.world_bible, null, 2),
+        worldBible: JSON.stringify(currentState.world_bible),
         currentState: JSON.stringify(currentState),
         unprocessedArchive: unprocessedArchiveStr,
         retrievedContext: retrievedContext,
@@ -143,6 +143,10 @@ export async function* generateNextStoryTurnStream(
             if (stateDiff.state_summary) {
                 console.log(`[StoryGenerator] 🔄 God's Eye state updated! Summary: ${stateDiff.state_summary}`);
             }
+
+            // [Redis] 把包含新聊天和新状态的 session 持久化
+            await updateSession(sessionId, { currentState, memoryManager, metadata });
+            console.log(`[StoryGenerator] Session changes saved to Redis successfully.`);
         } catch (e) {
             console.error("[StoryGenerator] 异步状态机处理崩溃:", e);
         }

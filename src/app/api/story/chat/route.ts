@@ -2,6 +2,8 @@ import { NextRequest } from 'next/server';
 import { getSession } from '../../../../lib/sessionStore';
 import { generateNextStoryTurnStream } from '../../../../lib/storyGenerator';
 
+export const maxDuration = 60;
+
 export async function POST(req: NextRequest) {
     try {
         const { sessionId, userInput } = await req.json();
@@ -10,7 +12,7 @@ export async function POST(req: NextRequest) {
             return new Response("Missing sessionId or userInput", { status: 400 });
         }
 
-        const session = getSession(sessionId);
+        const session = await getSession(sessionId);
         if (!session) {
             return new Response("当前游戏会话已过期或不存在，请刷新页面重新开始。", { status: 404 });
         }
@@ -18,8 +20,7 @@ export async function POST(req: NextRequest) {
         // 调用我们的底层 Orchestrator 拿到异步流迭代器
         const stream = generateNextStoryTurnStream(
             userInput,
-            session.currentState,
-            session.memoryManager,
+            session,
             sessionId
         );
 

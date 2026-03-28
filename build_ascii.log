@@ -1,0 +1,44 @@
+
+> story_generator_ai@0.1.0 build
+> next build
+
+??Next.js 16.1.7 (Turbopack)
+- Environments: .env
+
+  Creating an optimized production build ...
+??Compiled successfully in 7.5s
+  Running TypeScript ...
+  Collecting page data using 15 workers ...
+npm : Error: Cannot find module 'node:stream': Unsuppo
+rted external type Url for commonjs reference
+???? ?:1 ??: 1
++ npm run build 2>&1 | Out-File -Encoding ASCII build_
+ascii.log
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error: C 
+   annot f...monjs reference:String) [], RemoteExcep  
+  tion
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at <unknown> (E:\rayga\Documents\desktop_documents
+\projects\Story_generator_AI\.next\server\edge\chunks\
+[root-of-the-server]__815130d9._.js:16:339088)
+    at module evaluation (E:\rayga\Documents\desktop_d
+ocuments\projects\Story_generator_AI\.next\server\edge
+\chunks\[root-of-the-server]__815130d9._.js:16:339219)
+    at module evaluation (E:\rayga\Documents\desktop_d
+ocuments\projects\Story_generator_AI\.next\server\edge
+\chunks\[root-of-the-server]__815130d9._.js:16:345809)
+    at module evaluation (E:\rayga\Documents\desktop_d
+ocuments\projects\Story_generator_AI\.next\server\edge
+\chunks\[root-of-the-server]__815130d9._.js:16:347629)
+ {
+  code: 'MODULE_NOT_FOUND'
+}
+
+> Build error occurred
+Error: Failed to collect page data for /api/story/star
+t
+    at ignore-listed frames {
+  type: 'Error'
+}

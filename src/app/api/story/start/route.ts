@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
-import { createSession } from '../../../../lib/sessionStore';
+import { createSession, updateSession } from '../../../../lib/sessionStore';
+
+export const maxDuration = 60;
 
 export async function POST(req: Request) {
     try {
@@ -49,11 +51,15 @@ Phase 3: The Dominance - Establishing an independent stronghold, monopolizing fu
             role: "assistant",
             text: firstPrompt
         }, sessionData.currentState, sessionId);
+        
+        // [Redis] 保存！因为 createSession 里执行 updateSession 时第一段 prompt 还没压入。
+        await updateSession(sessionId, sessionData);
 
         return NextResponse.json({
             sessionId,
             firstPrompt,
-            currentState: sessionData.currentState
+            currentState: sessionData.currentState,
+            metadata: sessionData.metadata
         });
     } catch (e: any) {
         return NextResponse.json({ error: e.message }, { status: 500 });

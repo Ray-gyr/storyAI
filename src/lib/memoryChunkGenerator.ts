@@ -2,7 +2,6 @@ import { z } from "zod";
 import { memoryExtractorPrompt } from "./prompt";
 import { getManagerLLM } from "./Init";
 import { StoryState } from "./currentState";
-import { randomUUID } from "crypto";
 
 
 // ==========================================
@@ -82,7 +81,7 @@ export async function extractAndStoreMemory(
         const memoryData = await structuredLLM.invoke(promptValue);
 
         return {
-            id: randomUUID(),
+            id: crypto.randomUUID(),
             original_text: storyText,
             start_turn: startTurn,
             end_turn: endTurn,

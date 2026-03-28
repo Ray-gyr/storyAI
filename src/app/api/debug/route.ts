@@ -12,7 +12,7 @@ export async function GET(req: NextRequest) {
         return NextResponse.json({ error: "Missing sessionId parameter" }, { status: 400 });
     }
 
-    const session = getSession(sessionId);
+    const session = await getSession(sessionId);
     if (!session) {
         return NextResponse.json({ error: "Session not found" }, { status: 404 });
     }
