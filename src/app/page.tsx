@@ -141,6 +141,7 @@ export default function Home() {
 
     const handleStartDefaultStory = async (e: React.MouseEvent) => {
         e.preventDefault();
+        if (loading) return;
         setLoading(true);
         try {
             const res = await fetch('/api/story/start', {
@@ -173,6 +174,7 @@ export default function Home() {
 
     const handleStartStory = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (loading) return;
         setLoading(true);
         try {
             const res = await fetch('/api/story/start', {
@@ -272,29 +274,30 @@ export default function Home() {
     };
 
     return (
-        <div className="min-h-screen bg-[#FDFBF7] text-[#333333] font-serif flex selection:bg-amber-100">
-            {/* 左侧边栏 */}
-            <div className="w-64 bg-white border-r border-[#EAE5D9] flex flex-col shadow-sm">
-                <div className="p-6 border-b border-[#EAE5D9]">
+        <div className="h-screen bg-[#FDFBF7] text-[#333333] font-serif flex flex-col md:flex-row selection:bg-amber-100 overflow-hidden">
+            {/* 左侧边栏 / 移动端顶部导航 */}
+            <div className="w-full md:w-64 bg-white border-b md:border-r md:border-b-0 border-[#EAE5D9] flex flex-col shadow-sm shrink-0 md:h-screen z-20">
+                <div className="p-4 md:p-6 border-b border-[#EAE5D9] flex justify-between items-center">
                     <h1 className="text-xl font-bold tracking-[0.2em] text-[#4A4743]">AI STORY</h1>
                 </div>
-                <nav className="flex-1 p-4 space-y-2">
+                <nav className="flex-none md:flex-1 p-2 md:p-4 flex flex-row md:flex-col gap-2 md:gap-0 md:space-y-2 overflow-x-auto whitespace-nowrap [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                     <button
                         onClick={() => setCurrentView('home')}
-                        className={`w-full text-left px-4 py-3 rounded tracking-widest transition-colors ${currentView === 'home' || currentView === 'new_story' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
+                        className={`shrink-0 md:w-full text-left px-4 py-2 md:py-3 rounded tracking-widest transition-colors ${currentView === 'home' || currentView === 'new_story' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
                     >
                         HOME
                     </button>
                     <button
                         onClick={() => setCurrentView('intro')}
-                        className={`w-full text-left px-4 py-3 rounded tracking-widest transition-colors ${currentView === 'intro' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
+                        className={`shrink-0 md:w-full text-left px-4 py-2 md:py-3 rounded tracking-widest transition-colors ${currentView === 'intro' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
                     >
                         PROJECT INTRO
                     </button>
 
                     {openTabs.length > 0 && (
-                        <div className="pt-6 pb-2 border-t border-[#EAE5D9] mt-4">
-                            <h3 className="text-xs font-bold tracking-widest text-gray-400 mb-3 px-4 uppercase">Open Realms</h3>
+                        <div className="flex flex-row md:flex-col items-center md:items-stretch md:pt-6 md:pb-2 md:border-t border-[#EAE5D9] md:mt-4 gap-2 md:gap-0 pl-2 md:pl-0 border-l md:border-l-0">
+                            <h3 className="shrink-0 flex items-center md:hidden text-xs font-bold tracking-widest text-gray-400 px-2 uppercase">Realms:</h3>
+                            <h3 className="hidden md:block text-xs font-bold tracking-widest text-gray-400 mb-3 px-4 uppercase">Open Realms</h3>
                             {openTabs.map(tab => (
                                 <div
                                     key={tab.id}
@@ -303,14 +306,14 @@ export default function Home() {
                                             loadSessionChat(tab.id);
                                         }
                                     }}
-                                    className={`w-full text-left px-4 py-3 rounded tracking-widest transition-colors cursor-pointer flex justify-between items-center group mb-1 ${activeSessionId === tab.id && currentView === 'chat' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
+                                    className={`shrink-0 md:w-full text-left px-4 py-2 md:py-3 rounded tracking-widest transition-colors cursor-pointer flex justify-between items-center group md:mb-1 ${activeSessionId === tab.id && currentView === 'chat' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
                                 >
-                                    <span className="truncate flex-1 text-sm uppercase" title={tab.title}>
+                                    <span className="truncate flex-1 text-sm uppercase md:w-auto w-24" title={tab.title}>
                                         {tab.title}
                                     </span>
                                     <button
                                         onClick={(e) => handleCloseTab(tab.id, e)}
-                                        className="opacity-0 group-hover:opacity-100 text-[#8D7B68] hover:text-red-400 px-2 font-bold"
+                                        className="md:opacity-0 group-hover:opacity-100 text-[#8D7B68] hover:text-red-400 px-2 font-bold ml-2 md:ml-0"
                                         title="Close Tab"
                                     >
                                         ×
@@ -323,7 +326,7 @@ export default function Home() {
             </div>
 
             {/* 主内容区 */}
-            <div className="flex-1 flex flex-col h-screen overflow-hidden relative">
+            <div className="flex-1 flex flex-col overflow-hidden relative">
 
                 {/* 视图1：项目介绍 */}
                 {currentView === 'intro' && (
@@ -457,8 +460,8 @@ export default function Home() {
 
                 {/* 视图2：主页词卡 */}
                 {currentView === 'home' && (
-                    <div className="p-12 h-full overflow-y-auto w-full animate-in fade-in duration-500">
-                        <h2 className="text-2xl font-bold tracking-widest text-[#4A4743] mb-10 border-b pb-4 border-[#EAE5D9]">YOUR UNIVERSES</h2>
+                    <div className="p-6 md:p-12 h-full overflow-y-auto w-full animate-in fade-in duration-500">
+                        <h2 className="text-xl md:text-2xl font-bold tracking-widest text-[#4A4743] mb-6 md:mb-10 border-b pb-4 border-[#EAE5D9]">YOUR UNIVERSES</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                             {isClient && savedSessions.map((session, index) => (
                                 <div
@@ -486,8 +489,8 @@ export default function Home() {
 
                             {isClient && savedSessions.length === 0 && (
                                 <div
-                                    onClick={handleStartDefaultStory}
-                                    className="bg-[#4A4743] border border-[#2C2B29] rounded-xl p-8 hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group relative h-64 flex flex-col justify-between"
+                                    onClick={loading ? undefined : handleStartDefaultStory}
+                                    className={`bg-[#4A4743] border border-[#2C2B29] rounded-xl p-8 transition-all group relative h-64 flex flex-col justify-between ${loading ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-xl hover:-translate-y-1 cursor-pointer'}`}
                                 >
                                     <div>
                                         <h3 className="text-xl font-bold text-[#FDFBF7] tracking-widest mb-2">Default Scenario: Apocalypse Rebirth</h3>
@@ -496,7 +499,9 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className="flex justify-between items-end">
-                                        <span className="text-[#FAFAF8] text-sm group-hover:underline decoration-dotted tracking-widest font-bold">ENTER SCENARIO →</span>
+                                        <span className={`text-[#FAFAF8] text-sm tracking-widest font-bold ${loading ? '' : 'group-hover:underline decoration-dotted'}`}>
+                                            {loading ? 'WEAVING...' : 'ENTER SCENARIO →'}
+                                        </span>
                                     </div>
                                 </div>
                             )}
@@ -524,7 +529,7 @@ export default function Home() {
 
                 {/* 视图3：新建故事 */}
                 {currentView === 'new_story' && (
-                    <div className="p-12 w-full max-w-4xl mx-auto h-full overflow-y-auto animate-in fade-in zoom-in duration-500">
+                    <div className="p-6 md:p-12 w-full max-w-4xl mx-auto h-full overflow-y-auto animate-in fade-in zoom-in duration-500">
                         <button
                             onClick={() => setCurrentView('home')}
                             className="text-[#8D7B68] mb-8 hover:underline decoration-dotted tracking-widest inline-flex items-center gap-2"
