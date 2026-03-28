@@ -119,7 +119,7 @@ export default function Home() {
                     const existingMeta = savedSessions.find(s => s.id === sessionId);
                     const meta: SessionMeta = {
                         id: sessionId,
-                        title: data.metadata?.title || existingMeta?.title,
+                        title: data.metadata?.title || existingMeta?.title || sessionId.slice(-6),
                         style: data.metadata?.style || existingMeta?.style || "UNKNOWN"
                     };
                     addOpenTab(meta);
