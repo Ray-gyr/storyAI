@@ -327,12 +327,130 @@ export default function Home() {
 
                 {/* 视图1：项目介绍 */}
                 {currentView === 'intro' && (
-                    <div className="p-12 animate-in fade-in duration-500">
-                        <h2 className="text-2xl font-bold tracking-widest text-[#4A4743] mb-6 border-b pb-4 border-[#EAE5D9]">PROJECT INTRO</h2>
-                        <div className="prose prose-stone">
-                            <p className="text-[#5C554B] leading-relaxed text-lg italic">
-                                欢迎来到未知的领域。这是一个结合了先进语言模型与向量数据库的大型文字冒险沙河，记忆永不衰减，世界持续进化。
-                            </p>
+                    <div className="flex flex-col lg:flex-row h-full animate-in fade-in duration-500 overflow-hidden bg-white w-full">
+                        {/* 左侧主要内容 */}
+                        <div className="flex-1 p-8 sm:p-12 overflow-y-auto scroll-smooth custom-scrollbar" id="intro-scroll-container">
+                            <div className="max-w-4xl mx-auto">
+                                <h2 className="text-3xl font-bold tracking-[0.2em] text-[#4A4743] mb-10 border-b pb-4 border-[#EAE5D9] uppercase">Technical Architecture</h2>
+                                
+                                <div className="text-[#5C554B] leading-relaxed space-y-12 pb-24">
+                                    
+                                    {/* Section 1 */}
+                                    <section id="intro-overview" className="scroll-mt-12">
+                                        <h3 className="text-2xl font-bold text-[#4A4743] tracking-widest mb-6 border-l-4 border-[#8D7B68] pl-4">1. Project Overview</h3>
+                                        <p className="mb-4 text-lg">
+                                            This project is an infinite text adventure system driven by Large Language Models and Vector Databases. It provides an open-world narrative experience equipped with continuous memory and state management capabilities.
+                                        </p>
+                                        
+                                        <h4 className="font-bold text-[#4A4743] mt-8 mb-3 uppercase tracking-widest text-sm">Tech Stack & Tools</h4>
+                                        <ul className="list-disc pl-5 space-y-2">
+                                            <li><strong className="text-[#4A4743]">Frontend:</strong> Next.js (App Router), React, Tailwind CSS.</li>
+                                            <li><strong className="text-[#4A4743]">Backend API:</strong> Serverless Node.js API (with streaming support).</li>
+                                            <li><strong className="text-[#4A4743]">AI Orchestration:</strong> LangChain.js.</li>
+                                            <li><strong className="text-[#4A4743]">State & Cache Layer:</strong> Upstash Redis for managing God's eye state, chat history, and enabling 0-millisecond frontend context switching.</li>
+                                            <li><strong className="text-[#4A4743]">Long-term Memory:</strong> Pinecone Vector Database for storing vectorized story plots.</li>
+                                        </ul>
+
+                                        <h4 className="font-bold text-[#4A4743] mt-8 mb-3 uppercase tracking-widest text-sm">LLM Selection</h4>
+                                        <ul className="list-disc pl-5 space-y-2">
+                                            <li><strong className="text-[#4A4743]">Story Writer:</strong> <code className="bg-[#F2F0E9] px-1 rounded text-[#8D7B68]">gpt-5-mini</code>. Chosen for its recency and vastly superior capability in generating long-context narratives seamlessly.</li>
+                                            <li><strong className="text-[#4A4743]">State Machine Worker:</strong> <code className="bg-[#F2F0E9] px-1 rounded text-[#8D7B68]">gpt-4o-mini</code>. Tasked with background logical deduction and attribute extraction.</li>
+                                            <li><strong className="text-[#4A4743]">Rationale:</strong> Both models offer exceptional cost-efficiency, natively support reliable JSON <strong>Structured Output</strong>, and boast extremely fast response times, which significantly helps in lowering TTFT (Time To First Token).</li>
+                                        </ul>
+                                    </section>
+
+                                    {/* Section 2 */}
+                                    <section id="intro-pipeline" className="scroll-mt-12">
+                                        <h3 className="text-2xl font-bold text-[#4A4743] tracking-widest mb-6 border-l-4 border-[#8D7B68] pl-4">2. Memory & State Pipeline</h3>
+                                        <p className="mb-6 text-lg">
+                                            The system utilizes a dual-track parallel memory architecture to maintain plot continuity and retrieval accuracy while strictly optimizing token consumption per request.
+                                        </p>
+
+                                        <div className="space-y-6">
+                                            <div className="bg-[#FAFAF8] p-6 rounded border border-[#EAE5D9]">
+                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">A. Global State Machine</h4>
+                                                <ul className="list-disc pl-5 space-y-2">
+                                                    <li><strong>Independent Updates:</strong> After each interaction, a background Worker processes the latest dialogue and extracts the world's variable deltas (<code className="bg-[#F2F0E9] px-1 rounded">State Diff</code>) strictly adhering to a Zod Schema.</li>
+                                                    <li><strong>State Persistence:</strong> These diffs update attributes, inventory, quests, and world events (<code className="bg-[#F2F0E9] px-1 rounded">currentState</code>). This parameter table is permanently saved to Redis, serving as the core constraint for generating the next story turn.</li>
+                                                </ul>
+                                            </div>
+
+                                            <div className="bg-[#FAFAF8] p-6 rounded border border-[#EAE5D9]">
+                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">B. Memory Lifecycle & Retrieval Flow</h4>
+                                                <ul className="list-disc pl-5 space-y-2">
+                                                    <li><strong>Sliding Window Archive:</strong> The latest turns that slide out of the chat history window are temporarily buffered in the <code className="bg-[#F2F0E9] px-1 rounded">Unprocessed Archive</code>. These recent plot details are fed directly into the LLM context to prevent immediate amnesia.</li>
+                                                    <li><strong>Semantic Chunking & Vectorization:</strong> When the buffer reaches a threshold, the backend splits the text into pieces using semantic chunking rules, intentionally preserving context overlap between chunks to prevent semantic fragmentation. These dense narrative summaries are embedded and pushed to Pinecone.</li>
+                                                    <li><strong>Intent Short-Circuit:</strong> Before querying the DB, the system evaluates the player's intent. If current UI state and recent history are completely sufficient to resolve simple actions (e.g., "I draw my sword"), it triggers a short-circuit bypass, skipping vector search entirely to eliminate latency.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    {/* Section 3 */}
+                                    <section id="intro-future" className="scroll-mt-12">
+                                        <h3 className="text-2xl font-bold text-[#4A4743] tracking-widest mb-6 border-l-4 border-[#8D7B68] pl-4">3. Future Improvements</h3>
+                                        <p className="mb-6 text-lg">
+                                            To address current architectural limitations during massive context scaling, future iterations will explore these paradigm shifts:
+                                        </p>
+
+                                        <div className="space-y-6">
+                                            <div className="bg-[#FDFBF7] p-6 rounded border border-[#D8D3C4]">
+                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">Hybrid Search + RRF</h4>
+                                                <p className="mb-2"><strong>Current Issue:</strong> Pure vector search (Dense Retrieval) excels at semantic understanding but often fails to accurately recall specific proper nouns, rare inventory items, or complex NPC names.</p>
+                                                <p><strong>Improvement:</strong> Integrate BM25 sparse retrieval (exact keyword matching frequencies) alongside vector retrieval, and apply Reciprocal Rank Fusion (RRF) to cross-rank and merge the results for a dual-peak hit rate.</p>
+                                            </div>
+
+                                            <div className="bg-[#FDFBF7] p-6 rounded border border-[#D8D3C4]">
+                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">Agentic RAG (LangGraph)</h4>
+                                                <p className="mb-2"><strong>Current Issue:</strong> Extremely short player commands natively sent to the vector DB often retrieve entirely irrelevant noise, which in turn severely distracts the main writer model.</p>
+                                                <p className="mb-2"><strong>Improvement:</strong> Upgrade to an Agentic RAG architecture featuring cyclic reasoning loops:</p>
+                                                <ul className="list-disc pl-5 mb-2">
+                                                    <li><strong>Query Rewriting:</strong> An LLM will first expand the player's short intent into a fully fleshed-out contextual search query.</li>
+                                                    <li><strong>Document Grading:</strong> After finding raw chunks, a fast grading model evaluates and actively filters out irrelevant noise before anything is passed to the writer.</li>
+                                                </ul>
+                                                <p className="text-red-400 text-sm mt-4 p-3 bg-red-50 rounded border border-red-100 italic">
+                                                    <strong>⚠️ Crucial Trade-off:</strong> While logical coherence and long-term memory accuracy will skyrocket, the multiple internal LLM self-reflection loops will inevitably increase TTFT (Time To First Token), negatively impacting real-time gameplay fluidity.
+                                                </p>
+                                            </div>
+
+                                            <div className="bg-[#FDFBF7] p-6 rounded border border-[#D8D3C4]">
+                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">State Hydration on Demand</h4>
+                                                <p className="mb-2"><strong>Current Issue:</strong> As play continues across tens of thousands of turns, the global state tabular data will inflate indefinitely, eventually bloating prompts and exceeding efficiency thresholds.</p>
+                                                <p><strong>Improvement:</strong> Shift from a naive "full state loading" approach to targeted spatial state decoupling. The system will dynamically hydrate only the sub-states strictly related to the player's current scene or ongoing active event.</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 右侧边栏导航 (Progress Nodes) */}
+                        <div className="w-64 xl:w-72 border-l border-[#EAE5D9] p-8 hidden lg:block bg-[#FAFAF8] shrink-0">
+                            <div className="sticky top-12">
+                                <h4 className="text-xs font-bold tracking-[0.2em] text-[#8D7B68] mb-8 uppercase">Progress Navigation</h4>
+                                {/* 节点连线进度条体验 */}
+                                <ul className="space-y-8 relative before:absolute before:inset-0 before:ml-1.5 before:-translate-x-px before:h-full before:w-0.5 before:bg-[#EAE5D9]">
+                                    <li className="relative flex items-center gap-4 group">
+                                        <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
+                                        <button onClick={() => document.getElementById('intro-overview')?.scrollIntoView({ behavior: 'smooth' })} className="text-[#8D7B68] hover:text-[#4A4743] hover:font-bold transition-all text-left text-sm tracking-widest uppercase">
+                                            1. Overview
+                                        </button>
+                                    </li>
+                                    <li className="relative flex items-center gap-4 group">
+                                        <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
+                                        <button onClick={() => document.getElementById('intro-pipeline')?.scrollIntoView({ behavior: 'smooth' })} className="text-[#8D7B68] hover:text-[#4A4743] hover:font-bold transition-all text-left text-sm tracking-widest uppercase">
+                                            2. Pipeline
+                                        </button>
+                                    </li>
+                                    <li className="relative flex items-center gap-4 group">
+                                        <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
+                                        <button onClick={() => document.getElementById('intro-future')?.scrollIntoView({ behavior: 'smooth' })} className="text-[#8D7B68] hover:text-[#4A4743] hover:font-bold transition-all text-left text-sm tracking-widest uppercase">
+                                            3. Improvements
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 )}
