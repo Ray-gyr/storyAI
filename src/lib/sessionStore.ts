@@ -1,5 +1,8 @@
+import { StringOutputParser } from "@langchain/core/output_parsers";
 import { MemoryManager } from "./memoryManager";
-import { StoryState } from "./currentState";
+import { StoryState, StoryStateSchema } from "./currentState";
+import { getStoryLLM } from "./Init";
+import { storyInitPrompt, storyStartPrompt } from "./prompt";
 
 export interface SessionData {
     memoryManager: MemoryManager;
@@ -18,31 +21,32 @@ export function getSession(sessionId: string): SessionData | undefined {
 }
 
 /**
- * 开新局：构建一把全新的主角光环和世界设定
+ * 开新局：基于用户的初始故事设定 (storySetting)
+ * 分别调用 StoryLLM 生成开场白，调用 WorkerLLM (也是 gpt-5-mini) 生成初始状态
  */
-export function createSession(sessionId: string): SessionData {
+export async function createSession(sessionId: string, storySetting: string): Promise<{ sessionData: SessionData, firstPrompt: string }> {
     const memoryManager = new MemoryManager();
-    const currentState: StoryState = {
-        known_characters: [
-            { name: "亚力克", description: "一名游侠，主角，正试图解开无冬森林的诅咒" },
-            { name: "守灵长老", description: "指引主角前来此地解除诅咒的神秘老人" }
-        ],
-        known_locations: [
-            { name: "无冬森林", description: "雾气弥漫的远古森林入口，散发着潮湿和腐烂的气味。左边是长满荆棘的泥泞小径，右边是断裂的精灵石阶。" }
-        ],
-        known_items: [
-            { name: "铁锈宽刃剑", description: "一把满是铁锈的宽刃剑，主角随身携带的唯一防身武器" }
-        ],
-        current_location: "无冬森林",
-        current_task: "寻找森林腹地的古代石碑",
-        inventory: ["铁锈宽刃剑"],
-        custom_attributes: [
-            { name: "精神侵蚀度", value: 10, type: "numeric" },
-            { name: "身体状态", value: "轻微疲惫", type: "text" }
-        ]
-    };
+    
+    // 1. WorkerLLM (gpt-5-mini) -> 生成初始 CurrentState
+    console.log(`[SessionStore] Initializing state with gpt-5-mini (Worker role)...`);
+    const stateLLM = getStoryLLM().withStructuredOutput(StoryStateSchema);
+    const stateChain = storyInitPrompt.pipe(stateLLM);
+    
+    const currentState = await stateChain.invoke({
+        text: storySetting
+    });
+
+    // 2. StoryLLM (gpt-5-mini) -> 生成第一段剧情导引 (First Prompt)
+    console.log(`[SessionStore] Generating first story prompt with gpt-5-mini (Story role)...`);
+    const storyLLM = getStoryLLM().pipe(new StringOutputParser());
+    const storyChain = storyStartPrompt.pipe(storyLLM);
+    
+    const firstPrompt = await storyChain.invoke({
+        storySetting: storySetting
+    });
 
     const sessionData = { memoryManager, currentState };
     sessions.set(sessionId, sessionData);
-    return sessionData;
+    
+    return { sessionData, firstPrompt };
 }

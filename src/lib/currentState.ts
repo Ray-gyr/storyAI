@@ -5,40 +5,49 @@ import { z } from "zod";
 // ==========================================
 
 export const EntityInfoSchema = z.object({
-    name: z.string().describe("实体名称，保持简短且唯一。"),
-    description: z.string().describe("关于这个人物/地点/物品的简短介绍与核心设定。"),
+    name: z.string().describe("Entity name, keep it short and unique."),
+    description: z.string().describe("Short introduction and core setting for this character/location/item."),
 });
 
 export const AttributeSchema = z.object({
-    name: z.string().describe("属性名称，如 'HP', '理智值', '主角光环', '信用点'。"),
-    value: z.union([z.number(), z.string()]).describe("属性的当前状态。如果是数值就用数字(如 100)，如果是状态描述就用文本(如 '极度疲惫')。"),
-    type: z.enum(["numeric", "text"]).describe("严格标记该属性的类型：'numeric' 代表数值类，'text' 代表文本描述类。")
+    name: z.string().describe("Attribute name, e.g., 'HP', 'Sanity', 'PROTAGONIST_HALO', 'Credits'."),
+    value: z.union([z.number(), z.string()]).describe("Current state of the attribute. Use a number if it's numeric (e.g., 100) or text if it's a state description (e.g., 'Extremely Exhausted')."),
+    type: z.enum(["numeric", "text"]).describe("Strictly mark the type: 'numeric' for values, 'text' for descriptions.")
 });
 
 export const StoryStateSchema = z.object({
     // -------------------------
-    // 1. 全局已知实体 (Entities) - 充当全局注册表
+    // 0. World Bible (Immutable Foundation)
     // -------------------------
-    known_characters: z.array(EntityInfoSchema).describe("故事目前已知的角色名单及设定（必须包含主角自身）。"),
-    known_locations: z.array(EntityInfoSchema).describe("故事目前已知的地点名单及设定。"),
-    known_items: z.array(EntityInfoSchema).describe("故事设定或剧情中出现的重要物品名单及设定（必须包含背包里的所有物品）。"),
+    world_bible: z.object({
+        story_framework: z.string().describe("The overall framework, core conflicts, and main narrative threads of the story."),
+        world_mechanics: z.string().describe("The underlying operational logic of the world, such as power systems, resource rules, and physical laws."),
+        narrative_style: z.string().describe("Writing style and narrative constraints, e.g., 'Cold and realistic, crisp and clean', 'Unfathomable cosmic horror', etc.")
+    }).describe("The cornerstone of the game's worldview, extracted from initial settings and remaining as the permanent highest directive."),
 
     // -------------------------
-    // 2. 当前环境与任务
+    // 1. 全局已知实体 (Entities) - 充当全局注册表
     // -------------------------
-    current_location: z.string().describe("主角当前所处的具体地点名称（注意：名称必须与 known_locations 中的某个实体完全一致）。"),
-    current_task: z.string().describe("主角当前的核心目标或正在进行的任务。"),
+    known_characters: z.array(EntityInfoSchema).describe("List of known characters and their settings (must include the protagonist)."),
+    known_locations: z.array(EntityInfoSchema).describe("List of known locations and their settings."),
+    known_items: z.array(EntityInfoSchema).describe("List of important items and their settings (must include all items in inventory)."),
+
+    // -------------------------
+    // 2. Current Environment and Task
+    // -------------------------
+    current_location: z.string().describe("Current specific location of the protagonist (Must match an entity in known_locations)."),
+    current_task: z.string().describe("Current core objective or ongoing task."),
 
     // -------------------------
     // 3. 玩家自身状态
     // -------------------------
-    inventory: z.array(z.string()).describe("玩家（主角）当前拥有的具体物品/道具清单。（注意：这里的名称必须与 known_items 中的实体名称完全一致，实现实体对齐！）"),
+    inventory: z.array(z.string()).describe("List of specific items currently owned by the player (Must match names in known_items for alignment)."),
 
     // -------------------------
-    // 4. 专属可选扩展设定 (Adapter)
+    // 4. Exclusive Adapter Settings
     // -------------------------
     custom_attributes: z.array(AttributeSchema)
-        .describe("根据故事不同体裁（科幻/奇幻/同人/修仙等）生成的专属数值或状态设定。设计 3-5 个体现该类小说特色的属性。硬核类优先用 numeric，剧情/探险类优先用 text。")
+        .describe("Exclusive numeric or status settings based on the story genre (Sci-Fi/Fantasy/etc.). Design 3-5 attributes that reflect the genre's flavor. Hardcore genres prioritize numeric; plot/adventure genres prioritize text.")
 });
 
 export type EntityInfo = z.infer<typeof EntityInfoSchema>;
@@ -49,26 +58,26 @@ export type StoryState = z.infer<typeof StoryStateSchema>;
 // ==========================================
 
 export const StateChangeSchema = z.object({
-    added_characters: z.array(EntityInfoSchema).describe("仅当剧情中出现了【全新的】、不在原 known_characters 中的角色时才提取到这里。注意：无名实体/实体集合也要记录，必须提取。若无新角色，必须返回 []。"),
-    added_locations: z.array(EntityInfoSchema).describe("仅当剧情中出现了【全新的】、不在原 known_locations 中的地点时才提取到这里。若无，返回 []。"),
-    added_items: z.array(EntityInfoSchema).describe("仅当出现了【全新的】、且主角获取或必需记录的物品时才提取到这里。若无，返回 []。"),
+    added_characters: z.array(EntityInfoSchema).describe("Extract characters only when [NEW] ones appear. Nameless entities/groups must also be recorded. Return [] if none."),
+    added_locations: z.array(EntityInfoSchema).describe("Extract locations only when [NEW] ones appear. Return [] if none."),
+    added_items: z.array(EntityInfoSchema).describe("Extract items only when [NEW] ones appear. Return [] if none."),
 
-    updated_characters: z.array(EntityInfoSchema).describe("对于已存在于 known_characters 中的角色，如果其状态、身份发生了重大改变，将其名称放入并更新 description。若无改变，必须返回 []。"),
-    updated_locations: z.array(EntityInfoSchema).describe("对于已存在于 known_locations 中的地点，如果其环境发生了重大改变（如被破坏），将其名称放入并更新 description。若无改变，必须返回 []。"),
-    updated_items: z.array(EntityInfoSchema).describe("对于已存在于 known_items 中的物品，如果其状态、性质发生了重大改变，将其名称放入并更新 description。若无改变，必须返回 []。"),
+    updated_characters: z.array(EntityInfoSchema).describe("For existing characters, if their state or identity changes significantly, put name here and update description. Return [] if no change."),
+    updated_locations: z.array(EntityInfoSchema).describe("For existing locations, if environment changes significantly, update name and description. Return [] if no change."),
+    updated_items: z.array(EntityInfoSchema).describe("For existing items, if nature changes significantly, update name and description. Return [] if no change."),
 
-    new_current_location: z.string().describe("如果主角移动到了新的地点，填入对应名称(需绝对匹配已注册实体)；如果未移动，必须返回空字符串 ''。"),
-    new_current_task: z.string().describe("如果主角的任务发生了变化，填入新任务；如果任务仍是之前的且未突变，必须返回空字符串 ''。"),
+    new_current_location: z.string().describe("If protagonist moves to a new location, enter the name (must match a registered entity); otherwise, return empty string ''."),
+    new_current_task: z.string().describe("If the task changes, enter the new task; otherwise, return empty string ''."),
 
-    inventory_added: z.array(z.string()).describe("主角新获得的物品名称（必须绝对匹配 known_items 或 added_items 中的 name）。没有获得留空 []。"),
-    inventory_removed: z.array(z.string()).describe("主角失去、消耗、丢弃的物品名称。若无，必须返回空数组 []。"),
+    inventory_added: z.array(z.string()).describe("Names of newly acquired items (must match known_items or added_items). Leave empty [] if none."),
+    inventory_removed: z.array(z.string()).describe("Names of items lost, consumed, or discarded. Return empty [] if none."),
 
     custom_attributes_changes: z.array(z.object({
-        name: z.string().describe("发生变化的属性名称，如 'HP', '资金余额'等（必须绝对匹配已有的名称）"),
-        new_value: z.union([z.number(), z.string()]).describe("变化后的最新值（注意不是增减数额，而是结算后的绝对于实际值）。")
-    })).describe("故事进展导致的数值或状态的变化补丁。如果没有属性发生变化请留空数组 []。"),
+        name: z.string().describe("Name of the changing attribute (must match existing names exactly)."),
+        new_value: z.union([z.number(), z.string()]).describe("The latest value after change (actual value, not the increment/decrement).")
+    })).describe("Patch for numeric or status changes caused by story progress. Leave empty [] if none."),
 
-    state_summary: z.string().describe("用一句话精简总结发生了什么导致本次状态更新。")
+    state_summary: z.string().describe("Brief summary of what happened that caused this state update.")
 });
 
 export type StateChange = z.infer<typeof StateChangeSchema>;

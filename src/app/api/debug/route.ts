@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { getSession } from "../../../lib/sessionStore";
 import { getPineconeIndex } from "../../../lib/Init";
 
+
+
 export async function GET(req: NextRequest) {
     const { searchParams } = new URL(req.url);
     const sessionId = searchParams.get("sessionId");
@@ -18,18 +20,24 @@ export async function GET(req: NextRequest) {
     try {
         const pineconeRecords: any[] = [];
         const index = getPineconeIndex().namespace(sessionId);
-        
+
         // 我们尝试拉取最新的几个 Pinecone ID 来做展示
         const listResponse = await index.listPaginated({ limit: 20 });
-        if (listResponse.vectors && listResponse.vectors.length > 0) {
-            const ids = listResponse.vectors.map((v: any) => v.id);
-            const fetchResponse = await (index as any).fetch(ids);
-            if (fetchResponse.records) {
-                Object.values(fetchResponse.records).forEach((r: any) => {
-                    pineconeRecords.push(r.metadata);
-                });
+        if (listResponse.vectors) {
+            // 安全提取 id 并且过滤掉可能的 undefined 或空字符串
+            const ids = listResponse.vectors.map((v: any) => v?.id).filter(Boolean);
+
+            if (ids.length > 0) {
+                const fetchResponse = await index.fetch({ ids });
+                if (fetchResponse.records) {
+                    Object.values(fetchResponse.records).forEach((r: any) => {
+                        pineconeRecords.push(r.metadata);
+                    });
+                }
             }
         }
+
+        pineconeRecords.sort((a, b) => (a.start_turn || 0) - (b.start_turn || 0));
 
         return NextResponse.json({
             sessionId,

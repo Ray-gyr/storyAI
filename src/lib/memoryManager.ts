@@ -5,7 +5,8 @@ import { extractAndStoreMemory, MemoryRecord } from "./memoryChunkGenerator";
 import { StoryState } from "./currentState";
 import { storeMemoryRecord } from "./vectorDBManager";
 
-export const WINDOW_SIZE = 10;
+export const WINDOW_SIZE = 5;
+export const MEMORY_WINDOW_SIZE = 10;
 export const CHUNK_OVERLAP = 2;
 
 export interface ChatTurn {
@@ -39,7 +40,7 @@ export class MemoryManager {
         }
 
         // 当积攒了一定数量后触发语义切分（这里设定满了一个 WINDOW_SIZE 就切一次）
-        if (this.unprocessedArchive.length >= WINDOW_SIZE) {
+        if (this.unprocessedArchive.length >= MEMORY_WINDOW_SIZE) {
             extractedRecords = await this.processArchive(currentState, sessionId);
         }
 
@@ -95,18 +96,18 @@ export class MemoryManager {
             if (i === 0) {
                 // 如果这是本次长文本的第一块，它需要和历史上的上一批遗留轮次做重叠
                 if (this.lastProcessedOverlapTurns.length > 0) {
-                    prefixContext = "[前情提要重叠部分]\n" + this.formatTurns(this.lastProcessedOverlapTurns) + "\n\n";
+                    prefixContext = "[Story Context Overlap]\n" + this.formatTurns(this.lastProcessedOverlapTurns) + "\n\n";
                 }
             } else {
                 // 如果它在后头，它就直接去它自己前面的那块要数据重叠
                 const previousTurns = this.unprocessedArchive.filter(t => t.turn_id < currentStartId);
                 const overlapTurns = previousTurns.slice(-CHUNK_OVERLAP);
                 if (overlapTurns.length > 0) {
-                    prefixContext = "[前情提要重叠部分]\n" + this.formatTurns(overlapTurns) + "\n\n";
+                    prefixContext = "[Story Context Overlap]\n" + this.formatTurns(overlapTurns) + "\n\n";
                 }
             }
 
-            const chunkText = prefixContext + "[待提取正文]\n" + this.formatTurns(chunkTurns);
+            const chunkText = prefixContext + "[Content to Extract]\n" + this.formatTurns(chunkTurns);
 
             // 正式调用 memoryChunkGenerator 生成结构化事实记忆
             const record = await extractAndStoreMemory(

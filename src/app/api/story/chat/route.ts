@@ -43,8 +43,9 @@ export async function POST(req: NextRequest) {
         return new Response(readableStream, {
             headers: {
                 "Content-Type": "text/plain; charset=utf-8",
-                "Cache-Control": "no-cache",
-                // 为了兼容某些代理网关，有时候设定 SSE 会更好，但纯 ReadableStream fetch 也可以
+                "Cache-Control": "no-cache, no-transform",
+                "X-Content-Type-Options": "nosniff",
+                "Connection": "keep-alive"
             }
         });
 

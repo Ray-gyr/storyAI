@@ -10,19 +10,19 @@ import { randomUUID } from "crypto";
 // ==========================================
 
 export const LLMExtractedMemorySchema = z.object({
-    location: z.string().describe("发生地点（必须从已知实体库中映射）"),
-    characters_involved: z.array(z.string()).describe("参与的已知角色列表"),
-    items_involved: z.array(z.string()).describe("涉及的已知物品列表"),
+    location: z.string().describe("Occurrence location (Must be mapped from known entity library)"),
+    characters_involved: z.array(z.string()).describe("List of involved known characters"),
+    items_involved: z.array(z.string()).describe("List of involved known items"),
 
-    // 将主观打分改为客观的“语义重要性信号”
+    // Objectively judge semantic importance signals
     semantic_signals: z.object({
-        has_new_entity: z.boolean().describe("这段剧情是否描述了主角【初次】遇见某人、到达新地点、或【刚刚获得/发现】某件物品？（注意：即使该实体当前已在已知字典中，只要剧情原文体现了这是它的'获取/起源'时刻，就必须标为 true）"),
-        is_irreversible: z.boolean().describe("是否发生了不可逆的重大事件（如角色死亡、物品损毁、核心阵营决裂）?"),
-        advances_plot: z.boolean().describe("是否实质性地推进了主角的当前任务 (current_task)?")
-    }).describe("客观判断这段剧情的语义重要性"),
+        has_new_entity: z.boolean().describe("Whether this plot describes the protagonist meeting someone for the [FIRST TIME], arriving at a new location, or [JUST ACQUIRING/DISCOVERING] an item? (Note: Even if the entity is already in the dictionary, if the text shows it is its 'origin' moment, mark as true)"),
+        is_irreversible: z.boolean().describe("Whether a major irreversible event has occurred (e.g., character death, item destruction, core faction break)?"),
+        advances_plot: z.boolean().describe("Whether it substantially advances the protagonist's current_task?")
+    }).describe("Objective judgment of the semantic importance of this plot segment"),
 
     dense_summary: z.string()
-        .describe("对这段剧情的硬核摘要。必须消除所有代词，全部替换为具体的已知实体名称。用于后续精确向量匹配。")
+        .describe("Hardcore summary of this plot. Eliminate all pronouns and replace them with specific names of known entities for accurate vector matching. Emphasize cause and effect.")
 });
 
 export type LLMExtractedMemory = z.infer<typeof LLMExtractedMemorySchema>;

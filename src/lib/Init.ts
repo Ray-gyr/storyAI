@@ -11,17 +11,48 @@ export const getManagerLLM = () => {
     });
 };
 
-export const getStoryLLM = (customKey?: string) => {
+// export const getStoryLLM = (customKey?: string) => {
+//     const primaryModel = new ChatOpenAI({
+//         modelName: "Qwen/Qwen2.5-14B-Instruct", // 使用 14B 作为主模型
+//         frequencyPenalty: 0.6,
+//         presencePenalty: 0.5,
+//         openAIApiKey: customKey || process.env.HUGGINGFACE_API_KEY,
+//         configuration: {
+//             baseURL: "https://router.huggingface.co/v1", // Hugging Face 的 OpenAI 兼容端点
+//             defaultHeaders: {
+//                 Authorization: `Bearer ${customKey || process.env.HUGGINGFACE_API_KEY}`,
+//             },
+//         },
+//         temperature: 0.6,
+//     });
+
+//     const fallbackModel = new ChatOpenAI({
+//         modelName: "Qwen/Qwen2.5-7B-Instruct", // 使用 7B 作为降级备用模型
+//         frequencyPenalty: 0.6,
+//         presencePenalty: 0.5,
+//         openAIApiKey: customKey || process.env.HUGGINGFACE_API_KEY,
+//         configuration: {
+//             baseURL: "https://router.huggingface.co/v1",
+//             defaultHeaders: {
+//                 Authorization: `Bearer ${customKey || process.env.HUGGINGFACE_API_KEY}`,
+//             },
+//         },
+//         temperature: 0.6,
+//     });
+
+//     // 返回带有回退逻辑的 Runnable，遇到 429/500/容量耗尽等异常自动切换 7B，并且每次执行仍会先尝试 14B
+//     return primaryModel.withFallbacks({
+//         fallbacks: [fallbackModel]
+//     });
+// };
+
+export const getStoryLLM = () => {
     return new ChatOpenAI({
-        modelName: "Qwen/Qwen2.5-14B-Instruct:featherless-ai", // 必须是没有前缀后缀的干净 Hugging Face 模型 ID
-        openAIApiKey: customKey || process.env.HUGGINGFACE_API_KEY,
-        configuration: {
-            baseURL: "https://router.huggingface.co/v1", // Hugging Face 的 OpenAI 兼容端点
-            defaultHeaders: {
-                Authorization: `Bearer ${customKey || process.env.HUGGINGFACE_API_KEY}`,
-            },
-        },
-        temperature: 0.8,
+        modelName: "gpt-5-mini",
+        openAIApiKey: process.env.OPENAI_API_KEY,
+        reasoning: {
+            effort: "low"
+        }
     });
 };
 

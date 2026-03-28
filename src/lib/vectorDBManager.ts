@@ -6,7 +6,7 @@ import { QueryIntent } from "./query";
  * 将完整的记忆 Chunk 连带向量一起存入 Pinecone
  */
 export async function storeMemoryRecord(record: MemoryRecord, sessionId: string): Promise<void> {
-    console.log(`[VectorDB] 正在入库记忆 Chunk [${sessionId}]: ${record.id}`);
+    console.log(`[VectorDB] Storing memory Chunk [${sessionId}]: ${record.id}`);
     const embeddings = getEmbeddings();
     const index = getPineconeIndex().namespace(sessionId);
 
@@ -38,7 +38,7 @@ export async function storeMemoryRecord(record: MemoryRecord, sessionId: string)
             }
         ]
     });
-    console.log(`✅ [VectorDB] 记忆入库成功!`);
+    console.log(`✅ [VectorDB] Memory stored successfully!`);
 }
 
 /**
@@ -49,7 +49,7 @@ export async function storeMemoryRecord(record: MemoryRecord, sessionId: string)
  */
 export async function retrieveMemories(queryIntent: QueryIntent, sessionId: string): Promise<MemoryRecord[]> {
     if (queryIntent.is_resolved_by_cache || !queryIntent.search_query) {
-        console.log(`[VectorDB] 并行路由截断：所需知识已包含在当前缓存/上下文中 (is_resolved_by_cache=true)，智能阻止了本次无效的网络检索开销！`);
+        console.log(`[VectorDB] Parallel route short-circuited: required knowledge already in cache/context, skipping network retrieval.`);
         return [];
     }
 
@@ -60,7 +60,7 @@ export async function retrieveMemories(queryIntent: QueryIntent, sessionId: stri
     if (queryIntent.locations_involved?.length) queryParts.push(...queryIntent.locations_involved);
     const enhancedQueryString = queryParts.join(" ");
 
-    console.log(`[VectorDB] 正在网络语义检索 (包含实体加强) [${sessionId}]: ${enhancedQueryString}`);
+    console.log(`[VectorDB] Performing network semantic retrieval (with entity enhancement) [${sessionId}]: ${enhancedQueryString}`);
     const embeddings = getEmbeddings();
     const index = getPineconeIndex().namespace(sessionId);
 
@@ -75,7 +75,7 @@ export async function retrieveMemories(queryIntent: QueryIntent, sessionId: stri
     });
 
     if (!queryResponse.matches || queryResponse.matches.length === 0) {
-        console.log(`[VectorDB] 未找相关记忆。`);
+        console.log(`[VectorDB] No relevant memories found.`);
         return [];
     }
 
@@ -108,15 +108,19 @@ export async function retrieveMemories(queryIntent: QueryIntent, sessionId: stri
         results.push(record);
     }
 
-    // 批量执行部分更新，给这被召回的 10 条记忆涨 1 点 access_count
+    // 4. 按 turn 排序：最近发生的剧情（大的 turn）排在最前面，方便 LLM 追踪最新因果
+    results.sort((a, b) => (b.start_turn || 0) - (a.start_turn || 0));
+
+    // 5. 批量执行部分更新，给这被召回的 10 条记忆涨 1 点 access_count
     // 使用 Promise.all 保证并发更新，不阻塞主流程太久
-    await Promise.all(results.map(record => 
+    Promise.all(results.map(record =>
         index.update({
             id: record.id,
             metadata: { access_count: record.access_count }
         })
-    ));
+    )).catch(err => {
+        console.error(`[VectorDB] 更新使用频率失败:`, err);
+    });
 
-    console.log(`✅ [VectorDB] 检索并更新使用频率完成，共返回 ${results.length} 条记忆。`);
     return results;
 }
