@@ -292,7 +292,7 @@ export default function Home() {
                         onClick={() => setCurrentView('intro')}
                         className={`shrink-0 md:w-full text-left px-4 py-2 md:py-3 rounded tracking-widest transition-colors ${currentView === 'intro' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
                     >
-                        PROJECT INTRO
+                        PROJECT OVERVIEW
                     </button>
 
                     {openTabs.length > 0 && (
@@ -336,16 +336,16 @@ export default function Home() {
                         <div className="flex-1 p-8 sm:p-12 overflow-y-auto scroll-smooth custom-scrollbar" id="intro-scroll-container">
                             <div className="max-w-4xl mx-auto">
                                 <h2 className="text-3xl font-bold tracking-[0.2em] text-[#4A4743] mb-10 border-b pb-4 border-[#EAE5D9] uppercase">Technical Architecture</h2>
-                                
+
                                 <div className="text-[#5C554B] leading-relaxed space-y-12 pb-24">
-                                    
+
                                     {/* Section 1 */}
                                     <section id="intro-overview" className="scroll-mt-12">
                                         <h3 className="text-2xl font-bold text-[#4A4743] tracking-widest mb-6 border-l-4 border-[#8D7B68] pl-4">1. Project Overview</h3>
                                         <p className="mb-4 text-lg">
                                             This project is an infinite text adventure system driven by Large Language Models and Vector Databases. It provides an open-world narrative experience equipped with continuous memory and state management capabilities.
                                         </p>
-                                        
+
                                         <h4 className="font-bold text-[#4A4743] mt-8 mb-3 uppercase tracking-widest text-sm">Tech Stack & Tools</h4>
                                         <ul className="list-disc pl-5 space-y-2">
                                             <li><strong className="text-[#4A4743]">Frontend:</strong> Next.js (App Router), React, Tailwind CSS.</li>
@@ -384,8 +384,19 @@ export default function Home() {
                                                 <ul className="list-disc pl-5 space-y-2">
                                                     <li><strong>Sliding Window Archive:</strong> The latest turns that slide out of the chat history window are temporarily buffered in the <code className="bg-[#F2F0E9] px-1 rounded">Unprocessed Archive</code>. These recent plot details are fed directly into the LLM context to prevent immediate amnesia.</li>
                                                     <li><strong>Semantic Chunking & Vectorization:</strong> When the buffer reaches a threshold, the backend splits the text into pieces using semantic chunking rules, intentionally preserving context overlap between chunks to prevent semantic fragmentation. These dense narrative summaries are embedded and pushed to Pinecone.</li>
+                                                    <li><strong>Hybrid Search (Metadata + Vector):</strong> To solve the issue of LLMs recalling specific exact words poorly, the retrieval uses a concurrent hybrid approach. It fires both a metadata-filtered search and an unfiltered fallback search simultaneously, then deduplicates and merges the results for a high-accuracy, broad-coverage context hit.</li>
                                                     <li><strong>Intent Short-Circuit:</strong> Before querying the DB, the system evaluates the player's intent. If current UI state and recent history are completely sufficient to resolve simple actions (e.g., "I draw my sword"), it triggers a short-circuit bypass, skipping vector search entirely to eliminate latency.</li>
                                                 </ul>
+                                            </div>
+
+                                            {/* System Architecture Flowchart (PNG Image) */}
+                                            <div className="my-10 p-2 sm:p-4 bg-[#FAFAF8] rounded border border-[#EAE5D9] shadow-sm flex flex-col items-center">
+                                                <h4 className="font-bold text-[#4A4743] mb-4 sm:mb-6 tracking-widest text-center uppercase md:mt-2">System Architecture Flow</h4>
+                                                <img
+                                                    src="/pipeline.png"
+                                                    alt="System Architecture Pipeline"
+                                                    className="w-full max-w-5xl max-h-[90vh] rounded shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-[#D8D3C4] bg-white object-contain"
+                                                />
                                             </div>
                                         </div>
                                     </section>
@@ -399,21 +410,14 @@ export default function Home() {
 
                                         <div className="space-y-6">
                                             <div className="bg-[#FDFBF7] p-6 rounded border border-[#D8D3C4]">
-                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">Hybrid Search + RRF</h4>
-                                                <p className="mb-2"><strong>Current Issue:</strong> Pure vector search (Dense Retrieval) excels at semantic understanding but often fails to accurately recall specific proper nouns, rare inventory items, or complex NPC names.</p>
-                                                <p><strong>Improvement:</strong> Integrate BM25 sparse retrieval (exact keyword matching frequencies) alongside vector retrieval, and apply Reciprocal Rank Fusion (RRF) to cross-rank and merge the results for a dual-peak hit rate.</p>
-                                            </div>
-
-                                            <div className="bg-[#FDFBF7] p-6 rounded border border-[#D8D3C4]">
-                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">Agentic RAG (LangGraph)</h4>
-                                                <p className="mb-2"><strong>Current Issue:</strong> Extremely short player commands natively sent to the vector DB often retrieve entirely irrelevant noise, which in turn severely distracts the main writer model.</p>
-                                                <p className="mb-2"><strong>Improvement:</strong> Upgrade to an Agentic RAG architecture featuring cyclic reasoning loops:</p>
+                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">Agentic RAG (LangGraph) Document Grading</h4>
+                                                <p className="mb-2"><strong>Current Issue:</strong> Although hybrid search increases retrieval coverage and accuracy, short player commands natively sent to the DB may still retrieve mildly irrelevant noise or outdated context, which in turn distracts the main writer model.</p>
+                                                <p className="mb-2"><strong>Improvement:</strong> Upgrade to an Agentic RAG architecture introducing a self-reflection loop before generation:</p>
                                                 <ul className="list-disc pl-5 mb-2">
-                                                    <li><strong>Query Rewriting:</strong> An LLM will first expand the player's short intent into a fully fleshed-out contextual search query.</li>
-                                                    <li><strong>Document Grading:</strong> After finding raw chunks, a fast grading model evaluates and actively filters out irrelevant noise before anything is passed to the writer.</li>
+                                                    <li><strong>Document Grading (Active Filtering):</strong> After fetching raw context chunks via our hybrid search, a fast grading model evaluates the relevance of each chunk against the immediate state and player intent actively filtering out irrelevant noise before constructing the prompt.</li>
                                                 </ul>
                                                 <p className="text-red-400 text-sm mt-4 p-3 bg-red-50 rounded border border-red-100 italic">
-                                                    <strong>⚠️ Crucial Trade-off:</strong> While logical coherence and long-term memory accuracy will skyrocket, the multiple internal LLM self-reflection loops will inevitably increase TTFT (Time To First Token), negatively impacting real-time gameplay fluidity.
+                                                    <strong>⚠️ Crucial Trade-off:</strong> While logical coherence and long-term memory precision will improve, introducing an intermediate LLM grading step prior to generation will inevitably increase TTFT (Time To First Token), negatively impacting real-time gameplay fluidity.
                                                 </p>
                                             </div>
 
@@ -424,7 +428,7 @@ export default function Home() {
                                             </div>
                                         </div>
                                     </section>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -435,22 +439,28 @@ export default function Home() {
                                 <h4 className="text-xs font-bold tracking-[0.2em] text-[#8D7B68] mb-8 uppercase">Progress Navigation</h4>
                                 {/* 节点连线进度条体验 */}
                                 <ul className="space-y-8 relative before:absolute before:inset-0 before:ml-1.5 before:-translate-x-px before:h-full before:w-0.5 before:bg-[#EAE5D9]">
-                                    <li className="relative flex items-center gap-4 group">
-                                        <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
-                                        <button onClick={() => document.getElementById('intro-overview')?.scrollIntoView({ behavior: 'smooth' })} className="text-[#8D7B68] hover:text-[#4A4743] hover:font-bold transition-all text-left text-sm tracking-widest uppercase">
-                                            1. Overview
+                                    <li className="relative">
+                                        <button onClick={() => document.getElementById('intro-overview')?.scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-4 group w-full text-left">
+                                            <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
+                                            <span className="text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold transition-all text-sm tracking-widest uppercase">
+                                                1. Overview
+                                            </span>
                                         </button>
                                     </li>
-                                    <li className="relative flex items-center gap-4 group">
-                                        <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
-                                        <button onClick={() => document.getElementById('intro-pipeline')?.scrollIntoView({ behavior: 'smooth' })} className="text-[#8D7B68] hover:text-[#4A4743] hover:font-bold transition-all text-left text-sm tracking-widest uppercase">
-                                            2. Pipeline
+                                    <li className="relative">
+                                        <button onClick={() => document.getElementById('intro-pipeline')?.scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-4 group w-full text-left">
+                                            <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
+                                            <span className="text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold transition-all text-sm tracking-widest uppercase">
+                                                2. Pipeline
+                                            </span>
                                         </button>
                                     </li>
-                                    <li className="relative flex items-center gap-4 group">
-                                        <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
-                                        <button onClick={() => document.getElementById('intro-future')?.scrollIntoView({ behavior: 'smooth' })} className="text-[#8D7B68] hover:text-[#4A4743] hover:font-bold transition-all text-left text-sm tracking-widest uppercase">
-                                            3. Improvements
+                                    <li className="relative">
+                                        <button onClick={() => document.getElementById('intro-future')?.scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-4 group w-full text-left">
+                                            <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
+                                            <span className="text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold transition-all text-sm tracking-widest uppercase">
+                                                3. Improvements
+                                            </span>
                                         </button>
                                     </li>
                                 </ul>
