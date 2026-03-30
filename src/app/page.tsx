@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import { DEFAULT_STORY_SETTING } from '../lib/constants';
 
 export interface SessionMeta {
     id: string;
@@ -545,7 +546,16 @@ export default function Home() {
 
                             <form onSubmit={handleStartStory} className="space-y-6">
                                 <div className="space-y-2">
-                                    <label className="block text-sm font-medium text-[#5C554B] tracking-widest uppercase">Story Setting / World Background</label>
+                                    <div className="flex justify-between items-center">
+                                        <label className="block text-sm font-medium text-[#5C554B] tracking-widest uppercase">Story Setting / World Background</label>
+                                        <button
+                                            type="button"
+                                            onClick={() => setStorySetting(DEFAULT_STORY_SETTING)}
+                                            className="text-xs text-[#8D7B68] hover:text-[#4A4743] transition-colors underline decoration-dotted tracking-widest"
+                                        >
+                                            INJECT DEFAULT
+                                        </button>
+                                    </div>
                                     <textarea
                                         className="w-full h-48 bg-white bg-opacity-80 border-2 border-[#D8D3C4] focus:border-[#8D7B68] outline-none p-4 text-lg leading-relaxed placeholder-gray-400 transition-all rounded"
                                         placeholder="Enter your story's background... blank means apocalypse survival."

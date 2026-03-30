@@ -67,14 +67,81 @@ export async function retrieveMemories(queryIntent: QueryIntent, sessionId: stri
     // 1. 将增强型搜索字符串转化为向量
     const queryVector = await embeddings.embedQuery(enhancedQueryString);
 
-    // 2. Pinecone 直接检索 Top 10 (根据需求跳过细筛，直接取 top 10)
-    const queryResponse = await index.query({
-        vector: queryVector,
-        topK: 10,
-        includeMetadata: true
-    });
+    // 构建 metadata filter
+    const filterConditions: any[] = [];
+    if (queryIntent.characters_involved && queryIntent.characters_involved.length > 0) {
+        filterConditions.push({ characters_involved: { $in: queryIntent.characters_involved } });
+    }
+    if (queryIntent.items_involved && queryIntent.items_involved.length > 0) {
+        filterConditions.push({ items_involved: { $in: queryIntent.items_involved } });
+    }
+    if (queryIntent.locations_involved && queryIntent.locations_involved.length > 0) {
+        filterConditions.push({ location: { $in: queryIntent.locations_involved } });
+    }
 
-    if (!queryResponse.matches || queryResponse.matches.length === 0) {
+    let filterObj: any = undefined;
+    if (filterConditions.length > 0) {
+        filterObj = { $or: filterConditions };
+    }
+
+    // 2. 并发检索：带 filter 的检索 vs 原始无 filter 的检索
+    const queryPromises = [];
+
+    // Promise 0: Filtered Query
+    if (filterObj) {
+        queryPromises.push(
+            index.query({
+                vector: queryVector,
+                topK: 10,
+                includeMetadata: true,
+                filter: filterObj
+            })
+        );
+    } else {
+        queryPromises.push(Promise.resolve(null));
+    }
+
+    // Promise 1: Original Query
+    queryPromises.push(
+        index.query({
+            vector: queryVector,
+            topK: 10,
+            includeMetadata: true
+        })
+    );
+
+    const [filteredResponse, originalResponse] = await Promise.all(queryPromises);
+
+    const finalMatches: any[] = [];
+    const seenIds = new Set<string>();
+
+    // 1) 先收集有 metadata 过滤的结果
+    if (filteredResponse && filteredResponse.matches && filteredResponse.matches.length > 0) {
+        for (const match of filteredResponse.matches) {
+            finalMatches.push(match);
+            seenIds.add(match.id);
+        }
+        console.log(`[VectorDB] Metadata filtered retrieved ${filteredResponse.matches.length} memories.`);
+    }
+
+    // 2) 如果不足 10 个，且存在原始无过滤的结果，则进行补充去重
+    if (finalMatches.length < 10 && originalResponse && originalResponse.matches && originalResponse.matches.length > 0) {
+        let addedCount = 0;
+        for (const match of originalResponse.matches) {
+            if (finalMatches.length >= 10) break; // 凑够 10 个就退出
+
+            if (!seenIds.has(match.id)) {
+                finalMatches.push(match);
+                seenIds.add(match.id);
+                addedCount++;
+            }
+        }
+        if (addedCount > 0) {
+            console.log(`[VectorDB] Fallback logic supplemented ${addedCount} memories from original search.`);
+        }
+    }
+
+    if (finalMatches.length === 0) {
         console.log(`[VectorDB] No relevant memories found.`);
         return [];
     }
@@ -82,7 +149,7 @@ export async function retrieveMemories(queryIntent: QueryIntent, sessionId: stri
     const results: MemoryRecord[] = [];
 
     // 3. 解析结果
-    for (const match of queryResponse.matches) {
+    for (const match of finalMatches) {
         const meta = match.metadata as any;
         if (!meta) continue;
 
