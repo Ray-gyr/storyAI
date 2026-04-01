@@ -70,6 +70,14 @@ export async function updateSession(sessionId: string, sessionData: SessionData)
 }
 
 /**
+ * 删除服务器上的会话数据 (Redis)
+ */
+export async function deleteSession(sessionId: string): Promise<void> {
+    await redis.del(sessionId);
+    console.log(`[SessionStore] Deleted session from Redis: ${sessionId}`);
+}
+
+/**
  * 开新局：基于用户的初始故事设定 (storySetting)
  * 分别调用 StoryLLM 生成开场白，调用 WorkerLLM (也是 gpt-5-mini) 生成初始状态
  */

@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
 
         const session = await getSession(sessionId);
         if (!session) {
-            return new Response("当前游戏会话已过期或不存在，请刷新页面重新开始。", { status: 404 });
+            return new Response("Current game session has expired or does not exist. Please refresh the page to start a new game.", { status: 404 });
         }
 
         // 调用我们的底层 Orchestrator 拿到异步流迭代器
@@ -51,6 +51,6 @@ export async function POST(req: NextRequest) {
         });
 
     } catch (e: any) {
-        return new Response(`服务器内部错误: ${e.message}`, { status: 500 });
+        return new Response(`Server internal error: ${e.message}`, { status: 500 });
     }
 }

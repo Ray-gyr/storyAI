@@ -23,6 +23,20 @@ export default function Home() {
     const [loading, setLoading] = useState(false);
     const [storySetting, setStorySetting] = useState('');
     const scrollRef = useRef<HTMLDivElement>(null);
+    const longPressTimers = useRef<{ [key: string]: ReturnType<typeof setTimeout> }>({});
+
+    const handlePointerDown = (id: string, e: React.PointerEvent) => {
+        longPressTimers.current[id] = setTimeout(() => {
+            handleDeleteSession(id);
+        }, 800);
+    };
+
+    const clearPointerTimer = (id: string) => {
+        if (longPressTimers.current[id]) {
+            clearTimeout(longPressTimers.current[id]);
+            delete longPressTimers.current[id];
+        }
+    };
 
     // 初始加载历史
     useEffect(() => {
@@ -126,15 +140,15 @@ export default function Home() {
                     addOpenTab(meta);
                     setCurrentView('chat');
                 } else {
-                    alert("存档已损坏或过期");
+                    alert("Save file is corrupted or expired.");
                 }
             } else if (debugRes.status === 404) {
-                alert("该存档（旧版本内存记录）在云端数据库中不存在，请点击卡片右下角的 [DESTROY] 彻底删除这层旧维度的残留！");
+                alert("This save file does not exist in the cloud database. Please click [DELETE] to clear this legacy dimension!");
             } else {
-                alert(`获取云端存档失败 (HTTP ${debugRes.status})，可能是环境变量或 Redis 配置问题。`);
+                alert(`Failed to fetch cloud save (HTTP ${debugRes.status}). Please check environment variables or Redis config.`);
             }
         } catch (e) {
-            alert("读取存档网络失败");
+            alert("Network error: failed to read the save file.");
         } finally {
             setLoading(false);
         }
@@ -254,9 +268,9 @@ export default function Home() {
         }
     };
 
-    const handleDeleteSession = (idToDelete: string, e: React.MouseEvent) => {
-        e.stopPropagation();
-        if (confirm("确定要删除这个世界吗？这将彻底从云端擦除数据！")) {
+    const handleDeleteSession = async (idToDelete: string, e?: React.MouseEvent | React.PointerEvent) => {
+        if (e) e.stopPropagation();
+        if (confirm("Are you sure you want to delete this world?")) {
             const updated = savedSessions.filter(s => s.id !== idToDelete);
             setSavedSessions(updated);
             localStorage.setItem('story_sessions', JSON.stringify(updated));
@@ -271,33 +285,44 @@ export default function Home() {
                 setActiveSessionId(null);
                 setCurrentView('home');
             }
+
+            try {
+                const res = await fetch('/api/story/delete', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ sessionId: idToDelete })
+                });
+                if (!res.ok) console.error("Cloud deletion failed");
+            } catch (err) {
+                console.error("Cloud deletion network error", err);
+            }
         }
     };
 
     return (
-        <div className="h-screen bg-[#FDFBF7] text-[#333333] font-serif flex flex-col md:flex-row selection:bg-amber-100 overflow-hidden">
-            {/* 左侧边栏 / 移动端顶部导航 */}
-            <div className="w-full md:w-64 bg-white border-b md:border-r md:border-b-0 border-[#EAE5D9] flex flex-col shadow-sm shrink-0 md:h-screen z-20">
-                <div className="p-4 md:p-6 border-b border-[#EAE5D9] flex justify-between items-center">
+        <div className="h-[100dvh] bg-[#FDFBF7] text-[#333333] font-serif flex flex-col-reverse md:flex-row selection:bg-amber-100 overflow-hidden">
+            {/* 移动端底部导航 / 左侧边栏 */}
+            <div className="w-full md:w-64 bg-white border-t md:border-r md:border-t-0 border-[#EAE5D9] flex flex-col shadow-[0_-2px_10px_rgba(0,0,0,0.02)] md:shadow-sm shrink-0 md:h-[100dvh] z-20 pb-[max(0.75rem,env(safe-area-inset-bottom))] md:pb-0">
+                <div className="hidden md:flex p-4 md:p-6 border-b border-[#EAE5D9] justify-between items-center">
                     <h1 className="text-xl font-bold tracking-[0.2em] text-[#4A4743]">AI STORY</h1>
                 </div>
                 <nav className="flex-none md:flex-1 p-2 md:p-4 flex flex-row md:flex-col gap-2 md:gap-0 md:space-y-2 overflow-x-auto whitespace-nowrap [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                     <button
                         onClick={() => setCurrentView('home')}
-                        className={`shrink-0 md:w-full text-left px-4 py-2 md:py-3 rounded tracking-widest transition-colors ${currentView === 'home' || currentView === 'new_story' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
+                        className={`text-xs md:text-base shrink-0 md:w-full text-center md:text-left px-3 sm:px-4 py-2 md:py-3 rounded tracking-wider md:tracking-widest transition-colors ${currentView === 'home' || currentView === 'new_story' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
                     >
                         HOME
                     </button>
                     <button
                         onClick={() => setCurrentView('intro')}
-                        className={`shrink-0 md:w-full text-left px-4 py-2 md:py-3 rounded tracking-widest transition-colors ${currentView === 'intro' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
+                        className={`text-xs md:text-base shrink-0 md:w-full text-center md:text-left px-3 sm:px-4 py-2 md:py-3 rounded tracking-wider md:tracking-widest transition-colors ${currentView === 'intro' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
                     >
-                        PROJECT OVERVIEW
+                        INTRO
                     </button>
 
                     {openTabs.length > 0 && (
                         <div className="flex flex-row md:flex-col items-center md:items-stretch md:pt-6 md:pb-2 md:border-t border-[#EAE5D9] md:mt-4 gap-2 md:gap-0 pl-2 md:pl-0 border-l md:border-l-0">
-                            <h3 className="shrink-0 flex items-center md:hidden text-xs font-bold tracking-widest text-gray-400 px-2 uppercase">Realms:</h3>
+                            <h3 className="shrink-0 flex items-center md:hidden text-[10px] font-bold tracking-widest text-gray-400 px-1 uppercase">REALMS:</h3>
                             <h3 className="hidden md:block text-xs font-bold tracking-widest text-gray-400 mb-3 px-4 uppercase">Open Realms</h3>
                             {openTabs.map(tab => (
                                 <div
@@ -307,14 +332,14 @@ export default function Home() {
                                             loadSessionChat(tab.id);
                                         }
                                     }}
-                                    className={`shrink-0 md:w-full text-left px-4 py-2 md:py-3 rounded tracking-widest transition-colors cursor-pointer flex justify-between items-center group md:mb-1 ${activeSessionId === tab.id && currentView === 'chat' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
+                                    className={`shrink-0 md:w-full text-center md:text-left px-3 sm:px-4 py-2 md:py-3 rounded tracking-wider md:tracking-widest transition-colors cursor-pointer flex justify-between items-center group md:mb-1 ${activeSessionId === tab.id && currentView === 'chat' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
                                 >
-                                    <span className="truncate flex-1 text-sm uppercase md:w-auto w-24" title={tab.title}>
-                                        {tab.title}
+                                    <span className="truncate flex-1 text-xs md:text-sm uppercase md:w-auto w-16 md:w-24" title={tab.title}>
+                                        {tab.id === activeSessionId && currentView === 'chat' ? `[ ${tab.title} ]` : tab.title}
                                     </span>
                                     <button
                                         onClick={(e) => handleCloseTab(tab.id, e)}
-                                        className="md:opacity-0 group-hover:opacity-100 text-[#8D7B68] hover:text-red-400 px-2 font-bold ml-2 md:ml-0"
+                                        className="md:opacity-0 group-hover:opacity-100 text-[#8D7B68] hover:text-red-400 px-1 md:px-2 font-bold ml-1 md:ml-0 text-xs md:text-base"
                                         title="Close Tab"
                                     >
                                         ×
@@ -473,26 +498,31 @@ export default function Home() {
                 {currentView === 'home' && (
                     <div className="p-6 md:p-12 h-full overflow-y-auto w-full animate-in fade-in duration-500">
                         <h2 className="text-xl md:text-2xl font-bold tracking-widest text-[#4A4743] mb-6 md:mb-10 border-b pb-4 border-[#EAE5D9]">YOUR UNIVERSES</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8">
                             {isClient && savedSessions.map((session, index) => (
                                 <div
                                     key={session.id}
                                     onClick={() => loadSessionChat(session.id)}
-                                    className="bg-white border border-[#EAE5D9] rounded-xl p-8 hover:shadow-xl hover:border-[#8D7B68] transition-all cursor-pointer group relative h-64 flex flex-col justify-between"
+                                    onPointerDown={(e) => handlePointerDown(session.id, e)}
+                                    onPointerUp={() => clearPointerTimer(session.id)}
+                                    onPointerLeave={() => clearPointerTimer(session.id)}
+                                    onPointerCancel={() => clearPointerTimer(session.id)}
+                                    onContextMenu={(e) => e.preventDefault()}
+                                    className="select-none bg-white border border-[#EAE5D9] rounded-xl p-4 md:p-8 hover:shadow-xl hover:border-[#8D7B68] transition-all cursor-pointer group relative h-48 md:h-64 flex flex-col justify-between"
                                 >
                                     <div>
-                                        <h3 className="text-xl font-bold text-[#4A4743] tracking-widest mb-3 line-clamp-3 break-words leading-snug" title={session.title}>{session.title}</h3>
+                                        <h3 className="text-sm md:text-xl font-bold text-[#4A4743] tracking-widest mb-2 md:mb-3 line-clamp-3 break-words leading-snug" title={session.title}>{session.title}</h3>
                                         {session.style && session.style !== "UNKNOWN" && (
-                                            <p className="text-xs text-[#5C554B] font-bold bg-[#F2F0E9] border border-[#EAE5D9] inline-block px-3 py-1 rounded tracking-widest uppercase">{session.style}</p>
+                                            <p className="text-[10px] md:text-xs text-[#5C554B] font-bold bg-[#F2F0E9] border border-[#EAE5D9] inline-block px-2 py-0.5 md:px-3 md:py-1 rounded tracking-widest uppercase">{session.style}</p>
                                         )}
                                     </div>
                                     <div className="flex justify-between items-end">
-                                        <span className="text-[#8D7B68] text-sm group-hover:underline decoration-dotted tracking-widest">ENTER REALM →</span>
+                                        <span className="text-[#8D7B68] text-[10px] md:text-sm group-hover:underline decoration-dotted tracking-widest">ENTER →</span>
                                         <button
                                             onClick={(e) => handleDeleteSession(session.id, e)}
-                                            className="text-red-300 hover:text-red-500 text-sm tracking-widest opacity-0 group-hover:opacity-100 transition-opacity"
+                                            className="hidden md:block text-red-300 hover:text-red-500 text-sm tracking-widest opacity-0 group-hover:opacity-100 transition-opacity"
                                         >
-                                            DESTROY
+                                            DELETE
                                         </button>
                                     </div>
                                 </div>
@@ -501,17 +531,17 @@ export default function Home() {
                             {isClient && savedSessions.length === 0 && (
                                 <div
                                     onClick={loading ? undefined : handleStartDefaultStory}
-                                    className={`bg-[#4A4743] border border-[#2C2B29] rounded-xl p-8 transition-all group relative h-64 flex flex-col justify-between ${loading ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-xl hover:-translate-y-1 cursor-pointer'}`}
+                                    className={`bg-[#4A4743] border border-[#2C2B29] rounded-xl p-4 md:p-8 transition-all group relative h-48 md:h-64 flex flex-col justify-between ${loading ? 'opacity-50 cursor-not-allowed' : 'hover:shadow-xl hover:-translate-y-1 cursor-pointer'}`}
                                 >
                                     <div>
-                                        <h3 className="text-xl font-bold text-[#FDFBF7] tracking-widest mb-2">Default Scenario: Apocalypse Rebirth</h3>
-                                        <p className="text-sm text-[#D8D3C4] italic mt-2 leading-relaxed">
+                                        <h3 className="text-sm md:text-xl font-bold text-[#FDFBF7] tracking-widest mb-2">Default: Apocalypse Rebirth</h3>
+                                        <p className="text-[10px] md:text-sm text-[#D8D3C4] italic mt-1 md:mt-2 leading-relaxed line-clamp-3 md:line-clamp-none">
                                             You once struggled in the abyss apocalypse for ten years, betrayed by your comrades. Now you suddenly open your eyes and find yourself reborn 30 days before the disaster...
                                         </p>
                                     </div>
                                     <div className="flex justify-between items-end">
-                                        <span className={`text-[#FAFAF8] text-sm tracking-widest font-bold ${loading ? '' : 'group-hover:underline decoration-dotted'}`}>
-                                            {loading ? 'WEAVING...' : 'ENTER SCENARIO →'}
+                                        <span className={`text-[#FAFAF8] text-[10px] md:text-sm tracking-widest font-bold ${loading ? '' : 'group-hover:underline decoration-dotted'}`}>
+                                            {loading ? 'WEAVING...' : 'ENTER →'}
                                         </span>
                                     </div>
                                 </div>
@@ -520,10 +550,10 @@ export default function Home() {
                             {isClient && savedSessions.length < 3 && (
                                 <div
                                     onClick={() => setCurrentView('new_story')}
-                                    className="border-2 border-dashed border-[#D8D3C4] rounded-xl p-8 hover:bg-[#FAFAF8] hover:border-[#8D7B68] transition-all cursor-pointer flex flex-col items-center justify-center h-64 text-[#8D7B68]"
+                                    className="border-2 border-dashed border-[#D8D3C4] rounded-xl p-4 md:p-8 hover:bg-[#FAFAF8] hover:border-[#8D7B68] transition-all cursor-pointer flex flex-col items-center justify-center h-48 md:h-64 text-[#8D7B68]"
                                 >
-                                    <span className="text-5xl mb-4 font-light">+</span>
-                                    <span className="tracking-[0.2em] font-bold">NEW UNIVERSE</span>
+                                    <span className="text-3xl md:text-5xl mb-2 md:mb-4 font-light">+</span>
+                                    <span className="text-xs md:text-base tracking-[0.2em] font-bold text-center">NEW UNIVERSE</span>
                                 </div>
                             )}
                         </div>
@@ -589,32 +619,32 @@ export default function Home() {
 
                 {/* 视图4：聊天界面 */}
                 {currentView === 'chat' && (
-                    <div className="flex-1 flex flex-col h-full bg-white relative animate-in fade-in duration-500">
-                        <div className="py-5 px-6 border-b border-[#EAE5D9] bg-[#FAFAF8] flex justify-between items-center relative z-10">
+                    <div className="flex-1 flex flex-col h-full bg-white relative animate-in fade-in duration-500 min-w-0">
+                        <div className="py-4 sm:py-5 px-4 sm:px-6 border-b border-[#EAE5D9] bg-[#FAFAF8] flex justify-between items-center relative z-10 gap-2 sm:gap-4">
                             <button
                                 onClick={() => { setCurrentView('home'); setActiveSessionId(null); }}
-                                className="text-xs sm:text-sm text-gray-400 hover:text-[#8D7B68] transition tracking-widest"
+                                className="text-[10px] sm:text-sm text-gray-400 hover:text-[#8D7B68] transition tracking-widest shrink-0"
                             >
-                                ← LEAVE REALM
+                                ← LEAVE
                             </button>
-                            <h1 className="text-xl sm:text-lg font-bold tracking-[0.3em] text-[#4A4743] truncate px-4 uppercase">
+                            <h1 className="text-sm sm:text-lg font-bold tracking-[0.2em] sm:tracking-[0.3em] text-[#4A4743] truncate flex-1 text-center uppercase min-w-0">
                                 [ {savedSessions.find(s => s.id === activeSessionId)?.title || activeSessionId} ]
                             </h1>
                             <a
                                 href={`/debug?sessionId=${activeSessionId}`}
                                 target="_blank"
-                                className="text-xs sm:text-sm text-gray-400 hover:text-[#8D7B68] transition underline decoration-dotted tracking-widest font-bold"
+                                className="text-[10px] sm:text-sm text-gray-400 hover:text-[#8D7B68] transition underline decoration-dotted tracking-widest font-bold shrink-0"
                             >
-                                STORY DETAIL
+                                DETAIL
                             </a>
                         </div>
 
-                        <div ref={scrollRef} className="flex-1 overflow-y-auto p-6 sm:p-12 space-y-10 scroll-smooth custom-scrollbar bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')]">
+                        <div ref={scrollRef} className="flex-1 overflow-y-auto p-4 sm:p-12 space-y-6 sm:space-y-10 scroll-smooth custom-scrollbar bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')]">
                             {messages.map((m, i) => (
                                 <div key={i} className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'}`}>
                                     <div
-                                        className={`max-w-[90%] sm:max-w-[80%] leading-loose tracking-wide sm:text-lg text-[#2C2B29] bg-white bg-opacity-90 p-6 sm:p-8 rounded shadow-sm border border-[#EAE5D9] transition-all ${m.role === 'user' ? 'font-semibold text-[#5C554B]' : ''}`}
-                                        style={m.role === 'assistant' ? { textIndent: '2em' } : {}}
+                                        className={`max-w-[95%] sm:max-w-[80%] leading-relaxed sm:leading-loose tracking-wide text-sm sm:text-lg text-[#2C2B29] bg-white bg-opacity-90 p-4 sm:p-8 rounded shadow-sm border border-[#EAE5D9] transition-all ${m.role === 'user' ? 'font-semibold text-[#5C554B]' : ''}`}
+                                        style={m.role === 'assistant' ? { textIndent: '1.5em' } : {}}
                                     >
                                         {m.role === 'assistant' && m.content === '' && loading && i === messages.length - 1 ? (
                                             <span className="text-[#8D7B68] italic tracking-widest text-sm sm:text-base animate-pulse block" style={{ textIndent: 0 }}>
@@ -630,12 +660,12 @@ export default function Home() {
                             ))}
                         </div>
 
-                        <div className="p-4 sm:p-6 bg-[#FAFAF8] border-t border-[#EAE5D9] z-10 relative shadow-[0_-10px_30px_rgba(0,0,0,0.03)]">
-                            <form onSubmit={handleSubmit} className="flex gap-4 max-w-5xl mx-auto items-center">
+                        <div className="p-3 sm:p-6 bg-[#FAFAF8] border-t border-[#EAE5D9] z-10 relative shadow-[0_-10px_30px_rgba(0,0,0,0.03)] pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:pb-6">
+                            <form onSubmit={handleSubmit} className="flex gap-2 sm:gap-4 max-w-5xl mx-auto items-center">
                                 <input
                                     type="text"
-                                    className="flex-1 bg-white border-b-2 border-[#EAE5D9] focus:border-[#8D7B68] outline-none px-4 py-3 text-lg sm:text-xl placeholder-gray-300 transition-colors"
-                                    placeholder={loading ? "Calculating, please wait..." : "Where will you go?"}
+                                    className="flex-1 bg-white border-b-2 border-[#EAE5D9] focus:border-[#8D7B68] outline-none px-3 sm:px-4 py-2 sm:py-3 text-base sm:text-xl placeholder-gray-300 transition-colors min-w-0"
+                                    placeholder={loading ? "Calculating..." : "Where will you go?"}
                                     value={input}
                                     onChange={e => setInput(e.target.value)}
                                     disabled={loading}
@@ -643,9 +673,9 @@ export default function Home() {
                                 <button
                                     type="submit"
                                     disabled={loading || !input.trim()}
-                                    className="px-8 py-3 bg-[#4A4743] hover:bg-[#2C2B29] text-white font-bold tracking-[0.2em] rounded transition-colors disabled:opacity-30 disabled:cursor-not-allowed uppercase"
+                                    className="px-4 sm:px-8 py-2 sm:py-3 text-sm sm:text-base bg-[#4A4743] hover:bg-[#2C2B29] text-white font-bold tracking-[0.2em] rounded transition-colors disabled:opacity-30 disabled:cursor-not-allowed uppercase shrink-0"
                                 >
-                                    ACTION
+                                    ACT
                                 </button>
                             </form>
                         </div>

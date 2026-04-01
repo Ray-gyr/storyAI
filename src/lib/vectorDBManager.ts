@@ -42,6 +42,23 @@ export async function storeMemoryRecord(record: MemoryRecord, sessionId: string)
 }
 
 /**
+ * 删除某一整个宇宙的记忆 (Pinecone Namespace)
+ */
+export async function deleteMemoryNamespace(sessionId: string): Promise<void> {
+    try {
+        const index = getPineconeIndex().namespace(sessionId);
+        await index.deleteAll();
+        console.log(`[VectorDB] Deleted entire memory namespace for: ${sessionId}`);
+    } catch (e: any) {
+        if (e.name === 'PineconeNotFoundError' || e.message?.includes('404')) {
+            console.log(`[VectorDB] Namespace already empty or non-existent for: ${sessionId}`);
+        } else {
+            console.error(`[VectorDB] Failed to delete namespace (it may be a network timeout or outage) for ${sessionId}:`, e.message);
+        }
+    }
+}
+
+/**
  * 根据意图检索记忆
  * @param queryIntent 经意图翻译器解析出来的标准检索格式
  * @param sessionId 每个游戏的唯一会话 ID
