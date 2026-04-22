@@ -63,9 +63,9 @@ Chat history is maintained as a FIFO queue in Redis.
 System Architecture Diagram:
 
 <div align="center">
-  <img src="public/pipeline.png" width="70%" alt="System Architecture Diagram" />
+  <img src="public/pipeline.png" width="60%" alt="System Architecture Diagram" />
 </div>
----
+
 
 ## Key Engineering Decisions
 
