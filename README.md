@@ -75,6 +75,7 @@ Step 2: Tiered Search
 If Tier 1's result doesn't meet the threshold, the system will deduplicate the results from Tier 1 and Tier 2 and merge them.
 
 **Why this matters:** multi-tier search ensures both precision and recall, solving the short-query retrieval problem.
+
 **Why not hybrid search (BM25+RRF)?**
 -  Key entities appear frequently across almost every story turn. This causes IDF weights to lose their effectiveness. BM25 fails to accurately rank the most relevant plot points.
 -  Reciprocal Rank Fusion (RRF) is only effective when both retrieval paths provide reliable, independent signals. In a narrative environment where keyword scores are flat, fusing them with high-quality vector results would simply dilute the precision of the dense embeddings
