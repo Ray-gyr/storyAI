@@ -15,7 +15,11 @@
 <details>
   <summary><b>🔍 Check more screenshots (Home, New Universe, Detail)</b></summary>
   <p align="center">
+<<<<<<< HEAD
     <img src="public/home_page.png" width="100%" alt="Home" />
+=======
+    <img src="public/home.png" width="100%" alt="Home" />
+>>>>>>> ccdce2c (update readme and logic)
     <br /><i>Universe Hub</i><br /><br />
     <img src="public/new_universe.png" width="100%" alt="New Universe" />
     <br /><i>World Creation</i><br /><br />
