@@ -5,7 +5,15 @@
 **[Live Demo](https://story-ai-ray.vercel.app/)** · Next.js · LangChain.js · Pinecone · Upstash Redis · GPT-5-mini & GPT-4o-mini
 
 ## Screenshot
-![home](public/home_page.png)
+
+<div align="center">
+  <img src="public/home_page.png" width="48%" alt="Home" />
+  <img src="public/new_universe.png" width="48%" alt="New Universe" />
+  <br>
+  <img src="public/chat.png" width="48%" alt="Chat" />
+  <img src="public/detail.png" width="48%" alt="Detail" />
+</div>
+
 ---
 
 ## The Core Problem
@@ -54,7 +62,9 @@ Chat history is maintained as a FIFO queue in Redis.
 
 System Architecture Diagram:
 
-![System Architecture Diagram](public/pipeline.png)
+<div align="center">
+  <img src="public/pipeline.png" width="70%" alt="System Architecture Diagram" />
+</div>
 ---
 
 ## Key Engineering Decisions
