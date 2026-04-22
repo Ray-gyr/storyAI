@@ -13,7 +13,7 @@
 <br />
 
 <details>
-  <summary><b>🔍 Check more screenshot (Home, New Universe, Detail)</b></summary>
+  <summary><b>🔍 Check more screenshots (Home, New Universe, Detail)</b></summary>
   <p align="center">
     <img src="public/home_page.png" width="100%" alt="Home" />
     <br /><i>Universe Hub</i><br /><br />
