@@ -29,6 +29,7 @@ function HomeInner() {
     const [openTabs, setOpenTabs] = useState<SessionMeta[]>([]);
     const [isClient, setIsClient] = useState(false);
     const [isFromPortfolio, setIsFromPortfolio] = useState(false);
+    const [activeSection, setActiveSection] = useState('intro-overview');
 
     const [currentView, setCurrentView] = useState<'home' | 'intro' | 'chat' | 'new_story'>(() => {
         if (typeof window === 'undefined') return 'home';
@@ -169,9 +170,17 @@ function HomeInner() {
         }
     }, [activeSessionId, currentView, isClient, fromParam]);
 
+
+
     const addOpenTab = (meta: SessionMeta) => {
         setOpenTabs(prev => {
-            const next = [...prev.filter(t => t.id !== meta.id), meta];
+            const exists = prev.find(t => t.id === meta.id);
+            let next;
+            if (exists) {
+                next = prev.map(t => t.id === meta.id ? meta : t);
+            } else {
+                next = [...prev, meta];
+            }
             localStorage.setItem('story_open_tabs', JSON.stringify(next));
             return next;
         });
@@ -467,7 +476,7 @@ function HomeInner() {
                                     className={`shrink-0 md:w-full text-center md:text-left px-3 sm:px-4 py-2 md:py-3 rounded tracking-wider md:tracking-widest transition-colors cursor-pointer flex justify-between items-center group md:mb-1 ${activeSessionId === tab.id && currentView === 'chat' ? 'bg-[#F2F0E9] text-[#8D7B68] font-bold' : 'text-[#8D7B68] hover:bg-[#FAFAF8]'}`}
                                 >
                                     <span className="truncate flex-1 text-xs md:text-sm uppercase md:w-auto w-16 md:w-24" title={tab.title}>
-                                        {tab.id === activeSessionId && currentView === 'chat' ? `[ ${tab.title} ]` : tab.title}
+                                        {tab.title}
                                     </span>
                                     <button
                                         onClick={(e) => handleCloseTab(tab.id, e)}
@@ -489,9 +498,42 @@ function HomeInner() {
                 {/* 视图1：项目介绍 */}
                 {currentView === 'intro' && (
                     <div className="flex flex-col lg:flex-row h-full animate-in fade-in duration-500 overflow-hidden bg-white w-full">                        {/* 左侧主要内容 */}
-                        <div className="flex-1 p-8 sm:p-12 overflow-y-auto scroll-smooth custom-scrollbar" id="intro-scroll-container">
+                        <div
+                            className="flex-1 p-8 sm:p-12 overflow-y-auto scroll-smooth custom-scrollbar"
+                            id="intro-scroll-container"
+                            onScroll={(e) => {
+                                const target = e.currentTarget;
+                                // Buffer of 20px to detect bottom
+                                if (target.scrollHeight - target.scrollTop <= target.clientHeight + 20) {
+                                    setActiveSection('intro-learned');
+                                    return;
+                                }
+
+                                const sections = ['intro-overview', 'intro-pipeline', 'intro-engineering', 'intro-limitations', 'intro-learned'];
+                                const containerRect = target.getBoundingClientRect();
+                                const focusY = containerRect.top + 150;
+
+                                for (let i = sections.length - 1; i >= 0; i--) {
+                                    const el = document.getElementById(sections[i]);
+                                    if (el) {
+                                        if (el.getBoundingClientRect().top <= focusY) {
+                                            setActiveSection(sections[i]);
+                                            break;
+                                        }
+                                    }
+                                }
+                            }}
+                        >
                             <div className="max-w-4xl mx-auto">
-                                <h2 className="text-3xl font-bold tracking-[0.2em] text-[#4A4743] mb-10 border-b pb-4 border-[#EAE5D9] uppercase">Technical Architecture</h2>
+                                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-10 border-b pb-4 border-[#EAE5D9]">
+                                    <h2 className="text-3xl font-bold tracking-[0.2em] text-[#4A4743] uppercase mb-4 sm:mb-0">Technical Architecture</h2>
+                                    <a href="https://github.com/Ray-gyr/storyAI" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#FAFAF8] border border-[#D8D3C4] text-[#8D7B68] hover:text-[#4A4743] hover:bg-[#F2F0E9] hover:border-[#8D7B68] transition-all text-sm font-bold tracking-widest shadow-sm hover:shadow group w-fit">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" className="group-hover:scale-110 transition-transform">
+                                            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                                        </svg>
+                                        GITHUB
+                                    </a>
+                                </div>
 
                                 <div className="text-[#5C554B] leading-relaxed space-y-12 pb-24">
 
@@ -556,7 +598,7 @@ function HomeInner() {
                                                 <h4 className="font-bold text-[#4A4743] mb-3 text-lg">Track 1 — Global State Machine</h4>
                                                 <p className="mb-4">After the story generator LLM (gpt-5-mini) finishes generating a response, a background Worker LLM (gpt-4o-mini) runs independently of the main story generation. It reads the latest dialogue and extracts <strong>only what changed</strong> — a structured <code>StateDiff</code> validated against a Zod schema:</p>
                                                 <pre className="text-xs sm:text-sm text-gray-700 bg-white p-4 rounded border border-[#EAE5D9] overflow-x-auto mb-4 leading-relaxed">
-{`// Example diff extracted after "I pick up the ancient sword"
+                                                    {`// Example diff extracted after "I pick up the ancient sword"
 {
   updated_character:[{name:"player",description:"A young man from the Shire holds the ancient sword"}],
   added_item:[{name:"Ancient Sword of Angles",description:"A magical sword made by angles that glows in the dark."}],
@@ -564,7 +606,7 @@ function HomeInner() {
   state_summary:"The player picked up the ancient sword of angles."
 }`}
                                                 </pre>
-                                                <p className="mb-2">This diff is merged into <code>currentState</code> in Redis. The state table stays bounded regardless of play length, and every future generation gets the full world state as a constraint without any growing overhead.</p>
+                                                <p className="mb-2">This diff is merged into <strong>CurrentState</strong> in Redis. The state table stays bounded regardless of play length, and every future generation gets the full world state as a constraint without any growing overhead.</p>
                                                 <p className="text-sm bg-[#F2F0E9] p-3 rounded text-[#5C554B] mt-4"><strong>Why this matters:</strong> Separating state extraction from story generation means the main LLM never has to "remember" facts — they're always injected as structured ground truth.</p>
                                             </div>
 
@@ -596,12 +638,12 @@ function HomeInner() {
                                     {/* Section 3 */}
                                     <section id="intro-engineering" className="scroll-mt-12">
                                         <h3 className="text-2xl font-bold text-[#4A4743] tracking-widest mb-6 border-l-4 border-[#8D7B68] pl-4">3. Key Engineering Decisions</h3>
-                                        
+
                                         <div className="space-y-8">
                                             <div>
                                                 <h4 className="text-xl font-bold text-[#4A4743] mb-3">Tiered Search (not just vector similarity)</h4>
                                                 <p className="mb-4">Short player commands like "attack the guard" don't embed well — they lack semantic richness. Pure vector search returns noisy, loosely-related memories.</p>
-                                                
+
                                                 <div className="pl-4 border-l-2 border-[#8D7B68] mb-4">
                                                     <strong className="block text-[#4A4743] mb-2">Step 1: Query Enhancement</strong>
                                                     <ul className="list-disc pl-5 space-y-1 mb-4 text-sm sm:text-base">
@@ -609,15 +651,15 @@ function HomeInner() {
                                                         <li><strong>De-reference:</strong> Replaces pronouns with actual entity names.</li>
                                                         <li><strong>Entity extraction:</strong> Extracts entities from the query to improve metadata filtering.</li>
                                                     </ul>
-                                                    
+
                                                     <strong className="block text-[#4A4743] mb-2">Step 2: Tiered Search</strong>
                                                     <ul className="list-disc pl-5 space-y-1 mb-4 text-sm sm:text-base">
-                                                        <li><strong>Tier 1: <code>metadata-filtered vector search</code></strong> — The system first queries Pinecone with a metadata filter requiring at least one entity identified by the rewriter. This forces the retrieval to stay anchored to the current scene, location, or involved NPCs.</li>
-                                                        <li><strong>Tier 2: <code>unconstrained fallback search</code></strong> — Concurrently, the system performs a broad semantic sweep without metadata constraints.</li>
+                                                        <li><strong>Tier 1: <strong>Metadata-filtered Vector Search</strong></strong> — The system first queries Pinecone with a metadata filter requiring at least one entity identified by the rewriter. This forces the retrieval to stay anchored to the current scene, location, or involved NPCs.</li>
+                                                        <li><strong>Tier 2: <strong>Unconstrained Fallback Search</strong></strong> — Concurrently, the system performs a broad semantic sweep without metadata constraints.</li>
                                                     </ul>
                                                 </div>
                                                 <p className="mb-4">If Tier 1's result doesn't meet the threshold, the system will deduplicate the results from Tier 1 and Tier 2 and merge them.</p>
-                                                
+
                                                 <div className="bg-[#FAFAF8] p-4 rounded border border-[#EAE5D9] mb-4">
                                                     <p className="mb-2"><strong>Why this matters:</strong> multi-tier search ensures both precision and recall, solving the short-query retrieval problem.</p>
                                                     <strong className="block text-[#4A4743] mb-2">Why not hybrid search (BM25+RRF)?</strong>
@@ -689,40 +731,40 @@ function HomeInner() {
                                 <ul className="space-y-8 relative before:absolute before:inset-0 before:ml-1.5 before:-translate-x-px before:h-full before:w-0.5 before:bg-[#EAE5D9]">
                                     <li className="relative">
                                         <button onClick={() => document.getElementById('intro-overview')?.scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-4 group w-full text-left">
-                                            <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
-                                            <span className="text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold transition-all text-sm tracking-widest uppercase">
+                                            <div className={`h-3 w-3 rounded-full border-2 border-[#8D7B68] z-10 shrink-0 transition-colors ${activeSection === 'intro-overview' ? 'bg-[#8D7B68]' : 'bg-white group-hover:bg-[#8D7B68]'}`}></div>
+                                            <span className={`transition-all text-sm tracking-widest uppercase ${activeSection === 'intro-overview' ? 'text-[#4A4743] font-bold' : 'text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold'}`}>
                                                 1. Overview
                                             </span>
                                         </button>
                                     </li>
                                     <li className="relative">
                                         <button onClick={() => document.getElementById('intro-pipeline')?.scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-4 group w-full text-left">
-                                            <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
-                                            <span className="text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold transition-all text-sm tracking-widest uppercase">
+                                            <div className={`h-3 w-3 rounded-full border-2 border-[#8D7B68] z-10 shrink-0 transition-colors ${activeSection === 'intro-pipeline' ? 'bg-[#8D7B68]' : 'bg-white group-hover:bg-[#8D7B68]'}`}></div>
+                                            <span className={`transition-all text-sm tracking-widest uppercase ${activeSection === 'intro-pipeline' ? 'text-[#4A4743] font-bold' : 'text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold'}`}>
                                                 2. Pipeline
                                             </span>
                                         </button>
                                     </li>
                                     <li className="relative">
                                         <button onClick={() => document.getElementById('intro-engineering')?.scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-4 group w-full text-left">
-                                            <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
-                                            <span className="text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold transition-all text-sm tracking-widest uppercase">
+                                            <div className={`h-3 w-3 rounded-full border-2 border-[#8D7B68] z-10 shrink-0 transition-colors ${activeSection === 'intro-engineering' ? 'bg-[#8D7B68]' : 'bg-white group-hover:bg-[#8D7B68]'}`}></div>
+                                            <span className={`transition-all text-sm tracking-widest uppercase ${activeSection === 'intro-engineering' ? 'text-[#4A4743] font-bold' : 'text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold'}`}>
                                                 3. Decisions
                                             </span>
                                         </button>
                                     </li>
                                     <li className="relative">
                                         <button onClick={() => document.getElementById('intro-limitations')?.scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-4 group w-full text-left">
-                                            <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
-                                            <span className="text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold transition-all text-sm tracking-widest uppercase">
+                                            <div className={`h-3 w-3 rounded-full border-2 border-[#8D7B68] z-10 shrink-0 transition-colors ${activeSection === 'intro-limitations' ? 'bg-[#8D7B68]' : 'bg-white group-hover:bg-[#8D7B68]'}`}></div>
+                                            <span className={`transition-all text-sm tracking-widest uppercase ${activeSection === 'intro-limitations' ? 'text-[#4A4743] font-bold' : 'text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold'}`}>
                                                 4. Limitations
                                             </span>
                                         </button>
                                     </li>
                                     <li className="relative">
                                         <button onClick={() => document.getElementById('intro-learned')?.scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-4 group w-full text-left">
-                                            <div className="h-3 w-3 rounded-full bg-white border-2 border-[#8D7B68] z-10 shrink-0 group-hover:bg-[#8D7B68] transition-colors"></div>
-                                            <span className="text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold transition-all text-sm tracking-widest uppercase">
+                                            <div className={`h-3 w-3 rounded-full border-2 border-[#8D7B68] z-10 shrink-0 transition-colors ${activeSection === 'intro-learned' ? 'bg-[#8D7B68]' : 'bg-white group-hover:bg-[#8D7B68]'}`}></div>
+                                            <span className={`transition-all text-sm tracking-widest uppercase ${activeSection === 'intro-learned' ? 'text-[#4A4743] font-bold' : 'text-[#8D7B68] group-hover:text-[#4A4743] group-hover:font-bold'}`}>
                                                 5. Reflections
                                             </span>
                                         </button>
@@ -862,9 +904,9 @@ function HomeInner() {
                         <div className="py-4 sm:py-5 px-4 sm:px-6 border-b border-[#EAE5D9] bg-[#FAFAF8] flex justify-between items-center relative z-10 gap-2 sm:gap-4">
                             <button
                                 onClick={() => { setCurrentView('home'); setActiveSessionId(null); }}
-                                className="text-[10px] sm:text-sm text-gray-400 hover:text-[#8D7B68] transition tracking-widest shrink-0"
+                                className="inline-flex items-center gap-1 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-white border border-[#D8D3C4] text-[#8D7B68] hover:text-[#4A4743] hover:bg-[#F2F0E9] hover:border-[#8D7B68] transition-all text-[10px] sm:text-sm font-bold tracking-[0.2em] shadow-sm hover:shadow group shrink-0"
                             >
-                                ← LEAVE
+                                <span className="group-hover:-translate-x-1 transition-transform">←</span> LEAVE
                             </button>
                             <h1 className="text-sm sm:text-lg font-bold tracking-[0.2em] sm:tracking-[0.3em] text-[#4A4743] truncate flex-1 text-center uppercase min-w-0">
                                 [ {savedSessions.find(s => s.id === activeSessionId)?.title || activeSessionId} ]
@@ -879,9 +921,9 @@ function HomeInner() {
                                         );
                                     }
                                 }}
-                                className="text-[10px] sm:text-sm text-gray-400 hover:text-[#8D7B68] transition underline decoration-dotted tracking-widest font-bold shrink-0"
+                                className="inline-flex items-center gap-1 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-white border border-[#D8D3C4] text-[#8D7B68] hover:text-[#4A4743] hover:bg-[#F2F0E9] hover:border-[#8D7B68] transition-all text-[10px] sm:text-sm font-bold tracking-[0.2em] shadow-sm hover:shadow group shrink-0"
                             >
-                                DETAIL
+                                DETAIL <span className="group-hover:translate-x-1 transition-transform">→</span>
                             </Link>
                         </div>
 
