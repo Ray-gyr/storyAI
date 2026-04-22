@@ -7,12 +7,22 @@
 ## Screenshot
 
 <div align="center">
-  <img src="public/home_page.png" width="48%" alt="Home" />
-  <img src="public/new_universe.png" width="48%" alt="New Universe" />
-  <br>
-  <img src="public/chat.png" width="48%" alt="Chat" />
-  <img src="public/detail.png" width="48%" alt="Detail" />
+  <img src="public/chat.png" width="100%" alt="Story AI Main Chat Interface" />
 </div>
+
+<br />
+
+<details>
+  <summary><b>🔍 Check more screenshot (Home, New Universe, Detail)</b></summary>
+  <p align="center">
+    <img src="public/home_page.png" width="100%" alt="Home" />
+    <br /><i>Universe Hub</i><br /><br />
+    <img src="public/new_universe.png" width="100%" alt="New Universe" />
+    <br /><i>World Creation</i><br /><br />
+    <img src="public/detail.png" width="100%" alt="Detail" />
+    <br /><i>Global State Monitor</i>
+  </p>
+</details>
 
 ---
 
