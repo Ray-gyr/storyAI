@@ -1,6 +1,9 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+
+import { useState, useEffect, useRef, Suspense } from 'react';
 import { DEFAULT_STORY_SETTING } from '../lib/constants';
+import Link from 'next/link';
+import { useSearchParams } from 'next/navigation';
 
 export interface SessionMeta {
     id: string;
@@ -9,15 +12,48 @@ export interface SessionMeta {
 }
 
 export default function Home() {
+    return (
+        <Suspense fallback={<div className="h-[100dvh] bg-[#FDFBF7] flex items-center justify-center text-[#8D7B68] tracking-widest italic animate-pulse">Entering the realms...</div>}>
+            <HomeInner />
+        </Suspense>
+    );
+}
+
+function HomeInner() {
+    const searchParams = useSearchParams();
+    const sessionParam = searchParams.get('session');
+    const fromParam = searchParams.get('from');
+
     // 状态管理
     const [savedSessions, setSavedSessions] = useState<SessionMeta[]>([]);
     const [openTabs, setOpenTabs] = useState<SessionMeta[]>([]);
-    const [currentView, setCurrentView] = useState<'home' | 'intro' | 'chat' | 'new_story'>('home');
-    const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
     const [isClient, setIsClient] = useState(false);
+    const [isFromPortfolio, setIsFromPortfolio] = useState(false);
+
+    const [currentView, setCurrentView] = useState<'home' | 'intro' | 'chat' | 'new_story'>(() => {
+        if (typeof window === 'undefined') return 'home';
+        if (sessionParam) {
+            const snapshot = sessionStorage.getItem(`chat_snapshot_${sessionParam}`);
+            if (snapshot) return 'chat'; // 有快照，直接从 chat 开始
+        }
+        return 'home';
+    });
+
+    const [activeSessionId, setActiveSessionId] = useState<string | null>(() => {
+        if (typeof window === 'undefined') return null;
+        return sessionParam;
+    });
 
     // Chat 状态与前端缓存
-    const [messages, setMessages] = useState<{ role: 'assistant' | 'user', content: string }[]>([]);
+    const [messages, setMessages] = useState<{ role: 'assistant' | 'user', content: string }[]>(() => {
+        if (typeof window === 'undefined') return [];
+        if (!sessionParam) return [];
+        try {
+            const snapshot = sessionStorage.getItem(`chat_snapshot_${sessionParam}`);
+            if (snapshot) return JSON.parse(snapshot);
+        } catch (e) { }
+        return [];
+    });
     const [chatCache, setChatCache] = useState<Record<string, { role: 'assistant' | 'user', content: string }[]>>({});
     const [input, setInput] = useState('');
     const [loading, setLoading] = useState(false);
@@ -38,9 +74,58 @@ export default function Home() {
         }
     };
 
+    const updateSessionMeta = (newMeta: SessionMeta) => {
+        setSavedSessions(prev => {
+            const exists = prev.find(s => s.id === newMeta.id);
+            let next: SessionMeta[];
+            if (exists) {
+                next = prev.map(s => s.id === newMeta.id ? { ...s, ...newMeta } : s);
+            } else {
+                next = [newMeta, ...prev].slice(0, 3);
+            }
+            localStorage.setItem('story_sessions', JSON.stringify(next));
+            return next;
+        });
+        addOpenTab(newMeta);
+    };
+
     // 初始加载历史
     useEffect(() => {
         setIsClient(true);
+        if (fromParam === 'portfolio') setIsFromPortfolio(true);
+
+        const initialSessionId = sessionParam;
+        if (initialSessionId) {
+            const snapshot = sessionStorage.getItem(`chat_snapshot_${initialSessionId}`);
+            if (snapshot) {
+                // 已经通过 useState 懒初始化处理好了，只需要后台同步 Redis
+                const meta = { id: initialSessionId, title: initialSessionId.slice(-6), style: "UNKNOWN" };
+                addOpenTab(meta); // 先加上占位符
+                fetch(`/api/story/load?sessionId=${initialSessionId}`)
+                    .then(r => r.ok ? r.json() : null)
+                    .then(data => {
+                        if (data?.chatHistory && !data.error) {
+                            const fresh = data.chatHistory.map((t: any) => ({ role: t.role, content: t.text }));
+                            setMessages(fresh);
+                            setChatCache(prev => ({ ...prev, [initialSessionId]: fresh }));
+                            sessionStorage.removeItem(`chat_snapshot_${initialSessionId}`);
+
+                            if (data.metadata) {
+                                updateSessionMeta({
+                                    id: initialSessionId,
+                                    title: data.metadata.title || initialSessionId.slice(-6),
+                                    style: data.metadata.style || "UNKNOWN"
+                                });
+                            }
+                        }
+                    })
+                    .catch(() => { });
+            } else {
+                // 没有快照，走原来的 loadSessionChat 流程
+                setTimeout(() => loadSessionChat(initialSessionId), 50);
+            }
+        }
+
         const stored = localStorage.getItem('story_sessions');
         if (stored) {
             try {
@@ -51,14 +136,6 @@ export default function Home() {
                     ));
                 }
             } catch (e) { }
-        } else {
-            // Backward compatibility
-            const oldSession = localStorage.getItem('story_session_id');
-            if (oldSession) {
-                const legacy = { id: oldSession, title: oldSession.substring(oldSession.length - 6), style: "UNKNOWN" };
-                setSavedSessions([legacy]);
-                localStorage.setItem('story_sessions', JSON.stringify([legacy]));
-            }
         }
 
         const storedTabs = localStorage.getItem('story_open_tabs');
@@ -72,7 +149,25 @@ export default function Home() {
                 }
             } catch (e) { }
         }
-    }, []);
+    }, [sessionParam, fromParam]);
+
+    // 同步 URL 状态
+    useEffect(() => {
+        if (!isClient) return;
+        if (currentView === 'chat' && activeSessionId) {
+            if (fromParam) {
+                window.history.replaceState(null, '', `/?from=${fromParam}&session=${activeSessionId}`);
+            } else {
+                window.history.replaceState(null, '', `/?session=${activeSessionId}`);
+            }
+        } else if (currentView === 'home') {
+            if (fromParam) {
+                window.history.replaceState(null, '', `/?from=${fromParam}`);
+            } else {
+                window.history.replaceState(null, '', `/`);
+            }
+        }
+    }, [activeSessionId, currentView, isClient, fromParam]);
 
     const addOpenTab = (meta: SessionMeta) => {
         setOpenTabs(prev => {
@@ -120,6 +215,41 @@ export default function Home() {
             return;
         }
 
+        // 2. 从 sessionStorage 快照读（0ms，从 detail 页返回时）
+        const snapshot = sessionStorage.getItem(`chat_snapshot_${sessionId}`);
+        if (!forceRefresh && snapshot) {
+            try {
+                const cached = JSON.parse(snapshot);
+                if (Array.isArray(cached) && cached.length > 0) {
+                    setActiveSessionId(sessionId);
+                    setMessages(cached);
+                    const meta = savedSessions.find(s => s.id === sessionId) || { id: sessionId, title: sessionId.slice(-6), style: "UNKNOWN" };
+                    addOpenTab(meta);
+                    setCurrentView('chat'); // 立刻显示，无闪烁
+                    // 然后异步从 Redis 拉最新数据，静默更新
+                    fetch(`/api/story/load?sessionId=${sessionId}`)
+                        .then(r => r.ok ? r.json() : null)
+                        .then(data => {
+                            if (data?.chatHistory && !data.error) {
+                                const fresh = data.chatHistory.map((t: any) => ({ role: t.role, content: t.text }));
+                                setMessages(fresh);
+                                setChatCache(prev => ({ ...prev, [sessionId]: fresh }));
+                                sessionStorage.removeItem(`chat_snapshot_${sessionId}`); // 用完即清
+                                if (data.metadata) {
+                                    updateSessionMeta({
+                                        id: sessionId,
+                                        title: data.metadata.title || sessionId.slice(-6),
+                                        style: data.metadata.style || "UNKNOWN"
+                                    });
+                                }
+                            }
+                        })
+                        .catch(() => { }); // 静默失败，保持快照内容
+                    return;
+                }
+            } catch (e) { /* 快照损坏，继续走正常流程 */ }
+        }
+
         setLoading(true);
         try {
             const debugRes = await fetch(`/api/story/load?sessionId=${sessionId}`);
@@ -137,7 +267,7 @@ export default function Home() {
                         title: data.metadata?.title || existingMeta?.title || sessionId.slice(-6),
                         style: data.metadata?.style || existingMeta?.style || "UNKNOWN"
                     };
-                    addOpenTab(meta);
+                    updateSessionMeta(meta);
                     setCurrentView('chat');
                 } else {
                     alert("Save file is corrupted or expired.");
@@ -172,11 +302,8 @@ export default function Home() {
                 title: data.metadata?.title || data.sessionId.slice(-6),
                 style: data.metadata?.style || "UNKNOWN"
             };
-            const updatedSessions = [...savedSessions, meta].slice(0, 3);
-            setSavedSessions(updatedSessions);
-            localStorage.setItem('story_sessions', JSON.stringify(updatedSessions));
+            updateSessionMeta(meta);
 
-            addOpenTab(meta);
             setActiveSessionId(meta.id);
             setMessages([{ role: 'assistant', content: data.firstPrompt }]);
             setCurrentView('chat');
@@ -205,11 +332,7 @@ export default function Home() {
                 title: data.metadata?.title || data.sessionId.slice(-6),
                 style: data.metadata?.style || "UNKNOWN"
             };
-            const updatedSessions = [...savedSessions, meta].slice(0, 3);
-            setSavedSessions(updatedSessions);
-            localStorage.setItem('story_sessions', JSON.stringify(updatedSessions));
-
-            addOpenTab(meta);
+            updateSessionMeta(meta);
             setActiveSessionId(meta.id);
             setMessages([{ role: 'assistant', content: data.firstPrompt }]);
             setCurrentView('chat');
@@ -319,6 +442,15 @@ export default function Home() {
                     >
                         INTRO
                     </button>
+
+                    {isFromPortfolio && (
+                        <a
+                            href="https://raygan.vercel.app/"
+                            className="text-[10px] md:text-xs shrink-0 md:w-full text-center px-4 py-2 md:py-3 rounded tracking-widest md:tracking-[0.2em] transition-all bg-[#8D7B68] text-white font-bold hover:bg-[#736353] shadow-sm hover:shadow-md hover:-translate-y-px flex items-center justify-center gap-1.5 md:my-2 border border-[#736353]"
+                        >
+                            <span className="opacity-70">←</span> BACK TO PORTFOLIO
+                        </a>
+                    )}
 
                     {openTabs.length > 0 && (
                         <div className="flex flex-row md:flex-col items-center md:items-stretch md:pt-6 md:pb-2 md:border-t border-[#EAE5D9] md:mt-4 gap-2 md:gap-0 pl-2 md:pl-0 border-l md:border-l-0">
@@ -630,13 +762,20 @@ export default function Home() {
                             <h1 className="text-sm sm:text-lg font-bold tracking-[0.2em] sm:tracking-[0.3em] text-[#4A4743] truncate flex-1 text-center uppercase min-w-0">
                                 [ {savedSessions.find(s => s.id === activeSessionId)?.title || activeSessionId} ]
                             </h1>
-                            <a
-                                href={`/debug?sessionId=${activeSessionId}`}
-                                target="_blank"
+                            <Link
+                                href={`/detail?sessionId=${activeSessionId}${fromParam ? `&from=${fromParam}` : ''}`}
+                                onClick={() => {
+                                    if (activeSessionId && messages.length > 0) {
+                                        sessionStorage.setItem(
+                                            `chat_snapshot_${activeSessionId}`,
+                                            JSON.stringify(messages)
+                                        );
+                                    }
+                                }}
                                 className="text-[10px] sm:text-sm text-gray-400 hover:text-[#8D7B68] transition underline decoration-dotted tracking-widest font-bold shrink-0"
                             >
                                 DETAIL
-                            </a>
+                            </Link>
                         </div>
 
                         <div ref={scrollRef} className="flex-1 overflow-y-auto p-4 sm:p-12 space-y-6 sm:space-y-10 scroll-smooth custom-scrollbar bg-[url('https://www.transparenttextures.com/patterns/cream-paper.png')]">

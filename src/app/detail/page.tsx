@@ -1,10 +1,12 @@
 'use client';
 import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 
-function DebugPanel() {
+function DetailPanel() {
     const searchParams = useSearchParams();
     const sessionId = searchParams.get('sessionId');
+    const fromParam = searchParams.get('from');
     const [data, setData] = useState<any>(null);
 
     useEffect(() => {
@@ -12,7 +14,7 @@ function DebugPanel() {
 
         const fetchDebug = async () => {
             try {
-                const res = await fetch(`/api/debug?sessionId=${sessionId}`);
+                const res = await fetch(`/api/detail?sessionId=${sessionId}`);
                 const json = await res.json();
                 setData(json);
             } catch (e) {
@@ -32,9 +34,17 @@ function DebugPanel() {
 
     return (
         <div className="min-h-screen bg-[#FDFBF7] text-[#333] font-sans p-8">
-            <h1 className="text-2xl font-bold mb-6 text-[#4A4743] border-b border-[#D8D3C4] pb-3 tracking-wider uppercase">
-                Story Detail: Real-time Database <span className="text-sm font-normal text-gray-400">({sessionId})</span>
-            </h1>
+            <div className="flex justify-between items-center mb-6 border-b border-[#D8D3C4] pb-3">
+                <h1 className="text-2xl font-bold text-[#4A4743] tracking-wider uppercase">
+                    Story Detail: Real-time Database <span className="text-sm font-normal text-gray-400">({sessionId})</span>
+                </h1>
+                <Link 
+                    href={`/?session=${sessionId}${fromParam ? `&from=${fromParam}` : ''}`} 
+                    className="px-4 py-2 bg-[#8D7B68] text-white text-xs font-bold tracking-widest uppercase rounded hover:bg-[#736353] transition-all shadow-sm hover:shadow-md hover:-translate-y-px"
+                >
+                    Back to Chat
+                </Link>
+            </div>
 
             {!data ? <div className="text-[#8D7B68] animate-pulse">Connecting to the Divine Network...</div> : (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -85,10 +95,10 @@ function DebugPanel() {
     );
 }
 
-export default function DebugPage() {
+export default function DetailPage() {
     return (
         <Suspense fallback={<div className="p-10">Loading...</div>}>
-            <DebugPanel />
+            <DetailPanel />
         </Suspense>
     );
 }
