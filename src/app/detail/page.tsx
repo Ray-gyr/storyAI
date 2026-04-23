@@ -38,11 +38,11 @@ function DetailPanel() {
                 <h1 className="text-2xl font-bold text-[#4A4743] tracking-wider uppercase">
                     Story Detail: Real-time Database <span className="text-sm font-normal text-gray-400">({sessionId})</span>
                 </h1>
-                <Link 
-                    href={`/?session=${sessionId}${fromParam ? `&from=${fromParam}` : ''}`} 
-                    className="px-4 py-2 bg-[#8D7B68] text-white text-xs font-bold tracking-widest uppercase rounded hover:bg-[#736353] transition-all shadow-sm hover:shadow-md hover:-translate-y-px"
+                <Link
+                    href={`/?session=${sessionId}${fromParam ? `&from=${fromParam}` : ''}`}
+                    className="inline-flex items-center gap-1 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-white border border-[#D8D3C4] text-[#8D7B68] hover:text-[#4A4743] hover:bg-[#F2F0E9] hover:border-[#8D7B68] transition-all text-xs font-bold tracking-[0.2em] uppercase shadow-sm hover:shadow group shrink-0"
                 >
-                    Back to Chat
+                    <span className="group-hover:-translate-x-1 transition-transform">←</span> BACK TO CHAT
                 </Link>
             </div>
 
