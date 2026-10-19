@@ -9,11 +9,10 @@ import { queryIntentPrompt } from "./prompt";
 // ==========================================
 
 export const QueryIntentSchema = z.object({
-    is_resolved_by_cache: z.boolean().describe("动态路由标志：若当前上下文或已知状态直接能回答玩家的剧情问题（即缓存命中），填 true；若需要回溯久远的长文本库，填 false。"),
-    search_query: z.string().describe("将玩家的操作或意图翻译为具体客观陈述句，用于检索。如果 is_resolved_by_cache=true，填空字符串即可。"),
-    characters_involved: z.array(z.string()).describe("玩家意图中明确指代的已知角色名称。如果短路，填空数组[]。"),
-    items_involved: z.array(z.string()).describe("玩家意图中使用到的或指向的已知物品名称。如果短路，填空数组[]。"),
-    locations_involved: z.array(z.string()).describe("玩家意图中指向的相关地点名称。如果短路，填空数组[]。")
+    search_query: z.string().describe("将玩家的操作或意图翻译为具体客观陈述句，用于检索。"),
+    characters_involved: z.array(z.string()).describe("玩家意图中明确指代的已知角色名称。没有则填空数组[]。"),
+    items_involved: z.array(z.string()).describe("玩家意图中使用到的或指向的已知物品名称。没有则填空数组[]。"),
+    locations_involved: z.array(z.string()).describe("玩家意图中指向的相关地点名称。没有则填空数组[]。")
 });
 
 export type QueryIntent = z.infer<typeof QueryIntentSchema>;

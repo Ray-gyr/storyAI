@@ -8,23 +8,34 @@ function DetailPanel() {
     const sessionId = searchParams.get('sessionId');
     const fromParam = searchParams.get('from');
     const [data, setData] = useState<any>(null);
+    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
         if (!sessionId) return;
 
         const fetchDebug = async () => {
+            // 标签页不可见时跳过轮询，节省 Redis / Pinecone 请求额度
+            if (document.hidden) return;
             try {
                 const res = await fetch(`/api/detail?sessionId=${sessionId}`);
-                const json = await res.json();
+                const json = await res.json().catch(() => null);
+                if (!res.ok) {
+                    setError(json?.error || `Failed to load details (HTTP ${res.status}).`);
+                    // 存档不存在时继续轮询没有意义
+                    if (res.status === 404) clearInterval(interval);
+                    return;
+                }
                 setData(json);
+                setError(null);
             } catch (e) {
                 console.error(e);
+                setError("Network error: failed to load details.");
             }
         };
 
-        fetchDebug();
         // 每 3 秒自动轮询一次刷新最新数据
         const interval = setInterval(fetchDebug, 3000);
+        fetchDebug();
         return () => clearInterval(interval);
     }, [sessionId]);
 
@@ -46,7 +57,11 @@ function DetailPanel() {
                 </Link>
             </div>
 
-            {!data ? <div className="text-[#8D7B68] animate-pulse">Connecting to the Divine Network...</div> : (
+            {error && (
+                <div className="mb-6 p-3 rounded border border-red-100 bg-red-50 text-sm text-red-700">[Error]: {error}</div>
+            )}
+
+            {!data ? (!error && <div className="text-[#8D7B68] animate-pulse">Connecting to the Divine Network...</div>) : (
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                     <div className="bg-white border border-[#EAE5D9] shadow-sm rounded-md p-5">

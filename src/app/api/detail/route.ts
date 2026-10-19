@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getSession } from "../../../lib/sessionStore";
 import { getPineconeIndex } from "../../../lib/Init";
+import { describeError } from "../../../lib/errors";
 
 
 
@@ -12,7 +13,13 @@ export async function GET(req: NextRequest) {
         return NextResponse.json({ error: "Missing sessionId parameter" }, { status: 400 });
     }
 
-    const session = await getSession(sessionId);
+    let session;
+    try {
+        session = await getSession(sessionId);
+    } catch (e) {
+        console.error("[Detail API] Failed to load session:", e);
+        return NextResponse.json({ error: describeError(e) }, { status: 500 });
+    }
     if (!session) {
         return NextResponse.json({ error: "Session not found" }, { status: 404 });
     }
@@ -47,14 +54,14 @@ export async function GET(req: NextRequest) {
             pineconeRecords
         });
 
-    } catch (e: any) {
+    } catch (e) {
         // 如果 Pinecone API 有限制或未准备好，不要阻塞基础 JSON 的回退
         return NextResponse.json({
             sessionId,
             currentState: session.currentState,
             chatHistory: session.memoryManager.chatHistory,
             unprocessedArchive: session.memoryManager.unprocessedArchive,
-            pineconeError: e.message
+            pineconeError: describeError(e)
         });
     }
 }
