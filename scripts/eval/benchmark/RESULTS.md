@@ -84,3 +84,35 @@ v2 carries over from dev to test, losing 1 point. BM25 alone drops 9 points on t
 - It does not show that players get correct answers that often: end to end, 56% of answers agree with the past, limited by what the summaries keep.
 - Limits: two stories, LLM-generated questions and labels, a single judge model, and n = 88 per story (CIs above).
 - Next step suggested by the data (to be evaluated on a new test story, per Section 6): give the writer the original text of the top-ranked chunks, or summaries that keep concrete details, plus turn order for temporal questions.
+
+---
+
+# v3: end-to-end rerun on the test story (second use)
+
+Frozen at `2730731` (FREEZE.md v3 record). Retrieval is unchanged from v2. The writer now sees the original text of the top 3 memories by retrieval rank, with all memories listed oldest first and labelled with turns. Under PROTOCOL.md Section 10, this is the **second use** of the test set: the decision to work on the memory representation was partly informed by the v2 test result, so any gain here could be optimistic. (There was essentially no gain.)
+
+## Result
+
+| End to end, round 300 | All | Answer in summary | Answer only in original | Temporal | Detail | Vague |
+|---|---|---|---|---|---|---|
+| v2 (frozen) | 49/88 (56%) | 31/39 | 18/49 | 5/18 | 23/40 | 21/30 |
+| **v3** | **50/88 (57%)** | 29/39 | 21/49 | 1/18 | 25/40 | 24/30 |
+| *dev story, v3 config, for reference* | *62/88 (70%)* | *30/36* | *32/52* | *6/18* | *32/40* | *24/30* |
+
+**v3 did not reproduce its dev gain on the test story.** It is +1 overall, within run-to-run noise (about ±5). It gains a few points on detail, vague and original-only questions, and drops on temporal questions (5 → 1 of 18; small n).
+
+## Why (analysis of the existing run, no changes made)
+
+Original text helps when it reaches the right chunk. It often does not, because "top 3 by retrieval rank" under quota fusion means **BM25's top 3**, and BM25 is weak on the test story (Recall@5 0.705):
+
+| Questions whose answer is only in the original text | dev | test |
+|---|---|---|
+| right chunk among the top 3 (so it got original text) | 36/52 (69%) | 28/49 (57%) |
+| correct when the right chunk had original text | 28/36 (78%) | 18/28 (64%) |
+| correct when the right chunk was retrieved as summary only (rank 4–10) | 4/11 | 3/17 |
+
+## Takeaways (for the next version, to be evaluated on a fresh test story)
+
+- **Route original text by relevance, not by fusion position.** Options: all 10 memories with originals (+2 answers on dev, within noise, about +3,300 tokens per turn), or originals assigned by vector rank, or a reranker. On this test story, originals for all 10 would have reached the right chunk for 45 of 49 original-only questions, against 28 for top 3. That observation comes from the test set, so it must be confirmed on new data.
+- **Temporal questions need a structural fix.** Story order and turn labels alone do not tell the writer which occurrence is "the first", because the retrieved set holds only some occurrences. A per-chunk occurrence index for recurring event types is one option.
+- The writer's accuracy given the right original text also varies by story (78% dev vs 64% test).
