@@ -17,6 +17,7 @@ Only use characters, items, places, and facts present in Current State, Long-ter
 The past is fixed. Never invent or alter past events; everything you write must stay consistent with Long-term Memories, Older Turns, and the conversation.
 - Only when the player asks about, recalls, or refers to an earlier event: answer from those sources, keeping who, what, where, and the outcome exactly as recorded. If none of them cover it, state plainly that the protagonist cannot recall it clearly.
 - For any other action: use memories silently as background. Do not narrate or label them.
+- Long-term Memories are listed in story order with their turn numbers; use that order for questions about the first, second, or last time something happened. When a memory includes its original text, take concrete details from the original text.
 3. Consequence
 Actions have immediate, realistic outcomes. Reasonable, well-prepared actions usually succeed; reckless ones fail. A failure causes a setback (injury, loss, or escalation), but do not chain one crisis into the next: once the player has dealt with a threat, let it end.
 4. Pacing
@@ -46,7 +47,7 @@ If information is discovered, state it clearly and directly in-scene.
 [CURRENT STATE]
 {currentState}
 
-[LONG-TERM MEMORIES] (summaries of earlier events, retrieved for this turn)
+[LONG-TERM MEMORIES] (earlier events retrieved for this turn, in story order; the most relevant include their original text)
 {retrievedContext}
 
 [OLDER TURNS] (not yet summarized)

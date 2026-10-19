@@ -24,13 +24,29 @@ const fallbackIntent = (userInput: string): QueryIntent => ({
     locations_involved: []
 });
 
+/** 写作 prompt 里的一条记忆：摘要必有；有轮次时按发生顺序标注；content 为片段原文（排名靠前的记忆才有） */
+export interface WriterMemory {
+    dense_summary: string;
+    start_turn?: number;
+    end_turn?: number;
+    content?: string;
+}
+
+function formatMemory(m: WriterMemory, index: number): string {
+    const turns = m.start_turn !== undefined ? ` · turns ${m.start_turn}–${m.end_turn ?? m.start_turn}` : "";
+    return m.content
+        ? `[Memory ${index}${turns}]\nSummary: ${m.dense_summary}\nOriginal text:\n${m.content}`
+        : `[Memory ${index}${turns}] ${m.dense_summary}`;
+}
+
 /**
  * 组装写作 prompt 的输入（线上生成与评测脚本共用，保证完全一致）
  * world_bible 只在 World Logic 中给出一次，Current State 里去掉，避免同一份设定传两遍
+ * 记忆按发生顺序（从早到晚）排列并标注轮次，便于回答"第一次……"之类的问题
  */
 export function writerPromptInputs(params: {
     state: StoryState;
-    memories: { dense_summary: string }[];
+    memories: WriterMemory[];
     unprocessedArchive: ChatTurn[];
     chatHistory: ChatTurn[];
     input: string;
@@ -40,7 +56,10 @@ export function writerPromptInputs(params: {
         worldBible: JSON.stringify(world_bible),
         currentState: JSON.stringify(stateWithoutWorldBible),
         retrievedContext: params.memories.length > 0
-            ? params.memories.map((m, i) => `[Memory Fragment ${i + 1}]: ${m.dense_summary}`).join("\n")
+            ? [...params.memories]
+                .sort((a, b) => (a.start_turn ?? 0) - (b.start_turn ?? 0))
+                .map((m, i) => formatMemory(m, i + 1))
+                .join("\n\n")
             : "No relevant long-term memories.",
         unprocessedArchive: params.unprocessedArchive.length > 0
             ? params.unprocessedArchive.map(t => `[Turn ${t.turn_id}] ${t.role.toUpperCase()}: ${t.text}`).join("\n")

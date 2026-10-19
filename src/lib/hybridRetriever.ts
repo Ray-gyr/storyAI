@@ -20,7 +20,7 @@
  */
 import { BM25, DEFAULT_BM25_PARAMS, tokenize } from "./bm25";
 import { getEmbeddings, getPineconeIndex } from "./Init";
-import { fromPineconeMetadata, IndexedMemory, loadIndexedMemories } from "./memoryStore";
+import { fromPineconeMetadata, IndexedMemory, loadIndexedMemories, loadMemoryTexts } from "./memoryStore";
 import { QueryIntent } from "./query";
 
 export const HYBRID_RETRIEVAL_CONFIG = {
@@ -32,6 +32,8 @@ export const HYBRID_RETRIEVAL_CONFIG = {
     denseDepth: 20,
     /** 最终放进 prompt 的记忆条数 */
     topK: 10,
+    /** 排名前几的记忆附上片段原文给写作模型（0 = 只给摘要） */
+    originalTextFor: 3,
     bm25: DEFAULT_BM25_PARAMS,
 };
 
@@ -134,13 +136,25 @@ export async function rankMemories(params: {
     return fused.map(id => byId.get(id)).filter((m): m is IndexedMemory => Boolean(m));
 }
 
+/** 交给写作模型的记忆：检索排名，以及（排名靠前的）片段原文 */
+export type RetrievedMemory = IndexedMemory & { rank: number; content?: string };
+
 /**
- * 线上检索入口：返回放进 prompt 的记忆（access_count 已 +1，由收尾阶段写回）
+ * 线上检索入口：返回放进 prompt 的记忆（access_count 已 +1，由收尾阶段写回）。
+ * 排名前 originalTextFor 个附上片段原文（摘要会丢细节）；按发生顺序（从早到晚）排列，便于回答"第一次……"。
  */
-export async function retrieveMemories(params: Parameters<typeof rankMemories>[0]): Promise<IndexedMemory[]> {
+export async function retrieveMemories(
+    params: Parameters<typeof rankMemories>[0] & { originalTextFor?: number }
+): Promise<RetrievedMemory[]> {
     const ranked = await rankMemories(params);
+    const k = params.originalTextFor ?? HYBRID_RETRIEVAL_CONFIG.originalTextFor;
+    const texts = k > 0
+        ? await loadMemoryTexts(params.sessionId, ranked.slice(0, k).map(m => m.id)).catch(e => {
+            console.error("[HybridRetriever] Failed to load original texts, using summaries only:", e);
+            return new Map<string, string>();
+        })
+        : new Map<string, string>();
     return ranked
-        .map(m => ({ ...m, access_count: (m.access_count || 0) + 1 }))
-        // 按 turn 排序：最近发生的剧情（大的 turn）排在最前面，方便 LLM 追踪最新因果
-        .sort((a, b) => (b.start_turn || 0) - (a.start_turn || 0));
+        .map((m, i) => ({ ...m, access_count: (m.access_count || 0) + 1, rank: i + 1, content: texts.get(m.id) }))
+        .sort((a, b) => (a.start_turn || 0) - (b.start_turn || 0));
 }

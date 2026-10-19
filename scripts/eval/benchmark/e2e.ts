@@ -4,14 +4,16 @@
  * 在第 300 回合快照上，用快照时的上下文（世界状态、滑动窗口、待归档区）、线上写作 prompt 与线上检索，
  * 让故事模型回答每道有效题；裁判对照参考段落（来源片段原文）判定 correct / contradicts / absent。
  *
- * 运行：npx tsx --env-file=.env scripts/eval/benchmark/e2e.ts <dev|test>
- * 输出：out/<story>/e2e.json
+ * --originals N：排名前 N 的记忆附上片段原文（不传则用线上配置 HYBRID_RETRIEVAL_CONFIG.originalTextFor）
+ *
+ * 运行：npx tsx --env-file=.env scripts/eval/benchmark/e2e.ts <dev|test> [--originals N] [--tag name]
+ * 输出：out/<story>/e2e_<tag>.json（v2 冻结时的结果为 e2e.json）
  */
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { ChatOpenAI } from "@langchain/openai";
 import { join } from "node:path";
 import { z } from "zod";
-import { retrieveMemories, startDenseSearch } from "../../../src/lib/hybridRetriever";
+import { HYBRID_RETRIEVAL_CONFIG, retrieveMemories, startDenseSearch } from "../../../src/lib/hybridRetriever";
 import { getStoryLLM } from "../../../src/lib/Init";
 import { storyWorkerPrompt } from "../../../src/lib/prompt";
 import { writerPromptInputs } from "../../../src/lib/storyGenerator";
@@ -19,6 +21,9 @@ import { chunkContent, loadQuestions, loadStory, mapLimit, readJson, RetrievalRo
 
 const STORY_NAME = process.argv[2];
 const SNAPSHOT = 300;
+const argValue = (flag: string) => { const i = process.argv.indexOf(flag); return i >= 0 ? process.argv[i + 1] : undefined; };
+const ORIGINALS = argValue("--originals") !== undefined ? Number(argValue("--originals")) : HYBRID_RETRIEVAL_CONFIG.originalTextFor;
+const TAG = argValue("--tag") ?? `originals${ORIGINALS}`;
 
 const judge = new ChatOpenAI({ modelName: "gpt-4o-mini", openAIApiKey: process.env.OPENAI_API_KEY, temperature: 0 })
     .withStructuredOutput(z.object({
@@ -47,6 +52,7 @@ async function main() {
             dense: startDenseSearch(q.question, sessionId, { createdBefore: snap.taken_at }),
             sessionId,
             createdBefore: snap.taken_at,
+            originalTextFor: ORIGINALS,
         });
         // 与线上生成完全一致的 prompt 组装（快照时刻的上下文）
         const response = await chain.invoke(writerPromptInputs({
@@ -74,7 +80,8 @@ async function main() {
         by_type: Object.fromEntries((["detail", "vague", "temporal"] as const).map(t => [t, tally(results.filter(r => r.type === t))])),
     };
     console.log(JSON.stringify(summary, null, 2));
-    writeJson(join(dir, "e2e.json"), { summary, results });
+    console.log(`variant: ${TAG} (original text for top ${ORIGINALS})`);
+    writeJson(join(dir, `e2e_${TAG}.json`), { variant: { tag: TAG, originalTextFor: ORIGINALS }, summary, results });
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

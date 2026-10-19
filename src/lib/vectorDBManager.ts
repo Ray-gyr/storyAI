@@ -1,6 +1,6 @@
 import { getEmbeddings, getPineconeIndex } from "./Init";
 import { MemoryRecord } from "./memoryChunkGenerator";
-import { deleteIndexedMemories, IndexedMemory, saveIndexedMemories, toIndexedMemory } from "./memoryStore";
+import { deleteIndexedMemories, IndexedMemory, memoryContent, saveIndexedMemories, saveMemoryTexts, toIndexedMemory } from "./memoryStore";
 
 /**
  * 将完整的记忆 Chunk 连带向量一起存入 Pinecone，并同步写入 Redis 副本（BM25 语料）
@@ -42,8 +42,10 @@ export async function storeMemoryRecord(record: MemoryRecord, sessionId: string)
 
     // Redis 副本写入失败不抛错：片段已在 Pinecone 中，向量检索仍能召回它（并用其 metadata 兜底），
     // 若在这里抛错，归档重试会生成新 id 的重复片段
-    await saveIndexedMemories(sessionId, [toIndexedMemory(record)]).catch(e =>
-        console.error(`[VectorDB] Failed to index memory ${record.id} for BM25:`, e));
+    await Promise.all([
+        saveIndexedMemories(sessionId, [toIndexedMemory(record)]),
+        saveMemoryTexts(sessionId, [{ id: record.id, text: memoryContent(record.original_text) }]),
+    ]).catch(e => console.error(`[VectorDB] Failed to index memory ${record.id} in Redis:`, e));
 }
 
 /**

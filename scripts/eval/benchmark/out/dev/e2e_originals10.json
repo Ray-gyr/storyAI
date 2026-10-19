@@ -1,0 +1,837 @@
+{
+  "variant": {
+    "tag": "originals10",
+    "originalTextFor": 10
+  },
+  "summary": {
+    "n": 88,
+    "all": {
+      "correct": 64,
+      "contradicts": 24,
+      "absent": 0
+    },
+    "gold_retrieved": {
+      "n": 83,
+      "correct": 64,
+      "contradicts": 19,
+      "absent": 0
+    },
+    "gold_not_retrieved": {
+      "n": 5,
+      "correct": 0,
+      "contradicts": 5,
+      "absent": 0
+    },
+    "by_type": {
+      "detail": {
+        "correct": 33,
+        "contradicts": 7,
+        "absent": 0
+      },
+      "vague": {
+        "correct": 24,
+        "contradicts": 6,
+        "absent": 0
+      },
+      "temporal": {
+        "correct": 7,
+        "contradicts": 11,
+        "absent": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "qid": "early-vague-1",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply correctly states that the word was 'Lantern' and accurately reflects its appearance in Odile's final transmission on the cracked data slate, consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "The word was “Lantern.” It appeared in Odile’s final transmission on the cracked data slate, which Juno later sold at Port Halcyon. The slate is no longer aboard the Kestrel or in Juno’s possession. The reactor spine remains dark around her; her suit light falls across the sealed access points and the empty passage ahead."
+    },
+    {
+      "qid": "early-detail-1",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": false,
+      "reasoning": "The narrator's reply contradicts the reference passage, which clearly states that Juno checks the suit readout before opening the hatch and confirms the oxygen level is 92.",
+      "verdict": "contradicts",
+      "response": "Juno cannot recall clearly what her suit’s oxygen level was before she opened the hatch. The recorded level of 92 is her current reading, not a confirmed earlier one."
+    },
+    {
+      "qid": "early-vague-2",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply mentions hanging cables but does not specifically state that bundled cables were found beside the narrow access well, which is the expected answer.",
+      "verdict": "contradicts",
+      "response": "The compartment was cramped and crowded with hanging cables. They ran along the walls and disappeared through a sealed panel; you found no orange survey tape or sign of Odile’s drone."
+    },
+    {
+      "qid": "early-detail-2",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately states that the survey tape wrapped around the drone is orange, which is consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "The survey tape wrapped around the drone is orange. It matches the tape on Odile’s equipment cases."
+    },
+    {
+      "qid": "early-vague-3",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the condition of the rotor arm as described in the reference passage, confirming that it is bent sharply against the body of the drone and that the drone is inert with a dark status lamp.",
+      "verdict": "correct",
+      "response": "The compact survey drone’s rotor arm is bent sharply against its body. Its status lamp is dark, and the drone remains inert."
+    },
+    {
+      "qid": "early-detail-3",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the events described in the reference passage, where the gas stream tears the cable from Juno's glove and sends it through the opening.",
+      "verdict": "correct",
+      "response": "The gas stream tore the severed cable from Juno’s glove and whipped it through the breach into the dark passage."
+    },
+    {
+      "qid": "early-detail-4",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply states that the survey tape is orange, which directly contradicts the reference passage that clearly states, 'She sees no orange survey tape or sign of the drone in the passage.'",
+      "verdict": "contradicts",
+      "response": "The survey tape is orange. It was wrapped around the compact survey drone’s casing and matched the tape on Odile’s equipment cases."
+    },
+    {
+      "qid": "early-vague-4",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the reference passage by stating that a recessed manual catch was found near the lower corner of the panel, consistent with what actually happened.",
+      "verdict": "correct",
+      "response": "You found a recessed manual catch near the panel’s lower corner. A cable bundle held it shut until you pushed the cables aside."
+    },
+    {
+      "qid": "early-detail-5",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the details from the reference passage regarding what Juno found at the edge of the buckled plate.",
+      "verdict": "correct",
+      "response": "At the edge of the buckled plate, Juno found two recessed fasteners and a narrow gap. The fasteners were accessible, but the plate was bent hard against the conduit, and pulling it free risked damaging the line."
+    },
+    {
+      "qid": "early-vague-5",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the warning displayed after the coupling was tightened, as stated in the reference passage.",
+      "verdict": "correct",
+      "response": "After the coupling was tightened, the display warned: **POWER CONDUIT UNDER MECHANICAL STRAIN — AVOID REPEATED CLAMP CYCLES**."
+    },
+    {
+      "qid": "early-detail-6",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the warning displayed regarding the power conduit as stated in the reference passage.",
+      "verdict": "correct",
+      "response": "The display warned: **POWER CONDUIT UNDER MECHANICAL STRAIN — AVOID REPEATED CLAMP CYCLES.**"
+    },
+    {
+      "qid": "early-vague-6",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": false,
+      "reasoning": "The narrator's reply states that the terminal shows Priya's review request as pending, which contradicts the reference passage that clearly states the clamp screen shows 'RELEASE CLAMPS'.",
+      "verdict": "contradicts",
+      "response": "The terminal at Port Halcyon’s security station still shows Priya’s review request as **pending**; no response has arrived, and presenting the cracked slate does not change the status. The attendant remains beside the terminal and says they cannot alter the hold or release Priya without authorization, while Priya waits behind the partition."
+    },
+    {
+      "qid": "early-detail-7",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects that the transfer hatch's status is unknown, consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "After you selected **RELEASE CLAMPS**, the docking clamps retracted from the Kestrel. The transfer-hatch controls showed the hatch closed with its pressure status **UNKNOWN**; there was no pressure reading or safe-cycle confirmation, so you could not verify that it was safe to open."
+    },
+    {
+      "qid": "early-detail-8",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply states that the transfer hatch is closed with an unknown status, which contradicts the reference passage that clearly states the control display shows no fault for the transfer hatch and provides no pressure reading.",
+      "verdict": "contradicts",
+      "response": "The display showed the transfer hatch as **CLOSED — UNKNOWN STATUS**. It gave no pressure reading, safe-cycle confirmation, or further diagnostic information."
+    },
+    {
+      "qid": "early-vague-7",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the warning displayed on the control display as described in the reference passage.",
+      "verdict": "correct",
+      "response": "The display warns: **POWER CONDUIT UNDER MECHANICAL STRAIN — AVOID REPEATED CLAMP CYCLES.**"
+    },
+    {
+      "qid": "early-detail-9",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information from the reference passage about the ring's power status and the warning regarding the power conduit.",
+      "verdict": "correct",
+      "response": "The display showed **RING POWER — ONLINE** and steady. It also warned that the power conduit was under mechanical strain."
+    },
+    {
+      "qid": "early-vague-8",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects what Juno stated in the reference passage about the thin, bent plate at the ring being unsafe as a brace for the conduit.",
+      "verdict": "correct",
+      "response": "You said the thin, bent plate at the ring was not safe to use as a brace."
+    },
+    {
+      "qid": "early-detail-10",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the findings from the reference passage, confirming that no suitable brace or tool was found and mentioning the potential issue with the cargo bay structure.",
+      "verdict": "correct",
+      "response": "You and Priya found no brace or tool in the Kestrel’s equipment stores that could safely support the conduit without loading the coupling or risking damage to the power line. Priya pointed out that part of the modular cargo-bay structure might provide rigid support, but removing it could compromise cargo security; the conduit remained under strain at Meridian-9."
+    },
+    {
+      "qid": "early-vague-9",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the events described in the reference passage, confirming that the portable O2 canister was retrieved from the equipment locker at the Kestrel.",
+      "verdict": "correct",
+      "response": "You retrieved the portable O2 canister from the Kestrel’s equipment locker, checked its fittings, and secured it for transport."
+    },
+    {
+      "qid": "early-detail-11",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects that Juno was carrying the portable O2 canister when she returned to the hydroponics deck, as stated in the reference passage.",
+      "verdict": "correct",
+      "response": "Juno returned to the hydroponics deck carrying the portable O2 canister, secured for transport."
+    },
+    {
+      "qid": "early-detail-12",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the detail from the reference passage that states the drone's rotor arm was bent against its body.",
+      "verdict": "correct",
+      "response": "One rotor arm was bent sharply against the survey drone’s body."
+    },
+    {
+      "qid": "early-vague-10",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the reference passage where it states that Juno's boots meet a grated platform at the bottom of the ladder.",
+      "verdict": "correct",
+      "response": "Your boots meet a grated platform at the bottom of the ladder."
+    },
+    {
+      "qid": "early-detail-13",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply correctly states that the portable O2 canister was checked for security upon reaching the hydroponics deck, aligning with the reference passage.",
+      "verdict": "correct",
+      "response": "You checked the portable O₂ canister when you reached the hydroponics deck, but the record doesn’t specify what you inspected. Earlier, at the Kestrel, you checked its fittings and secured it for transport."
+    },
+    {
+      "qid": "early-vague-11",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the status of the compact survey drone as described in the reference passage, including that its status lamp was dark.",
+      "verdict": "correct",
+      "response": "The compact survey drone was trapped beside the cable bundle near the panel. Its rotor arm was bent, its status lamp was dark, and it was inert."
+    },
+    {
+      "qid": "early-detail-14",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the condition of the rotor arm as described in the reference passage, confirming that it was bent sharply against the body and that the status lamp remained dark.",
+      "verdict": "correct",
+      "response": "The survey drone’s rotor arm was bent sharply against its body. The casing was intact, but its status lamp stayed dark."
+    },
+    {
+      "qid": "early-vague-12",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information from the reference passage, which states that the drone's status lamp is dark and does not mention any visible color.",
+      "verdict": "correct",
+      "response": "The compact survey drone’s status lamp is dark. No color is visible."
+    },
+    {
+      "qid": "early-detail-15",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply states that the drone is Odile's compact survey drone, which contradicts the expected answer that it is an inert survey drone without any specific ownership mentioned.",
+      "verdict": "contradicts",
+      "response": "At the bottom of the ladder, you found Odile’s compact survey drone trapped beside a cable bundle on a grated platform. Its rotor arm was bent, and its status lamp was dark."
+    },
+    {
+      "qid": "early-detail-16",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the content of the receipt as described in the reference passage.",
+      "verdict": "correct",
+      "response": "The receipt bore the pawnshop’s mark and the words **“Odile Marsh survey logs.”**"
+    },
+    {
+      "qid": "early-vague-13",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the offer made by the proprietor in the reference passage.",
+      "verdict": "correct",
+      "response": "The proprietor offered 180 credits for the slate after assessing it."
+    },
+    {
+      "qid": "early-detail-17",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply correctly states that Juno sold the survey logs for 180 credits, which is consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "Juno sold Odile’s cracked data slate and survey logs for 180 credits."
+    },
+    {
+      "qid": "early-vague-14",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply states that Juno had 140 credits at the repair depot counter, which contradicts the reference passage that clearly states Juno has 680 credits while standing at the counter.",
+      "verdict": "contradicts",
+      "response": "Juno had 140 credits while standing at the repair depot counter."
+    },
+    {
+      "qid": "early-detail-18",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information provided in the reference passage, confirming that Juno had 680 credits when she visited the salvage counters.",
+      "verdict": "correct",
+      "response": "Juno had 680 credits when she visited the salvage counters in Port Halcyon."
+    },
+    {
+      "qid": "early-vague-15",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply contradicts the reference passage, which clearly states that Juno stands in the market with 680 credits.",
+      "verdict": "contradicts",
+      "response": "The last time Juno stood in the Port Halcyon market, she had 140 credits. The spare plating cost 260, leaving her 120 short."
+    },
+    {
+      "qid": "early-detail-19",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information from the reference passage, confirming that Juno had 680 credits while trying to sell Odile's survey logs, which she no longer possessed.",
+      "verdict": "correct",
+      "response": "Juno had 680 credits while asking traders about buyers for Odile’s survey logs. The logs had already been sold, so she no longer had them to offer."
+    },
+    {
+      "qid": "early-detail-20",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information from the reference passage, confirming that Juno had 680 credits after selling the cracked data slate for 180 credits.",
+      "verdict": "correct",
+      "response": "After selling Odile’s cracked data slate and survey logs for 180 credits, Juno had 680 credits."
+    },
+    {
+      "qid": "early-temporal-1",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": false,
+      "reasoning": "The narrator's reply states that there was no puncture or escaping air, which contradicts the earlier reference passage where the pressure gauge drops one notch, indicating a hull breach and decompression emergency.",
+      "verdict": "contradicts",
+      "response": "Juno cannot recall a recorded first decompression emergency aboard the Kestrel. The available inspection noted fresh scoring and a shallow crease along the cargo-bay plating, but the seam was closed, with no puncture or escaping air."
+    },
+    {
+      "qid": "early-temporal-2",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply contradicts the reference passage, which states that the pressure readout remains in the red during the hull breach emergency.",
+      "verdict": "contradicts",
+      "response": "When Juno widened the breach, the pressure indicator dropped out of the red zone, then steadied just above it."
+    },
+    {
+      "qid": "early-temporal-3",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the reference passage, stating that the clamp screen displays 'RELEASE CLAMPS' along with the conduit-strain warning.",
+      "verdict": "correct",
+      "response": "The clamp screen displays **RELEASE CLAMPS**, with a conduit-strain warning beneath it."
+    },
+    {
+      "qid": "early-temporal-4",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects that Juno called out to offer a trade for help, but it does not explicitly state that she made an offer, only that she asked if anyone was willing to trade.",
+      "verdict": "contradicts",
+      "response": "You called out asking whether anyone nearby was willing to trade for help. No one replied."
+    },
+    {
+      "qid": "early-temporal-5",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": false,
+      "reasoning": "The narrator's reply describes the pressure gauge dropping in short jumps and flickering, which is inconsistent with the reference passage that states it drops one notch without any mention of flickering or jumping.",
+      "verdict": "contradicts",
+      "response": "As gas escaped through the narrow cut, the pressure indicator dropped in short jumps and flickered. When Juno widened the breach, it fell out of the red zone, then steadied just above it."
+    },
+    {
+      "qid": "early-temporal-6",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply describes a different event involving a transfer hatch and a burst of air, which contradicts the specific details about gas venting during the second hull breach emergency where the gas continues to hiss and the pressure indicator remains red.",
+      "verdict": "contradicts",
+      "response": "At the transfer hatch, cutting the seam released a hard burst of air that knocked Juno against the docking-ring structure and pulled the cutter from her grip, though its tether held. When she cut through the remaining seam, the hatch swung outward with a heavy bang, and the rush of air dwindled to a thin whistle."
+    },
+    {
+      "qid": "early-temporal-7",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the reference passage, stating that Juno refuses to hand over Odile's data slate, which is consistent with the events described.",
+      "verdict": "correct",
+      "response": "Juno refuses to hand over Odile’s cracked data slate, which contains Odile’s survey logs."
+    },
+    {
+      "qid": "early-temporal-8",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the expected answer by stating that Juno waits with her helmet lamp aimed down the cramped compartment after calling out, and it also mentions the lack of response and the presence of the cable bundle, which aligns with the reference passage.",
+      "verdict": "correct",
+      "response": "Juno waits with her helmet lamp aimed down the cramped compartment, but no one replies or appears. The cable bundle still blocks the way forward, with the ladder behind her and the open panel above."
+    },
+    {
+      "qid": "late-vague-1",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply correctly states that Juno had 680 credits after selling the cracked slate and survey logs for 180 credits, which is consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "After selling the cracked slate and Odile’s survey logs for 180 credits, Juno had 680 credits. The proprietor counted out the payment, and Juno took it."
+    },
+    {
+      "qid": "late-detail-1",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply incorrectly states that Brother Calix accepted the deal and gave the navigation core, while the reference passage indicates that Calix did not promise to return the core.",
+      "verdict": "contradicts",
+      "response": "You offered Brother Calix Odile’s brass compass and an additional 300 credits for the navigation core. He accepted the deal, kept the compass, and gave you the core."
+    },
+    {
+      "qid": "late-vague-2",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the hull integrity of the Kestrel as stated in the reference passage.",
+      "verdict": "correct",
+      "response": "The Kestrel’s hull integrity is 67 percent. Structural braces support the damaged cargo-bay section, but the scored plating has not been repaired."
+    },
+    {
+      "qid": "late-detail-2",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information from the reference passage about the docking ring being unpowered and the control display being dark.",
+      "verdict": "correct",
+      "response": "When Juno arrived, Meridian-9’s docking ring was unpowered, and its control display was dark. A conduit disappeared behind buckled metal, with no active guidance from the station."
+    },
+    {
+      "qid": "late-vague-3",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information provided in the reference passage about Juno's claim regarding the hidden stash on Meridian-9.",
+      "verdict": "correct",
+      "response": "Juno told the Ostrander guard she had overheard talk of a hidden contraband stash aboard Meridian-9. She gave no deck or access point."
+    },
+    {
+      "qid": "late-detail-3",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the guard's actions and words as described in the reference passage, confirming that he instructed Juno to stop, checked the container, and then asked her to open it for verification.",
+      "verdict": "correct",
+      "response": "He told Juno, “Stop there,” then checked the container’s exterior and tested the latch. Afterward, he said, “Show us what you found. You open it, and we’ll verify what’s inside.”"
+    },
+    {
+      "qid": "late-detail-4",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the events of the reference passage, stating that the cracked data slate was intended to be presented as authorization but was not available because it had been sold.",
+      "verdict": "correct",
+      "response": "You tried to present the cracked data slate containing Odile’s survey logs as authorization. You had already sold it at a Port Halcyon pawnshop, so you couldn’t show it to the guard."
+    },
+    {
+      "qid": "late-vague-4",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the worker's statement about the access list and the need for supervisor confirmation, consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "The worker said, “I can’t change the access list. Only the supervisor can confirm it.” They refused to risk their clearance over a request that wasn’t on file."
+    },
+    {
+      "qid": "late-detail-5",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the events described in the reference passage, where Juno drops the O2 canister and later retrieves it to close the valve.",
+      "verdict": "correct",
+      "response": "You dropped the portable O2 canister; it struck the floor with a hard clank while its valve hissed, leaking oxygen. You later took it back and shut the valve."
+    },
+    {
+      "qid": "late-vague-5",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the hull integrity reading mentioned in the reference passage.",
+      "verdict": "correct",
+      "response": "The hull status display read **67 percent integrity**."
+    },
+    {
+      "qid": "late-detail-6",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information provided in the reference passage regarding Juno's available credits upon reaching Port Halcyon.",
+      "verdict": "correct",
+      "response": "When Juno and Priya reached Port Halcyon from the old docks, Juno had 560 credits."
+    },
+    {
+      "qid": "late-vague-6",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information provided in the reference passage, confirming that Juno had 140 credits left after the payment.",
+      "verdict": "correct",
+      "response": "You had 140 credits left after paying 420 credits for the structural brace sections."
+    },
+    {
+      "qid": "late-detail-7",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately states that the spare plating costs 260 credits, which is consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "The spare plating sheets at Port Halcyon’s repair depot cost 260 credits, enough to cover the damaged cargo-bay section, but installation was not included. Juno had 140 credits then, leaving her 120 short, and the attendant would not release the sheets without full payment."
+    },
+    {
+      "qid": "late-detail-8",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": false,
+      "reasoning": "The narrator's reply describes the hatch making a heavy bang when it opened, which contradicts the expected answer of a dry clack.",
+      "verdict": "contradicts",
+      "response": "When the final strip parted, pressure drove the hatch outward with a heavy bang against the docking ring. The rush of air dwindled to a thin whistle."
+    },
+    {
+      "qid": "late-vague-7",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply states that a cable bundle was holding the manual catch in place, which contradicts the reference passage that clearly identifies a narrow retaining bar as the obstruction preventing the panel from opening.",
+      "verdict": "contradicts",
+      "response": "A cable bundle ran across the panel’s upper edge and disappeared behind its frame, holding the manual catch in place. You pushed it aside until it slid free, then opened the panel."
+    },
+    {
+      "qid": "late-detail-9",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the details provided in the reference passage about the relay casing, confirming that it has no dials, switches, or additional access covers, and describes its connection to the beacon without introducing any contradictions.",
+      "verdict": "correct",
+      "response": "The relay casing had no dial, switch, adjustment screw, or extra access cover; its visible connection ran to the beacon’s exposed contact board, with no added wires or signs of modification. The relay clicked with each signal burst, the status light pulsed steadily, and the casing, contacts, and wiring showed no visible damage, loose connections, or irregularities; nothing on the unit offered a manual trace, directional control, or signal-strength adjustment."
+    },
+    {
+      "qid": "late-vague-8",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the reference passage, stating that the beacon signal weakened with distance and remained faintly detectable, which is consistent with what actually happened.",
+      "verdict": "correct",
+      "response": "As you moved away from the Tessaly skimmer platform, the beacon signal weakened with distance but remained faintly detectable. It gave no clear bearing or route to another source."
+    },
+    {
+      "qid": "late-detail-10",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply mentions that the wiring showed no visible breaks or added components, which is consistent with the expected answer that states there was no added wiring, but it does not mention the absence of transmission strength settings or boost control, which is a key part of the expected answer.",
+      "verdict": "contradicts",
+      "response": "The beacon’s casing was intact, and the contacts beneath the secured cover were clean. The wiring showed no visible breaks, loose connections, or added components."
+    },
+    {
+      "qid": "late-vague-9",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information provided in the reference passage about what was displayed on the skimmer's instruments.",
+      "verdict": "correct",
+      "response": "The skimmer’s instruments displayed atmospheric sampling data and platform status. Their stored records covered sampling operations only; they contained no beacon transmission, signal activity, or linked navigation log."
+    },
+    {
+      "qid": "late-detail-11",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the events described in the reference passage, confirming that no usable power control or emergency panel was found during the search.",
+      "verdict": "correct",
+      "response": "You searched the laboratory walls, equipment, terminal casing, and visible cable run, but found no accessible emergency panel or usable power connection. The terminal remained dark."
+    },
+    {
+      "qid": "late-detail-12",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the expected answer by stating that Juno found no physical files or documents mentioning the Lantern project, consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "Juno searched the laboratory benches and accessible surfaces around the dark terminal, checking beneath equipment and along the nearby work area for loose pages, labels, or stored notes; she found no physical files or documents mentioning the Lantern project. The terminal remained unresponsive, the lab stayed dark, and the only visible computer in the laboratory was still the terminal."
+    },
+    {
+      "qid": "late-vague-10",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the actions taken by Juno in the reference passage, specifically mentioning her search for a battery, power pack, or intact connection and confirming that she found none.",
+      "verdict": "correct",
+      "response": "Juno checked accessible storage and equipment in the adjacent rooms for a battery, power pack, or intact connection she could use to power the laboratory terminal. She found none."
+    },
+    {
+      "qid": "late-detail-13",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the information from the reference passage, stating that the proprietor could not identify the buyer or provide contact information.",
+      "verdict": "correct",
+      "response": "The proprietor said the sale was final and the ledger listed only Odile’s cracked data slate and the 180-credit sale, with no buyer’s name or contact information. They couldn’t identify the buyer or help Juno retrieve the slate."
+    },
+    {
+      "qid": "late-vague-11",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply correctly states that Juno was paid 180 credits for the cracked data slate, which aligns with the reference passage.",
+      "verdict": "correct",
+      "response": "The pawnshop proprietor paid Juno 180 credits for the cracked data slate and Odile’s survey logs. Her total rose to 680 credits."
+    },
+    {
+      "qid": "late-detail-14",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the events described in the reference passage, confirming that Juno found no authorization documents and only her plasma cutter and structural braces in her gear.",
+      "verdict": "correct",
+      "response": "You searched your pockets, the inner seams of your jacket, and the suit pouch at your belt, but found no authorization document or credential. Your listed gear was a plasma cutter and structural braces; neither could serve as proof of authority for Priya’s release."
+    },
+    {
+      "qid": "late-vague-12",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the reference passage where the protagonist pulls out the cracked data slate with Odile's survey logs to show the attendant.",
+      "verdict": "correct",
+      "response": "You pulled out the cracked data slate containing Odile’s survey logs and showed it to the attendant, saying it needed immediate attention."
+    },
+    {
+      "qid": "late-detail-15",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the hull reading of the Kestrel as stated in the reference passage.",
+      "verdict": "correct",
+      "response": "The Kestrel’s hull integrity reads 67 percent. Its scored, creased cargo-bay section is braced, with no pressure loss indicated."
+    },
+    {
+      "qid": "late-detail-16",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects Priya's statement after checking the connector, which is consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "Priya checked the connector without disturbing the clip and said, “That’s better.”"
+    },
+    {
+      "qid": "late-vague-13",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply correctly states that the plasma cutter was gathered, which aligns with the reference passage, but it also includes additional details about the insulated hand tool that are consistent with the actions described.",
+      "verdict": "correct",
+      "response": "You gathered the plasma cutter, structural braces, and insulated hand tool before returning to Meridian-9. The insulated hand tool was used to secure the conduit’s retaining clip."
+    },
+    {
+      "qid": "late-detail-17",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the reference passage, stating that the plasma cutter was secured to the suit and that no other suitable tool was found.",
+      "verdict": "correct",
+      "response": "You found no suitable tool in the launch bay. Your plasma cutter was secured to your suit."
+    },
+    {
+      "qid": "late-vague-14",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply contradicts the reference passage, which clearly states that Juno confronted the Ostrander security team and refused to hand over the data slate while they were present.",
+      "verdict": "contradicts",
+      "response": "You refused to hand over Odile’s cracked data slate to the Ostrander security team. No one answered; the docking ring was empty, and no security team was visible nearby."
+    },
+    {
+      "qid": "late-detail-18",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the events described in the reference passage, confirming that the plasma cutter was indeed used to attempt to open the transfer hatch.",
+      "verdict": "correct",
+      "response": "You used your plasma cutter to cut through the transfer hatch. The pressure burst knocked you back before you finished cutting the seam."
+    },
+    {
+      "qid": "late-vague-15",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately describes the transfer hatch as being behind Juno and having a dark cut edge, which is consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "Behind you was the open transfer hatch, its cut seam dark after the metal cooled. The Ostrander guards remained on the other side."
+    },
+    {
+      "qid": "late-detail-19",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the reference passage, confirming that the reactor control panel's display remains dark and unresponsive when Juno checks it.",
+      "verdict": "correct",
+      "response": "The reactor control panel’s display stays dark. It shows no status report and gives no response when Juno touches the controls."
+    },
+    {
+      "qid": "late-detail-20",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the expected answer by stating that Juno offered the plasma cutter and structural braces as salvage in trade for power or communications equipment, which is consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "Juno offered the plasma cutter and structural braces as salvage in trade for power or communications equipment."
+    },
+    {
+      "qid": "late-temporal-1",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the proprietor's statement from the reference passage, confirming that the transaction is complete and the items cannot be returned.",
+      "verdict": "correct",
+      "response": "The proprietor said, “The transaction is finished. I can’t return what you sold.” He confirmed the slate and survey logs were no longer hers."
+    },
+    {
+      "qid": "late-temporal-2",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply contradicts the reference passage, which clearly states that Juno offered 300 credits during the fifteenth trade.",
+      "verdict": "contradicts",
+      "response": "Juno cannot recall clearly how many credits she offered during the fifteenth trade; the recorded events do not identify that exchange."
+    },
+    {
+      "qid": "late-temporal-3",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the guard's statement after checking the container against the coordinates, which is consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "He said, “This matches the location.” Then he confirmed the stash was real and offered to discuss what they owed Juno for the lead."
+    },
+    {
+      "qid": "late-temporal-4",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply indicates that Juno does not clearly remember the specifics of the twenty-first bargain, but it aligns with the fact that the guard stated her inspection request needed confirmation from Kessler, which was indeed pending due to the unanswered calls.",
+      "verdict": "correct",
+      "response": "Juno cannot recall a twenty-first bargain clearly. She remembers the checkpoint guard saying her inspection request needed Kessler’s confirmation, which remained pending."
+    },
+    {
+      "qid": "late-temporal-5",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the events described in the reference passage, stating that Juno sent a supply request and received no response, but it incorrectly implies that there was no prior tense bargain, which contradicts the expectation of a twenty-fourth tense bargain.",
+      "verdict": "contradicts",
+      "response": "Juno cannot recall a twenty-fourth tense bargain with another ship over bracing materials. The record only says she sent a supply request over the local channel near the old docks, and no ship responded."
+    },
+    {
+      "qid": "late-temporal-6",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply contradicts the expected answer because it states that the question was about wreck locations, while the expected answer was about offering help with salvage work for credits.",
+      "verdict": "contradicts",
+      "response": "You asked the two traders whether they knew of nearby wrecks with parts worth salvaging. They said they didn’t track wreck locations and offered no coordinates or contacts."
+    },
+    {
+      "qid": "late-temporal-7",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply accurately reflects the expected answer by stating that Juno sold Odile's cracked data slate and survey logs at the Port Halcyon pawnshop, which is consistent with the reference passage.",
+      "verdict": "correct",
+      "response": "Juno sold Odile’s cracked data slate containing her survey logs at the Port Halcyon pawnshop for 180 credits."
+    },
+    {
+      "qid": "late-temporal-8",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply states that Juno cannot recall what she asked the attendant, which contradicts the reference passage where it is explicitly mentioned that she asked about someone who might grant authorization for Priya's release.",
+      "verdict": "contradicts",
+      "response": "Juno cannot recall clearly what she asked the attendant during the thirty-fourth tense bargain or trade. The recorded events do not identify that occurrence or preserve her words."
+    },
+    {
+      "qid": "late-temporal-9",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply states that Juno cannot recall the specific proposal made during the bargain, which contradicts the reference passage where the proposal is clearly outlined.",
+      "verdict": "contradicts",
+      "response": "Juno cannot recall clearly what specific proposal she made to Voren during the 37th tense bargain; the available record does not contain it."
+    },
+    {
+      "qid": "late-temporal-10",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "reasoning": "The narrator's reply states that Juno cannot recall the thirty-ninth tense bargain with the Ostrander guards clearly, which contradicts the reference passage where Juno actively attempts to negotiate for access to the transfer hatch.",
+      "verdict": "contradicts",
+      "response": "Juno cannot recall the thirty-ninth tense bargain with the Ostrander guards clearly. The records she can recall do not identify an event by that description."
+    }
+  ]
+}
