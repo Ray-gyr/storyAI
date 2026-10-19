@@ -35,3 +35,14 @@ No questions, labels, retrieval runs or chunk text have been produced or read.
 ## Known deviation so far
 
 The protocol asks for 10 temporal questions per pool. On the dev story, the early pool had only 4 eligible occurrences (the first or second occurrence of an event type, in a chunk of at least 40 words), so it produced 8 temporal questions, two per occurrence. The same rule will apply to the test story, and the actual counts will be reported.
+
+---
+
+# Freeze record: v3 (second use of the test story, end to end only)
+
+**Frozen code: commit `2730731`** ("v3: give the writer original text for top-3 memories, in story order"). See PROTOCOL.md Section 10 for why the test story is reused and the residual bias this carries.
+
+- Retrieval is unchanged from `a8c7510`.
+- The writer receives the top 3 memories by retrieval rank with their original chunk text (the other 7 as summaries), all listed oldest first with turn numbers. Prompt and model are as at `2730731` (`gpt-6-luna`).
+- Chosen on the dev story only: summaries only 53/88, top 3 62/88, all 10 64/88 (end to end at round 300).
+- Test run: `e2e.ts test --originals 3 --tag v3`, once, reusing the frozen v2 query rewrites.
