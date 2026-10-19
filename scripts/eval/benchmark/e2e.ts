@@ -10,13 +10,12 @@
  * 输出：out/<story>/e2e_<tag>.json（v2 冻结时的结果为 e2e.json）
  */
 import { StringOutputParser } from "@langchain/core/output_parsers";
-import { ChatOpenAI } from "@langchain/openai";
 import { join } from "node:path";
-import { z } from "zod";
 import { HYBRID_RETRIEVAL_CONFIG, retrieveMemories, startDenseSearch } from "../../../src/lib/hybridRetriever";
 import { getStoryLLM } from "../../../src/lib/Init";
 import { storyWorkerPrompt } from "../../../src/lib/prompt";
 import { writerPromptInputs } from "../../../src/lib/storyGenerator";
+import { judgeAnswer, JUDGE_VERSION, tallyVerdicts } from "./judge";
 import { chunkContent, loadQuestions, loadStory, mapLimit, readJson, RetrievalRow, writeJson } from "./common";
 
 const STORY_NAME = process.argv[2];
@@ -24,13 +23,6 @@ const SNAPSHOT = 300;
 const argValue = (flag: string) => { const i = process.argv.indexOf(flag); return i >= 0 ? process.argv[i + 1] : undefined; };
 const ORIGINALS = argValue("--originals") !== undefined ? Number(argValue("--originals")) : HYBRID_RETRIEVAL_CONFIG.originalTextFor;
 const TAG = argValue("--tag") ?? `originals${ORIGINALS}`;
-
-const judge = new ChatOpenAI({ modelName: "gpt-4o-mini", openAIApiKey: process.env.OPENAI_API_KEY, temperature: 0 })
-    .withStructuredOutput(z.object({
-        reasoning: z.string().describe("One sentence comparing the response with the reference passage."),
-        verdict: z.enum(["correct", "contradicts", "absent"]).describe(
-            "correct: the response states or clearly reflects the expected answer. contradicts: it states something incompatible with the reference passage. absent: it does not address the question."),
-    }));
 
 async function main() {
     const { dir, sessionId, chunks, snapshots } = loadStory(STORY_NAME);
@@ -63,16 +55,18 @@ async function main() {
             input: q.question,
         }));
         const goldRetrieved = memories.some(m => labels.candidates[q.qid][m.id]?.acceptable);
-        const verdict = await judge.invoke([
-            ["system", "You check whether a story narrator's reply is consistent with what actually happened earlier in the story."],
-            ["human", `PLAYER QUESTION: ${q.question}\nEXPECTED ANSWER: ${q.expected_answer}\n\nREFERENCE passage (what actually happened):\n${chunkContent(byId.get(q.source_id)!)}\n\nNARRATOR'S REPLY:\n${response}`],
-        ]);
+        const verdict = await judgeAnswer({
+            question: q.question,
+            expectedAnswer: q.expected_answer,
+            reference: chunkContent(byId.get(q.source_id)!),
+            response,
+        });
         return { qid: q.qid, type: q.type, pool: q.pool, gold_retrieved: goldRetrieved, ...verdict, response };
     });
 
-    const tally = (subset: typeof results) => Object.fromEntries(
-        (["correct", "contradicts", "absent"] as const).map(v => [v, subset.filter(r => r.verdict === v).length]));
+    const tally = tallyVerdicts;
     const summary = {
+        judge: JUDGE_VERSION,
         n: results.length,
         all: tally(results),
         gold_retrieved: { n: results.filter(r => r.gold_retrieved).length, ...tally(results.filter(r => r.gold_retrieved)) },

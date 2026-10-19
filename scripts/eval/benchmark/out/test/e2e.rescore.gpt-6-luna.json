@@ -1,0 +1,1253 @@
+{
+  "summary": {
+    "judge": "judge-v2/gpt-6-luna",
+    "source": "e2e.json",
+    "n": 88,
+    "new": {
+      "correct": 46,
+      "contradicts": 34,
+      "cannot_recall": 7,
+      "absent": 1
+    },
+    "old": {
+      "correct": 49,
+      "contradicts": 39,
+      "absent": 0
+    },
+    "self_agreement": 0.9090909090909091
+  },
+  "rows": [
+    {
+      "qid": "early-vague-1",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply says you asked Ferro to load enough water for three days, matching the passage.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You asked Captain Ferro Lusk to load enough water for three days."
+    },
+    {
+      "qid": "early-detail-1",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reference says the caravan reached Merrow after three days on the road, matching the reply.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The caravan traveled for three days from Corvane before reaching Merrow. Tamsin halted the lead wagon at the edge of town to replenish supplies."
+    },
+    {
+      "qid": "early-vague-2",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply reflects the stallkeeper’s warning that no sensible buyer would offer on a sealed case without knowing its contents.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The stallkeeper was skeptical that anyone would make an offer on the sealed case without knowing what was inside."
+    },
+    {
+      "qid": "early-detail-2",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply accurately says Wren accounted for the supplies and checked the water vessels, but it does not mention that the reliquary remained fastened.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren confirmed the supplies were accounted for and checked the water vessels before the caravan left Merrow."
+    },
+    {
+      "qid": "early-vague-3",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reference says the reliquary’s fastenings held and it remained secured, consistent with the reply that it stayed secured and its seals were undisturbed.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The reliquary stayed secured among the wagon cargo during the journey. At Saint Aurel, Grell inspected it and confirmed its seals were undisturbed."
+    },
+    {
+      "qid": "early-detail-3",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "contradicts",
+      "reasoning": "The passage says Wren checked that the water vessels’ covers stayed shut; it does not say Wren confirmed there were no leaks or told the drivers to ration water.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren checked the caravan’s water stores and confirmed there were no leaks. She told the drivers to ration the water carefully."
+    },
+    {
+      "qid": "early-detail-4",
+      "type": "detail",
+      "gold_retrieved": false,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "Wren said they had seen nothing wrong with the supplies, but the reply claims the water skins were empty and that Wren found no spare supplies.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "While crossing the Ash Ground, Wren checked the wagon but found no hidden water containers or spare supplies. The water skins were empty."
+    },
+    {
+      "qid": "early-vague-4",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply correctly says Wren checked the water covers as the wagons rolled, matching the passage.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren checked the water covers as the wagons rolled along. The caravan followed the safe ground Tamsin had marked on the map."
+    },
+    {
+      "qid": "early-detail-5",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage keeps Wren beside the water vessels checking their covers, and never says Wren searched with Tamsin.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren checked the water vessels, then searched alongside the route with Tamsin for signs of the waystone. They found none."
+    },
+    {
+      "qid": "early-vague-5",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The reference says you urged the drivers to maintain a steady pace and stay vigilant, whereas the reply claims you urged them to increase their pace.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You urged the drivers to keep a steady, increased pace across the Glass Flats to avoid the unbearable heat."
+    },
+    {
+      "qid": "early-detail-6",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage says Wren checked that the water-vessel covers stayed shut, not the horses’ harnesses; the reply also adds an unsupported claim about the reliquary.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren checked the horses’ harnesses and monitored the water vessels during the journey. The Sealed Reliquary stayed secured among the wagon cargo."
+    },
+    {
+      "qid": "early-vague-6",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply says the remaining skin held only a few sips, consistent with finding that only a little water remained.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "One of the two large water skins was empty; the other held only a few measured sips."
+    },
+    {
+      "qid": "early-detail-7",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply says you asked Wren to search among the rocks and glass fragments for the old waystone, matching the reference passage.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You asked Wren to help search among the rocks and glass fragments for the old waystone. The search found no sign of it."
+    },
+    {
+      "qid": "early-detail-8",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage says the map showed the marked course and no alternate path or nearby landmark, contradicting the reply’s claim that it showed a hidden route and a foothills approach.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The Hand-drawn Map of the Wastes showed a marked hidden route toward Saint Aurel, and Tamsin used it to guide the caravan along safer ground, including the approach through the foothills. It did not show a last known location or landmarks for the old waystone, and when Tamsin checked it for supplies, it revealed no nearby water or settlement."
+    },
+    {
+      "qid": "early-vague-7",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply reflects that you checked the outcrop for waystone signs and found none, though it omits the specific stone and ground features you examined.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Tamsin scouted the outcrop for signs of the waystone but found no markings."
+    },
+    {
+      "qid": "early-detail-9",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply says the ground beyond the glass was ash-colored, matching the reference passage.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The ground beyond the glass was ash-colored."
+    },
+    {
+      "qid": "early-vague-8",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The passage says you tightened the reliquary’s securing straps among the cargo before leaving Merrow, matching the reply.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You secured the Sealed Reliquary among the caravan’s cargo before leaving Merrow."
+    },
+    {
+      "qid": "early-detail-10",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage says Wren watched the stalls and the road behind the caravan, not for threats ahead as the reply claims.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren watched for threats ahead of the caravan and later kept watch on the rear. She reported finding no threats."
+    },
+    {
+      "qid": "early-vague-9",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reference says Wren suggested keeping the reliquary secured and speaking with Abbot Grell, matching the reply.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren suggested securing the Sealed Reliquary and consulting Abbot Grell."
+    },
+    {
+      "qid": "early-detail-11",
+      "type": "detail",
+      "gold_retrieved": false,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "Grell actually said, “You have brought it to my threshold,” while the reply attributes different advice and offers to him.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "When Grell saw the reliquary, he focused on its seals and advised Tamsin to keep it closed. He offered to inspect it and take responsibility for it at Saint Aurel."
+    },
+    {
+      "qid": "early-detail-12",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply correctly identifies Ishkar, a bound fire spirit, as what the reliquary houses, consistent with the passage.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The reliquary houses Ishkar, a bound fire spirit. Its seals keep him constrained, and Abbot Grell advised keeping it closed because no safe method to open it is known. Tamsin believes Ishkar deserves a chance at redemption, but that does not make breaking the seals safe."
+    },
+    {
+      "qid": "early-vague-10",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "Grell said, “The seals appear undisturbed,” matching the reply’s claim that they were undisturbed.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Abbot Grell inspected the Sealed Reliquary and confirmed its seals were undisturbed. He advised keeping it closed and offered to take responsibility for it."
+    },
+    {
+      "qid": "early-detail-13",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The reference says you shared knowledge of safe routes marked on your map, not the map itself, but the reply claims you traded the map.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You traded your Hand-drawn Map of the Wastes to Abbot Grell for two large water skins. You described the safe paths marked on it, and Grell confirmed the skins were full before handing them over."
+    },
+    {
+      "qid": "early-vague-11",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply accurately states that no one had followed the caravan since it left Merrow, as Wren said.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren said no one had followed the caravan since it left Merrow. She named Sir Bastian Crowe as a known threat."
+    },
+    {
+      "qid": "early-detail-14",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The passage says he was hired to take the reliquary, and the reply identifies him as Sir Bastian Crowe.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren said Sir Bastian Crowe had been hired to take the sealed reliquary."
+    },
+    {
+      "qid": "early-vague-12",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reference says the stallkeeper had no reliable sighting and offered no trail or place to search, matching the reply.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The stallkeeper in Merrow had no reliable sighting of Sir Bastian Crowe and gave no information about where he went. Tamsin found no useful lead there."
+    },
+    {
+      "qid": "early-detail-15",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The vendor said there was no reliable word of anyone seeing Crowe lately, which the narrator accurately paraphrases as no reliable sightings.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The vendor in Merrow had heard Sir Bastian Crowe’s name but had no information about where he was. The stallkeeper said there were no reliable sightings of him."
+    },
+    {
+      "qid": "early-detail-16",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The vendor said they had not seen anyone watching the caravan and had no useful information about suspicious activity, matching the reply.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The vendors in Merrow had no useful information about anyone watching the caravan or any suspicious activity nearby."
+    },
+    {
+      "qid": "early-vague-13",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "Sabeth said the heat was danger enough and warned against leaving the path, not of bad footing or hidden hazards underfoot.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Old Mother Sabeth warned that the main danger was bad footing and changing ground, with hazards hidden underfoot. She told Tamsin to stay close to her tested track and watch the ground ahead."
+    },
+    {
+      "qid": "early-detail-17",
+      "type": "detail",
+      "gold_retrieved": false,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage says both large skins were intact and had no dampness around their seams, not that one was empty and the other nearly gone.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren reported that the water was nearly gone: one skin was empty, and the other held only a few measured sips."
+    },
+    {
+      "qid": "early-vague-14",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply correctly says Sabeth agreed to guide the group, and its added detail that the drivers would follow her pace matches the bargain described.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Old Mother Sabeth agreed to guide the caravan along a hidden path to Saint Aurel. You assured her the drivers would follow her pace."
+    },
+    {
+      "qid": "early-detail-18",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "contradicts",
+      "reasoning": "The reply correctly reflects Sabeth’s pace and path requirements, but it also claims Tamsin assured her the drivers would comply, which does not happen in the reference passage.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "correct"
+      ],
+      "response": "Old Mother Sabeth agreed to guide the caravan only if the drivers maintained her pace, stayed close behind her, and did not stray from her track. Tamsin assured her the drivers could keep up and would follow her instructions; Sabeth stressed that they must keep the wagons close and proceed along the path she chose."
+    },
+    {
+      "qid": "early-vague-15",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "cannot_recall",
+      "reasoning": "The reply recalls that Sabeth said to keep the water covered, but says the exact wording is unclear and does not recall her warning about the drivers.",
+      "repeats": [
+        "cannot_recall",
+        "correct",
+        "correct"
+      ],
+      "response": "Old Mother Sabeth warned Tamsin to keep the water covered, but the exact words are not clear in her memory."
+    },
+    {
+      "qid": "early-detail-19",
+      "type": "detail",
+      "gold_retrieved": false,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "Wren said “No leaks” after checking the water skins, not that they were empty or that new skins had been bought.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren found the water skins empty and said the caravan couldn’t safely depart without water. After buying two large skins, Wren told you the caravan could move."
+    },
+    {
+      "qid": "early-detail-20",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The passage says to keep the water covered and stay on Sabeth’s track, which the reply accurately reflects.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Sabeth told you to keep the water covered and follow her track closely."
+    },
+    {
+      "qid": "early-temporal-1",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "absent",
+      "reasoning": "The reply mentions the water order and says the reliquary remained secured among the cargo, but does not state what Tamsin instructed Ferro to do with it.",
+      "repeats": [
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "response": "Tamsin instructed Ferro to load enough water for three days; the dockhands placed the casks beside the reliquary, which remained secured among the cargo."
+    },
+    {
+      "qid": "early-temporal-2",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "contradicts",
+      "reasoning": "During the first trade, you told Ferro to secure the water casks and load the reliquary for departure; the three-day water order came later.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You instructed Ferro to load enough water for three days. He relayed the order, and dock hands loaded the casks beside the Sealed Reliquary."
+    },
+    {
+      "qid": "early-temporal-3",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The reference says the first thing you did at Merrow was inquire about supplies and buyers, not check the reliquary.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You checked that the sealed reliquary was still secured among the cargo."
+    },
+    {
+      "qid": "early-temporal-4",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage records Wren saying water remains the concern and to keep measured rations until Saint Aurel, contrary to the reply’s claim that there is no record of what Wren said about water.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly which shortage was the second. She remembers Wren saying the lead team needed shade and rest, but no record of what Wren said about the water."
+    },
+    {
+      "qid": "early-temporal-5",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply matches the passage: you told Ferro to load enough water for three days, and the casks were loaded beside the reliquary.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You instructed Ferro to load enough water for three days. He relayed the order, and the dock hands loaded the casks beside the reliquary."
+    },
+    {
+      "qid": "early-temporal-6",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage records you telling Ferro, “The case stays sealed,” so the reply falsely says your exact words aren’t recorded.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You agreed to have the caravan transport the sealed reliquary across the Ashen Wastes and outlined a safe route to Merrow with enough water for three days. The exact words you said to Ferro aren’t recorded."
+    },
+    {
+      "qid": "early-temporal-7",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage says you inquired about additional supplies and potential buyers for the reliquary, not specifically water or prioritizing refilling the vessels.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You specifically asked about water and prioritized refilling the water vessels. The record says you also asked generally about other supplies, but names no additional items."
+    },
+    {
+      "qid": "early-temporal-8",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The reply claims the water skins were nearly empty and a driver was incapacitated, contradicting Wren’s statement that the vessel covers were shut and nothing was wrong with the supplies.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The second crisis I can place clearly was on the exposed ash ground: both water skins held only a few measured sips, and a driver was too weak to take the reins. Wren monitored the driver, but I can’t recall her saying anything specific about the water vessels."
+    },
+    {
+      "qid": "late-vague-1",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "Sabeth explicitly said “The edges are not tested,” but the reply claims she gave no specific warning about the edges.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Old Mother Sabeth warned that the ground could change and footing was bad, and told Tamsin to stay close to her tested track. She gave no specific warning about the path’s edges."
+    },
+    {
+      "qid": "late-detail-1",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage says the water skins were secured among the supplies, while the reply names the reliquary instead.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The sealed reliquary was secured among the caravan’s cargo during the journey."
+    },
+    {
+      "qid": "late-vague-2",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage says a fragment from the lintel dropped and struck the stones behind Tamsin, but the reply claims no falling object is recorded.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly what she heard drop. The account of her moving through the gap records quiet and no movement, but no falling object."
+    },
+    {
+      "qid": "late-detail-2",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply correctly reflects that Tamsin found no tool on the ground that could help open the reliquary.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You found no tools on the ground that could help open the reliquary."
+    },
+    {
+      "qid": "late-vague-3",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "contradicts",
+      "reasoning": "The reference says she found no opening and only rough stone behind the gaps, but the reply claims a narrow gap at the bottom let through a draft.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You found no hidden mechanism, handle, hinge, or loose stone; the panel’s face and edges were solid and unmarked. A narrow gap at the bottom let through a faint draft."
+    },
+    {
+      "qid": "late-detail-3",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "contradicts",
+      "reasoning": "The passage says both water skins are nearly empty and hold small measured sips, while the reply claims one is empty.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "correct"
+      ],
+      "response": "There are two large water skins with the caravan. One is empty and hangs from a wagon; the other holds only a few measured sips, kept tied shut for conservation. They were bought full at Corvane’s river docks, but the caravan used the supply while crossing the wastes. Tamsin and Wren searched for water and found none, and the map showed no alternate route to a source. The skins have not been refilled: one is empty, and the other is nearly empty, leaving the caravan with only a few sips."
+    },
+    {
+      "qid": "late-detail-4",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply accurately says the skins held only a few measured sips, as stated in the passage.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The exact number isn’t recorded. The two water skins held only a few measured sips, which Tamsin divided among the drivers and Wren."
+    },
+    {
+      "qid": "late-vague-4",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage says the drivers kept close together, while the reply instead claims Wren took the reins, which is not what happened.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren stayed beside the weakened driver, supported him, and helped him into a wagon when he could no longer sit up unaided. Wren then took the reins so the caravan could keep moving."
+    },
+    {
+      "qid": "late-detail-5",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage says both water skins are still empty, but the reply claims they contain a few sips of water.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin found only a few measured sips left in the two large water skins and kept them tied shut to conserve the water. Later, she checked again and found one skin empty, with only a few sips remaining in the other."
+    },
+    {
+      "qid": "late-vague-5",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The reference says both water skins were empty, with the last measured sips already shared, but the reply claims one still held a few sips.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "When Tamsin checked them, one water skin was empty; the other held only a few measured sips."
+    },
+    {
+      "qid": "late-detail-6",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply accurately reflects that Tamsin found no hidden water, spare container, or additional supply in the wagon.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Tamsin searched the wagon but found nothing useful: no hidden water containers or spare supplies."
+    },
+    {
+      "qid": "late-vague-6",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply says the sealed reliquary was secured among the cargo when the caravan returned to Corvane’s docks, matching the passage.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The Sealed Reliquary was secured among the cargo when the caravan returned to Corvane’s river docks."
+    },
+    {
+      "qid": "late-detail-7",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reference passage identifies Yara as the bandit leader, matching the reply.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The bandit leader was Yara."
+    },
+    {
+      "qid": "late-detail-8",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says the guard rubbed his thumb along the notebook’s edge, while the reply only says Tamsin cannot recall the detail.",
+      "repeats": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly what the guard rubbed along the edge of Ferro’s notebook. The detail is lost to her."
+    },
+    {
+      "qid": "late-vague-7",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply says Wren checked the water vessels before leaving the docks, matching the reference that Wren checked the water skins.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren checked the water vessels before the caravan left Corvane’s river docks."
+    },
+    {
+      "qid": "late-detail-9",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "Wren reported seeing nothing ahead and that the route was open, which the reply accurately paraphrases as finding no threats while scouting.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren reported finding no threats while scouting ahead on the Ash Ground."
+    },
+    {
+      "qid": "late-vague-8",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The workers said they had no useful sighting and none could place Yara at the docks beforehand, matching the reply.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The dockworkers said they had not seen Yara before the attack and offered no useful information about her whereabouts."
+    },
+    {
+      "qid": "late-detail-10",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The passage says Tamsin checked her Hand-drawn Map of the Wastes and used it to guide the caravan through the canyon.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Tamsin used the Hand-drawn Map of the Wastes to guide the caravan through Bonebridge canyon."
+    },
+    {
+      "qid": "late-vague-9",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reference says the reliquary remained secured among the cargo, matching the reply’s claim that it was secured among the wagon cargo.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The Sealed Reliquary was secured among the wagon cargo throughout the journey. Two large water skins were also carried; by the time the caravan reached Saint Aurel, one was empty and the other held only a few measured sips."
+    },
+    {
+      "qid": "late-detail-11",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "correct",
+      "reasoning": "The reply says the skins contained only a few measured sips in total, which matches the passage; its added detail about one skin being empty is not contradicted.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "One skin was empty, and the other held only a few measured sips."
+    },
+    {
+      "qid": "late-detail-12",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reference says the skin held only a little water, no more than a few measured sips, which matches the reply.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The skin Tamsin checked held only a few measured sips."
+    },
+    {
+      "qid": "late-vague-10",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply correctly identifies the Sealed Reliquary as what was left at Saint Aurel, matching the passage.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You left the Sealed Reliquary at Saint Aurel when you went to the Duskwalker shrine; Ishkar, the bound fire spirit, was inside it. Later, you asked Grell to bring it to the shrine so Sabeth could listen for him."
+    },
+    {
+      "qid": "late-detail-13",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "correct",
+      "reasoning": "The reply correctly identifies the short sword, and the passage does not rule out carrying the water skins as well.",
+      "repeats": [
+        "correct",
+        "correct",
+        "contradicts"
+      ],
+      "response": "You carried Patience, your short sword, and two large water skins besides your map and astrolabe."
+    },
+    {
+      "qid": "late-vague-11",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage says Sabeth said, “Now, let us see whether there is anything to answer,” not that they could not safely ask Ishkar without another method.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Old Mother Sabeth listened to the sealed reliquary and heard no answer. She said that without another method, they could not safely ask Ishkar for answers."
+    },
+    {
+      "qid": "late-detail-14",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply accurately reflects that Sabeth heard no answer, said the shrine could not carry words through the seals, and would not attempt an unsafe ritual.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Sabeth said the sealed reliquary gave her no answer, and she knew no way for the shrine to carry words through its seals. She would not attempt a ritual without a safe method."
+    },
+    {
+      "qid": "late-vague-12",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "correct",
+      "reasoning": "Although it says Tamsin cannot recall an engineer’s exact statement, the reply correctly says Grell knew no safe method to reach Ishkar while the reliquary was sealed.",
+      "repeats": [
+        "correct",
+        "correct",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall an engineer saying anything about ancient rites. Old Mother Sabeth said she knew no way to reach Ishkar while the reliquary remained sealed and refused to attempt an unsupported ritual; Abbot Grell likewise knew no safe method to communicate with Ishkar or open it."
+    },
+    {
+      "qid": "late-detail-15",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "Grell said Ishkar was a bound fire spirit housed inside the sealed casing, which the reply accurately reflects as inside the sealed reliquary.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Grell confirmed that Ishkar is a bound fire spirit inside the sealed reliquary."
+    },
+    {
+      "qid": "late-detail-16",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says Tamsin cannot recall the exact response; its statement about receiving no useful information is consistent with the passage’s discussion of Wren’s whereabouts.",
+      "repeats": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall the patrol leader’s exact reply clearly. She remembers that the patrol gave her no useful information."
+    },
+    {
+      "qid": "late-vague-13",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "contradicts",
+      "reasoning": "The reply correctly says only a few measured sips remain, but its claims about Velk, Grell, and a stone panel conflict with the passage’s caravan crossing open ground with Wren and the Driver.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The remaining water skin holds only a few measured sips. The other large skin is empty and hangs from the wagon. Tamsin had kept the skins tied shut to conserve what remained for the caravan, whose water supply was already critical. The wagon and water are not here in the passage at Velk; Grell stands beside Tamsin, and the stone panel remains fixed in the wall. The faint draft still slips through its narrow lower seam."
+    },
+    {
+      "qid": "late-detail-17",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "correct",
+      "reasoning": "The reply correctly says the last water skin holds only a few measured sips, as the passage states.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The last water skin holds only a few measured sips. The other is empty."
+    },
+    {
+      "qid": "late-vague-14",
+      "type": "vague",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply says Tamsin rationed the remaining water in measured amounts to conserve it, consistent with the passage’s account that she kept it measured rather than spending it on speed.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Tamsin repeatedly checked the two large water skins, found them nearly empty, and kept them tied shut between distributions to conserve what remained. She rationed the water in measured sips, sharing it among the drivers and Wren, and warned the caravan that supplies were dwindling."
+    },
+    {
+      "qid": "late-detail-18",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply says the Sealed Reliquary was secured among the wagon’s cargo, matching the passage’s account of what was already aboard.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The Sealed Reliquary was secured among the wagon’s cargo. The other cargo isn’t specified."
+    },
+    {
+      "qid": "late-vague-15",
+      "type": "vague",
+      "gold_retrieved": false,
+      "old_verdict": "contradicts",
+      "verdict": "correct",
+      "reasoning": "The reply says the map marked hidden routes that Tamsin used to guide the caravan, consistent with the passage’s hidden route around the exposed approach.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The hand-drawn map marked safe wells, hidden routes, and old war-ruins. Tamsin used its marked safe ground and routes to guide the caravan toward Saint Aurel."
+    },
+    {
+      "qid": "late-detail-19",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "Grell explicitly said he knew no safe way to break the seals and warned that breaking them could not be made safe.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Grell warned that there was no safe way to open the reliquary and that breaking its seals would be dangerous. He urged Tamsin to keep it closed rather than force it."
+    },
+    {
+      "qid": "late-detail-20",
+      "type": "detail",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "Grell said, “There’s no entrance here,” whereas the reply falsely claims he suggested a low panel could be an entrance.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "When you reached the passage and found the low, narrow panel with a faint draft, Grell suggested it could be an entrance."
+    },
+    {
+      "qid": "late-temporal-1",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "cannot_recall",
+      "reasoning": "The reply cannot tie the events to a seventeenth crisis, and its mention of rationing is consistent with drivers taking measured sips as the water skins grow lighter.",
+      "repeats": [
+        "cannot_recall",
+        "cannot_recall",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall a distinct seventeenth water-shortage crisis; the accounts she remembers do not number the shortages that way. She recalls that searches on the Ash Ground found no water and that the remaining supply was rationed, but she cannot tie those details to a “17th” crisis."
+    },
+    {
+      "qid": "late-temporal-2",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says Tamsin cannot recall a numbered crisis, and the passage does not number one, though it does describe the two skins as holding only small measured sips.",
+      "repeats": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall a distinct twentieth water shortage crisis clearly; the recorded events do not identify one by that number."
+    },
+    {
+      "qid": "late-temporal-3",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "correct",
+      "reasoning": "The passage says Wren checked the water skins and found both empty, which the reply also states, while honestly noting the passage does not identify it as the twenty-fourth crisis.",
+      "repeats": [
+        "correct",
+        "contradicts",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall a twenty-fourth water-shortage crisis clearly. The records she can recall say the caravan’s skins were empty during one halt on the Ash Ground, but they do not identify that as the twenty-fourth crisis."
+    },
+    {
+      "qid": "late-temporal-4",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "Although the reply says Tamsin cannot recall the crisis, it falsely claims measured sips were shared; the passage says no one had water to drink and no shelter appeared.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall a distinct twenty-ninth water-shortage crisis clearly. The recorded events say the drivers were weakened, the remaining measured sips were shared, and Wren tended the driver who was too weak to take the reins."
+    },
+    {
+      "qid": "late-temporal-5",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "contradicts",
+      "reasoning": "The reply correctly says Tamsin wanted to clear the caravan’s name, but falsely claims she offered witnesses when Ferro was still waiting for her to explain.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "correct"
+      ],
+      "response": "At Corvane’s docks, Tamsin wanted Captain Ferro Lusk’s help clearing the caravan’s name after the bandit attack. She offered Wren and the other guards as witnesses to what happened."
+    },
+    {
+      "qid": "late-temporal-6",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says Wren eased back beside the weakened driver and watched behind the wagons, while the reply only says Tamsin cannot recall clearly and makes no conflicting claim.",
+      "repeats": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly what Wren did after reporting that the route was open during the twelfth occurrence of a trade."
+    },
+    {
+      "qid": "late-temporal-7",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "cannot_recall",
+      "reasoning": "The reference says the drivers take only brief drinks while water runs low, but the narrator says they cannot recall the crisis and makes no conflicting claim about what happened.",
+      "repeats": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall a 34th water-shortage crisis clearly. The recorded details do not identify one by number."
+    },
+    {
+      "qid": "late-temporal-8",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The passage describes Tamsin having no known water source to aim for, so the reply’s claim that no specific thirty-eighth crisis is identified conflicts with it.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall a specific thirty-eighth water shortage crisis clearly. The recorded shortages describe the caravan’s supplies running critically low, but do not identify a thirty-eighth crisis."
+    },
+    {
+      "qid": "late-temporal-9",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "contradicts",
+      "verdict": "contradicts",
+      "reasoning": "The rationing instruction matches the passage, but you urged Wren to keep moving while searching, not to stop and search for a well or shelter.",
+      "repeats": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You told Wren that water was running low and instructed her to ration what remained. You also suggested stopping to search for a nearby well or shelter."
+    },
+    {
+      "qid": "late-temporal-10",
+      "type": "temporal",
+      "gold_retrieved": true,
+      "old_verdict": "correct",
+      "verdict": "correct",
+      "reasoning": "The reply says the horses struggled and breathed roughly during the water shortage, consistent with the passage stating they were already breathing hard.",
+      "repeats": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Tamsin cannot recall a separate “crisis number 42” clearly. During the recorded water shortage, the horses struggled in the heat and breathed roughly, so the caravan slowed to avoid exhausting them."
+    }
+  ]
+}

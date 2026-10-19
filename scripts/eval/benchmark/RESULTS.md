@@ -116,3 +116,48 @@ Original text helps when it reaches the right chunk. It often does not, because 
 - **Route original text by relevance, not by fusion position.** Options: all 10 memories with originals (+2 answers on dev, within noise, about +3,300 tokens per turn), or originals assigned by vector rank, or a reranker. On this test story, originals for all 10 would have reached the right chunk for 45 of 49 original-only questions, against 28 for top 3. That observation comes from the test set, so it must be confirmed on new data.
 - **Temporal questions need a structural fix.** Story order and turn labels alone do not tell the writer which occurrence is "the first", because the retrieved set holds only some occurrences. A per-chunk occurrence index for recurring event types is one option.
 - The writer's accuracy given the right original text also varies by story (78% dev vs 64% test).
+
+---
+
+# Judge v2: rescoring the existing end-to-end answers
+
+**Evaluation-code fix** (PROTOCOL.md Section 6 rule 5). No answer was regenerated and no system configuration changed.
+
+**The bug.** The first judge had three verdicts (correct / contradicts / absent) and no rule for "I cannot recall". It scored honest uncertainty as a contradiction: on the test story, 12 of the 13 "cannot recall" replies of v2, and 12 of 13 of v3.
+
+**Judge v2** (`judge.ts`) has four verdicts:
+- correct
+- contradicts: any claim incompatible with the reference passage, including "cannot recall, but …" followed by a false claim
+- cannot_recall: honest uncertainty with no conflicting claim
+- absent
+
+The judge model is `gpt-6-luna`. It only runs at temperature 1, so each reply is judged 3 times and the majority verdict is kept.
+
+## Calibration (manual review by Claude)
+
+Both candidate judges scored the 176 test replies (v2 and v3) under the new rubric:
+
+| | gpt-6-luna | gpt-4o-mini |
+|---|---|---|
+| Self-agreement across repeated judgements | 91% (3 runs) | 94–99% (2 runs) |
+| Agreement with each other | 141/176 (80%) | |
+| When they agree: manual check of 8 sampled items | 8/8 acceptable | |
+| When they disagree: matches the manual verdict, 20 of 35 items checked | **14/20** | 6/20 |
+| Estimated overall accuracy | **~94%** | ~86% |
+
+luna separates honest uncertainty from invention and catches embellishments; it is sometimes too strict about harmless extra detail. It judged its own replies more strictly than gpt-4o-mini did, so no self-preference was visible. Limits: a single reviewer, and 28 items reviewed.
+
+## Rescored results (test story, round 300, luna majority of 3)
+
+| | correct | contradicts | cannot recall | absent |
+|---|---|---|---|---|
+| v2 | 47 | 34 | 6 | 1 |
+| v3 | 48 | 31 | 8 | 1 |
+| v2, temporal only | 3 | 10 | 4 | 1 |
+| v3, temporal only | 0 | 11 | 7 | 0 |
+
+The conclusion is unchanged: v3 ≈ v2. v3 invents slightly less and says "cannot recall" slightly more, all within noise.
+
+## Question-quality issue found during review
+
+Recurring-event tagging still over-tags common events: "a water shortage or heat-sickness crisis" was tagged in 42 test chunks. As a result, some late temporal questions ask about "the twentieth" or even "number 42" water crisis. No player asks that, and no writer can answer it, so the temporal numbers above understate what is achievable. The questions are frozen for this test set; the next question set should cap ordinals (for example at 5) and require each occurrence to be a distinct episode.
