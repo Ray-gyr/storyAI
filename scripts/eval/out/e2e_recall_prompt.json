@@ -1,0 +1,1485 @@
+{
+  "summary": {
+    "mode": "prompt",
+    "all": {
+      "n": 88,
+      "before": {
+        "correct": 48,
+        "contradicts": 37,
+        "absent": 3
+      },
+      "after": {
+        "correct": 78,
+        "contradicts": 10,
+        "absent": 0
+      }
+    },
+    "gold_retrieved": {
+      "n": 85,
+      "before": {
+        "correct": 48,
+        "contradicts": 34,
+        "absent": 3
+      },
+      "after": {
+        "correct": 77,
+        "contradicts": 8,
+        "absent": 0
+      }
+    },
+    "paired": {
+      "improved": 31,
+      "worsened": 1
+    }
+  },
+  "rows": [
+    {
+      "qid": "questions:0-verbatim",
+      "type": "verbatim",
+      "question": "Where is Ilya Renn's corpse discovered?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that Ilya Renn's corpse was discovered in Saltmarket, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya Renn's corpse was discovered in the Saltmarket."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Ilya Renn's corpse was discovered in Saltmarket, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya Renn's corpse was discovered in the Saltmarket. His black wax seal was found with the body."
+      }
+    },
+    {
+      "qid": "questions:0-paraphrase",
+      "type": "paraphrase",
+      "question": "In which location is the body of Ilya Renn found?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that Ilya Renn's body was found in Saltmarket, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya Renn's body was found in the Saltmarket."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Ilya Renn's corpse was found in Saltmarket, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya Renn's corpse was found in the Saltmarket."
+      }
+    },
+    {
+      "qid": "questions:1-verbatim",
+      "type": "verbatim",
+      "question": "What does the shorter man hold during the confrontation?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response does not mention the black wax seal that the shorter man is supposed to hold, instead focusing on his injury and struggle.",
+        "verdict": "absent",
+        "response": "He clutches his ruined knee.\n\nOne hand presses to the torn fabric, fingers white. Rain and blood slick his wrist. He breathes ragged through a cracked lip.\n\nHis other hand gropes for purchase on the wet plank, useless for a weapon.\n\nImmediate danger: Vael men close the circle while the shorter man hunches, pain making him dangerous and desperate."
+      },
+      "after": {
+        "reasoning": "The response correctly states that the shorter man holds Ilya's black wax seal, which is consistent with the known fact.",
+        "verdict": "correct",
+        "response": "He holds Ilya Renn's black wax seal in his hand. He also had a crossbow earlier in the fight."
+      }
+    },
+    {
+      "qid": "questions:1-paraphrase",
+      "type": "paraphrase",
+      "question": "What item is the shorter man gripping in the struggle?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the shorter man holds a knife, while the correct fact is that he holds Ilya's black wax seal.",
+        "verdict": "contradicts",
+        "response": "He holds a knife by the blade, haft dripping blood, the point pressed at your throat. Immediate danger: the Vael men tighten their circle and the wet steel bites your skin."
+      },
+      "after": {
+        "reasoning": "The response correctly identifies the item the shorter man is gripping as Ilya's black wax seal, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "He is gripping Ilya Renn's black wax seal.\n\nA Vael man holds a wet blade at your throat, immediate danger."
+      }
+    },
+    {
+      "qid": "questions:2-verbatim",
+      "type": "verbatim",
+      "question": "What did I retrieve after throwing a knife at the shorter man?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that Mara Voss did not retrieve the black wax seal, contradicting the correct fact that she successfully retrieved it after throwing the knife.",
+        "verdict": "contradicts",
+        "response": "You did not retrieve anything you could keep.\n\nThe knife left your hand and wounded the shorter man. A Vael later snatched a blade from the boards. Your blade is gone. The black wax seal is not in your possession.\n\nImmediate danger: the wet blade is at your throat, Vael men tightening their circle, and Casimir still bleeding and reaching."
+      },
+      "after": {
+        "reasoning": "The response correctly identifies the item retrieved as Ilya's black wax seal, consistent with the known fact.",
+        "verdict": "correct",
+        "response": "You retrieved Ilya Renn's black wax seal."
+      }
+    },
+    {
+      "qid": "questions:2-paraphrase",
+      "type": "paraphrase",
+      "question": "What did I obtain following my action of throwing a blade at the shorter man?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that nothing was obtained, which contradicts the fact that Mara Voss retrieved Ilya's black wax seal after throwing the knife.",
+        "verdict": "contradicts",
+        "response": "You obtained nothing.\n\nThe knife left your hand. A Vael man seized it. He holds it by the blade at your throat now.\n\nImmediate danger: wet steel against your windpipe, men closing and Casimir bleeding at the threshold."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Mara Voss secured Ilya's black wax seal after throwing the knife, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You struck the shorter man with the thrown knife, injuring him. You secured Ilya's black wax seal."
+      }
+    },
+    {
+      "qid": "questions:3-verbatim",
+      "type": "verbatim",
+      "question": "What did I feel when I reached for Sister Elka's lifeless hand?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects Mara Voss's experience of reaching for Sister Elka's hand, describing the coldness, lack of pulse, and the presence of blood, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "Her fingers closed on bone and wet cloth.\n\nElka's hand was cold. Limp. Blood slick between thumb and forefinger. No warmth. No pulse.\n\nThe skin gave under pressure, soft and slippery. A smear of wax—dark and tacky—stuck to the cuff of her sleeve, not in her palm.\n\nA Vael's breath fogged near your ear. The blade at your throat pressed harder.\n\nImmediate danger: blade against your windpipe, rain and men closing."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact by mentioning the absence of a pulse, the coldness of Sister Elka's skin, and the blood on the altar.",
+        "verdict": "correct",
+        "response": "There was no pulse in her wrist. Her skin was cold and blood had soaked the altar. A wet blade presses at your throat as Vael hands tighten their circle."
+      }
+    },
+    {
+      "qid": "questions:3-paraphrase",
+      "type": "paraphrase",
+      "question": "What did I sense when I extended my hand towards Sister Elka's dead palm?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes the sensation of damp skin and blood, which aligns with the correct fact that Mara Voss witnesses blood on the altar and feels no pulse, indicating Sister Elka's lifelessness.",
+        "verdict": "correct",
+        "response": "Your fingers closed on damp skin and sodden cloth. Blood slicked your palm. The hand lay limp under your grip. There was no heat beyond the pooled blood.\n\nThe chain slammed. The Vael at your throat tightened his hold. The blade dug colder into your skin. Immediate danger: the circle tightened and hands closed in."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss feels no pulse and describes the condition of Sister Elka's hand as limp and slick with blood.",
+        "verdict": "correct",
+        "response": "Your fingers found no pulse. Her hand was limp and slick with blood."
+      }
+    },
+    {
+      "qid": "questions:4-verbatim",
+      "type": "verbatim",
+      "question": "What does Mara Voss realize about Ilya's black wax seal during the confrontation?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response indicates that Mara Voss realizes the black wax seal is not with her anymore and that someone else has it, which aligns with the correct fact that it is in Lord Casimir Vael's hands.",
+        "verdict": "correct",
+        "response": "You twist your head. Rain drums in your ears.\n\nYou peel back the cuff. Your palm stinks of iron. There is no wax. No seal. Only a bruise and smeared blood where something warm had been pressed.\n\nYou remember cold wax against skin. You remember it leaving a circle, raised and black. The circle is gone.\n\nYou look up. Vael hands close. The knife presses harder at your throat.\n\nYou know, without words, that the black wax seal is not on you anymore. Someone else has it. Immediate danger tightens."
+      },
+      "after": {
+        "reasoning": "The response correctly states that the black wax seal is not on Mara Voss and that Casimir has held it, which aligns with the correct fact that it is in Lord Casimir Vael's hands.",
+        "verdict": "correct",
+        "response": "The black wax seal is not on her. Casimir has held it—he had the seal in his hands during the struggle."
+      }
+    },
+    {
+      "qid": "questions:4-paraphrase",
+      "type": "paraphrase",
+      "question": "What does Mara Voss discover regarding Ilya's black wax seal while facing Lord Casimir Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that Ilya's black wax seal is missing and not on Mara, which contradicts the correct fact that it is in Lord Casimir Vael's hands.",
+        "verdict": "contradicts",
+        "response": "You force your fingers open.\n\nPalm presses wet wood. The cold dent of wax isn't there.\n\nYou pat your pockets with the cuffed hand. Rain and blood smear leather. Nothing.\n\nYou roll your wrist. The place where the seal was warm with dried blood, not wax. Your skin is raw where it pressed.\n\nA Vael laughs close enough to taste. The knife's point bites your throat.\n\nDiscovered: Ilya's black wax seal is not on you. It is missing.\n\nImmediate danger: blade at your throat, hands tightening, and Vael men closing in."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Mara Voss realizes Ilya's black wax seal is in Lord Casimir Vael's hands and not on Sister Elka's fingers, but it adds information about later events that are not part of the original fact.",
+        "verdict": "correct",
+        "response": "Casimir holds Ilya's black wax seal in his hand; it is not on Sister Elka's fingers. Mara later retrieves the seal but a Vael gray soldier snatches it from her pocket, putting it back under Vael control."
+      }
+    },
+    {
+      "qid": "questions:5-verbatim",
+      "type": "verbatim",
+      "question": "What happened to Jory when I shouted for him to escape?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Jory being struck by a bolt and falling motionless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You shouted.\n\nJory broke toward the threshold, boots splashing.\n\nA string sang. A bolt struck him in the ribs.\n\nHe folded forward. Blood darkened his shirt. His hands fumbled at the wound, then fell limp.\n\nHe slid down the doorframe and stopped moving.\n\nImmediate outcome: Jory is dead, lying unmoving in the doorway."
+      },
+      "after": {
+        "reasoning": "The response accurately describes Jory being struck by a crossbow bolt and falling motionless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "He ran toward the doorway when you shouted. A crossbow bolt struck him in the ribs and he fell motionless at the threshold."
+      }
+    },
+    {
+      "qid": "questions:5-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred to Jory when I called for him to flee?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Jory being struck by a bolt and falling motionless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You shout for Jory.\n\nHe moves toward the doorway, crossbow in one hand. Rain hurls off his hair.\n\nA string twangs. A bolt flashes from the dim. It hits him in the ribs.\n\nHe staggers, hand flying to the wound. His knees buckle on the threshold. Blood darkens his shirt and spills onto the boards.\n\nHe slumps backward into the rain. Eyes unfocus. He lies still, mouth open, throat making no sound.\n\nThe Vael men do not pause. One drags his foot through Jory's spilled blood as they close on you. Immediate danger: the knife at your throat, Casimir still bleeding and laughing, and Jory unmoving in the doorway."
+      },
+      "after": {
+        "reasoning": "The response accurately describes that Jory was struck by a crossbow bolt and fell motionless, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "You shouted for Jory to flee. A crossbow bolt struck him in the doorway; he fell motionless and lay unmoving."
+      }
+    },
+    {
+      "qid": "questions:6-verbatim",
+      "type": "verbatim",
+      "question": "Did I feel the taller Vael pin my arms to the altar while Elka was dragged toward the doorway?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes the taller Vael pinning Mara's arms to the altar while Elka is being dragged toward the doorway, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes.\n\nHands clamp your upper arms. Heavy palms. Leather digs through wet cloth.\n\nThe taller Vael leans his weight across your shoulders. Your cuffed wrists scrape the altar lip. Metal bites flesh. Splinters press into your ribs.\n\nYou feel the breath from his chest. He pins your shoulders flat to the wood. Your back arches. Air stutters out of your lungs.\n\nBehind him, men drag Sister Elka toward the doorway. Boards thud. Her robe skitters in the rain.\n\nA Vael's boot bangs your hip. The chain rattles. Your head knocks the altar edge. Blood tastes of iron in your mouth.\n\nImmediate danger: the taller Vael holds you pinned while others move toward the doorway with Sister Elka."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that the taller Vael pinned Mara's arms to the altar while Elka was dragged toward the doorway.",
+        "verdict": "correct",
+        "response": "Yes. A taller Vael pinned your arms to the altar while Sister Elka was dragged toward the doorway.  \n\nImmediate danger: the wet blade presses at your throat, Vael men close in, and Casimir bleeds and reaches."
+      }
+    },
+    {
+      "qid": "questions:6-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I experience the taller Vael restraining my limbs to the altar as Elka was pulled toward the exit?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes the taller Vael pinning Mara's arms to the altar while Elka is being dragged toward the doorway, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes.\n\nThe taller Vael sank his weight across your shoulders and pinned your wrists to the altar. Splinters bit your palms. The chain went taut. You felt his knee against your back as other hands hauled Sister Elka toward the doorway.\n\nWood creaked. Rain hammered the roof. Elka's robes slid through a man's grip. A sick sound left her as she was pulled past you.\n\nA Vael presses a wet blade to your throat. Immediate danger: the knife edge bites your skin and the circle tightens."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that the taller Vael pinned Mara's arms to the altar while Elka was being dragged toward the doorway.",
+        "verdict": "correct",
+        "response": "Yes. The taller Vael pinned your arms to the altar while Sister Elka was dragged toward the doorway."
+      }
+    },
+    {
+      "qid": "questions:7-verbatim",
+      "type": "verbatim",
+      "question": "What happened when I collapsed onto the altar, blood pooling beneath me?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Mara Voss collapsing onto the altar and blood pooling beneath her, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You hit the altar. Wood thuds under your ribs.\n\nBlood seeps out and spreads dark across the boards. It runs to the cracks and fills the grain.\n\nHands yank at your wrists and collar. The chain bites your skin. A Vael pats your coat and sleeves fast and rough. Fingers find nothing he wants. Another clamps your jaw to keep you quiet.\n\nOne man strips your side quick, palms searching for anything tucked in. He takes your knife. The blade flashes wet; he holds the haft, then lifts the blade and presses the point to your throat.\n\nSister Elka collapses against the altar beside you. Her robe is torn and wet. She makes a single thin sound and goes still.\n\nJory lies unmoving in the doorway. Rain patters on his face.\n\nCasimir staggers at the threshold, clutching his forearm. He spits blood and laughs low. Vael men move like a ring closing. The fallen crossbow lies where it skittered. One man retrieves it and checks the bolts.\n\nImmediate danger: the knife at your throat, hands on your arms, and the Vael circle tightening as they prepare to move you and Sister Elka into the rain."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss collapsed onto the altar with blood pooling beneath her, while also incorporating additional details about the scene.",
+        "verdict": "correct",
+        "response": "You collapsed onto the altar as Vael men dragged Sister Elka away into the rain; blood pooled beneath you. Jory reached the threshold to help and was shot, falling into you as the Vael men claimed items and dragged people off."
+      }
+    },
+    {
+      "qid": "questions:7-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred when I fell onto the altar, with blood gathering under me?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Mara Voss collapsing onto the altar and blood pooling beneath her, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You hit the altar hard.\n\nWood strikes bone. Pain flares across your ribs. Rain hisses on your face.\n\nYour cuffed wrist slams the altar lip. The chain drags and snags. It stops you dead. Your weight slumps forward.\n\nBlood wells where you press. It spreads, dark and fast, across the plank and into the cracks. It slicks the wood under your chest.\n\nSister Elka folds nearby, robe torn, a wet stain spreading at her side. Jory lies motionless in the doorway. Vael men move around you, boots ringing wet on the floor.\n\nA hand pins your shoulder. The chain bit into your skin. You cough, blood bubbling at your lips.\n\nImmediate danger: you are trapped by the snagged chain, cuffed and bleeding on the altar, while a Vael man holds a blade at your throat and others close in."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss collapsed onto the altar with blood pooling beneath her, and it includes additional details that are consistent with the known events.",
+        "verdict": "correct",
+        "response": "You collapsed onto the altar as blood pooled beneath you. While you lay there, Casimir's men dragged Sister Elka away and later retrieved Ilya's black wax seal from you; Jory was shot in the doorway and Elka showed no pulse when you reached for her."
+      }
+    },
+    {
+      "qid": "questions:8-verbatim",
+      "type": "verbatim",
+      "question": "What happened when I reached for the altar's edge in the Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes an event where a crossbow bolt strikes Sister Elka instead of Mara Voss, which contradicts the correct fact that states Mara Voss is the one who is shot by the bolt.",
+        "verdict": "contradicts",
+        "response": "Your fingers closed on the altar's edge.\n\nYou hauled. The cuffed wrist slammed into the wood. Splinters bit your palm. Rain stung the wound.\n\nThe chain tightened. A Vael's hand closed on your collar. Another grabbed your hair and yanked you upright.\n\nCasimir spun, crossbow level. The string sang.\n\nThe bolt drove past you. It struck Sister Elka as she was dragged by. Cloth tore. She folded against the altar.\n\nImmediate danger: Vael hands on you, the chain cutting your wrist, and Casimir's crossbow still aimed as men close in."
+      },
+      "after": {
+        "reasoning": "The response accurately describes Mara Voss reaching for the altar's edge and being shot by a crossbow bolt, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "You reached for the altar's edge and pulled yourself up, gathering what strength you had. As you hauled yourself there a crossbow bolt struck you, driving into your body and turning your motion into a spasm of pain."
+      }
+    },
+    {
+      "qid": "questions:8-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred as I grasped the altar's border in the Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes the immediate physical struggle and danger faced by the character but does not mention the critical event of Mara Voss being shot by a crossbow bolt from a shorter Vael, which is a key part of the correct fact.",
+        "verdict": "absent",
+        "response": "Your fingers close on the altar's edge.\n\nSplinters bite into palm. The wood is slick with rain and blood.\n\nYou pull. The chain jerks tight. Your cuff rubs raw against iron.\n\nYour chest heaves. A cough rips out, blood flecking the boards.\n\nYou get your weight forward enough to glance past Casimir. Sister Elka lies on the floor, half-shadowed. Jory is still in the doorway.\n\nA Vael's hand clamps your shoulder. Another brings the knife point to your throat.\n\nImmediate danger: metal at your windpipe, hands holding you fast, and Casimir fumbling for another weapon."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss was shot by a crossbow bolt while trying to pull herself up at the altar in the Drowned Chapel.",
+        "verdict": "correct",
+        "response": "You grabbed the altar's edge and pulled yourself up, trying to find purchase. As you did, a crossbow bolt struck you, driving into your chest and throwing you back, blood hot and sudden."
+      }
+    },
+    {
+      "qid": "questions:9-verbatim",
+      "type": "verbatim",
+      "question": "Did I try to kick Lord Casimir Vael and fail, leading to my injury?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the player landed a kick on Lord Casimir Vael, which contradicts the correct fact that they attempted to kick him but failed, leading to their injury.",
+        "verdict": "contradicts",
+        "response": "No. You landed a kick on Casimir earlier; he reeled. Your injuries came from the crossbow, the boots, and the chain. \n\nImmediate danger: the wet blade presses at your throat, Vael hands closing in, Casimir still bleeding and laughing."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss attempted to kick Lord Casimir Vael, failed, and was injured as a result.",
+        "verdict": "correct",
+        "response": "Yes. You kicked at Casimir Vael and missed; he returned the blow, leaving you badly injured and driven into unconsciousness."
+      }
+    },
+    {
+      "qid": "questions:9-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I make an effort to strike Lord Casimir Vael and not succeed, causing my harm?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response indicates that the player lunged at Casimir and struck him, which contradicts the correct fact that states Mara Voss attempted to kick but failed, resulting in injury.",
+        "verdict": "contradicts",
+        "response": "Yes.\n\nYou lunged at Casimir. You struck; it staggered him but did not stop the attack. His boot crushed your wind and his men recovered the weapon. You were punched, cuffed, and shot in the scuffle in previous beats. You lost the knife and the broken spyglass; you were dragged to the altar and at times blacked out.\n\nNow a Vael holds a wet blade at your throat. Casimir bleeds at the threshold. Rain hisses. Hands close. Immediate danger."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Mara Voss attempted to strike Lord Casimir Vael and failed, resulting in severe injury, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. You tried to strike Casimir—thrusting a shard toward his throat and lunging and kicking at him—but your strength failed in at least one attempt, and those struggles left you severely injured and briefly unconscious while cuffed and bleeding."
+      }
+    },
+    {
+      "qid": "questions:10-verbatim",
+      "type": "verbatim",
+      "question": "What did I find in my coat and swing at the shorter Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response correctly identifies the object as a jagged shard from the cracked spyglass, which aligns with the fact that Mara Voss found the cracked spyglass in her coat and swung it at the shorter Vael.",
+        "verdict": "correct",
+        "response": "A jagged shard from the cracked spyglass—glass splintered from its ruined tube, held like a knife as you swung."
+      },
+      "after": {
+        "reasoning": "The response accurately states that the player found the cracked spyglass in their coat and swung it at the shorter Vael, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You found the cracked spyglass in your coat and swung it at the shorter Vael.  \nImmediate danger: a wet blade at your throat and Vael men tightening their circle."
+      }
+    },
+    {
+      "qid": "questions:10-paraphrase",
+      "type": "paraphrase",
+      "question": "What did I discover in my jacket and strike at the shorter Vael?",
+      "short_circuited": false,
+      "gold_retrieved": false,
+      "before": {
+        "reasoning": "The response incorrectly states that Mara Voss uses the broken brass lockpick set instead of the cracked spyglass to strike at the shorter Vael, which contradicts the correct fact.",
+        "verdict": "contradicts",
+        "response": "Your fingers close on ragged metal in your jacket pocket.\n\nIt’s the broken brass lockpick set. Jagged pieces bite through cloth.\n\nYou whip the shards out. You drive them at the shorter Vael’s face and forearm.\n\nHe howls. Blood runs from a sliced brow and a torn sleeve. He slaps at his arm, loses balance, and keels farther back onto the wet boards.\n\nThe Vael with the knife clenches tighter at your throat. Other hands move in faster. Casimir spits blood and laughs, one booted foot sliding toward the fallen crossbow.\n\nImmediate danger: a blade at your throat, Vael men closing, and the shorter Vael bleeding and crawling back on the planks."
+      },
+      "after": {
+        "reasoning": "The response correctly states that the cracked spyglass was found in the jacket, but it inaccurately describes the action taken against the shorter Vael as using a jagged shard instead of swinging the spyglass itself.",
+        "verdict": "contradicts",
+        "response": "You found the cracked spyglass in your jacket. You drove a jagged shard from it into the shorter Vael's forearm."
+      }
+    },
+    {
+      "qid": "questions:11-verbatim",
+      "type": "verbatim",
+      "question": "Did a crossbow bolt from the shorter Vael strike me, causing injury?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response confirms that a crossbow bolt struck Mara Voss, causing injury, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. A bolt struck your wrist.\n\nThe shaft protrudes beneath torn flesh. Blood runs down the chain and into the boards. The wound is hot and tight. It seizes your hand when you try to move.\n\nYou taste metal when you cough. The bolt jams your wrist against the cuff. Every tug sends lightning through your forearm.\n\nThe Vael holds a blade at your throat. Rain hisses. Blood slicks the altar rim under your palm.\n\nImmediate danger: your pinned, bolt-wounded wrist, the knife at your throat, and the circle of Vael closing in."
+      },
+      "after": {
+        "reasoning": "The response accurately states that the shorter Vael's crossbow bolt struck Mara Voss, causing injury, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. The shorter Vael's crossbow bolt struck you, collapsing you onto the altar and leaving you wounded.  \nImmediate danger: a wet blade at your throat, Vael men tightening their circle, and Casimir still bleeding and reaching."
+      }
+    },
+    {
+      "qid": "questions:11-paraphrase",
+      "type": "paraphrase",
+      "question": "Did a bolt from the shorter Vael hit me, resulting in harm?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response confirms that a bolt struck the player, causing injury, which aligns with the correct fact that a crossbow bolt from the shorter Vael struck Mara Voss, causing injury.",
+        "verdict": "correct",
+        "response": "Yes.\n\nA bolt struck your wrist. It tore cloth and flesh. Blood runs dark and warm down your arm. The chain rides into the wound. Pain hammers with each breath. Your hand spasms around the cuff. The cuff bites bone. Your movements are ragged and slow.\n\nImmediate danger: you are cuffed, bleeding from a crossbow wound in the wrist, and Vael men close in."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that a bolt from the shorter Vael struck Mara Voss, causing injury, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. The shorter Vael fired a bolt that struck your wrist, lodging as a crossbow wound that bleeds and screams when you move."
+      }
+    },
+    {
+      "qid": "questions:12-verbatim",
+      "type": "verbatim",
+      "question": "What happened when Ilya Renn attempted to escape from Lord Casimir Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that there is no verified account of an escape, which contradicts the fact that Ilya Renn was caught while attempting to escape.",
+        "verdict": "contradicts",
+        "response": "There is no verified account of an escape.  \n\nOfficial record: Ilya Renn was found dead in the Saltmarket. A black wax seal was pressed to his corpse.  \n\nNo trusted report in the files details him getting away from Lord Casimir Vael. The one irreversible fact stands clear in every ledger and whisper: Ilya Renn did not survive."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Ilya Renn was caught by Lord Casimir Vael while attempting to escape, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya Renn grabbed the cracked spyglass to distract Lord Casimir Vael and tried to run. He was caught by the taller Vael while the shorter Vael readied a crossbow bolt aimed at him."
+      }
+    },
+    {
+      "qid": "questions:12-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred when Ilya Renn tried to flee from the taller Casimir Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that there is no verified account of Ilya Renn fleeing or struggling with Casimir Vael, which contradicts the fact that Ilya was caught while trying to escape.",
+        "verdict": "contradicts",
+        "response": "There is no confirmed account in the records here.  \nAll that is certain: Ilya Renn was found dead in the Saltmarket holding a black wax seal.  \nThe black wax seal was once pressed into your palm and is now lost.  \nNo verified account of him fleeing or of a struggle with a taller Casimir Vael appears in the known files."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Ilya Renn was caught by the taller Casimir Vael while trying to escape, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya grabbed the cracked spyglass to distract Casimir. He tried to flee but the taller Casimir caught him while the shorter readied a crossbow."
+      }
+    },
+    {
+      "qid": "questions:13-verbatim",
+      "type": "verbatim",
+      "question": "What did I do to Shorter Vael's forearm during the fight?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that there is no record of a wound to Shorter Vael's forearm, contradicting the fact that Mara Voss drove a glass shard into his forearm during the fight.",
+        "verdict": "contradicts",
+        "response": "There is no record here of any wound to Shorter Vael’s forearm.\n\nThe files note only that Shorter Vael is injured with a ruined knee. He collapsed backward on the wet plank, forehead slamming down, breath ragged, one hand clutching his knee.\n\nImmediate danger: a wet blade at your throat and Vael men tightening their circle."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss drove a glass shard into Shorter Vael's forearm during the fight.",
+        "verdict": "correct",
+        "response": "You drove a glass shard into Shorter Vael's forearm, causing him to miss his shot. \n\nA wet blade presses at your throat as Vael men tighten their circle."
+      }
+    },
+    {
+      "qid": "questions:13-paraphrase",
+      "type": "paraphrase",
+      "question": "What action did I take against Shorter Vael's arm in the confrontation?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss lunged and drove the glass shard into Shorter Vael's forearm, causing him to miss his shot.",
+        "verdict": "correct",
+        "response": "You drove a broken glass shard into Shorter Vael’s forearm. It cut him. He missed his shot and bled as he reeled."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss lunged and drove the glass shard into Shorter Vael's forearm.",
+        "verdict": "correct",
+        "response": "You drove a broken glass shard into Shorter Vael's forearm. He missed his shot and bled."
+      }
+    },
+    {
+      "qid": "questions:14-verbatim",
+      "type": "verbatim",
+      "question": "What did I do after I kicked the blade away and snatched the cracked spyglass shard from Taller Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes the immediate aftermath of Mara Voss using the shard against Shorter Vael, which is consistent with the correct fact that she snatched the shard and injured him.",
+        "verdict": "correct",
+        "response": "You drive the glass forward.\n\nThe shard bites into Shorter Vael's forearm. He screams. Blood slicks his sleeve.\n\nHis crossbow jerks. The bolt sails wide and slams into the chapel wall behind the altar.\n\nShorter Vael drops the weapon. He doubles over, clutching his arm.\n\nVael men lurch to cover him and close ranks. The knife at your throat digs harder.\n\nImmediate danger: men tighten the circle as Shorter Vael collapses, the blade still pressed to your windpipe."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the events that occurred after Mara Voss kicked the blade away and snatched the shard, including the injury to Shorter Vael and her escape.",
+        "verdict": "correct",
+        "response": "You raised the knife and held it up as Shorter Vael charged; two Vael burst in, one seizing your ankle, and you kicked free and pushed toward a side corridor. Shorter Vael took a wound from the shard in the scuffle, and you slipped into the yard as two Vael pursued with a crossbow."
+      }
+    },
+    {
+      "qid": "questions:14-paraphrase",
+      "type": "paraphrase",
+      "question": "What action did I take after I booted the weapon aside and seized the broken lens fragment from Taller Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the broken lens was thrown at Shorter Vael's crossbow, while the correct fact indicates that Mara Voss snatched the shard from Taller Vael and injured her palm, without mentioning throwing it at the crossbow.",
+        "verdict": "contradicts",
+        "response": "You threw the broken lens at Shorter Vael's crossbow. \n\nIt struck the bow. The string snapped. The shattered timber whipped into Taller Vael's chin. He dropped, blood on the plank.\n\nImmediate danger: Vael men close in, one still armed, and you remain cuffed and bleeding."
+      },
+      "after": {
+        "reasoning": "The response describes actions that are not consistent with the correct fact, as it states that Mara Voss threw the spyglass and killed Taller Vael, while the correct fact indicates she only snatched the shard and injured her palm without killing anyone.",
+        "verdict": "contradicts",
+        "response": "You threw the cracked spyglass at the shorter Vael's crossbow, shattering it and wounding the taller Vael. When the taller man collapsed you drove the glass shard into him, killing him."
+      }
+    },
+    {
+      "qid": "questions:15-verbatim",
+      "type": "verbatim",
+      "question": "Did I throw the shard at Lord Casimir Vael and injure his wrist?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response contradicts the correct fact by stating that the shard was crushed under Casimir's heel, which implies that Mara did not throw it at him and therefore did not injure his wrist.",
+        "verdict": "contradicts",
+        "response": "No. The shard was crushed under Casimir's heel. It broke beneath boot and blood. You did not hit his wrist with glass.\n\nCasimir still clutches a bleeding forearm. A Vael holds a wet blade to your throat. Immediate danger: the knife at your windpipe and hands tightening."
+      },
+      "after": {
+        "reasoning": "The response correctly states that the shard was thrown at Lord Casimir Vael and that it resulted in an injury to his wrist, aligning with the known fact.",
+        "verdict": "correct",
+        "response": "Yes. You threw the cracked spyglass shard and cut Casimir's wrist."
+      }
+    },
+    {
+      "qid": "questions:15-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I hurl the fragment at Lord Casimir Vael, causing harm to his wrist?",
+      "short_circuited": false,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the shard was crushed under Lord Casimir Vael's heel and that the injury was caused by a crossbow bolt, contradicting the correct fact that Mara Voss did throw the shard and injure his wrist.",
+        "verdict": "contradicts",
+        "response": "No.\n\nYou did not hurl the shard and wound his wrist. The crossbow jolted when you lashed out. The bolt buried itself in Casimir’s forearm. His hand bled and he staggered, but the shard was crushed under his heel earlier and never used to cut his wrist.\n\nImmediate danger: the Vael man holds a wet blade at your throat as men tighten around you."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss threw the shard at Lord Casimir Vael, injuring his wrist.",
+        "verdict": "correct",
+        "response": "Yes. You threw the shard and it cut his wrist, drawing blood.  \nHe spat blood and clutched the injured wrist."
+      }
+    },
+    {
+      "qid": "questions:16-verbatim",
+      "type": "verbatim",
+      "question": "Did I try to escape through the collapsed side door in Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Mara Voss attempted to escape through the collapsed side door, detailing the events that occurred during that attempt.",
+        "verdict": "correct",
+        "response": "Yes.\n\nYou dove for the ajar side door earlier. A crossbow bolt struck the frame as you shoved through. The door splintered. You tumbled into the yard, rain and wood slamming your ribs.\n\nYou tried to run. Two Vael figures chased. One drove a bolt that missed your chest by inches. They hauled you back. You were cuffed and dragged into the chapel.\n\nImmediate danger: a wet blade at your throat, Vael men tightening their circle, and Casimir still bleeding and reaching."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Mara Voss attempted to escape through the collapsed side door, as it describes her diving for the door and the subsequent chase by the Vael figures.",
+        "verdict": "correct",
+        "response": "Yes. You dove for the ajar side door, a bolt smashed the frame, and you tumbled into the yard as two Vael figures gave chase. Immediate danger: the men pursued you into the yard."
+      }
+    },
+    {
+      "qid": "questions:16-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I make an effort to flee through the fallen entrance in the Drowned Chapel?",
+      "short_circuited": false,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Mara Voss attempted to escape through the collapsed side door, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You did.\n\nYou drove toward the collapsed side entrance, shoulder low, boots skidding on wet boards. You shoved through splinters and rain. A Vael's hand caught your ankle. Another yanked you backward. A bolt struck near your ribs. You crashed against the threshold and slid back onto the chapel floor.\n\nThey cuffed you. They dragged you inside. The chain bit into your wrist. The knife was taken from the floor and held at your throat.\n\nImmediate danger: the blade presses cold to your skin, Vael hands tighten, and the doorway you tried to reach is blocked by bodies and rain."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Mara Voss attempted to escape through the collapsed side door, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You tried to flee through a collapsed side door, driving for the yard to get away. You were caught—shot and hauled back, cuffed and dragged toward the altar while Sister Elka was seized and carried off."
+      }
+    },
+    {
+      "qid": "questions:17-verbatim",
+      "type": "verbatim",
+      "question": "Did Shorter Vael shoot me with a crossbow bolt in Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that Shorter Vael did not shoot the player, while the correct fact clearly indicates that he shot Mara Voss with a crossbow bolt.",
+        "verdict": "contradicts",
+        "response": "No. The chapel events show Vael men firing crossbows and bolts striking you, but there is no explicit confirmation that Shorter Vael was the one who fired a bolt at you."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that Shorter Vael shot the player, while the correct fact indicates that he shot Mara Voss instead.",
+        "verdict": "contradicts",
+        "response": "Yes. Shorter Vael fired a crossbow bolt at you in the Drowned Chapel, and it struck you, injuring you."
+      }
+    },
+    {
+      "qid": "questions:17-paraphrase",
+      "type": "paraphrase",
+      "question": "Did Shorter Vael fire a crossbow projectile at me in the Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the crossbow bolt struck the player, while the correct fact indicates that Shorter Vael shot Mara Voss with a crossbow bolt, which narrowly missed her.",
+        "verdict": "contradicts",
+        "response": "Yes. Shorter Vael fired a crossbow bolt that struck you.\n\nThe bolt hit your shoulder earlier. You bled and staggered. The action drew the men closer and escalated the struggle.\n\nImmediate danger: a wet blade at your throat, Vael men tightening their circle, and Casimir still bleeding and reaching."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that the bolt struck the player and caused injury, while the correct fact indicates that the bolt narrowly missed Mara Voss.",
+        "verdict": "contradicts",
+        "response": "Yes. Shorter Vael fired a crossbow bolt at you in the Drowned Chapel, and the bolt struck you and caused injury."
+      }
+    },
+    {
+      "qid": "questions:18-verbatim",
+      "type": "verbatim",
+      "question": "What happened to Shorter Vael after I kicked him in Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Shorter Vael collapsing after being kicked, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Your kick connects.\n\nShorter Vael's knee buckles. He goes down hard, sliding backward across wet boards.\n\nHis forehead slams the plank. Rain and blood run into the cut. He gasps. Breath comes ragged and shallow. One hand claws at the ruined knee, fingers white around soaked cloth.\n\nHe doesn't rise. He lies sprawled, blinking, face streaked with salt and blood.\n\nImmediate danger: Vael men close their circle around you; a blade presses at your throat while Shorter Vael stays down and out of the fight."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Shorter Vael collapsed after being kicked, but it adds details about him pulling himself up and later injuring his knee, which are not part of the known fact.",
+        "verdict": "correct",
+        "response": "He went down when you kicked him—collapsed on the wet boards—but he pulled himself up and slammed back into you, tightening his grip. Later his knee was ruined; he collapsed backward on the plank, forehead hitting wood, breath ragged, one hand clutching the injured joint."
+      }
+    },
+    {
+      "qid": "questions:18-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred to Shorter Vael following my strike in the Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Shorter Vael collapsing after being kicked, consistent with the correct fact that he collapses after the strike.",
+        "verdict": "correct",
+        "response": "He takes the hit.\n\nHis foot gives. He folds at the knee and goes down hard. His forehead slams the wet plank. A sick crack sounds against wood.\n\nHe sprawls on his back, one hand clawing at a ruined knee. Breath comes in sharp, ragged pulls. Rain beads on a split lip.\n\nHe tries to push up. The leg buckles again. He drops his hand to the boards and stays there, panting, fingers smeared with blood and salt.\n\nAround him, men move. Their boots slap the floor. The circle tightens while Shorter Vael lies pinned to the plank, unable to rise."
+      },
+      "after": {
+        "reasoning": "The response accurately describes Shorter Vael collapsing after being kicked, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "He fell backward, knee ruined. A few feet away he lay collapsed, forehead to the wet plank, breath ragged and one hand clutching the wound."
+      }
+    },
+    {
+      "qid": "questions:19-verbatim",
+      "type": "verbatim",
+      "question": "What did I use to fend off a Vael after injuring my hand?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that Mara Voss used a shard of the cracked spyglass to fend off a Vael after injuring her hand, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You used a shard of the cracked spyglass to fend him off after cutting your hand.\n\nA Vael holds a wet blade at your throat. Immediate danger tightens."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Mara Voss used a shard of the cracked spyglass to fend off a Vael after injuring her hand, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "You used a shard of the cracked spyglass — the glass shard you grabbed after injuring your hand — to fend off a Vael."
+      }
+    },
+    {
+      "qid": "questions:19-paraphrase",
+      "type": "paraphrase",
+      "question": "What item did I employ to defend myself against a Vael after hurting my hand?",
+      "short_circuited": true,
+      "gold_retrieved": false,
+      "before": {
+        "reasoning": "The response incorrectly states that a bottle shard was used instead of the cracked spyglass shard, which is the correct item employed by Mara Voss.",
+        "verdict": "contradicts",
+        "response": "You drove a broken glass shard — a bottle shard — into the Vael’s forearm."
+      },
+      "after": {
+        "reasoning": "The response correctly states that the cracked spyglass was used to fend off a Vael, which aligns with the known fact.",
+        "verdict": "correct",
+        "response": "You used the cracked spyglass, swinging it at the shorter Vael and staggering him."
+      }
+    },
+    {
+      "qid": "questions_holdout:0-verbatim",
+      "type": "verbatim",
+      "question": "What did Ilya Renn mention after he returned injured from arguing with two men in Vael gray at Drowned Chapel?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Ilya Renn mentioned someone wanted to make him disappear after returning injured from the argument, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Sister Elka's lips move. Her voice is thin and wet.\n\n\"He said someone wanted to make him disappear,\" she says. \"After the argument he came back pale and swore they meant to finish him.\"\n\nRain patters. The Vael man with the blade leans in, breath hot, the point steady at your throat.\n\nImmediate danger: the circle tightens, the knife presses harder, and Casimir laughs, blood on his palm."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Ilya Renn returned injured and mentioned someone wanting to make him disappear.",
+        "verdict": "correct",
+        "response": "He returned injured to the chapel and told Sister Elka that someone wanted to make him disappear.  \nA Vael presses a wet blade at your throat."
+      }
+    },
+    {
+      "qid": "questions_holdout:0-paraphrase",
+      "type": "paraphrase",
+      "question": "What did Ilya Renn say after he came back hurt from his dispute with two individuals dressed in Vael gray at the Drowned Chapel?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Ilya Renn returned injured and mentioned someone wanting to make him disappear, aligning with the correct fact.",
+        "verdict": "correct",
+        "response": "Sister Elka leans close and spits the words, steady despite the blood.\n\n\"He came back bruised,\" she says. \"He said two men in Vael gray told him—said someone wanted to make him disappear.\"\n\nShe adds, quiet, \"He warned me to hide the seal.\"\n\nA Vael's thumb presses the knife point harder against your throat. Immediate danger: the circle tightens, rain stabs the boards, and the blade waits."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects Ilya Renn's statement about someone wanting to make him disappear after his encounter at the Drowned Chapel.",
+        "verdict": "correct",
+        "response": "He said someone wanted to make him disappear."
+      }
+    },
+    {
+      "qid": "questions_holdout:1-verbatim",
+      "type": "verbatim",
+      "question": "Did I successfully grab Ilya's black wax seal despite the shorter man's resistance?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the seal is missing from the character's possession, which contradicts the fact that Mara Voss successfully grabbed the seal despite resistance.",
+        "verdict": "contradicts",
+        "response": "No.\n\nYou pat every pocket you can reach. Cloth slides wet under your fingers. Nothing hard, nothing waxed.\n\nThe memory of warm blood and cold wax flashes, then emptiness where the seal should be. You are not carrying it.\n\nA Vael's blade presses harder at your throat. Rain drums on the roof. The man holding the knife breathes close.\n\nImmediate danger: cuffed, knife at your throat, and the seal missing from your person."
+      },
+      "after": {
+        "reasoning": "The response states that the player remembers slipping the seal into their pocket but later mentions that Vael hands found or took the seal, which contradicts the fact that Mara Voss successfully grabbed the seal despite resistance.",
+        "verdict": "contradicts",
+        "response": "You remember lunging for the seal and slipping it into your pocket. You also remember Vael hands later finding or taking the seal and you not having it afterward.\n\nImmediate danger: the wet blade at your throat, Vael men closing, and Casimir still bleeding and reaching."
+      }
+    },
+    {
+      "qid": "questions_holdout:1-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I manage to seize Ilya's black wax emblem in spite of the shorter man's opposition?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the black wax seal is not in the player's possession, which contradicts the correct fact that Mara Voss successfully grabbed it despite opposition.",
+        "verdict": "contradicts",
+        "response": "You yank at your coat and the inside seam.\n\nFingers fumble the wet lining. Blood slicks the hem.\n\nYour palm goes to the place the wax had been. It is empty. The imprint is gone. The cold smear of wax is gone.\n\nYou pat every pocket. Nothing. No seal.\n\nA Vael's boot thuds closer. The blade at your throat bites harder. Casimir laughs through spit. Rain drums on the roof.\n\nImmediate danger: the knife at your throat, Vael hands tightening, and the black wax seal not in your possession."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Mara Voss grabbed Ilya's black wax seal despite the shorter man's resistance, but it incorrectly implies that a Vael gray soldier later retrieved the seal from her pocket, which is not mentioned in the correct fact.",
+        "verdict": "contradicts",
+        "response": "You grabbed Ilya's black wax seal despite the shorter man's resistance. A Vael gray soldier later retrieved the seal from your pocket."
+      }
+    },
+    {
+      "qid": "questions_holdout:2-verbatim",
+      "type": "verbatim",
+      "question": "What happens when I attempt to drag Sister Elka to safety?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes an attempt to drag Sister Elka to safety but ultimately shows that she is being dragged away by a Vael man, which aligns with the correct fact that Mara Voss was attacked while trying to save her.",
+        "verdict": "correct",
+        "response": "You twist and haul.\n\nYour cuffed wrist chews on the chain. Splinters tear your palm. Rain and blood slick the boards.\n\nYou get Elka an inch. She groans and slides, robe soaked, one hand limp.\n\nA Vael's knee smashes into your ribs. Air leaves you. The knife at your throat teases a cut.\n\nYou twist anyway and pull. The chain jerks your shoulder out of its socket. White pain explodes down your arm.\n\nA Vael moves faster. He slams his boot into Elka's side. Her body pivots. She slides from your grip and collapses against the altar lip.\n\nThe man grabs her by the robes and hauls her upright. He strides toward the doorway, dragging Elka like a sack.\n\nYou cough blood. The cuff bites. The knife presses harder at your throat.\n\nImmediate danger: Elka is being dragged out into the rain, you are cuffed and one-armed, and the Vael with the knife leans in close, smiling with wet teeth."
+      },
+      "after": {
+        "reasoning": "The response describes an attempt to drag Sister Elka to safety but does not mention the attack by Vael men, which is a crucial part of the correct fact.",
+        "verdict": "contradicts",
+        "response": "You hook your arm under Elka's shoulders and shove.\n\nHer robe slips. Blood soaks your sleeve. You drag with your legs.\n\nYou find no pulse under the damp throat. Her skin is slack. Her eyes stare blind at the rafters.\n\nA Vael's boot slams into your ribs. The chain jerks. Hands clamp your arms. You try to shove them off.\n\nThey yank you back toward the altar. A gloved hand clamps the back of your neck. The knife at your throat presses harder.\n\nCasimir coughs blood and laughs. Rain drums on the chapel roof.\n\nImmediate danger: you're pinned to a dead woman as Vael men tighten their grip and the knife at your throat bites deeper."
+      }
+    },
+    {
+      "qid": "questions_holdout:2-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurs when I try to pull Sister Elka to safety but am confronted by Vael soldiers?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes an attempt to pull Sister Elka to safety but ultimately leads to her collapse and injury, which aligns with the correct fact that Mara Voss attempts to drag Sister Elka to safety but is attacked by Vael men.",
+        "verdict": "correct",
+        "response": "You grab Sister Elka's robe with your free hand and pull.\n\nThe chain jerks. Your cuffed wrist knocks against the altar lip.\n\nA Vael moves faster. His boot digs into your ribs. His other hand brings the knife down.\n\nSteel opens flesh. The sound is sharp in the rain.\n\nElka's hand slips from yours. Her body folds at the waist and keels forward. Blood blooms across her sleeve and the wet boards.\n\nYou twist, reach for her shoulder. A Vael's palm clamps the back of your neck. The blade bites at your throat.\n\nCasimir coughs blood and laughs. The man with the knife leans in close, breath hot and wet.\n\nImmediate danger: the knife at your throat, Elka collapsed and bleeding on the floor, Vael men closing in around you."
+      },
+      "after": {
+        "reasoning": "The response describes Mara Voss's struggle to pull Sister Elka to safety while being attacked by Vael soldiers, which aligns with the correct fact that she attempts to drag Sister Elka to safety but is attacked by Vael men.",
+        "verdict": "correct",
+        "response": "You shove against the chain and haul.\n\nYour cuffed hand finds Elka's sleeve. Her body slumps; her breath is shallow.\n\nA Vael shoulder slams into your ribs. Hands twist at Elka's robe. You pull harder.\n\nSomeone twists your arm. Metal bites your skin. A clean, hot stab tears through your side. Pain floods and you gasp.\n\nElka's fingers slip from your grasp. Her head rolls back. Blood darkens the altar boards beneath her robe.\n\nYou shove one Vael off with your good shoulder. Another drives his knee into your chest and rakes you with the butt of his hand.\n\nYou reach for Elka's wrist. There is no pulse.\n\nImmediate danger: a blade still at your ribs, Vael hands hauling you upright, and the circle closing as Casimir reloads and laughs through blood."
+      }
+    },
+    {
+      "qid": "questions_holdout:3-verbatim",
+      "type": "verbatim",
+      "question": "Did I grab Jory's crossbow and aim at the Vael?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the player never reached the crossbow, which contradicts the correct fact that Mara did grab Jory's crossbow and aimed it at the Vael.",
+        "verdict": "contradicts",
+        "response": "No.\n\nYou never reached the crossbow. It clattered free and slid across the wet boards out of reach. A Vael lunged and scooped it up before you could twist the cuffed wrist.\n\nNow a Vael holds the knife at your throat. Another fingers the crossbow, ready. Rain spatters, blood runs into the grain of the altar board.\n\nImmediate danger: blade at your throat, a loaded crossbow within a man's hand, and the circle of Vael closing."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara grabs Jory's crossbow and aims it at the Vael.",
+        "verdict": "correct",
+        "response": "Yes. You shoved Jory, seized his crossbow, and aimed it at the Vael. A bolt flew past and a Vael boot crushed the stock, smashing the weapon."
+      }
+    },
+    {
+      "qid": "questions_holdout:3-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I take Jory's weapon and point it at the Vael?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the player has no weapon in reach, which contradicts the fact that Mara grabbed Jory's crossbow and aimed it at the Vael.",
+        "verdict": "contradicts",
+        "response": "No.\n\nYour hands are empty. The knife presses at your throat. Rain hisses on the boards. Vael men close like hands. Casimir clutches his bleeding arm and laughs.\n\nImmediate danger: blade at your windpipe, no weapon in reach, and the circle tightening."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara grabbed Jory's crossbow and aimed it at the Vael.",
+        "verdict": "correct",
+        "response": "Yes. You pushed Jory aside, grabbed his crossbow and aimed it at the Vael.  \nA bolt flew and a Vael boot crushed the stock, smashing the weapon and leaving you exposed as hands closed in."
+      }
+    },
+    {
+      "qid": "questions_holdout:4-verbatim",
+      "type": "verbatim",
+      "question": "Did I get shot in the thigh by a shorter Lord Casimir Vael?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response does not confirm or deny whether the player was shot in the thigh, focusing instead on the immediate danger without addressing the specific event mentioned in the question.",
+        "verdict": "absent",
+        "response": "You fumble at your thigh with your free hand.\n\nCloth is soaked. Fingers find wet fabric and warmth. No puncture. No foreign shaft beneath your palm.\n\nA Vael's breath fogs close. The knife presses harder at your throat. Rain drums on the roof.\n\nImmediate danger: blade edge bites your skin as the men tighten their circle."
+      },
+      "after": {
+        "reasoning": "The response correctly states that a shorter Lord Casimir Vael shot the player in the thigh, aligning with the known fact that Mara Voss was shot in the thigh by him.",
+        "verdict": "correct",
+        "response": "Yes. A shorter Vael fired a crossbow and struck you in the thigh, knocking you down as the men dragged you back."
+      }
+    },
+    {
+      "qid": "questions_holdout:4-paraphrase",
+      "type": "paraphrase",
+      "question": "Was I hit in the leg by a smaller Lord Casimir Vael?",
+      "gold_retrieved": false,
+      "before": {
+        "reasoning": "The response incorrectly states that the player was not struck in the leg, contradicting the fact that Mara Voss was shot in the thigh by a shorter Lord Casimir Vael.",
+        "verdict": "contradicts",
+        "response": "No.\n\nYou were not struck in the leg. Your legs move; you kicked a Vael and pushed free. There is no fresh wound or blood on your thigh in the rain.\n\nVisible injuries: the cuff bites your wrist. Blood soaks your sleeve. The bolt that flew struck Sister Elka. Jory lies at the threshold. Shorter Vael’s knee is ruined.\n\nA Vael holds a wet blade at your throat. Hands tighten. Rain hisses. Immediate danger: the knife at your throat and the circle closing."
+      },
+      "after": {
+        "reasoning": "The response correctly states that the player was shot in the thigh by the shorter Lord Casimir Vael, but incorrectly claims that Lord Casimir Vael did not shoot that wound, which contradicts the fact that he did.",
+        "verdict": "contradicts",
+        "response": "You were shot in the thigh by the shorter Vael; the smaller man fired the bolt. Lord Casimir Vael did not shoot that wound."
+      }
+    },
+    {
+      "qid": "questions_holdout:5-verbatim",
+      "type": "verbatim",
+      "question": "Did I get shot in the thigh by a shorter Vael with a crossbow?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the player was shot in the wrist instead of the thigh, which contradicts the correct fact that Mara Voss was shot in the thigh by a shorter Vael with a crossbow.",
+        "verdict": "contradicts",
+        "response": "No. The bolt is buried in your wrist. Blood soaks the chain and drips to the boards.\n\nA wet blade presses your throat. Vael hands tighten. Rain hisses. Immediate danger: the circle closes."
+      },
+      "after": {
+        "reasoning": "The response correctly states that a shorter Vael shot Mara Voss in the thigh with a crossbow, which aligns with the known fact.",
+        "verdict": "correct",
+        "response": "Yes. A shorter Vael shot you in the thigh with a crossbow, causing a severe wound."
+      }
+    },
+    {
+      "qid": "questions_holdout:5-paraphrase",
+      "type": "paraphrase",
+      "question": "Was I hit in the leg by a shorter Vael using a crossbow?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that the player was shot in the thigh by the shorter Vael, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. You were shot in the thigh by the shorter Vael earlier. Cloth at your leg is torn and dark with blood. Pain flares when you shift; your weight pins you off-balance.\n\nImmediate danger: the knife presses at your throat, Vael hands tighten, rain hisses."
+      },
+      "after": {
+        "reasoning": "The response correctly states that the shorter Vael shot Mara Voss in the thigh with a crossbow, which aligns with the known fact.",
+        "verdict": "correct",
+        "response": "Yes. The shorter Vael shot you in the thigh with his crossbow; the bolt struck and you collapsed onto the altar."
+      }
+    },
+    {
+      "qid": "questions_holdout:6-verbatim",
+      "type": "verbatim",
+      "question": "What happened when I lunged for the seal during the confrontation?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the player lunges for the seal but does not mention that Mara Voss injures herself in the process, which is a key part of the correct fact.",
+        "verdict": "contradicts",
+        "response": "You launch for the seal.\n\nYour fingers hit slick wood and empty air. The seal is gone.\n\nA Vael hand flashes. Something dark is cupped and hoisted away from the altar. You do not touch it.\n\nA boot scuffs the boards where it lay. Rain and blood smear the spot.\n\nThe Vael man tucks the seal out of sight against his palm. He moves like a lock being shut.\n\nImmediate danger: a Vael holds Ilya's black wax seal and the circle tightens around you, cuffed and bleeding."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that the player grabbed the seal, while the correct fact indicates that Mara Voss lunged for the seal but injured herself and did not successfully grab it.",
+        "verdict": "contradicts",
+        "response": "You lunged and grabbed the black wax seal. A Vael gray seized it from your pocket and took possession of it."
+      }
+    },
+    {
+      "qid": "questions_holdout:6-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred when I reached for the wax emblem amidst the conflict?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response indicates that the seal is missing and does not mention Mara Voss injuring herself while lunging for it, which contradicts the correct fact.",
+        "verdict": "contradicts",
+        "response": "Your cuffed hand scrabbles toward the altar.\n\nFingers brush damp wood and something soft. You close your hand.\n\nNothing. The palm meets ragged cloth and rain, no wax, no seal.\n\nYou look up. The Vael with the knife leans in closer, eyes flat. He presses the blade harder against your throat. Rain hisses on the boards.\n\nCasimir stumbles, clutching his arm. Vael men tighten the ring, boots slick. Sister Elka lies half-slumped at the altar, blood dark on her robe.\n\nYou smell salt and iron. The missing seal is not in your hand.\n\nImmediate danger: the knife at your throat digs in as the Vael men close and Casimir reaches for the fallen crossbow."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that the player dove for the seal and managed to grab it, while the correct fact indicates that Mara Voss lunged for the seal and injured herself in the process, without successfully obtaining it.",
+        "verdict": "contradicts",
+        "response": "You dove for the black wax seal and managed to grab it briefly. A Vael man then took it from your pocket—later Casimir or a Vael gray recovered it from you."
+      }
+    },
+    {
+      "qid": "questions_holdout:7-verbatim",
+      "type": "verbatim",
+      "question": "What happened when I was struck by the shorter Vael's crossbow?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Mara Voss being struck by the shorter Vael's crossbow and collapsing onto the altar, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "The shorter Vael pulled the crossbow and fired.\n\nThe bolt struck you. It drove into your wrist. Pain flared, hot and sharp. You choked on breath. Blood ran between your fingers.\n\nYour body folded. You collapsed onto the altar. Wood dug into your ribs. The chain jerked and bit into the cuffed wrist. Your free hand scraped at the wound and came away slick with blood.\n\nSound came in jagged: a man swearing, boots on plank, rain on slate. Jory fell at the threshold. Sister Elka staggered, robe torn by a bolt that missed her by inches. Casimir snarled and reached for a knife.\n\nImmediate danger: you are cuffed, bleeding from a crossbow bolt in your wrist, slumped against the altar while Vael men close and Casimir reaches for a blade."
+      },
+      "after": {
+        "reasoning": "The response accurately describes Mara Voss being struck by the shorter Vael's crossbow and collapsing onto the altar, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "The shorter Vael fired a crossbow bolt that struck your wrist, driving the bolt into the joint and shredding flesh. You doubled over from the pain, blood darkening your sleeve, and collapsed onto the altar."
+      }
+    },
+    {
+      "qid": "questions_holdout:7-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred when I was hit by the shorter Vael's projectile weapon?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes being struck by the shorter Vael's crossbow but contradicts the correct fact by stating that the bolt hit the forearm instead of indicating that Mara Voss collapsed onto the altar after being struck.",
+        "verdict": "contradicts",
+        "response": "The shorter Vael fired his crossbow.\n\nThe bolt struck your forearm. It buried itself at the wrist. Wood scraped. Metal shivered.\n\nYou screamed once. Blood warmed the cuff. The chain clenched and twisted your arm against the altar lip.\n\nYour hand went numb. Movement came sharp and small. The bolt pinched tendons when you tried to pull away.\n\nSister Elka staggered. Jory lay still in the doorway. Rain hissed on wet wood.\n\nA Vael man holds a blade at your throat. Casimir bleeds, laughing. Men close in, boots thudding.\n\nImmediate danger: the knife presses your windpipe as the circle tightens and the shorter Vael reloads."
+      },
+      "after": {
+        "reasoning": "The response accurately describes Mara Voss being struck by the shorter Vael's crossbow and collapsing onto the altar, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "The shorter Vael fired a crossbow bolt that struck you, the shaft lodging in your wrist and the pain screaming through your arm. You collapsed onto the altar, blood and rain mixing as you weakened.\n\nImmediate danger: a wet blade at your throat, Vael men tightening their circle, and Casimir still bleeding and reaching."
+      }
+    },
+    {
+      "qid": "questions_holdout:8-verbatim",
+      "type": "verbatim",
+      "question": "Did I find the knife in the sheath when I reached for it?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that the sheath was empty when Mara Voss reached for the knife.",
+        "verdict": "correct",
+        "response": "No. The sheath was empty.\n\nWhen your hand closed the pocket was bare. The knife lay loose on the boards, slick with rain and blood. It spun and slid. A Vael dove and snatched it. He holds the haft now, blade against your throat.\n\nImmediate danger: the circle tightens, the wet blade presses your skin, and Casimir bleeds and watches."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that the sheath was empty when Mara Voss reached for the knife.",
+        "verdict": "correct",
+        "response": "No. The sheath was empty when you reached for it."
+      }
+    },
+    {
+      "qid": "questions_holdout:8-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I discover the blade in the holder when I tried to grab it?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the player never found the blade in the holder, which contradicts the correct fact that the sheath was empty when Mara Voss attempted to reach for the knife.",
+        "verdict": "contradicts",
+        "response": "No. You never found the blade in the holder.\n\nThe knife spun under the altar. A Vael dove and took it before your fingers closed. He holds it by the blade at your throat now, slick with rain and blood.\n\nImmediate danger: the wet point presses your skin, Vael men tighten the ring, and Casimir still reaches with his one good hand."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Mara Voss did not find the blade, aligning with the fact that the sheath was empty.",
+        "verdict": "correct",
+        "response": "You did not find it. Casimir groped the hidden knife at his belt and drew it himself before you could."
+      }
+    },
+    {
+      "qid": "questions_holdout:9-verbatim",
+      "type": "verbatim",
+      "question": "What happened to me when I was shot by a crossbow bolt?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes the injury caused by the crossbow bolt, including the location and effects of the wound, which aligns with the correct fact that Mara Voss was shot by a crossbow bolt, causing injury and blood loss.",
+        "verdict": "correct",
+        "response": "A bolt struck your wrist.  \nIt is lodged there.  \nWood and metal press under skin.  \nBlood runs down over the chain.  \nThe wound burns. Movement of that hand is dull and weak.  \nThe chain pulls the wrist against the altar lip.  \nYour cuff catches and chews the skin where the bolt pins you.  \nSister Elka and Jory lie nearby covered in blood. Casimir bleeds at the threshold.  \nA Vael man holds a knife at your throat. Immediate danger: the blade presses wet metal to your skin as the men close in."
+      },
+      "after": {
+        "reasoning": "The response accurately describes multiple injuries from crossbow bolts, including blood loss and disorientation, which aligns with the correct fact about Mara Voss being shot by a crossbow bolt and suffering injury and blood loss.",
+        "verdict": "correct",
+        "response": "A crossbow bolt struck you in the shoulder, and at other points you were hit again—once through the thigh and once through the chest—with a bolt also screaming into your wrist while you were cuffed. Each wound bled heavily, threw you off balance, and left you weakened and disoriented."
+      }
+    },
+    {
+      "qid": "questions_holdout:9-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred to me when I was struck by a crossbow projectile?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Mara Voss being shot by a crossbow bolt, resulting in injury and blood loss, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "The bolt struck your wrist. The tip punched through tendon and skin. Blood ran over the cuff and soaked the chain.\n\nYou cried out. Rain spat across the wound. The bolt stayed lodged, metal dark with blood.\n\nYour hand went numb. The chain pulled tight and chewed into the raw flesh. You coughed once, air rasping. The altar's edge dug into your ribs as you were hauled back.\n\nA Vael man held a blade at your throat, point slick with blood. The men closed ranks around you. Immediate danger: the knife pressed to your windpipe and the lodged bolt tearing at your wrist."
+      },
+      "after": {
+        "reasoning": "The response accurately describes the injury and blood loss caused by the crossbow bolt, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You were hit by a crossbow bolt; pain tore through you where it struck, blood followed quickly, and you collapsed or staggered as your strength failed. Your movements were immediately hampered by the wound and the cuffed chain, leaving you vulnerable and bleeding."
+      }
+    },
+    {
+      "qid": "questions_holdout:10-verbatim",
+      "type": "verbatim",
+      "question": "What did I find when I retrieved the brass lockpick set from my pocket?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that the brass lockpick set is damaged and useless, detailing the condition of the lockpicks and the injury caused by them.",
+        "verdict": "correct",
+        "response": "You sweep your cuffed hand inside your coat.\n\nFingers close on brass. The case is cold and bent.\n\nYou pry it open with the edge of your thumb. The lockpicks are splayed like broken teeth. The spine has split. One pick is sheared off; another curves uselessly. The tips are jagged, metal burred.\n\nYou try to lift a pick. It bites the pad of your thumb. Blood beads, runs warm into the rain.\n\nA scrap of brass flakes free and slides across the plank. A Vael's boot smashes it into the wood.\n\nThe man with the knife leans lower, watching. His thumb rubs the haft. Casimir coughs blood and laughs. Rain hammers the roof.\n\nImmediate danger: your broken picks, a bleeding thumb, and a wet blade at your throat as Vael hands close in."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that the brass lockpick set was broken and useless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "It was broken and useless. The brass case had split and the picks were jagged, snapped pieces you couldn't use."
+      }
+    },
+    {
+      "qid": "questions_holdout:10-paraphrase",
+      "type": "paraphrase",
+      "question": "What did I discover when I took the brass lockpick set from my pouch?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes the condition of the brass lockpick set as damaged and useless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You jerk the pouch open.\n\nFingers close on brass. The casing gives under your hurt hand.\n\nThe lockpick set is split. Teeth sheared. Thin rods bent and jagged. One shard slices your palm. Warm blood beads and runs.\n\nYou drop it. Pieces scatter across wet boards and vanish into a dark gap under the altar.\n\nImmediate danger: the Vael with the blade at your throat leans closer as men close in and rain drums on the roof."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that the brass lockpick set was damaged and useless, providing specific details about its condition.",
+        "verdict": "correct",
+        "response": "It was broken and useless. The brass casing had split under pressure; the picks were jagged, bent, and none would turn a lock."
+      }
+    },
+    {
+      "qid": "questions_holdout:11-verbatim",
+      "type": "verbatim",
+      "question": "What did I find in a coat pocket that was broken and useless?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact about finding the brass lockpick set in the coat pocket and its condition of being broken and useless.",
+        "verdict": "correct",
+        "response": "You found the brass lockpick set in your coat pocket. It was split, jagged, and useless."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact about what Mara Voss found in the coat pocket.",
+        "verdict": "correct",
+        "response": "You found the brass lockpick set in a coat pocket; it was broken and useless."
+      }
+    },
+    {
+      "qid": "questions_holdout:11-paraphrase",
+      "type": "paraphrase",
+      "question": "What did I discover in a jacket compartment that was damaged and ineffective?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes the discovery of the broken brass lockpick set, confirming that it is indeed damaged and ineffective, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Your fingers fumble the wet pocket.\n\nCloth gives. Something cold and brass slides into your palm.\n\nThe lockpick case is cracked open. Picks lie bent and jagged. The casing split along a seam.\n\nYou press a pick. It flakes. Metal shears under the pressure.\n\nThe set is broken and useless.\n\nA Vael presses the blade harder to your throat. Rain hisses. Casimir coughs blood at the doorway. Immediate danger closes in."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact about finding a broken brass lockpick set in the jacket compartment.",
+        "verdict": "correct",
+        "response": "You found a small brass lockpick set in the jacket compartment; it had split under pressure and the pieces were jagged and unusable. Vael hands close and the wet blade at your throat leaves you exposed."
+      }
+    },
+    {
+      "qid": "questions_holdout:12-verbatim",
+      "type": "verbatim",
+      "question": "Did I use the cracked spyglass as a weapon and get injured by a crossbow bolt from shorter Lord Casimir Vael?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response contradicts the correct fact because it states that the cracked spyglass was crushed and ruined, while the correct fact indicates that Mara Voss used it as a weapon before being injured by Lord Casimir Vael.",
+        "verdict": "contradicts",
+        "response": "No. The cracked spyglass was crushed under Casimir's heel and ruined. There were no usable pieces to wield.\n\nYou reached for glass earlier and felt it slide under boot and blood. It groaned, then vanished beneath the sole. You could not have driven a shard into a bolt or used it to distract anyone.\n\nNow a Vael holds a wet blade at your throat. Rain runs in your ear. Hands tighten on your shoulders. Casimir bleeds and laughs, one hand reaching for whatever he can find. Immediate danger: the knife at your throat, the circle closing, and nowhere to reach for a weapon."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss used the cracked spyglass as a weapon and was injured by a crossbow bolt from Lord Casimir Vael.",
+        "verdict": "correct",
+        "response": "Yes. You used the cracked spyglass as a weapon, and a crossbow bolt from the shorter Vael struck you, injuring you."
+      }
+    },
+    {
+      "qid": "questions_holdout:12-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I employ the damaged spyglass as a tool and sustain injury from a crossbow projectile launched by shorter Lord Casimir Vael?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response contradicts the correct fact by stating that the spyglass is crushed and useless, while the correct fact indicates that Mara Voss used it as a weapon.",
+        "verdict": "contradicts",
+        "response": "No. The spyglass lies mashed under Casimir's heel, crushed and useless at your feet. You never managed to wield it.\n\nA crossbow bolt from the shorter Vael struck you earlier, tearing into your side and scalding your breath. Blood wets your sleeve.\n\nThe knife presses wet metal to your throat. Vael hands tighten. Rain hisses. Immediate danger closes in."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Mara Voss used the cracked spyglass and was injured by a crossbow bolt from Lord Casimir Vael.",
+        "verdict": "correct",
+        "response": "Yes. You used the cracked spyglass to distract the shorter Vael's crossbow, and a bolt from that crossbow struck you, wounding you."
+      }
+    },
+    {
+      "qid": "questions_holdout:13-verbatim",
+      "type": "verbatim",
+      "question": "What did I grab to distract the shorter Lord Casimir Vael while escaping?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that Mara Voss grabbed the cracked spyglass to distract the shorter Lord Casimir Vael, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You grabbed the cracked spyglass — a jagged shard of the ruined spyglass — and thrust it to distract the shorter Vael.\n\nImmediate danger: a wet blade at your throat, Vael men tightening their circle, and Casimir still bleeding and reaching."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Mara Voss grabbed the cracked spyglass to distract Lord Casimir Vael, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You grabbed the cracked spyglass and lunged it at the shorter Vael to distract him. It was later crushed under Casimir's heel and ruined."
+      }
+    },
+    {
+      "qid": "questions_holdout:13-paraphrase",
+      "type": "paraphrase",
+      "question": "What item did I take to divert the attention of the shorter Lord Casimir Vael during my getaway?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response correctly identifies the cracked spyglass as the item used to distract Lord Casimir Vael, aligning with the known fact.",
+        "verdict": "correct",
+        "response": "The cracked spyglass — the ruined hand‑spyglass (its jagged shard) you grabbed to draw the shorter Vael's attention."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Mara Voss grabbed the cracked spyglass to distract the shorter Lord Casimir Vael, which aligns with the known fact.",
+        "verdict": "correct",
+        "response": "You grabbed the cracked spyglass and used the shard to distract the shorter Vael during your escape."
+      }
+    },
+    {
+      "qid": "questions_holdout:14-verbatim",
+      "type": "verbatim",
+      "question": "What did I do to Taller Vael to break free from his grasp?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that Mara Voss used a shard of the cracked spyglass to break free from Taller Vael, which contradicts the correct fact that she kicked his knee to escape.",
+        "verdict": "contradicts",
+        "response": "You drove the cracked spyglass shard into Taller Vael's chin.\n\nThe glass cut deep. He gurgled, fingers slackened.\n\nHis grip loosened. He toppled backward, face split, still.\n\nImmediate danger: Vael men close in, rain and boots on the boards."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked Taller Vael's knee to break free from his grasp.",
+        "verdict": "correct",
+        "response": "You kicked him in the knee. He keels and releases his grip, letting you break free."
+      }
+    },
+    {
+      "qid": "questions_holdout:14-paraphrase",
+      "type": "paraphrase",
+      "question": "What action did I take against Taller Vael to escape his hold?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes the action of kicking Taller Vael's knee to escape his hold, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You drove your heel into his knee.\n\nHis legs buckled. His grip loosened.\n\nHe fell, chin striking wood. Blood hit the boards.\n\nYou wrenched free and slid toward the doorway as hands closed in."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Mara Voss kicked Taller Vael's knee to break free from his grasp, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You kicked his knee, breaking his hold and freeing yourself."
+      }
+    },
+    {
+      "qid": "questions_holdout:15-verbatim",
+      "type": "verbatim",
+      "question": "What did I do to the taller Vael with the glass shard?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Mara Voss stabbing the taller Vael with a glass shard, resulting in his death, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You drove the glass shard into his chin.\n\nThe shard cut deep. Bone and wet sound. He staggered, hands to his jaw.\n\nBlood ran white-hot over his chest. His lower lip hung loose. He slid back and hit the boards hard.\n\nHe did not get up. Taller Vael lies dead a few feet from the altar, chin split open and still.\n\nImmediate danger: the Vael with the knife presses it to your throat, men close in, rain hisses on the wood."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss stabbed the taller Vael with a glass shard, resulting in his death.",
+        "verdict": "correct",
+        "response": "You drove the glass shard into the taller Vael's side. He went down and did not get back up."
+      }
+    },
+    {
+      "qid": "questions_holdout:15-paraphrase",
+      "type": "paraphrase",
+      "question": "What action did I take against the taller Vael using the piece of broken glass?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes the action of stabbing the taller Vael with the glass shard, which is consistent with the correct fact that Mara Voss stabs the taller Vael with a glass shard, killing him.",
+        "verdict": "correct",
+        "response": "You raised the glass shard.\n\nYou drove it upward into the taller Vael's chin. The blade bit through skin and bone.\n\nHe jerked, hands clawing at his face. Blood fountained. His chin split open along the line of the shard.\n\nHe sagged backward and hit the boards with a dull crack. He lay still, eyes open.\n\nImmediate danger: other Vael men close in faster now, anger and adrenaline in their movements."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the action taken by Mara Voss against the taller Vael, stating that she drove the glass shard into his body, which aligns with the correct fact that she stabbed him, resulting in his death.",
+        "verdict": "correct",
+        "response": "You drove the glass shard into the taller Vael's body. He collapsed and stopped moving."
+      }
+    },
+    {
+      "qid": "questions_holdout:16-verbatim",
+      "type": "verbatim",
+      "question": "What did I do when I saw the ajar side door?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss dives for the ajar side door and tumbles into the yard, including details about the crossbow bolt hitting the doorframe and the ensuing chase.",
+        "verdict": "correct",
+        "response": "You sprinted to it.\n\nYou dove through the gap. The frame splintered as a bolt slammed into the jamb. Wood exploded in your face.\n\nYou tumbled into the yard, rain and mud swallowing your hands. Your cuff snagged on a broken beam but you forced your weight free.\n\nVael figures swore behind you and gave chase. One reloaded a crossbow while another lunged for the hem of your robe.\n\nImmediate danger: you hit the wet yard, cuffed and breathless, with Vael men closing fast and a crossbow trained on your back."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact by stating that the player dove for the ajar side door and tumbled into the yard, while also mentioning the crossbow bolt and pursuit, which aligns with the original memory.",
+        "verdict": "correct",
+        "response": "You sprinted for the ajar side door and dove through it. A crossbow bolt shattered the doorframe as you tumbled into the yard, and figures pursued you into the rain."
+      }
+    },
+    {
+      "qid": "questions_holdout:16-paraphrase",
+      "type": "paraphrase",
+      "question": "What action did I take upon noticing the slightly open side entrance?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes Mara Voss attempting to escape through the ajar side door, but it does not mention the action of diving or tumbling into the yard as stated in the correct fact.",
+        "verdict": "contradicts",
+        "response": "You snag a breath and dart.\n\nYou hurl your shoulder toward the ajar side door. Splinters dig into your palm. The chain drags and snarls.\n\nYou shove through the gap. Rain and cold air hit your face. Wood scrapes your ribs.\n\nA Vael's boot catches the hem of your coat. Fingers clamp your ankle. You twist, pull, curse.\n\nThe chain snags on the altar leg. Your cuffed wrist slams. You hang half-out, half-in, boots scraping mud.\n\nA hand closes on your collar at the doorway. The Vael beside it hauls you backward. The side entrance locks with a heavy thunk.\n\nImmediate danger: you're half-pulled into the yard, cuffed and exposed, while Vael hands grip your collar and ankle."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact by stating that the player sprinted for the ajar side door, dove through it, and tumbled into the yard while being pursued.",
+        "verdict": "correct",
+        "response": "You sprinted for the ajar side door and dove through it. You tumbled into the yard as Vael figures pursued with a crossbow."
+      }
+    },
+    {
+      "qid": "questions_holdout:17-verbatim",
+      "type": "verbatim",
+      "question": "Did I drop the shard and raise my hands in surrender?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that Mara Voss did not drop the shard or raise hands in surrender, contradicting the correct fact that she did both actions.",
+        "verdict": "contradicts",
+        "response": "No.\n\nThe glass shard was crushed under Casimir's heel and buried in blood and splinters. You did not have it to drop.\n\nYou never raised both hands in surrender. Your cuffed hand kept clawing at wood and weapons. Vael men still hold a blade at your throat. Immediate danger: the knife presses wet against your skin as rain and feet close in."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss dropped the shard and raised her hands in surrender.",
+        "verdict": "correct",
+        "response": "Yes. You dropped the shard and raised your hands to show you had no weapon.  \nCasimir approached and ordered you to keep your hands visible."
+      }
+    },
+    {
+      "qid": "questions_holdout:17-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I let go of the fragment and lift my arms in capitulation?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes Mara Voss letting go of the shard and raising her arms in surrender, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "You let go.\n\nFingers unfurl. Rain and blood wash the shard away if it was ever there.\n\nYou raise both cuffed arms slow and flat, palms out. Wood squeals under the chain. A Vael's hand pins your wrist to the altar as warning, not gentleness.\n\nThe man with the knife leans in. The blade kisses your throat. Metal bites. Hot blood beads where the edge presses.\n\nCasimir wipes his mouth with a cuffed sleeve and laughs, one good hand still bloody. Vael men close ranks, boots spitting water.\n\nImmediate danger: a blade at your throat, wrists chained to the altar, and Vael men braced to move."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss drops the shard and raises her hands in surrender.",
+        "verdict": "correct",
+        "response": "You dropped the shard; the ruined glass was mashed under Casimir’s heel. You raised your hands in surrender."
+      }
+    },
+    {
+      "qid": "questions_holdout:18-verbatim",
+      "type": "verbatim",
+      "question": "Did I find Ilya's black wax seal in my pocket?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response clearly states that the black wax seal is missing and confirms that Mara Voss does not have it in her possession, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "You wrench at your coat with the cuffed hand.\n\nFingers fumble through wet lining. Cloth, a scrap of paper, sticky blood. No seal.\n\nYou pat the other pocket. Empty leather, nothing but lint and cold water.\n\nYou jerk upright. The Vael with the blade grins. He presses the point to your throat. Rain drums in your ears. Casimir coughs and laughs, forearm wrapped in blood.\n\nImmediate danger: the knife at your throat, Vael hands tightening, and no black wax seal in your possession."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Ilya's black wax seal is not in the player's possession, aligning with the fact that Mara Voss finds it missing after attempting to retrieve it.",
+        "verdict": "correct",
+        "response": "Ilya's black wax seal was pressed cold into your palm and warm with blood earlier, but it is not in your possession now. It has been confirmed lost/not on you."
+      }
+    },
+    {
+      "qid": "questions_holdout:18-paraphrase",
+      "type": "paraphrase",
+      "question": "Was I able to locate Ilya's dark wax emblem after searching my pouch?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response clearly states that Mara Voss does not find the black wax seal after searching her pouch, which is consistent with the correct fact that it is missing.",
+        "verdict": "correct",
+        "response": "You jam fingers into the pouch at your hip.\n\nWet fabric, coins, nothing that looks like black wax. Your hand comes up slick with rain and old blood.\n\nYou search again. The lining gives. No seal. No cold disc worn smooth by a thumb.\n\nA Vael's boot presses your shoulder down. The knife bites at your throat.\n\nImmediate danger: you have no seal, your hands are empty, and the Vael with the blade leans closer."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Ilya's black wax seal was not found in the pouch, aligning with the fact that it was missing after Mara Voss attempted to retrieve it.",
+        "verdict": "correct",
+        "response": "You did not find Ilya's black wax seal in your pouch. A Vael man already took it from your pocket and now holds a knife at your throat."
+      }
+    },
+    {
+      "qid": "questions_holdout:19-verbatim",
+      "type": "verbatim",
+      "question": "Did I kick a man, causing him to loosen grip?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response confirms that Mara Voss kicked a man, causing him to loosen his grip, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes.\n\nYour heel snapped back. It hit a shin hard. The man howled and stumbled. His grip loosened.\n\nHe fell, knee giving out. Blood and rain soaked the board where he hit.\n\nImmediate danger: the Vael man holds a wet blade at your throat, men tightening the circle, Casimir bleeding and groping at the doorway."
+      },
+      "after": {
+        "reasoning": "The response correctly states that a kick caused a man to loosen his grip, aligning with the known fact about Mara Voss kicking a man.",
+        "verdict": "correct",
+        "response": "Yes. You kicked Shorter Vael's knee, and he loosened his grip."
+      }
+    },
+    {
+      "qid": "questions_holdout:19-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I strike a person, leading him to release his hold?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the player struck Casimir and caused him to drop a knife, while the correct fact indicates that Mara Voss kicked a man, causing him to loosen his grip, not specifically involving Casimir or a knife being dropped.",
+        "verdict": "contradicts",
+        "response": "Yes. Your shoulder slams into Casimir. He reels and drops the knife.\n\nThe blade skitters. It lands in a puddle and then under the altar when boots hit the water.\n\nNow a Vael dives and snatches the knife free. He holds it by the blade at your throat.\n\nImmediate danger: a wet blade at your throat, Vael men closing, Casimir clutching his wounded arm."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked a man, causing him to loosen his grip, although it incorrectly names the man as Shorter Vael instead of simply stating 'a man.'",
+        "verdict": "correct",
+        "response": "Yes. In the Drowned Chapel you kicked Shorter Vael's knee, and he loosened his grip."
+      }
+    },
+    {
+      "qid": "questions_holdout:20-verbatim",
+      "type": "verbatim",
+      "question": "Did I lunge for a knife while being pinned by a crossbow?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Mara Voss lunged for a knife while being pinned by a crossbow, as indicated in the correct fact.",
+        "verdict": "correct",
+        "response": "Yes.\n\nYou lunged for the knife while a crossbow was trained on you. The string had already snapped and a bolt had been fired. Your hand closed on wet metal and lost it. A Vael kicked the blade away and snatched it under the altar. He holds it now by the haft, point to your throat. Rain streaks down his sleeve. Casimir pants, one arm clutched to his wound. The circle tightens.\n\nImmediate danger: knife at your throat, men closing."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss lunged for a knife while being pinned by a crossbow.",
+        "verdict": "correct",
+        "response": "Yes. You lunged for a knife while a crossbow held you pinned, and the attempt left you exposed as men closed in."
+      }
+    },
+    {
+      "qid": "questions_holdout:20-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I reach for a blade while held down by a crossbow?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the crossbow was no longer pinning Mara Voss, contradicting the correct fact that she was pinned by a crossbow when she lunged for the knife.",
+        "verdict": "contradicts",
+        "response": "Yes.\n\nYou reached for the knife while restrained. You were cuffed and the chain bit into your wrist. The crossbow had been knocked free moments before. It was no longer pinning you against the altar. Vael hands held you down instead.\n\nA Vael now presses the wet blade to your throat. Casimir bleeds and claws at his belt. Men close in. Immediate danger: the knife at your throat and the circle tightening."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss lunged for a knife while being pinned by a crossbow.",
+        "verdict": "correct",
+        "response": "Yes. You lunged for a knife while pinned by a crossbow, and Casimir shot a bolt that injured you."
+      }
+    },
+    {
+      "qid": "questions_holdout:21-verbatim",
+      "type": "verbatim",
+      "question": "Did I kick backward violently, connecting with Shorter Vael's knee to loosen his grip?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response confirms that Mara Voss kicked backward and struck Shorter Vael's knee, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes.\n\nYou kicked backward. Your heel struck his knee. He howled and folded. He went down hard.\n\nSlack opened in the chain. Your cuffed wrist jerked forward. You lunged for the knife.\n\nA Vael dove. He beat you to it. He holds the blade by the haft, point carved against your throat. Rain spatters down. Blood runs into the wood.\n\nImmediate danger: a wet knife at your throat, Vael bodies closing, Casimir still bleeding and reaching."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked backward violently, connecting with Shorter Vael's knee and loosening his grip.",
+        "verdict": "correct",
+        "response": "Yes. You kicked backward hard and struck Shorter Vael's knee, and his grip loosened."
+      }
+    },
+    {
+      "qid": "questions_holdout:21-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I strike backward forcefully, hitting Shorter Vael's leg to weaken his hold?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes Mara Voss striking backward and hitting Shorter Vael's leg, which aligns with the correct fact that she kicked backward violently and connected with his knee, loosening his grip.",
+        "verdict": "correct",
+        "response": "You drive your heel back.\n\nIt finds calf. Leather thuds. Bone answers.\n\nShorter Vael curses. He staggers, hand loosening on your collar.\n\nThe chain slips an inch. Your cuffed wrist jerks toward the altar.\n\nThe Vael with the knife steadies, eyes on the fallen crossbow at the threshold. Another Vael scrambles for Shorter Vael's balance.\n\nCasimir straightens, one hand pressed to his bleeding forearm. He laughs without humor and reaches for the knife at Shorter Vael's belt.\n\nImmediate danger: the circle tightens again, a knife hovers at your throat, and Casimir moves to take control."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked backward and connected with Shorter Vael's knee, which loosened his grip.",
+        "verdict": "correct",
+        "response": "You kicked backward and connected with Shorter Vael's knee, loosening his grip. He recovered and slammed into you, tightening the hold."
+      }
+    },
+    {
+      "qid": "questions_holdout:22-verbatim",
+      "type": "verbatim",
+      "question": "Did I lose consciousness while cuffed and bleeding, dragged toward the altar?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the player did not lose consciousness, which contradicts the correct fact that Mara Voss loses consciousness while being dragged toward the altar.",
+        "verdict": "contradicts",
+        "response": "No. You did not lose consciousness.\n\nYou are breathing. You cough blood into the rain. Your eyes follow the knife as it skitters under the altar. Your cuffed wrist bites into the wood. The chain digs flesh. A Vael holds the blade at your throat. Casimir clutches his bleeding forearm and laughs.\n\nImmediate danger: the knife at your throat, Vael men closing, rain hissing on splintered boards."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss lost consciousness while cuffed and bleeding, dragged toward the altar.",
+        "verdict": "correct",
+        "response": "Yes. You lost consciousness while cuffed and bleeding as Lord Casimir Vael dragged you toward the altar.  \nYou forced your eyes open later and continued struggling."
+      }
+    },
+    {
+      "qid": "questions_holdout:22-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I faint while restrained and injured, pulled toward the sacrificial platform?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Mara Voss losing consciousness while cuffed and bleeding, being dragged toward the altar, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "Your vision frays at the edges.\n\nLegs go soft. Breath rasps thin. The rain sounds like a far-off wash.\n\nA Vael's hand hauls on the chain. Your shoulders dip. Your chin meets your chest.\n\nYou try to lift your head. Nothing answers. The world narrows to wet wood under your cheek.\n\nHands pull you toward the altar. The cuff bites. Your body goes loose in their grip.\n\nA Vael's palm slaps your face. No light comes back.\n\nYou slip under, unconscious, cuffed and bleeding, being dragged toward the sacrificial platform."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss lost consciousness while cuffed and bleeding, being dragged toward the altar.",
+        "verdict": "correct",
+        "response": "Yes. You lost consciousness while cuffed and bleeding as Casimir dragged you toward the altar. Your wind was crushed under his boot and you went out as the chain bit into your wrist."
+      }
+    },
+    {
+      "qid": "questions_holdout:23-verbatim",
+      "type": "verbatim",
+      "question": "Did I attempt to escape from Lord Casimir Vael with a shard of the cracked spyglass?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the shard of the spyglass is ruined and no usable pieces remain, which contradicts the fact that Mara Voss attempted to escape using a shard of the cracked spyglass.",
+        "verdict": "contradicts",
+        "response": "No. The spyglass was ruined under Casimir’s heel. You felt the shard slide, then the boot grind it flat. There are no usable pieces. Whatever scrap you remember reaching for is gone, mashed into the wet boards.\n\nA Vael holds a knife to your throat. Rain hisses. Blood runs from Casimir’s arm. Hands tighten. Immediate danger: the blade at your throat and the ring of men closing in."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss attempted to escape using a shard of the cracked spyglass and describes the subsequent events correctly.",
+        "verdict": "correct",
+        "response": "Yes. You thrust a shard of the cracked spyglass at Casimir's throat during an escape attempt, but your strength failed and you slipped into unconsciousness cuffed and bleeding as he dragged you toward the altar."
+      }
+    },
+    {
+      "qid": "questions_holdout:23-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I try to flee from Lord Casimir Vael using a piece of the broken spyglass?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response indicates that the player attempted to grab the spyglass shard, but it was crushed by Casimir, which contradicts the correct fact that specifically states Mara Voss thrust a shard of the cracked spyglass towards Lord Casimir Vael's throat.",
+        "verdict": "contradicts",
+        "response": "You grabbed for the spyglass shard.  \nCasimir's boot came down across it and crushed it under heel.  \nThe glass splintered and slid into the bloodied boards. No usable pieces remained.  \nImmediate danger: a wet blade at your throat, Vael men tightening their circle, and Casimir still bleeding and reaching."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss attempted to escape from Lord Casimir Vael using a shard of the cracked spyglass.",
+        "verdict": "correct",
+        "response": "Yes. You thrust a shard of the cracked spyglass at Casimir's throat and used it to fend him off while trying to break free and slip toward the doorway. Your strength failed; you lost consciousness cuffed and bleeding as Casimir dragged you toward the altar."
+      }
+    }
+  ]
+}
