@@ -1,0 +1,15 @@
+{
+  "instances": 262,
+  "cv_recall@10": {
+    "current": 0.944,
+    "bm25": 0.941,
+    "vector": 0.925,
+    "quota": 0.954,
+    "rrf": 0.958
+  },
+  "chosen_strategy": "quota",
+  "chosen_config": [
+    "quota",
+    3
+  ]
+}

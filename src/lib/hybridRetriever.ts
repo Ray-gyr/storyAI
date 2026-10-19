@@ -1,17 +1,22 @@
 /**
- * 混合检索：BM25 + 向量，Reciprocal Rank Fusion 合并
+ * 混合检索：BM25 + 向量，按配额合并
  *
- * 参数来自 scripts/eval/tune_hybrid.py（一个 100 回合的故事，44 个片段，88 道回忆题，
- * 按来源片段分组 4 折交叉验证 x25 选出调参策略，再在邻域平滑后选点）：
- *   - 向量一路用玩家原话：在两组题上都比用改写句更好，且不必等待意图翻译，可以与之并行
- *   - BM25 一路用"原话 + 改写句（含实体名）"，BM25 本身保持默认参数（调 k1 / b / IDF 公式没有交叉验证收益）
- *   - 不再使用实体过滤：平均 77% 的片段都能通过过滤，几乎筛不掉东西
- *   - k 在 1~100、BM25 权重在 3~10 区间内结果都很平稳，取平台中间的点
- * 交叉验证估计 MRR@10 ≈ 0.67（旧 tier search 0.49，纯 BM25 0.66），
- * 优势主要在换了说法的回忆问题上（Hit@5 0.64 → 0.84，样本内）。
+ * 合并方式：先取 BM25 前 BM25_QUOTA 名，再按向量检索的排序补满 topK 个；向量结果不足时用 BM25 剩余的补。
+ * 写作模型拿到的是这 topK 个片段组成的集合（再按轮次排序），所以优化目标是 Recall@10，而不是排序指标。
  *
- * 注意：Okapi IDF 在语料只有 1~2 个片段时全部 <= 0，BM25 一路不会返回结果，此时完全由向量一路兜底；
- * 有 3 个片段起 BM25 正常工作。
+ * 来源：scripts/eval/benchmark/tune_recall.py（PROTOCOL.md 第 7 节）。数据为 300 回合的开发故事
+ * （130 个片段，88 道回忆题 x 3 个快照）+ 100 回合的试点故事（88 道题），按来源片段分组 4 折交叉验证 x25：
+ *   原 RRF（k 60、BM25 权重 4）0.944，纯 BM25 0.941，纯向量 0.925，配额法 0.954，RRF 网格 0.958（3 个参数）。
+ *   按"与最佳相差 0.01 以内选参数最少"的规则选配额法；配额 3~5 的结果都在 0.954~0.958 之间。
+ * 原 RRF 的问题：BM25 权重 4 时，BM25 前 10 名的分数下限 4/70 高于只被向量召回的片段的上限 1/61，
+ * 候选集合完全由 BM25 决定，向量一路只改变顺序；而故事变长后，向量检索的召回率下降得比 BM25 慢。
+ *
+ * 其他沿用 v2 的选择（scripts/eval/tune_hybrid.py 的试点实验）：
+ *   - 向量一路用玩家原话：不必等待意图翻译，可以与之并行
+ *   - BM25 一路用"原话 + 改写句（含实体名）"，BM25 保持默认参数
+ *   - 不使用实体过滤：平均 77% 的片段都能通过过滤，几乎筛不掉东西
+ *
+ * 注意：Okapi IDF 在语料只有 1~2 个片段时全部 <= 0，BM25 一路不会返回结果，此时完全由向量一路兜底。
  */
 import { BM25, DEFAULT_BM25_PARAMS, tokenize } from "./bm25";
 import { getEmbeddings, getPineconeIndex } from "./Init";
@@ -19,12 +24,12 @@ import { fromPineconeMetadata, IndexedMemory, loadIndexedMemories } from "./memo
 import { QueryIntent } from "./query";
 
 export const HYBRID_RETRIEVAL_CONFIG = {
-    /** 每一路取多少条参与融合 */
-    depth: 10,
-    /** RRF 常数 */
-    rrfK: 60,
-    /** BM25 一路的权重（向量一路固定为 1） */
-    bm25Weight: 4,
+    /** 先从 BM25 取多少个 */
+    bm25Quota: 3,
+    /** BM25 一路取多少条（配额之外的部分只在向量结果不足时用于补位） */
+    bm25Depth: 10,
+    /** 向量一路取多少条（要比 topK 多：与 BM25 配额重复的片段需要往后补位） */
+    denseDepth: 20,
     /** 最终放进 prompt 的记忆条数 */
     topK: 10,
     bm25: DEFAULT_BM25_PARAMS,
@@ -45,7 +50,7 @@ export function startDenseSearch(
         const vector = await getEmbeddings().embedQuery(rawInput);
         const res = await getPineconeIndex().namespace(sessionId).query({
             vector,
-            topK: options.depth ?? HYBRID_RETRIEVAL_CONFIG.depth,
+            topK: options.depth ?? HYBRID_RETRIEVAL_CONFIG.denseDepth,
             // 带上 metadata：Redis 副本缺失某条记录时用它兜底
             includeMetadata: true,
             // 仅评测使用：还原某个历史时刻已有的片段（线上不传）
@@ -80,13 +85,14 @@ export function bm25Rank(memories: IndexedMemory[], queryTokens: string[], depth
         .map(s => s.id);
 }
 
-/** 加权 RRF：score(d) = Σ weight / (k + rank) */
-export function reciprocalRankFusion(rankings: { ids: string[]; weight: number }[], k: number): string[] {
-    const scores = new Map<string, number>();
-    for (const { ids, weight } of rankings) {
-        ids.forEach((id, i) => scores.set(id, (scores.get(id) ?? 0) + weight / (k + i + 1)));
+/** 配额合并：BM25 前 quota 名 + 向量排序补满 topK；向量不足时用 BM25 剩余部分补 */
+export function quotaFusion(bm25Ids: string[], denseIds: string[], quota: number, topK: number): string[] {
+    const picked = bm25Ids.slice(0, quota);
+    for (const id of [...denseIds, ...bm25Ids.slice(quota)]) {
+        if (picked.length >= topK) break;
+        if (!picked.includes(id)) picked.push(id);
     }
-    return [...scores.entries()].sort((a, b) => b[1] - a[1]).map(([id]) => id);
+    return picked;
 }
 
 /**
@@ -101,7 +107,7 @@ export async function rankMemories(params: {
     createdBefore?: number;
 }): Promise<IndexedMemory[]> {
     const { rawInput, intent, dense, sessionId, createdBefore } = params;
-    const { depth, rrfK, bm25Weight, topK } = HYBRID_RETRIEVAL_CONFIG;
+    const { bm25Quota, bm25Depth, topK } = HYBRID_RETRIEVAL_CONFIG;
 
     const [denseHits, memoriesResult] = await Promise.all([
         dense,
@@ -113,13 +119,10 @@ export async function rankMemories(params: {
     const memories = (memoriesResult ?? []).filter(m => createdBefore === undefined || m.created_at <= createdBefore);
 
     const queryTokens = [...tokenize(rawInput), ...tokenize(enhancedQuery(intent))];
-    const bm25Ids = bm25Rank(memories, queryTokens, depth);
+    const bm25Ids = bm25Rank(memories, queryTokens, bm25Depth);
     const denseIds = (denseHits ?? []).map(h => h.id);
 
-    const fused = reciprocalRankFusion([
-        { ids: denseIds, weight: 1 },
-        { ids: bm25Ids, weight: bm25Weight },
-    ], rrfK).slice(0, topK);
+    const fused = quotaFusion(bm25Ids, denseIds, bm25Quota, topK);
 
     // 记录以 Redis 副本为准，缺失时（如刚写入 Pinecone、Redis 写入失败）用向量检索带回的 metadata 兜底
     const byId = new Map<string, IndexedMemory>(memories.map(m => [m.id, m]));
