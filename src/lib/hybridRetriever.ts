@@ -36,14 +36,20 @@ export type DenseHit = { id: string; memory: IndexedMemory };
  * 立即用玩家原话发起向量检索（不等意图翻译）。
  * 失败时返回 null 而不是 reject：调用方会先去做意图翻译，期间未处理的 rejection 会导致进程报错。
  */
-export function startDenseSearch(rawInput: string, sessionId: string): Promise<DenseHit[] | null> {
+export function startDenseSearch(
+    rawInput: string,
+    sessionId: string,
+    options: { depth?: number; createdBefore?: number } = {}
+): Promise<DenseHit[] | null> {
     return (async () => {
         const vector = await getEmbeddings().embedQuery(rawInput);
         const res = await getPineconeIndex().namespace(sessionId).query({
             vector,
-            topK: HYBRID_RETRIEVAL_CONFIG.depth,
+            topK: options.depth ?? HYBRID_RETRIEVAL_CONFIG.depth,
             // 带上 metadata：Redis 副本缺失某条记录时用它兜底
             includeMetadata: true,
+            // 仅评测使用：还原某个历史时刻已有的片段（线上不传）
+            ...(options.createdBefore !== undefined ? { filter: { created_at: { $lte: options.createdBefore } } } : {}),
         });
         return (res.matches ?? []).map(m => ({
             id: m.id,
@@ -91,8 +97,10 @@ export async function rankMemories(params: {
     intent: QueryIntent;
     dense: Promise<DenseHit[] | null>;
     sessionId: string;
+    /** 仅评测使用：只检索在此时间戳之前创建的片段（dense 也需用同一个值发起） */
+    createdBefore?: number;
 }): Promise<IndexedMemory[]> {
-    const { rawInput, intent, dense, sessionId } = params;
+    const { rawInput, intent, dense, sessionId, createdBefore } = params;
     const { depth, rrfK, bm25Weight, topK } = HYBRID_RETRIEVAL_CONFIG;
 
     const [denseHits, memoriesResult] = await Promise.all([
@@ -102,7 +110,7 @@ export async function rankMemories(params: {
             return null;
         }),
     ]);
-    const memories = memoriesResult ?? [];
+    const memories = (memoriesResult ?? []).filter(m => createdBefore === undefined || m.created_at <= createdBefore);
 
     const queryTokens = [...tokenize(rawInput), ...tokenize(enhancedQuery(intent))];
     const bm25Ids = bm25Rank(memories, queryTokens, depth);

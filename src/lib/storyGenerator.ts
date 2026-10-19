@@ -25,6 +25,32 @@ const fallbackIntent = (userInput: string): QueryIntent => ({
 });
 
 /**
+ * 组装写作 prompt 的输入（线上生成与评测脚本共用，保证完全一致）
+ * world_bible 只在 World Logic 中给出一次，Current State 里去掉，避免同一份设定传两遍
+ */
+export function writerPromptInputs(params: {
+    state: StoryState;
+    memories: { dense_summary: string }[];
+    unprocessedArchive: ChatTurn[];
+    chatHistory: ChatTurn[];
+    input: string;
+}) {
+    const { world_bible, ...stateWithoutWorldBible } = params.state;
+    return {
+        worldBible: JSON.stringify(world_bible),
+        currentState: JSON.stringify(stateWithoutWorldBible),
+        retrievedContext: params.memories.length > 0
+            ? params.memories.map((m, i) => `[Memory Fragment ${i + 1}]: ${m.dense_summary}`).join("\n")
+            : "No relevant long-term memories.",
+        unprocessedArchive: params.unprocessedArchive.length > 0
+            ? params.unprocessedArchive.map(t => `[Turn ${t.turn_id}] ${t.role.toUpperCase()}: ${t.text}`).join("\n")
+            : "No unprocessed archive memories.",
+        chatHistory: params.chatHistory.map(t => t.role === "user" ? new HumanMessage(t.text) : new AIMessage(t.text)),
+        input: params.input,
+    };
+}
+
+/**
  * 推进故事的一回合 (Orchestrator)
  * 接收玩家输入，进行意图翻译、长短记忆检索，并调用核心大模型写出下一段剧情。
  * 生成结束后由调用方调用 finalizeStoryTurn 把本回合写回记忆与存档。
@@ -78,27 +104,9 @@ export async function* generateNextStoryTurnStream(
     const T2 = Date.now();
     console.log(`[⏱️ T2] [Async] Hybrid retrieval complete (after intent parsing): ${T2 - T1} ms`);
 
-    // Assemble RAG context (Sync)
-    let retrievedContext = "No relevant long-term memories.";
-    if (results.length > 0) {
-        retrievedContext = results.map((r, i) => `[Memory Fragment ${i + 1}]: ${r.dense_summary}`).join("\n");
-        console.log(`[StoryGenerator] Successfully assembled ${results.length} long-term memories for the model.`);
-    } else {
-        console.log(`[StoryGenerator] No long-term memories found or needed, proceeding with current state only.`);
-    }
+    console.log(`[StoryGenerator] Assembled ${results.length} long-term memories for the model.`);
 
-    // 4. Format unprocessed archive (unprocessedArchive) (Sync)
-    const unprocessedArchiveStr = memoryManager.unprocessedArchive.length > 0
-        ? memoryManager.unprocessedArchive.map(t => `[Turn ${t.turn_id}] ${t.role.toUpperCase()}: ${t.text}`).join("\n")
-        : "No unprocessed archive memories.";
-
-    // 5. 将系统内的纯文本 ChatTurn 数组转换为 LangChain 标准 Message 数组 (同步)
-    const langchainHistory = memoryManager.chatHistory.map(turn => {
-        if (turn.role === "user") return new HumanMessage(turn.text);
-        return new AIMessage(turn.text);
-    });
-
-    // 6. 组装并调用核心剧情模型 (WorkerLLM) (同步)
+    // 5. 组装并调用核心剧情模型 (同步)
     const storyLLM = getStoryLLM();
     const chain = storyWorkerPrompt.pipe(storyLLM).pipe(new StringOutputParser());
 
@@ -108,14 +116,13 @@ export async function* generateNextStoryTurnStream(
 
     console.log(`[StoryGenerator] Calling main model to continue the story... (streaming)`);
     // 创建流对象 (异步)
-    const stream = await chain.stream({
-        worldBible: JSON.stringify(currentState.world_bible),
-        currentState: JSON.stringify(currentState),
-        unprocessedArchive: unprocessedArchiveStr,
-        retrievedContext: retrievedContext,
-        chatHistory: langchainHistory,
-        input: userInput
-    });
+    const stream = await chain.stream(writerPromptInputs({
+        state: currentState,
+        memories: results,
+        unprocessedArchive: memoryManager.unprocessedArchive,
+        chatHistory: memoryManager.chatHistory,
+        input: userInput,
+    }));
 
     // ⏱️ [计时节点 T4]
     const T4 = Date.now();

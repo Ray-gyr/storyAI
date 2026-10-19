@@ -15,12 +15,16 @@ export interface StorySpec {
     protagonist: string;
     setting: string;
     chapters: Chapter[];
-    /** 每章至少主动触发一次其中之一，制造可按时间区分的重复事件 */
+    /** 反复发生的事件类型；每章按顺序由脚本触发其中一类，制造可按时间区分的重复事件 */
     recurringEvents: string[];
+    /** 与 recurringEvents 一一对应：触发该事件时由脚本写入的玩家行动 */
+    eventTriggers: string[];
 }
 
 export const ROUNDS_PER_CHAPTER = 25;
 export const SNAPSHOT_ROUNDS = [100, 200, 300];
+/** 每章的第几回合由脚本触发该章的反复事件 */
+export const RECURRING_EVENT_ROUND_IN_CHAPTER = 12;
 
 export const STORIES: Record<"dev" | "test", StorySpec> = {
     dev: {
@@ -52,6 +56,11 @@ Grounded, tense, no magic; physics and air supply matter.`,
             "a firefight or standoff with Ostrander security",
             "a tense bargain or trade with someone who wants something in return",
         ],
+        eventTriggers: [
+            "I cut into a sealed bulkhead with my plasma cutter, even though the pressure readout behind it is in the red.",
+            "I confront the Ostrander security team nearby and refuse to hand over Odile's data slate.",
+            "I find someone nearby who can get me what I need, and offer them a trade.",
+        ],
     },
     test: {
         name: "test",
@@ -81,6 +90,11 @@ Low magic, dangerous terrain; water and heat matter.`,
             "an ambush or skirmish with Sir Bastian Crowe's mercenaries",
             "a water shortage or heat-sickness crisis",
             "a bargain or trade with someone who wants something in return",
+        ],
+        eventTriggers: [
+            "I lead the caravan through the narrow pass ahead, even though Sir Bastian Crowe's mercenaries could be waiting there.",
+            "I push the caravan on through the hottest hours to make up time, even though our water is running low.",
+            "I find someone nearby who can get us what we need, and offer them a trade.",
         ],
     },
 };

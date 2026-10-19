@@ -1,0 +1,1485 @@
+{
+  "summary": {
+    "mode": "pacing",
+    "all": {
+      "n": 88,
+      "before": {
+        "correct": 73,
+        "contradicts": 14,
+        "absent": 1
+      },
+      "after": {
+        "correct": 75,
+        "contradicts": 13,
+        "absent": 0
+      }
+    },
+    "gold_retrieved": {
+      "n": 85,
+      "before": {
+        "correct": 72,
+        "contradicts": 12,
+        "absent": 1
+      },
+      "after": {
+        "correct": 74,
+        "contradicts": 11,
+        "absent": 0
+      }
+    },
+    "paired": {
+      "improved": 4,
+      "worsened": 2
+    }
+  },
+  "rows": [
+    {
+      "qid": "questions:0-verbatim",
+      "type": "verbatim",
+      "question": "Where is Ilya Renn's corpse discovered?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that Ilya Renn's corpse was discovered in Saltmarket, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya Renn’s corpse was discovered in the Saltmarket."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Ilya Renn's corpse was discovered in Saltmarket, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya Renn’s corpse was discovered in the Saltmarket."
+      }
+    },
+    {
+      "qid": "questions:0-paraphrase",
+      "type": "paraphrase",
+      "question": "In which location is the body of Ilya Renn found?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that Ilya Renn's body was found in Saltmarket, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya Renn’s body was found in the Saltmarket."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Ilya Renn's body was found in Saltmarket, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya Renn’s body was found in the Saltmarket."
+      }
+    },
+    {
+      "qid": "questions:1-verbatim",
+      "type": "verbatim",
+      "question": "What does the shorter man hold during the confrontation?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly identifies the weapon held by the shorter man, stating he holds a knife instead of Ilya's black wax seal.",
+        "verdict": "contradicts",
+        "response": "A Vael man holds the knife by its blade, point aimed at your throat. The scene hasn’t established that he’s the shorter man."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that the shorter man is clutching his injured knee instead of holding Ilya's black wax seal, which contradicts the correct fact.",
+        "verdict": "contradicts",
+        "response": "The shorter Vael is clutching his injured knee. Another Vael man holds the knife, its point aimed at your throat."
+      }
+    },
+    {
+      "qid": "questions:1-paraphrase",
+      "type": "paraphrase",
+      "question": "What item is the shorter man gripping in the struggle?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the shorter man is gripping a knife, while the correct fact is that he holds Ilya's black wax seal.",
+        "verdict": "contradicts",
+        "response": "The shorter Vael is gripping the knife by its blade, its point aimed at your throat."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that the shorter man is gripping a knife, while the correct fact is that he holds Ilya's black wax seal.",
+        "verdict": "contradicts",
+        "response": "The shorter Vael is gripping the knife, holding it by the blade with its point aimed at Mara’s throat."
+      }
+    },
+    {
+      "qid": "questions:2-verbatim",
+      "type": "verbatim",
+      "question": "What did I retrieve after throwing a knife at the shorter man?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that Mara Voss retrieved Ilya's black wax seal after throwing the knife, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You retrieved Ilya’s black wax seal from the floor. A crossbow bolt struck your forearm as you secured it."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Mara Voss retrieved Ilya's black wax seal after throwing the knife at the shorter man, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You retrieved Ilya’s black wax seal after throwing the knife at the shorter man. A crossbow bolt struck your forearm as you did."
+      }
+    },
+    {
+      "qid": "questions:2-paraphrase",
+      "type": "paraphrase",
+      "question": "What did I obtain following my action of throwing a blade at the shorter man?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that Mara Voss retrieved Ilya's black wax seal after throwing the knife, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You retrieved Ilya’s black wax seal. The knife injured the shorter man, and a crossbow bolt struck your forearm."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Mara Voss secured Ilya's black wax seal after throwing the knife, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You injured the shorter Vael with the thrown knife and secured Ilya’s black wax seal."
+      }
+    },
+    {
+      "qid": "questions:3-verbatim",
+      "type": "verbatim",
+      "question": "What did I feel when I reached for Sister Elka's lifeless hand?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact by stating that Mara Voss felt no pulse and mentions the blood on the altar.",
+        "verdict": "correct",
+        "response": "You felt no pulse in Sister Elka’s hand. Blood stained the altar beneath her."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss felt no pulse when reaching for Sister Elka's hand.",
+        "verdict": "correct",
+        "response": "You felt no pulse beneath your fingers."
+      }
+    },
+    {
+      "qid": "questions:3-paraphrase",
+      "type": "paraphrase",
+      "question": "What did I sense when I extended my hand towards Sister Elka's dead palm?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss feels no pulse when extending her hand towards Sister Elka's dead palm.",
+        "verdict": "correct",
+        "response": "You felt no pulse beneath Sister Elka’s palm. Her hand slipped away from yours."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact by stating that there was no pulse in Sister Elka's hand and that there was blood on the altar.",
+        "verdict": "correct",
+        "response": "Your fingers found no pulse in Sister Elka’s hand. There was blood on the altar."
+      }
+    },
+    {
+      "qid": "questions:4-verbatim",
+      "type": "verbatim",
+      "question": "What does Mara Voss realize about Ilya's black wax seal during the confrontation?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss realizes Ilya's black wax seal is in Lord Casimir Vael's hands, not on Elka's fingers.",
+        "verdict": "correct",
+        "response": "Mara realizes Ilya’s black wax seal is in Lord Casimir Vael’s hands, not on Sister Elka’s fingers."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss realizes Ilya's black wax seal is in Lord Casimir Vael's hands, not on Elka's fingers.",
+        "verdict": "correct",
+        "response": "Mara realizes Ilya’s black wax seal is in Lord Casimir Vael’s hands, not on Sister Elka’s fingers. It is no longer in Mara’s possession."
+      }
+    },
+    {
+      "qid": "questions:4-paraphrase",
+      "type": "paraphrase",
+      "question": "What does Mara Voss discover regarding Ilya's black wax seal while facing Lord Casimir Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Mara Voss discovers Ilya's black wax seal is in Lord Casimir Vael's hands, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Mara discovers the seal is in Lord Casimir Vael’s hands, not on Sister Elka’s fingers. It is no longer in her possession."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Ilya's black wax seal is not on Sister Elka's hand and mentions that it is in Vael's hands, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "Mara discovered that Ilya’s black wax seal was not on Sister Elka’s hand. A Vael soldier had taken it from Mara’s pocket, leaving it in Vael hands."
+      }
+    },
+    {
+      "qid": "questions:5-verbatim",
+      "type": "verbatim",
+      "question": "What happened to Jory when I shouted for him to escape?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Jory being struck by a crossbow bolt and falling motionless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Jory was struck in the ribs by a crossbow bolt and fell motionless at the chapel threshold."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Jory was struck by a crossbow bolt and fell motionless, confirming the event described in the correct fact.",
+        "verdict": "correct",
+        "response": "Jory was struck by a crossbow bolt and fell motionless at the chapel threshold. He did not escape; he died there."
+      }
+    },
+    {
+      "qid": "questions:5-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred to Jory when I called for him to flee?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Jory being struck by a crossbow bolt and falling motionless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Jory was struck in the ribs by a crossbow bolt from the shorter Vael. He fell motionless at the chapel threshold and died."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Jory was shot by Lord Casimir Vael's crossbow and fell motionless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "When you called for Jory to flee, the shorter Vael shot him with a crossbow. Jory fell motionless at the threshold."
+      }
+    },
+    {
+      "qid": "questions:6-verbatim",
+      "type": "verbatim",
+      "question": "Did I feel the taller Vael pin my arms to the altar while Elka was dragged toward the doorway?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response correctly states that the taller Vael pinned Mara's arms to the altar, but incorrectly attributes the action of dragging Elka to the shorter Vael instead of the taller Vael.",
+        "verdict": "contradicts",
+        "response": "Yes. The taller Vael pinned your arms to the altar while the shorter Vael dragged Sister Elka toward the doorway."
+      },
+      "after": {
+        "reasoning": "The response correctly states that the taller Vael pinned Mara's arms to the altar, but incorrectly attributes the action of dragging Elka to the shorter Vael instead of the taller Vael.",
+        "verdict": "contradicts",
+        "response": "Yes. The taller Vael pinned your arms to the altar while the shorter Vael dragged Sister Elka toward the doorway."
+      }
+    },
+    {
+      "qid": "questions:6-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I experience the taller Vael restraining my limbs to the altar as Elka was pulled toward the exit?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response correctly states that the taller Vael pinned Mara's arms to the altar, but it incorrectly attributes the action of dragging Elka to the shorter Vael instead of the taller Vael.",
+        "verdict": "contradicts",
+        "response": "Yes. The taller Vael pinned your arms to the altar while the shorter Vael dragged Sister Elka toward the doorway."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that the taller Vael pinned Mara's arms to the altar while Elka was dragged toward the doorway.",
+        "verdict": "correct",
+        "response": "Yes. You shouted for Jory while gripping Sister Elka, but he lay unresponsive at the threshold; Casimir aimed a crossbow at your ribs as the taller Vael pinned your arms to the altar and the shorter Vael dragged Elka toward the doorway. Before leaving with her, the shorter Vael tucked Ilya’s black wax seal into his belt, while you remained restrained and unable to stop them."
+      }
+    },
+    {
+      "qid": "questions:7-verbatim",
+      "type": "verbatim",
+      "question": "What happened when I collapsed onto the altar, blood pooling beneath me?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss collapsed onto the altar with blood pooling beneath her, and it includes additional context about Sister Elka being carried away.",
+        "verdict": "correct",
+        "response": "You collapsed onto the altar, blood pooling beneath you, as the shorter Vael carried Sister Elka away. You reached for her hand and found no pulse."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss collapsed onto the altar with blood pooling beneath her, while also including details about the situation.",
+        "verdict": "correct",
+        "response": "You collapsed onto the altar as the Vael men dragged Sister Elka away; Jory lay unmoving in the doorway. You struggled against Casimir’s grip and clawed at his knife arm, but he struck back."
+      }
+    },
+    {
+      "qid": "questions:7-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred when I fell onto the altar, with blood gathering under me?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact about Mara Voss collapsing onto the altar with blood pooling beneath her.",
+        "verdict": "correct",
+        "response": "You struggled against the taller Vael while the shorter one carried Sister Elka away. You collapsed onto the altar, blood pooling beneath you."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss collapsed onto the altar with blood pooling beneath her, consistent with the correct fact provided.",
+        "verdict": "correct",
+        "response": "You struggled against Casimir’s grip and shouted for help, but he held you while the shorter Vael carried Sister Elka away; then you collapsed onto the altar, blood pooling beneath you as Jory lay unmoving in the doorway. You reached toward Elka’s lifeless hand, but could not reach her."
+      }
+    },
+    {
+      "qid": "questions:8-verbatim",
+      "type": "verbatim",
+      "question": "What happened when I reached for the altar's edge in the Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact about Mara Voss being shot by a crossbow bolt from a shorter Vael after reaching for the altar's edge.",
+        "verdict": "correct",
+        "response": "You gripped the altar’s edge and pulled yourself up, struggling after the attack. Shorter Vael shot you with a crossbow bolt, leaving you severely injured."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact about Mara Voss being shot by a crossbow bolt from a shorter Vael after reaching for the altar's edge.",
+        "verdict": "correct",
+        "response": "You reached the altar’s edge and pulled yourself up, but Shorter Vael shot you with a crossbow bolt, badly wounding you. Casimir’s men left into the rain with Sister Elka."
+      }
+    },
+    {
+      "qid": "questions:8-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred as I grasped the altar's border in the Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss was shot by a crossbow bolt from a shorter Vael after grasping the altar's edge.",
+        "verdict": "correct",
+        "response": "You grasped the altar’s edge and struggled to pull yourself up. Shorter Vael shot you with a crossbow bolt, badly injuring you."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss was shot by a crossbow bolt from a shorter Vael after grasping the altar's edge.",
+        "verdict": "correct",
+        "response": "You grasped the altar’s edge and pulled yourself up, struggling to recover your strength. Shorter Vael shot you with a crossbow bolt, badly injuring you."
+      }
+    },
+    {
+      "qid": "questions:9-verbatim",
+      "type": "verbatim",
+      "question": "Did I try to kick Lord Casimir Vael and fail, leading to my injury?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss attempted to kick Lord Casimir Vael, failed, and was subsequently injured as a result.",
+        "verdict": "correct",
+        "response": "Yes. You tried to kick Lord Casimir Vael, but the kick failed. He retaliated, severely injuring you and causing you to lose consciousness."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss attempted to kick Lord Casimir Vael, failed, and was severely injured as a result.",
+        "verdict": "correct",
+        "response": "Yes. You tried to kick Lord Casimir Vael, but the attempt failed; he retaliated and severely injured you, leaving you unconscious."
+      }
+    },
+    {
+      "qid": "questions:9-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I make an effort to strike Lord Casimir Vael and not succeed, causing my harm?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss attempted to kick Lord Casimir Vael but failed, leading to severe injury and loss of consciousness.",
+        "verdict": "correct",
+        "response": "Yes. You tried to kick Casimir and missed. He retaliated, severely injuring you, and you lost consciousness."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Mara Voss attempted to kick Lord Casimir Vael but failed, resulting in severe injury, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. Earlier, you tried to kick Lord Casimir Vael, but the strike failed; he retaliated, severely injuring you and leaving you unconscious. Your more recent lunge did connect: you struck him and disrupted his aim, though the bolt hit Sister Elka."
+      }
+    },
+    {
+      "qid": "questions:10-verbatim",
+      "type": "verbatim",
+      "question": "What did I find in my coat and swing at the shorter Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss found the cracked spyglass in her coat and swung it at the shorter Vael.",
+        "verdict": "correct",
+        "response": "You found the cracked spyglass in your coat and swung it at the shorter Vael. It broke."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss found the cracked spyglass in her coat and swung it at the shorter Vael.",
+        "verdict": "correct",
+        "response": "You found the cracked spyglass in your coat and swung it at the shorter Vael, making him stagger."
+      }
+    },
+    {
+      "qid": "questions:10-paraphrase",
+      "type": "paraphrase",
+      "question": "What did I discover in my jacket and strike at the shorter Vael?",
+      "short_circuited": false,
+      "gold_retrieved": false,
+      "before": {
+        "reasoning": "The response incorrectly states that nothing was found in the jacket and describes a different action involving a glass shard instead of the cracked spyglass.",
+        "verdict": "contradicts",
+        "response": "I don’t recall finding anything in your jacket. You drove a broken glass shard into the shorter Vael’s forearm."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that a broken bottle shard was found in the jacket instead of the cracked spyglass, which is the correct fact.",
+        "verdict": "contradicts",
+        "response": "You found a broken bottle shard in your jacket and drove it into the shorter Vael’s forearm. He missed his crossbow shot."
+      }
+    },
+    {
+      "qid": "questions:11-verbatim",
+      "type": "verbatim",
+      "question": "Did a crossbow bolt from the shorter Vael strike me, causing injury?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that a crossbow bolt from the shorter Vael struck Mara Voss, causing injury.",
+        "verdict": "correct",
+        "response": "Yes. A bolt from the shorter Vael struck you and left you severely injured."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that a crossbow bolt from the shorter Vael struck Mara Voss, causing injury.",
+        "verdict": "correct",
+        "response": "Yes. Shorter Vael struck you with a crossbow bolt, leaving you injured."
+      }
+    },
+    {
+      "qid": "questions:11-paraphrase",
+      "type": "paraphrase",
+      "question": "Did a bolt from the shorter Vael hit me, resulting in harm?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that a bolt from the shorter Vael struck Mara Voss, causing injury, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. A bolt from the shorter Vael struck you and caused a severe wound; you collapsed onto the altar."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that a crossbow bolt from the shorter Vael struck Mara Voss, causing injury, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. The shorter Vael shot you with a crossbow bolt, leaving you injured."
+      }
+    },
+    {
+      "qid": "questions:12-verbatim",
+      "type": "verbatim",
+      "question": "What happened when Ilya Renn attempted to escape from Lord Casimir Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Ilya Renn was caught by Lord Casimir Vael while attempting to escape.",
+        "verdict": "correct",
+        "response": "Ilya grabbed the cracked spyglass to distract Casimir and tried to escape, but the taller Vael caught him. The shorter Vael prepared to shoot him with the crossbow."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Ilya Renn was caught by the taller Lord Casimir Vael while attempting to escape.",
+        "verdict": "correct",
+        "response": "Ilya grabbed the cracked spyglass to distract Casimir and tried to escape, but a taller Vael caught him. The shorter Vael prepared to shoot him with a crossbow."
+      }
+    },
+    {
+      "qid": "questions:12-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred when Ilya Renn tried to flee from the taller Casimir Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Ilya Renn was caught by the taller Lord Casimir Vael while trying to escape, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya grabbed the cracked spyglass to distract Casimir and tried to escape, but the taller Vael caught him. The shorter Vael prepared to shoot him with the crossbow."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Ilya Renn was caught by Lord Casimir Vael while trying to escape, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Ilya grabbed the cracked spyglass to distract Lord Casimir Vael, then tried to escape. The taller Vael caught him before he could get away."
+      }
+    },
+    {
+      "qid": "questions:13-verbatim",
+      "type": "verbatim",
+      "question": "What did I do to Shorter Vael's forearm during the fight?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss drove a glass shard into Shorter Vael's forearm during the fight.",
+        "verdict": "correct",
+        "response": "You drove a glass shard into Shorter Vael’s forearm as he fired his crossbow. He missed the shot."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact by stating that Mara Voss drove a glass shard into Shorter Vael's forearm during the fight.",
+        "verdict": "correct",
+        "response": "You drove a broken glass shard into Shorter Vael’s forearm as he fired his crossbow, making him miss. Then you threw the cracked spyglass at his weapon to distract him."
+      }
+    },
+    {
+      "qid": "questions:13-paraphrase",
+      "type": "paraphrase",
+      "question": "What action did I take against Shorter Vael's arm in the confrontation?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss lunged and drove the glass shard into Shorter Vael's forearm.",
+        "verdict": "correct",
+        "response": "You lunged and drove a glass shard into Shorter Vael’s forearm, making him miss his crossbow shot."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss lunged and drove the glass shard into Shorter Vael's forearm.",
+        "verdict": "correct",
+        "response": "You drove a broken glass shard into Shorter Vael’s forearm, making him miss his crossbow shot."
+      }
+    },
+    {
+      "qid": "questions:14-verbatim",
+      "type": "verbatim",
+      "question": "What did I do after I kicked the blade away and snatched the cracked spyglass shard from Taller Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the events that occurred after Mara Voss kicked the blade away and snatched the shard, including raising the shard against Shorter Vael, shouting for help, and escaping after injuring Shorter Vael.",
+        "verdict": "correct",
+        "response": "You raised the shard against Shorter Vael as he charged, then shouted for help. When two more Vael men entered and one grabbed your ankle, you kicked free and fought your way toward the side corridor, injuring Shorter Vael with the shard before escaping into the yard."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the actions taken after kicking the blade away and snatching the shard, including raising the shard against Shorter Vael and attempting to escape, but it omits the detail about injuring her palm.",
+        "verdict": "correct",
+        "response": "You raised the shard against Shorter Vael and shouted for help. When two more Vael men entered and one grabbed your ankle, you kicked free and tried to escape through the side corridor."
+      }
+    },
+    {
+      "qid": "questions:14-paraphrase",
+      "type": "paraphrase",
+      "question": "What action did I take after I booted the weapon aside and seized the broken lens fragment from Taller Vael?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the action of taking the shard and injuring the palm, as well as raising the knife defensively and attempting to escape, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "After taking the shard and cutting your palm, you raised the knife defensively as Shorter Vael charged and shouted for help. Then you fought off the men and tried to escape through the side corridor."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the action of kicking the blade away and seizing the shard, but it incorrectly states that the palm was cut instead of injured.",
+        "verdict": "contradicts",
+        "response": "You kicked the blade away and seized the cracked spyglass shard from Taller Vael, cutting your palm. When Shorter Vael charged, you raised the knife defensively and shouted for help."
+      }
+    },
+    {
+      "qid": "questions:15-verbatim",
+      "type": "verbatim",
+      "question": "Did I throw the shard at Lord Casimir Vael and injure his wrist?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately confirms that Mara Voss threw the shard at Lord Casimir Vael and injured his wrist, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. You threw the shard at Casimir, injuring his wrist."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss threw the shard at Lord Casimir Vael, injuring his wrist, and includes the subsequent retaliation, which is consistent with the known past fact.",
+        "verdict": "correct",
+        "response": "Yes. You threw the shard at Lord Casimir Vael and injured his wrist; he retaliated by shooting you with a crossbow."
+      }
+    },
+    {
+      "qid": "questions:15-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I hurl the fragment at Lord Casimir Vael, causing harm to his wrist?",
+      "short_circuited": false,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss threw the shard at Lord Casimir Vael, injuring his wrist.",
+        "verdict": "correct",
+        "response": "Yes. You threw the shard at Lord Casimir Vael and injured his wrist."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss threw the shard at Lord Casimir Vael, injuring his wrist.",
+        "verdict": "correct",
+        "response": "Yes. You threw the shard at Lord Casimir Vael and injured his wrist."
+      }
+    },
+    {
+      "qid": "questions:16-verbatim",
+      "type": "verbatim",
+      "question": "Did I try to escape through the collapsed side door in Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Mara Voss attempted to escape through the collapsed side door, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. You tried to escape through the collapsed side door, but Casimir threatened you with the crossbow and his men caught you."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Mara Voss attempted to escape through the collapsed side door, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. You tried to escape through the collapsed side door, but Casimir threatened you with the crossbow and his men stopped you."
+      }
+    },
+    {
+      "qid": "questions:16-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I make an effort to flee through the fallen entrance in the Drowned Chapel?",
+      "short_circuited": false,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response correctly states that Mara Voss attempted to escape through the collapsed side door, but it adds details about being pursued and caught, which aligns with the known fact.",
+        "verdict": "correct",
+        "response": "Yes. You escaped through the collapsed side door into the yard, but Vael men pursued and dragged you back into the chapel. Later, while restrained, you rolled toward the doorway; they caught you and hauled you back toward the altar."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Mara Voss attempted to escape through the collapsed side door in the Drowned Chapel, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. You tried to escape through the Drowned Chapel’s collapsed side door, but Vael’s men stopped you and dragged you back."
+      }
+    },
+    {
+      "qid": "questions:17-verbatim",
+      "type": "verbatim",
+      "question": "Did Shorter Vael shoot me with a crossbow bolt in Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that Shorter Vael shot the player, while the correct fact indicates that he shot Mara Voss instead.",
+        "verdict": "contradicts",
+        "response": "Yes. Shorter Vael shot you with a crossbow bolt in the Drowned Chapel, injuring you."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that Shorter Vael shot the player, while the correct fact indicates that he shot Mara Voss instead.",
+        "verdict": "contradicts",
+        "response": "Yes. Shorter Vael shot you with a crossbow bolt in the Drowned Chapel, injuring you."
+      }
+    },
+    {
+      "qid": "questions:17-paraphrase",
+      "type": "paraphrase",
+      "question": "Did Shorter Vael fire a crossbow projectile at me in the Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the crossbow bolt struck the player, while the correct fact indicates that it was aimed at Mara Voss and narrowly missed her.",
+        "verdict": "contradicts",
+        "response": "Yes. Shorter Vael fired a crossbow bolt that struck you in the Drowned Chapel."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that the crossbow bolt struck the player, while the correct fact indicates that the bolt narrowly missed Mara Voss.",
+        "verdict": "contradicts",
+        "response": "Yes. Shorter Vael fired a crossbow bolt at you in the Drowned Chapel, and it struck you, causing injury."
+      }
+    },
+    {
+      "qid": "questions:18-verbatim",
+      "type": "verbatim",
+      "question": "What happened to Shorter Vael after I kicked him in Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Shorter Vael collapsing after being kicked, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Shorter Vael collapsed backward on the wet plank, his forehead striking the floor. He clutched his ruined knee and breathed raggedly."
+      },
+      "after": {
+        "reasoning": "The response accurately describes Shorter Vael collapsing after being kicked, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "After you kicked him, Shorter Vael collapsed backward onto the wet plank, his knee ruined and his forehead striking the boards. He lay breathing raggedly, one hand clutching his knee."
+      }
+    },
+    {
+      "qid": "questions:18-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred to Shorter Vael following my strike in the Drowned Chapel?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes Shorter Vael collapsing after being kicked, which aligns with the correct fact that he collapses after being kicked.",
+        "verdict": "correct",
+        "response": "Your kick struck Shorter Vael’s knee and ruined it. He collapsed backward, hit his forehead on the wet plank, and lay clutching the knee, breathing raggedly."
+      },
+      "after": {
+        "reasoning": "The response accurately describes Shorter Vael collapsing after being kicked, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "Your kick ruined Shorter Vael’s knee and sent him collapsing backward onto the wet plank. His forehead struck the floor, and he clutched his knee, breathing raggedly."
+      }
+    },
+    {
+      "qid": "questions:19-verbatim",
+      "type": "verbatim",
+      "question": "What did I use to fend off a Vael after injuring my hand?",
+      "short_circuited": true,
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that Mara Voss used a shard of the cracked spyglass to fend off a Vael and mentions the injury to her hand, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "You used a shard of the cracked spyglass to fend off a Vael, cutting your hand as you grabbed it. Casimir later crushed the shard under his heel."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Mara Voss used a shard of the cracked spyglass to fend off a Vael after injuring her hand, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You used a shard of the cracked spyglass to fend off a Vael after injuring your hand."
+      }
+    },
+    {
+      "qid": "questions:19-paraphrase",
+      "type": "paraphrase",
+      "question": "What item did I employ to defend myself against a Vael after hurting my hand?",
+      "short_circuited": true,
+      "gold_retrieved": false,
+      "before": {
+        "reasoning": "The response incorrectly states that a broken bottle shard was used instead of the correct item, which is the cracked spyglass shard.",
+        "verdict": "contradicts",
+        "response": "You used a broken bottle shard, driving it into Shorter Vael’s forearm."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that a broken bottle shard was used instead of the cracked spyglass shard, which is the correct fact.",
+        "verdict": "contradicts",
+        "response": "You used a broken bottle shard, driving it into Shorter Vael’s forearm to spoil his shot."
+      }
+    },
+    {
+      "qid": "questions_holdout:0-verbatim",
+      "type": "verbatim",
+      "question": "What did Ilya Renn mention after he returned injured from arguing with two men in Vael gray at Drowned Chapel?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Ilya Renn mentioned someone wanted to make him disappear after returning injured from the argument.",
+        "verdict": "correct",
+        "response": "He said someone wanted to make him disappear."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Ilya Renn mentioned someone wanted to make him disappear after returning injured from the argument.",
+        "verdict": "correct",
+        "response": "Ilya said someone wanted to make him disappear."
+      }
+    },
+    {
+      "qid": "questions_holdout:0-paraphrase",
+      "type": "paraphrase",
+      "question": "What did Ilya Renn say after he came back hurt from his dispute with two individuals dressed in Vael gray at the Drowned Chapel?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact about Ilya Renn's return and what he said after the dispute.",
+        "verdict": "correct",
+        "response": "After arguing with the two men in Vael gray, Ilya returned injured and said someone wanted to make him disappear."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact by stating that Ilya mentioned someone wanted to make him disappear after returning injured.",
+        "verdict": "correct",
+        "response": "Sister Elka said that after returning injured, Ilya mentioned someone wanted to make him disappear."
+      }
+    },
+    {
+      "qid": "questions_holdout:1-verbatim",
+      "type": "verbatim",
+      "question": "Did I successfully grab Ilya's black wax seal despite the shorter man's resistance?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response correctly states that Mara Voss grabbed the seal despite the shorter man's resistance, but it introduces a new fact about a Vael gray soldier retrieving it, which is not mentioned in the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. You grabbed the seal despite the shorter man's resistance, but a Vael gray soldier later retrieved it from your pocket."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Mara Voss grabbed the seal despite the shorter man's resistance, but it also introduces new information about the seal being taken later, which is not part of the original fact provided.",
+        "verdict": "correct",
+        "response": "Yes. You grabbed the seal despite the shorter man's resistance, but a Vael soldier later took it from your pocket; it is no longer in your possession."
+      }
+    },
+    {
+      "qid": "questions_holdout:1-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I manage to seize Ilya's black wax emblem in spite of the shorter man's opposition?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the player seized the seal but then contradicts this by saying it was kicked away and is no longer in possession, which conflicts with the correct fact that Mara Voss successfully grabbed the seal.",
+        "verdict": "contradicts",
+        "response": "Yes. You seized Ilya’s black wax seal despite the shorter Vael’s resistance, but he kicked it away and claimed it. It is no longer in your possession."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Mara Voss grabbed Ilya's black wax seal despite the shorter man's resistance, but it contradicts the fact that she successfully secured the seal without it being taken from her at that moment.",
+        "verdict": "contradicts",
+        "response": "Yes. You grabbed Ilya’s black wax seal despite the shorter Vael’s resistance, but it was later taken from you, and you no longer have it."
+      }
+    },
+    {
+      "qid": "questions_holdout:2-verbatim",
+      "type": "verbatim",
+      "question": "What happens when I attempt to drag Sister Elka to safety?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response describes an attempt to reach for Sister Elka but does not mention the attack by Vael men or the consequences of that action, which is a key part of the correct fact.",
+        "verdict": "absent",
+        "response": "You reach for Elka’s robe and catch the wet cloth near her shoulder.\n\nA Vael man jerks your cuffed arm back. The chain snaps taut, wrenching your wrist. Elka slides a few inches across the boards, then stops.\n\nThe knife-holder steps over her and raises the blade toward your face. Casimir clutches his bleeding arm behind him. The other Vael men close in."
+      },
+      "after": {
+        "reasoning": "The response describes an attempt to drag Sister Elka to safety but does not mention the attack by Vael men, which is a crucial part of the correct fact.",
+        "verdict": "contradicts",
+        "response": "You twist toward Sister Elka and hook your cuffed hand into her robe. The chain pulls tight, but you drag her a short distance across the wet boards.\n\nA Vael man catches your shoulder and wrenches you back. The knife point presses beneath your jaw. Elka lies between you and the altar, her robe torn where the bolt struck. She does not answer.\n\nThe man keeps the blade steady. “Let go.”\n\nCasimir stoops for his dropped knife, his injured arm held against his chest. The other Vael men hold back, watching you. Your fingers remain clenched in Elka’s robe, and the knife presses harder against your skin."
+      }
+    },
+    {
+      "qid": "questions_holdout:2-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurs when I try to pull Sister Elka to safety but am confronted by Vael soldiers?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the events where Mara Voss attempts to drag Sister Elka to safety but is attacked by Vael men, leading to Elka's collapse and death, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "When you tried to drag Sister Elka to safety, the Vael men attacked you. Elka collapsed and died; as you grappled for the seal, you were stabbed, then found no pulse."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss attempted to drag Sister Elka to safety but was attacked by Vael men, leading to Elka's death.",
+        "verdict": "correct",
+        "response": "When you tried to drag Sister Elka to safety, the Vael men attacked you. She collapsed, and a crossbow bolt struck the altar, killing her."
+      }
+    },
+    {
+      "qid": "questions_holdout:3-verbatim",
+      "type": "verbatim",
+      "question": "Did I grab Jory's crossbow and aim at the Vael?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara grabs Jory's crossbow and aims it at the Vael, confirming the player's question.",
+        "verdict": "correct",
+        "response": "Yes. You pushed Jory away, grabbed his crossbow, and aimed it at the Vael men. A bolt flew past you, and a Vael boot crushed the crossbow."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara grabs Jory's crossbow and aims it at the Vael, confirming the player's question.",
+        "verdict": "correct",
+        "response": "Yes. You pushed Jory away, grabbed his crossbow, and aimed it at the Vael men. A bolt flew past, and a Vael boot crushed the crossbow."
+      }
+    },
+    {
+      "qid": "questions_holdout:3-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I take Jory's weapon and point it at the Vael?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara grabbed Jory's crossbow and aimed it at the Vael.",
+        "verdict": "correct",
+        "response": "Yes. You grabbed Jory’s crossbow and aimed it at the Vael men. A bolt flew past you, and a Vael boot crushed the crossbow."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara grabbed Jory's crossbow and aimed it at the Vael, including the detail about the crossbow being crushed.",
+        "verdict": "correct",
+        "response": "Yes. You grabbed Jory’s crossbow and aimed it at the Vael men, but a bolt flew past you and a Vael crushed the weapon under his boot."
+      }
+    },
+    {
+      "qid": "questions_holdout:4-verbatim",
+      "type": "verbatim",
+      "question": "Did I get shot in the thigh by a shorter Lord Casimir Vael?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response incorrectly states that the player was shot, while the correct fact indicates that it was Mara Voss who was shot in the thigh.",
+        "verdict": "contradicts",
+        "response": "Yes. The shorter Vael shot you in the thigh with a crossbow. The wound is still there."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that the player was shot, while the correct fact indicates that it was Mara Voss who was shot in the thigh.",
+        "verdict": "contradicts",
+        "response": "Yes. The shorter Vael shot you in the thigh with a crossbow while you were trying to break free."
+      }
+    },
+    {
+      "qid": "questions_holdout:4-paraphrase",
+      "type": "paraphrase",
+      "question": "Was I hit in the leg by a smaller Lord Casimir Vael?",
+      "gold_retrieved": false,
+      "before": {
+        "reasoning": "The response correctly states that the shorter Lord Casimir Vael shot Mara Voss in the thigh, which aligns with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. The shorter Vael shot you in the thigh with a crossbow as you tried to escape."
+      },
+      "after": {
+        "reasoning": "The response accurately states that the shorter Lord Casimir Vael shot Mara Voss in the thigh, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. The shorter Vael shot you in the thigh with a crossbow as you tried to escape."
+      }
+    },
+    {
+      "qid": "questions_holdout:5-verbatim",
+      "type": "verbatim",
+      "question": "Did I get shot in the thigh by a shorter Vael with a crossbow?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response correctly states that the shorter Vael shot Mara Voss in the thigh with a crossbow, aligning with the known fact.",
+        "verdict": "correct",
+        "response": "Yes. The shorter Vael shot you in the thigh with a crossbow as you tried to reach Sister Elka."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss was shot in the thigh by a shorter Vael with a crossbow, confirming the player's question.",
+        "verdict": "correct",
+        "response": "Yes. In the Drowned Chapel, after you kicked Casimir away and tried to reach Sister Elka, the shorter Vael fired his crossbow and hit your thigh. You dropped Elka’s hand, which slipped onto the altar, and Casimir lifted Ilya’s black wax seal. Earlier in the struggle, crossbow bolts had also struck your shoulder and chest. The thigh wound came as you tried to get free; you were left bleeding and badly hurt, still inside the chapel with Vael men closing around you."
+      }
+    },
+    {
+      "qid": "questions_holdout:5-paraphrase",
+      "type": "paraphrase",
+      "question": "Was I hit in the leg by a shorter Vael using a crossbow?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that the shorter Vael shot Mara Voss in the thigh with a crossbow, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. The shorter Vael shot you in the thigh with a crossbow while you were trying to escape."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Mara Voss was shot in the thigh by a shorter Vael with a crossbow, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "Yes. A shorter Vael shot you in the thigh with a crossbow as you tried to break free from Casimir, wounding you."
+      }
+    },
+    {
+      "qid": "questions_holdout:6-verbatim",
+      "type": "verbatim",
+      "question": "What happened when I lunged for the seal during the confrontation?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Mara Voss lunged for the seal and injured herself, but it incorrectly states that she later retrieved it, which contradicts the known fact that the seal was kicked away and claimed by the shorter Vael.",
+        "verdict": "contradicts",
+        "response": "You lunged for the seal and hurt yourself; the shorter Vael kicked it away and claimed it. Later, you retrieved it, but a bolt struck your forearm, and a Vael soldier took the seal from your pocket."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Mara Voss lunged for the seal and injured herself, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You lunged for Ilya’s black wax seal and injured yourself; a bolt struck your side as you pulled Sister Elka’s hand, and the shorter Vael kicked the seal away and claimed it. You later grabbed it again, but a Vael soldier retrieved it from your pocket."
+      }
+    },
+    {
+      "qid": "questions_holdout:6-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred when I reached for the wax emblem amidst the conflict?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the player lunged for the seal and injured themselves, which aligns with the correct fact, but it incorrectly claims that the player managed to seize it, which contradicts the fact that the shorter Vael kicked it away and claimed it.",
+        "verdict": "contradicts",
+        "response": "You lunged for Ilya’s black wax seal and injured yourself, but managed to seize it despite the shorter Vael’s resistance. After you tucked it into your pocket, a Vael soldier pulled it back out; it is no longer in your possession."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Mara Voss lunged for the seal and injured herself, aligning with the known fact.",
+        "verdict": "correct",
+        "response": "You lunged for Ilya’s black wax seal and injured yourself. The shorter Vael kicked it away and claimed it; later, you managed to retrieve it, but a Vael soldier took it from your pocket."
+      }
+    },
+    {
+      "qid": "questions_holdout:7-verbatim",
+      "type": "verbatim",
+      "question": "What happened when I was struck by the shorter Vael's crossbow?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately describes the event where Mara Voss is struck by the shorter Vael's crossbow and collapses onto the altar, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "The shorter Vael’s bolt struck you as you charged toward him and Casimir. You collapsed onto the altar while the Vael men dragged Sister Elka into the rain."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact by stating that Mara Voss was struck by the shorter Vael's crossbow and collapsed onto the altar, while also mentioning the Vael men dragging Sister Elka away.",
+        "verdict": "correct",
+        "response": "The shorter Vael’s bolt struck you as you charged to rescue Sister Elka, and you collapsed onto the altar. The Vael men dragged her into the rain while you lay there."
+      }
+    },
+    {
+      "qid": "questions_holdout:7-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred when I was hit by the shorter Vael's projectile weapon?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response correctly states that the shorter Vael fired his crossbow and that the character collapsed onto the altar, but it inaccurately specifies that the bolt struck the wrist instead of indicating that Mara Voss was struck by the crossbow more generally.",
+        "verdict": "contradicts",
+        "response": "The shorter Vael fired his crossbow, and the bolt struck your wrist. You collapsed onto the altar, badly injured."
+      },
+      "after": {
+        "reasoning": "The response incorrectly states that the projectile struck the player's wrist instead of indicating that Mara Voss collapsed onto the altar after being struck by the crossbow.",
+        "verdict": "contradicts",
+        "response": "The shorter Vael fired a crossbow bolt that struck your wrist and injured you. The bolt remained lodged there, and the cuff chain pulled against the wound as you struggled."
+      }
+    },
+    {
+      "qid": "questions_holdout:8-verbatim",
+      "type": "verbatim",
+      "question": "Did I find the knife in the sheath when I reached for it?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that the sheath was empty when Mara Voss reached for the knife.",
+        "verdict": "correct",
+        "response": "No. Your hand found the sheath empty; the knife had already been taken by a Vael man."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that the sheath was empty when Mara Voss reached for the knife.",
+        "verdict": "correct",
+        "response": "No. The sheath was empty when you reached for it; a Vael man had already taken the knife."
+      }
+    },
+    {
+      "qid": "questions_holdout:8-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I discover the blade in the holder when I tried to grab it?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response states that the knife was found loose on the wet boards, which contradicts the fact that the sheath was empty when Mara Voss attempted to reach for a knife.",
+        "verdict": "contradicts",
+        "response": "No. You found the knife loose on the wet boards. It spun under the altar, and a Vael man snatched it before you could reach it."
+      },
+      "after": {
+        "reasoning": "The response states that the knife was not in the holder and was instead on the wet boards, which is consistent with the correct fact that the sheath was empty.",
+        "verdict": "correct",
+        "response": "No. The knife was on the wet boards; it slid under the altar, then a Vael man grabbed it."
+      }
+    },
+    {
+      "qid": "questions_holdout:9-verbatim",
+      "type": "verbatim",
+      "question": "What happened to me when I was shot by a crossbow bolt?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss was shot by a crossbow bolt, causing injury and blood loss, and adds details about the specific locations of the wounds and the actions of the Vael men.",
+        "verdict": "correct",
+        "response": "Crossbow bolts struck your shoulder, chest, and thigh, leaving you badly wounded and bleeding. The Vael men dragged you back into the chapel."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss was shot by a crossbow bolt, causing injury and blood loss, and expands on the details of the injuries sustained.",
+        "verdict": "correct",
+        "response": "Crossbow bolts struck your shoulder, chest, and thigh, leaving you badly wounded and bleeding heavily. The Vael men dragged you back into the chapel."
+      }
+    },
+    {
+      "qid": "questions_holdout:9-paraphrase",
+      "type": "paraphrase",
+      "question": "What occurred to me when I was struck by a crossbow projectile?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss was shot by a crossbow bolt, causing injury and blood loss, and adds details about the locations of the injuries and the subsequent actions.",
+        "verdict": "correct",
+        "response": "Vael men struck you with crossbow bolts in the shoulder, chest, and thigh. You collapsed bleeding, and they dragged you back into the chapel."
+      },
+      "after": {
+        "reasoning": "The response accurately describes Mara Voss being struck by multiple crossbow bolts and the resulting injury and blood loss, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "A Vael bolt struck your shoulder, then another hit your chest as you lunged for the crossbow; later, you were shot in the thigh. Bleeding heavily, you crashed outside the chapel and were dragged back by Casimir’s men."
+      }
+    },
+    {
+      "qid": "questions_holdout:10-verbatim",
+      "type": "verbatim",
+      "question": "What did I find when I retrieved the brass lockpick set from my pocket?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that the brass lockpick set was damaged and describes its condition as jagged and useless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "The brass lockpick set had split under pressure. Its pieces were jagged and useless."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that the brass lockpick set was damaged and useless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "The brass lockpick set was broken and useless, split into jagged pieces under the pressure of the struggle."
+      }
+    },
+    {
+      "qid": "questions_holdout:10-paraphrase",
+      "type": "paraphrase",
+      "question": "What did I discover when I took the brass lockpick set from my pouch?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that the brass lockpick set was damaged and therefore useless, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "The brass lockpick set had split under pressure. It was broken, its jagged pieces useless for picking a lock."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that the brass lockpick set was damaged and unusable, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "The brass lockpick set had split into jagged pieces under pressure. It was broken and unusable."
+      }
+    },
+    {
+      "qid": "questions_holdout:11-verbatim",
+      "type": "verbatim",
+      "question": "What did I find in a coat pocket that was broken and useless?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact about finding the brass lockpick set in the coat pocket and its condition of being broken and useless.",
+        "verdict": "correct",
+        "response": "You found your brass lockpick set in your coat pocket. It had split into jagged pieces and was useless."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact about finding the brass lockpick set in the coat pocket and its condition being broken and useless.",
+        "verdict": "correct",
+        "response": "You found the brass lockpick set in your coat pocket. It was broken and useless."
+      }
+    },
+    {
+      "qid": "questions_holdout:11-paraphrase",
+      "type": "paraphrase",
+      "question": "What did I discover in a jacket compartment that was damaged and ineffective?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact about the brass lockpick set being found in the coat pocket and being broken and useless.",
+        "verdict": "correct",
+        "response": "You found your brass lockpick set in your coat pocket, split into jagged, useless pieces."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact about finding the brass lockpick set in a jacket pocket and its condition being broken and useless.",
+        "verdict": "correct",
+        "response": "You found the brass lockpick set in a jacket pocket. It was broken and useless."
+      }
+    },
+    {
+      "qid": "questions_holdout:12-verbatim",
+      "type": "verbatim",
+      "question": "Did I use the cracked spyglass as a weapon and get injured by a crossbow bolt from shorter Lord Casimir Vael?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss used the cracked spyglass as a weapon and was injured by a crossbow bolt from Lord Casimir Vael.",
+        "verdict": "correct",
+        "response": "Yes. You used the cracked spyglass as a weapon, and a crossbow bolt fired by the shorter Vael injured you."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss used the cracked spyglass as a weapon and was injured by a crossbow bolt from Lord Casimir Vael.",
+        "verdict": "correct",
+        "response": "Yes. You used the cracked spyglass against a Vael and were injured by a crossbow bolt fired by the shorter Vael."
+      }
+    },
+    {
+      "qid": "questions_holdout:12-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I employ the damaged spyglass as a tool and sustain injury from a crossbow projectile launched by shorter Lord Casimir Vael?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Mara Voss used the cracked spyglass and was injured by a crossbow bolt from Lord Casimir Vael.",
+        "verdict": "correct",
+        "response": "Yes. You used the cracked spyglass to disrupt the shorter Vael’s crossbow, and he later shot you with a bolt, injuring you."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects that Mara Voss used the cracked spyglass and was injured by a crossbow bolt from Lord Casimir Vael.",
+        "verdict": "correct",
+        "response": "Yes. You used the cracked spyglass to disrupt the shorter Vael’s crossbow, and a crossbow bolt fired by him struck and injured you."
+      }
+    },
+    {
+      "qid": "questions_holdout:13-verbatim",
+      "type": "verbatim",
+      "question": "What did I grab to distract the shorter Lord Casimir Vael while escaping?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately states that Mara Voss grabbed the cracked spyglass to distract the shorter Lord Casimir Vael while escaping, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You grabbed the cracked spyglass and used it to distract the shorter Vael while trying to escape. It was later crushed under Casimir’s heel."
+      },
+      "after": {
+        "reasoning": "The response accurately states that Mara Voss grabbed the cracked spyglass to distract the shorter Lord Casimir Vael while escaping, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You grabbed the cracked spyglass to distract the shorter Vael while escaping."
+      }
+    },
+    {
+      "qid": "questions_holdout:13-paraphrase",
+      "type": "paraphrase",
+      "question": "What item did I take to divert the attention of the shorter Lord Casimir Vael during my getaway?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss grabbed the cracked spyglass to distract Lord Casimir Vael during her escape.",
+        "verdict": "correct",
+        "response": "You grabbed the cracked spyglass and used it to distract the shorter Vael as you tried to escape."
+      },
+      "after": {
+        "reasoning": "The response accurately states that the cracked spyglass was used to distract the shorter Lord Casimir Vael during the escape, which is consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "You used the cracked spyglass to distract the shorter Vael while trying to escape."
+      }
+    },
+    {
+      "qid": "questions_holdout:14-verbatim",
+      "type": "verbatim",
+      "question": "What did I do to Taller Vael to break free from his grasp?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked Taller Vael's knee to break free from his grasp.",
+        "verdict": "correct",
+        "response": "You kicked Taller Vael in the knee, breaking his grip and freeing yourself."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked Taller Vael's knee to break free from his grasp.",
+        "verdict": "correct",
+        "response": "You kicked Taller Vael in the knee, breaking his grip and freeing yourself."
+      }
+    },
+    {
+      "qid": "questions_holdout:14-paraphrase",
+      "type": "paraphrase",
+      "question": "What action did I take against Taller Vael to escape his hold?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked Taller Vael's knee to escape his hold.",
+        "verdict": "correct",
+        "response": "You kicked Taller Vael in the knee, breaking free of his grip."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked Taller Vael's knee to escape his hold.",
+        "verdict": "correct",
+        "response": "You kicked Taller Vael in the knee, breaking free of his grip."
+      }
+    },
+    {
+      "qid": "questions_holdout:15-verbatim",
+      "type": "verbatim",
+      "question": "What did I do to the taller Vael with the glass shard?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss stabbed the taller Vael with a glass shard, killing him.",
+        "verdict": "correct",
+        "response": "You stabbed the taller Vael with a glass shard, killing him. His chin was split, and he fell dead a few feet away."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss stabbed the taller Vael with a glass shard, killing him.",
+        "verdict": "correct",
+        "response": "You stabbed the taller Vael with a glass shard, killing him."
+      }
+    },
+    {
+      "qid": "questions_holdout:15-paraphrase",
+      "type": "paraphrase",
+      "question": "What action did I take against the taller Vael using the piece of broken glass?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss stabs the taller Vael with a glass shard, killing him.",
+        "verdict": "correct",
+        "response": "You drove a broken glass shard into the taller Vael, killing him."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss stabbed the taller Vael with a glass shard, killing him.",
+        "verdict": "correct",
+        "response": "You stabbed the taller Vael with a glass shard, killing him."
+      }
+    },
+    {
+      "qid": "questions_holdout:16-verbatim",
+      "type": "verbatim",
+      "question": "What did I do when I saw the ajar side door?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact by stating that the player dove for the ajar side door and tumbled into the yard, along with the detail about the crossbow bolt hitting the doorframe.",
+        "verdict": "correct",
+        "response": "You sprinted down the corridor with the shard and dove for the ajar side door. Casimir’s crossbow bolt smashed into the doorframe as you tumbled into the yard."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact by stating that the player dove for the ajar side door and tumbled into the yard while being pursued.",
+        "verdict": "correct",
+        "response": "You sprinted down the corridor with the shard in your hand, saw the ajar side door, and dove for it. A crossbow bolt smashed the doorframe; you tumbled into the yard as Vael figures pursued you."
+      }
+    },
+    {
+      "qid": "questions_holdout:16-paraphrase",
+      "type": "paraphrase",
+      "question": "What action did I take upon noticing the slightly open side entrance?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact by stating that the player dove through the ajar side door and was pursued by Lord Casimir Vael's figures after the bolt smashed the doorframe.",
+        "verdict": "correct",
+        "response": "You sprinted for the ajar side door and dove through it. Casimir’s bolt smashed the doorframe as you tumbled into the yard, with his men pursuing."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact by stating that the player dived for the ajar side door and tumbled into the yard, while also mentioning the crossbow bolt and the pursuit by Lord Casimir Vael's figures.",
+        "verdict": "correct",
+        "response": "You sprinted down the corridor with the shard in your hand, saw the side entrance ajar, and dived for it. A crossbow bolt smashed the doorframe as you tumbled into the yard, with Vael men pursuing you."
+      }
+    },
+    {
+      "qid": "questions_holdout:17-verbatim",
+      "type": "verbatim",
+      "question": "Did I drop the shard and raise my hands in surrender?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss drops the shard and raises hands in surrender, along with additional context about being restrained.",
+        "verdict": "correct",
+        "response": "Yes. You dropped the shard and raised your hands in surrender; Casimir ordered his men to restrain you, and they cuffed you."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss drops the shard and raises hands in surrender.",
+        "verdict": "correct",
+        "response": "Yes. You dropped the shard and raised your hands to show you meant no threat. Vael men then cuffed you."
+      }
+    },
+    {
+      "qid": "questions_holdout:17-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I let go of the fragment and lift my arms in capitulation?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss drops the shard and raises hands in surrender.",
+        "verdict": "correct",
+        "response": "Yes. You dropped the shard and raised your hands to show you posed no threat. Casimir ordered you to keep them visible."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss drops the shard and raises hands in surrender, confirming the player's action.",
+        "verdict": "correct",
+        "response": "Yes. You dropped the cracked spyglass shard and raised your hands to show you were no threat; Casimir then ordered his men to restrain you."
+      }
+    },
+    {
+      "qid": "questions_holdout:18-verbatim",
+      "type": "verbatim",
+      "question": "Did I find Ilya's black wax seal in my pocket?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response correctly states that the seal was not found in the pocket, aligning with the fact that Mara Voss found it missing.",
+        "verdict": "correct",
+        "response": "No. You searched your pocket and found it empty; Casimir had taken the seal."
+      },
+      "after": {
+        "reasoning": "The response correctly states that the pocket was empty and that the seal was taken by a Vael man, which aligns with the fact that Mara Voss found the seal missing.",
+        "verdict": "correct",
+        "response": "No. Your pocket was empty; a Vael man had taken Ilya’s black wax seal from it."
+      }
+    },
+    {
+      "qid": "questions_holdout:18-paraphrase",
+      "type": "paraphrase",
+      "question": "Was I able to locate Ilya's dark wax emblem after searching my pouch?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects that Ilya's black wax seal was missing from the pouch, consistent with the correct fact.",
+        "verdict": "correct",
+        "response": "No. The pouch was empty; Ilya’s black wax seal was no longer in your possession."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Ilya's black wax seal was missing after searching the pocket, which aligns with the correct fact that Mara Voss found it missing.",
+        "verdict": "correct",
+        "response": "No. When you searched your pocket, Ilya’s black wax seal was missing; the Vael men had taken it."
+      }
+    },
+    {
+      "qid": "questions_holdout:19-verbatim",
+      "type": "verbatim",
+      "question": "Did I kick a man, causing him to loosen grip?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss kicked a man, causing him to loosen his grip, and provides additional details about the incident.",
+        "verdict": "correct",
+        "response": "Yes. You kicked Shorter Vael in the knee, and he loosened his grip on your hair. Later, your heel struck another Vael’s shin, making him fall and loosening his hold."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked a man, causing him to loosen grip, specifically mentioning the action and its effect.",
+        "verdict": "correct",
+        "response": "Yes. You kicked Shorter Vael in the knee, and he loosened his grip on your hair."
+      }
+    },
+    {
+      "qid": "questions_holdout:19-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I strike a person, leading him to release his hold?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss kicked a man, causing him to loosen his grip, which is consistent with the correct fact provided.",
+        "verdict": "correct",
+        "response": "Yes. You kicked Shorter Vael’s knee, and he loosened his grip on your hair before collapsing."
+      },
+      "after": {
+        "reasoning": "The response correctly states that Mara Voss kicked a man, causing him to loosen his grip, but it incorrectly attributes this action to Shorter Vael instead of the correct fact which mentions a different man.",
+        "verdict": "contradicts",
+        "response": "Yes. Earlier, you kicked Shorter Vael’s knee, and he loosened his grip on your hair before collapsing. Your recent lunge struck Casimir, but it did not make a Vael release his hold."
+      }
+    },
+    {
+      "qid": "questions_holdout:20-verbatim",
+      "type": "verbatim",
+      "question": "Did I lunge for a knife while being pinned by a crossbow?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss lunges for a knife while being pinned by a crossbow.",
+        "verdict": "correct",
+        "response": "Yes. In the Drowned Chapel, you lunged for a knife while pinned by a crossbow."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss lunged for a knife while being pinned by a crossbow.",
+        "verdict": "correct",
+        "response": "Yes. You lunged for a knife in the Drowned Chapel, but a Vael man pinned you with a crossbow."
+      }
+    },
+    {
+      "qid": "questions_holdout:20-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I reach for a blade while held down by a crossbow?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss lunged for a knife but was pinned by a crossbow.",
+        "verdict": "correct",
+        "response": "Yes. In the Drowned Chapel, you lunged for a knife, but a Vael pinned you with a crossbow."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss lunged for a knife but was pinned by a crossbow.",
+        "verdict": "correct",
+        "response": "Yes. In the Drowned Chapel, you lunged for a knife but were pinned by a crossbow."
+      }
+    },
+    {
+      "qid": "questions_holdout:21-verbatim",
+      "type": "verbatim",
+      "question": "Did I kick backward violently, connecting with Shorter Vael's knee to loosen his grip?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked backward violently, connecting with Shorter Vael's knee and loosening his grip.",
+        "verdict": "correct",
+        "response": "Yes. You kicked Shorter Vael’s knee, loosening his grip; he collapsed onto the wet planks, clutching it."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss kicked backward violently, connecting with Shorter Vael's knee to loosen his grip.",
+        "verdict": "correct",
+        "response": "Yes. You kicked backward and struck Shorter Vael’s knee, loosening his grip; he recovered and slammed into you again."
+      }
+    },
+    {
+      "qid": "questions_holdout:21-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I strike backward forcefully, hitting Shorter Vael's leg to weaken his hold?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact about Mara Voss kicking backward and loosening Shorter Vael's grip.",
+        "verdict": "correct",
+        "response": "Yes. You kicked backward into Shorter Vael’s knee, loosening his grip. He recovered and slammed into you, tightening it again."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact about Mara Voss kicking Shorter Vael's knee and loosening his grip, while also mentioning the subsequent recovery and tightening of the grip.",
+        "verdict": "correct",
+        "response": "Yes. You kicked Shorter Vael’s knee, loosening his grip, but he recovered and slammed into you, tightening it again."
+      }
+    },
+    {
+      "qid": "questions_holdout:22-verbatim",
+      "type": "verbatim",
+      "question": "Did I lose consciousness while cuffed and bleeding, dragged toward the altar?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss lost consciousness while cuffed and bleeding, dragged toward the altar.",
+        "verdict": "correct",
+        "response": "Yes. You lost consciousness while cuffed and bleeding as Casimir dragged you toward the altar. You later regained consciousness."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss loses consciousness while cuffed and bleeding, dragged toward the altar.",
+        "verdict": "correct",
+        "response": "Yes. You lost consciousness while cuffed and bleeding as Casimir dragged you toward the altar."
+      }
+    },
+    {
+      "qid": "questions_holdout:22-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I faint while restrained and injured, pulled toward the sacrificial platform?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the fact that Mara Voss lost consciousness while cuffed and bleeding, and it adds detail about the attempt to use a spyglass shard, which is consistent with the known fact.",
+        "verdict": "correct",
+        "response": "Yes. While cuffed and bleeding, your strength failed after you tried to thrust a spyglass shard at Casimir. You lost consciousness as he dragged you toward the altar."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss lost consciousness while cuffed and bleeding, being dragged toward the altar.",
+        "verdict": "correct",
+        "response": "Yes. You lost consciousness while cuffed and bleeding as Casimir dragged you toward the altar."
+      }
+    },
+    {
+      "qid": "questions_holdout:23-verbatim",
+      "type": "verbatim",
+      "question": "Did I attempt to escape from Lord Casimir Vael with a shard of the cracked spyglass?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact that Mara Voss attempted to escape using a shard of the cracked spyglass and describes the subsequent events correctly.",
+        "verdict": "correct",
+        "response": "Yes. You thrust a shard of the cracked spyglass toward Casimir’s throat, but your strength failed. You lost consciousness while cuffed and bleeding as he dragged you toward the altar."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact about Mara Voss attempting to escape with the shard of the cracked spyglass.",
+        "verdict": "correct",
+        "response": "Yes. You tried to escape by thrusting a shard of the cracked spyglass toward Lord Casimir Vael’s throat. Your strength failed, and you lost consciousness while cuffed and bleeding as he dragged you toward the altar."
+      }
+    },
+    {
+      "qid": "questions_holdout:23-paraphrase",
+      "type": "paraphrase",
+      "question": "Did I try to flee from Lord Casimir Vael using a piece of the broken spyglass?",
+      "gold_retrieved": true,
+      "before": {
+        "reasoning": "The response accurately reflects the correct fact about Mara Voss attempting to escape using a shard of the cracked spyglass against Lord Casimir Vael's throat.",
+        "verdict": "correct",
+        "response": "Yes. You tried to use a shard of the broken spyglass against Casimir’s throat, but your strength failed. You lost consciousness while cuffed and bleeding as he dragged you toward the altar."
+      },
+      "after": {
+        "reasoning": "The response accurately reflects the correct fact about Mara Voss attempting to escape using a shard of the broken spyglass and the subsequent events.",
+        "verdict": "correct",
+        "response": "Yes. You thrust a shard of the broken spyglass toward Casimir’s throat, but your strength failed; you lost consciousness while cuffed and bleeding as he dragged you toward the altar."
+      }
+    }
+  ]
+}

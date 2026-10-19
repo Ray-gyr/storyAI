@@ -1,7 +1,7 @@
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { MemoryManager, ChatTurn } from "./memoryManager";
 import { StoryState, StoryStateSchema } from "./currentState";
-import { getStoryLLM } from "./Init";
+import { getSetupLLM, getStoryLLM } from "./Init";
 import { storyInitPrompt, storyStartPrompt } from "./prompt";
 import { redis } from "./redis";
 import { z } from "zod";
@@ -147,7 +147,7 @@ export async function releaseSessionLock(sessionId: string, token: string): Prom
 
 /**
  * 开新局：基于用户的初始故事设定 (storySetting)
- * 分别调用 StoryLLM 生成开场白，调用 WorkerLLM (也是 gpt-5-mini) 生成初始状态
+ * 分别调用 StoryLLM 生成开场白，调用 SetupLLM 生成初始状态与标题
  */
 export async function createSession(sessionId: string, storySetting: string): Promise<{ sessionData: SessionData, firstPrompt: string }> {
     const memoryManager = new MemoryManager();
@@ -155,7 +155,7 @@ export async function createSession(sessionId: string, storySetting: string): Pr
     console.log(`[SessionStore] Concurrently initializing state, first story prompt, and metadata...`);
     
     // Setup chains
-    const stateLLM = getStoryLLM().withStructuredOutput(StoryStateSchema);
+    const stateLLM = getSetupLLM().withStructuredOutput(StoryStateSchema);
     const stateChain = storyInitPrompt.pipe(stateLLM);
     
     const storyLLM = getStoryLLM().pipe(new StringOutputParser());
@@ -165,7 +165,7 @@ export async function createSession(sessionId: string, storySetting: string): Pr
         title: z.string().describe("A concise and catchy short title for the story in English"),
         style: z.string().describe("The genre/style of the story in 2-4 words in English")
     });
-    const titleLLM = getStoryLLM().withStructuredOutput(TitleSchema);
+    const titleLLM = getSetupLLM().withStructuredOutput(TitleSchema);
 
     // Fire all 3 LLM calls concurrently
     const [currentState, firstPrompt, metadata] = await Promise.all([
