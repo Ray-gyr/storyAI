@@ -45,9 +45,11 @@ function main() {
     const corpus = readJson<{ sessionId: string; chunks: Chunk[] }>(join(dir, "corpus.json"));
     const transcript = readJson<Turn[]>(join(dir, "transcript.json"));
     const snapshots = SNAPSHOTS.map(r => readJson<Snapshot>(join(dir, `snapshot_${r}.json`)));
-    const events = loadJsonIfExists<{ events: string[]; occurrences: { id: string }[][] } | null>(join(dir, "events.json"), null);
+    // events.json：第 1 版为 occurrences（按片段计数），第 2 版为 episodes（按情节计数，带序号）
+    const events = loadJsonIfExists<{ events: string[]; occurrences?: { id: string }[][]; episodes?: { id: string; ordinal: number }[][] } | null>(join(dir, "events.json"), null);
     const questionsFile = loadJsonIfExists<{ questions: Question[] } | null>(join(dir, "questions.json"), null);
     const labels = loadJsonIfExists<Labels | null>(join(dir, "labels.json"), null);
+    const validation = loadJsonIfExists<Record<string, { valid: boolean; reasons: string[] }> | null>(join(dir, "validation.json"), null);
 
     // story.md：开场白之后每回合 = 玩家一条 + 叙述一条
     const lines = [`# ${SPEC.genre} — ${SPEC.protagonist}`, "", "## Setting", "", SPEC.setting, "", "## Opening", "", transcript[0]?.text ?? "", ""];
@@ -62,7 +64,10 @@ function main() {
     writeFileSync(join(outDir, "story.md"), lines.join("\n"));
     writeFileSync(join(outDir, "transcript.jsonl"), jsonl(transcript));
 
-    const eventsOf = (id: string) => events ? events.occurrences.flatMap((list, e) => list.some(o => o.id === id) ? [events.events[e]] : []) : undefined;
+    const eventLists = events ? (events.episodes ?? events.occurrences ?? []) : [];
+    const eventsOf = (id: string) => events
+        ? eventLists.flatMap((list, e) => list.filter(o => o.id === id).map(o => "ordinal" in o ? `${events.events[e]} (episode ${(o as { ordinal: number }).ordinal})` : events.events[e]))
+        : undefined;
     writeFileSync(join(outDir, "chunks.jsonl"), jsonl(corpus.chunks.map(c => ({
         id: c.id,
         start_turn: c.start_turn,
@@ -91,7 +96,8 @@ function main() {
             return {
                 ...q,
                 ...(labels ? {
-                    valid: Boolean(labels.candidates[q.qid]?.[q.source_id]?.acceptable),
+                    valid: validation ? Boolean(validation[q.qid]?.valid) : Boolean(labels.candidates[q.qid]?.[q.source_id]?.acceptable),
+                    ...(validation && !validation[q.qid]?.valid ? { invalid_reasons: validation[q.qid]?.reasons ?? [] } : {}),
                     answer_in_summary: labels.summary_has_answer[q.qid]?.acceptable,
                     gold_by_snapshot: Object.fromEntries(snapshots.map(s => [s.round, accepted!.filter(id => (createdAt.get(id) ?? Infinity) <= s.taken_at)])),
                 } : {}),

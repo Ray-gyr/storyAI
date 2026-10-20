@@ -6,7 +6,7 @@ A high fantasy expedition played for 300 rounds by an auto-player LLM through th
 - Structure: 12 chapters x 25 rounds; every chapter moves to a new location and objective.
 - Recurring events (one is deliberately triggered per chapter): an ambush or skirmish with Sir Bastian Crowe's mercenaries; a water shortage or heat-sickness crisis; a bargain or trade with someone who wants something in return.
 - Turns: 601; memory chunks: 130; snapshots after rounds 100, 200, 300.
-- Exported at commit `9527f55`.
+- Exported at commit `6761961`.
 
 ## Files
 
