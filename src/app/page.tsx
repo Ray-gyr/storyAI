@@ -591,17 +591,17 @@ function HomeInner() {
                                                     <tr className="border-b border-[#EAE5D9]">
                                                         <td className="py-3 pr-4 font-bold text-[#4A4743]">Story Writer</td>
                                                         <td className="py-3 pr-4"><code className="bg-[#F2F0E9] px-1 rounded text-[#8D7B68]">gpt-6-luna</code></td>
-                                                        <td className="py-3">Strong long-context narration at about $0.0007 per turn, vs about $0.0024 for gpt-5-mini</td>
+                                                        <td className="py-3">A newer model at about 1/3 the cost of gpt-5-mini per turn; memory fidelity held steady after the switch (75/88 vs 73/88)</td>
                                                     </tr>
                                                     <tr className="border-b border-[#EAE5D9]">
                                                         <td className="py-3 pr-4 font-bold text-[#4A4743]">World Setup</td>
                                                         <td className="py-3 pr-4"><code className="bg-[#F2F0E9] px-1 rounded text-[#8D7B68]">gpt-5-mini</code></td>
-                                                        <td className="py-3">Initial state and title; runs once per story</td>
+                                                        <td className="py-3">The original writer model; still used for the initial state and title, which run once per story</td>
                                                     </tr>
                                                     <tr>
                                                         <td className="py-3 pr-4 font-bold text-[#4A4743]">State Worker, Summaries, Query Rewriter</td>
                                                         <td className="py-3 pr-4"><code className="bg-[#F2F0E9] px-1 rounded text-[#8D7B68]">gpt-4o-mini</code></td>
-                                                        <td className="py-3">Cheap, and reliable structured JSON output via native JSON mode</td>
+                                                        <td className="py-3">Used since v1 and kept unchanged; cheap, with reliable structured JSON output</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

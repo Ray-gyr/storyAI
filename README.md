@@ -193,9 +193,9 @@ After that, almost every remaining error was a retrieval miss: search only sees 
 
 | Role | Model | Reason |
 |------|-------|--------|
-| Story Writer | gpt-6-luna | Strong long-context narration at about $0.0007 per turn, vs about $0.0024 for gpt-5-mini |
-| World Setup | gpt-5-mini | Initial state and title; runs once per story |
-| State Worker, Summaries, Query Rewriter | gpt-4o-mini | Cheap, and reliable structured JSON output via native JSON mode |
+| Story Writer | gpt-6-luna | A newer model at about 1/3 the cost of gpt-5-mini per turn; memory fidelity held steady after the switch (75/88 vs 73/88) |
+| World Setup | gpt-5-mini | The original writer model; still used for the initial state and title, which run once per story |
+| State Worker, Summaries, Query Rewriter | gpt-4o-mini | Used since v1 and kept unchanged; cheap, with reliable structured JSON output |
 
 ---
 
