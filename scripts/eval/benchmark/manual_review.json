@@ -58,5 +58,21 @@
     "hard-58": "null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)",
     "hard-60": "null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)"
   },
-  "note_dev_hard": "dev-hard: hard retrieval question set (make_hard_questions.ts), short low-context questions on the dev story; reviewed by Claude before any retrieval result was looked at. The screener kept 60/60."
+  "note_dev_hard": "dev-hard: hard retrieval question set (make_hard_questions.ts), short low-context questions on the dev story; reviewed by Claude before any retrieval result was looked at. The screener kept 60/60.",
+  "test-hard": {
+    "hard-5": "duplicate fact: map annotations marking safe ground (kept hard-8); the answer is the player themself",
+    "hard-14": "duplicate fact: what Sir Bastian Crowe was hired to do (kept hard-10)",
+    "hard-16": "duplicate fact: drivers keep Sabeth's pace (kept hard-18)",
+    "hard-20": "duplicate fact: stop if Sabeth's track is lost (kept hard-19)",
+    "hard-6": "null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)",
+    "hard-15": "null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)",
+    "hard-23": "null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)",
+    "hard-24": "null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)",
+    "hard-29": "null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)",
+    "hard-41": "null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)",
+    "hard-50": "null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)",
+    "hard-54": "null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)",
+    "hard-55": "null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)"
+  },
+  "note_test_hard": "test-hard: generated after the v5 freeze with the same script and prompt as dev-hard (story name made a parameter); reviewed by Claude with the dev-hard criteria before any retrieval result was looked at (the review was written down before the run but failed to save, and was applied unchanged afterwards). The screener kept 60/60."
 }

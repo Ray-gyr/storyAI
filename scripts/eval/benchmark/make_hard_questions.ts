@@ -1,5 +1,5 @@
 /**
- * 基准测试 · 检索难题集（只用开发故事，输出到 out/dev-hard/）
+ * 基准测试 · 检索难题集（输出到 out/<story>-hard/）
  *
  * 第 2 版题目会交代人物、地点和当时的情境，检索几乎没有难度（开发故事上非时间类题只漏 1 道），
  * 测不出摘要质量对检索的影响。这里出一批信息量少、像玩家随口一问的题：
@@ -8,9 +8,10 @@
  *   - 对照全故事目录，选在整个故事里只有一个答案的事实（之后还有一致性校验）
  * 之后与其他题目一样经过 screen_questions.ts、人工核对、retrieve / label / validate。
  *
- * 前置：out/dev-hard/ 下已复制开发故事的 corpus.json、snapshot_*.json、transcript.json
- * 运行：npx tsx --env-file=.env scripts/eval/benchmark/make_hard_questions.ts [count]
- * 输出：out/dev-hard/questions.json
+ * 前置：out/<story>-hard/ 下已复制该故事的 corpus.json、snapshot_*.json、transcript.json
+ * 测试故事的难题集（test-hard）在 v5 冻结后用同一脚本、同一提示词生成，只把故事名改为参数
+ * 运行：npx tsx --env-file=.env scripts/eval/benchmark/make_hard_questions.ts <dev|test> [count]
+ * 输出：out/<story>-hard/questions.json
  */
 import { ChatOpenAI } from "@langchain/openai";
 import { join } from "node:path";
@@ -18,9 +19,11 @@ import { z } from "zod";
 import { STORIES } from "./stories";
 import { Chunk, chunkContent, evenly, existsAt, loadStory, mapLimit, Question, wordCount, writeJson } from "./common";
 
-const STORY_DIR_NAME = "dev-hard";
-const SPEC = STORIES.dev;
-const COUNT = Number(process.argv[2] || 60);
+const STORY = process.argv[2] as "dev" | "test";
+if (!STORIES[STORY]) throw new Error("usage: make_hard_questions.ts <dev|test> [count]");
+const STORY_DIR_NAME = `${STORY}-hard`;
+const SPEC = STORIES[STORY];
+const COUNT = Number(process.argv[3] || 60);
 const MIN_WORDS = 40;
 
 const llm = new ChatOpenAI({ modelName: "gpt-6.1-sol", openAIApiKey: process.env.OPENAI_API_KEY });

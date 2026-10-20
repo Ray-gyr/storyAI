@@ -1,0 +1,287 @@
+{
+  "round": 200,
+  "taken_at": 1792396459712,
+  "turn_count": 401,
+  "last_turn_id": 401,
+  "currentState": {
+    "world_bible": {
+      "story_framework": "Tamsin Vale, an ex-royal cartographer turned caravan guide, must shepherd a sealed reliquary across the lethal Ashen Wastes from Corvane to the mountain monastery of Saint Aurel while evading rivals, surviving extreme terrain, and confronting the hidden force bound within the reliquary. Core conflicts: survival vs. environment, duty vs. past rivalries, and the moral hazard of a sentient force (Ishkar) trapped inside the cargo. Main threads: the escort journey and route choices; Sir Bastian Crowe's attempts to intercept/steal the reliquary; the gradual revelation of Ishkar's nature and possible consequences; the Duskwalkers' seer guidance and the monastery's motives.",
+      "world_mechanics": "Low, limited magic with specific artifacts and bound spirits; survival-driven rules where water, heat, and terrain determine travel speed and risk. Magic is rare and often costly or bound (e.g., reliquary housing a fire spirit). Navigation and cartography provide tangible mechanical advantages (route shortcuts, hazard avoidance). Social contracts (caravan hires, rival bounties, monastery vows) drive encounters. Injuries, thirst, and equipment condition are persistent resources; healing is slow and reliant on scarce herbal/apprentice skills.",
+      "narrative_style": "Gritty, character-focused adventure with measured descriptive prose: evocative desert atmosphere, tense travel pacing, moral ambiguity, occasional dry wit. Third-person close on Tamsin, interleaving immediate survival details with revelations about past ties and the reliquary's nature."
+    },
+    "known_characters": [
+      {
+        "name": "Tamsin Vale",
+        "description": "Tamsin keeps pace beside the lead wagon, watching the road ahead and the open ground on either side. She looks back along the caravan’s track for movement or fresh signs of pursuit."
+      },
+      {
+        "name": "Wren",
+        "description": "Wren has loosened the reins and brought the team down to a slower, steady pull. The other drivers match her, keeping the wagons together across the Ash Ground."
+      },
+      {
+        "name": "Old Mother Sabeth",
+        "description": "Blind seer and leader of the nomadic Duskwalkers; guides caravans through superstitions and ancestral routes, respected and cryptic. Now has instructed the caravan to rest in the shade beside the wagons."
+      },
+      {
+        "name": "Sir Bastian Crowe",
+        "description": "Tamsin's old rival, a skilled swordsman/ranger hired to steal the reliquary; driven, resourceful, and personally motivated by past slights. He remains a threat as he hunts the caravan."
+      },
+      {
+        "name": "Captain Ferro Lusk",
+        "description": "Ferro has confirmed that there are no further accounts to pursue regarding the attack; the guards confirmed Yara's leadership but provided no additional details, and the dockworkers saw nothing useful. He has sent word to nearby caravans for any new evidence."
+      },
+      {
+        "name": "Ishkar",
+        "description": "A bound fire spirit trapped inside the sealed reliquary; powerful but constrained and potentially manipulative if contacted or released."
+      },
+      {
+        "name": "Abbot Grell",
+        "description": "Master of Saint Aurel monastery; now overseeing the secured reliquary in the inner court, considering a trade for water in exchange for route information."
+      },
+      {
+        "name": "Driver",
+        "description": "The weakened driver remains seated beside Wren, too weak to take the reins. He has received a small sip of water from Tamsin."
+      }
+    ],
+    "known_locations": [
+      {
+        "name": "Corvane's river docks",
+        "description": "The caravan has departed from Corvane's river docks, resuming their journey toward the Ash Ground."
+      },
+      {
+        "name": "The Glass Flats",
+        "description": "A wide expanse of volcanic glass and shifting heat mirages; fast to cross but deadly in storms and prone to glass-splinter hazards. The caravan has successfully crossed the glass and is now moving onto the safer ash-colored ground."
+      },
+      {
+        "name": "Merrow",
+        "description": "Oasis town — critical resupply point for water and trade; political tensions and a place for rumors and hired hands to appear. The caravan has departed from Merrow and is now moving toward Saint Aurel."
+      },
+      {
+        "name": "Duskwalker camp",
+        "description": "Nomadic encampment led by Old Mother Sabeth; a place of guidance, rites, and knowledge of hidden desert paths. The caravan has arrived here to seek a safer route to Saint Aurel."
+      },
+      {
+        "name": "Ruined mage tower of Velk",
+        "description": "Crumbling tower from the mage-war era; filled with residual arcana and hazards, and a possible source of relic gossip or danger. The passage opens into a broader, dim section of the ruin where the light from the entrance no longer reaches clearly. Dust covers the floor without visible tracks, and no movement shows in the darkness ahead."
+      },
+      {
+        "name": "Bonebridge canyon",
+        "description": "Bonebridge canyon lies behind the caravan, no longer close enough to reach without turning back."
+      },
+      {
+        "name": "Gates of Saint Aurel",
+        "description": "Fortified mountain monastery entrance where the caravan has moved inside the walls, with the reliquary still strapped to its wagon."
+      },
+      {
+        "name": "Ash Ground",
+        "description": "The caravan covers ground slower now, but the horses’ breathing remains rough. Their harnesses stop jerking against them as they are no longer being pushed."
+      }
+    ],
+    "known_items": [
+      {
+        "name": "Hand-drawn Map of the Wastes",
+        "description": "Tamsin's annotated cartographic guide: shows safe wells, hidden routes, and old war-ruins. Grants navigation advantages and reveals shortcuts when consulted."
+      },
+      {
+        "name": "Silver Astrolabe",
+        "description": "A compact astrolabe used for celestial navigation across the featureless Wastes; helps calibrate routes at night and judge travel distance."
+      },
+      {
+        "name": "Patience",
+        "description": "Tamsin's short sword — well-balanced and reliable. Useful for close defense and as a tool in harsh terrain."
+      },
+      {
+        "name": "Sealed Reliquary",
+        "description": "Locked container entrusted to the caravan; houses Ishkar, the bound fire spirit. Heavily warded and the primary cargo/plot object. The casing shows no obvious latch or opening, with intact fittings and no fresh scratches or worn edges. The wards remain undisturbed, and it emits a low, steady hum with a faint vibration felt against its outer casing."
+      },
+      {
+        "name": "two large water skins",
+        "description": "One water skin is now empty and hangs from the wagon, while the other holds only a few measured sips and remains tied shut."
+      }
+    ],
+    "current_location": "Ash Ground",
+    "current_task": "Catch Captain Ferro Lusk before he leaves the town.",
+    "inventory": [
+      "Hand-drawn Map of the Wastes",
+      "Silver Astrolabe",
+      "Patience",
+      "two large water skins"
+    ],
+    "custom_attributes": [
+      {
+        "name": "Magic Density",
+        "value": "Low — magic exists but is rare, costly, and often bound to artifacts.",
+        "type": "text"
+      },
+      {
+        "name": "Resource Pressure",
+        "value": "Critical — water scarcity is now more pronounced as one water skin is empty and the other holds only a little water.",
+        "type": "text"
+      },
+      {
+        "name": "Protagonist Halo",
+        "value": "Ex-royal cartographer — respected for maps, mistrusted by some for court ties.",
+        "type": "text"
+      },
+      {
+        "name": "Rival Threat",
+        "value": "High — Sir Bastian Crowe is actively hired to intercept the reliquary.",
+        "type": "text"
+      }
+    ]
+  },
+  "chatHistory": [
+    {
+      "turn_id": 397,
+      "role": "assistant",
+      "text": "Tamsin tells Wren to hold the slower pace and not push the team. Wren nods and keeps the reins loose. The other drivers follow her lead, maintaining their spacing across the Ash Ground.\n\nThe horses continue with rough, steady breaths. Their harnesses no longer jerk as they pull, and the weakened driver remains seated beside Wren, resting against the wagon. He is still too weak to take the reins. The water skin stays tied shut with only a few sips left; the empty one hangs from the wagon.\n\nThe caravan gives up speed but keeps moving toward Saint Aurel. The open ground ahead offers no visible shelter or water. Tamsin remains beside the lead wagon while Wren watches the team, holding the slower pace."
+    },
+    {
+      "turn_id": 398,
+      "role": "user",
+      "text": "I check the water skin and see if I can untie it to get a sip for myself and the driver."
+    },
+    {
+      "turn_id": 399,
+      "role": "assistant",
+      "text": "Tamsin unties the water skin and tips a small sip into her mouth, then offers the driver an equally small measure. He drinks with Wren’s help and settles back against the wagon, still too weak to take the reins.\n\nOnly a little water remains in the skin. Tamsin ties it shut again and secures it to the wagon. The other skin hangs empty. Wren maintains the slower pace, and the horses continue pulling with rough, steady breaths. The caravan keeps moving across the exposed Ash Ground toward Saint Aurel, with no shelter or water visible ahead."
+    },
+    {
+      "turn_id": 400,
+      "role": "user",
+      "text": "I check the empty water skin for any remaining drops and look for a way to refill it in the canyon."
+    },
+    {
+      "turn_id": 401,
+      "role": "assistant",
+      "text": "Tamsin unties the empty skin and turns it over. She squeezes the sides and checks the seams, but no drops come out.\n\nBonebridge canyon lies behind the caravan. Tamsin looks back along the track, but the canyon is no longer close enough to reach without turning back. She has no known water source there to aim for, and the exposed Ash Ground ahead offers no visible relief.\n\nShe ties the empty skin back onto the wagon. Wren keeps the team at the slower pace, with the weakened driver resting beside her and only a few sips remaining in the other skin. The caravan continues toward Saint Aurel."
+    }
+  ],
+  "unprocessedArchive": [
+    {
+      "turn_id": 391,
+      "role": "assistant",
+      "text": "Tamsin calls out to the drivers and crew, saying Saint Aurel is near and shade will be waiting there. Her voice carries between the wagons. A driver answers with a raised hand, and another straightens on the bench and calls the words down the line.\n\nWren keeps the team moving at the quicker pace. The horses still breathe hard, and the heat remains heavy over the open Ash Ground, but the crew settles back into their work. No one leaves their wagon or breaks formation. The weakened driver stays beside Wren, unable to take the reins.\n\nThe caravan continues toward Saint Aurel. The road ahead remains exposed, with no shelter visible yet."
+    },
+    {
+      "turn_id": 392,
+      "role": "user",
+      "text": "I check the tied water skins, looking for any chance to distribute water to the horses and the weakened driver to keep them going."
+    },
+    {
+      "turn_id": 393,
+      "role": "assistant",
+      "text": "Tamsin checks the tied water skins. One holds only a little water, no more than a few measured sips; the other is empty. She unties the remaining skin and gives the weakened driver a small drink. Wren steadies him while keeping the team moving.\n\nThere is not enough to give the horses a useful drink as well. Tamsin reties the skin, conserving what remains for the crew. The driver swallows and rests back against the wagon, still too weak to take the reins. The horses keep pulling under the heat, their breathing rough as the caravan presses on toward Saint Aurel."
+    },
+    {
+      "turn_id": 394,
+      "role": "user",
+      "text": "I urge Wren to slow down the pace to prevent further exhaustion in the horses and the weakened driver."
+    },
+    {
+      "turn_id": 395,
+      "role": "assistant",
+      "text": "Tamsin signals Wren to ease the pace. Wren loosens the reins and brings the team down to a slower, steady pull. The other drivers match her, keeping the wagons together across the Ash Ground.\n\nThe horses’ breathing remains rough, but their harnesses stop jerking against them. The weakened driver stays seated beside Wren, too weak to take the reins. The water skin remains tied shut with only a few sips left, and the empty skin hangs from the wagon.\n\nThe slower pace costs the caravan ground, but the teams are no longer being pushed. Saint Aurel’s walls are not yet visible across the open plain. Wren glances toward Tamsin, waiting to hear whether they should hold this pace or press on."
+    },
+    {
+      "turn_id": 396,
+      "role": "user",
+      "text": "I instruct Wren to maintain the slower pace for now, prioritizing the horses’ and driver’s strength over speed."
+    }
+  ],
+  "chunk_ids": [
+    "247b595d-957c-48e5-88b6-3bffbb694c3f",
+    "608ed96c-898b-46cf-a03d-7771bfa4170f",
+    "28a0b138-3da6-4fa7-8b1e-db36ca223d3d",
+    "4debacb8-4da1-45be-a9a5-ef6d9fabaea9",
+    "72d643f3-e925-4a32-a51b-d0fabbc7c3ce",
+    "fbcc1469-563f-4fb8-8b08-7ec4460ae589",
+    "f440679e-4844-4de1-ae20-31d0262cc420",
+    "f581cb42-03f9-40d4-a924-5dd7f1460724",
+    "6dc285d6-264e-4c3c-9088-2eb6d31bb1f1",
+    "4ae70988-1145-46b0-8724-ffc8080e5e49",
+    "7589652e-2efe-4121-8197-7d3fdcafeaa9",
+    "f2a89212-95b1-48c8-b001-9df63a88e24a",
+    "71035d09-1289-48c5-a33a-a18561259b06",
+    "7c36625a-46e1-449a-ab1b-c24814a53478",
+    "60c99235-564b-4653-9df6-1fef916350cc",
+    "dc018b01-2d0c-4d74-b765-4aa524953e57",
+    "3c6e161c-1939-447d-b9cb-9f76074fdc4c",
+    "ce367288-d439-4657-b9d5-32b2333efc68",
+    "3c15366c-45a8-4b7a-b44c-4c938df3ded3",
+    "7aafac56-c26e-4599-9e3c-c9c90b1ab650",
+    "46e97a67-00be-47e9-b150-32786eae519b",
+    "b7b8c853-cc64-4a4a-a945-88d070ceb736",
+    "1c0324db-6849-4421-adad-c8f688dbab58",
+    "3b23a605-4a42-4f77-9b37-aa6831fe854b",
+    "99125d9b-3fd0-453c-b91e-2217519a665d",
+    "061f2cec-bf29-4ebf-bbeb-4927d22621f1",
+    "df0819f4-0cc5-404b-9dd5-9d78856b6dd2",
+    "930265ab-4309-41ff-8315-fb129b7057b1",
+    "9c4bdd4f-0323-4048-a1d0-aeb28657e7b2",
+    "b1c53b69-fd87-44b3-89fe-92d61ceda3f9",
+    "2d79a09a-a22a-40f9-989d-b66106b84ad0",
+    "36931edf-5851-4b4a-b8ab-9d37ea4f1881",
+    "5735b5bd-165d-4801-b242-7fc823886ff3",
+    "534ea614-6cda-47dc-8cdc-8bd6901f53e3",
+    "907c94ad-f102-46c9-b3d8-13eed3996de4",
+    "26a3614e-57cb-4ee7-991c-e810cbe1db5f",
+    "c6996d60-254a-464d-9406-5e7c50a006fb",
+    "37d5d6f2-375b-480c-97cd-6ef609da13f0",
+    "658ba114-a9e2-4711-b528-fe593722a77b",
+    "70e3ac59-4928-4925-8f22-a1ea61d8bcf6",
+    "455b5da4-da44-4526-ac81-4754e24b0cf8",
+    "b381c6ce-cc11-47c1-b688-8fe57023cee1",
+    "175068fb-08c3-4c5d-acbb-3e3ad823c61b",
+    "79fcb985-f4f4-4053-a46b-0a45e87798bd",
+    "bd9b31d5-380a-4ea5-8563-4e60f2269f89",
+    "c580eb94-8490-4faf-83ab-ca25831adc60",
+    "444c9b08-414e-4416-855a-34e7459eaa3b",
+    "d8752f24-0c64-4a94-8a7b-612866eea798",
+    "8eb2102a-516f-427f-befc-d973e4151b76",
+    "4a8d9442-7736-47bf-b2ab-dfdaf5269f8d",
+    "344fec22-7a8d-4ab6-b4cd-70d0c9950c53",
+    "1de36f50-eaf8-4380-af1b-0bf6eb333ae2",
+    "817696f6-2b0f-4125-af44-76609e81b559",
+    "1dd58cc1-82b8-4331-a47b-c75123e01fd9",
+    "8a56a744-cb02-4138-bbad-062cf1a5749f",
+    "488ed804-288c-41ee-b48f-8760ee121ec8",
+    "0a2adbc0-3ba3-436c-9c08-75f0f9db3169",
+    "c5daaa98-41c8-41a6-8a7e-0b411c82c20f",
+    "cc5bd2fb-8266-4e15-8abc-0c3b9a6e8a89",
+    "22c8524e-f52a-4b11-bc6e-08950050e5df",
+    "301bf834-2e37-42e0-bfe9-6f6817eafcd3",
+    "0d879152-0478-4d67-86bb-5510a3416b5d",
+    "db0bf26e-b1bb-4cd2-b432-ce9b6ea37495",
+    "03ea466c-d1c6-4bad-88ab-6bd617f349e0",
+    "f0de4138-7838-4f33-a523-67fa24669bb3",
+    "31b813fd-4b7d-44ab-b5f1-8afb8ef19509",
+    "429de15d-a900-45a1-9ff8-fae2960861e0",
+    "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2",
+    "961411c4-276e-41bf-92a7-214fa57f9e20",
+    "8431516e-46ab-47e6-9794-c1091d7c35f5",
+    "c7925a25-a485-4cfa-bbb0-77fe394033d4",
+    "ce6cc1fc-afb7-4342-9e80-4f81ad64427a",
+    "71fdfce4-978b-4c7e-8c63-38d25810dbc4",
+    "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4",
+    "dbe7ef99-04b2-45a4-b12c-dc4badbb1905",
+    "e74d8f72-0ab4-47b1-8043-8fd1ecc1a173",
+    "7d00241f-a9e6-435e-9a3c-8881d56cb281",
+    "1e15592a-ac4b-48b2-8c39-6992d519a90a",
+    "141db6dd-2633-4e94-8ff2-26b0860921eb",
+    "3c2300ef-7445-4558-ad14-b3ad8cf5a9c4",
+    "131781d1-ffe1-41ca-a8f6-2cb17bd6bb23",
+    "2423aef5-6766-439f-8ef5-5edc468cf34d",
+    "113adf28-afab-467f-bea6-eadf75c3bca1",
+    "9152b5df-1b77-4009-87ec-104db6150273",
+    "17dc6e89-a794-45bc-aeda-45e48e3c29b8",
+    "93c89872-f2ba-4b34-826a-f36e42e1451c",
+    "84154912-8068-4387-8e36-bef2a55c6fbc",
+    "8b730eb8-ad81-47cb-abad-c7c2e5939775",
+    "a58163d6-056d-421e-953d-018523e3a84d",
+    "55f22585-5ce3-4e40-be9f-ca22a62b7e68",
+    "4546ff58-a787-4324-9d4e-681b8e8570d7",
+    "219fed64-4ae3-4ace-8731-ae624ec930c3",
+    "cefe21c0-65ce-4a24-b725-10d2ed5468f0"
+  ]
+}

@@ -1,0 +1,466 @@
+{
+  "hard-1": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-2": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage says the route reaches Merrow within three days, and the second explicitly says the caravan arrives after three days on the road."
+    }
+  },
+  "hard-3": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-4": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-5": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: map annotations marking safe ground (kept hard-8); the answer is the player themself"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-6": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-7": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-8": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages identify the annotations as marking safe ground, and neither suggests they reveal the waystone’s location."
+    }
+  },
+  "hard-9": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The outcrop passage explicitly says you told the drivers to hold position while you scouted ahead, and no other passage gives a conflicting instruction for that event."
+    }
+  },
+  "hard-10": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage says Sir Bastian Crowe was hired to take or intercept the reliquary."
+    }
+  },
+  "hard-11": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage has Wren recommend speaking with Abbot Grell, and the second also connects Grell with discussing the reliquary’s safety without suggesting anyone else."
+    }
+  },
+  "hard-12": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-13": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-14": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: what Sir Bastian Crowe was hired to do (kept hard-10)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-15": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-16": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: drivers keep Sabeth's pace (kept hard-18)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-17": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-18": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 8,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage confirms that Sabeth required the drivers to keep her pace and stay on her track, without rushing ahead or straying from it."
+    }
+  },
+  "hard-19": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage says to stop the caravan if Sabeth’s track or steps are out of sight and not to guess or choose an unverified route."
+    }
+  },
+  "hard-20": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: stop if Sabeth's track is lost (kept hard-19)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-21": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage explicitly says the caravan left the hidden path toward the ruined mage tower of Velk, and the second also places Tamsin’s route toward that same tower without suggesting another destination."
+    }
+  },
+  "hard-22": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that Tamsin squeezed through the gap beside the fallen stones to enter the tower."
+    }
+  },
+  "hard-23": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-24": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-25": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage identifies making up time as the reason for pushing on, and none gives a different reason."
+    }
+  },
+  "hard-26": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-27": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage states that the weakened driver’s pulse was steady, and none gives a different result."
+    }
+  },
+  "hard-28": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the weakened driver could not sit up or sit upright without Wren’s support."
+    }
+  },
+  "hard-29": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-30": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-31": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-32": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 11,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The storm passages say you told the drivers to close the gaps and keep the wagons together while pushing faster, supporting the expected answer."
+    }
+  },
+  "hard-33": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 5,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage identifies the return to Corvane as an effort to clear the caravan’s name with Captain Ferro Lusk, with later passages detailing the supporting evidence sought."
+    }
+  },
+  "hard-34": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages identify Wren as the person Ferro wanted brought to him first."
+    }
+  },
+  "hard-35": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-36": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-37": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages identify Captain Ferro Lusk as staying behind with or near the gathered witnesses."
+    }
+  },
+  "hard-38": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage explicitly says the speaker hopes to catch Captain Ferro Lusk before he leaves town, and the second identifies Ferro as the person they later leave behind in Corvane."
+    }
+  },
+  "hard-39": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the witnesses’ accounts agreed an attack occurred and that Yara led it, and the second says Ferro would attest to those points."
+    }
+  },
+  "hard-40": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-41": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-42": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 8,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages consistently show the water was scarce and kept sealed or rationed to conserve the remaining measured sips for the caravan, though small amounts were later given when needed."
+    }
+  },
+  "hard-43": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 5,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage identifies Bonebridge canyon as already cleared or behind the caravan, and none names a different canyon."
+    }
+  },
+  "hard-44": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-45": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Grell explicitly suggests Old Mother Sabeth, and the other passages confirm Tamsin consults her about the Duskwalker rites."
+    }
+  },
+  "hard-46": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages show that Sabeth needed to be beside the reliquary before judging whether anything could answer."
+    }
+  },
+  "hard-47": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-48": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages support that Sabeth heard no answer and could not carry words through the reliquary’s seals; neither gives a conflicting reason."
+    }
+  },
+  "hard-49": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 7,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "During the first archive search, Tamsin returned to Saint Aurel while the reliquary remained at the Duskwalker shrine."
+    }
+  },
+  "hard-50": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-51": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages say the patrol leader had seen people moved through the market lanes but did not have or keep their names."
+    }
+  },
+  "hard-52": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-53": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-54": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-55": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or happened, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-56": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-57": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-58": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that Ishkar should have a chance at redemption while facing consequences for his actions, and neither suggests a different fate."
+    }
+  },
+  "hard-59": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-60": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  }
+}

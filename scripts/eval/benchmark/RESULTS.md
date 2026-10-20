@@ -284,3 +284,25 @@ The test summaries were regenerated with the production extractor. They average 
 - **Open question:** the dev-hard gain (short, low-context questions, 0.936 → 1.000) has no held-out counterpart yet. This test run does not confirm or refute it.
 
 **Overall:** on question set 2, v5 equals v4 on the test story (Recall@10 0.945, end to end 83/91 against 82/91). Whether long summaries help short, low-context questions needs a hard set on the test story.
+
+## Hard set on the test story (test-hard, after the v5 freeze)
+
+`make_hard_questions.ts` was given the story name as a parameter; the prompt is unchanged. It generated 60 questions on the test story. The screener again kept 60/60. Manual review used the dev-hard criteria and dropped 13 (4 duplicates, 9 "nothing was found"), leaving **47 valid**. The drop list was written down before any retrieval result. It first failed to save, because a shell command failed silently, so the run initially counted all 60 as valid. It was then applied unchanged. All numbers below use the 47.
+
+| test-hard, round 300 (n=47) | Recall@10 | Recall@5 |
+|---|---|---|
+| v1 tier search | 0.702 | 0.596 |
+| v2 hybrid, short summaries (v2–v4) | 0.830 | 0.681 |
+| **v2 hybrid, long summaries (v5)** | **0.894** | **0.766** |
+| paired v5 − v4 | +0.064 [−0.04, +0.17] (5 won, 2 lost) | |
+
+End to end (judge v2), with each writer configuration on the same retrieval:
+
+| Writer receives | dev-hard (n=47) | test-hard (n=47) |
+|---|---|---|
+| summaries only (v2) | 36 | 21 |
+| top 3 with original text (v3) | 45 | 30 |
+| all 10 with original text (v4) | 45 | 37 |
+| **all 10 with original text, long summaries (v5)** | **45** | **40** |
+
+On test-hard, v5 retrieves a correct chunk for 42 of 47 questions, against 39 for v4. It answers 40 correctly, against 37. The end-to-end gain matches the retrieval gain exactly. Short, low-context questions are where long summaries help. The difference is not significant at n=47, but its direction matches dev-hard and the prediction made before the run.
