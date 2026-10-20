@@ -213,3 +213,30 @@ Better questions carry more context (who, where, what was happening), so retriev
 **Question quality explained most of the earlier low score.** With the same stories and the same writer, the test end-to-end accuracy rises from 55% to 79%, and contradictions fall from 31 to 10. These questions are harder in one sense: only 10–19% of answers are still in the chunk summary. The writer still gets them right, because the top-3 original texts usually contain the answer.
 
 Temporal questions are now few (8 dev, 5 test after screening). Their numbers are too small to interpret.
+
+---
+
+# v4: original text for all 10 retrieved memories
+
+Frozen at `425fb54` (FREEZE.md v4 record); retrieval is unchanged. Question set 2, end to end at round 300, judge v2. This is the fourth use of the test story (PROTOCOL.md Section 12). The choice between 3 and 10 originals was made on the dev story before this run.
+
+| Writer receives | dev | test |
+|---|---|---|
+| summaries only (reference) | 28/92 (30%) | 29/91 (32%) |
+| top 3 with original text (v3) | 76/92 (83%) | 72/91 (79%) |
+| **all 10 with original text (v4)** | **84/92 (91%)** | **82/91 (90%)** |
+
+By where the right chunk was retrieved (test story):
+
+| Right chunk | summaries only | v3 | v4 |
+|---|---|---|---|
+| in the top 3 (n=70) | 27 | 69 | 66 |
+| at rank 4–10 (n=16) | 2 | 2 | **16** |
+| not retrieved (n=5) | 0 | 1 | 0 |
+
+- **The gain lands where predicted.** Questions whose right chunk sat at rank 4–10 go from 2/16 to 16/16. The top-3 group drops slightly, 69 → 66, within run-to-run noise (about ±5), but it is worth watching: 7 extra original texts could distract the writer.
+- **Contradictions fall to 7/91 and "cannot recall" to 1/91.** The writer invents the past for 8% of recall questions, down from 35% with question set 1 and the v2 writer.
+- **The remaining errors are mostly retrieval misses** (5 test questions with no right chunk in the top 10), plus a few answers wrong despite the right original text.
+- **Cost:** about 2,500 extra input tokens per turn (about +$0.00025 with `gpt-6-luna`). Latency is unchanged in the dev check.
+
+**Overall, v4 on the 300-round test story:** retrieval Recall@10 0.945; end-to-end answers consistent with the past 90%, contradicting it 8%.
