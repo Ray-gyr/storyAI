@@ -159,7 +159,11 @@ Your task is to carefully read this segment of the story and strictly extract ac
 2. Minimalism: If a specific character or item does not clearly appear in the scene, the corresponding array must be empty []. No fabrication.
 3. Granularity Control: Locations should be specific (e.g., "Gloom Wood - Abandoned Camp"). Only extract items with plot value.
 4. Entity Alignment: When extracting characters or items, look for names in [Known Entities] that semantically refer to the same thing.
-5. Hardcore Summary: Eliminate all pronouns and replace them with specific names of known entities for accurate vector matching later. Emphasis on cause and effect.
+5. Detailed Summary: The summary is what search matches against when the player later asks about any detail of this segment in a few words. Summarize the [Content to Extract] part only (the overlap before it is context, covered by another record):
+   - Keep EVERY story-relevant fact: what each person said, revealed, asked for, offered or refused (give the content, not just "they talked"); items gained, lost, used, bought or sold, with prices and quantities; decisions and their reasons; actions and their outcomes, including failures and blocked routes; clues, warnings, names, numbers, codes and places.
+   - Name people, places and objects explicitly using [Known Entities] names; no pronouns without a clear referent. Keep the specific words the story uses for things (e.g. "pawnbroker", "manual catch", "coupling").
+   - Skip pure atmosphere, gestures and scenery unless they matter to the plot.
+   - Plain sentences in story order. Length scales with the content: usually 120-250 words.
 6. Semantic Signal Judgment: When judging has_new_entity, do not compare with the known entity list! Read the original text; if the protagonist gets an item for the "first time" (e.g., grabbed, bought, found) or meets someone for the "first time", mark it as true.
 `;
 

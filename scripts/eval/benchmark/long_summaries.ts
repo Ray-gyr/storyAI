@@ -1,58 +1,55 @@
 /**
- * 基准测试 · 长摘要实验（只用开发故事）
+ * 基准测试 · 长摘要
  *
- * 线上摘要平均 55 词（原文平均 413 词），"摘要没写"的事实检索不到。这里换一个保留全部剧情事实的摘要提示词，
- * 用同一个辅助模型（gpt-4o-mini）重写每个片段的摘要，BM25 和向量两路都改用长摘要，与短摘要在同一批题上配对比较。
+ * 原摘要平均 55 词（原文平均 413 词），"摘要没写"的事实检索不到。记忆提取提示词（prompt.ts 规则 5）改为保留全部剧情事实的
+ * 长摘要后，用线上的提取函数（gpt-4o-mini）重新生成每个片段的摘要，BM25 和向量两路都用长摘要，与原摘要在同一批题上配对比较。
+ * （第一轮实验用的是独立的摘要提示词，结果见 commit 26422ae 与 RESULTS.md。）
  *
- *   generate          生成长摘要 -> out/long_summaries/<sessionId>.json，
+ *   generate <story>  生成长摘要 -> out/long_summaries/<sessionId>.json，
  *                     向量写入独立的 Pinecone 命名空间 <sessionId>-long（id、created_at 与原片段相同）
  *   retrieve <story>  在 out/<story>/retrieval.json 的每一行上补充 bm25_long / vector_long（前 30 名）
  *                     和 v2_long（同 v2 的配额合并，前 10 名）；复用该行已有的意图改写结果，保证配对
  *
  * 之后：label.ts <story> 只补标新候选；analyze 时比较 v2 与 v2_long。
  *
- * 运行：npx tsx --env-file=.env scripts/eval/benchmark/long_summaries.ts generate
+ * 运行：npx tsx --env-file=.env scripts/eval/benchmark/long_summaries.ts generate <dev|test>
  *       npx tsx --env-file=.env scripts/eval/benchmark/long_summaries.ts retrieve <dev|dev-hard>
  */
-import { ChatOpenAI } from "@langchain/openai";
 import { mkdirSync } from "node:fs";
 import { join } from "node:path";
-import { z } from "zod";
 import { tokenize } from "../../../src/lib/bm25";
 import { bm25Rank, enhancedQuery, HYBRID_RETRIEVAL_CONFIG, quotaFusion, startDenseSearch } from "../../../src/lib/hybridRetriever";
 import { getEmbeddings, getPineconeIndex } from "../../../src/lib/Init";
+import { StoryState } from "../../../src/lib/currentState";
+import { extractAndStoreMemory } from "../../../src/lib/memoryChunkGenerator";
 import { IndexedMemory } from "../../../src/lib/memoryStore";
 import { BENCH_DIR, Chunk, loadJsonIfExists, loadQuestions, loadStory, mapLimit, readJson, RetrievalRow, wordCount, writeJson } from "./common";
-import { STORIES } from "./stories";
 
 const DEEP = 30;
-const PROTAGONIST = STORIES.dev.protagonist;
 const summaryPath = (sessionId: string) => join(BENCH_DIR, "out", "long_summaries", `${sessionId}.json`);
 export const longNamespace = (sessionId: string) => `${sessionId}-long`;
 
-const LONG_SUMMARY_SYSTEM = `You write the memory record for one segment of a text adventure. Later, the player may ask about any detail of this segment in a few words, and this record is what the search engine matches against.
+/**
+ * 片段生成时的世界状态没有保存：用第 300 回合快照里的实体，只保留截至该片段最后一回合已在对话里出现过的名字，
+ * 还原"当时已知的实体"（线上提取只用到实体名）。
+ */
+function stateAt(final: StoryState, transcript: { turn_id: number; text: string }[], endTurn: number): StoryState {
+    const seen = transcript.filter(t => t.turn_id <= endTurn).map(t => t.text).join("\n").toLowerCase();
+    const known = <T extends { name: string }>(list: T[]) => list.filter(e => seen.includes(e.name.toLowerCase()));
+    return { ...final, known_characters: known(final.known_characters), known_locations: known(final.known_locations), known_items: known(final.known_items) };
+}
 
-Write a detailed summary of the [Content to Extract] part only (the overlap before it is context and is covered by another record):
-- Keep EVERY story-relevant fact: what each person said, revealed, asked for, offered or refused (give the content, not just "they talked"); items gained, lost, used, bought or sold, with prices and quantities; decisions and their reasons; actions and their outcomes, including failures and blocked routes; clues, warnings, names, numbers, codes and places.
-- Name people, places and objects explicitly (the protagonist is ${PROTAGONIST}); no pronouns without a clear referent. Keep the specific words the story uses for things (e.g. "pawnbroker", "manual catch", "coupling").
-- Skip pure atmosphere, gestures and scenery unless they matter to the plot.
-- Plain sentences in story order. Length scales with the content: usually 120-250 words.`;
-
-const summarizer = new ChatOpenAI({ modelName: "gpt-4o-mini", temperature: 0, openAIApiKey: process.env.OPENAI_API_KEY })
-    .withStructuredOutput(z.object({ summary: z.string() }));
-
-async function generate() {
-    const { sessionId, chunks } = loadStory("dev");
+async function generate(story: string) {
+    const { dir, sessionId, chunks, snapshots } = loadStory(story);
+    const transcript = readJson<{ turn_id: number; text: string }[]>(join(dir, "transcript.json"));
     const path = summaryPath(sessionId);
     mkdirSync(join(BENCH_DIR, "out", "long_summaries"), { recursive: true });
     const done = loadJsonIfExists<Record<string, string>>(path, {});
     const todo = chunks.filter(c => !done[c.id]);
     await mapLimit(todo, 8, async (c: Chunk) => {
-        const { summary } = await summarizer.invoke([
-            ["system", LONG_SUMMARY_SYSTEM],
-            ["human", c.original_text],
-        ]);
-        done[c.id] = summary;
+        // 线上的记忆提取（同一次调用产出实体与摘要；这里只取摘要）
+        const record = await extractAndStoreMemory(stateAt(snapshots[300].currentState, transcript, c.end_turn), c.original_text, c.start_turn, c.end_turn);
+        done[c.id] = record.dense_summary;
     });
     writeJson(path, done);
     const words = chunks.map(c => wordCount(done[c.id]));
@@ -98,5 +95,5 @@ async function retrieve(story: string) {
 }
 
 const [cmd, story] = process.argv.slice(2);
-(cmd === "generate" ? generate() : cmd === "retrieve" && story ? retrieve(story) : Promise.reject(new Error("usage: long_summaries.ts generate | retrieve <story>")))
+(cmd === "generate" && story ? generate(story) : cmd === "retrieve" && story ? retrieve(story) : Promise.reject(new Error("usage: long_summaries.ts generate|retrieve <story>")))
     .catch(e => { console.error(e); process.exit(1); });

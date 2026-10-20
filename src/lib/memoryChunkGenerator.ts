@@ -21,7 +21,7 @@ export const LLMExtractedMemorySchema = z.object({
     }).describe("Objective judgment of the semantic importance of this plot segment"),
 
     dense_summary: z.string()
-        .describe("Hardcore summary of this plot. Eliminate all pronouns and replace them with specific names of known entities for accurate vector matching. Emphasize cause and effect.")
+        .describe("Detailed summary of the [Content to Extract] part (rule 5): every story-relevant fact, explicit names, the story's own words for things; usually 120-250 words.")
 });
 
 export type LLMExtractedMemory = z.infer<typeof LLMExtractedMemorySchema>;

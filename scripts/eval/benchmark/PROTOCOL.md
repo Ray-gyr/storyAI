@@ -160,3 +160,27 @@ Ordinary action turns on dev, 6 turns:
 - no copying of 8 or more words from originals, and no inserted recall lines.
 
 **Test run:** end to end on the test story with question set 2, once, at the v4 freeze commit (FREEZE.md). This is the fourth use of the test story. A summaries-only run is added for reference; it is a comparison, not a decision input.
+
+## 13. Amendment 4: v5, long summaries
+
+**v5** changes one thing: the memory extractor's summary rule (`prompt.ts`, rule 5). Summaries now keep every story-relevant fact and use the story's own words. They average 123 words on dev, against 55 before. Both BM25 and the vector index use them. The extractor model (`gpt-4o-mini`), the fusion parameters (BM25 quota 3) and the writer (all 10 memories with original text) are unchanged.
+
+It was chosen on the dev story only (RESULTS.md, "Long summaries"):
+- A hard retrieval set, dev-hard, was added: 47 short, low-context questions.
+- The summaries were regenerated with the production extractor. The entity list for each chunk is reconstructed from the round-300 state, keeping only names already seen in the transcript.
+
+| dev, round 300 | short summaries (v4) | long summaries (v5) |
+|---|---|---|
+| Recall@10, question set 2 (n=92) | 0.957 | 0.978 (3 won, 1 lost) |
+| Recall@10, dev-hard (n=47) | 0.936 | 1.000 (3 won, 0 lost) |
+| End to end, question set 2 | 84/92 | 91/92 |
+| End to end, dev-hard | 45/47 | 45/47 |
+
+The BM25 quota was checked on long summaries: quotas 2–9 are within one question of each other, so it stays at 3.
+
+**Test run:**
+- Generate long summaries for the test story with the production extractor, using the same entity reconstruction.
+- Re-run retrieval at all snapshots, reusing the frozen query rewrites, and label the new candidates with the same judge.
+- Report Recall@10 at round 300 for v2_long against v2 (paired). Then run end to end once (`e2e.ts test --long --tag qset2_v5`) against v4 (82/91).
+
+This is the fifth use of the test story. Earlier uses only exposed the test story's questions and the end-to-end answers; no part of v5 was chosen by looking at them.

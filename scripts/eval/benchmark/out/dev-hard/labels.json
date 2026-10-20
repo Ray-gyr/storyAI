@@ -172,6 +172,10 @@
       "e12cfa26-d404-491d-8ae8-43ef75062847": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention the incoming transmission or its word, LANTERN."
+      },
+      "2bbd368c-668f-489d-9be6-5f81ad2cc54e": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses a panel and beacon but does not mention the incoming transmission or the word LANTERN."
       }
     },
     "hard-2": {
@@ -362,6 +366,22 @@
       "f19c2ccf-b533-469e-91ac-fb9241e7d016": {
         "acceptable": false,
         "reasoning": "The candidate mentions scrape marks crossing a panel’s catch, not fresh marks along the plating continuing beneath the service door."
+      },
+      "aac6431e-465b-4a6a-8da1-a698e9be66b4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses an unresponsive transfer hatch and contains no clue about fresh scrape marks leading beneath a service door."
+      },
+      "e57cc92b-3f64-455a-8c7c-85a948a86931": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses checking a survey drone and does not mention the scrape marks that led to the service door."
+      },
+      "b622fb3d-239c-443d-9791-87b65cefd9b3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention fresh scrape marks along the plating continuing beneath the service door."
+      },
+      "1fd98018-7912-41d3-a857-03f781a58157": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes a checkpoint and contains no clue about scrape marks leading to a service door."
       }
     },
     "hard-3": {
@@ -464,6 +484,10 @@
       "f5bd44a5-785d-419f-819f-5d0d5d400591": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention the survey drone or its orange tape matching Odile’s equipment cases."
+      },
+      "2d5514f5-de6b-43ed-af11-9b108a0c3e3f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses salvage buyers and ship logs, but does not say how Juno recognized the drone’s owner."
       }
     },
     "hard-4": {
@@ -622,6 +646,10 @@
       "bcac00bc-2c98-4dfb-b7e7-0d79af317590": {
         "acceptable": false,
         "reasoning": "The candidate passage does not say that the cable shield was torn from her glove and swept through the breach."
+      },
+      "513a6292-0a46-4f0e-a373-b90e57e491d7": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the cable being torn from Juno’s glove and swept through the breach."
       }
     },
     "hard-5": {
@@ -784,6 +812,22 @@
       "bcac00bc-2c98-4dfb-b7e7-0d79af317590": {
         "acceptable": true,
         "reasoning": "The candidate states that the panel is held by the cable bundle, identifying the same obstruction to access."
+      },
+      "ee86557a-1851-4ac1-b0e0-a2facf7e2fa6": {
+        "acceptable": false,
+        "reasoning": "The candidate discusses a damaged conduit and coupling, not a cable bundle blocking access to the recessed manual catch."
+      },
+      "aac6431e-465b-4a6a-8da1-a698e9be66b4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention a cable bundle blocking access to the recessed manual catch."
+      },
+      "2d5570fd-2279-4202-acd5-ad82f4554787": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions cable bundles blocking the route through the compartment, but not a bundle blocking access to the recessed manual catch."
+      },
+      "078b12d1-96f9-4ca7-8af4-7d158833244e": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions a cable bundle but does not say it blocked access to the recessed manual catch."
       }
     },
     "hard-6": {
@@ -894,6 +938,18 @@
       "84cdce70-4072-4653-b27c-257e04abc4da": {
         "acceptable": false,
         "reasoning": "The candidate passage mentions the exposed coupling but does not say it was reconnected by bracing the conduit, aligning the plug, and tightening the collar."
+      },
+      "2ac6655d-7032-4a75-bd1c-1490b84b7a1f": {
+        "acceptable": false,
+        "reasoning": "The candidate describes following a beacon signal and does not mention reconnecting the circular coupling."
+      },
+      "1b745eed-747a-47db-b5ba-3434db026053": {
+        "acceptable": false,
+        "reasoning": "The candidate says the conduit was secured but does not describe bracing it, aligning the plug, or tightening the collar by hand."
+      },
+      "814639c7-94a9-4bba-ae98-3aa58e09606a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses redirecting gas and retrieving an oxygen canister, not reconnecting the circular coupling."
       }
     },
     "hard-7": {
@@ -1048,6 +1104,18 @@
       "65c51f40-a8d0-43ed-b1d6-0807970b1a37": {
         "acceptable": false,
         "reasoning": "The candidate passage mentions working on the conduit but does not state that repeated clamp cycles should be avoided."
+      },
+      "16c03c48-6c8c-4a7e-a2f2-cff0bf0d8929": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions mechanical strain on the conduit but does not say to avoid repeated clamp cycles."
+      },
+      "89d9ffbf-f153-462a-bc88-131f2b8583f0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions inspecting the transfer hatch but does not state that repeated clamp cycles should be avoided."
+      },
+      "e57cc92b-3f64-455a-8c7c-85a948a86931": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions checking a survey drone and does not state what the conduit warning advised avoiding."
       }
     },
     "hard-8": {
@@ -1264,6 +1332,18 @@
       "65c51f40-a8d0-43ed-b1d6-0807970b1a37": {
         "acceptable": false,
         "reasoning": "The candidate mentions an exposed conduit and its power coupling, but does not state that the coupling was under mechanical strain."
+      },
+      "fa05a75c-dd9a-42d9-9b0b-43f63ca72770": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes reaching through a gap to disengage a retaining bar and does not mention the repaired conduit’s exposed coupling or its mechanical strain."
+      },
+      "2d5570fd-2279-4202-acd5-ad82f4554787": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes cable bundles and a cramped compartment but does not state that the repaired conduit’s exposed coupling was under mechanical strain."
+      },
+      "beeb8eb9-01af-43a1-8065-fbf95f2140c0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses selling survey logs and does not mention any repaired conduit or mechanically strained coupling."
       }
     },
     "hard-10": {
@@ -1448,6 +1528,18 @@
       "6c30b10f-1719-4960-966e-34ca818d67ea": {
         "acceptable": false,
         "reasoning": "The candidate passage mentions cargo-bay damage and structural braces, but not that removing part of the modular cargo bay could compromise how cargo is secured."
+      },
+      "952aaa13-c971-4c89-a3a1-7efde6ebe8fc": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses Odile’s survey logs and finding buyers, not the risk of removing part of the modular cargo bay."
+      },
+      "c0cad6e1-ecf9-4c80-b628-1fe42eb441bb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes entering a dark passage and contains no risk related to removing part of the modular cargo bay."
+      },
+      "14cf56e8-0bac-4605-8d79-651fe8cf7b06": {
+        "acceptable": false,
+        "reasoning": "The candidate discusses the conduit warning and docking clamps, but does not mention that removing part of the cargo bay could compromise how cargo is secured."
       }
     },
     "hard-12": {
@@ -1550,6 +1642,14 @@
       "7b305615-ab99-4ba1-8079-1ae316d45e02": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention picking up the portable O2 canister or the equipment locker aboard the Kestrel."
+      },
+      "2d5514f5-de6b-43ed-af11-9b108a0c3e3f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses a pawnshop and salvage buyers but does not say where the portable O2 canister was picked up."
+      },
+      "1209a367-fe43-4436-bcd7-42fe0680e973": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses selling survey logs and does not state where the portable O2 canister was picked up."
       }
     },
     "hard-13": {
@@ -1696,6 +1796,22 @@
       "524cd9fd-2db7-472a-a71a-d1a11d9ba035": {
         "acceptable": false,
         "reasoning": "The candidate passage describes Juno searching the reactor spine and does not mention freeing the manual catch by pulling it while pushing the obstructing cable bundle aside."
+      },
+      "bdc4bf33-d735-4938-82ae-e7aad0740c8b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns inspecting a damaged conduit and does not describe freeing the manual catch by pulling it while pushing the cable bundle aside."
+      },
+      "993226fd-f07c-41bd-8341-14e251c9b7bc": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes using a suit light in a dark section and does not mention freeing the manual catch by pulling it while pushing the cable bundle aside."
+      },
+      "48498408-d2a0-4c3f-b4a8-9e73236f1802": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not describe freeing the manual catch by pulling it while pushing the obstructing cable bundle aside through the gap."
+      },
+      "ff90bcf6-1efd-4e4d-b871-896d8aa298e4": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes searching for a security terminal and does not say how the manual catch was freed."
       }
     },
     "hard-14": {
@@ -1842,6 +1958,26 @@
       "e3978286-69ff-4432-b788-0d160176022d": {
         "acceptable": false,
         "reasoning": "The candidate mentions gas venting across the passage, but does not state that it made the deeper passage unsafe to enter or prevented searching there."
+      },
+      "2d5514f5-de6b-43ed-af11-9b108a0c3e3f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses finding salvage or ship-log buyers and does not mention the gas venting that blocked deeper search for Dr. Brandt."
+      },
+      "8220698b-ecd7-4812-b389-6b76fef49d72": {
+        "acceptable": true,
+        "reasoning": "The candidate says the gas stream still blocked safe entry through the breach, keeping Juno from entering the deeper passage."
+      },
+      "47df86c8-ed8d-4836-9d4f-b90ed9bcf489": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes a trapped survey drone and does not mention gas venting or an unsafe passage preventing a deeper search for Dr. Brandt."
+      },
+      "4a64054b-2b0d-4e73-980e-4d0630525121": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes a scanner search for Odile and does not mention gas venting or an unsafe passage preventing a deeper search for Dr. Brandt."
+      },
+      "48498408-d2a0-4c3f-b4a8-9e73236f1802": {
+        "acceptable": true,
+        "reasoning": "The candidate says the gas stream blocked Juno from reaching and entering the passage beyond the breach, conveying the same obstacle described in the reference."
       }
     },
     "hard-15": {
@@ -1932,6 +2068,10 @@
       "80b3f132-b545-4d68-99ca-850db52fa642": {
         "acceptable": false,
         "reasoning": "The candidate passage discusses a docking ring and damaged power conduit, not the survey drone’s bent rotor arm."
+      },
+      "1209a367-fe43-4436-bcd7-42fe0680e973": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses selling survey logs and credits, not damage to the survey drone."
       }
     },
     "hard-16": {
@@ -2118,6 +2258,10 @@
       "307bc18a-6445-49b3-962a-f2be64d91070": {
         "acceptable": true,
         "reasoning": "The candidate says the breach is venting gas into the passage, making the area beyond unsafe and blocking access."
+      },
+      "e57cc92b-3f64-455a-8c7c-85a948a86931": {
+        "acceptable": false,
+        "reasoning": "The candidate only says the speaker will check the survey drone and does not mention escaping gas venting across the route."
       }
     },
     "hard-17": {
@@ -2376,6 +2520,10 @@
       "307bc18a-6445-49b3-962a-f2be64d91070": {
         "acceptable": false,
         "reasoning": "The candidate passage discusses Juno and a damaged survey drone, but does not mention where the proprietor suggested looking for buyers."
+      },
+      "80793cce-9c3e-4bf8-836b-c787c19cae0b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the salvage counters or where the proprietor suggested looking for buyers."
       }
     },
     "hard-20": {
@@ -2478,6 +2626,10 @@
       "971b50bb-cf7f-4b1b-bb50-b09690de69d2": {
         "acceptable": false,
         "reasoning": "The candidate passage discusses a pawnshop sale and contains no information about what the trader does not track."
+      },
+      "5fe40c9b-99e7-451a-b167-073d7a96ca6d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses the docking ring and does not mention what the trader keeps track of."
       }
     },
     "hard-21": {
@@ -2646,6 +2798,10 @@
       "2d5514f5-de6b-43ed-af11-9b108a0c3e3f": {
         "acceptable": false,
         "reasoning": "The candidate says the proprietor has no buyer or contact to point Juno to, but it does not state the policy that he does not broker introductions."
+      },
+      "1554be4f-e7d8-4d16-8138-d38e4fcce302": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only says the slate was sold at the pawnshop and does not mention whether the proprietor introduces customers to buyers."
       }
     },
     "hard-23": {
@@ -2720,6 +2876,10 @@
       "6254f548-e360-4256-9abc-e7a534fb5f59": {
         "acceptable": false,
         "reasoning": "The reference says Juno offered Brother Calix an additional 300 credits, but the candidate passage only discusses buying repair materials."
+      },
+      "cfe8d779-4a85-493a-88b7-b51e5f97547f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention an offer of 300 credits to Brother Calix."
       }
     },
     "hard-24": {
@@ -2868,6 +3028,10 @@
       "61d3cfa2-743c-440f-8d20-2a78ae43b7d8": {
         "acceptable": false,
         "reasoning": "The candidate says Juno travels through the debris belt, but it does not state that installing the navigation core let her calculate routes through it again."
+      },
+      "10712a65-e9cc-476a-8716-160f869106b5": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses beacon signals and skimmer instruments, not installing a navigation core or calculating routes through the debris belt."
       }
     },
     "hard-26": {
@@ -2946,6 +3110,14 @@
       "1b745eed-747a-47db-b5ba-3434db026053": {
         "acceptable": false,
         "reasoning": "The candidate says the conduit is secured but does not explain that there was no solid point nearby to brace it against."
+      },
+      "8220698b-ecd7-4812-b389-6b76fef49d72": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns gas flow at a breach and does not mention the exposed coupling or a lack of a solid bracing point."
+      },
+      "48498408-d2a0-4c3f-b4a8-9e73236f1802": {
+        "acceptable": false,
+        "reasoning": "The candidate describes bracing against a breach and rail, not the exposed coupling lacking a solid point in the surrounding structure."
       }
     },
     "hard-27": {
@@ -3114,6 +3286,14 @@
       "1b745eed-747a-47db-b5ba-3434db026053": {
         "acceptable": false,
         "reasoning": "The candidate passage discusses assessing a transfer hatch and does not mention the guards offering supplies or credits."
+      },
+      "714bf205-772f-427f-b838-c3731bbdf38c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes pawnshop and market interactions, but contains no offer from guards to share supplies or pay credits."
+      },
+      "10e1d259-9bad-4667-927f-1b67eab2469d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes leaving a pawnshop and asking salvage counters about buyers; it does not mention the guards’ offer."
       }
     },
     "hard-29": {
@@ -3208,6 +3388,30 @@
       "1554be4f-e7d8-4d16-8138-d38e4fcce302": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention Aiden Kessler or his department."
+      },
+      "1c60e86f-a8b5-4752-a8d4-9ca19c15dbb3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Aiden Kessler or his department."
+      },
+      "5a738832-2e0a-4318-a758-f7537fe800a4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Aiden Kessler or his department."
+      },
+      "52c27a3f-f90a-4288-97d6-335f3a35a8cd": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Aiden Kessler or his department."
+      },
+      "2d5514f5-de6b-43ed-af11-9b108a0c3e3f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Aiden Kessler or his department."
+      },
+      "b8572a84-e573-4bf8-b2ae-b87d922c74eb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Aiden Kessler or his department."
+      },
+      "7d933640-58d6-43e5-97ae-e0f8c9da6ff1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Aiden Kessler or the department he worked in."
       }
     },
     "hard-30": {
@@ -3450,6 +3654,14 @@
       "aa72caa9-c4cb-4a62-8820-f1a18de79381": {
         "acceptable": false,
         "reasoning": "The candidate mentions a crease in the cargo-bay section and a closed seam, but does not report the fresh scoring or explicitly state that there was no puncture or escaping air."
+      },
+      "ef2e6046-f5e8-4ab2-947b-fa38140e9a6e": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes purchasing structural braces and does not state what hull damage was found after the ambush."
+      },
+      "10e1d259-9bad-4667-927f-1b67eab2469d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes going to salvage counters and contains no information about hull damage after the ambush."
       }
     },
     "hard-33": {
@@ -3528,6 +3740,10 @@
       "ab062ce3-a207-4a29-8d97-f2cd134fbbcc": {
         "acceptable": false,
         "reasoning": "The candidate mentions Port Halcyon only as the location of a pawnshop, not as the suggested destination for proper bracing materials."
+      },
+      "c5a58b07-75ae-4459-8a8c-2ac7de427d1c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not state that Juno suggested going to Port Halcyon."
       }
     },
     "hard-34": {
@@ -3630,6 +3846,10 @@
       "f48edaac-a878-422d-93ca-9ba9b150126e": {
         "acceptable": false,
         "reasoning": "The candidate passage does not state how much the structural braces cost."
+      },
+      "599415b7-4b36-4808-a0d2-88dbbac1c51b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses a pending review and Priya’s authorization, not the cost of the structural braces."
       }
     },
     "hard-35": {
@@ -3700,6 +3920,10 @@
       "81519822-e65f-4133-b11d-6a8b938c0dac": {
         "acceptable": false,
         "reasoning": "The candidate passage says Juno has 680 credits but does not mention the plating’s price or how many credits she is short."
+      },
+      "971b50bb-cf7f-4b1b-bb50-b09690de69d2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions a 180-credit sale but does not state that Juno was 120 credits short of buying the plating."
       }
     },
     "hard-36": {
@@ -3828,6 +4052,10 @@
       "524cd9fd-2db7-472a-a71a-d1a11d9ba035": {
         "acceptable": false,
         "reasoning": "The candidate mentions sealed access points but not the panel with a small gap that blocked the way to the beacon."
+      },
+      "ea3a3f40-6f85-4201-9c57-f93e35dc2e02": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions a service access hatch but does not state that a panel with a small gap along one edge blocked the way to the beacon."
       }
     },
     "hard-38": {
@@ -3996,6 +4224,10 @@
       "16c03c48-6c8c-4a7e-a2f2-cff0bf0d8929": {
         "acceptable": false,
         "reasoning": "The candidate concerns a strained docking-ring conduit and does not state that the laboratory cables were left intact because there was no clear connection point."
+      },
+      "47df86c8-ed8d-4836-9d4f-b90ed9bcf489": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes a drone trapped by cables, not leaving laboratory cables intact because there was no clear power connection point."
       }
     },
     "hard-44": {
@@ -4164,6 +4396,10 @@
       "2d5514f5-de6b-43ed-af11-9b108a0c3e3f": {
         "acceptable": false,
         "reasoning": "The candidate says the proprietor has no name or contact to offer about potential salvage or ship-log buyers, but it does not state what the pawnshop ledger contained about the slate’s buyer."
+      },
+      "84cdce70-4072-4653-b27c-257e04abc4da": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses the security team and a contraband stash, but says nothing about the pawnshop ledger or its buyer details."
       }
     },
     "hard-48": {
@@ -4292,6 +4528,18 @@
       "5f28323e-c0a0-4af2-b204-1a3c9cf6a9d9": {
         "acceptable": false,
         "reasoning": "The candidate passage discusses searching a laboratory for Lantern project documents and does not state that a supervisor could not provide Juno’s authorization for Priya’s release."
+      },
+      "6c30b10f-1719-4960-966e-34ca818d67ea": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not state that the supervisor could not provide Juno’s authorization for Priya’s release."
+      },
+      "4911d0e5-425d-4dc6-8bf3-dbb83f14eb94": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns a pending access request and does not say what a supervisor could not provide in Juno’s place."
+      },
+      "65c51f40-a8d0-43ed-b1d6-0807970b1a37": {
+        "acceptable": false,
+        "reasoning": "The candidate describes working on a power coupling and does not state that the supervisor cannot provide Juno’s authorization for Priya’s release."
       }
     },
     "hard-50": {
@@ -4382,6 +4630,14 @@
       "6b67faa6-8f62-4dc3-807f-b48321395feb": {
         "acceptable": false,
         "reasoning": "The candidate passage does not say the lockup was a security station; it discusses risks of using the cutter on a transfer hatch."
+      },
+      "e12cfa26-d404-491d-8ae8-43ef75062847": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes using the plasma cutter at a service door, but does not say the lockup was a security station."
+      },
+      "2d5372b2-3372-434d-a4df-f96925934f3b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say the lockup was a security station; it only describes the Kestrel’s cargo bay."
       }
     },
     "hard-51": {
@@ -4538,6 +4794,10 @@
       "e6253a0c-af87-47f6-92a6-7fed1f742d21": {
         "acceptable": false,
         "reasoning": "The candidate discusses docking-ring and hatch diagnostics, but does not confirm stable reactor regulation, no active faults, or steady life-support readings."
+      },
+      "f48edaac-a878-422d-93ca-9ba9b150126e": {
+        "acceptable": false,
+        "reasoning": "The candidate says the reactor remains steady, but it does not mention a diagnostic confirming no active faults or steady life-support readings."
       }
     },
     "hard-53": {
@@ -4690,6 +4950,14 @@
       "307bc18a-6445-49b3-962a-f2be64d91070": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention pressing a retaining clip into place with an insulated tool."
+      },
+      "85a74318-d7b3-41fc-a7a0-49ed4c3a7388": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses searching equipment stores and cargo-bay supports, but does not say what was used to press the retaining clip into place."
+      },
+      "ed2354ec-1dcf-47a7-bd74-ed8560f1b5f8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention pressing a bent retaining clip into place with an insulated tool."
       }
     },
     "hard-55": {
@@ -4756,6 +5024,10 @@
       "aac6431e-465b-4a6a-8da1-a698e9be66b4": {
         "acceptable": false,
         "reasoning": "The candidate mentions the risk of cutting while the pressure is unknown, but does not state that Voren forbade cutting into the hatch before checking the pressure."
+      },
+      "c02a66d3-e8c0-4337-9de4-ebace6262c5b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes securing the conduit and reattaching its plate, but does not state that Voren forbade cutting into the hatch before checking the pressure."
       }
     },
     "hard-56": {
@@ -4846,6 +5118,10 @@
       "19713308-17ef-4b9d-b775-d21f7e318b59": {
         "acceptable": false,
         "reasoning": "The candidate passage discusses a pending review and authorization, not guards being unable to offer an access code or override."
+      },
+      "65c51f40-a8d0-43ed-b1d6-0807970b1a37": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes working on a power coupling and does not mention an access code or override."
       }
     },
     "hard-57": {
@@ -4936,6 +5212,10 @@
       "3f1b37ef-fc36-4136-8ed2-4adf0f7dbdb5": {
         "acceptable": true,
         "reasoning": "The candidate confirms Juno was looking for signs of Hal Voren or potential traps."
+      },
+      "993226fd-f07c-41bd-8341-14e251c9b7bc": {
+        "acceptable": false,
+        "reasoning": "The candidate describes searching for signs of Odile or power sources, not Hal Voren or potential traps."
       }
     },
     "hard-58": {

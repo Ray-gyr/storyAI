@@ -5,24 +5,28 @@
  * 让故事模型回答每道有效题；裁判对照参考段落（来源片段原文）判定 correct / contradicts / absent。
  *
  * --originals N：排名前 N 的记忆附上片段原文（不传则用线上配置 HYBRID_RETRIEVAL_CONFIG.originalTextFor）
+ * --long：长摘要实验（long_summaries.ts）。记忆取 retrieval.json 中 v2_long 在该快照的排序（同一改写结果），
+ *         摘要换成长摘要，原文与线上相同（memoryContent）
  *
- * 运行：npx tsx --env-file=.env scripts/eval/benchmark/e2e.ts <dev|test> [--originals N] [--tag name]
+ * 运行：npx tsx --env-file=.env scripts/eval/benchmark/e2e.ts <dev|test> [--originals N] [--long] [--tag name]
  * 输出：out/<story>/e2e_<tag>.json（v2 冻结时的结果为 e2e.json）
  */
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { join } from "node:path";
-import { HYBRID_RETRIEVAL_CONFIG, retrieveMemories, startDenseSearch } from "../../../src/lib/hybridRetriever";
+import { HYBRID_RETRIEVAL_CONFIG, RetrievedMemory, retrieveMemories, startDenseSearch } from "../../../src/lib/hybridRetriever";
+import { memoryContent, toIndexedMemory } from "../../../src/lib/memoryStore";
 import { getStoryLLM } from "../../../src/lib/Init";
 import { storyWorkerPrompt } from "../../../src/lib/prompt";
 import { writerPromptInputs } from "../../../src/lib/storyGenerator";
 import { judgeAnswer, JUDGE_VERSION, tallyVerdicts } from "./judge";
-import { chunkContent, loadJsonIfExists, loadQuestions, loadStory, mapLimit, readJson, RetrievalRow, writeJson } from "./common";
+import { BENCH_DIR, chunkContent, loadJsonIfExists, loadQuestions, loadStory, mapLimit, readJson, RetrievalRow, writeJson } from "./common";
 
 const STORY_NAME = process.argv[2];
 const SNAPSHOT = 300;
 const argValue = (flag: string) => { const i = process.argv.indexOf(flag); return i >= 0 ? process.argv[i + 1] : undefined; };
 const ORIGINALS = argValue("--originals") !== undefined ? Number(argValue("--originals")) : HYBRID_RETRIEVAL_CONFIG.originalTextFor;
-const TAG = argValue("--tag") ?? `originals${ORIGINALS}`;
+const LONG = process.argv.includes("--long");
+const TAG = argValue("--tag") ?? `originals${ORIGINALS}${LONG ? "_long" : ""}`;
 
 async function main() {
     const { dir, sessionId, chunks, snapshots } = loadStory(STORY_NAME);
@@ -41,12 +45,23 @@ async function main() {
         .map(c => `[turns ${c.start_turn}-${c.end_turn}]\n${chunkContent(c)}`)
         .join("\n\n");
 
+    const longSummaries = LONG ? readJson<Record<string, string>>(join(BENCH_DIR, "out", "long_summaries", `${sessionId}.json`)) : {};
+    // 与 retrieveMemories 相同的形状：排名、前 ORIGINALS 个附原文、按轮次排序
+    const longMemories = (ranked: string[]): RetrievedMemory[] => ranked
+        .map((id, i) => {
+            const c = byId.get(id)!;
+            // 写作 prompt 只用到摘要、轮次与原文；Chunk 缺少的打分字段不影响
+            return { ...toIndexedMemory(c as never), dense_summary: longSummaries[id], rank: i + 1, content: i < ORIGINALS ? memoryContent(c.original_text) : undefined };
+        })
+        .sort((a, b) => a.start_turn - b.start_turn);
+
     const chain = storyWorkerPrompt.pipe(getStoryLLM()).pipe(new StringOutputParser());
 
     const results = await mapLimit(valid, 6, async q => {
         // 复用检索阶段在该快照上的改写结果，与 retrieval.json 中的 v2 排序一致
-        const intent = rows.find(r => r.qid === q.qid && r.snapshot === SNAPSHOT)!.intent;
-        const memories = await retrieveMemories({
+        const row = rows.find(r => r.qid === q.qid && r.snapshot === SNAPSHOT)!;
+        const intent = row.intent;
+        const memories = LONG ? longMemories(row.rankings.v2_long) : await retrieveMemories({
             rawInput: q.question,
             intent,
             dense: startDenseSearch(q.question, sessionId, { createdBefore: snap.taken_at }),
@@ -83,7 +98,7 @@ async function main() {
     };
     console.log(JSON.stringify(summary, null, 2));
     console.log(`variant: ${TAG} (original text for top ${ORIGINALS})`);
-    writeJson(join(dir, `e2e_${TAG}.json`), { variant: { tag: TAG, originalTextFor: ORIGINALS }, summary, results });
+    writeJson(join(dir, `e2e_${TAG}.json`), { variant: { tag: TAG, originalTextFor: ORIGINALS, longSummaries: LONG }, summary, results });
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

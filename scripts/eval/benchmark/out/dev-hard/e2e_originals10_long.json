@@ -1,0 +1,711 @@
+{
+  "variant": {
+    "tag": "originals10_long",
+    "originalTextFor": 10,
+    "longSummaries": true
+  },
+  "summary": {
+    "judge": "judge-v2/gpt-6-luna",
+    "n": 47,
+    "all": {
+      "correct": 45,
+      "contradicts": 2,
+      "cannot_recall": 0,
+      "absent": 0
+    },
+    "gold_retrieved": {
+      "n": 47,
+      "correct": 45,
+      "contradicts": 2,
+      "cannot_recall": 0,
+      "absent": 0
+    },
+    "gold_not_retrieved": {
+      "n": 0,
+      "correct": 0,
+      "contradicts": 0,
+      "cannot_recall": 0,
+      "absent": 0
+    },
+    "by_type": {
+      "detail": {
+        "correct": 45,
+        "contradicts": 2,
+        "cannot_recall": 0,
+        "absent": 0
+      },
+      "vague": {
+        "correct": 0,
+        "contradicts": 0,
+        "cannot_recall": 0,
+        "absent": 0
+      },
+      "temporal": {
+        "correct": 0,
+        "contradicts": 0,
+        "cannot_recall": 0,
+        "absent": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "qid": "hard-1",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference passage says the fresh incoming transmission resolved into the single word “LANTERN,” matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The incoming transmission contained one word: “LANTERN.”"
+    },
+    {
+      "qid": "hard-2",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly identifies the fresh scrape marks leading to the closed service door and continuing beneath it.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Fresh scrape marks along the corridor led to the closed service door and continued beneath its lower seam."
+    },
+    {
+      "qid": "hard-3",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly says the drone’s orange survey tape matched the tape on Odile’s equipment cases.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "A narrow strip of orange survey tape was wrapped around the drone’s casing. It matched the tape on Odile’s equipment cases."
+    },
+    {
+      "qid": "hard-4",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly states that the gas jet tore the cable from Juno’s glove and swept it through the breach into the dark passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Juno cut a short section from the loose cable and held it across her chest as she edged toward the breach, but it bent in the gas stream and failed to shield her. The jet tore it from her glove and whipped it through the opening into the dark passage; Juno remained on the near side, with the cable gone beyond the breach."
+    },
+    {
+      "qid": "hard-5",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly identifies the cable bundle crossing the panel’s upper edge and partly blocking access to the recessed catch.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "A bundle of hanging cables crossed the panel’s upper edge and partly blocked access. The recessed catch itself moved slightly, then stopped against resistance."
+    },
+    {
+      "qid": "hard-6",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply accurately describes bracing the conduit, aligning and seating the plug, and tightening the collar by hand until the coupling held.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You braced the bent conduit, aligned the plug’s flat side with the socket guide, and seated it. Then you tightened the ridged collar by hand until the coupling closed and held."
+    },
+    {
+      "qid": "hard-7",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply repeats the warning shown in the reference, which says to avoid repeated clamp cycles.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The warning said: **POWER CONDUIT UNDER MECHANICAL STRAIN — AVOID REPEATED CLAMP CYCLES**."
+    },
+    {
+      "qid": "hard-8",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference passage says you selected RELEASE CLAMPS, and the clamps retracted.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You selected **RELEASE CLAMPS** on the docking-clamp control screen. The clamps retracted from the Kestrel."
+    },
+    {
+      "qid": "hard-9",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply places the strain near the repaired coupling, consistent with the passage identifying the exposed coupling as under mechanical strain.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The conduit was under strain near the repaired coupling: the run was pulled taut, with a shallow bend near its support. It shifted slightly against the support with the ring’s hum."
+    },
+    {
+      "qid": "hard-11",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply says removing part of the cargo-bay structure could compromise how cargo was secured, matching the reference passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Priya said part of the modular cargo-bay structure might provide a rigid support for the strained conduit, but removing it could compromise how cargo was secured. You and Priya checked the Kestrel’s equipment stores first and found no suitable brace; the cargo-bay structure remained only a possible source, and you had not removed any part of it."
+    },
+    {
+      "qid": "hard-12",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Juno retrieved the portable O2 canister from the equipment locker aboard the Kestrel and checked its fittings before securing it for transport.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You retrieved the portable O2 canister from the equipment locker aboard the Kestrel after returning from Meridian-9’s hydroponics deck. You checked its fittings and secured it for transport."
+    },
+    {
+      "qid": "hard-13",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply accurately says Juno freed the catch by pulling it while pressing the obstructing cable bundle through the narrow gap.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Juno braced her forearm against the bulkhead, pulled the catch, and pressed the obstructing cable bundle through the narrow gap beside the panel. After easing the pressure and shifting her hand, she pushed again while drawing the latch toward her; the bundle slid a few centimeters, the catch released, and she opened the panel slightly."
+    },
+    {
+      "qid": "hard-14",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says the breach kept venting gas into the passage, making the deeper route unsafe to enter, which is what the reply states.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The breach in Meridian-9’s hydroponics passage kept venting gas, making the route beyond it unsafe; Juno stayed clear of the stream and could not reach the deeper section. The cable-filled compartment below offered no alternate way through, and repeated searches of the accessible deck, bulkhead, and inert survey drone revealed no sign or message from Dr. Brandt."
+    },
+    {
+      "qid": "hard-15",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply accurately states that the drone’s rotor arm was sharply bent against its body, matching the reference passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The survey drone’s casing was intact, but one rotor arm was bent sharply against its body. Its status lamp stayed dark, and it did not respond when you tried to power it on."
+    },
+    {
+      "qid": "hard-16",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says escaping gas vented across the route beyond the breach and made it unsafe to enter; the reply reflects that accurately.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "A breach in the hydroponics deck’s sealed bulkhead was venting gas into the passage, and the escaping stream crossed the route beyond the buckled section. The pressure reading was just above the red danger zone, so the gas flow made the passage unsafe to enter."
+    },
+    {
+      "qid": "hard-17",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Odile’s final transmission was “Lantern,” matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The final transmission in Odile’s survey logs was one word: “LANTERN.”"
+    },
+    {
+      "qid": "hard-19",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The proprietor explicitly suggested asking around the salvage counters, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The proprietor suggested you ask around the salvage counters in Port Halcyon."
+    },
+    {
+      "qid": "hard-20",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The trader explicitly said they don’t keep track of every wreck in the belt, matching the expected answer.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The trader said they buy what people bring back, but don’t keep track of every wreck in the belt."
+    },
+    {
+      "qid": "hard-21",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says the cracked slate was sold for 180 credits, matching the reply’s amount.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Juno sold Odile’s cracked data slate and survey logs for 180 credits. The sale brought her total to 680 credits."
+    },
+    {
+      "qid": "hard-22",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The pawnbroker said he would not broker introductions or point Juno to another buyer, but the passage does not say he suggested asking the salvage counters.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The pawnbroker said he didn’t broker introductions and couldn’t point you to another buyer. He suggested asking the salvage counters, but couldn’t promise anyone there would be interested."
+    },
+    {
+      "qid": "hard-23",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Juno offered Calix 300 credits in addition to Odile’s brass compass, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Juno offered Brother Calix an additional 300 credits for the navigation core, along with Odile’s brass compass."
+    },
+    {
+      "qid": "hard-24",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Calix accepted 300 credits and kept Odile’s brass compass in exchange for the core, leaving Juno with 380 credits, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You paid Brother Calix 300 credits and gave him Odile’s brass compass in exchange for the navigation core. He kept the compass without promising to return it, and you had 380 credits left after the deal."
+    },
+    {
+      "qid": "hard-25",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says the installed core brought navigation online and enabled the Kestrel to calculate routes through the debris belt, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Installing the navigation core brought the Kestrel’s navigation system online and displayed a local plot of the debris belt. It let Juno set destinations and calculate routes, though the Meridian-9 approach had uncertain debris positions and no recent approach data."
+    },
+    {
+      "qid": "hard-26",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly says the surrounding structure offered no solid point to brace the coupling against; its added claim about Juno later returning with braces does not conflict with the passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The surrounding structure offered no solid point to brace the exposed coupling, and the conduit was still under strain. Later, Juno returned with structural braces and secured the conduit."
+    },
+    {
+      "qid": "hard-27",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference passage says Juno accused the guard of stealing from the cargo holds, which matches the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You accused the guard of stealing from the cargo holds."
+    },
+    {
+      "qid": "hard-28",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply accurately states that the guards offered a share of the supplies after keeping what their team needed, or credits at a price they would decide whether the stash justified.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "They offered you a share of the stash’s supplies after their team inventoried it and kept what they needed. Alternatively, you could name a price in credits, which they would decide whether the stash justified."
+    },
+    {
+      "qid": "hard-29",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage identifies Aiden Kessler with the Logistics Department, which the reply correctly states.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You said Aiden Kessler worked in the Logistics Department."
+    },
+    {
+      "qid": "hard-31",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply accurately gives the two options—wait for Kessler’s confirmation or withdraw the request—and also reflects that the guard couldn’t connect Juno to Voren from the checkpoint.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The guard said you could wait for Kessler’s confirmation or withdraw the request. He couldn’t connect you to Director Voren from the checkpoint."
+    },
+    {
+      "qid": "hard-32",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply matches the passage: it describes fresh scoring and a shallow crease on the cargo-bay plating, with the seam closed and no puncture or escaping air.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You found fresh scoring and a shallow crease along the Kestrel’s cargo-bay plating. The seam remained closed, with no puncture or sign of escaping air."
+    },
+    {
+      "qid": "hard-34",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Juno paid 420 credits for the braces and had 140 credits left, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Juno paid 420 credits for the structural braces, leaving her with 140 credits."
+    },
+    {
+      "qid": "hard-35",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says the plating cost 260 credits and Juno had 140, leaving her 120 credits short; the attendant required full payment.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The spare plating cost 260 credits, and Juno had 140, leaving her 120 credits short. The depot attendant would not release the sheets without full payment."
+    },
+    {
+      "qid": "hard-36",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply matches the passage: the receiver’s signal strengthened across the platform and weakened when turned away, localizing the beacon to the platform itself rather than beyond it.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You first localized the beacon signal to the Tessaly cloud skimmer platform. It strengthened as you swept the receiver across the platform and weakened when you turned away, confirming the source was on the platform itself."
+    },
+    {
+      "qid": "hard-37",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly says a service panel beside the bend blocked the way and had a small gap along one edge.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "A service panel beside the bend blocked the passage to the beacon. It had a narrow gap, but a retaining bar held it shut; the bar was secured by two recessed fasteners."
+    },
+    {
+      "qid": "hard-38",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply matches the passage: you braced against the frame and pressed both recessed catches simultaneously, releasing the cover.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You braced one hand against the platform frame and pressed both recessed catches at once, using a thumb on each. They clicked, and the narrow cover slid free."
+    },
+    {
+      "qid": "hard-43",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says Juno found no usable power control or emergency panel and left the cables intact rather than cutting into them without a clear connection point.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You left the laboratory cables intact because you found no accessible power control or emergency panel, and no clear connection point to use. You chose not to cut into the wiring without knowing where it led."
+    },
+    {
+      "qid": "hard-46",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The proprietor remembered the sale but not who bought Odile’s data slate and survey logs, and could not provide the buyer’s name or contact information.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The proprietor said they remembered the sale, but not who bought Odile’s data slate and survey logs. They couldn’t give you the buyer’s name or contact information."
+    },
+    {
+      "qid": "hard-47",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply accurately states that the ledger listed the slate and sale amount but no buyer name or contact information.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The ledger listed Odile’s cracked data slate and the 180-credit sale. It had no buyer’s name or contact information."
+    },
+    {
+      "qid": "hard-49",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply accurately states that the supervisor could review Priya’s hold but could not provide Juno’s authorization in her place.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The attendant said a supervisor could review Priya’s hold but could not provide your authorization in your place. If the supervisor changed the hold, the attendant would be notified; otherwise, Priya still needed your authorization to be released."
+    },
+    {
+      "qid": "hard-50",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly says the attendant prohibited the cutter because the lockup was a security station, and notes there was no sealed bulkhead there.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The attendant stopped you because the lockup was a security station and said you couldn’t use the plasma cutter there; there was no sealed bulkhead to cut, only the terminal beside Priya’s partition. They told you to put the cutter away."
+    },
+    {
+      "qid": "hard-51",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "Priya explicitly asked to check the reactor and life-support readings before buying anything.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Priya wanted to check the Kestrel’s reactor and life-support readings before buying supplies."
+    },
+    {
+      "qid": "hard-52",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply matches the passage: the diagnostic showed stable regulation with no active faults, and life-support readings held steady.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The follow-up diagnostic confirmed stable reactor regulation with no active faults; the output settled within its normal operating range. Life-support readings stopped fluctuating and held steady."
+    },
+    {
+      "qid": "hard-53",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says the conduit was secured with structural braces, and the reply states that you used structural braces.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You secured the conduit with structural braces. You used the insulated hand tool to press the retaining clip into place, then fastened the protective plate with its existing fasteners."
+    },
+    {
+      "qid": "hard-54",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Juno used the insulated tool to press the bent retaining clip into place, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You used the insulated hand tool to press the bent retaining clip against the reactor regulator connector."
+    },
+    {
+      "qid": "hard-55",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly states that Voren forbade cutting into the transfer hatch until its pressure was known.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Voren permitted you to work the transfer-hatch controls but forbade cutting into the hatch until you knew the pressure. The hatch’s pressure status was unknown."
+    },
+    {
+      "qid": "hard-56",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The guards had no code or override to offer and said they could provide no separate terminal or hatch override; Voren’s permission only let Juno work the existing controls.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The Ostrander guards said they had no access code, override, separate terminal, or backup controls for the transfer hatch. Voren’s permission only allowed Juno to use the existing controls."
+    },
+    {
+      "qid": "hard-57",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reply correctly says you looked for Hal Voren or traps, but its claim that you searched farther down for Odile conflicts with the passage, where you stopped before the bend and left the passage beyond unexamined.",
+      "votes": [
+        "correct",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Beyond the cut transfer hatch, you scanned the dark passage for signs of Hal Voren or potential traps. Farther down the reactor spine, you searched for Odile."
+    },
+    {
+      "qid": "hard-59",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says the portable O2 canister was not in your carried gear and that you checked your suit supply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "After finding the portable O2 canister wasn’t in your carried gear, you checked your suit supply."
+    }
+  ]
+}

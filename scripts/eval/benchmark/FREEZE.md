@@ -57,3 +57,18 @@ The protocol asks for 10 temporal questions per pool. On the dev story, the earl
 - The writer receives all 10 retrieved memories with their original chunk text, listed oldest first with turn numbers.
 - Chosen on the dev story only: top 3 76/92, all 10 84/92.
 - Test run: `e2e.ts test --originals 10 --tag qset2_o10`, once. Reference run: `--originals 0 --tag qset2_o0`.
+
+---
+
+# Freeze record: v5 (fifth use of the test story, question set 2)
+
+**Frozen code:** see the commit that adds this record. See PROTOCOL.md Section 13.
+
+- The memory extractor writes long, detail-preserving summaries (rule 5 in `prompt.ts`), still with `gpt-4o-mini`. BM25 and the vector index both use them.
+- Fusion is unchanged: BM25 quota 3, top 10. The writer is unchanged from v4: all 10 memories with original text.
+- Chosen on the dev story only:
+  - Recall@10: 0.957 → 0.978 on question set 2, and 0.936 → 1.000 on dev-hard.
+  - End to end: 84/92 → 91/92.
+- Test runs:
+  1. `long_summaries.ts generate test` and `long_summaries.ts retrieve test`, then `label.ts test` and `analyze.py test`.
+  2. `e2e.ts test --long --tag qset2_v5`, once.
