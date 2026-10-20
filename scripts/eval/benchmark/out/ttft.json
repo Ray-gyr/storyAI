@@ -1,0 +1,691 @@
+{
+  "summary": {
+    "base": "https://story-ai-ray.vercel.app",
+    "measured_at": "2026-10-20T19:57:29.394Z",
+    "first_turn_cold": {
+      "n": 2,
+      "p50_s": 3.63,
+      "p95_s": 4.72,
+      "max_s": 4.72
+    },
+    "ttft_rounds_2_20": {
+      "n": 38,
+      "p50_s": 4.85,
+      "p95_s": 8.94,
+      "max_s": 9.84
+    },
+    "ttft_rounds_21_plus": {
+      "n": 40,
+      "p50_s": 6.07,
+      "p95_s": 10.56,
+      "max_s": 11.74
+    },
+    "ttft_recall_questions_21_plus": {
+      "n": 8,
+      "p50_s": 4.11,
+      "p95_s": 6.43,
+      "max_s": 6.43
+    },
+    "total_rounds_21_plus": {
+      "n": 40,
+      "p50_s": 7.36,
+      "p95_s": 12.01,
+      "max_s": 12.81
+    },
+    "lock_retries": 0
+  },
+  "sessions": [
+    {
+      "sessionId": "web-session-1792525849848",
+      "shared_redis": true,
+      "turns": [
+        {
+          "round": 1,
+          "input": "I wait patiently, watching the guard rotations to time my move perfectly.",
+          "ttft_ms": 4723,
+          "total_ms": 6308,
+          "chars": 696,
+          "lock_retries": 0
+        },
+        {
+          "round": 2,
+          "input": "I climb down from the ledge and prepare to jump to the truck.",
+          "ttft_ms": 4733,
+          "total_ms": 6167,
+          "chars": 657,
+          "lock_retries": 0
+        },
+        {
+          "round": 3,
+          "input": "I quickly climb down the last few rungs of the fire escape and sprint toward the alley exit.",
+          "ttft_ms": 5757,
+          "total_ms": 7004,
+          "chars": 523,
+          "lock_retries": 0
+        },
+        {
+          "round": 4,
+          "input": "I sprint towards the cargo truck's open back doors and leap inside.",
+          "ttft_ms": 8780,
+          "total_ms": 9800,
+          "chars": 524,
+          "lock_retries": 0
+        },
+        {
+          "round": 5,
+          "input": "What happened to the mysterious figure I saw earlier in the shadows?",
+          "ttft_ms": 6664,
+          "total_ms": 6948,
+          "chars": 113,
+          "lock_retries": 0
+        },
+        {
+          "round": 6,
+          "input": "I cautiously approach the shadows to get a better look at the mysterious figure.",
+          "ttft_ms": 7071,
+          "total_ms": 8183,
+          "chars": 541,
+          "lock_retries": 0
+        },
+        {
+          "round": 7,
+          "input": "I quickly look for an opportunity to jump off the truck before it comes to a complete stop.",
+          "ttft_ms": 6564,
+          "total_ms": 8285,
+          "chars": 722,
+          "lock_retries": 0
+        },
+        {
+          "round": 8,
+          "input": "I quietly move out from behind the van and follow the convoy at a safe distance.",
+          "ttft_ms": 4553,
+          "total_ms": 5779,
+          "chars": 634,
+          "lock_retries": 0
+        },
+        {
+          "round": 9,
+          "input": "I approach the keypad and examine it for any clues or patterns that might help me unlock the door.",
+          "ttft_ms": 6512,
+          "total_ms": 8212,
+          "chars": 657,
+          "lock_retries": 0
+        },
+        {
+          "round": 10,
+          "input": "What did the worker say before entering the code?",
+          "ttft_ms": 3223,
+          "total_ms": 3497,
+          "chars": 88,
+          "lock_retries": 0
+        },
+        {
+          "round": 11,
+          "input": "I enter the code 1379 into the keypad.",
+          "ttft_ms": 4349,
+          "total_ms": 5667,
+          "chars": 667,
+          "lock_retries": 0
+        },
+        {
+          "round": 12,
+          "input": "I take the clipboard and examine the depot floor plan for the supervisor's office location.",
+          "ttft_ms": 4535,
+          "total_ms": 6131,
+          "chars": 696,
+          "lock_retries": 0
+        },
+        {
+          "round": 13,
+          "input": "I head towards the loading-floor entrance to access the supervisor’s office.",
+          "ttft_ms": 7687,
+          "total_ms": 8583,
+          "chars": 495,
+          "lock_retries": 0
+        },
+        {
+          "round": 14,
+          "input": "I quickly search for the cabinet key on the desk.",
+          "ttft_ms": 4648,
+          "total_ms": 5610,
+          "chars": 442,
+          "lock_retries": 0
+        },
+        {
+          "round": 15,
+          "input": "What happened to the person I saw leaving the room earlier?",
+          "ttft_ms": 3117,
+          "total_ms": 3629,
+          "chars": 125,
+          "lock_retries": 0
+        },
+        {
+          "round": 16,
+          "input": "I look around the room for any hidden exits or clues.",
+          "ttft_ms": 9844,
+          "total_ms": 11154,
+          "chars": 584,
+          "lock_retries": 0
+        },
+        {
+          "round": 17,
+          "input": "I quickly hide the shift sheet in my pocket and pretend to put down the vials.",
+          "ttft_ms": 7635,
+          "total_ms": 8731,
+          "chars": 509,
+          "lock_retries": 0
+        },
+        {
+          "round": 18,
+          "input": "I quickly step back and prepare to throw one vial at the wall.",
+          "ttft_ms": 4853,
+          "total_ms": 6575,
+          "chars": 619,
+          "lock_retries": 0
+        },
+        {
+          "round": 19,
+          "input": "I lower the vial slightly and say, \"Alright, but I want a guarantee I'll make it out safely.",
+          "ttft_ms": 6720,
+          "total_ms": 8310,
+          "chars": 610,
+          "lock_retries": 0
+        },
+        {
+          "round": 20,
+          "input": "What happened to the other vials I had before this meeting with the supervisor?",
+          "ttft_ms": 5502,
+          "total_ms": 5921,
+          "chars": 198,
+          "lock_retries": 0
+        },
+        {
+          "round": 21,
+          "input": "I search the area for the two missing injector vials.",
+          "ttft_ms": 8440,
+          "total_ms": 9334,
+          "chars": 509,
+          "lock_retries": 0
+        },
+        {
+          "round": 22,
+          "input": "I grab the brass key labeled **DC** from the desk and head toward the loading bay.",
+          "ttft_ms": 11739,
+          "total_ms": 12813,
+          "chars": 519,
+          "lock_retries": 0
+        },
+        {
+          "round": 23,
+          "input": "I take the injector vials and the transfer slip from the discrepancy cage.",
+          "ttft_ms": 5951,
+          "total_ms": 7297,
+          "chars": 544,
+          "lock_retries": 0
+        },
+        {
+          "round": 24,
+          "input": "I quickly slide the carrier back into the cage and take a step back, raising my hands to show compliance.",
+          "ttft_ms": 9687,
+          "total_ms": 10828,
+          "chars": 592,
+          "lock_retries": 0
+        },
+        {
+          "round": 25,
+          "input": "What did Zhao say when I spoke to him earlier about the transfer?",
+          "ttft_ms": 5792,
+          "total_ms": 6883,
+          "chars": 553,
+          "lock_retries": 0
+        },
+        {
+          "round": 26,
+          "input": "I quickly turn and head down the open aisle to escape.",
+          "ttft_ms": 6190,
+          "total_ms": 7452,
+          "chars": 615,
+          "lock_retries": 0
+        },
+        {
+          "round": 27,
+          "input": "I quickly scan the yard for cover and duck behind the nearest pallet.",
+          "ttft_ms": 6744,
+          "total_ms": 8028,
+          "chars": 569,
+          "lock_retries": 0
+        },
+        {
+          "round": 28,
+          "input": "I quietly crawl away from the pallet toward the gate, staying low and using the shadows for cover.",
+          "ttft_ms": 6056,
+          "total_ms": 7454,
+          "chars": 623,
+          "lock_retries": 0
+        },
+        {
+          "round": 29,
+          "input": "I quickly duck behind the stack and assess my surroundings for an alternate exit.",
+          "ttft_ms": 5258,
+          "total_ms": 6944,
+          "chars": 656,
+          "lock_retries": 0
+        },
+        {
+          "round": 30,
+          "input": "What happened to the keys I found earlier? Are they still in my possession?",
+          "ttft_ms": 6403,
+          "total_ms": 7221,
+          "chars": 471,
+          "lock_retries": 0
+        },
+        {
+          "round": 31,
+          "input": "I quickly hide behind the service door, staying quiet to avoid detection.",
+          "ttft_ms": 5741,
+          "total_ms": 6934,
+          "chars": 614,
+          "lock_retries": 0
+        },
+        {
+          "round": 32,
+          "input": "I quietly pull the door shut, holding my breath and pressing against the wall to remain hidden.",
+          "ttft_ms": 5634,
+          "total_ms": 7077,
+          "chars": 574,
+          "lock_retries": 0
+        },
+        {
+          "round": 33,
+          "input": "I quietly scan the area for an escape route or something to use as a weapon.",
+          "ttft_ms": 8399,
+          "total_ms": 9435,
+          "chars": 538,
+          "lock_retries": 0
+        },
+        {
+          "round": 34,
+          "input": "I quietly move toward the steel door and listen for any sounds beyond before deciding to push it open.",
+          "ttft_ms": 6074,
+          "total_ms": 7364,
+          "chars": 568,
+          "lock_retries": 0
+        },
+        {
+          "round": 35,
+          "input": "What happened to the DC key? Did I see it earlier in the story?",
+          "ttft_ms": 6427,
+          "total_ms": 6943,
+          "chars": 289,
+          "lock_retries": 0
+        },
+        {
+          "round": 36,
+          "input": "I quietly hide behind a nearby crate, waiting for the guard to pass.",
+          "ttft_ms": 6121,
+          "total_ms": 7429,
+          "chars": 708,
+          "lock_retries": 0
+        },
+        {
+          "round": 37,
+          "input": "I quietly slip out from behind the crate and move towards the yard door.",
+          "ttft_ms": 10685,
+          "total_ms": 12013,
+          "chars": 590,
+          "lock_retries": 0
+        },
+        {
+          "round": 38,
+          "input": "I quietly push the door open further and step outside, keeping low to avoid being seen.",
+          "ttft_ms": 5135,
+          "total_ms": 6708,
+          "chars": 756,
+          "lock_retries": 0
+        },
+        {
+          "round": 39,
+          "input": "I quickly dart toward the service door, staying low and quiet.",
+          "ttft_ms": 7981,
+          "total_ms": 9225,
+          "chars": 566,
+          "lock_retries": 0
+        },
+        {
+          "round": 40,
+          "input": "What did the mysterious figure want with the package we found earlier?",
+          "ttft_ms": 4965,
+          "total_ms": 5359,
+          "chars": 199,
+          "lock_retries": 0
+        }
+      ]
+    },
+    {
+      "sessionId": "web-session-1792525849030",
+      "shared_redis": true,
+      "turns": [
+        {
+          "round": 1,
+          "input": "I steer the mule toward the narrow ridge, hoping for better footing and a strategic advantage.",
+          "ttft_ms": 3629,
+          "total_ms": 5430,
+          "chars": 725,
+          "lock_retries": 0
+        },
+        {
+          "round": 2,
+          "input": "I signal Tomas to retrieve the message from the rider.",
+          "ttft_ms": 3159,
+          "total_ms": 4768,
+          "chars": 738,
+          "lock_retries": 0
+        },
+        {
+          "round": 3,
+          "input": "I examine the message closely for any details or clues that might help decide our next move.",
+          "ttft_ms": 6778,
+          "total_ms": 8336,
+          "chars": 729,
+          "lock_retries": 0
+        },
+        {
+          "round": 4,
+          "input": "I fold the paper carefully and signal to Tomas to move toward the ridge, staying low and quiet.",
+          "ttft_ms": 4607,
+          "total_ms": 5906,
+          "chars": 836,
+          "lock_retries": 0
+        },
+        {
+          "round": 5,
+          "input": "What was the content of the message we found earlier about the three wagons?",
+          "ttft_ms": 2704,
+          "total_ms": 3159,
+          "chars": 159,
+          "lock_retries": 0
+        },
+        {
+          "round": 6,
+          "input": "I start heading north, keeping an eye out for any wagons or signs of sundown.",
+          "ttft_ms": 4845,
+          "total_ms": 6851,
+          "chars": 809,
+          "lock_retries": 0
+        },
+        {
+          "round": 7,
+          "input": "I signal to Tomas and move cautiously toward the edge to get a better view of the wagons.",
+          "ttft_ms": 3610,
+          "total_ms": 4720,
+          "chars": 599,
+          "lock_retries": 0
+        },
+        {
+          "round": 8,
+          "input": "I signal to Tomas to stay hidden and listen closely to the conversation below.",
+          "ttft_ms": 3284,
+          "total_ms": 4789,
+          "chars": 645,
+          "lock_retries": 0
+        },
+        {
+          "round": 9,
+          "input": "I motion for Tomas to move quietly towards the edge of the shelf for a better view of the blockade.",
+          "ttft_ms": 3736,
+          "total_ms": 5065,
+          "chars": 696,
+          "lock_retries": 0
+        },
+        {
+          "round": 10,
+          "input": "What did Kest offer Edda earlier in the story?",
+          "ttft_ms": 2456,
+          "total_ms": 2695,
+          "chars": 157,
+          "lock_retries": 0
+        },
+        {
+          "round": 11,
+          "input": "I quickly consider Kest's offer and glance at the setting sun, then approach him to negotiate further.",
+          "ttft_ms": 6414,
+          "total_ms": 8080,
+          "chars": 766,
+          "lock_retries": 0
+        },
+        {
+          "round": 12,
+          "input": "I clearly state my terms for passage and emphasize the importance of the reliquary remaining with us.",
+          "ttft_ms": 3804,
+          "total_ms": 5424,
+          "chars": 716,
+          "lock_retries": 0
+        },
+        {
+          "round": 13,
+          "input": "I motion to my companions to prepare the wagons for a quick escape in case things go south.",
+          "ttft_ms": 5713,
+          "total_ms": 7125,
+          "chars": 656,
+          "lock_retries": 0
+        },
+        {
+          "round": 14,
+          "input": "I nod to Tomas and move to the front of the caravan to guide the first wagon through the cut.",
+          "ttft_ms": 8557,
+          "total_ms": 10052,
+          "chars": 676,
+          "lock_retries": 0
+        },
+        {
+          "round": 15,
+          "input": "What did we decide about the riders we encountered earlier? Did we learn anything important from them?",
+          "ttft_ms": 7675,
+          "total_ms": 8474,
+          "chars": 425,
+          "lock_retries": 0
+        },
+        {
+          "round": 16,
+          "input": "I signal the caravan to move forward cautiously along the ridge, keeping an eye on the riders.",
+          "ttft_ms": 4803,
+          "total_ms": 6225,
+          "chars": 665,
+          "lock_retries": 0
+        },
+        {
+          "round": 17,
+          "input": "I motion for the caravan to halt and investigate the red cloth marker.",
+          "ttft_ms": 6375,
+          "total_ms": 7973,
+          "chars": 726,
+          "lock_retries": 0
+        },
+        {
+          "round": 18,
+          "input": "I tell the guards to investigate the disturbed salt shelf carefully.",
+          "ttft_ms": 6872,
+          "total_ms": 8448,
+          "chars": 771,
+          "lock_retries": 0
+        },
+        {
+          "round": 19,
+          "input": "I decide to question him further about Kest’s riders and their intentions.",
+          "ttft_ms": 8944,
+          "total_ms": 10616,
+          "chars": 712,
+          "lock_retries": 0
+        },
+        {
+          "round": 20,
+          "input": "What happened to the red cloth the mercenary was supposed to use to mark our position?",
+          "ttft_ms": 4770,
+          "total_ms": 5142,
+          "chars": 209,
+          "lock_retries": 0
+        },
+        {
+          "round": 21,
+          "input": "I approach the mercenary and demand to see the red cloth he has in his sleeve.",
+          "ttft_ms": 8848,
+          "total_ms": 10125,
+          "chars": 577,
+          "lock_retries": 0
+        },
+        {
+          "round": 22,
+          "input": "I examine the cloth closely for any hidden markings or signs of wear.",
+          "ttft_ms": 6183,
+          "total_ms": 7754,
+          "chars": 735,
+          "lock_retries": 0
+        },
+        {
+          "round": 23,
+          "input": "I suggest keeping the mercenary with the caravan for now.",
+          "ttft_ms": 9933,
+          "total_ms": 11437,
+          "chars": 673,
+          "lock_retries": 0
+        },
+        {
+          "round": 24,
+          "input": "I approach the prisoner and ask, \"What do you know about Kest and his plans?",
+          "ttft_ms": 4436,
+          "total_ms": 6072,
+          "chars": 794,
+          "lock_retries": 0
+        },
+        {
+          "round": 25,
+          "input": "What did the prisoner say about the reliquary earlier?",
+          "ttft_ms": 3126,
+          "total_ms": 3317,
+          "chars": 142,
+          "lock_retries": 0
+        },
+        {
+          "round": 26,
+          "input": "I carefully approach the ridge to observe the caravan's movements and scout the area for any dangers.",
+          "ttft_ms": 5961,
+          "total_ms": 7239,
+          "chars": 662,
+          "lock_retries": 0
+        },
+        {
+          "round": 27,
+          "input": "I carefully descend the ridge and make my way toward the caravan to catch up with Tomas and Jorik.",
+          "ttft_ms": 6063,
+          "total_ms": 7600,
+          "chars": 671,
+          "lock_retries": 0
+        },
+        {
+          "round": 28,
+          "input": "I suggest we stop the caravan to replace the broken wedge before we hit the ravine.",
+          "ttft_ms": 6124,
+          "total_ms": 7690,
+          "chars": 738,
+          "lock_retries": 0
+        },
+        {
+          "round": 29,
+          "input": "I instruct the guards to keep a sharp lookout and prepare to move the wagons across the ravine.",
+          "ttft_ms": 5471,
+          "total_ms": 7143,
+          "chars": 675,
+          "lock_retries": 0
+        },
+        {
+          "round": 30,
+          "input": "What did we decide about the mysterious rider we saw earlier?",
+          "ttft_ms": 4107,
+          "total_ms": 4597,
+          "chars": 261,
+          "lock_retries": 0
+        },
+        {
+          "round": 31,
+          "input": "I signal to the caravan to continue moving cautiously along the ridge.",
+          "ttft_ms": 4071,
+          "total_ms": 5573,
+          "chars": 682,
+          "lock_retries": 0
+        },
+        {
+          "round": 32,
+          "input": "I dismount and carefully examine the hoofprints for any signs of the rider or clues about their intentions.",
+          "ttft_ms": 6393,
+          "total_ms": 8056,
+          "chars": 725,
+          "lock_retries": 0
+        },
+        {
+          "round": 33,
+          "input": "I carefully approach the narrow notch in the shelf to see what lies beyond.",
+          "ttft_ms": 4360,
+          "total_ms": 6070,
+          "chars": 713,
+          "lock_retries": 0
+        },
+        {
+          "round": 34,
+          "input": "I carefully climb down the ledge to investigate the horse and look for any signs of the rider.",
+          "ttft_ms": 8087,
+          "total_ms": 9612,
+          "chars": 718,
+          "lock_retries": 0
+        },
+        {
+          "round": 35,
+          "input": "What did the gray pennant scrap signify about the mercenary company?",
+          "ttft_ms": 2498,
+          "total_ms": 2892,
+          "chars": 157,
+          "lock_retries": 0
+        },
+        {
+          "round": 36,
+          "input": "I examine the pennant closely for any hidden messages or clues.",
+          "ttft_ms": 10561,
+          "total_ms": 12038,
+          "chars": 594,
+          "lock_retries": 0
+        },
+        {
+          "round": 37,
+          "input": "I carefully fold the note and pocket it, then head north to follow the rider's path.",
+          "ttft_ms": 7904,
+          "total_ms": 9235,
+          "chars": 726,
+          "lock_retries": 0
+        },
+        {
+          "round": 38,
+          "input": "I carefully approach the cairn to inspect the gray cloth and the surrounding area.",
+          "ttft_ms": 5709,
+          "total_ms": 7167,
+          "chars": 635,
+          "lock_retries": 0
+        },
+        {
+          "round": 39,
+          "input": "I step forward to get a better look at the mounted figure and ask, “What kind of offer?”",
+          "ttft_ms": 7036,
+          "total_ms": 8529,
+          "chars": 604,
+          "lock_retries": 0
+        },
+        {
+          "round": 40,
+          "input": "What did we decide to do about the reliquary when we first found it?",
+          "ttft_ms": 3856,
+          "total_ms": 4090,
+          "chars": 134,
+          "lock_retries": 0
+        }
+      ]
+    }
+  ]
+}

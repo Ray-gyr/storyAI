@@ -334,3 +334,31 @@ On test-hard, v5 retrieves a correct chunk for 42 of 47 questions, against 39 fo
 | Median length (words) | 110 | 110 |
 
 **Memory fidelity is unchanged** (dev, end to end with long summaries): 91/92 before and after on question set 2, and 45/47 → 46/47 on dev-hard. Lifting the "nothing new" ban did not make the writer invent the past.
+
+---
+
+# Time to first token on the live site (Oct 2026, v3)
+
+`ttft.ts`:
+- Setup: 2 new stories on https://story-ai-ray.vercel.app, 40 rounds each, played by an auto-player that asks about the past every 5th round.
+- TTFT is measured from sending the request to the first non-empty text chunk.
+- Each round waited for the previous round's background work to release the session lock, so no request queued on the server (0 lock retries).
+
+| | TTFT p50 | TTFT p95 |
+|---|---|---|
+| Round 1 (possible cold start) | 3.6 s | 4.7 s |
+| Rounds 2–20 (few memory chunks yet) | 4.9 s | 8.9 s |
+| **Rounds 21–40 (memories in use)** | **6.1 s** | **10.6 s** |
+| Rounds 21–40, questions about the past | 4.1 s | 6.4 s |
+| Rounds 21–40, full response | 7.4 s | 12.0 s |
+
+**Where the time goes** (`ttft_breakdown.ts`): run locally on the dev story's round-300 context, 10 inputs, medians.
+
+| Stage | Median |
+|---|---|
+| Query rewrite, in parallel with vector search | 0.97 s |
+| Vector search (in parallel) | 0.74 s |
+| BM25, fusion and loading original text | 0.32 s |
+| **Writer's first token** | **4.18 s** |
+
+Retrieval costs about 1.3 s; most of the wait is the writer model before its first word. That wait is longer for ordinary actions (4–8 s) than for questions about the past (1.3–2.6 s). This is consistent with the model reasoning before it writes. The first version's "28 s → 5 s" was measured on different code and is not comparable to these numbers.
