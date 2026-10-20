@@ -85,9 +85,9 @@ This is not a system version, but it changed what the numbers mean, and it was o
 
    I rebuilt the question set with stricter rules, an AI screening step, a manual review, and a check that every question has exactly one correct answer.
 
-**Result:** with the same stories and the same system, the test score went from **55% to 79%**. A large part of the earlier "low score" was the test's fault, not the system's. If I had trusted the first numbers, I would have spent time fixing problems that didn't exist.
+**Result:** with the same stories and the same system, the test score went from **55% to 79%**. Both scores are from the new judge, and both were measured with an intermediate build that attached original text to the top 3 chunks (see v3). A large part of the earlier "low score" was the test's fault, not the system's. If I had trusted the first numbers, I would have spent time fixing problems that didn't exist.
 
-One confusing detail: v2's score is lower on the new questions (32%) than on the old ones (56%). The new questions focus on concrete details, and those details are usually not in the short summaries, which is exactly the problem v3 fixes.
+One confusing detail: v2's score is lower on the new questions (32%) than on the old ones (53%, both with the new judge). The new questions focus on concrete details, and those details are usually not in the short summaries, which is exactly the problem v3 fixes.
 
 ---
 
