@@ -2,8 +2,8 @@
  * 基准测试 · 标注可接受的片段（PROTOCOL.md 第 5 节）
  *
  * 候选池 = 来源片段 ∪ 每道题在所有快照上各方法的前 N 名
- *   （test 故事 N = 10；dev 故事的 bm25 / vector 取到前 30，供调融合参数）
- * 裁判（gpt-4o-mini, temperature 0）对照"参考段落"（来源片段原文）判断候选片段能否回答问题；
+ *   （N 默认 10，可用环境变量 LABEL_DEPTH 调大，供调融合参数）
+ * 裁判（gpt-6-luna，3 次多数投票）对照"参考段落"（来源片段原文）判断候选片段能否回答问题；
  * temporal 题还要求描述的是同一次事件。来源片段本身判不过的题作废。
  * 另判断来源片段的摘要里有没有答案（区分"检索没找到"与"摘要没写"）。
  * 判定结果按 (题目, 片段) 缓存，重复运行只补新候选。
@@ -17,7 +17,8 @@ import { z } from "zod";
 import { Chunk, chunkContent, loadJsonIfExists, loadQuestions, loadStory, mapLimit, Question, readJson, RetrievalRow, writeJson } from "./common";
 
 const STORY_NAME = process.argv[2];
-const DEEP_POOL = STORY_NAME === "dev" ? 30 : 10;
+// 候选池深度：只评 Recall@10 时取 10 即可；调融合参数时需要更深（question set 1 的 dev 故事用了 30）
+const DEEP_POOL = Number(process.env.LABEL_DEPTH || 10);
 
 type Verdict = { acceptable: boolean; reasoning: string };
 type Labels = {
@@ -25,11 +26,25 @@ type Labels = {
     summary_has_answer: Record<string, Verdict>;
 };
 
-const judge = new ChatOpenAI({ modelName: "gpt-4o-mini", openAIApiKey: process.env.OPENAI_API_KEY, temperature: 0 })
+// 标注模型：gpt-6-luna（与端到端裁判相同，校准见 RESULTS.md "Judge v2"）。只能用 temperature 1，每条判 3 次取多数。
+// question set 1 用的是 gpt-4o-mini（temperature 0，判 1 次）。
+const LABEL_MODEL = "gpt-6-luna";
+const LABEL_VOTES = 3;
+const labelLLM = new ChatOpenAI({ modelName: LABEL_MODEL, openAIApiKey: process.env.OPENAI_API_KEY })
     .withStructuredOutput(z.object({
         reasoning: z.string().describe("One sentence."),
         acceptable: z.boolean(),
     }));
+
+const judge = {
+    async invoke(messages: [string, string][]): Promise<Verdict> {
+        const votes: Verdict[] = [];
+        for (let i = 0; i < LABEL_VOTES; i++) votes.push(await labelLLM.invoke(messages));
+        const yes = votes.filter(v => v.acceptable).length;
+        const acceptable = yes * 2 > votes.length;
+        return { acceptable, reasoning: votes.find(v => v.acceptable === acceptable)!.reasoning };
+    },
+};
 
 function candidatePrompt(q: Question, reference: Chunk, candidate: Chunk): string {
     const criterion = q.type === "temporal"
@@ -72,7 +87,7 @@ async function main() {
     console.log(`${jobs.length} new (question, candidate) judgements`);
 
     let done = 0;
-    await mapLimit(jobs, 8, async ({ q, candidate }) => {
+    await mapLimit(jobs, 16, async ({ q, candidate }) => {
         const reference = byId.get(q.source_id)!;
         labels.candidates[q.qid][candidate.id] = await judge.invoke([
             ["system", "You label a memory-retrieval benchmark. Judge strictly but fairly; paraphrases of the same fact count."],

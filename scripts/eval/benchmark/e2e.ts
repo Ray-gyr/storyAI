@@ -16,7 +16,7 @@ import { getStoryLLM } from "../../../src/lib/Init";
 import { storyWorkerPrompt } from "../../../src/lib/prompt";
 import { writerPromptInputs } from "../../../src/lib/storyGenerator";
 import { judgeAnswer, JUDGE_VERSION, tallyVerdicts } from "./judge";
-import { chunkContent, loadQuestions, loadStory, mapLimit, readJson, RetrievalRow, writeJson } from "./common";
+import { chunkContent, loadJsonIfExists, loadQuestions, loadStory, mapLimit, readJson, RetrievalRow, writeJson } from "./common";
 
 const STORY_NAME = process.argv[2];
 const SNAPSHOT = 300;
@@ -31,7 +31,15 @@ async function main() {
     const labels = readJson<{ candidates: Record<string, Record<string, { acceptable: boolean }>> }>(join(dir, "labels.json"));
     const { rows } = readJson<{ rows: RetrievalRow[] }>(join(dir, "retrieval.json"));
     const byId = new Map(chunks.map(c => [c.id, c]));
-    const valid = questions.filter(q => labels.candidates[q.qid][q.source_id].acceptable);
+    // 有效题：有 validation.json（question set 2）时以它为准，否则只要求来源片段能回答
+    const validation = loadJsonIfExists<Record<string, { valid: boolean }> | null>(join(dir, "validation.json"), null);
+    const valid = questions.filter(q => validation ? validation[q.qid]?.valid : labels.candidates[q.qid][q.source_id].acceptable);
+    // 裁判的对照：所有可接受片段（来源片段排在最前），而不只是出题的那一段
+    const referenceOf = (qid: string, sourceId: string) => [sourceId, ...Object.entries(labels.candidates[qid])
+        .filter(([id, v]) => v.acceptable && id !== sourceId).map(([id]) => id)]
+        .map(id => byId.get(id)!)
+        .map(c => `[turns ${c.start_turn}-${c.end_turn}]\n${chunkContent(c)}`)
+        .join("\n\n");
 
     const chain = storyWorkerPrompt.pipe(getStoryLLM()).pipe(new StringOutputParser());
 
@@ -58,7 +66,7 @@ async function main() {
         const verdict = await judgeAnswer({
             question: q.question,
             expectedAnswer: q.expected_answer,
-            reference: chunkContent(byId.get(q.source_id)!),
+            reference: referenceOf(q.qid, q.source_id),
             response,
         });
         return { qid: q.qid, type: q.type, pool: q.pool, gold_retrieved: goldRetrieved, ...verdict, response };

@@ -17,7 +17,7 @@ import { bm25Rank, enhancedQuery, HYBRID_RETRIEVAL_CONFIG, rankMemories, startDe
 import { getEmbeddings, getPineconeIndex } from "../../../src/lib/Init";
 import { loadIndexedMemories } from "../../../src/lib/memoryStore";
 import { QueryIntent, translateUserIntent } from "../../../src/lib/query";
-import { loadQuestions, loadStory, mapLimit, RetrievalRow, SNAPSHOTS, writeJson } from "./common";
+import { BENCH_DIR, loadJsonIfExists, loadQuestions, loadStory, mapLimit, RetrievalRow, SNAPSHOTS, storyDir, writeJson } from "./common";
 
 const STORY_NAME = process.argv[2];
 const DEEP = 30;
@@ -33,7 +33,10 @@ function entityConditions(intent: QueryIntent): object[] {
 
 async function main() {
     const { sessionId, chunks, snapshots } = loadStory(STORY_NAME);
-    const questions = loadQuestions(STORY_NAME);
+    // 跳过已被质量筛选（screening.json）或人工核对（manual_review.json）淘汰的题
+    const screening = loadJsonIfExists<Record<string, { keep: boolean }>>(join(storyDir(STORY_NAME), "screening.json"), {});
+    const manual = loadJsonIfExists<Record<string, Record<string, string>>>(join(BENCH_DIR, "manual_review.json"), {})[STORY_NAME] ?? {};
+    const questions = loadQuestions(STORY_NAME).filter(q => screening[q.qid]?.keep !== false && !(q.qid in manual));
     const index = getPineconeIndex().namespace(sessionId);
     const allMemories = await loadIndexedMemories(sessionId);
     const createdAt = new Map(chunks.map(c => [c.id, c.created_at]));

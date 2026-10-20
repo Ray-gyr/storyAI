@@ -37,7 +37,12 @@ created = {c["id"]: c["created_at"] for c in load("corpus.json")["chunks"]}
 taken = {r: load(f"snapshot_{r}.json")["taken_at"] for r in SNAPSHOTS}
 corpus_size = {r: sum(1 for t in created.values() if t <= taken[r]) for r in SNAPSHOTS}
 
-valid = {qid for qid, q in questions.items() if labels["candidates"][qid][q["source_id"]]["acceptable"]}
+# 有效题：有 validation.json（question set 2）时以它为准，否则只要求来源片段能回答
+if (DIR / "validation.json").exists():
+    validation = load("validation.json")
+    valid = {qid for qid in questions if validation[qid]["valid"]}
+else:
+    valid = {qid for qid, q in questions.items() if labels["candidates"][qid][q["source_id"]]["acceptable"]}
 
 
 def gold(qid, snapshot):

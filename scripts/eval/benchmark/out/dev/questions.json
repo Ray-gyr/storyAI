@@ -1,6 +1,7 @@
 {
   "story": "dev",
-  "model": "gpt-4o-mini",
+  "version": 2,
+  "model": "gpt-6.1-sol",
   "questions": [
     {
       "qid": "early-vague-1",
@@ -11,8 +12,8 @@
         1,
         4
       ],
-      "question": "What is the one word that appears in the fresh transmission on my cracked slate?",
-      "expected_answer": "LANTERN."
+      "question": "What had my tug’s docking arm snagged on during my first approach to the derelict station?",
+      "expected_answer": "A twisted strut."
     },
     {
       "qid": "early-detail-1",
@@ -23,8 +24,8 @@
         5,
         10
       ],
-      "question": "What was the oxygen level in my suit before I opened the hatch?",
-      "expected_answer": "92"
+      "question": "When I examined the scraped service door just after entering Meridian-9, what did I find beneath the recessed panel beside its frame?",
+      "expected_answer": "A partly exposed narrow manual release slot."
     },
     {
       "qid": "early-vague-2",
@@ -35,8 +36,8 @@
         11,
         18
       ],
-      "question": "What did I find beside the narrow access well when I climbed through the hatch?",
-      "expected_answer": "bundled cables"
+      "question": "When I squeezed through the cut-open door into the cramped service passage, what did the crooked door press against?",
+      "expected_answer": "Her pack."
     },
     {
       "qid": "early-detail-2",
@@ -47,8 +48,8 @@
         19,
         20
       ],
-      "question": "What color is the survey tape wrapped around the drone?",
-      "expected_answer": "Orange."
+      "question": "When I first found the survey drone wedged beside the ladder platform on Meridian-9, which part was bent against its frame?",
+      "expected_answer": "One rotor arm."
     },
     {
       "qid": "early-vague-3",
@@ -59,8 +60,8 @@
         21,
         30
       ],
-      "question": "What is the condition of the rotor arm on the compact survey drone?",
-      "expected_answer": "One rotor arm is bent sharply against the body."
+      "question": "When I inspected the survey drone after freeing it from the cables on the grated platform, what was its only visible damage?",
+      "expected_answer": "One rotor arm was bent sharply against the body."
     },
     {
       "qid": "early-detail-3",
@@ -71,8 +72,8 @@
         31,
         40
       ],
-      "question": "What happened to the cable Juno was using as a shield against the gas flow?",
-      "expected_answer": "The jet tears it from her glove and whips it through the opening into the dark passage."
+      "question": "When I tried to counter the gas jet at the widened bulkhead breach, what suit function did I discover I didn't have?",
+      "expected_answer": "A pressure-stabilizer function."
     },
     {
       "qid": "early-detail-4",
@@ -83,8 +84,8 @@
         41,
         50
       ],
-      "question": "What color is the survey tape that Juno is looking for in the passage?",
-      "expected_answer": "There is no orange survey tape."
+      "question": "When I used the switched-off cutter to pull myself toward the gas-filled breach, what did I wedge its casing against?",
+      "expected_answer": "A jagged lip of the breach."
     },
     {
       "qid": "early-vague-4",
@@ -95,8 +96,8 @@
         51,
         51
       ],
-      "question": "What did I find near the lower corner of the panel that seemed to be a way to open it?",
-      "expected_answer": "a recessed manual catch"
+      "question": "When I inspected the cable-obstructed panel in the cramped compartment, where on the panel was the recessed manual catch?",
+      "expected_answer": "Near the lower corner."
     },
     {
       "qid": "early-detail-5",
@@ -107,8 +108,8 @@
         52,
         55
       ],
-      "question": "What did Juno find at the edge of the buckled plate while inspecting the conduit?",
-      "expected_answer": "Two recessed fasteners and a narrow gap."
+      "question": "When I first inspected the damaged conduit at Meridian-9’s docking ring, what hardware did I find at the buckled plate’s edge?",
+      "expected_answer": "Two recessed fasteners."
     },
     {
       "qid": "early-vague-5",
@@ -119,8 +120,8 @@
         61,
         70
       ],
-      "question": "What warning did the display show regarding the power conduit after the coupling was tightened?",
-      "expected_answer": "POWER CONDUIT UNDER MECHANICAL STRAIN — AVOID REPEATED CLAMP CYCLES."
+      "question": "When I restored power to the docking ring, what texture did the coupling collar have as I tightened it by hand?",
+      "expected_answer": "Ridged."
     },
     {
       "qid": "early-detail-6",
@@ -131,8 +132,8 @@
         71,
         73
       ],
-      "question": "What warning did the display show regarding the power conduit?",
-      "expected_answer": "POWER CONDUIT UNDER MECHANICAL STRAIN — AVOID REPEATED CLAMP CYCLES."
+      "question": "When I checked the docking-clamp controls before releasing the Kestrel, what action did the conduit-strain warning tell me to avoid?",
+      "expected_answer": "Repeated clamp cycles."
     },
     {
       "qid": "early-vague-6",
@@ -143,8 +144,8 @@
         74,
         75
       ],
-      "question": "What does the screen still show while I have the cracked slate?",
-      "expected_answer": "RELEASE CLAMPS"
+      "question": "When I turned from the clamp controls and refused to surrender the cracked data slate, what response did I get from the security team?",
+      "expected_answer": "No one answers."
     },
     {
       "qid": "early-detail-7",
@@ -155,8 +156,8 @@
         76,
         77
       ],
-      "question": "What did I find out about the status of the transfer hatch after releasing the clamps?",
-      "expected_answer": "The status of the transfer hatch remains UNKNOWN."
+      "question": "When I released the Kestrel’s docking clamps, what sound carried through the ring structure?",
+      "expected_answer": "A heavy clunk."
     },
     {
       "qid": "early-detail-8",
@@ -167,8 +168,8 @@
         78,
         80
       ],
-      "question": "What did I find when I checked the control display for the transfer hatch's status?",
-      "expected_answer": "The control display shows no fault for the transfer hatch and provides no pressure reading."
+      "question": "When I searched the docking ring for maintenance access to help power the transfer hatch, what did I check besides the visible conduit run?",
+      "expected_answer": "Nearby structural panels."
     },
     {
       "qid": "early-vague-7",
@@ -179,8 +180,8 @@
         81,
         89
       ],
-      "question": "What warning does the control display show regarding the power conduit?",
-      "expected_answer": "POWER CONDUIT UNDER MECHANICAL STRAIN — AVOID REPEATED CLAMP CYCLES."
+      "question": "When I checked the docking-ring display for hatch diagnostics, what action did the strained-conduit warning tell me to avoid?",
+      "expected_answer": "Repeated clamp cycles."
     },
     {
       "qid": "early-detail-9",
@@ -191,8 +192,8 @@
         91,
         97
       ],
-      "question": "What did the display show about the ring's power status when I checked it?",
-      "expected_answer": "The screen reports ring power online and steady, with the docking clamps disengaged."
+      "question": "When I inspected the strained conduit near the repaired coupling, what coincided with it shifting against its support?",
+      "expected_answer": "The ring’s hum changed slightly."
     },
     {
       "qid": "early-vague-8",
@@ -203,8 +204,8 @@
         98,
         100
       ],
-      "question": "What did I say was not safe to use as a brace for the conduit?",
-      "expected_answer": "the thin, bent plate at the ring"
+      "question": "When I returned to the tug for conduit-bracing materials, what sound carried through the structure as I crossed the docking connection?",
+      "expected_answer": "The ring hum."
     },
     {
       "qid": "early-detail-10",
@@ -215,8 +216,8 @@
         101,
         101
       ],
-      "question": "What did I find in the Kestrel’s equipment stores that could help with the conduit?",
-      "expected_answer": "No brace or tool suited to supporting the conduit."
+      "question": "When Priya and I checked the Kestrel’s stores for conduit supports, what risk did using part of the modular cargo bay pose?",
+      "expected_answer": "It could compromise how cargo is secured."
     },
     {
       "qid": "early-vague-9",
@@ -227,8 +228,8 @@
         106,
         107
       ],
-      "question": "What did I retrieve from the equipment locker at the Kestrel?",
-      "expected_answer": "the portable O2 canister"
+      "question": "When I went back to my ship for the portable oxygen canister, what did I avoid crossing on the return trip?",
+      "expected_answer": "The unsafe gas flow."
     },
     {
       "qid": "early-detail-11",
@@ -239,8 +240,8 @@
         108,
         109
       ],
-      "question": "What was Juno carrying when she returned to the hydroponics deck?",
-      "expected_answer": "The portable O2 canister."
+      "question": "When I brought the O2 canister back to hydroponics to divert the leak, what would opening its nozzle actually do?",
+      "expected_answer": "Add gas to the passage rather than clear the route."
     },
     {
       "qid": "early-detail-12",
@@ -251,7 +252,7 @@
         111,
         120
       ],
-      "question": "What was bent against the body of the inert survey drone?",
+      "question": "When I searched around the trapped drone for something to shield me from the hydroponics gas stream, what part was bent against its body?",
       "expected_answer": "Its rotor arm."
     },
     {
@@ -263,8 +264,8 @@
         121,
         125
       ],
-      "question": "What kind of platform do my boots meet at the bottom of the ladder?",
-      "expected_answer": "a grated platform"
+      "question": "When I moved deeper into the cable-packed compartment after climbing down the ladder, how did I squeeze between the bundle and the wall?",
+      "expected_answer": "By turning sideways."
     },
     {
       "qid": "early-detail-13",
@@ -275,8 +276,8 @@
         126,
         127
       ],
-      "question": "What did I check to ensure it was secure when I reached the hydroponics deck?",
-      "expected_answer": "The portable O2 canister."
+      "question": "When I climbed back up to hydroponics looking for Dr. Ilse Brandt, what did I illuminate besides the visible deck?",
+      "expected_answer": "The sealed bulkhead."
     },
     {
       "qid": "early-vague-11",
@@ -287,8 +288,8 @@
         128,
         129
       ],
-      "question": "What was the status of the compact survey drone I found near the panel?",
-      "expected_answer": "Its status lamp was dark."
+      "question": "When I searched the hydroponics deck for clues about the missing doctor, what did I do before touching each section?",
+      "expected_answer": "Moved my helmet lamp over it."
     },
     {
       "qid": "early-detail-14",
@@ -299,8 +300,8 @@
         131,
         140
       ],
-      "question": "What was the condition of the rotor arm on the survey drone?",
-      "expected_answer": "The rotor arm is bent sharply against the body."
+      "question": "When I freed the survey drone from the cables below the hydroponics deck, which part was bent sharply against its body?",
+      "expected_answer": "The rotor arm."
     },
     {
       "qid": "early-vague-12",
@@ -311,8 +312,8 @@
         141,
         150
       ],
-      "question": "What color is the status lamp on the compact survey drone?",
-      "expected_answer": "The status lamp is dark."
+      "question": "When I checked the powerless survey drone for recordings that might help locate the missing doctor, which part of it was bent?",
+      "expected_answer": "The rotor."
     },
     {
       "qid": "early-detail-15",
@@ -323,8 +324,8 @@
         151,
         151
       ],
-      "question": "What did I find at the bottom of the ladder on the hydroponics deck?",
-      "expected_answer": "an inert survey drone"
+      "question": "After I climbed onto the hydroponics deck, how many times did I call for Dr. Brandt beside the open panel?",
+      "expected_answer": "Twice."
     },
     {
       "qid": "early-detail-16",
@@ -335,8 +336,8 @@
         161,
         163
       ],
-      "question": "What did the receipt Juno received say on it?",
-      "expected_answer": "Odile Marsh survey logs."
+      "question": "What words were on the receipt I received when I left Odile’s cracked slate at the Port Halcyon pawnshop for examination?",
+      "expected_answer": "Odile Marsh survey logs"
     },
     {
       "qid": "early-vague-13",
@@ -347,8 +348,8 @@
         164,
         165
       ],
-      "question": "How many credits did the proprietor offer for the slate after assessing it?",
-      "expected_answer": "180 credits."
+      "question": "When I waited at the pawnshop for my cracked slate’s assessment, which transmission did the proprietor say was still intact?",
+      "expected_answer": "The ‘Lantern’ transmission."
     },
     {
       "qid": "early-detail-17",
@@ -359,8 +360,8 @@
         166,
         167
       ],
-      "question": "How much did I sell the survey logs for?",
-      "expected_answer": "180 credits."
+      "question": "When I sold Odile’s survey logs at the pawnshop, what did the proprietor do with the receipt?",
+      "expected_answer": "Folded it into the shop’s records."
     },
     {
       "qid": "early-vague-14",
@@ -371,8 +372,8 @@
         168,
         169
       ],
-      "question": "How many credits does the person have while standing at the counter?",
-      "expected_answer": "680 credits."
+      "question": "When I asked the pawnshop proprietor about buyers for salvage or ship logs, what did they do with the receipt?",
+      "expected_answer": "Folded it into the shop’s records."
     },
     {
       "qid": "early-detail-18",
@@ -383,8 +384,8 @@
         171,
         173
       ],
-      "question": "How many credits does Juno have when she visits the salvage counters?",
-      "expected_answer": "Juno has 680 credits."
+      "question": "When I browsed Port Halcyon’s salvage stalls asking what goods were in demand, what gesture did a trader make after checking my empty hands?",
+      "expected_answer": "They shook their head."
     },
     {
       "qid": "early-vague-15",
@@ -395,8 +396,8 @@
         174,
         177
       ],
-      "question": "How many credits does the character have while standing in the market?",
-      "expected_answer": "680 credits"
+      "question": "When I asked the salvage trader for wreck locations after they noticed my cutter, how many times did they tap the counter?",
+      "expected_answer": "Once."
     },
     {
       "qid": "early-detail-19",
@@ -407,8 +408,8 @@
         178,
         180
       ],
-      "question": "How many credits does Juno have while trying to sell Odile's survey logs?",
-      "expected_answer": "680 credits"
+      "question": "When I asked a trader to value Odile’s survey logs without showing the data, who approached the stall during the pause afterward?",
+      "expected_answer": "Another customer."
     },
     {
       "qid": "early-detail-20",
@@ -419,8 +420,8 @@
         181,
         185
       ],
-      "question": "How many credits did I have after selling the cracked data slate?",
-      "expected_answer": "680 credits."
+      "question": "When I asked the pawnshop proprietor for survey-log buyers after selling Odile’s slate, what did he tap before turning to another customer?",
+      "expected_answer": "The counter beside the transaction record."
     },
     {
       "qid": "early-temporal-1",
@@ -431,8 +432,8 @@
         1,
         4
       ],
-      "question": "What detail indicates the Kestrel experienced a hull breach during the first occurrence of a decompression emergency?",
-      "expected_answer": "The pressure gauge drops one notch.",
+      "question": "The first time I faced a decompression emergency, what did Priya say over the intercom?",
+      "expected_answer": "“Tell me that’s not our air leaving.”",
       "event": "a hull breach or decompression emergency",
       "ordinal": 1
     },
@@ -445,8 +446,8 @@
         21,
         30
       ],
-      "question": "What was the condition of the pressure reading during the second hull breach emergency?",
-      "expected_answer": "The pressure readout remains in the red.",
+      "question": "The second time I faced a hull breach or decompression emergency, where did my plasma cutter stop after I dropped it?",
+      "expected_answer": "On the grated platform near the ladder.",
       "event": "a hull breach or decompression emergency",
       "ordinal": 2
     },
@@ -454,13 +455,13 @@
       "qid": "early-temporal-3",
       "pool": "early",
       "type": "temporal",
-      "source_id": "b8572a84-e573-4bf8-b2ae-b87d922c74eb",
+      "source_id": "beeb8eb9-01af-43a1-8065-fbf95f2140c0",
       "source_turns": [
-        74,
-        75
+        152,
+        160
       ],
-      "question": "What does the control prompt display during the first tense bargain with the Ostrander security team?",
-      "expected_answer": "RELEASE CLAMPS",
+      "question": "During my first tense bargain with someone who wanted something in return, what word did they find in the final transmission?",
+      "expected_answer": "Lantern.",
       "event": "a tense bargain or trade with someone who wants something in return",
       "ordinal": 1
     },
@@ -468,13 +469,13 @@
       "qid": "early-temporal-4",
       "pool": "early",
       "type": "temporal",
-      "source_id": "2d5570fd-2279-4202-acd5-ad82f4554787",
+      "source_id": "1430c97b-59d4-4adc-a6ad-68256ef3e749",
       "source_turns": [
-        121,
-        125
+        164,
+        165
       ],
-      "question": "What did I offer in the second trade attempt while I was in the compartment?",
-      "expected_answer": "I offered a trade for help.",
+      "question": "The second time I faced a tense bargain with someone who wanted something in return, where did they keep their hand?",
+      "expected_answer": "Beside the slate on the counter.",
       "event": "a tense bargain or trade with someone who wants something in return",
       "ordinal": 2
     },
@@ -487,8 +488,8 @@
         1,
         4
       ],
-      "question": "What detail indicates the pressure gauge dropped during the first hull breach or decompression emergency?",
-      "expected_answer": "The pressure gauge drops one notch.",
+      "question": "The first time I faced a decompression emergency, who bumped against my boot?",
+      "expected_answer": "Mox.",
       "event": "a hull breach or decompression emergency",
       "ordinal": 1
     },
@@ -501,8 +502,8 @@
         21,
         30
       ],
-      "question": "What detail can you tell me about the gas venting during the second hull breach emergency?",
-      "expected_answer": "The gas continues to hiss through the narrow opening, and the pressure indicator remains red.",
+      "question": "The second time I faced a hull breach or decompression emergency, what part of my body did the first jet of gas strike?",
+      "expected_answer": "Her forearm.",
       "event": "a hull breach or decompression emergency",
       "ordinal": 2
     },
@@ -510,13 +511,13 @@
       "qid": "early-temporal-7",
       "pool": "early",
       "type": "temporal",
-      "source_id": "b8572a84-e573-4bf8-b2ae-b87d922c74eb",
+      "source_id": "beeb8eb9-01af-43a1-8065-fbf95f2140c0",
       "source_turns": [
-        74,
-        75
+        152,
+        160
       ],
-      "question": "What does Juno refuse to hand over during the first tense bargain with the Ostrander security team?",
-      "expected_answer": "Odile's data slate.",
+      "question": "During my first tense bargain with someone who wanted something in return, what condition did they set for being interested in buying?",
+      "expected_answer": "The logs had to contain information someone could use.",
       "event": "a tense bargain or trade with someone who wants something in return",
       "ordinal": 1
     },
@@ -524,13 +525,13 @@
       "qid": "early-temporal-8",
       "pool": "early",
       "type": "temporal",
-      "source_id": "2d5570fd-2279-4202-acd5-ad82f4554787",
+      "source_id": "1430c97b-59d4-4adc-a6ad-68256ef3e749",
       "source_turns": [
-        121,
-        125
+        164,
+        165
       ],
-      "question": "What does Juno do after calling out to see if anyone is nearby for the second trade attempt?",
-      "expected_answer": "She waits, helmet lamp still aimed down the cramped compartment.",
+      "question": "The second time I faced a tense bargain with someone who wanted something in return, how did they describe the damage to the files?",
+      "expected_answer": "Substantial.",
       "event": "a tense bargain or trade with someone who wants something in return",
       "ordinal": 2
     },
@@ -543,8 +544,8 @@
         191,
         200
       ],
-      "question": "How many credits did I have after selling the cracked slate and survey logs?",
-      "expected_answer": "680 credits."
+      "question": "When I asked the pawnshop proprietor for leads on other buyers after my sale, what did he tap beside the completed transaction record?",
+      "expected_answer": "The counter."
     },
     {
       "qid": "late-detail-1",
@@ -555,8 +556,8 @@
         203,
         206
       ],
-      "question": "What did I offer Brother Calix as part of the negotiation for the navigation core?",
-      "expected_answer": "I offered Brother Calix my brass compass."
+      "question": "When I offered Odile’s brass compass to Brother Calix aboard Vigil, what did he call it besides an old navigational instrument?",
+      "expected_answer": "A fitting token."
     },
     {
       "qid": "late-vague-2",
@@ -567,8 +568,8 @@
         209,
         209
       ],
-      "question": "What percentage is the hull integrity of the ship I boarded?",
-      "expected_answer": "67 percent"
+      "question": "When I returned to my tug from the shrine-ship with the navigation core, where did I set it before installation?",
+      "expected_answer": "Beside the navigation console."
     },
     {
       "qid": "late-detail-2",
@@ -579,8 +580,8 @@
         218,
         219
       ],
-      "question": "What did Juno notice about the docking ring when she arrived?",
-      "expected_answer": "The docking ring’s control display is dark."
+      "question": "When I followed the calculated approach to Meridian-9, how did I adjust the Kestrel’s course as uncertain returns crossed the display?",
+      "expected_answer": "By making small course corrections."
     },
     {
       "qid": "late-vague-3",
@@ -591,8 +592,8 @@
         224,
         229
       ],
-      "question": "What did I overhear about that stash on Meridian-9?",
-      "expected_answer": "A hidden stash of contraband."
+      "question": "When I mentioned overhearing a contraband stash to distract the guard from the exposed coupling, what did he ask his team over the radio?",
+      "expected_answer": "Whether the team had any reports of concealed cargo."
     },
     {
       "qid": "late-detail-3",
@@ -603,8 +604,8 @@
         241,
         250
       ],
-      "question": "What did the guard say when he checked the container's exterior?",
-      "expected_answer": "He said, 'Show us what you found. You open it, and we’ll verify what’s inside.'"
+      "question": "At the old docks, what did the guard do to the cargo container’s latch before telling me to reveal the stash?",
+      "expected_answer": "He tested the latch without opening it."
     },
     {
       "qid": "late-detail-4",
@@ -615,8 +616,8 @@
         252,
         260
       ],
-      "question": "What did I try to present to the guard as my authorization?",
-      "expected_answer": "My cracked data slate with Odile's survey logs."
+      "question": "When I followed workers through the Ostrander refinery’s public corridor toward Voren’s records office, what marked lanes did I avoid?",
+      "expected_answer": "The marked machinery lanes."
     },
     {
       "qid": "late-vague-4",
@@ -627,8 +628,8 @@
         271,
         280
       ],
-      "question": "What did the worker with the sealed case say about changing the access list?",
-      "expected_answer": "Only the supervisor can confirm it."
+      "question": "What was the passing worker carrying when I offered credits for help getting my records-office inspection approved?",
+      "expected_answer": "A sealed case."
     },
     {
       "qid": "late-detail-5",
@@ -639,8 +640,8 @@
         291,
         300
       ],
-      "question": "What did I drop while trying to distract the guard at the checkpoint?",
-      "expected_answer": "My O2 canister."
+      "question": "When I insisted Kessler would confirm shortly, what did the checkpoint guard threaten to report if I kept pushing past?",
+      "expected_answer": "An access violation."
     },
     {
       "qid": "late-vague-5",
@@ -651,8 +652,8 @@
         302,
         310
       ],
-      "question": "What was the integrity percentage reading on the hull status display when I checked it?",
-      "expected_answer": "67 percent"
+      "question": "When we repaired the reactor after the ambush, what did I hold while my crewmate made the repair?",
+      "expected_answer": "The panel."
     },
     {
       "qid": "late-detail-6",
@@ -663,8 +664,8 @@
         316,
         317
       ],
-      "question": "How many credits do I have available when we reach Port Halcyon?",
-      "expected_answer": "560 credits"
+      "question": "When I reached Port Halcyon for bracing after leaving the old docks, who was moving between the market counters alongside vendors?",
+      "expected_answer": "Ship crews."
     },
     {
       "qid": "late-vague-6",
@@ -675,8 +676,8 @@
         321,
         330
       ],
-      "question": "How many credits did I have left after paying for the structural brace sections?",
-      "expected_answer": "140 credits"
+      "question": "When I positioned the first cargo-bay brace with my crewmate, what did we rest its ends on?",
+      "expected_answer": "Flatter, undamaged areas of the plating."
     },
     {
       "qid": "late-detail-7",
@@ -687,8 +688,8 @@
         351,
         351
       ],
-      "question": "How much does the spare plating cost at the repair depot?",
-      "expected_answer": "260 credits."
+      "question": "When I searched the repair depot for discarded items to barter for plating, who had the attendant turned to helping?",
+      "expected_answer": "The next customer."
     },
     {
       "qid": "late-detail-8",
@@ -699,8 +700,8 @@
         354,
         355
       ],
-      "question": "What sound did the hatch make when it finally opened?",
-      "expected_answer": "A dry clack."
+      "question": "When I opened the service hatch on the beacon platform, how did I free it after it caught?",
+      "expected_answer": "By working it back and forth, easing the pressure rather than forcing it."
     },
     {
       "qid": "late-vague-7",
@@ -711,8 +712,8 @@
         358,
         359
       ],
-      "question": "What did I find running behind the panel that was preventing it from opening?",
-      "expected_answer": "A narrow retaining bar."
+      "question": "When I examined the panel blocking the beacon signal in the service passage, how many recessed fasteners held its retaining bar?",
+      "expected_answer": "Two recessed fasteners."
     },
     {
       "qid": "late-detail-9",
@@ -723,8 +724,8 @@
         371,
         373
       ],
-      "question": "What did I find when I examined the relay casing closely?",
-      "expected_answer": "The casing has no dial, switch, adjustment screw, or additional access cover."
+      "question": "When I inspected the beacon’s relay on the Tessaly platform, what was its clicking synchronized with?",
+      "expected_answer": "Each signal burst."
     },
     {
       "qid": "late-vague-8",
@@ -735,8 +736,8 @@
         378,
         379
       ],
-      "question": "What is the condition of the signal as I move away from the platform?",
-      "expected_answer": "The signal weakens with each stretch of distance."
+      "question": "When I stopped moving away from the beacon platform with the signal still detectable, what was still visible behind me?",
+      "expected_answer": "The service hatch."
     },
     {
       "qid": "late-detail-10",
@@ -747,8 +748,8 @@
         389,
         390
       ],
-      "question": "What did I find when I inspected the beacon's casing and cover?",
-      "expected_answer": "There was no setting for transmission strength, no boost control, and no added wiring."
+      "question": "When I returned to the platform’s service passage to check the beacon for a signal boost, what sound accompanied each transmission burst?",
+      "expected_answer": "The relay clicked with each burst."
     },
     {
       "qid": "late-vague-9",
@@ -759,8 +760,8 @@
         401,
         401
       ],
-      "question": "What kind of data was displayed on the skimmer's instruments when I checked them?",
-      "expected_answer": "atmospheric sampling data and platform status."
+      "question": "When I checked the cloud skimmer’s instruments for beacon records, what kind of sampling data did the displays show?",
+      "expected_answer": "Atmospheric sampling data."
     },
     {
       "qid": "late-detail-11",
@@ -771,8 +772,8 @@
         411,
         415
       ],
-      "question": "What did I find when I searched for emergency panels in the laboratory?",
-      "expected_answer": "No usable power control or emergency panel is visible."
+      "question": "When I traced the terminal’s accessible cable in Meridian-9’s core laboratory, where did it disappear?",
+      "expected_answer": "Behind the work surface."
     },
     {
       "qid": "late-detail-12",
@@ -783,8 +784,8 @@
         418,
         419
       ],
-      "question": "What did I find when I searched the laboratory for Lantern project documents?",
-      "expected_answer": "No physical files or documents mentioning the Lantern project."
+      "question": "When I searched the laboratory for physical Lantern project records, what was the only computer I could see?",
+      "expected_answer": "The dark, unresponsive terminal."
     },
     {
       "qid": "late-vague-10",
@@ -795,8 +796,8 @@
         428,
         430
       ],
-      "question": "What did I look for in the adjacent rooms after leaving the laboratory?",
-      "expected_answer": "a battery, power pack, or intact connection"
+      "question": "When I searched the rooms beside the dark laboratory for something to power its terminal, what did I do with the fixtures?",
+      "expected_answer": "Left the fixtures undisturbed."
     },
     {
       "qid": "late-detail-13",
@@ -807,8 +808,8 @@
         437,
         440
       ],
-      "question": "What did the proprietor say about who bought Odile's data slate?",
-      "expected_answer": "They cannot give Juno a name or a way to contact the buyer."
+      "question": "When I asked the Port Halcyon pawnbroker who bought Odile’s slate, what did another customer do as our conversation ended?",
+      "expected_answer": "A customer stepped up behind Juno."
     },
     {
       "qid": "late-vague-11",
@@ -819,8 +820,8 @@
         448,
         450
       ],
-      "question": "How many credits did I receive for the cracked data slate at the pawnshop?",
-      "expected_answer": "180 credits."
+      "question": "When I returned from the market to my tug to review the missing cracked slate, which areas aboard did I search?",
+      "expected_answer": "The accessible work surfaces and storage area."
     },
     {
       "qid": "late-detail-14",
@@ -831,8 +832,8 @@
         461,
         470
       ],
-      "question": "What did I find in my pockets while searching for authorization documents?",
-      "expected_answer": "Her plasma cutter and structural braces are the only items listed in her gear."
+      "question": "When I searched the lockup for a replacement for my data slate, what did the attendant say the panel beside Priya’s partition controlled?",
+      "expected_answer": "The door."
     },
     {
       "qid": "late-vague-12",
@@ -843,8 +844,8 @@
         474,
         480
       ],
-      "question": "What did I pull out to show the attendant that needed immediate attention?",
-      "expected_answer": "the cracked data slate with Odile's survey logs"
+      "question": "When I tried to expedite my crewmate’s lockup review after putting away my cutter, where was she resting her hands?",
+      "expected_answer": "On her knees."
     },
     {
       "qid": "late-detail-15",
@@ -855,8 +856,8 @@
         488,
         490
       ],
-      "question": "What is the hull reading of the Kestrel when we check it?",
-      "expected_answer": "67 percent."
+      "question": "When Priya and I returned to the Kestrel after her release from lockup, what did she suggest checking before buying supplies?",
+      "expected_answer": "The reactor and life support readings."
     },
     {
       "qid": "late-detail-16",
@@ -867,8 +868,8 @@
         501,
         501
       ],
-      "question": "What did Priya say after checking the connector during the reactor test?",
-      "expected_answer": "That’s better."
+      "question": "When I ran the fresh reactor test with Priya watching the connector, what did the output do before settling into its normal range?",
+      "expected_answer": "It dipped once."
     },
     {
       "qid": "late-vague-13",
@@ -879,8 +880,8 @@
         508,
         510
       ],
-      "question": "What tool did I gather to help with the repairs at the station?",
-      "expected_answer": "plasma cutter"
+      "question": "Before I braced the docking-ring conduit and reattached its protective plate, from which side did I inspect the conduit and nearby plating?",
+      "expected_answer": "The access side."
     },
     {
       "qid": "late-detail-17",
@@ -891,8 +892,8 @@
         517,
         518
       ],
-      "question": "What tool did I find secured to my suit while searching the bay?",
-      "expected_answer": "plasma cutter"
+      "question": "When I returned to the refinery launch bay to find a tool for the transfer hatch, how many guards were near Voren?",
+      "expected_answer": "Two refinery guards."
     },
     {
       "qid": "late-vague-14",
@@ -903,8 +904,8 @@
         521,
         529
       ],
-      "question": "What did I tell the security team about the data slate I no longer have?",
-      "expected_answer": "I sold it at Port Halcyon."
+      "question": "When I threatened to report the guards for obstructing my work at the sealed transfer hatch, what did the nearer guard say wasn't authorized?",
+      "expected_answer": "Leaving their post."
     },
     {
       "qid": "late-detail-18",
@@ -915,8 +916,8 @@
         541,
         547
       ],
-      "question": "What tool did I use to try and force the transfer hatch open?",
-      "expected_answer": "The plasma cutter."
+      "question": "When I first cut into the transfer hatch and the air blast knocked me back, what kept my plasma cutter from drifting away?",
+      "expected_answer": "Its tether to her suit."
     },
     {
       "qid": "late-vague-15",
@@ -927,8 +928,8 @@
         551,
         551
       ],
-      "question": "What did I find behind me that was dark and had a cut edge?",
-      "expected_answer": "the transfer hatch"
+      "question": "Just after I entered through the freshly cut transfer hatch, what feature of the passage blocked my view farther ahead?",
+      "expected_answer": "A bend in the passage."
     },
     {
       "qid": "late-detail-19",
@@ -939,8 +940,8 @@
         561,
         567
       ],
-      "question": "What does the reactor control panel display when Juno checks it?",
-      "expected_answer": "The display stays dark."
+      "question": "When I tried the reactor control panel while searching for Odile, what report was I trying to bring up?",
+      "expected_answer": "A system status report."
     },
     {
       "qid": "late-detail-20",
@@ -951,148 +952,690 @@
         571,
         577
       ],
-      "question": "What did I offer in trade for power or communications equipment?",
-      "expected_answer": "I named the plasma cutter and structural braces as possible salvage."
+      "question": "In the reactor spine, when I radioed a trade offer for power or communications gear, what did I offer besides the plasma cutter?",
+      "expected_answer": "Structural braces."
     },
     {
       "qid": "late-temporal-1",
       "pool": "late",
       "type": "temporal",
-      "source_id": "714bf205-772f-427f-b838-c3731bbdf38c",
+      "source_id": "84cdce70-4072-4653-b27c-257e04abc4da",
       "source_turns": [
-        191,
-        200
+        224,
+        229
       ],
-      "question": "What did the pawnshop proprietor say when I asked about returning the cracked slate and survey logs the eleventh time?",
-      "expected_answer": "The transaction is finished. I can’t return what you sold.",
+      "question": "The fifth time I made a tense bargain with someone who wanted something in return, what response came back over the radio?",
+      "expected_answer": "A short burst of static from a second guard, followed by silence.",
       "event": "a tense bargain or trade with someone who wants something in return",
-      "ordinal": 11
+      "ordinal": 5
     },
     {
       "qid": "late-temporal-2",
       "pool": "late",
       "type": "temporal",
-      "source_id": "6e41ece6-c6fb-4570-ad54-053bd3b34155",
+      "source_id": "6b9f1ad4-e16a-44d1-b247-2dc1ca93180b",
       "source_turns": [
-        207,
-        208
+        521,
+        529
       ],
-      "question": "What was the amount of credits I offered during the fifteenth trade?",
-      "expected_answer": "300 credits",
-      "event": "a tense bargain or trade with someone who wants something in return",
-      "ordinal": 15
+      "question": "The third time I had a standoff with Ostrander security, what did a guard ask me about Odile’s slate?",
+      "expected_answer": "Where the slate was now.",
+      "event": "a firefight or standoff with Ostrander security",
+      "ordinal": 3
     },
     {
       "qid": "late-temporal-3",
       "pool": "late",
       "type": "temporal",
-      "source_id": "cfe8d779-4a85-493a-88b7-b51e5f97547f",
+      "source_id": "6f64e013-f53c-473a-8a4e-509c6221a96b",
       "source_turns": [
-        241,
-        250
+        541,
+        547
       ],
-      "question": "What did the guard say after checking the container against the coordinates?",
-      "expected_answer": "This matches the location.",
-      "event": "a tense bargain or trade with someone who wants something in return",
-      "ordinal": 18
+      "question": "The fourth time I faced a hull breach or decompression emergency, which part of my body did the final blast strike?",
+      "expected_answer": "Across the shoulder.",
+      "event": "a hull breach or decompression emergency",
+      "ordinal": 4
     },
     {
       "qid": "late-temporal-4",
       "pool": "late",
       "type": "temporal",
-      "source_id": "77859c10-a6eb-4465-97bb-f00e944f05fc",
+      "source_id": "84cdce70-4072-4653-b27c-257e04abc4da",
       "source_turns": [
-        261,
-        270
+        224,
+        229
       ],
-      "question": "What happened during the twenty-first tense bargain with the guard about my inspection request?",
-      "expected_answer": "The guard could not issue credentials on an unanswered call.",
+      "question": "The fifth time I made a tense bargain with someone who wanted something in return, whose investigation did I keep to myself?",
+      "expected_answer": "Odile’s investigation.",
       "event": "a tense bargain or trade with someone who wants something in return",
-      "ordinal": 21
+      "ordinal": 5
     },
     {
       "qid": "late-temporal-5",
       "pool": "late",
       "type": "temporal",
-      "source_id": "f48edaac-a878-422d-93ca-9ba9b150126e",
+      "source_id": "6b9f1ad4-e16a-44d1-b247-2dc1ca93180b",
       "source_turns": [
-        311,
-        315
+        521,
+        529
       ],
-      "question": "What happened during the twenty-fourth tense bargain with another ship regarding bracing materials?",
-      "expected_answer": "Juno sent a request on the local channel, but no ship answered.",
-      "event": "a tense bargain or trade with someone who wants something in return",
-      "ordinal": 24
+      "question": "The third time I had a standoff with Ostrander security, what did the nearer guard glance at before looking back at me?",
+      "expected_answer": "The dark control panel.",
+      "event": "a firefight or standoff with Ostrander security",
+      "ordinal": 3
     },
     {
       "qid": "late-temporal-6",
       "pool": "late",
       "type": "temporal",
-      "source_id": "aa72caa9-c4cb-4a62-8820-f1a18de79381",
+      "source_id": "6f64e013-f53c-473a-8a4e-509c6221a96b",
       "source_turns": [
-        331,
-        340
+        541,
+        547
       ],
-      "question": "What did I ask the two traders about in the market after checking the depot?",
-      "expected_answer": "I asked if they need help with any salvage work for credits.",
-      "event": "a tense bargain or trade with someone who wants something in return",
-      "ordinal": 28
+      "question": "The fourth time I faced a hull breach or decompression emergency, what did I brace my boots against?",
+      "expected_answer": "The ring’s support.",
+      "event": "a hull breach or decompression emergency",
+      "ordinal": 4
     },
     {
-      "qid": "late-temporal-7",
-      "pool": "late",
-      "type": "temporal",
-      "source_id": "8378150e-b5bb-4336-a82d-596109b63d32",
+      "qid": "early-detail-21",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "59493165-eca0-4e97-8a74-f7afe857b536",
       "source_turns": [
-        431,
-        436
+        11,
+        18
       ],
-      "question": "What did I sell at the Port Halcyon pawnshop during the thirty-first tense bargain?",
-      "expected_answer": "Odile's cracked data slate and survey logs.",
-      "event": "a tense bargain or trade with someone who wants something in return",
-      "ordinal": 31
+      "question": "When I forced the cut service door wider on Meridian-9, what happened to the pressure in the passage?",
+      "expected_answer": "The pressure change was negligible; the passage remained sealed from vacuum.",
+      "topup": true
     },
     {
-      "qid": "late-temporal-8",
-      "pool": "late",
-      "type": "temporal",
-      "source_id": "2ee5775c-3f44-412a-a1f0-e10393dddb0c",
+      "qid": "early-detail-22",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "ee86557a-1851-4ac1-b0e0-a2facf7e2fa6",
       "source_turns": [
-        461,
-        470
+        56,
+        60
       ],
-      "question": "What did I ask the attendant during the thirty-fourth occurrence of a tense bargain or trade?",
-      "expected_answer": "If there’s anyone nearby who might grant authorization for Priya's release.",
-      "event": "a tense bargain or trade with someone who wants something in return",
-      "ordinal": 34
+      "question": "When I inspected the docking-ring coupling after cutting away the bent plate, what feature showed how to orient the plug?",
+      "expected_answer": "The plug has a flat side that matches a guide inside the socket.",
+      "topup": true
     },
     {
-      "qid": "late-temporal-9",
-      "pool": "late",
-      "type": "temporal",
-      "source_id": "c7462d8a-b085-4ce7-a647-7281c0e0a30e",
+      "qid": "early-detail-23",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "d5e8510e-5080-418f-a69b-8a50ef203547",
       "source_turns": [
-        503,
-        507
+        76,
+        77
       ],
-      "question": "What was the specific proposal I made during the 37th tense bargain with Voren?",
-      "expected_answer": "A mutual agreement where the refinery provides assistance for repairs, and we ensure their safety while keeping Meridian-9 operational.",
-      "event": "a tense bargain or trade with someone who wants something in return",
-      "ordinal": 37
+      "question": "When I released the Kestrel’s clamps at Meridian-9 despite the conduit warning, what happened to the ring’s power?",
+      "expected_answer": "The power stayed steady and no fault appeared.",
+      "topup": true
     },
     {
-      "qid": "late-temporal-10",
+      "qid": "early-detail-24",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "33a09870-f9d6-445d-a125-f5828491f632",
+      "source_turns": [
+        98,
+        100
+      ],
+      "question": "When I returned to the Kestrel for conduit-bracing supplies, what did I tell Priya was unsafe to use as a brace?",
+      "expected_answer": "The thin, bent plate at the ring.",
+      "topup": true
+    },
+    {
+      "qid": "early-detail-25",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "e3978286-69ff-4432-b788-0d160176022d",
+      "source_turns": [
+        111,
+        120
+      ],
+      "question": "How did I free the sealed panel’s catch after reaching it from the edge of the hydroponics gas stream?",
+      "expected_answer": "By pulling the manual catch while pushing the cable bundle through the narrow gap beside the panel.",
+      "topup": true
+    },
+    {
+      "qid": "early-detail-26",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "2d5570fd-2279-4202-acd5-ad82f4554787",
+      "source_turns": [
+        121,
+        125
+      ],
+      "question": "When I called out from the cable-filled compartment beneath hydroponics, asking to trade for help, what response did I get?",
+      "expected_answer": "No reply came, and no one appeared to trade.",
+      "topup": true
+    },
+    {
+      "qid": "early-detail-27",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "307bc18a-6445-49b3-962a-f2be64d91070",
+      "source_turns": [
+        131,
+        140
+      ],
+      "question": "When I searched the cable compartment for a way around the hydroponics gas leak, what risk did moving the cables pose?",
+      "expected_answer": "Pulling on the connections.",
+      "topup": true
+    },
+    {
+      "qid": "early-detail-28",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "c2e9e441-49af-41a9-ab03-f28a9dff7f63",
+      "source_turns": [
+        151,
+        151
+      ],
+      "question": "When I climbed up beside the open panel and called twice for Dr. Brandt, what prevented me from safely entering the passage?",
+      "expected_answer": "Escaping gas venting across the route.",
+      "topup": true
+    },
+    {
+      "qid": "early-detail-29",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "1209a367-fe43-4436-bcd7-42fe0680e973",
+      "source_turns": [
+        166,
+        167
+      ],
+      "question": "When I accepted the pawnshop’s offer for Odile’s survey logs, where did the proprietor take the cracked slate?",
+      "expected_answer": "Behind the counter.",
+      "topup": true
+    },
+    {
+      "qid": "early-detail-30",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "2d5514f5-de6b-43ed-af11-9b108a0c3e3f",
+      "source_turns": [
+        168,
+        169
+      ],
+      "question": "When I asked the pawnshop proprietor for leads on salvage or ship-log buyers, where did they suggest I ask around?",
+      "expected_answer": "The salvage counters.",
+      "topup": true
+    },
+    {
+      "qid": "early-detail-31",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "513a6292-0a46-4f0e-a373-b90e57e491d7",
+      "source_turns": [
+        174,
+        177
+      ],
+      "question": "At Port Halcyon’s salvage counters, what did the trader ask me when they noticed my plasma cutter?",
+      "expected_answer": "“You planning to cut something here?”",
+      "topup": true
+    },
+    {
+      "qid": "early-detail-32",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "81519822-e65f-4133-b11d-6a8b938c0dac",
+      "source_turns": [
+        181,
+        185
+      ],
+      "question": "When I asked the market trader where to find salvage before returning to the pawnshop, where did he tell me to look?",
+      "expected_answer": "Out in the belt.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-16",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "59493165-eca0-4e97-8a74-f7afe857b536",
+      "source_turns": [
+        11,
+        18
+      ],
+      "question": "When I entered the cramped service passage through the cut-open door, where did the scrape marks on the floor lead?",
+      "expected_answer": "To a maintenance hatch farther in.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-17",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "ee86557a-1851-4ac1-b0e0-a2facf7e2fa6",
+      "source_turns": [
+        56,
+        60
+      ],
+      "question": "When I inspected the exposed power coupling at the docking ring, what feature ensured the plug would fit the socket in only one orientation?",
+      "expected_answer": "The plug has a flat side that matches a guide inside the socket.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-18",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "5fe40c9b-99e7-451a-b167-073d7a96ca6d",
+      "source_turns": [
+        61,
+        70
+      ],
+      "question": "After I restored power to the docking ring, what did the diagnostic warning advise me to avoid doing with the clamps?",
+      "expected_answer": "Repeated clamp cycles.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-19",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "e6253a0c-af87-47f6-92a6-7fed1f742d21",
+      "source_turns": [
+        81,
+        89
+      ],
+      "question": "When I checked the docking-clamp controls to see why the transfer hatch stayed shut, what connection did the display show between the two systems?",
+      "expected_answer": "No connection between the clamp system and the transfer hatch.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-20",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "33a09870-f9d6-445d-a125-f5828491f632",
+      "source_turns": [
+        98,
+        100
+      ],
+      "question": "When I returned to the tug for conduit-bracing supplies, what did I tell my crewmate was unsafe to use as a brace?",
+      "expected_answer": "The thin, bent plate at the ring.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-21",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "e3978286-69ff-4432-b788-0d160176022d",
+      "source_turns": [
+        111,
+        120
+      ],
+      "question": "How did I free the sealed panel’s catch after reaching it from the edge of the gas stream?",
+      "expected_answer": "By pulling the manual catch while pushing the cable bundle through the narrow gap beside the panel.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-22",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "2d5570fd-2279-4202-acd5-ad82f4554787",
+      "source_turns": [
+        121,
+        125
+      ],
+      "question": "When I called out from the cable-filled compartment beneath the open panel to find someone willing to trade, what response did I get?",
+      "expected_answer": "No reply came, and no one appeared.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-23",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "899afe9c-477f-4bce-878c-58903ae9836f",
+      "source_turns": [
+        128,
+        129
+      ],
+      "question": "When I searched the hydroponics deck for the missing doctor's notes, what hazard did I avoid entering throughout the search?",
+      "expected_answer": "The gas stream.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-24",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "f0bca1b8-e3b9-4072-b6d0-190e9610607d",
+      "source_turns": [
+        141,
+        150
+      ],
+      "question": "When I climbed back down to search around the damaged survey drone for loose pieces, what usable parts did I find?",
+      "expected_answer": "No detached parts she could use.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-25",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "c2e9e441-49af-41a9-ab03-f28a9dff7f63",
+      "source_turns": [
+        151,
+        151
+      ],
+      "question": "When I called twice for the missing doctor beside the open panel, what made the route beyond the buckled section unsafe to enter?",
+      "expected_answer": "Escaping gas venting across the route.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-26",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "1209a367-fe43-4436-bcd7-42fe0680e973",
+      "source_turns": [
+        166,
+        167
+      ],
+      "question": "When I accepted the pawnshop’s offer for the survey logs, how did the proprietor deliver my payment?",
+      "expected_answer": "The proprietor counted out 180 credits and slid them across the counter.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-27",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "2d5514f5-de6b-43ed-af11-9b108a0c3e3f",
+      "source_turns": [
+        168,
+        169
+      ],
+      "question": "When I asked the pawnshop proprietor for leads on buyers for salvage or ship logs, where did they suggest I ask around?",
+      "expected_answer": "The salvage counters.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-28",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "154e039f-eaca-42af-abeb-d2fbc17ba5fc",
+      "source_turns": [
+        171,
+        173
+      ],
+      "question": "When I browsed the salvage stalls after leaving the pawnshop, what did traders need to do before they would price an item?",
+      "expected_answer": "Inspect the physical salvage and judge its condition.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-29",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "91fed56c-731e-4e19-a1b5-26c390fb7a3a",
+      "source_turns": [
+        178,
+        180
+      ],
+      "question": "After the trader refused to value the survey logs I couldn't show, what did I approach the next trader to ask about?",
+      "expected_answer": "Potential salvage sources.",
+      "topup": true
+    },
+    {
+      "qid": "early-vague-30",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "81519822-e65f-4133-b11d-6a8b938c0dac",
+      "source_turns": [
+        181,
+        185
+      ],
+      "question": "When I asked the pawnshop proprietor for survey-log buyers after returning from the salvage stalls, what service did he say he didn't provide?",
+      "expected_answer": "Brokering introductions.",
+      "topup": true
+    },
+    {
+      "qid": "late-detail-21",
       "pool": "late",
-      "type": "temporal",
+      "type": "detail",
+      "source_id": "714bf205-772f-427f-b838-c3731bbdf38c",
+      "source_turns": [
+        191,
+        200
+      ],
+      "question": "When I returned to the pawnshop seeking other buyers for logs or salvage, what did the proprietor say about brokering introductions?",
+      "expected_answer": "“I don’t broker introductions.”",
+      "topup": true
+    },
+    {
+      "qid": "late-detail-22",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "80793cce-9c3e-4bf8-836b-c787c19cae0b",
+      "source_turns": [
+        231,
+        240
+      ],
+      "question": "After the guard caught me handling Meridian-9’s conduit, what did I accuse him of doing?",
+      "expected_answer": "Stealing from the cargo holds.",
+      "topup": true
+    },
+    {
+      "qid": "late-detail-23",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4911d0e5-425d-4dc6-8bf3-dbb83f14eb94",
+      "source_turns": [
+        301,
+        301
+      ],
+      "question": "When I demanded to speak directly with Voren at the records-office checkpoint, what alternative did the guard offer to waiting for Kessler’s confirmation?",
+      "expected_answer": "Withdraw the request.",
+      "topup": true
+    },
+    {
+      "qid": "late-detail-24",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "ea3a3f40-6f85-4201-9c57-f93e35dc2e02",
+      "source_turns": [
+        352,
+        353
+      ],
+      "question": "When I first flew the Kestrel to Tessaly’s cloud skimmer platform to trace Odile’s beacon, which parts of the belt did I avoid?",
+      "expected_answer": "The denser debris lanes.",
+      "topup": true
+    },
+    {
+      "qid": "late-detail-25",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "185a3f68-4841-4b7a-ad7d-e1a4626420a6",
+      "source_turns": [
+        391,
+        400
+      ],
+      "question": "When I scanned for other signals on the Tessaly platform with my receiver, what transmissions besides the beacon did I detect?",
+      "expected_answer": "None—the receiver caught no second transmission or device response.",
+      "topup": true
+    },
+    {
+      "qid": "late-detail-26",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "52c27a3f-f90a-4288-97d6-335f3a35a8cd",
+      "source_turns": [
+        437,
+        440
+      ],
+      "question": "When I asked the Port Halcyon pawnbroker who bought Odile’s slate, what did they say they remembered?",
+      "expected_answer": "They remembered the sale, but not who bought it.",
+      "topup": true
+    },
+    {
+      "qid": "late-detail-27",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "137b2f77-2ee6-4495-bbb3-b0defb8c86ba",
+      "source_turns": [
+        481,
+        487
+      ],
+      "question": "What did the lockup attendant say I had to accept responsibility for to authorize Priya’s release without another document?",
+      "expected_answer": "Priya’s release.",
+      "topup": true
+    },
+    {
+      "qid": "late-detail-28",
+      "pool": "late",
+      "type": "detail",
       "source_id": "aac6431e-465b-4a6a-8da1-a698e9be66b4",
       "source_turns": [
         531,
         540
       ],
-      "question": "What happened during the thirty-ninth tense bargain with the Ostrander guards?",
-      "expected_answer": "Juno attempted to negotiate for access to the transfer hatch.",
-      "event": "a tense bargain or trade with someone who wants something in return",
-      "ordinal": 39
+      "question": "When I inspected Meridian-9’s sealed transfer hatch with my plasma cutter before cutting, what safe cut point did I identify?",
+      "expected_answer": "No safe cut point was identified.",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-16",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "714bf205-772f-427f-b838-c3731bbdf38c",
+      "source_turns": [
+        191,
+        200
+      ],
+      "question": "When I searched between the market stalls for abandoned materials to sell, what did I manage to collect?",
+      "expected_answer": "Nothing—no salvage or usable materials.",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-17",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "43ca15d0-e392-408c-9558-c4f77e1c1303",
+      "source_turns": [
+        218,
+        219
+      ],
+      "question": "When I followed the calculated route through the debris belt to the derelict station, did anything strike my ship’s hull?",
+      "expected_answer": "Nothing strikes the hull.",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-18",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "77859c10-a6eb-4465-97bb-f00e944f05fc",
+      "source_turns": [
+        261,
+        270
+      ],
+      "question": "When I gave the records-office guard the supervisor’s comm code, how many times did he try calling before refusing to issue credentials?",
+      "expected_answer": "Twice; both calls went unanswered.",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-19",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "f48edaac-a878-422d-93ca-9ba9b150126e",
+      "source_turns": [
+        311,
+        315
+      ],
+      "question": "When I hailed nearby ships for hull-bracing supplies after searching the abandoned docks, what did I offer in trade?",
+      "expected_answer": "Salvage or credits.",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-20",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "ea3a3f40-6f85-4201-9c57-f93e35dc2e02",
+      "source_turns": [
+        352,
+        353
+      ],
+      "question": "When I flew to the cloud skimmer platform to trace the beacon, which parts of the debris belt did I steer clear of?",
+      "expected_answer": "The denser debris lanes.",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-21",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "f172cd20-bb13-4b0b-bea0-7acb21765160",
+      "source_turns": [
+        378,
+        379
+      ],
+      "question": "When I checked several directions after walking away from the beacon platform, did any give me a stronger signal on the receiver?",
+      "expected_answer": "None of the directions produced a stronger reading.",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-22",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "3e0b3ff1-d0b8-4b7c-9293-a5fd1d898a94",
+      "source_turns": [
+        416,
+        417
+      ],
+      "question": "When I tried to examine the survey logs beside the unpowered laboratory terminal, how much had I sold their cracked slate for?",
+      "expected_answer": "180 credits.",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-23",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "52c27a3f-f90a-4288-97d6-335f3a35a8cd",
+      "source_turns": [
+        437,
+        440
+      ],
+      "question": "When I questioned the pawnbroker about who bought the cracked slate and survey logs, what did they say they remembered instead of the buyer?",
+      "expected_answer": "The sale.",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-24",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "19713308-17ef-4b9d-b775-d21f7e318b59",
+      "source_turns": [
+        474,
+        480
+      ],
+      "question": "When I reached for my cutter at the lockup, what reason did the attendant give for telling me not to use it?",
+      "expected_answer": "“This is a security station.”",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-25",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "c02a66d3-e8c0-4337-9de4-ebace6262c5b",
+      "source_turns": [
+        508,
+        510
+      ],
+      "question": "When I assessed the docking-ring conduit before bracing it, what did further work risk pulling loose if I left it unsecured?",
+      "expected_answer": "The connection.",
+      "topup": true
+    },
+    {
+      "qid": "late-vague-26",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "3f1b37ef-fc36-4136-8ed2-4adf0f7dbdb5",
+      "source_turns": [
+        551,
+        551
+      ],
+      "question": "When I first searched the passage beyond the freshly cut transfer hatch with my suit light, what evidence of traps did I find?",
+      "expected_answer": "No visible devices or obstructions that suggested a trap.",
+      "topup": true
     }
   ]
 }

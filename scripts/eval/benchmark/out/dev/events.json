@@ -1,12 +1,14 @@
 {
+  "version": 2,
   "events": [
     "a hull breach or decompression emergency",
     "a firefight or standoff with Ostrander security",
     "a tense bargain or trade with someone who wants something in return"
   ],
-  "occurrences": [
+  "episodes": [
     [
       {
+        "ordinal": 1,
         "id": "7d933640-58d6-43e5-97ae-e0f8c9da6ff1",
         "turns": [
           1,
@@ -14,6 +16,7 @@
         ]
       },
       {
+        "ordinal": 2,
         "id": "ed2354ec-1dcf-47a7-bd74-ed8560f1b5f8",
         "turns": [
           21,
@@ -21,20 +24,15 @@
         ]
       },
       {
-        "id": "8220698b-ecd7-4812-b389-6b76fef49d72",
+        "ordinal": 3,
+        "id": "c2e9e441-49af-41a9-ab03-f28a9dff7f63",
         "turns": [
-          31,
-          40
+          151,
+          151
         ]
       },
       {
-        "id": "48498408-d2a0-4c3f-b4a8-9e73236f1802",
-        "turns": [
-          41,
-          50
-        ]
-      },
-      {
+        "ordinal": 4,
         "id": "6f64e013-f53c-473a-8a4e-509c6221a96b",
         "turns": [
           541,
@@ -44,6 +42,7 @@
     ],
     [
       {
+        "ordinal": 1,
         "id": "84cdce70-4072-4653-b27c-257e04abc4da",
         "turns": [
           224,
@@ -51,13 +50,15 @@
         ]
       },
       {
-        "id": "80793cce-9c3e-4bf8-836b-c787c19cae0b",
+        "ordinal": 2,
+        "id": "c7462d8a-b085-4ce7-a647-7281c0e0a30e",
         "turns": [
-          231,
-          240
+          503,
+          507
         ]
       },
       {
+        "ordinal": 3,
         "id": "6b9f1ad4-e16a-44d1-b247-2dc1ca93180b",
         "turns": [
           521,
@@ -67,20 +68,7 @@
     ],
     [
       {
-        "id": "b8572a84-e573-4bf8-b2ae-b87d922c74eb",
-        "turns": [
-          74,
-          75
-        ]
-      },
-      {
-        "id": "2d5570fd-2279-4202-acd5-ad82f4554787",
-        "turns": [
-          121,
-          125
-        ]
-      },
-      {
+        "ordinal": 1,
         "id": "beeb8eb9-01af-43a1-8065-fbf95f2140c0",
         "turns": [
           152,
@@ -88,13 +76,7 @@
         ]
       },
       {
-        "id": "952aaa13-c971-4c89-a3a1-7efde6ebe8fc",
-        "turns": [
-          161,
-          163
-        ]
-      },
-      {
+        "ordinal": 2,
         "id": "1430c97b-59d4-4adc-a6ad-68256ef3e749",
         "turns": [
           164,
@@ -102,34 +84,7 @@
         ]
       },
       {
-        "id": "1209a367-fe43-4436-bcd7-42fe0680e973",
-        "turns": [
-          166,
-          167
-        ]
-      },
-      {
-        "id": "10e1d259-9bad-4667-927f-1b67eab2469d",
-        "turns": [
-          170,
-          170
-        ]
-      },
-      {
-        "id": "513a6292-0a46-4f0e-a373-b90e57e491d7",
-        "turns": [
-          174,
-          177
-        ]
-      },
-      {
-        "id": "91fed56c-731e-4e19-a1b5-26c390fb7a3a",
-        "turns": [
-          178,
-          180
-        ]
-      },
-      {
+        "ordinal": 3,
         "id": "ffd4b226-d2fc-4f33-8740-2a6503ce586b",
         "turns": [
           190,
@@ -137,20 +92,7 @@
         ]
       },
       {
-        "id": "714bf205-772f-427f-b838-c3731bbdf38c",
-        "turns": [
-          191,
-          200
-        ]
-      },
-      {
-        "id": "5ae64cd4-98f8-47bd-a218-d61c5f799b19",
-        "turns": [
-          201,
-          201
-        ]
-      },
-      {
+        "ordinal": 4,
         "id": "fcd9bb4a-a618-4925-bec1-cae0bca67d36",
         "turns": [
           202,
@@ -158,20 +100,7 @@
         ]
       },
       {
-        "id": "1c60e86f-a8b5-4752-a8d4-9ca19c15dbb3",
-        "turns": [
-          203,
-          206
-        ]
-      },
-      {
-        "id": "6e41ece6-c6fb-4570-ad54-053bd3b34155",
-        "turns": [
-          207,
-          208
-        ]
-      },
-      {
+        "ordinal": 5,
         "id": "84cdce70-4072-4653-b27c-257e04abc4da",
         "turns": [
           224,
@@ -179,6 +108,7 @@
         ]
       },
       {
+        "ordinal": 6,
         "id": "80793cce-9c3e-4bf8-836b-c787c19cae0b",
         "turns": [
           231,
@@ -186,34 +116,7 @@
         ]
       },
       {
-        "id": "cfe8d779-4a85-493a-88b7-b51e5f97547f",
-        "turns": [
-          241,
-          250
-        ]
-      },
-      {
-        "id": "50eb1f75-d326-47e4-a63d-c5708acc236f",
-        "turns": [
-          251,
-          251
-        ]
-      },
-      {
-        "id": "ab062ce3-a207-4a29-8d97-f2cd134fbbcc",
-        "turns": [
-          252,
-          260
-        ]
-      },
-      {
-        "id": "77859c10-a6eb-4465-97bb-f00e944f05fc",
-        "turns": [
-          261,
-          270
-        ]
-      },
-      {
+        "ordinal": 7,
         "id": "d84b2050-381a-4e40-a9f5-1c39d6564e06",
         "turns": [
           271,
@@ -221,20 +124,7 @@
         ]
       },
       {
-        "id": "4911d0e5-425d-4dc6-8bf3-dbb83f14eb94",
-        "turns": [
-          301,
-          301
-        ]
-      },
-      {
-        "id": "f48edaac-a878-422d-93ca-9ba9b150126e",
-        "turns": [
-          311,
-          315
-        ]
-      },
-      {
+        "ordinal": 8,
         "id": "6254f548-e360-4256-9abc-e7a534fb5f59",
         "turns": [
           318,
@@ -242,20 +132,7 @@
         ]
       },
       {
-        "id": "ef2e6046-f5e8-4ab2-947b-fa38140e9a6e",
-        "turns": [
-          320,
-          320
-        ]
-      },
-      {
-        "id": "2d5372b2-3372-434d-a4df-f96925934f3b",
-        "turns": [
-          321,
-          330
-        ]
-      },
-      {
+        "ordinal": 9,
         "id": "aa72caa9-c4cb-4a62-8820-f1a18de79381",
         "turns": [
           331,
@@ -263,62 +140,7 @@
         ]
       },
       {
-        "id": "c5a58b07-75ae-4459-8a8c-2ac7de427d1c",
-        "turns": [
-          351,
-          351
-        ]
-      },
-      {
-        "id": "a2e3c2ff-b985-4ce5-9877-05532b44dfdd",
-        "turns": [
-          421,
-          427
-        ]
-      },
-      {
-        "id": "8378150e-b5bb-4336-a82d-596109b63d32",
-        "turns": [
-          431,
-          436
-        ]
-      },
-      {
-        "id": "1554be4f-e7d8-4d16-8138-d38e4fcce302",
-        "turns": [
-          448,
-          450
-        ]
-      },
-      {
-        "id": "5a738832-2e0a-4318-a758-f7537fe800a4",
-        "turns": [
-          452,
-          460
-        ]
-      },
-      {
-        "id": "2ee5775c-3f44-412a-a1f0-e10393dddb0c",
-        "turns": [
-          461,
-          470
-        ]
-      },
-      {
-        "id": "19713308-17ef-4b9d-b775-d21f7e318b59",
-        "turns": [
-          474,
-          480
-        ]
-      },
-      {
-        "id": "137b2f77-2ee6-4495-bbb3-b0defb8c86ba",
-        "turns": [
-          481,
-          487
-        ]
-      },
-      {
+        "ordinal": 10,
         "id": "c7462d8a-b085-4ce7-a647-7281c0e0a30e",
         "turns": [
           503,
@@ -326,24 +148,11 @@
         ]
       },
       {
+        "ordinal": 11,
         "id": "6b67faa6-8f62-4dc3-807f-b48321395feb",
         "turns": [
           517,
           518
-        ]
-      },
-      {
-        "id": "aac6431e-465b-4a6a-8da1-a698e9be66b4",
-        "turns": [
-          531,
-          540
-        ]
-      },
-      {
-        "id": "81ed8df7-2a96-43bf-b096-b92be67c2b50",
-        "turns": [
-          571,
-          577
         ]
       }
     ]

@@ -1,0 +1,982 @@
+{
+  "early-vague-1": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The arrival and runaway cask are depicted, but the ropes’ smell is incidental sensory trivia with no story relevance."
+  },
+  "early-detail-1": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Taking the reins is a meaningful action establishing the player's role in driving the lead wagon during this specific departure."
+  },
+  "early-vague-2": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts approaching the trade stall to ask about selling the sealed case, but the shade’s material is incidental sensory trivia with no story relevance."
+  },
+  "early-detail-2": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The fossilized remains are specific to Bonebridge canyon but serve only as scenery, with no relevance to a decision, clue, or outcome."
+  },
+  "early-vague-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts the requested watering break and explicitly identifies the horses’ legs as part of a relevant check for injuries before continuing."
+  },
+  "early-detail-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a practical travel decision made during the specified discussion: halting if the teams begin to tire."
+  },
+  "early-detail-4": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The wagon rail is a moment-specific but incidental physical detail with no bearing on the map search, its clues, or its outcome."
+  },
+  "early-vague-4": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a route-safety clue specific to this departure, and the passage depicts folding the map and starting the caravan before the noon heat."
+  },
+  "early-detail-5": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The wagons providing shade is incidental environmental trivia rather than a meaningful clue, decision, or outcome, though it is specific to this stop."
+  },
+  "early-vague-5": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts the crossing, but recalling the surface beneath the wheels is incidental material trivia with no demonstrated relevance to finding the waystone or a consequential outcome."
+  },
+  "early-detail-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The markings are relevant clues in Wren’s search, but the same search criteria appear in the narrator’s earlier scan, making them insufficiently specific to her search."
+  },
+  "early-vague-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a practical response to the driver's collapse, and the passage explicitly depicts water rationing followed by the drivers drawing the wagons together for shade."
+  },
+  "early-detail-7": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the rough patches the drivers avoided is relevant to the cautious crossing and its damage-free outcome, but the passage does not depict the player ordering a cautious crossing with the collapsed driver aboard."
+  },
+  "early-detail-8": {
+    "keep": false,
+    "realistic": true,
+    "specific": false,
+    "event_matches": true,
+    "reason": "The signs are relevant clues to the missing waystone, but the same search targets—cuts, paint, and deliberately arranged stones—also appear in an earlier search."
+  },
+  "early-vague-7": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Painted marks were a potential clue to the missing waystone, and the question anchors the actual search to the dark outcrop where the wagons waited."
+  },
+  "early-detail-9": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The ground marks the caravan’s successful exit from the dangerous Glass Flats onto a safer surface, making it a relevant and moment-specific detail."
+  },
+  "early-vague-8": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Wren’s scanning of gaps between buildings is a relevant precaution against pursuers, specific to the caravan’s depicted departure from Merrow after questioning the vendors."
+  },
+  "early-detail-10": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling where Wren checked for pursuit is a plausible, story-relevant detail tied to her report after leaving Merrow."
+  },
+  "early-vague-9": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Wren’s glance toward the fortified entrance is a relevant cue to her proposed next move, and the passage explicitly depicts it after her glance toward the sealed reliquary."
+  },
+  "early-detail-11": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls Grell’s pointed statement about the reliquary during the depicted first request for an audience at Saint Aurel."
+  },
+  "early-detail-12": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls Grell’s consequential warning about the reliquary’s wards, and the answer is specific to this exchange."
+  },
+  "early-vague-10": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling which part of the reliquary Grell avoided touching is relevant to its careful handling, and the passage explicitly depicts the authorized wagon inspection and his avoidance of the locks."
+  },
+  "early-detail-13": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a specific route hazard identified during the water trade, and the passage explicitly names the old war-ruins."
+  },
+  "early-vague-11": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts Wren tightening a stopper before her warning, but recalling this incidental action is story-irrelevant trivia rather than a meaningful clue or outcome."
+  },
+  "early-detail-14": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks the player to recall Wren’s specific advice about pursuing a lead, and the passage explicitly states that she suggested asking around again if the player returned."
+  },
+  "early-vague-12": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The vendor’s pause to watch you is a moment-specific potential lead during your search for Crowe, and the passage depicts it after you thank the stallkeeper and scan the market."
+  },
+  "early-detail-15": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The passage does depict the vendor finishing serving a customer before answering, but recalling this incidental action has no bearing on the inquiry about Crowe."
+  },
+  "early-detail-16": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The vendor setting down a small bundle is specific to this exchange and occurs before the reply, but it is incidental staging with no relevance to the search for Crowe."
+  },
+  "early-vague-13": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The vendor is explicitly sorting goods before answering, but this incidental activity has no relevance to the inquiry, any clue, or a player decision."
+  },
+  "early-detail-17": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a story-relevant water-conservation instruction Wren explicitly gave the drivers during this moment."
+  },
+  "early-vague-14": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Wren’s glance identifies the guide whose support you were discussing, making it a plausible, moment-specific detail to recall."
+  },
+  "early-detail-18": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling whether Sabeth requested extra payment is relevant to her guiding agreement, and the passage explicitly states that she requested none."
+  },
+  "early-vague-15": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls Sabeth’s story-relevant authority to choose a stopping place, explicitly established when the player asks her about dangers along the route."
+  },
+  "early-detail-19": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question recalls actionable route-safety advice explicitly given by Sabeth during the landmark discussion, making it relevant and specific to this moment."
+  },
+  "early-detail-20": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The passage depicts Sabeth giving route-specific, consequential safety advice in response to the player’s question, making this a plausible detail to recall."
+  },
+  "early-temporal-1": {
+    "keep": false,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the royal-cartographer background is plausible and specific, but the passage shows the caravan being hired without depicting a bargain or anyone requesting something in return."
+  },
+  "early-temporal-2": {
+    "keep": false,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling Grell’s request to examine the reliquary’s seals is relevant and specific, but the passage depicts a safety condition for taking custody, not a bargain or trade for something in return."
+  },
+  "early-temporal-3": {
+    "keep": false,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The crossbow is a relevant, moment-specific detail, but the passage depicts a confrontation and caravan hiring rather than a bargain with someone explicitly seeking something in return."
+  },
+  "early-temporal-4": {
+    "keep": false,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The handling restriction is a relevant, moment-specific warning, but Grell offers advice and requests permission to inspect the seals rather than bargaining for something in return."
+  },
+  "late-vague-1": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls Sabeth’s specific safety warning about deceptive smooth ground by the banks, given when asked about signs of unstable footing."
+  },
+  "late-detail-1": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question asks for incidental background sounds masking the reliquary’s hum without any stated consequence or clue, and the passage depicts the caravan stopping rather than the player halting it."
+  },
+  "late-vague-2": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The falling lintel fragment is a specific hazard that causes Tamsin to pause as she enters the tower, making it a plausible and accurately anchored recollection."
+  },
+  "late-detail-2": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The vibration’s location is a plausible clue to the reliquary’s mysterious humming, and the passage explicitly places it strongest near the lid when Tamsin touches the casing after returning to the caravan."
+  },
+  "late-vague-3": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts pressing uneven blocks and dust falling from cracks, but recalling the dust is pure sensory trivia with no story relevance."
+  },
+  "late-detail-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The shaded western face is a moment-specific shelter location that gave the caravan relief from dangerous heat, making it a plausible detail for a player to recall."
+  },
+  "late-detail-4": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The driver's responsiveness is a relevant detail of the assessment after the caravan slows, and the passage explicitly states that he answers when spoken to."
+  },
+  "late-vague-4": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the weakened driver's inability to sit up is relevant to his condition, specific to this moment, and anchored to the depicted wagon movement and Wren's monitoring."
+  },
+  "late-detail-5": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling Wren’s care not to disturb the reliquary’s straps is a plausible, moment-specific detail about safeguarding important cargo during the supply search."
+  },
+  "late-vague-5": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a relevant attempt to obtain supplies, and the passage explicitly shows Tamsin asking the drivers for anything to spare after finding no nearby traders."
+  },
+  "late-detail-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The passage explicitly depicts Tamsin looking beneath the driver’s seat during the moving-wagon supply search, making this a plausible, moment-specific detail to recall."
+  },
+  "late-vague-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The dockhands’ reaction is a plausible detail to recall about the public confrontation, and the passage explicitly depicts it during the caravan’s return to clear its name."
+  },
+  "late-detail-7": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Ferro’s waiting place is a relevant, moment-specific detail for finding him to bring Wren over, but the question is a detail recall rather than a temporal event query."
+  },
+  "late-detail-8": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The thumb-rubbing gesture is incidental physical trivia with no story relevance, although it is unique to this moment."
+  },
+  "late-vague-7": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling Ferro’s open notebook beside the witnesses is a plausible story-relevant detail, and the passage explicitly depicts the caravan’s departure being delayed by empty water skins."
+  },
+  "late-detail-9": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a specific plan for obtaining corroborable witness evidence to clear the caravan’s name, but it is a detail question rather than a temporal question."
+  },
+  "late-vague-8": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls who carried an evidence-gathering request, and the passage explicitly depicts Ferro sending the dockworkers to nearby caravan crews."
+  },
+  "late-detail-10": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question targets incidental sensory detail about windblown grit rather than a meaningful story event, although the detail is specific to this canyon crossing."
+  },
+  "late-vague-9": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls Wren’s care for the weakened driver during the explicitly depicted request to speed up while watching for pursuers."
+  },
+  "late-detail-11": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question recalls a meaningful, moment-specific decision to conserve scarce water, but it is a detail question rather than a temporal question."
+  },
+  "late-detail-12": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The harnesses stopping their jerking is a concrete, story-relevant consequence of the player's decision to slow the caravan and reduce strain on the horses."
+  },
+  "late-vague-10": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the sealed reliquary is story-relevant and specific to this shrine visit because leaving it at Saint Aurel prevented Tamsin from communicating with the bound fire spirit."
+  },
+  "late-detail-13": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about a distinctive trait of the seer encountered during this conversation, and the passage explicitly describes Sabeth as blind."
+  },
+  "late-vague-11": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question targets an incidental hand position with no clear story relevance, though it is specific to the depicted moment when Sabeth approaches the sealed reliquary."
+  },
+  "late-detail-14": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls Sabeth’s stated ritual abilities, which explain her refusal to contact Ishkar through the sealed reliquary and are specific to this exchange."
+  },
+  "late-vague-12": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a specific action taken while searching the reliquary for clues, and the passage explicitly depicts lifting it slightly to inspect the underside."
+  },
+  "late-detail-15": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about Grell’s story-relevant refusal in this scene, and the passage explicitly gives his reason, but it is a detail question rather than a temporal one."
+  },
+  "late-detail-16": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a story-relevant response to Tamsin’s attempt to talk her way out, and the passage explicitly shows the patrol leader ordering the guards to ease their grip."
+  },
+  "late-vague-13": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Checking whether the mirage held its shape was a specific attempt to identify water during the search after the horses’ brief rest."
+  },
+  "late-detail-17": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling where Wren searched during the urgent water-and-shelter stop is plausible, specific to this moment, and directly supported by the passage."
+  },
+  "late-vague-14": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks about the outcome of a specific attempt to recover lost time, and the passage explicitly depicts that attempt and states that no time was made up."
+  },
+  "late-detail-18": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The wagon’s careful pace is a plausible detail to recall because it concerns safely transporting the sealed reliquary during this specific crossing."
+  },
+  "late-vague-15": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts opening the gates, but the hinges’ grinding is pure sensory trivia with no story relevance."
+  },
+  "late-detail-19": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Closing and shelving the last ledger is incidental handling rather than a meaningful clue, decision, or outcome a player would plausibly want to recall."
+  },
+  "late-detail-20": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question targets the cleared floor’s incidental appearance rather than the story-relevant discovery that no hidden entrance or identifying marks were found."
+  },
+  "late-temporal-1": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Ferro offers guard support in return for a corroborated account, but recalling that he waited for dockhands to resume work before lowering his voice is incidental staging rather than a meaningful story detail."
+  },
+  "late-temporal-2": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling Wren’s warning about taking the teams into the Wastes is story-relevant and specific to this moment, which explicitly depicts a water shortage preventing the caravan’s departure."
+  },
+  "late-temporal-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling Wren’s warning that the lead team needed shade and rest is a story-relevant detail specific to this passage, which depicts low water and dangerous heat exhaustion."
+  },
+  "late-temporal-4": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the horses’ breathing as the cue to resume travel is a meaningful decision tied to this halt, and the passage clearly depicts a water shortage with heat-stressed horses."
+  },
+  "late-temporal-5": {
+    "keep": false,
+    "realistic": false,
+    "specific": false,
+    "event_matches": true,
+    "reason": "Ferro offers guard support in return for a clear, corroborated account, but his folded arms are incidental body-language trivia rather than a meaningful or distinctive detail of the bargain."
+  },
+  "late-temporal-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The drivers’ decision to hold their places after Wren discovered empty water skins is a consequential response to the water shortage explicitly depicted in this passage."
+  },
+  "late-temporal-7": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about the explicit motive for pushing onward during this particular episode of low water and heat-weakened drivers and teams."
+  },
+  "late-temporal-8": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts a water-shortage and heat crisis, and recalling the dark patches or low depressions sought as water clues is a plausible, moment-specific story detail."
+  },
+  "early-detail-21": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a consequential route-planning decision at the docks, and the passage explicitly identifies storms and glass splinters as threats that could cripple the wagons."
+  },
+  "early-detail-22": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the three-day duration of the Corvane-to-Merrow journey is story-relevant, specific to this trip, and explicitly supported by the passage."
+  },
+  "early-detail-23": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The stallkeeper’s warning that buyers would not name a price while the caravan watched is a specific, story-relevant clue about selling the reliquary."
+  },
+  "early-detail-24": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about Wren’s supply-verification method at a particular departure check, and the passage explicitly states that she marked confirmed supplies off her list."
+  },
+  "early-detail-25": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about landmarks examined for a waystone clue during this particular map recheck, and the passage explicitly identifies old war-ruins."
+  },
+  "early-detail-26": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a story-relevant decision to recruit the drivers for a search, explicitly depicted after the player's unsuccessful examination of the last rocks."
+  },
+  "early-detail-27": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The wheels crossing without breaking is a relevant outcome for the caravan’s safe passage and is specific to this crossing."
+  },
+  "early-detail-28": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about the story-relevant outcome of this particular crossing, and the passage explicitly states that the wagons crossed without damage."
+  },
+  "early-detail-29": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question is anchored to Wren joining the search, but asks for incidental ground material rather than a meaningful clue, action, or outcome."
+  },
+  "early-detail-30": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "This recalls a relevant instruction to hold the wagons in place during the outcrop scouting, but it is a detail question rather than a temporal question."
+  },
+  "early-detail-31": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls whether the caravan stayed on its marked route while following the player's instruction to move faster, an outcome explicitly tied to this crossing."
+  },
+  "early-detail-32": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling Wren’s recommendation to consult Abbot Grell is a plausible, moment-specific question about the party’s next move, but this is a detail question rather than a temporal one."
+  },
+  "early-detail-33": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Wren’s report about the lack of sightings near the gates is a moment-specific clue relevant to the player’s concern about followers."
+  },
+  "early-detail-34": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling who guarded the caravan and reliquary during the return to Merrow is story-relevant and explicitly tied to this visit, with Grell named as their watcher."
+  },
+  "early-detail-35": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a potential lead about Crowe, and the vendor explicitly says they cannot identify who mentioned his name."
+  },
+  "early-detail-36": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Sabeth’s warning about losing the path is a story-relevant danger tied to this specific conversation after leaving the camp."
+  },
+  "early-detail-37": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling Wren’s uncertainty about what else Sabeth expected is relevant to securing Sabeth’s support and specific to this conversation."
+  },
+  "early-vague-16": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The hazards explain a meaningful route decision at the docks, and the passage explicitly identifies storms and glass splinters as threats to the wagons."
+  },
+  "early-vague-17": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the duration of a specific caravan journey, and the passage explicitly states that three days passed before you halted the lead wagon at Merrow."
+  },
+  "early-vague-18": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a story-relevant warning about selling the reliquary, explicitly given by the stallkeeper during the described inquiry."
+  },
+  "early-vague-19": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls Wren’s supply-verification method during the explicitly depicted preparations before leaving Merrow for the fossil-lined canyon."
+  },
+  "early-vague-20": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Despite awkward wording, the question asks about the story-relevant timing of this particular crossing, which the passage explicitly places before the noon heat."
+  },
+  "early-vague-21": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling whom you recruited is story-relevant, and the passage explicitly identifies the drivers during the shaded midday halt."
+  },
+  "early-vague-22": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Whether the glass broke under the wagon wheels is a relevant crossing outcome, and the passage explicitly depicts the caravan crossing the flats before the heat peaks without breaking the glass."
+  },
+  "early-vague-23": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks about the outcome of a specific cautious crossing, which the passage explicitly depicts as causing no wagon damage."
+  },
+  "early-vague-24": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a specific map comparison beside the halted caravan that yielded a relevant clue-search outcome: none of the nearby glass formations matched the map."
+  },
+  "early-vague-25": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage explicitly depicts you scouting the outcrop for the waystone after telling the drivers to hold position, a relevant instruction tied to that particular moment."
+  },
+  "early-vague-26": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls whether increasing the wagons’ pace compromised route safety, and the passage explicitly depicts that acceleration and confirms the drivers stayed on the marked track."
+  },
+  "early-vague-27": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts the caravan halting outside the fortified gates to discuss next steps, where Wren recommends speaking with Abbot Grell, a relevant and moment-specific decision."
+  },
+  "early-vague-28": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls Wren’s story-relevant report about possible pursuers, and the passage explicitly places her denial near the gates during the conversation beside the water skins."
+  },
+  "early-vague-29": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling who guarded the caravan and reliquary is story-relevant, and the passage explicitly places them under Grell’s watch during the return to Merrow’s market to seek rumors about Crowe."
+  },
+  "early-vague-30": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling whom the player questioned during this particular search for caravan-related warnings is plausible, and the passage explicitly depicts questioning a vendor and a passing traveler."
+  },
+  "early-vague-31": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls Sabeth’s actionable warning about losing the way back if the caravan left the hidden path, given when you asked about dangers after departing her camp."
+  },
+  "early-vague-32": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls Wren’s relevant admission about gaining Sabeth’s support, and the passage explicitly depicts that conversation beside the water stores."
+  },
+  "late-detail-21": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the lead driver’s safety-related response at a specific moment, and the passage explicitly depicts him stopping behind Sabeth to await her next signal."
+  },
+  "late-detail-22": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling whether the entrance remained passable after squeezing into the tower is a plausible, moment-specific concern about the player's escape route, and the passage explicitly depicts that entry and confirms the way out stayed open."
+  },
+  "late-detail-23": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the driver's heat-induced weakness is relevant to the caravan's forced halt, and the passage explicitly depicts this distinct event after leaving the tower."
+  },
+  "late-detail-24": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling who received the first sip is a plausible and moment-specific question about the caravan’s water rationing."
+  },
+  "late-detail-25": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a tactically relevant formation adjustment during this departure, and the passage explicitly states that the drivers left space around the weakened driver's wagon."
+  },
+  "late-detail-26": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls Ferro’s request to enter a precise account into the record as part of clearing the caravan’s name, a detail specific to this exchange."
+  },
+  "late-detail-27": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The carrying-capacity limit is a meaningful and moment-specific instruction a player could plausibly want to recall."
+  },
+  "late-detail-28": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a specific decision to keep moving and increase speed immediately after clearing Bonebridge canyon, clearly distinguished from the later decision to slow down."
+  },
+  "late-detail-29": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the caravan’s actual location is plausible and tied to this moment, but the stated canyon crossing did not occur because they were already beyond Bonebridge on the Ash Ground toward Saint Aurel."
+  },
+  "late-detail-30": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the short sword carried on this particular trip is a plausible equipment question anchored to the departure from Abbot Grell."
+  },
+  "late-detail-31": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "This recalls Grell’s story-relevant uncertainty about whether the monastery’s archives offer a way to contact Ishkar, tied to a specific exchange at the shrine."
+  },
+  "late-detail-32": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a specific tactical decision explicitly stated after the caravan cleared the pass and Tamsin checked for mercenaries."
+  },
+  "late-detail-33": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The reliquary’s protected position is a relevant, moment-specific detail, but the passage depicts it remaining secured among the cargo rather than Wren repositioning it."
+  },
+  "late-detail-34": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "This is a plausible, moment-specific question about how Grell secured the gates, but the passage does not depict the temporal event as stated: the gates are in an inner court with a route toward Saint Aurel, not explicitly Saint Aurel’s inner court."
+  },
+  "late-detail-35": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a concrete consequence of the player's shove, and the passage explicitly shows Grell injuring his hand against the wagon rail."
+  },
+  "late-vague-16": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the lead driver's response at a specific stage of the crossing, and the passage explicitly depicts him stopping behind the guide as she tests the ash ahead."
+  },
+  "late-vague-17": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls the outcome of a specific search for a secret passage, which the passage explicitly depicts: the gaps revealed only rough stone."
+  },
+  "late-vague-18": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a specific, consequential instruction to slow the wagons to a crawl when the caravan reached the sandstorm’s edge, which the passage explicitly depicts."
+  },
+  "late-vague-19": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls Captain Lusk’s requirement for clearing the caravan’s name, and the passage explicitly shows him asking for an account to be entered into the record."
+  },
+  "late-vague-20": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a meaningful route reversal clearly depicted in the passage, motivated specifically by the hope of catching Captain Ferro Lusk before he left town."
+  },
+  "late-vague-21": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls knowledge relevant to whether turning back for water was an option, and the passage explicitly states she knew of no water source in the canyon when she checked the empty skin."
+  },
+  "late-vague-22": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the knowledge of the Wastes offered to Grell in exchange for a way to contact Ishkar is a plausible, moment-specific question about a trade explicitly depicted in the passage."
+  },
+  "late-vague-23": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a tactically important map finding unique to the monastery approach, and the passage explicitly places that check after the caravan bypasses the foothill ambush."
+  },
+  "late-vague-24": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the purpose of a specific route choice, and the passage explicitly depicts choosing the hidden path around the exposed approach at the foothill fork."
+  }
+}

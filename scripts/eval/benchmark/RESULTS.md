@@ -161,3 +161,55 @@ The conclusion is unchanged: v3 ≈ v2. v3 invents slightly less and says "canno
 ## Question-quality issue found during review
 
 Recurring-event tagging still over-tags common events: "a water shortage or heat-sickness crisis" was tagged in 42 test chunks. As a result, some late temporal questions ask about "the twentieth" or even "number 42" water crisis. No player asks that, and no writer can answer it, so the temporal numbers above understate what is achievable. The questions are frozen for this test set; the next question set should cap ordinals (for example at 5) and require each occurrence to be a distinct episode.
+
+---
+
+# Question set 2: same stories, higher-quality questions
+
+**Why.** The manual review for Judge v2 showed that many failures came from the questions themselves:
+- temporal questions about "the 42nd" water crisis;
+- "how much water is left?" asked about a quantity that changes over the story;
+- facts that recur in several passages;
+- questions about sensory trivia.
+
+The project owner chose to keep both stories and replace the questions. This is the **third use of the test story** (PROTOCOL.md Sections 6 and 10); the stories themselves are unchanged. The question set 1 files are archived in `out/<story>/qset1/`.
+
+**How the questions were made** (`make_questions.ts` v2, `screen_questions.ts`, `manual_review.json`, `validate_questions.ts`):
+1. **Generation:** `gpt-6.1-sol` sees the whole story outline and must pick a fact unique to the passage that does not change over time.
+2. **Recurring events** are counted as episodes, so a continuation is not a new occurrence, and the ordinal is capped at 5.
+3. **Screening:** `gpt-6.1-sol` dropped questions that were not story-relevant or not specific, and temporal questions whose passage does not show the event.
+4. **Manual review by Claude:** every dropped question was checked, and further trivia, duplicate facts and malformed questions were removed (35 + 4).
+5. **Top-up** questions were generated under a stricter "story-relevant only" rule, then screened and reviewed the same way.
+6. **Labels** come from `gpt-6-luna` (majority of 3). After labelling, questions whose acceptable passages give different answers were dropped.
+7. **The end-to-end judge** now sees all acceptable passages, not just the source passage.
+
+All screening and review happened **before any question set 2 retrieval or answer result was looked at**. Detail and vague questions generated from the same passage in the top-up often ask the same fact; they are kept as phrasing pairs and are not independent samples.
+
+Valid questions: **dev 92/130, test 91/140**.
+
+## Retrieval, Recall@10 at round 300 (code as at `a8c7510`; retrieval unchanged since)
+
+| | dev | test |
+|---|---|---|
+| v1 tier search | 0.946 | 0.824 |
+| BM25 only | 0.935 | 0.912 |
+| vector only | 0.957 | 0.956 |
+| **v2 hybrid** | **0.957** | **0.945** |
+| union ceiling | 0.967 | 0.978 |
+| paired v2 − v1 | +0.011 [−0.02, +0.04] | **+0.121 [+0.04, +0.21]** |
+
+Length curve on the test story's 45 early questions (rounds 100, 200, 300; 43, 93, 130 chunks): v1 goes 0.933 → 0.844 → **0.778**; v2 goes 1.000 → 0.978 → **0.978**.
+
+Better questions carry more context (who, where, what was happening), so retrieval is easier for every method. On dev, v1 and v2 are now tied. On test, v2's lead over v1 holds (+12 points) and v1 still decays with story length while v2 does not. On test, vector alone (0.956) is level with v2 (0.945, one question).
+
+## End to end at round 300 (v3 writer: top-3 memories with original text; judge v2)
+
+| | correct | contradicts | cannot recall | absent |
+|---|---|---|---|---|
+| dev, question set 2 | **76/92 (83%)** | 14 | 2 | 0 |
+| test, question set 2 | **72/91 (79%)** | 10 | 8 | 1 |
+| *test, question set 1 (same v3 writer, for comparison)* | *48/88 (55%)* | *31* | *8* | *1* |
+
+**Question quality explained most of the earlier low score.** With the same stories and the same writer, the test end-to-end accuracy rises from 55% to 79%, and contradictions fall from 31 to 10. These questions are harder in one sense: only 10–19% of answers are still in the chunk summary. The writer still gets them right, because the top-3 original texts usually contain the answer.
+
+Temporal questions are now few (8 dev, 5 test after screening). Their numbers are too small to interpret.

@@ -1,9 +1,59 @@
 {
   "story": "test",
   "questions": {
-    "generated": 88,
-    "valid": 88,
-    "dropped": []
+    "generated": 140,
+    "valid": 91,
+    "dropped": [
+      "early-detail-1",
+      "early-detail-15",
+      "early-detail-16",
+      "early-detail-2",
+      "early-detail-20",
+      "early-detail-29",
+      "early-detail-4",
+      "early-detail-5",
+      "early-detail-6",
+      "early-detail-7",
+      "early-detail-8",
+      "early-detail-9",
+      "early-temporal-1",
+      "early-temporal-2",
+      "early-temporal-3",
+      "early-temporal-4",
+      "early-vague-1",
+      "early-vague-11",
+      "early-vague-12",
+      "early-vague-13",
+      "early-vague-14",
+      "early-vague-2",
+      "early-vague-20",
+      "early-vague-3",
+      "early-vague-5",
+      "early-vague-7",
+      "early-vague-8",
+      "early-vague-9",
+      "late-detail-1",
+      "late-detail-10",
+      "late-detail-12",
+      "late-detail-13",
+      "late-detail-17",
+      "late-detail-18",
+      "late-detail-19",
+      "late-detail-20",
+      "late-detail-24",
+      "late-detail-29",
+      "late-detail-3",
+      "late-detail-8",
+      "late-temporal-1",
+      "late-temporal-4",
+      "late-temporal-5",
+      "late-vague-11",
+      "late-vague-15",
+      "late-vague-2",
+      "late-vague-3",
+      "late-vague-6",
+      "late-vague-7"
+    ]
   },
   "corpus_size": {
     "100": 43,
@@ -11,360 +61,360 @@
     "300": 130
   },
   "primary_v2_recall@10_at_300": {
-    "recall": 0.932,
+    "recall": 0.945,
     "ci95": [
-      0.875,
-      0.977
+      0.89,
+      0.989
     ],
-    "n": 88
+    "n": 91
   },
   "at_300": {
     "tier": {
       "recall@10": {
-        "recall": 0.773,
+        "recall": 0.824,
         "ci95": [
-          0.682,
-          0.852
+          0.747,
+          0.901
         ],
-        "n": 88
+        "n": 91
       },
       "recall@5": {
-        "recall": 0.693,
+        "recall": 0.736,
         "ci95": [
-          0.591,
-          0.784
+          0.648,
+          0.824
         ],
-        "n": 88
+        "n": 91
       }
     },
     "bm25": {
       "recall@10": {
-        "recall": 0.818,
+        "recall": 0.912,
         "ci95": [
-          0.727,
-          0.898
+          0.846,
+          0.967
         ],
-        "n": 88
+        "n": 91
       },
       "recall@5": {
-        "recall": 0.705,
+        "recall": 0.835,
         "ci95": [
-          0.602,
-          0.795
+          0.758,
+          0.912
         ],
-        "n": 88
+        "n": 91
       }
     },
     "vector": {
       "recall@10": {
-        "recall": 0.909,
+        "recall": 0.956,
         "ci95": [
-          0.841,
-          0.966
+          0.912,
+          0.989
         ],
-        "n": 88
+        "n": 91
       },
       "recall@5": {
-        "recall": 0.852,
+        "recall": 0.824,
         "ci95": [
-          0.773,
-          0.92
+          0.747,
+          0.901
         ],
-        "n": 88
+        "n": 91
       }
     },
     "v2": {
       "recall@10": {
-        "recall": 0.932,
+        "recall": 0.945,
         "ci95": [
-          0.875,
-          0.977
+          0.89,
+          0.989
         ],
-        "n": 88
+        "n": 91
       },
       "recall@5": {
-        "recall": 0.898,
+        "recall": 0.89,
         "ci95": [
-          0.83,
-          0.955
+          0.824,
+          0.945
         ],
-        "n": 88
+        "n": 91
       }
     },
     "union": {
       "recall@10": {
-        "recall": 0.955,
+        "recall": 0.978,
         "ci95": [
-          0.909,
-          0.989
+          0.945,
+          1.0
         ],
-        "n": 88
+        "n": 91
       },
       "recall@5": null
     }
   },
   "paired_v2_minus_tier_at_300": {
-    "mean": 0.159,
+    "mean": 0.121,
     "ci95": [
-      0.08,
-      0.239
+      0.044,
+      0.209
     ]
   },
   "curve_early": {
     "tier": {
       "100": {
-        "recall": 0.907,
+        "recall": 0.933,
         "ci95": [
-          0.814,
-          0.977
+          0.867,
+          1.0
         ],
-        "n": 43
+        "n": 45
       },
       "200": {
-        "recall": 0.721,
+        "recall": 0.844,
         "ci95": [
-          0.581,
-          0.86
+          0.733,
+          0.933
         ],
-        "n": 43
+        "n": 45
       },
       "300": {
-        "recall": 0.581,
+        "recall": 0.778,
         "ci95": [
-          0.442,
-          0.721
+          0.644,
+          0.889
         ],
-        "n": 43
+        "n": 45
       }
     },
     "bm25": {
       "100": {
-        "recall": 0.907,
+        "recall": 0.978,
         "ci95": [
-          0.814,
-          0.977
+          0.933,
+          1.0
         ],
-        "n": 43
+        "n": 45
       },
       "200": {
-        "recall": 0.837,
+        "recall": 0.933,
         "ci95": [
-          0.721,
-          0.93
+          0.844,
+          1.0
         ],
-        "n": 43
+        "n": 45
       },
       "300": {
-        "recall": 0.721,
+        "recall": 0.956,
         "ci95": [
-          0.581,
-          0.837
+          0.889,
+          1.0
         ],
-        "n": 43
+        "n": 45
       }
     },
     "vector": {
       "100": {
-        "recall": 0.977,
+        "recall": 0.978,
         "ci95": [
-          0.93,
+          0.933,
           1.0
         ],
-        "n": 43
+        "n": 45
       },
       "200": {
-        "recall": 0.884,
+        "recall": 0.978,
         "ci95": [
-          0.791,
-          0.977
+          0.933,
+          1.0
         ],
-        "n": 43
+        "n": 45
       },
       "300": {
-        "recall": 0.884,
+        "recall": 0.978,
         "ci95": [
-          0.791,
-          0.977
+          0.933,
+          1.0
         ],
-        "n": 43
+        "n": 45
       }
     },
     "v2": {
       "100": {
-        "recall": 0.977,
+        "recall": 1.0,
         "ci95": [
-          0.93,
+          1.0,
           1.0
         ],
-        "n": 43
+        "n": 45
       },
       "200": {
-        "recall": 0.884,
+        "recall": 0.978,
         "ci95": [
-          0.791,
-          0.977
+          0.933,
+          1.0
         ],
-        "n": 43
+        "n": 45
       },
       "300": {
-        "recall": 0.884,
+        "recall": 0.978,
         "ci95": [
-          0.791,
-          0.977
+          0.933,
+          1.0
         ],
-        "n": 43
+        "n": 45
       }
     },
     "union": {
       "100": {
-        "recall": 0.977,
+        "recall": 1.0,
         "ci95": [
-          0.93,
+          1.0,
           1.0
         ],
-        "n": 43
+        "n": 45
       },
       "200": {
-        "recall": 0.907,
+        "recall": 1.0,
         "ci95": [
-          0.814,
-          0.977
+          1.0,
+          1.0
         ],
-        "n": 43
+        "n": 45
       },
       "300": {
-        "recall": 0.907,
+        "recall": 1.0,
         "ci95": [
-          0.814,
-          0.977
+          1.0,
+          1.0
         ],
-        "n": 43
+        "n": 45
       }
     }
   },
   "by_type_at_300": {
     "detail": {
       "tier": {
-        "recall": 0.75,
-        "ci95": [
-          0.6,
-          0.875
-        ],
-        "n": 40
-      },
-      "bm25": {
-        "recall": 0.85,
-        "ci95": [
-          0.725,
-          0.95
-        ],
-        "n": 40
-      },
-      "vector": {
-        "recall": 0.85,
-        "ci95": [
-          0.725,
-          0.95
-        ],
-        "n": 40
-      },
-      "v2": {
-        "recall": 0.9,
-        "ci95": [
-          0.8,
-          0.975
-        ],
-        "n": 40
-      }
-    },
-    "vague": {
-      "tier": {
-        "recall": 0.833,
-        "ci95": [
-          0.7,
-          0.967
-        ],
-        "n": 30
-      },
-      "bm25": {
-        "recall": 0.933,
+        "recall": 0.917,
         "ci95": [
           0.833,
-          1.0
+          0.979
         ],
-        "n": 30
-      },
-      "vector": {
-        "recall": 0.967,
-        "ci95": [
-          0.9,
-          1.0
-        ],
-        "n": 30
-      },
-      "v2": {
-        "recall": 0.933,
-        "ci95": [
-          0.833,
-          1.0
-        ],
-        "n": 30
-      }
-    },
-    "temporal": {
-      "tier": {
-        "recall": 0.722,
-        "ci95": [
-          0.5,
-          0.889
-        ],
-        "n": 18
+        "n": 48
       },
       "bm25": {
-        "recall": 0.556,
+        "recall": 0.958,
         "ci95": [
-          0.333,
-          0.778
-        ],
-        "n": 18
-      },
-      "vector": {
-        "recall": 0.944,
-        "ci95": [
-          0.833,
+          0.896,
           1.0
         ],
-        "n": 18
+        "n": 48
       },
-      "v2": {
+      "vector": {
         "recall": 1.0,
         "ci95": [
           1.0,
           1.0
         ],
-        "n": 18
+        "n": 48
+      },
+      "v2": {
+        "recall": 0.979,
+        "ci95": [
+          0.938,
+          1.0
+        ],
+        "n": 48
+      }
+    },
+    "vague": {
+      "tier": {
+        "recall": 0.763,
+        "ci95": [
+          0.632,
+          0.895
+        ],
+        "n": 38
+      },
+      "bm25": {
+        "recall": 0.947,
+        "ci95": [
+          0.868,
+          1.0
+        ],
+        "n": 38
+      },
+      "vector": {
+        "recall": 0.947,
+        "ci95": [
+          0.868,
+          1.0
+        ],
+        "n": 38
+      },
+      "v2": {
+        "recall": 0.974,
+        "ci95": [
+          0.921,
+          1.0
+        ],
+        "n": 38
+      }
+    },
+    "temporal": {
+      "tier": {
+        "recall": 0.4,
+        "ci95": [
+          0.0,
+          0.8
+        ],
+        "n": 5
+      },
+      "bm25": {
+        "recall": 0.2,
+        "ci95": [
+          0.0,
+          0.6
+        ],
+        "n": 5
+      },
+      "vector": {
+        "recall": 0.6,
+        "ci95": [
+          0.2,
+          1.0
+        ],
+        "n": 5
+      },
+      "v2": {
+        "recall": 0.4,
+        "ci95": [
+          0.0,
+          0.8
+        ],
+        "n": 5
       }
     }
   },
   "summary_attribution_at_300": {
-    "share_of_questions_with_answer_in_summary": 0.443,
+    "share_of_questions_with_answer_in_summary": 0.187,
     "v2_recall@10_answer_in_summary": {
-      "recall": 0.949,
+      "recall": 1.0,
       "ci95": [
-        0.872,
+        1.0,
         1.0
       ],
-      "n": 39
+      "n": 17
     },
     "v2_recall@10_answer_only_in_original": {
-      "recall": 0.918,
+      "recall": 0.932,
       "ci95": [
-        0.837,
-        0.98
+        0.865,
+        0.986
       ],
-      "n": 49
+      "n": 74
     },
-    "v2_misses": 6,
-    "v2_misses_answer_in_summary": 2
+    "v2_misses": 5,
+    "v2_misses_answer_in_summary": 0
   }
 }
