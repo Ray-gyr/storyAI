@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSession } from "../../../../lib/sessionStore";
+import { getSession, getTranscript } from "../../../../lib/sessionStore";
+import { describeError } from "../../../../lib/errors";
 
 export const maxDuration = 60;
 
@@ -12,16 +13,24 @@ export async function GET(req: NextRequest) {
     }
 
     try {
-        const session = await getSession(sessionId);
+        const [session, transcript] = await Promise.all([
+            getSession(sessionId),
+            getTranscript(sessionId)
+        ]);
         if (!session) {
             return NextResponse.json({ error: "Session not found" }, { status: 404 });
         }
 
+        // 旧存档还没有完整对话记录时，退回到记忆管道里仍保留的轮次
+        const { unprocessedArchive, chatHistory } = session.memoryManager;
+        const fallback = [...unprocessedArchive, ...chatHistory].sort((a, b) => a.turn_id - b.turn_id);
+
         return NextResponse.json({
-            chatHistory: session.memoryManager.chatHistory,
+            transcript: transcript.length > 0 ? transcript : fallback,
             metadata: session.metadata
         });
-    } catch (e: any) {
-        return NextResponse.json({ error: e.message }, { status: 500 });
+    } catch (e) {
+        console.error("[Story Load] Failed to load session:", e);
+        return NextResponse.json({ error: describeError(e) }, { status: 500 });
     }
 }

@@ -1,0 +1,727 @@
+{
+  "story": "dev-hard",
+  "version": "hard-1",
+  "model": "gpt-6.1-sol",
+  "questions": [
+    {
+      "qid": "hard-1",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "7d933640-58d6-43e5-97ae-e0f8c9da6ff1",
+      "source_turns": [
+        1,
+        4
+      ],
+      "question": "What single word did my incoming transmission contain?",
+      "expected_answer": "LANTERN."
+    },
+    {
+      "qid": "hard-2",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "e12cfa26-d404-491d-8ae8-43ef75062847",
+      "source_turns": [
+        5,
+        10
+      ],
+      "question": "What clue led me to the service door?",
+      "expected_answer": "Fresh scrape marks along the plating that continued beneath the door."
+    },
+    {
+      "qid": "hard-3",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "47df86c8-ed8d-4836-9d4f-b90ed9bcf489",
+      "source_turns": [
+        19,
+        20
+      ],
+      "question": "How did I recognize the survey drone's owner?",
+      "expected_answer": "Its orange survey tape matched the tape on Odile’s equipment cases."
+    },
+    {
+      "qid": "hard-4",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "8220698b-ecd7-4812-b389-6b76fef49d72",
+      "source_turns": [
+        31,
+        40
+      ],
+      "question": "What happened to the cable I tried using as a shield?",
+      "expected_answer": "The gas jet tore it from your glove and swept it through the breach."
+    },
+    {
+      "qid": "hard-5",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "f19c2ccf-b533-469e-91ac-fb9241e7d016",
+      "source_turns": [
+        51,
+        51
+      ],
+      "question": "What was blocking my access to the recessed manual catch?",
+      "expected_answer": "A cable bundle running across the panel’s upper edge and behind its frame."
+    },
+    {
+      "qid": "hard-6",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "ee86557a-1851-4ac1-b0e0-a2facf7e2fa6",
+      "source_turns": [
+        56,
+        60
+      ],
+      "question": "How did I reconnect the circular coupling?",
+      "expected_answer": "By bracing the conduit, aligning the plug with the socket, and tightening the collar by hand."
+    },
+    {
+      "qid": "hard-7",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "14cf56e8-0bac-4605-8d79-651fe8cf7b06",
+      "source_turns": [
+        71,
+        73
+      ],
+      "question": "What did the conduit warning tell me to avoid?",
+      "expected_answer": "Repeated clamp cycles."
+    },
+    {
+      "qid": "hard-8",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "d5e8510e-5080-418f-a69b-8a50ef203547",
+      "source_turns": [
+        76,
+        77
+      ],
+      "question": "Which command did I use to disengage the docking clamps?",
+      "expected_answer": "RELEASE CLAMPS."
+    },
+    {
+      "qid": "hard-9",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "16c03c48-6c8c-4a7e-a2f2-cff0bf0d8929",
+      "source_turns": [
+        78,
+        80
+      ],
+      "question": "Which part of the repaired conduit was under mechanical strain?",
+      "expected_answer": "Its exposed coupling."
+    },
+    {
+      "qid": "hard-10",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "25bc6035-f658-45b7-b593-b8f04d30c85f",
+      "source_turns": [
+        91,
+        97
+      ],
+      "question": "What did the power conduit warning tell me to avoid?",
+      "expected_answer": "Repeated clamp cycles."
+    },
+    {
+      "qid": "hard-11",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "85a74318-d7b3-41fc-a7a0-49ed4c3a7388",
+      "source_turns": [
+        101,
+        101
+      ],
+      "question": "What risk would I take by removing part of the modular cargo bay?",
+      "expected_answer": "Compromising how cargo is secured."
+    },
+    {
+      "qid": "hard-12",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "41fd8886-4acd-41d5-9892-e1b78438c1fe",
+      "source_turns": [
+        106,
+        107
+      ],
+      "question": "Where did I pick up the portable O2 canister?",
+      "expected_answer": "From the equipment locker aboard the Kestrel."
+    },
+    {
+      "qid": "hard-13",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "e3978286-69ff-4432-b788-0d160176022d",
+      "source_turns": [
+        111,
+        120
+      ],
+      "question": "How did I free the manual catch?",
+      "expected_answer": "By pulling it while pushing the obstructing cable bundle aside through the gap."
+    },
+    {
+      "qid": "hard-14",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "078b12d1-96f9-4ca7-8af4-7d158833244e",
+      "source_turns": [
+        126,
+        127
+      ],
+      "question": "What kept me from searching deeper for Dr. Brandt?",
+      "expected_answer": "Gas venting from the breach made the deeper passage unsafe to enter."
+    },
+    {
+      "qid": "hard-15",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "307bc18a-6445-49b3-962a-f2be64d91070",
+      "source_turns": [
+        131,
+        140
+      ],
+      "question": "What damage did I find on the survey drone?",
+      "expected_answer": "Its rotor arm was sharply bent against its body."
+    },
+    {
+      "qid": "hard-16",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "c2e9e441-49af-41a9-ab03-f28a9dff7f63",
+      "source_turns": [
+        151,
+        151
+      ],
+      "question": "What made the route beyond the buckled section unsafe for me?",
+      "expected_answer": "Escaping gas was venting across the route."
+    },
+    {
+      "qid": "hard-17",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "beeb8eb9-01af-43a1-8065-fbf95f2140c0",
+      "source_turns": [
+        152,
+        160
+      ],
+      "question": "What was the word in the final transmission I found in the survey logs?",
+      "expected_answer": "Lantern."
+    },
+    {
+      "qid": "hard-18",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "1430c97b-59d4-4adc-a6ad-68256ef3e749",
+      "source_turns": [
+        164,
+        165
+      ],
+      "question": "Which transmission did I learn had survived the file damage?",
+      "expected_answer": "The “Lantern” transmission."
+    },
+    {
+      "qid": "hard-19",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "2d5514f5-de6b-43ed-af11-9b108a0c3e3f",
+      "source_turns": [
+        168,
+        169
+      ],
+      "question": "Where did the proprietor suggest I look for buyers?",
+      "expected_answer": "At the salvage counters."
+    },
+    {
+      "qid": "hard-20",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "513a6292-0a46-4f0e-a373-b90e57e491d7",
+      "source_turns": [
+        174,
+        177
+      ],
+      "question": "What did the trader tell me they don't keep track of?",
+      "expected_answer": "Wreck locations in the belt."
+    },
+    {
+      "qid": "hard-21",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "81519822-e65f-4133-b11d-6a8b938c0dac",
+      "source_turns": [
+        181,
+        185
+      ],
+      "question": "How much did I sell the cracked slate for?",
+      "expected_answer": "180 credits."
+    },
+    {
+      "qid": "hard-22",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "714bf205-772f-427f-b838-c3731bbdf38c",
+      "source_turns": [
+        191,
+        200
+      ],
+      "question": "What was the pawnbroker's policy on introducing me to buyers?",
+      "expected_answer": "He doesn't broker introductions or point customers to other buyers."
+    },
+    {
+      "qid": "hard-23",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "1c60e86f-a8b5-4752-a8d4-9ca19c15dbb3",
+      "source_turns": [
+        203,
+        206
+      ],
+      "question": "How many credits did I offer Brother Calix?",
+      "expected_answer": "300 credits."
+    },
+    {
+      "qid": "hard-24",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "6e41ece6-c6fb-4570-ad54-053bd3b34155",
+      "source_turns": [
+        207,
+        208
+      ],
+      "question": "What did I pay for the navigation core?",
+      "expected_answer": "300 credits and Odile’s brass compass."
+    },
+    {
+      "qid": "hard-25",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "c8d1ce74-c29d-4150-9785-a5f646909ad3",
+      "source_turns": [
+        211,
+        217
+      ],
+      "question": "What did installing the navigation core let me do again?",
+      "expected_answer": "Calculate routes through the debris belt."
+    },
+    {
+      "qid": "hard-26",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "80b3f132-b545-4d68-99ca-850db52fa642",
+      "source_turns": [
+        221,
+        223
+      ],
+      "question": "Why couldn't I brace the exposed coupling any further?",
+      "expected_answer": "The surrounding structure offered no solid point to brace it against."
+    },
+    {
+      "qid": "hard-27",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "80793cce-9c3e-4bf8-836b-c787c19cae0b",
+      "source_turns": [
+        231,
+        240
+      ],
+      "question": "What accusation did I make against the guard?",
+      "expected_answer": "That he had been stealing from the cargo holds."
+    },
+    {
+      "qid": "hard-28",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "50eb1f75-d326-47e4-a63d-c5708acc236f",
+      "source_turns": [
+        251,
+        251
+      ],
+      "question": "What compensation did the guards offer me?",
+      "expected_answer": "A share of the supplies, or credits at a price they would consider."
+    },
+    {
+      "qid": "hard-29",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "77859c10-a6eb-4465-97bb-f00e944f05fc",
+      "source_turns": [
+        261,
+        270
+      ],
+      "question": "Which department did I say Aiden Kessler worked in?",
+      "expected_answer": "The Logistics Department."
+    },
+    {
+      "qid": "hard-30",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "572091f7-d7ed-43af-9c63-835682d8cc0f",
+      "source_turns": [
+        281,
+        290
+      ],
+      "question": "How much did I sell the cracked data slate for?",
+      "expected_answer": "180 credits."
+    },
+    {
+      "qid": "hard-31",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4911d0e5-425d-4dc6-8bf3-dbb83f14eb94",
+      "source_turns": [
+        301,
+        301
+      ],
+      "question": "What were my options for the pending access request?",
+      "expected_answer": "Wait for Kessler’s confirmation or withdraw the request."
+    },
+    {
+      "qid": "hard-32",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "8bd00dba-5137-40e8-bf1b-47144bd6f7c4",
+      "source_turns": [
+        302,
+        310
+      ],
+      "question": "What hull damage did I find after the ambush?",
+      "expected_answer": "Fresh scoring and a shallow crease along the cargo-bay plating, with no puncture or escaping air."
+    },
+    {
+      "qid": "hard-33",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "331628d8-311a-4c03-a8b9-a6c9ed8cef69",
+      "source_turns": [
+        316,
+        317
+      ],
+      "question": "Where did I suggest we go for proper bracing materials?",
+      "expected_answer": "Port Halcyon."
+    },
+    {
+      "qid": "hard-34",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "2d5372b2-3372-434d-a4df-f96925934f3b",
+      "source_turns": [
+        321,
+        330
+      ],
+      "question": "How much did I pay for the structural braces?",
+      "expected_answer": "420 credits."
+    },
+    {
+      "qid": "hard-35",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "d5b12f22-fbe3-4c19-a534-1cae3f8c3932",
+      "source_turns": [
+        341,
+        350
+      ],
+      "question": "How many credits short was I of buying the spare plating?",
+      "expected_answer": "120 credits."
+    },
+    {
+      "qid": "hard-36",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "ea3a3f40-6f85-4201-9c57-f93e35dc2e02",
+      "source_turns": [
+        352,
+        353
+      ],
+      "question": "Where did I first localize the beacon signal?",
+      "expected_answer": "The Tessaly cloud skimmer platform itself, not somewhere beyond it."
+    },
+    {
+      "qid": "hard-37",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "3fc550a8-d522-4564-aa77-d3487613d1bf",
+      "source_turns": [
+        356,
+        357
+      ],
+      "question": "What blocked my way to the beacon?",
+      "expected_answer": "A panel with a small gap along one edge."
+    },
+    {
+      "qid": "hard-38",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "3f9fd9ad-f5af-4355-9b08-b1e674e515dd",
+      "source_turns": [
+        361,
+        369
+      ],
+      "question": "How did I release the beacon's contact cover?",
+      "expected_answer": "By pressing both recessed catches simultaneously."
+    },
+    {
+      "qid": "hard-39",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "b622fb3d-239c-443d-9791-87b65cefd9b3",
+      "source_turns": [
+        371,
+        373
+      ],
+      "question": "Did the beacon's signal lead me to another location?",
+      "expected_answer": "No. The beacon itself was the source; moving away revealed no location or route beyond the platform."
+    },
+    {
+      "qid": "hard-40",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "f172cd20-bb13-4b0b-bea0-7acb21765160",
+      "source_turns": [
+        378,
+        379
+      ],
+      "question": "Where couldn't the receiver guide me?",
+      "expected_answer": "Beyond the platform; it could only confirm the transmission came from the beacon."
+    },
+    {
+      "qid": "hard-41",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "8316a6a7-7569-44f5-9851-91ff866d0392",
+      "source_turns": [
+        389,
+        390
+      ],
+      "question": "Could I adjust the beacon’s transmission strength?",
+      "expected_answer": "No. The beacon had no transmission-strength setting or boost control."
+    },
+    {
+      "qid": "hard-42",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "10712a65-e9cc-476a-8716-160f869106b5",
+      "source_turns": [
+        401,
+        401
+      ],
+      "question": "What operations did I find documented in the skimmer’s records?",
+      "expected_answer": "Only the skimmer’s own sampling operations, with no beacon transmission records."
+    },
+    {
+      "qid": "hard-43",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "f57c8454-6561-4715-9b86-431563df90e5",
+      "source_turns": [
+        411,
+        415
+      ],
+      "question": "Why did I leave the laboratory cables intact?",
+      "expected_answer": "There was no clear connection point to use to restore power."
+    },
+    {
+      "qid": "hard-44",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "5f28323e-c0a0-4af2-b204-1a3c9cf6a9d9",
+      "source_turns": [
+        418,
+        419
+      ],
+      "question": "Did I find any physical records about the Lantern project?",
+      "expected_answer": "No, there were no physical files or documents mentioning the Lantern project."
+    },
+    {
+      "qid": "hard-45",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "eb319d39-4ef2-4362-9464-10d75da87f06",
+      "source_turns": [
+        428,
+        430
+      ],
+      "question": "What did my search of the laboratory’s adjacent rooms turn up?",
+      "expected_answer": "No usable power source."
+    },
+    {
+      "qid": "hard-46",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "52c27a3f-f90a-4288-97d6-335f3a35a8cd",
+      "source_turns": [
+        437,
+        440
+      ],
+      "question": "What did the proprietor tell me they couldn't remember?",
+      "expected_answer": "Who bought Odile’s cracked data slate and survey logs."
+    },
+    {
+      "qid": "hard-47",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "f5bd44a5-785d-419f-819f-5d0d5d400591",
+      "source_turns": [
+        441,
+        447
+      ],
+      "question": "What buyer details did I find in the pawnshop ledger?",
+      "expected_answer": "None—the ledger contained no buyer name or contact information."
+    },
+    {
+      "qid": "hard-48",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "971b50bb-cf7f-4b1b-bb50-b09690de69d2",
+      "source_turns": [
+        451,
+        451
+      ],
+      "question": "What buyer details couldn't I get from the pawnshop ledger?",
+      "expected_answer": "The buyer’s name or contact information."
+    },
+    {
+      "qid": "hard-49",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "2ee5775c-3f44-412a-a1f0-e10393dddb0c",
+      "source_turns": [
+        461,
+        470
+      ],
+      "question": "What couldn't the supervisor provide in my place?",
+      "expected_answer": "Your authorization for Priya’s release."
+    },
+    {
+      "qid": "hard-50",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "19713308-17ef-4b9d-b775-d21f7e318b59",
+      "source_turns": [
+        474,
+        480
+      ],
+      "question": "Why was I told not to use the plasma cutter in lockup?",
+      "expected_answer": "Because it was a security station."
+    },
+    {
+      "qid": "hard-51",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "6c30b10f-1719-4960-966e-34ca818d67ea",
+      "source_turns": [
+        488,
+        490
+      ],
+      "question": "What did Priya want me to check before buying supplies?",
+      "expected_answer": "The reactor and life support readings."
+    },
+    {
+      "qid": "hard-52",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "70ec425c-7a3f-4d03-99f0-aa0e9abe3ac2",
+      "source_turns": [
+        501,
+        501
+      ],
+      "question": "What did my follow-up reactor diagnostic confirm?",
+      "expected_answer": "Stable regulation with no active faults, and steady life-support readings."
+    },
+    {
+      "qid": "hard-53",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "c02a66d3-e8c0-4337-9de4-ebace6262c5b",
+      "source_turns": [
+        508,
+        510
+      ],
+      "question": "What did I use to stabilize the docking-ring conduit?",
+      "expected_answer": "Structural braces."
+    },
+    {
+      "qid": "hard-54",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "b05457ee-8974-4352-9a9c-8bc5a8d929a7",
+      "source_turns": [
+        511,
+        516
+      ],
+      "question": "What did I use to press the bent retaining clip into place?",
+      "expected_answer": "The insulated tool."
+    },
+    {
+      "qid": "hard-55",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "1b745eed-747a-47db-b5ba-3434db026053",
+      "source_turns": [
+        519,
+        520
+      ],
+      "question": "What did Voren forbid me from doing before checking the pressure?",
+      "expected_answer": "Cutting into the transfer hatch."
+    },
+    {
+      "qid": "hard-56",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "aac6431e-465b-4a6a-8da1-a698e9be66b4",
+      "source_turns": [
+        531,
+        540
+      ],
+      "question": "What access methods did the guards say they couldn't offer me?",
+      "expected_answer": "An access code or override."
+    },
+    {
+      "qid": "hard-57",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "c0cad6e1-ecf9-4c80-b628-1fe42eb441bb",
+      "source_turns": [
+        548,
+        550
+      ],
+      "question": "What was I searching for beyond the cut transfer hatch?",
+      "expected_answer": "Signs of Hal Voren or potential traps."
+    },
+    {
+      "qid": "hard-58",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "0aede088-b07f-414e-9295-bed6099c98bf",
+      "source_turns": [
+        552,
+        560
+      ],
+      "question": "What couldn't my suit sensors tell me about anyone farther away?",
+      "expected_answer": "Whether anyone was beyond the sensors’ range."
+    },
+    {
+      "qid": "hard-59",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "993226fd-f07c-41bd-8341-14e251c9b7bc",
+      "source_turns": [
+        568,
+        569
+      ],
+      "question": "What did I check after failing to activate my portable O2 canister?",
+      "expected_answer": "My suit supply."
+    },
+    {
+      "qid": "hard-60",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4a64054b-2b0d-4e73-980e-4d0630525121",
+      "source_turns": [
+        578,
+        580
+      ],
+      "question": "Did my suit scanner find anything that could help restore power?",
+      "expected_answer": "No—it detected no active electronic equipment nearby."
+    }
+  ]
+}

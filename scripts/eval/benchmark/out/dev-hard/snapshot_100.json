@@ -1,0 +1,233 @@
+{
+  "round": 100,
+  "taken_at": 1792395404326,
+  "turn_count": 201,
+  "last_turn_id": 201,
+  "currentState": {
+    "world_bible": {
+      "story_framework": "Near-future hard sci-fi salvage drama. Juno Arak, a salvage pilot working the debris belt around gas giant Tessaly, must investigate the disappearance of her mentor Captain Odile Marsh after a single last transmission — 'Lantern'. Conflicts: corporate pressure (Ostrander Mining Concern) to seal Meridian-9 vs. scavenger cults and survivors; salvage economics and life-support/time pressure; unraveling Meridian-9's secrets and Odile's fate. Narrative threads: investigating Meridian-9, navigating politics with Director Hal Voren and Brother Calix, protecting/repairing the Kestrel while managing scarce resources, and interpreting Odile's logs/clues.",
+      "world_mechanics": "Grounded hard-SF rules. No magic. Life support, oxygen, and hull integrity are mechanically consequential; EV (extravehicular) time is limited by suit O2 and suit integrity. Salvage yields credits but attracts corporate and cult attention. Communications are imperfect across the debris belt; data slates can be corrupted. Robotics exist but are fallible (maintenance bots like Mox can be damaged or reprogrammed). Physical hazards: micro-debris, radiation pockets near the gas giant, volatile hull ruptures, and failing docking rings. Resource management (O2, fuel, spare parts, credits) and realistic physics (momentum, limited thruster delta-v for the tug) determine success.",
+      "narrative_style": "Grounded, tense, close third-person with documentary fragments (log entries, survey data). Sparse, technical prose interleaved with atmospheric descriptions of the gas giant and derelict station interiors. Stakes communicated through time pressure and resource scarcity rather than supernatural elements."
+    },
+    "known_characters": [
+      {
+        "name": "Juno Arak",
+        "description": "Protagonist. Salvage pilot of the tug Kestrel. Practical, determined, emotionally tethered to mentor Odile. Skilled at short-range salvage ops and EVA work."
+      },
+      {
+        "name": "Captain Odile Marsh",
+        "description": "Juno's mentor and veteran survey captain who vanished three weeks ago while surveying Meridian-9. Last transmission: 'Lantern'. Left behind a brass compass and survey logs."
+      },
+      {
+        "name": "Priya Sen",
+        "description": "Kestrel's engineer. Sarcastic, fiercely loyal to Juno, expert at jury-rigging and repairing damaged kit."
+      },
+      {
+        "name": "Brother Calix",
+        "description": "Leader of a scavenger cult living in the belt. Charismatic and territorial; the cult reveres salvaged artifacts and opposes corporate sealing of sites."
+      },
+      {
+        "name": "Director Hal Voren",
+        "description": "Head of the Ostrander Mining Concern. Corporate, pragmatic, pushing to seal Meridian-9 to protect assets and interests."
+      },
+      {
+        "name": "Mox",
+        "description": "A damaged maintenance robot that follows Juno. Limited autonomy and patchwork repairs; useful for heavy lifting and diagnostics but unreliable under stress."
+      },
+      {
+        "name": "Dr. Ilse Brandt",
+        "description": "Scientist who survived on Meridian-9. Potential source of firsthand information and technical insight into the station's research and failure."
+      }
+    ],
+    "known_locations": [
+      {
+        "name": "Kestrel",
+        "description": "Juno's small salvage tug. Modular cargo bay, jury-rigged life support, patched hull. Home base for operations in the debris belt."
+      },
+      {
+        "name": "Meridian-9 docking ring",
+        "description": "The external docking and transfer hub of the derelict research station Meridian-9. The control display is dark, and the conduit disappears behind a buckled section of metal; remains unpowered."
+      },
+      {
+        "name": "Meridian-9 hydroponics deck",
+        "description": "Interior deck of Meridian-9 used for plant growth and life-support research. The breach cut in the sealed bulkhead is venting gas into the passage, making the route beyond unsafe to enter."
+      },
+      {
+        "name": "Ostrander refinery",
+        "description": "Processing facility run by Ostrander Mining Concern. Heavy machinery, secure storage, and corporate presence in the belt."
+      },
+      {
+        "name": "Vigil",
+        "description": "The cult's shrine-ship. A patched-together vessel where Brother Calix and the scavenger cult live and store relics."
+      },
+      {
+        "name": "Port Halcyon",
+        "description": "Crowded trade hub and supply node for the belt. Market for salvage goods, pawnshops, and places to pick up leads or contentious orders. Juno has arrived with the Kestrel, surrounded by dock traffic and market noise."
+      },
+      {
+        "name": "Tessaly cloud skimmer platform",
+        "description": "Floating platform that samples Tessaly's upper atmosphere. Remote, with scientific instruments and occasional corporate skimmers."
+      }
+    ],
+    "known_items": [
+      {
+        "name": "plasma cutter",
+        "description": "Handheld cutting tool used for cutting hull plating and salvage rigs. Essential for boarding and salvage operations. Now secured against Juno's suit."
+      },
+      {
+        "name": "cracked data slate with Odile's survey logs",
+        "description": "Damaged slate containing Odile Marsh's last survey data and voice notes. Partially corrupted but contains the last signal: 'Lantern'. Currently not in Juno's possession."
+      },
+      {
+        "name": "brass compass (Odile's)",
+        "description": "Old-fashioned brass compass that belonged to Odile. Sentimental object used as a mnemonic for clues in Odile's logs."
+      },
+      {
+        "name": "portable O2 canister",
+        "description": "Spare emergency oxygen supply for short EV excursions and suit top-ups."
+      },
+      {
+        "name": "Mox (unit)",
+        "description": "Damaged maintenance robot unit that follows Juno and can be utilized for repairs and heavy tasks."
+      },
+      {
+        "name": "compact survey drone",
+        "description": "A small drone used for surveying, now confirmed to have no visible manual control or override. The casing remains intact, but it is inert, with a dark status lamp and a damaged rotor, rendering it non-functional."
+      }
+    ],
+    "current_location": "Port Halcyon",
+    "current_task": "Search for potential buyers for salvage or Odile's survey logs.",
+    "inventory": [
+      "plasma cutter",
+      "brass compass (Odile's)",
+      "portable O2 canister"
+    ],
+    "custom_attributes": [
+      {
+        "name": "Credits",
+        "value": 680,
+        "type": "numeric"
+      },
+      {
+        "name": "Oxygen",
+        "value": 92,
+        "type": "numeric"
+      },
+      {
+        "name": "Kestrel Hull Integrity",
+        "value": 67,
+        "type": "numeric"
+      },
+      {
+        "name": "Data Corruption Risk",
+        "value": 0,
+        "type": "numeric"
+      }
+    ]
+  },
+  "chatHistory": [
+    {
+      "turn_id": 197,
+      "role": "assistant",
+      "text": "Juno searches the spaces between the market stalls and the nearby foot traffic, checking the edges of counters and the public walkways for anything abandoned. She finds no salvage or usable materials. The traders keep their goods behind their counters, and nothing loose is left for her to collect.\n\nShe returns to the salvage counters empty-handed. The traders will consider physical salvage if she brings some in, but none offers a buyer for Odile’s survey logs. Juno still has 680 credits and Odile’s brass compass. The market stalls remain open around her."
+    },
+    {
+      "turn_id": 198,
+      "role": "user",
+      "text": "I approach a trader and offer to sell Odile’s brass compass, asking if they know anyone interested in unique navigational items."
+    },
+    {
+      "turn_id": 199,
+      "role": "assistant",
+      "text": "Juno approaches a trader and places Odile’s brass compass on the counter, offering to sell it. She asks whether they know anyone interested in unique navigational items.\n\nThe trader studies the brass casing without picking it up. “I buy salvage, not personal keepsakes. I don’t know anyone looking for one.” He slides the compass back across the counter and returns to sorting his stock.\n\nJuno keeps the compass. The trader offers no price or contact. She stands at the market stall with 680 credits and the compass in her possession; the other counters remain open nearby."
+    },
+    {
+      "turn_id": 200,
+      "role": "user",
+      "text": "I scan the nearby stalls and approach another trader to inquire if they buy survey logs or know someone who does."
+    },
+    {
+      "turn_id": 201,
+      "role": "assistant",
+      "text": "Juno scans the nearby stalls, then approaches another trader. She asks whether they buy survey logs or know someone who does.\n\nThe trader shakes their head. “I deal in physical salvage. I don’t buy logs, and I don’t have a contact for them.” They glance past her toward the next customer, making clear the conversation is over.\n\nJuno has no survey logs to offer; the cracked slate and Odile’s records were sold at the pawnshop. She still has the brass compass and 680 credits. The trader turns back to the stall, while the market continues around her."
+    }
+  ],
+  "unprocessedArchive": [
+    {
+      "turn_id": 191,
+      "role": "assistant",
+      "text": "Juno leaves the market stalls and returns to the pawnshop. She asks the proprietor whether he will negotiate to return the cracked slate and Odile’s survey logs.\n\nThe proprietor checks the completed sale record. “The transaction is finished. I can’t return what you sold.” He confirms Juno received 180 credits for the slate and logs; they are no longer in her possession. He makes no offer to reverse the sale.\n\nThe proprietor turns to the next customer. Juno stands beside the counter with 680 credits and Odile’s brass compass. The slate and survey logs are gone, and the pawnshop has nothing more to offer her."
+    },
+    {
+      "turn_id": 192,
+      "role": "user",
+      "text": "I ask the pawnshop proprietor if he knows anyone in Port Halcyon who might buy survey logs or salvage."
+    },
+    {
+      "turn_id": 193,
+      "role": "assistant",
+      "text": "Juno asks the pawnshop proprietor if he knows anyone in Port Halcyon who might buy survey logs or salvage.\n\nHe shakes his head. “I don’t broker introductions. I bought the slate you brought in, but I can’t point you to another buyer.” He taps the counter beside the completed transaction record, then turns toward the customer waiting behind her.\n\nThe proprietor offers no contact or lead. Juno no longer has the cracked slate or Odile’s survey logs, and she has no physical salvage to show a buyer. She remains at the counter with 680 credits and Odile’s brass compass. The market stalls are outside; the proprietor is ready to serve the next customer."
+    },
+    {
+      "turn_id": 194,
+      "role": "user",
+      "text": "I leave the pawnshop and head to the market stalls to search for potential buyers for salvage or Odile's survey logs."
+    },
+    {
+      "turn_id": 195,
+      "role": "assistant",
+      "text": "Juno leaves the pawnshop and crosses Port Halcyon to the salvage stalls. She asks the traders whether they know buyers for physical salvage or Odile’s survey logs.\n\nThe traders say they will inspect salvage brought to their counters, but they cannot arrange a buyer without seeing the goods. None is interested in survey logs, and none offers a contact. Odile’s cracked slate and logs were sold at the pawnshop; Juno has no salvage to present.\n\nThe traders turn back to their counters. Juno remains among the market stalls with 680 credits and Odile’s brass compass. No buyer or lead has emerged. The stalls are open, and the traders will consider physical salvage if she brings some in."
+    },
+    {
+      "turn_id": 196,
+      "role": "user",
+      "text": "I search the nearby area for any leftover salvage or abandoned materials I can collect to sell at the market stalls."
+    }
+  ],
+  "chunk_ids": [
+    "59493165-eca0-4e97-8a74-f7afe857b536",
+    "b8572a84-e573-4bf8-b2ae-b87d922c74eb",
+    "89d9ffbf-f153-462a-bc88-131f2b8583f0",
+    "41fd8886-4acd-41d5-9892-e1b78438c1fe",
+    "bcac00bc-2c98-4dfb-b7e7-0d79af317590",
+    "078b12d1-96f9-4ca7-8af4-7d158833244e",
+    "f0bca1b8-e3b9-4072-b6d0-190e9610607d",
+    "c2e9e441-49af-41a9-ab03-f28a9dff7f63",
+    "ee86557a-1851-4ac1-b0e0-a2facf7e2fa6",
+    "5fe40c9b-99e7-451a-b167-073d7a96ca6d",
+    "d5e8510e-5080-418f-a69b-8a50ef203547",
+    "14cf56e8-0bac-4605-8d79-651fe8cf7b06",
+    "d0f54a96-147c-4a7f-a36e-96522ddec927",
+    "e3978286-69ff-4432-b788-0d160176022d",
+    "e57cc92b-3f64-455a-8c7c-85a948a86931",
+    "899afe9c-477f-4bce-878c-58903ae9836f",
+    "7d933640-58d6-43e5-97ae-e0f8c9da6ff1",
+    "47df86c8-ed8d-4836-9d4f-b90ed9bcf489",
+    "2d5514f5-de6b-43ed-af11-9b108a0c3e3f",
+    "10e1d259-9bad-4667-927f-1b67eab2469d",
+    "e12cfa26-d404-491d-8ae8-43ef75062847",
+    "f19c2ccf-b533-469e-91ac-fb9241e7d016",
+    "154e039f-eaca-42af-abeb-d2fbc17ba5fc",
+    "91fed56c-731e-4e19-a1b5-26c390fb7a3a",
+    "81519822-e65f-4133-b11d-6a8b938c0dac",
+    "ed2354ec-1dcf-47a7-bd74-ed8560f1b5f8",
+    "e6253a0c-af87-47f6-92a6-7fed1f742d21",
+    "25bc6035-f658-45b7-b593-b8f04d30c85f",
+    "1209a367-fe43-4436-bcd7-42fe0680e973",
+    "52b094fd-f64e-45c9-b7fd-d045358919f8",
+    "beeb8eb9-01af-43a1-8065-fbf95f2140c0",
+    "952aaa13-c971-4c89-a3a1-7efde6ebe8fc",
+    "ffd4b226-d2fc-4f33-8740-2a6503ce586b",
+    "bdc4bf33-d735-4938-82ae-e7aad0740c8b",
+    "33a09870-f9d6-445d-a125-f5828491f632",
+    "85a74318-d7b3-41fc-a7a0-49ed4c3a7388",
+    "2d5570fd-2279-4202-acd5-ad82f4554787",
+    "1430c97b-59d4-4adc-a6ad-68256ef3e749",
+    "513a6292-0a46-4f0e-a373-b90e57e491d7",
+    "8220698b-ecd7-4812-b389-6b76fef49d72",
+    "48498408-d2a0-4c3f-b4a8-9e73236f1802",
+    "16c03c48-6c8c-4a7e-a2f2-cff0bf0d8929",
+    "814639c7-94a9-4bba-ae98-3aa58e09606a",
+    "307bc18a-6445-49b3-962a-f2be64d91070"
+  ]
+}

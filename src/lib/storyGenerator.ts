@@ -2,28 +2,89 @@ import { HumanMessage, AIMessage } from "@langchain/core/messages";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { getManagerLLM, getStoryLLM } from "./Init";
 import { StoryState, StateChangeSchema, applyStateChanges } from "./currentState";
-import { MemoryManager } from "./memoryManager";
-import { translateUserIntent } from "./query";
-import { retrieveMemories } from "./vectorDBManager";
+import { translateUserIntent, QueryIntent } from "./query";
+import { bumpAccessCounts } from "./vectorDBManager";
+import { retrieveMemories, startDenseSearch } from "./hybridRetriever";
+import { IndexedMemory } from "./memoryStore";
 import { storyWorkerPrompt, storyUpdatePrompt } from "./prompt";
-import { updateSession, SessionData } from "./sessionStore";
+import { updateSession, getTranscriptLength, SessionData } from "./sessionStore";
+import { ChatTurn } from "./memoryManager";
+
+/** 一回合生成完毕后的产物，交给 finalizeStoryTurn 落盘 */
+export interface StoryTurnResult {
+    fullText: string;
+    retrievedMemories: IndexedMemory[];
+}
+
+// 意图翻译失败时的兜底：BM25 一路直接用玩家原话
+const fallbackIntent = (userInput: string): QueryIntent => ({
+    search_query: userInput,
+    characters_involved: [],
+    items_involved: [],
+    locations_involved: []
+});
+
+/** 写作 prompt 里的一条记忆：摘要必有；有轮次时按发生顺序标注；content 为片段原文（排名靠前的记忆才有） */
+export interface WriterMemory {
+    dense_summary: string;
+    start_turn?: number;
+    end_turn?: number;
+    content?: string;
+}
+
+function formatMemory(m: WriterMemory, index: number): string {
+    const turns = m.start_turn !== undefined ? ` · turns ${m.start_turn}–${m.end_turn ?? m.start_turn}` : "";
+    return m.content
+        ? `[Memory ${index}${turns}]\nSummary: ${m.dense_summary}\nOriginal text:\n${m.content}`
+        : `[Memory ${index}${turns}] ${m.dense_summary}`;
+}
+
+/**
+ * 组装写作 prompt 的输入（线上生成与评测脚本共用，保证完全一致）
+ * world_bible 只在 World Logic 中给出一次，Current State 里去掉，避免同一份设定传两遍
+ * 记忆按发生顺序（从早到晚）排列并标注轮次，便于回答"第一次……"之类的问题
+ */
+export function writerPromptInputs(params: {
+    state: StoryState;
+    memories: WriterMemory[];
+    unprocessedArchive: ChatTurn[];
+    chatHistory: ChatTurn[];
+    input: string;
+}) {
+    const { world_bible, ...stateWithoutWorldBible } = params.state;
+    return {
+        worldBible: JSON.stringify(world_bible),
+        currentState: JSON.stringify(stateWithoutWorldBible),
+        retrievedContext: params.memories.length > 0
+            ? [...params.memories]
+                .sort((a, b) => (a.start_turn ?? 0) - (b.start_turn ?? 0))
+                .map((m, i) => formatMemory(m, i + 1))
+                .join("\n\n")
+            : "No relevant long-term memories.",
+        unprocessedArchive: params.unprocessedArchive.length > 0
+            ? params.unprocessedArchive.map(t => `[Turn ${t.turn_id}] ${t.role.toUpperCase()}: ${t.text}`).join("\n")
+            : "No unprocessed archive memories.",
+        chatHistory: params.chatHistory.map(t => t.role === "user" ? new HumanMessage(t.text) : new AIMessage(t.text)),
+        input: params.input,
+    };
+}
 
 /**
  * 推进故事的一回合 (Orchestrator)
  * 接收玩家输入，进行意图翻译、长短记忆检索，并调用核心大模型写出下一段剧情。
- * 随后自动将新的问答对存入 MemoryManager 进行长线生命周期管理。
- * 
+ * 生成结束后由调用方调用 finalizeStoryTurn 把本回合写回记忆与存档。
+ *
  * @param userInput 玩家的行动指令或对话
  * @param session 包含状态和记忆的全套会话数据
  * @param sessionId 当前正在运行的存档 ID（用于 Pinecone 隔离）
- * @returns 大模型新生成的剧情文本
+ * @returns 逐块 yield 剧情文本，结束时 return 完整文本与本回合召回的记忆
  */
 export async function* generateNextStoryTurnStream(
     userInput: string,
     session: SessionData,
     sessionId: string
-): AsyncGenerator<string, void, unknown> {
-    const { currentState, memoryManager, metadata } = session;
+): AsyncGenerator<string, StoryTurnResult, unknown> {
+    const { currentState, memoryManager } = session;
     console.log(`\n======================================================`);
 
     // ⏱️ [计时节点 T0] - 接收玩家输入 (开始点)
@@ -33,42 +94,38 @@ export async function* generateNextStoryTurnStream(
     // 1. 获取近期上下文 (同步)
     const recentHistory = memoryManager.chatHistory.slice(-3);
 
-    // 2. Translate player intent (with short-circuit routing) (Async)
-    console.log(`[StoryGenerator] Parsing intent and checking for short-circuit routing...`);
-    const queryIntent = await translateUserIntent(currentState, recentHistory, userInput);
+    // 2. 向量检索直接用玩家原话，与意图翻译并行发起（混合检索的向量一路不依赖改写结果）
+    const dense = startDenseSearch(userInput, sessionId);
+
+    // 3. Translate player intent into a retrieval query (Async)，供 BM25 一路使用
+    // 不再做"缓存可答"短路：实测路由会把绝大多数回忆型问题误判为可答而跳过检索（37/40，其中 32 题答案并不在上下文中），
+    // 而行动指令本来就有 96% 会检索，短路只能在约 4% 的回合省下约 0.6s
+    console.log(`[StoryGenerator] Parsing intent...`);
+    const queryIntent = await translateUserIntent(currentState, recentHistory, userInput)
+        .catch(e => {
+            console.error("[StoryGenerator] Intent parsing failed, falling back to raw input for retrieval:", e);
+            return fallbackIntent(userInput);
+        });
 
     // ⏱️ [计时节点 T1]
     const T1 = Date.now();
     console.log(`[⏱️ T1] [Async] Intent parsing complete (GPT API time): ${T1 - T0} ms`);
 
-    // 3. 检索云端长记忆 RAG (如果短路开关触发，底层会自动拦截并返回 []) (异步)
-    const results = await retrieveMemories(queryIntent, sessionId);
+    // 4. 混合检索长记忆：BM25 + 向量，RRF 合并 (异步)
+    // 长记忆只是增强项，检索失败时不阻断剧情生成
+    const results = await retrieveMemories({ rawInput: userInput, intent: queryIntent, dense, sessionId })
+        .catch(e => {
+            console.error("[StoryGenerator] Memory retrieval failed, continuing without long-term memories:", e);
+            return [] as IndexedMemory[];
+        });
 
     // ⏱️ [计时节点 T2]
     const T2 = Date.now();
-    console.log(`[⏱️ T2] [Async] Pinecone RAG retrieval complete (Vector search time): ${T2 - T1} ms`);
+    console.log(`[⏱️ T2] [Async] Hybrid retrieval complete (after intent parsing): ${T2 - T1} ms`);
 
-    // Assemble RAG context (Sync)
-    let retrievedContext = "No relevant long-term memories.";
-    if (results.length > 0) {
-        retrievedContext = results.map((r, i) => `[Memory Fragment ${i + 1}]: ${r.dense_summary}`).join("\n");
-        console.log(`[StoryGenerator] Successfully assembled ${results.length} long-term memories for the model.`);
-    } else {
-        console.log(`[StoryGenerator] No long-term memories found or needed, proceeding with current state only.`);
-    }
+    console.log(`[StoryGenerator] Assembled ${results.length} long-term memories for the model.`);
 
-    // 4. Format unprocessed archive (unprocessedArchive) (Sync)
-    const unprocessedArchiveStr = memoryManager.unprocessedArchive.length > 0
-        ? memoryManager.unprocessedArchive.map(t => `[Turn ${t.turn_id}] ${t.role.toUpperCase()}: ${t.text}`).join("\n")
-        : "No unprocessed archive memories.";
-
-    // 5. 将系统内的纯文本 ChatTurn 数组转换为 LangChain 标准 Message 数组 (同步)
-    const langchainHistory = memoryManager.chatHistory.map(turn => {
-        if (turn.role === "user") return new HumanMessage(turn.text);
-        return new AIMessage(turn.text);
-    });
-
-    // 6. 组装并调用核心剧情模型 (WorkerLLM) (同步)
+    // 5. 组装并调用核心剧情模型 (同步)
     const storyLLM = getStoryLLM();
     const chain = storyWorkerPrompt.pipe(storyLLM).pipe(new StringOutputParser());
 
@@ -78,14 +135,13 @@ export async function* generateNextStoryTurnStream(
 
     console.log(`[StoryGenerator] Calling main model to continue the story... (streaming)`);
     // 创建流对象 (异步)
-    const stream = await chain.stream({
-        worldBible: JSON.stringify(currentState.world_bible),
-        currentState: JSON.stringify(currentState),
-        unprocessedArchive: unprocessedArchiveStr,
-        retrievedContext: retrievedContext,
-        chatHistory: langchainHistory,
-        input: userInput
-    });
+    const stream = await chain.stream(writerPromptInputs({
+        state: currentState,
+        memories: results,
+        unprocessedArchive: memoryManager.unprocessedArchive,
+        chatHistory: memoryManager.chatHistory,
+        input: userInput,
+    }));
 
     // ⏱️ [计时节点 T4]
     const T4 = Date.now();
@@ -108,47 +164,88 @@ export async function* generateNextStoryTurnStream(
     const T6 = Date.now();
     console.log(`[⏱️ T6] [Async] Text stream transmission ended. Total generation time: ${T6 - T0} ms.`);
 
-    // --- 剥离后台静默收尾任务，不阻塞流的关闭 ---
-    (async () => {
-        try {
-            // 6. 将新的对话数据推入系统记忆管道
-            const baseTurnId = memoryManager.chatHistory.length > 0
-                ? memoryManager.chatHistory[memoryManager.chatHistory.length - 1].turn_id
-                : 0;
+    return { fullText, retrievedMemories: results };
+}
 
-            await memoryManager.addTurn({
-                turn_id: baseTurnId + 1,
-                role: "user",
-                text: userInput
-            }, currentState, sessionId);
+/**
+ * 回合收尾：把新的问答对推入记忆管道、计算状态 Diff，并持久化到 Redis。
+ * 必须在请求生命周期内被 await（路由里通过 after() 调用），
+ * 否则 Serverless 函数在响应结束后被冻结，本回合会丢失。
+ */
+export async function finalizeStoryTurn(
+    userInput: string,
+    turn: StoryTurnResult,
+    session: SessionData,
+    sessionId: string
+): Promise<void> {
+    const { currentState, memoryManager, metadata } = session;
+    const { fullText, retrievedMemories } = turn;
 
-            await memoryManager.addTurn({
-                turn_id: baseTurnId + 2,
-                role: "assistant",
-                text: fullText
-            }, currentState, sessionId);
+    const baseTurnId = memoryManager.chatHistory.length > 0
+        ? memoryManager.chatHistory[memoryManager.chatHistory.length - 1].turn_id
+        : 0;
+    const newTurns: ChatTurn[] = [
+        { turn_id: baseTurnId + 1, role: "user", text: userInput },
+        { turn_id: baseTurnId + 2, role: "assistant", text: fullText }
+    ];
 
-            // 7. Background State Machine to update Core Panel
-            console.log(`[StoryGenerator] Background state machine calculating latest state Diff patch...`);
-            const updateLLM = getManagerLLM().withStructuredOutput(StateChangeSchema);
-            const updatePromptVal = await storyUpdatePrompt.invoke({
-                currentState: JSON.stringify(currentState),
-                text: `【玩家输入】: ${userInput}\n【剧情发展】: ${fullText}`
-            });
+    // 加入完整对话记录之前创建的旧存档还没有记录：用记忆管道里仍保留的轮次补齐开头
+    // （必须在 addTurn 修改滑动窗口和归档区之前取快照）
+    const backfillTurns = [...memoryManager.unprocessedArchive, ...memoryManager.chatHistory]
+        .sort((a, b) => a.turn_id - b.turn_id);
 
-            const stateDiff = await updateLLM.invoke(updatePromptVal);
-            const updatedState = applyStateChanges(currentState, stateDiff);
-
-            Object.assign(currentState, updatedState);
-            if (stateDiff.state_summary) {
-                console.log(`[StoryGenerator] 🔄 God's Eye state updated! Summary: ${stateDiff.state_summary}`);
-            }
-
-            // [Redis] 把包含新聊天和新状态的 session 持久化
-            await updateSession(sessionId, { currentState, memoryManager, metadata });
-            console.log(`[StoryGenerator] Session changes saved to Redis successfully.`);
-        } catch (e) {
-            console.error("[StoryGenerator] 异步状态机处理崩溃:", e);
+    // 6. 将新的对话数据推入系统记忆管道（归档时使用的是本回合开始前的状态）
+    const recordTurns = async () => {
+        for (const turn of newTurns) {
+            await memoryManager.addTurn(turn, currentState, sessionId);
         }
-    })();
+    };
+
+    // 7. Background State Machine to update Core Panel
+    const computeStateDiff = async () => {
+        console.log(`[StoryGenerator] Background state machine calculating latest state Diff patch...`);
+        const updateLLM = getManagerLLM().withStructuredOutput(StateChangeSchema);
+        const updatePromptVal = await storyUpdatePrompt.invoke({
+            currentState: JSON.stringify(currentState),
+            text: `【玩家输入】: ${userInput}\n【剧情发展】: ${fullText}`
+        });
+        return updateLLM.invoke(updatePromptVal);
+    };
+
+    // 三件事互不依赖，并发执行；状态 Diff 或 access_count 失败都不应导致本回合对话丢失
+    const [turnsResult, diffResult, bumpResult, transcriptLengthResult] = await Promise.allSettled([
+        recordTurns(),
+        computeStateDiff(),
+        bumpAccessCounts(retrievedMemories, sessionId),
+        getTranscriptLength(sessionId)
+    ]);
+
+    if (turnsResult.status === "rejected") {
+        throw turnsResult.reason;
+    }
+
+    if (diffResult.status === "fulfilled") {
+        const stateDiff = diffResult.value;
+        Object.assign(currentState, applyStateChanges(currentState, stateDiff));
+        if (stateDiff.state_summary) {
+            console.log(`[StoryGenerator] 🔄 God's Eye state updated! Summary: ${stateDiff.state_summary}`);
+        }
+    } else {
+        console.error("[StoryGenerator] State diff failed, keeping previous state:", diffResult.reason);
+    }
+
+    if (bumpResult.status === "rejected") {
+        console.error(`[VectorDB] 更新使用频率失败:`, bumpResult.reason);
+    }
+
+    if (transcriptLengthResult.status === "rejected") {
+        throw transcriptLengthResult.reason;
+    }
+    const transcriptTurns = transcriptLengthResult.value === 0
+        ? [...backfillTurns, ...newTurns]
+        : newTurns;
+
+    // [Redis] 把包含新聊天和新状态的 session 持久化，并追加完整对话记录
+    await updateSession(sessionId, { currentState, memoryManager, metadata }, transcriptTurns);
+    console.log(`[StoryGenerator] Session changes saved to Redis successfully.`);
 }

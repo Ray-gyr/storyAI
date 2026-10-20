@@ -1,0 +1,144 @@
+{
+  "version": 2,
+  "events": [
+    "an ambush or skirmish with Sir Bastian Crowe's mercenaries",
+    "a water shortage or heat-sickness crisis",
+    "a bargain or trade with someone who wants something in return"
+  ],
+  "episodes": [
+    [
+      {
+        "ordinal": 1,
+        "id": "b9d088f2-face-4986-9cec-97685c91a97b",
+        "turns": [
+          501,
+          510
+        ]
+      }
+    ],
+    [
+      {
+        "ordinal": 1,
+        "id": "1c0324db-6849-4421-adad-c8f688dbab58",
+        "turns": [
+          74,
+          74
+        ]
+      },
+      {
+        "ordinal": 2,
+        "id": "70e3ac59-4928-4925-8f22-a1ea61d8bcf6",
+        "turns": [
+          224,
+          227
+        ]
+      },
+      {
+        "ordinal": 3,
+        "id": "3c6e161c-1939-447d-b9cb-9f76074fdc4c",
+        "turns": [
+          324,
+          325
+        ]
+      },
+      {
+        "ordinal": 4,
+        "id": "f0de4138-7838-4f33-a523-67fa24669bb3",
+        "turns": [
+          374,
+          375
+        ]
+      },
+      {
+        "ordinal": 5,
+        "id": "c5d6eda3-9459-44c5-988e-974cafa94900",
+        "turns": [
+          481,
+          490
+        ]
+      },
+      {
+        "ordinal": 6,
+        "id": "db7460e7-be87-4110-a844-06fd13c7a0e1",
+        "turns": [
+          524,
+          525
+        ]
+      }
+    ],
+    [
+      {
+        "ordinal": 1,
+        "id": "93c89872-f2ba-4b34-826a-f36e42e1451c",
+        "turns": [
+          1,
+          8
+        ]
+      },
+      {
+        "ordinal": 2,
+        "id": "99125d9b-3fd0-453c-b91e-2217519a665d",
+        "turns": [
+          118,
+          119
+        ]
+      },
+      {
+        "ordinal": 3,
+        "id": "37d5d6f2-375b-480c-97cd-6ef609da13f0",
+        "turns": [
+          124,
+          127
+        ]
+      },
+      {
+        "ordinal": 4,
+        "id": "f440679e-4844-4de1-ae20-31d0262cc420",
+        "turns": [
+          151,
+          160
+        ]
+      },
+      {
+        "ordinal": 5,
+        "id": "c5daaa98-41c8-41a6-8a7e-0b411c82c20f",
+        "turns": [
+          304,
+          305
+        ]
+      },
+      {
+        "ordinal": 6,
+        "id": "a58163d6-056d-421e-953d-018523e3a84d",
+        "turns": [
+          326,
+          327
+        ]
+      },
+      {
+        "ordinal": 7,
+        "id": "67f217d0-13e4-441b-9478-1d281597396a",
+        "turns": [
+          421,
+          427
+        ]
+      },
+      {
+        "ordinal": 8,
+        "id": "e0c0db0c-3216-43b8-a0fe-1f47af03982b",
+        "turns": [
+          452,
+          460
+        ]
+      },
+      {
+        "ordinal": 9,
+        "id": "0efde590-be05-41a2-b1ab-db2fd89c9e8f",
+        "turns": [
+          571,
+          580
+        ]
+      }
+    ]
+  ]
+}

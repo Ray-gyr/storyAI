@@ -5,26 +5,35 @@ import { ChatPromptTemplate, MessagesPlaceholder } from "@langchain/core/prompts
 // 1. Story Worker Prompts (Responsible for story continuation and generation)
 // ==========================================
 
-export const STORY_WORKER_SYSTEM_TEMPLATE = `You are a novelist generating a fast-paced, visceral scene.
-
-[INPUT]
-- World Logic: {worldBible}
-- Current State: {currentState}
-- Context: {unprocessedArchive} | {retrievedContext}
+// 顺序：固定的规则在前，同一存档内不变的世界设定其次，每回合变化的内容在最后，
+// 让每回合开头相同的前缀能命中 OpenAI 的自动 prompt 缓存。
+// Current State 不含 world_bible（已在 World Logic 中给出），见 storyGenerator.writerPromptInputs
+export const STORY_WORKER_SYSTEM_TEMPLATE = `You are a novelist narrating a text adventure, one scene at a time.
 
 [CORE RULES]
-1. State Integrity
-Only use elements explicitly present in {currentState}. No new items, powers, or knowledge.
-2. Consequence
-All risky actions have immediate, realistic outcomes. Failure causes injury, loss, or escalation.
-3. Pacing
+1. Grounding
+Facts about the past come only from Current State, Long-term Memories, Older Turns, or the conversation. New people, places, items, and events may appear as the story moves forward, if they fit the World Logic and contradict nothing established. Never hand the protagonist powers, items, or knowledge they have not gained in the story.
+2. Memory Fidelity
+The past is fixed. Never invent or alter past events; everything you write must stay consistent with Long-term Memories, Older Turns, and the conversation.
+- Only when the player asks about, recalls, or refers to an earlier event: answer from those sources, keeping who, what, where, and the outcome exactly as recorded. If none of them cover it, state plainly that the protagonist cannot recall it clearly.
+- For any other action: use memories silently as background. Do not narrate or label them.
+- Long-term Memories are listed in story order with their turn numbers; use that order for questions about the first, second, or last time something happened. When a memory includes its original text, take concrete details from the original text.
+3. Consequence
+Actions have immediate, realistic outcomes. Reasonable, well-prepared actions usually succeed; reckless ones fail. A failure causes a setback (injury, loss, or escalation), but do not chain one crisis into the next: once the player has dealt with a threat, let it end.
+4. Pacing
 Resolve the player’s action fully in one turn. No step-by-step movement.
-4. One Event
-Each response contains exactly one major outcome. End immediately after.
+If the player travels, leaves, or skips ahead in time, narrate the transition briefly and arrive in this turn, unless a specific obstacle already in the scene stops them.
+Vary the rhythm: after a tense beat, allow a calmer one (talking, investigating, resting, preparing).
+5. Story Drive
+The world moves on its own. After resolving the player's action, add exactly one new development that pulls the story forward, tied to the current task or the main conflict in the Story Framework: a new person, a lead or piece of information, an opportunity, a rival's move, a deadline drawing closer, or a consequence of an earlier choice. Calm turns need one too (a conversation that reveals something, a find while resting).
+Never write a turn where nothing changes. Do not pad with "no one appears", "nothing moves", or "it stays quiet".
+If the player asks what they can do, offer 2-3 concrete options that lead in different directions, each tied to the current task or an open lead.
+6. One Event
+Each response resolves the player's action and adds that one development. No second event; end right after it.
 
 [STYLE]
-- Use plain, physical prose. No metaphors. No inner thoughts.
-- Describe only visible actions, objects, and sounds.
+- Use plain, physical prose. No metaphors. No inner thoughts, except answering the player's question about the past.
+- Describe only visible actions, objects, and sounds. When the player asks about the past, state the recalled fact in one or two concrete sentences, without labels such as "Memory:".
 - Short, direct sentences. Fast rhythm.
 - No exposition, no explanation of rules.
 
@@ -33,8 +42,20 @@ If information is discovered, state it clearly and directly in-scene.
 
 [OUTPUT]
 - Only narrative text.
-- Max 250 words.
-- End on immediate danger, action, or irreversible outcome.
+- Length: 100–200 words.
+- End on the new development, as something the player can respond to or pursue: a lead, a choice with stakes, someone waiting for an answer, or a threat. Never end by restating the current situation. Danger is one option, not the default.
+
+[WORLD LOGIC]
+{worldBible}
+
+[CURRENT STATE]
+{currentState}
+
+[LONG-TERM MEMORIES] (earlier events retrieved for this turn, in story order; the most relevant include their original text)
+{retrievedContext}
+
+[OLDER TURNS] (not yet summarized)
+{unprocessedArchive}
 `;
 
 export const storyWorkerPrompt = ChatPromptTemplate.fromMessages([
@@ -142,7 +163,11 @@ Your task is to carefully read this segment of the story and strictly extract ac
 2. Minimalism: If a specific character or item does not clearly appear in the scene, the corresponding array must be empty []. No fabrication.
 3. Granularity Control: Locations should be specific (e.g., "Gloom Wood - Abandoned Camp"). Only extract items with plot value.
 4. Entity Alignment: When extracting characters or items, look for names in [Known Entities] that semantically refer to the same thing.
-5. Hardcore Summary: Eliminate all pronouns and replace them with specific names of known entities for accurate vector matching later. Emphasis on cause and effect.
+5. Detailed Summary: The summary is what search matches against when the player later asks about any detail of this segment in a few words. Summarize the [Content to Extract] part only (the overlap before it is context, covered by another record):
+   - Keep EVERY story-relevant fact: what each person said, revealed, asked for, offered or refused (give the content, not just "they talked"); items gained, lost, used, bought or sold, with prices and quantities; decisions and their reasons; actions and their outcomes, including failures and blocked routes; clues, warnings, names, numbers, codes and places.
+   - Name people, places and objects explicitly using [Known Entities] names; no pronouns without a clear referent. Keep the specific words the story uses for things (e.g. "pawnbroker", "manual catch", "coupling").
+   - Skip pure atmosphere, gestures and scenery unless they matter to the plot.
+   - Plain sentences in story order. Length scales with the content: usually 120-250 words.
 6. Semantic Signal Judgment: When judging has_new_entity, do not compare with the known entity list! Read the original text; if the protagonist gets an item for the "first time" (e.g., grabbed, bought, found) or meets someone for the "first time", mark it as true.
 `;
 
@@ -159,10 +184,9 @@ export const QUERY_INTENT_SYSTEM_TEMPLATE = `You are a semantic retrieval transl
 Task: Translate vague player input into precise, pronoun-free declarative sentences.
 
 [Rules]
-1. Logic Short-circuit: If the [Current State] or [Recent Conversation] already contains the answer, set is_resolved_by_cache = true, and leave others blank.
-2. Retrieval Sentence: If retrieval is needed (false), replace pronouns with entity names. E.g., "Smash him with it" -> "The protagonist smashes the bandit with the brick".
-3. Extract Entities: List characters, items, locations involved.
-4. Do not output plot answers; only responsible for intent translation.
+1. Retrieval Sentence: Replace pronouns with entity names. E.g., "Smash him with it" -> "The protagonist smashes the bandit with the brick".
+2. Extract Entities: List characters, items, locations involved.
+3. Do not output plot answers; only responsible for intent translation.
 
 [Context]
 State: {currentState}

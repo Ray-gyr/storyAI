@@ -1,0 +1,1038 @@
+{
+  "sessionId": "web-session-1792179976754",
+  "chunks": [
+    {
+      "id": "7c82b353-43ab-4e02-a64b-baf945d25210",
+      "access_count": 19,
+      "advances_plot": true,
+      "characters_involved": [
+        "Ilya Renn",
+        "Sister Elka",
+        "Jory",
+        "Old Tobin"
+      ],
+      "created_at": 1792180060791,
+      "dense_summary": "Ilya Renn's corpse is discovered in Saltmarket. Ilya Renn's black wax seal is found. Sister Elka reveals Ilya Renn argued with two men in Vael gray and mentioned someone wanted to make him disappear. The protagonist approaches Sister Elka for information about Ilya Renn's death.",
+      "end_turn": 4,
+      "has_new_entity": true,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal",
+        "brass lockpick set",
+        "cracked spyglass"
+      ],
+      "location": "Saltmarket",
+      "original_text": "[Content to Extract]\n[Turn 1] ASSISTANT: Rain knifes the Saltmarket into silver. You taste salt and iron. The corpse is a smear under a wet tarp. Ilya’s jaw is slack. His hand clenches something dark and warm against your palm — the black wax seal you swore never to use.  \nLantern light gutters. Boots slap wooden stalls. Voices bargain like knives. The guild banners hang limp on poles, colors gone to rust. You can feel the city’s rules in the shove of strangers and the distance of the Vael counting house, every alley a ledger of favors owed and favors bought.  \nYour brass picks are slick in your jacket. The spyglass is cracked at the edge you bring to your eye out of habit. Jory’s face flips through a crowd. Tobin’s bell tinkles down the lane. Sister Elka’s door is a block away. You fold Ilya’s seal into your palm. Which line do you test first?\n[Turn 2] USER: I approach Sister Elka’s door and knock firmly, hoping she can shed light on Ilya’s death.\n[Turn 3] ASSISTANT: You lift wet wool and rap the Drowned Chapel door. The wood answers with a hollow thud. Rain drums the eaves.\n\nThe door opens a hand’s width. Sister Elka stands inside, sleeves rolled, a smear of bandage on her forearm. Candle smoke lifts from the threshold. Her eyes find the black seal in your palm.\n\nShe steps back and lets you in. The chapel smells of boiled herbs and old salt. She moves to a small table and sets out a cloth. Her hands are quick and sure.\n\n“You shouldn’t have this,” she says. Her voice is low. “Ilya came last night. He argued with two men in Vael gray by the east slip. He had an enclosed letter. He left after they spoke. Searched the south stalls afterward. He came back here for a wound —” She lifts her chin to a shallow scar at his temple. “—said someone wanted to make him disappear.”\n\nYou watch the candle. Her words land clean.\n\nBefore you can ask where the men went, a gloved hand closes on your shoulder from behind. Fingers press hard. The grip is deliberate. It stops your breath. You turn, the candlelight slicing across a face you do not know.\n[Turn 4] USER: I head towards Sister Elka’s door and knock firmly, ready to ask her what she knows about Ilya's death.",
+      "start_turn": 1
+    },
+    {
+      "id": "265151ed-4bb1-4077-bd9f-d44fadaac3c3",
+      "access_count": 42,
+      "advances_plot": true,
+      "characters_involved": [
+        "Sister Elka",
+        "Ilya Renn"
+      ],
+      "created_at": 1792180060994,
+      "dense_summary": "Mara Voss knocks on Drowned Chapel door. Sister Elka opens door, reveals Ilya Renn visited, argued with two men in Vael gray, returned injured, and mentioned someone wanted to make him disappear. Two men in Vael gray enter chapel, demand black wax seal from Mara Voss. A struggle ensues, resulting in injury to Mara Voss and the seal being taken.",
+      "end_turn": 10,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal",
+        "brass lockpick set"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 3] ASSISTANT: You lift wet wool and rap the Drowned Chapel door. The wood answers with a hollow thud. Rain drums the eaves.\n\nThe door opens a hand’s width. Sister Elka stands inside, sleeves rolled, a smear of bandage on her forearm. Candle smoke lifts from the threshold. Her eyes find the black seal in your palm.\n\nShe steps back and lets you in. The chapel smells of boiled herbs and old salt. She moves to a small table and sets out a cloth. Her hands are quick and sure.\n\n“You shouldn’t have this,” she says. Her voice is low. “Ilya came last night. He argued with two men in Vael gray by the east slip. He had an enclosed letter. He left after they spoke. Searched the south stalls afterward. He came back here for a wound —” She lifts her chin to a shallow scar at his temple. “—said someone wanted to make him disappear.”\n\nYou watch the candle. Her words land clean.\n\nBefore you can ask where the men went, a gloved hand closes on your shoulder from behind. Fingers press hard. The grip is deliberate. It stops your breath. You turn, the candlelight slicing across a face you do not know.\n[Turn 4] USER: I head towards Sister Elka’s door and knock firmly, ready to ask her what she knows about Ilya's death.\n\n[Content to Extract]\n[Turn 5] ASSISTANT: You lift a wet hand and knock hard on the Drowned Chapel door. The wood answers hollow. Rain thuds on the roof.\n\nSister Elka opens a crack. She wipes her hands on a cloth. Her face is pale in the doorway. Her eyes flick to your palm and the black wax seal.\n\n“Come in,” she says. Her voice is low. The smell of boiled herbs rises. She closes the door behind you and moves a stool near the candle.\n\n“Ilya came last night,” she says without pause. “He argued with two men in Vael gray by the east slip. He had an enclosed letter. He left. He came back with a cut at the temple and said someone wanted to make him disappear. I bandaged him and told him to lie quiet. He left before dawn.”\n\nA shout slams into the chapel. The bolt scrapes. The door is pushed inward. Two men in Vael gray fill the threshold. One pushes past and the other plants a boot against the threshold. Cloth over their mouths. Dark gloves. One holds a short blade flat against Elka’s forearm. The other levels a hand toward your chest.\n\n“Give us the seal,” the taller man says. His voice has no room for answers.\n\nElka steps between you and the blade. Her hands are open on the table. The candle trembles. Rain hammers the roof.\n[Turn 6] USER: I quickly reach for my brass picks in my jacket, ready to defend myself or escape.\n[Turn 7] ASSISTANT: Your fingers close on cold brass inside your jacket. The leather gives. Metal slides into your palm.\n\nThe taller man’s head snaps up. His eyes narrow. He moves before your hand clears your coat. A gloved forearm slams into your wrist.\n\nThe brass set skitters out. Picks hit slate floor and scatter. One bounces under the table. Your fingers curl around empty air.\n\nThe knife comes free. It flashes once in candlelight. The shorter Vael man shoves past Elka and snatches at the black seal in your other hand.\n\nYou twist. The blade finds the soft meat at the base of your thumb. Pain cuts through rain and smoke. Warm spills. Elka cries out and throws her stool.\n\nThe taller man plants his knee on your ribs and brings the knife to your throat. The shorter man holds the seal between thumb and forefinger, studying the black face like a coin. The candle gutters. The blade presses.\n[Turn 8] USER: I reach for the brass lockpick set in my pocket, ready to defend Sister Elka.\n[Turn 9] ASSISTANT: Your hand goes to the pocket. Empty leather. The brass is not there.\n\nThe taller man lifts his head. His thumb finds the wet where your fingers were. His grip tightens. The knee digs deeper into your ribs.\n\nHe jerks your arm back. Pain flares along the base of your thumb where the blade already bit. The shorter man huffs a breath. He holds the seal up between fingers and studies it again.\n\nElka lunges. The taller man jerks you forward and she slams into the table. A bowl tips. Water and cloth hit the slate.\n\nThe blade slides down. It nicks the throat. Warm floods your tongue. Sound stutters out of you.\n\nThe shorter man laughs once. He tucks the black seal into his sleeve. The taller man keeps the knife to your windpipe and the pressure never eases.\n[Turn 10] USER: I lunge forward, using my body weight to push the taller man off me while twisting my head to avoid the knife.",
+      "start_turn": 5
+    },
+    {
+      "id": "ac637d2e-7aa5-4a63-98a4-842158dc7105",
+      "access_count": 21,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Old Tobin"
+      ],
+      "created_at": 1792180114382,
+      "dense_summary": "Mara Voss struggles against the taller man while Sister Elka attempts to assist. The shorter man holds Ilya's black wax seal. Mara Voss manages to grab the brass lockpick set but it breaks during the confrontation. The shorter man is injured by Mara Voss, causing blood to flow. The taller man loses his knife, and the black wax seal falls to the ground.",
+      "end_turn": 20,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "brass lockpick set",
+        "Ilya's black wax seal"
+      ],
+      "location": "Lantern Pawnshop",
+      "original_text": "[Story Context Overlap]\n[Turn 9] ASSISTANT: Your hand goes to the pocket. Empty leather. The brass is not there.\n\nThe taller man lifts his head. His thumb finds the wet where your fingers were. His grip tightens. The knee digs deeper into your ribs.\n\nHe jerks your arm back. Pain flares along the base of your thumb where the blade already bit. The shorter man huffs a breath. He holds the seal up between fingers and studies it again.\n\nElka lunges. The taller man jerks you forward and she slams into the table. A bowl tips. Water and cloth hit the slate.\n\nThe blade slides down. It nicks the throat. Warm floods your tongue. Sound stutters out of you.\n\nThe shorter man laughs once. He tucks the black seal into his sleeve. The taller man keeps the knife to your windpipe and the pressure never eases.\n[Turn 10] USER: I lunge forward, using my body weight to push the taller man off me while twisting my head to avoid the knife.\n\n[Content to Extract]\n[Turn 11] ASSISTANT: You hurl your weight forward. Your shoulder drives into the taller man’s chest. Wood cracks under his boot.\n\nHe stumbles back. Air rips from you as his knee slides off your ribs. You twist your head and duck the knife’s arc.\n\nThe blade still catches you. It rakes across your collarbone. Hot tears sting your eyes. Blood soaks your shirt. The taller man rights himself and spits blood into the candle.\n\nElka scrambles to her feet. Her hand slams against the table, knocking the scattered picks deeper under its shadow. The shorter man steps forward from the doorway like a coiled thing. His sleeve hides the seal. His free hand tightens on the knife.\n\nHe moves to cut between you and Elka. His face is flat. The candle throws jumpy light across his jaw.\n\nYou are on your knees. Your left hand presses your wound. Your right hand scrabbles at the slate, fingers brushing metal under the table. The shorter man lunges.\n[Turn 12] USER: I use my free hand to push against the taller man's knee, attempting to shift my weight and break free.\n[Turn 13] ASSISTANT: Your hand slams against the taller man’s knee. He curses. The joint buckles.\n\nYou shove. Your weight tips. His grip slips. Air aches in your chest.\n\nYou roll forward and shove beneath the table. The slate bites your palms. Your fingers close around metal. One pick comes free.\n\nA gloved hand clamps your wrist. Pain shoots up your arm. The shorter man’s knife flashes. It rakes across your forearm, deep and hot.\n\nThe taller man yanks you back by your collar. Blood beads along your skin. The candle throws a thin light on the blade. The shorter man laughs. He steps between you and Elka, the black seal tucked inside his coat and the knife waiting at your throat.\n[Turn 14] USER: I grab the lockpick set from under the table and aim to stab the shorter man as he lunges.\n[Turn 15] ASSISTANT: You snatch the single pick from the slate and lunge up. The shorter man moves like a struck thing and steps inside your line.\n\nHis gloved hand bats at your wrist. The pick twists. It snaps like a twig. The broken shard skitters away.\n\nThe blade finds the gap. It cuts across your lower ribs, hot and deep. You double over. Blood soaks your fingers where you press at the wound.\n\nThe shorter man straightens. His sleeve still hides the black seal. He spits once, close, and steps back to join his companion in the doorway.\n\nElka drops to her knees. The candle guttered and the room smells of iron. The taller man keeps his knee pressed to your chest and the knife at your throat. The seal is gone and the pain takes your breath.\n[Turn 16] USER: I twist and yank my arm free, aiming the lockpick at the shorter man's throat while keeping my eyes on the knife.\n[Turn 17] ASSISTANT: You twist your arm. The grip loosens. Pain screams up your ribs.\n\nYour fingers scrape the floor. You close on a jag of metal. It bites into your palm.\n\nYou shove the shard up. The shorter man moves to step back. You drive the metal at his throat.\n\nHe gasps. Blood runs slick over mittened fingers. He stumbles back and slams into the table. The black wax seal slips from the inside of his sleeve and thuds on the boards.\n\nThe taller man curses and lunges with the knife. Your ribs burn with each breath. The shard trembles in your hand as he brings the blade down.\n[Turn 18] USER: I twist my body, trying to dislodge the taller man's weight while reaching for his knife hand with my free hand.\n[Turn 19] ASSISTANT: You twist hard. The taller man grunts. His weight shifts but stays.\n\nYour free hand snakes up his forearm. You close on wrist and bone. The knife bites where your palm meets leather.\n\nPain explodes. You hang on. The blade tears skin and tendon. You feel the give as the grip loosens.\n\nThe knife skids from his fingers and clatters across the boards. It bounces once and stops near the fallen seal.\n\nThe taller man roars. He tries to push back up. Blood pours from your hand. Your ribs burn with each breath.\n\nThe shorter man scrambles. He reaches for the black wax seal. His glove claws at it. The candle flickers. Footsteps thunder in the doorway behind them.\n[Turn 20] USER: I thrust the shard of metal between us, aiming for the taller man's chest, and twist to free myself from his grip.",
+      "start_turn": 11
+    },
+    {
+      "id": "307660d0-cb1d-47c6-a101-01c3841794d1",
+      "access_count": 27,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "shorter man",
+        "taller man"
+      ],
+      "created_at": 1792180169697,
+      "dense_summary": "Mara Voss struggles with the taller man, causing injury and disarming him. The shorter man attempts to seize Ilya's black wax seal. Mara Voss kicks the shorter man away and retrieves a knife. Sister Elka is shot by a crossbow bolt, collapsing. Mara Voss lunges for the seal, successfully grabbing it despite the shorter man's resistance. Mara Voss throws the knife at the shorter man, injuring him and securing the seal, but suffers a crossbow wound as three men in Vael gray enter the chapel.",
+      "end_turn": 27,
+      "has_new_entity": true,
+      "is_irreversible": true,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 19] ASSISTANT: You twist hard. The taller man grunts. His weight shifts but stays.\n\nYour free hand snakes up his forearm. You close on wrist and bone. The knife bites where your palm meets leather.\n\nPain explodes. You hang on. The blade tears skin and tendon. You feel the give as the grip loosens.\n\nThe knife skids from his fingers and clatters across the boards. It bounces once and stops near the fallen seal.\n\nThe taller man roars. He tries to push back up. Blood pours from your hand. Your ribs burn with each breath.\n\nThe shorter man scrambles. He reaches for the black wax seal. His glove claws at it. The candle flickers. Footsteps thunder in the doorway behind them.\n[Turn 20] USER: I thrust the shard of metal between us, aiming for the taller man's chest, and twist to free myself from his grip.\n\n[Content to Extract]\n[Turn 21] ASSISTANT: You drive the shard up. It slides between ribs and into wet cloth.\n\nThe taller man sucks air. His hands slack. He chokes, then grabs at the wound.\n\nYou twist your body. He keels. His weight slides off you like a fallen beam.\n\nYou shove away and scramble to your knees. Pain erupts with every breath. Blood slicks your palm.\n\nThe taller man crashes against the table. The candle tips. Wax runs. The room blacks where the flame gutters.\n\nThe shorter man dives for the seal. His mittened fingers close on it and jerk it free.\n\nFootsteps fill the doorway. A voice barks. The shorter man whips around, the seal clutched to his chest. The taller man convulses on the floor and does not rise. Your hand trembles with the shard. Immediate danger presses in from the doorway.\n[Turn 22] USER: I kick the shorter man away from the seal and grab the knife before he can recover.\n[Turn 23] ASSISTANT: Your boot connects with his hip. He flies back, slamming into the pew. The seal skitters free.\n\nYou snatch for the fallen knife. Fingers close on cold steel.\n\nThe shorter man rolls, spits blood, and lashes out. The blade grazes your ribs. Hot.\n\nYou flip the knife. You hold it now. Your hand shakes. Blood runs between your fingers.\n\nThe doorway bursts wide. Three men fill it. Vael gray. One levels a crossbow. He barks an order. The shorter man scrambles for the seal. The taller man lies still on the floor. Elka cries out.\n\nYou have the knife. The seal is a step away. The bolt clicks as it finds its mark. Immediate danger closes in.\n[Turn 24] USER: I lunge for the black wax seal, aiming to snatch it away from the shorter man before he can use it.\n[Turn 25] ASSISTANT: You lunge. The floor roars under your knees.\n\nFingers close on cold wax. The shorter man claws at it. His mittened hand rakes yours.\n\nThe seal slides. You clamp down. You twist to pull it free.\n\nA crossbow cracks. The bolt punches through air and meat.\n\nSister Elka keels. She collapses against the altar. Blood blooms dark on her chest. Her hand scrabbles at the boards.\n\nThe shorter man screams and throws himself off you. The seal flips free. You twist and catch it against your palm.\n\nThe three men in Vael gray step forward. One levels the crossbow again. The taller man on the floor does not move.\n\nYou hold the black wax seal. Elka lies bleeding. The doorway narrows to three sets of boots. Immediate danger closes in.\n[Turn 26] USER: I throw the knife at the shorter man as I dive for the seal.\n[Turn 27] ASSISTANT: You fling the knife. It whistles.\n\nThe blade buries in the shorter man's shoulder. He howls. His grip loosens.\n\nThe seal skitters across the floor. You dive. Hands hit wet wood.\n\nYou snatch the black wax seal. Fingers close over cool wax.\n\nA crossbow cracks. The bolt bites into your forearm. Hot pain, then numb.\n\nThe shorter man collapses, clutching blood. The taller man does not move.\n\nThree men in Vael gray fill the doorway. One reloads the crossbow. The others draw batons.\n\nYou hold the seal. Your forearm leaks dark and steady. The chapel fills with the sound of boots and a reloading click. Immediate danger closes in.",
+      "start_turn": 21
+    },
+    {
+      "id": "cf8f7163-3677-49b2-be1b-fdafc661f755",
+      "access_count": 23,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180169567,
+      "dense_summary": "Mara Voss throws a knife at the shorter man, injuring him. Mara Voss dives for Ilya's black wax seal and successfully retrieves it. A crossbow bolt strikes Mara Voss's forearm. Mara Voss rushes to Sister Elka's side, applying pressure to her wound. Sister Elka mentions Lord Casimir Vael and the situation escalates as a Vael gray soldier retrieves the seal from Mara Voss's pocket, exposing it to immediate danger.",
+      "end_turn": 30,
+      "has_new_entity": true,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 26] USER: I throw the knife at the shorter man as I dive for the seal.\n[Turn 27] ASSISTANT: You fling the knife. It whistles.\n\nThe blade buries in the shorter man's shoulder. He howls. His grip loosens.\n\nThe seal skitters across the floor. You dive. Hands hit wet wood.\n\nYou snatch the black wax seal. Fingers close over cool wax.\n\nA crossbow cracks. The bolt bites into your forearm. Hot pain, then numb.\n\nThe shorter man collapses, clutching blood. The taller man does not move.\n\nThree men in Vael gray fill the doorway. One reloads the crossbow. The others draw batons.\n\nYou hold the seal. Your forearm leaks dark and steady. The chapel fills with the sound of boots and a reloading click. Immediate danger closes in.\n\n[Content to Extract]\n[Turn 28] USER: I shove the seal into my pocket and rush to Elka's side, applying pressure to her wound.\n[Turn 29] ASSISTANT: You shove the seal into your pocket. You run to Elka.\n\nHer body folds against the altar. Blood soaks the boards. Her breath comes in shallow pulls.\n\nYou force your palm into the wound. Cloth sticks to slick flesh. You press until your shoulder burns.\n\nElka's eyes open. She tries to form a word. Her lips move. She says, hoarse: \"Vael… counting…\"\n\nA boot slams the threshold. A hand hooks your collar from behind. Hard.\n\nA Vael gray yanks you back. His mittened fingers dive into your pocket. He thumbs the seal free.\n\nHe holds the black wax up. The candlelight catches the edge.\n\nThe crossbow comes off a shoulder. The man who aims barks an order. Elka gurgles. Your arm trembles under the pressure.\n\nThe seal lies exposed between Vael hands. Immediate danger tightens around you.\n[Turn 30] USER: I shove the seal into my pocket and grab Sister Elka, dragging her towards the altar for cover.",
+      "start_turn": 28
+    },
+    {
+      "id": "3a2a52b6-9de5-4f8d-969d-7acefc271341",
+      "access_count": 36,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180218006,
+      "dense_summary": "Mara Voss shoves Ilya's black wax seal into a pocket. Mara Voss runs to Sister Elka, who lies against the altar, blood-soaked and struggling to breathe. Lord Casimir Vael yanks Mara Voss back and retrieves the seal. Mara Voss attempts to drag Sister Elka to safety but is attacked by Vael men. Elka collapses, and a crossbow bolt strikes the altar, killing Elka. Mara Voss grapples with a Vael man for the seal but is stabbed. Mara Voss reaches for Elka's hand, finding no pulse. Immediate danger escalates as Mara Voss is dragged toward the doorway.",
+      "end_turn": 37,
+      "has_new_entity": false,
+      "is_irreversible": true,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 29] ASSISTANT: You shove the seal into your pocket. You run to Elka.\n\nHer body folds against the altar. Blood soaks the boards. Her breath comes in shallow pulls.\n\nYou force your palm into the wound. Cloth sticks to slick flesh. You press until your shoulder burns.\n\nElka's eyes open. She tries to form a word. Her lips move. She says, hoarse: \"Vael… counting…\"\n\nA boot slams the threshold. A hand hooks your collar from behind. Hard.\n\nA Vael gray yanks you back. His mittened fingers dive into your pocket. He thumbs the seal free.\n\nHe holds the black wax up. The candlelight catches the edge.\n\nThe crossbow comes off a shoulder. The man who aims barks an order. Elka gurgles. Your arm trembles under the pressure.\n\nThe seal lies exposed between Vael hands. Immediate danger tightens around you.\n[Turn 30] USER: I shove the seal into my pocket and grab Sister Elka, dragging her towards the altar for cover.\n\n[Content to Extract]\n[Turn 31] ASSISTANT: You shove. Your fingers close on cloth. The seal is not there.\n\nA Vael hand tightens on your collar. His other thumb presses the wax between his fingers.\n\nYou grab Elka. You wedge an arm under her shoulders and drag. Her weight drags you down. Wood splinters under your knees.\n\nA baton swings. It connects with your ribs. Air leaves you in a hard sound. Your jaw snaps back.\n\nElka slips free of your grip and collapses against the altar boards. Blood slicks your sleeve. She coughs once, wet.\n\nThe Vael man pulls the seal up so it dangles between his fingers. Candlelight gleams on black wax.\n\nAnother crossbow clicks. The man with it steps forward and aims low, where you crouch half over Elka.\n\nThe three Vael gray form a line in the doorway. Boots press the threshold. The chapel smells of wax and iron.\n\nYour breath comes fast. Pain knocks at the edges of your sight. Elka's hand twitches against the altar.\n\nThe seal is in Vael hands. You are on your knees. The crossbow is ready. Immediate danger frames the doorway.\n[Turn 32] USER: I glare at the man holding the seal and demand, “Give it back! You don’t understand its importance!”\n[Turn 33] ASSISTANT: You glare. You demand, \"Give it back! You don't understand its importance!\"\n\nThe man holding the seal laughs once. He lifts the wax between thumb and forefinger. He says, low: \"We understand enough.\"\n\nAnother Vael moves behind you. Hands clamp your shoulders. A mittened thumb digs into your neck.\n\nThe man with the seal nods. The crossbow clicks. The bolt flies.\n\nIt slams into the altar beside Elka. Wood explodes inward. Splinters stab the air.\n\nElka's chest stops rising. Blood wells where the bolt struck. Her hand falls limp on the boards.\n\nThe Vael man pockets the seal. He steps past you and the body. His boots scrape the threshold.\n\nYour shoulders burn where they hold you. The chapel smells of wax, iron, and wood dust. Immediate danger fills the doorway.\n[Turn 34] USER: I lunge forward, grappling with the Vael man for the seal, using my weight to push him back.\n[Turn 35] ASSISTANT: You lunge. Your shoulder drives into him. Cloth rips. The man grunts.\n\nHands close on the seal. He claws for it. You wrap both arms around his wrist and shoulder. You use your weight to shove him back.\n\nHe stumbles. His boot catches on splintered wood. For a breath you feel the seal under your palm.\n\nA gloved hand snaps out at your side. A short knife slides between ribs under your elbow.\n\nYou don't have time to swear. Hot spreads under your coat. Your legs give.\n\nThe Vael man twists free and jerks the seal from your fingers. It flips, black and shining, into his palm.\n\nYou hit the floor. Air rushes out of you in a sound like a small animal.\n\nHe steps over you. The crossbow clicks again in the doorway. Blood pools warm where you lie. Immediate danger closes over you.\n[Turn 36] USER: I twist my body, trying to break free from the Vael's grip and reach for Elka's fallen hand.\n[Turn 37] ASSISTANT: You twist. Pain shoots through your side. Fingers scrape wet boards.\n\nYou force your hand toward Elka's fallen wrist. Your nails catch torn sleeve. Your palm closes on skin.\n\nHer hand is cool. The fingers are slack. No pulse under your thumb. Blood slicks the altar board where her hand fell.\n\nYou say nothing. You let your hand stay on her wrist for one beat.\n\nA boot arcs into your ribs. Pressure explodes across your chest. Air leaves you in a rough sound.\n\nThe Vael man at the doorway leans in. He presses the black seal against his palm and shows it once, deliberate. The seal's edge gleams in the candlelight.\n\nAnother pair of hands clamps down on your shoulders. They wrench you upright and drag you toward the doorway.\n\nElka's hand lies where you left it. It does not move. Immediate danger pulls you up and out into the threshold.",
+      "start_turn": 31
+    },
+    {
+      "id": "065e03f2-caf6-4ae7-b9f5-0118d3262fcf",
+      "access_count": 17,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Jory",
+        "Sister Elka",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180217497,
+      "dense_summary": "Mara Voss struggles against Lord Casimir Vael's grip to reach Sister Elka's lifeless hand. Mara Voss feels no pulse and witnesses blood on the altar. Jory arrives to help but is shot by a crossbow bolt, causing him to fall into Mara Voss. The Vael men claim possession of items belonging to Lord Casimir Vael, increasing the urgency for Mara Voss to retrieve Sister Elka's hand and the black wax seal.",
+      "end_turn": 40,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 36] USER: I twist my body, trying to break free from the Vael's grip and reach for Elka's fallen hand.\n[Turn 37] ASSISTANT: You twist. Pain shoots through your side. Fingers scrape wet boards.\n\nYou force your hand toward Elka's fallen wrist. Your nails catch torn sleeve. Your palm closes on skin.\n\nHer hand is cool. The fingers are slack. No pulse under your thumb. Blood slicks the altar board where her hand fell.\n\nYou say nothing. You let your hand stay on her wrist for one beat.\n\nA boot arcs into your ribs. Pressure explodes across your chest. Air leaves you in a rough sound.\n\nThe Vael man at the doorway leans in. He presses the black seal against his palm and shows it once, deliberate. The seal's edge gleams in the candlelight.\n\nAnother pair of hands clamps down on your shoulders. They wrench you upright and drag you toward the doorway.\n\nElka's hand lies where you left it. It does not move. Immediate danger pulls you up and out into the threshold.\n\n[Content to Extract]\n[Turn 38] USER: I reach for the knife wound, trying to apply pressure, and call out for help, desperate to stay conscious.\n[Turn 39] ASSISTANT: You press your fingers into the wound. Hot soaks your palm. You push hard and call, \"Help! Jory—anyone!\"\n\nA scuff at the doorway. A small shape slides between boots. Jory. He moves fast, eyes wide, sleeves soaked.\n\nHe reaches for you. His fingers find your shoulder. He jerks, trying to lift.\n\nA crossbow cracks from the doorway. The bolt cuts through Jory's shoulder. He howls, drops forward, and slams into you.\n\nYou feel his weight. He knocks the pressure off your arm. Blood slicks your hand again.\n\nThe Vael step back into the chapel. One of them tilts the black seal like a warrant and says, flat: \"We take what belongs to Lord Casimir.\"\n\nJory coughs, blood on his lips. He looks at you, face pale. Immediate danger hangs at the threshold.\n[Turn 40] USER: I stagger back toward Sister Elka's body, desperate to retrieve her hand and the seal before I’m dragged away.",
+      "start_turn": 38
+    },
+    {
+      "id": "dc1ae844-d9c8-4ee8-824c-1f694cd6ab7d",
+      "access_count": 47,
+      "advances_plot": true,
+      "characters_involved": [
+        "Jory",
+        "Sister Elka",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180278777,
+      "dense_summary": "Mara Voss staggers toward Sister Elka's body in Drowned Chapel, desperate to retrieve Elka's hand and Ilya's black wax seal. Vael forces seize Mara's arms, dragging Mara backward as Elka's hand slips free. Jory lies injured on the ground. Mara pushes Jory away, grabs Jory's crossbow, and aims at the Vael. A bolt flies past Mara, and the crossbow is crushed by a Vael boot. Immediate danger closes in.",
+      "end_turn": 43,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 39] ASSISTANT: You press your fingers into the wound. Hot soaks your palm. You push hard and call, \"Help! Jory—anyone!\"\n\nA scuff at the doorway. A small shape slides between boots. Jory. He moves fast, eyes wide, sleeves soaked.\n\nHe reaches for you. His fingers find your shoulder. He jerks, trying to lift.\n\nA crossbow cracks from the doorway. The bolt cuts through Jory's shoulder. He howls, drops forward, and slams into you.\n\nYou feel his weight. He knocks the pressure off your arm. Blood slicks your hand again.\n\nThe Vael step back into the chapel. One of them tilts the black seal like a warrant and says, flat: \"We take what belongs to Lord Casimir.\"\n\nJory coughs, blood on his lips. He looks at you, face pale. Immediate danger hangs at the threshold.\n[Turn 40] USER: I stagger back toward Sister Elka's body, desperate to retrieve her hand and the seal before I’m dragged away.\n\n[Content to Extract]\n[Turn 41] ASSISTANT: You stagger. Boots slap wood. Your ribs burn with every step.\n\nYou bend over Elka. Her body smells of iron and wax. Your fingers close on her wrist. The skin is cold. Blood beads under your nails.\n\nYou wrench. The hand shifts in your grip like a weight. You drag it toward you, bring it to your chest.\n\nTwo hands seize your upper arms. They pry your fingers from Elka's wrist. You grip harder. Pain screams from the knife wound.\n\nA Vael shoulder drives into you. You go rigid. They haul you upright. Your feet skid. The chapel tilts.\n\nOne of them spares a look at the doorway and laughs low. The man with the seal holds it high where the candle catches the black face.\n\nThey drag you backward. Your shoe catches on a splintered board. You fall against the threshold. Cold rain spits outside.\n\nJory lies in a heap. Elka's hand slips free and falls back to the altar. It lands with a wet sound.\n\nThey pull you through the doorway. The seal glints once. Immediate danger pulls you out into the street.\n[Turn 42] USER: I push Jory away, then grab his crossbow and aim it at the Vael in the doorway.\n[Turn 43] ASSISTANT: You shove Jory. He rolls, groans, blood dark at his shoulder.\n\nYour fingers close on wood. A small crossbow is there, half-hidden in a pool of wet cloth. You jerk it up.\n\nYou shoulder it with one arm. The weight is wrong. Your hand trembles.\n\nYou level it at the Vael in the doorway. You sight along the bolt. Rain spats the threshold.\n\nA crack answers. A bolt whistles past your ear. Wood explodes where it strikes the doorframe. Splinters bite your hand.\n\nSomething heavier slams into your back. You spin. The crossbow jerks sideways. You lose the string.\n\nThe weapon tumbles from your grip and skids across the boards. A Vael boot crushes it. The man with the seal laughs. He steps forward and presses the black wax between his fingers like a claim.\n\nHands grab your arms. They pull you backward. Jory keels where you shoved him. Immediate danger closes in at the threshold.",
+      "start_turn": 41
+    },
+    {
+      "id": "abd3bb63-8b88-4b6d-8edc-a21a072f2413",
+      "access_count": 15,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Jory",
+        "Sister Elka",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180278546,
+      "dense_summary": "Mara Voss kicks back to free herself from restraint, lunges for Sister Elka's hand on the altar, and retrieves Elka's wrist. Mara Voss realizes Ilya's black wax seal is in Lord Casimir Vael's hands, not on Elka's fingers. Immediate danger escalates as Mara Voss is pulled backward into the rain.",
+      "end_turn": 45,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 42] USER: I push Jory away, then grab his crossbow and aim it at the Vael in the doorway.\n[Turn 43] ASSISTANT: You shove Jory. He rolls, groans, blood dark at his shoulder.\n\nYour fingers close on wood. A small crossbow is there, half-hidden in a pool of wet cloth. You jerk it up.\n\nYou shoulder it with one arm. The weight is wrong. Your hand trembles.\n\nYou level it at the Vael in the doorway. You sight along the bolt. Rain spats the threshold.\n\nA crack answers. A bolt whistles past your ear. Wood explodes where it strikes the doorframe. Splinters bite your hand.\n\nSomething heavier slams into your back. You spin. The crossbow jerks sideways. You lose the string.\n\nThe weapon tumbles from your grip and skids across the boards. A Vael boot crushes it. The man with the seal laughs. He steps forward and presses the black wax between his fingers like a claim.\n\nHands grab your arms. They pull you backward. Jory keels where you shoved him. Immediate danger closes in at the threshold.\n\n[Content to Extract]\n[Turn 44] USER: I kick back hard to free myself, then lunge for Elka's hand on the altar, determined to retrieve the seal.\n[Turn 45] ASSISTANT: You kick. Your heel connects with a shin. The grip on your arms loosens.\n\nYou shove off. Your fingers claw at the altar. Splinters bite your palms.\n\nYou lunge. Rain spatters the threshold. You grab Elka's wrist. Cloth slides. Her skin is cold and slick.\n\nYou yank. The hand comes free of the altar. You curl it against your chest. Blood soaks your sleeve.\n\nA Vael voice laughs from the doorway. The man with the seal lifts it high. The black wax glints in candlelight.\n\nYou stare between the hand and the seal. The seal is not on Elka's fingers. It is in Vael hands.\n\nTwo pairs of hands seize you again. They wrench you backward. The chapel tilts. Jory rolls, bleeding at the threshold.\n\nThe Vael man steps forward, presses the seal to the air as if making a mark. He says, flat: \"Now we have both.\"\n\nThey haul you out. Elka's hand twists in your grip. Immediate danger pulls you into the rain.",
+      "start_turn": 44
+    },
+    {
+      "id": "4657b87d-4a7d-44c1-a830-01b36d6d14ab",
+      "access_count": 9,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Lord Casimir Vael",
+        "Jory"
+      ],
+      "created_at": 1792180278652,
+      "dense_summary": "Mara Voss kicks backward at the nearest Lord Casimir Vael, breaking free from the grip. Mara Voss lunges toward Sister Elka's hand but is shot in the thigh by a shorter Lord Casimir Vael. Mara Voss drops Sister Elka's hand, which slips onto the altar. Lord Casimir Vael lifts Ilya's black wax seal, indicating possession of both the seal and Sister Elka's hand.",
+      "end_turn": 47,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 44] USER: I kick back hard to free myself, then lunge for Elka's hand on the altar, determined to retrieve the seal.\n[Turn 45] ASSISTANT: You kick. Your heel connects with a shin. The grip on your arms loosens.\n\nYou shove off. Your fingers claw at the altar. Splinters bite your palms.\n\nYou lunge. Rain spatters the threshold. You grab Elka's wrist. Cloth slides. Her skin is cold and slick.\n\nYou yank. The hand comes free of the altar. You curl it against your chest. Blood soaks your sleeve.\n\nA Vael voice laughs from the doorway. The man with the seal lifts it high. The black wax glints in candlelight.\n\nYou stare between the hand and the seal. The seal is not on Elka's fingers. It is in Vael hands.\n\nTwo pairs of hands seize you again. They wrench you backward. The chapel tilts. Jory rolls, bleeding at the threshold.\n\nThe Vael man steps forward, presses the seal to the air as if making a mark. He says, flat: \"Now we have both.\"\n\nThey haul you out. Elka's hand twists in your grip. Immediate danger pulls you into the rain.\n\n[Content to Extract]\n[Turn 46] USER: I kick backward at the nearest Vael, aiming for their knee to break free from their grip.\n[Turn 47] ASSISTANT: Your heel cracks bone. The Vael swears.\n\nHis knee collapses. His grip loosens.\n\nYou wrench your arms out. Pain flares from the stab under your elbow. You stagger.\n\nYou push past fallen boots. Splinters bite your palms. You lunge toward Elka's hand.\n\nA metal click behind you. The shorter Vael, bleeding where your knife found him, drags a crossbow to his shoulder.\n\nYou don't see the twitch. The bolt whistles.\n\nIt slams into your thigh. Heat blooms. You drop the hand. It slips from your fingers and thunks onto the altar.\n\nThe shorter man laughs, despite the blood at his mouth. The taller Vael hauls himself upright, rubbing at his knee. The man with the seal steps forward and lifts it so the candle hits the black face.\n\nYou sink to one knee. Blood soaks your sleeve. The world tilts with every breath.\n\nThe chapel door creaks open wider. Rain washes the threshold. Immediate danger closes in around you.",
+      "start_turn": 46
+    },
+    {
+      "id": "97c0d910-08ff-4293-a961-f0f3f34ad09d",
+      "access_count": 36,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Jory",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180278682,
+      "dense_summary": "Mara Voss kicks backward at Lord Casimir Vael, breaking his grip. Mara Voss escapes but is shot in the thigh by a shorter Vael with a crossbow. Mara Voss attempts to clutch Sister Elka's hand and shouts for Jory to escape. Jory is shot in the ribs by the shorter Vael and falls motionless. Immediate danger surrounds Mara Voss as Lord Casimir Vael approaches.",
+      "end_turn": 49,
+      "has_new_entity": false,
+      "is_irreversible": true,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 46] USER: I kick backward at the nearest Vael, aiming for their knee to break free from their grip.\n[Turn 47] ASSISTANT: Your heel cracks bone. The Vael swears.\n\nHis knee collapses. His grip loosens.\n\nYou wrench your arms out. Pain flares from the stab under your elbow. You stagger.\n\nYou push past fallen boots. Splinters bite your palms. You lunge toward Elka's hand.\n\nA metal click behind you. The shorter Vael, bleeding where your knife found him, drags a crossbow to his shoulder.\n\nYou don't see the twitch. The bolt whistles.\n\nIt slams into your thigh. Heat blooms. You drop the hand. It slips from your fingers and thunks onto the altar.\n\nThe shorter man laughs, despite the blood at his mouth. The taller Vael hauls himself upright, rubbing at his knee. The man with the seal steps forward and lifts it so the candle hits the black face.\n\nYou sink to one knee. Blood soaks your sleeve. The world tilts with every breath.\n\nThe chapel door creaks open wider. Rain washes the threshold. Immediate danger closes in around you.\n\n[Content to Extract]\n[Turn 48] USER: I attempt to clutch Elka's hand tighter and shout for Jory to escape while I create a distraction.\n[Turn 49] ASSISTANT: You clamp your fingers around Elka's wrist. Blood slicks your palm. You lift the hand to your chest and shout.\n\n\"Run, Jory!\"\n\nHe stirs. He tries to roll. His face is a smear of salt and red.\n\nA Vael laughs and spits. The shorter one swings the crossbow. The string creaks. Rain hammers the roof.\n\nThe bolt whistles. It catches Jory in the ribs. He convulses once and goes still. Sound dies hard in the chapel.\n\nYou drop to your knees. The hand slips against your sleeve but you hold it. The taller Vael steps forward, boot on the altar rail. He reaches for you.\n\nThe man with the seal lifts it again and presses it to his palm like a badge. Candlelight catches the black face.\n\nHands seize your shoulders. Pain flares in your forearm and under your elbow. The Vael haul you upright. Jory lies motionless at the threshold. Immediate danger closes in around you.",
+      "start_turn": 48
+    },
+    {
+      "id": "c93635ff-edbd-42ad-8970-7955ac943457",
+      "access_count": 6,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Jory",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180278483,
+      "dense_summary": "Mara Voss clutches Sister Elka's hand while shouting for Jory to escape. Jory is struck by a bolt from Lord Casimir Vael's crossbow and falls motionless. Mara Voss is seized by Lord Casimir Vael, while Jory lies at the threshold, indicating a major irreversible event.",
+      "end_turn": 50,
+      "has_new_entity": false,
+      "is_irreversible": true,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 48] USER: I attempt to clutch Elka's hand tighter and shout for Jory to escape while I create a distraction.\n[Turn 49] ASSISTANT: You clamp your fingers around Elka's wrist. Blood slicks your palm. You lift the hand to your chest and shout.\n\n\"Run, Jory!\"\n\nHe stirs. He tries to roll. His face is a smear of salt and red.\n\nA Vael laughs and spits. The shorter one swings the crossbow. The string creaks. Rain hammers the roof.\n\nThe bolt whistles. It catches Jory in the ribs. He convulses once and goes still. Sound dies hard in the chapel.\n\nYou drop to your knees. The hand slips against your sleeve but you hold it. The taller Vael steps forward, boot on the altar rail. He reaches for you.\n\nThe man with the seal lifts it again and presses it to his palm like a badge. Candlelight catches the black face.\n\nHands seize your shoulders. Pain flares in your forearm and under your elbow. The Vael haul you upright. Jory lies motionless at the threshold. Immediate danger closes in around you.\n\n[Content to Extract]\n[Turn 50] USER: I reach for Elka's hand again, determined to grab it and pull it back toward me.",
+      "start_turn": 50
+    },
+    {
+      "id": "4c539165-acda-469f-9eaf-16d0c259f754",
+      "access_count": 13,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Lord Casimir Vael",
+        "Jory"
+      ],
+      "created_at": 1792180337680,
+      "dense_summary": "Mara Voss grips Sister Elka's wrist, pulling against danger. Lord Casimir Vael presses Ilya's black wax seal to Elka's hand. Mara Voss kicks a taller Vael, causing him to fall. Mara Voss lunges for the seal, injuring herself in the process. The shorter Vael aims a crossbow at Mara Voss. Mara Voss pulls Elka's hand, but a bolt strikes her side. Mara Voss raises the seal as a bargaining tool, but the shorter Vael kicks it away and claims it. Immediate danger surrounds Mara Voss and Sister Elka.",
+      "end_turn": 60,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 50] USER: I reach for Elka's hand again, determined to grab it and pull it back toward me.\n\n[Content to Extract]\n[Turn 51] ASSISTANT: You stretch. Rain drums the roof. Your fingers close on Elka's wrist.\n\nCold skin. Blood slicks your palm. You pull with everything left in your arms.\n\nA knee slams into your shoulder. Pain explodes along your ribs and the stab under your elbow. You choke. Your grip falters.\n\nHands rip at your arms. You yank, brace, bite down on the taste of iron in your mouth. The altar slides away.\n\nElka's hand peels from your fingers. It slips, spins, and drops back to the wood with a wet sound.\n\nThe Vael man with the seal steps forward. He catches the hand between two fingers. He lifts it so the candle hits the black face. He presses the seal to the cold knuckles as if marking them.\n\nYou stagger. Your thigh burns where the bolt struck. Your forearm screams. Jory lies still in the threshold.\n\nA Vael boot finds your ribs and drives you down to your knees. The man with the seal says nothing. He holds the wax where you can see it. Immediate danger presses in from the doorway.\n[Turn 52] USER: I jerk my knees up and kick backward into the taller Vael's legs to throw him off balance.\n[Turn 53] ASSISTANT: Your heel strikes bone. The taller Vael buckles.\n\nHe goes down hard. Wood cracks under his weight. He slams into the doorway and folds. Rain floods the threshold.\n\nGrip on your shoulders loosens. You shove off him and scramble forward. Splinters tear your palms.\n\nThe man with the seal moves faster than you expect. He steps between you and the fallen Vael. His face is calm. The black wax glints.\n\nHe pinches Elka's hand and presses the seal against the damp knuckles as if finishing a claim. The wax sticks. Candlelight gleams on the black face.\n\nThe shorter Vael drags himself up and levels the crossbow. He breathes out through teeth. Blood darkens his sleeve.\n\nYou are on your knees. Your ribs burn. Your thigh throbs where the bolt hit. Elka's hand lies with the seal pressed to it.\n\nThe shorter Vael cocks the crossbow again. The man with the seal watches you with steady hands. Immediate danger tightens around you.\n[Turn 54] USER: I lunge forward, grabbing the seal from the Vael’s hand and trying to break free from their grip.\n[Turn 55] ASSISTANT: You lunge. Rain hammers the roof. Fingers close on cold wax.\n\nThe Vael's hand clamps down. You twist. Leather cracks. Flesh gives.\n\nThe wax holds. It rips.\n\nA wet sound. Heat flares in your palm. Pain blossoms up your arm. Blood soaks into your sleeve.\n\nYou yank the seal free. It tumbles into your hand, slick with blood and wax. The black face glints once.\n\nThe taller Vael curses and rolls toward you. The shorter Vael snatches the crossbow. He cocks it with a hard snap.\n\nYou stagger back, seal clutched to your chest. Your forearm throbs. Elka's hand lies marked by torn skin and dark wax.\n\nThe shorter Vael takes aim. The chapel fills with the click of a bow and the hiss of rain. Immediate danger closes in on you.\n[Turn 56] USER: I reach for Elka's hand again, desperate to pull her away from the man with the seal.\n[Turn 57] ASSISTANT: You lunge again. Your fingers close on Elka's wrist.\n\nCold flesh. Blood slicks your palm. You pull.\n\nThe shorter Vael fires. The crack fills the chapel.\n\nA bolt rakes through your side. Heat explodes under your ribs. Your legs go loose. You fall forward, dragging Elka with you.\n\nHer hand comes free. You clamp it to your chest. Wax flakes smear across your fingers. The black seal presses cold against your palm.\n\nThe Vael men shove forward. Rain and candle smoke sting your eyes. Your breath rasps. Pain sears along every old injury.\n\nThe taller Vael scrambles up, knife glinting. The shorter Vael reloads with a fast, practiced motion. Jory stays where he fell in the threshold.\n\nYou lie on the altar floor, Elka's hand in your grasp, the seal warm and wet in your palm. Immediate danger presses from the doorway.\n[Turn 58] USER: I raise the seal in front of me, ready to use it as a bargaining tool while shouting for the Vaels to stop.\n[Turn 59] ASSISTANT: You shove the seal up. Candlelight catches the black face. You shout for them to stop.\n\nYour voice slides off wet stone. The seal trembles in your fist.\n\nThe man with the seal steps forward. He doesn't speak. He reaches with one slow hand and slaps at your wrist.\n\nYou twist. He twists back. The wax slips. It peels molten from your palm.\n\nThe seal flies. It skids across the altar, slips into a pool of spilled wax and blood, and rolls toward the threshold.\n\nThe shorter Vael's boot beats it. He kicks it under the fallen man's coat and tucks it into his belt without looking. His crossbow never leaves his shoulder.\n\nThe man with the seal watches you for a heartbeat, then nods once. The taller Vael straightens, knife high. Rain hammers the doorway.\n\nYou have no leverage. The seal is gone. The Vael men close the gap. Immediate danger cuts the chapel air.\n[Turn 60] USER: I shout for Jory to help, gripping Elka tightly while trying to shield her with my body.",
+      "start_turn": 51
+    },
+    {
+      "id": "86b1512d-cf05-476d-bb06-af55232a88be",
+      "access_count": 2,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Jory",
+        "Sister Elka",
+        "Lord Casimir Vael",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180389866,
+      "dense_summary": "Mara Voss shouts for Jory while gripping Sister Elka tightly. Jory lies at the threshold, unresponsive. Lord Casimir Vael steps forward with a crossbow aimed at Mara's ribs. The taller Vael pins Mara's arms to the altar while Elka is dragged toward the doorway. The shorter Vael tucks Ilya's black wax seal into his belt as they leave with Elka, leaving Mara pinned and in immediate danger.",
+      "end_turn": 61,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 59] ASSISTANT: You shove the seal up. Candlelight catches the black face. You shout for them to stop.\n\nYour voice slides off wet stone. The seal trembles in your fist.\n\nThe man with the seal steps forward. He doesn't speak. He reaches with one slow hand and slaps at your wrist.\n\nYou twist. He twists back. The wax slips. It peels molten from your palm.\n\nThe seal flies. It skids across the altar, slips into a pool of spilled wax and blood, and rolls toward the threshold.\n\nThe shorter Vael's boot beats it. He kicks it under the fallen man's coat and tucks it into his belt without looking. His crossbow never leaves his shoulder.\n\nThe man with the seal watches you for a heartbeat, then nods once. The taller Vael straightens, knife high. Rain hammers the doorway.\n\nYou have no leverage. The seal is gone. The Vael men close the gap. Immediate danger cuts the chapel air.\n[Turn 60] USER: I shout for Jory to help, gripping Elka tightly while trying to shield her with my body.\n\n[Content to Extract]\n[Turn 61] ASSISTANT: You shout Jory's name. Your voice cracks. Rain slaps the doorway.\n\nYou clamp Elka to your chest and twist your body over hers. Leather presses into your spine. You try to make your shape a shield.\n\nJory doesn't move. He lies at the threshold, eyes half-open, chest barely rising.\n\nThe shorter Vael steps forward. Crossbow trained at your ribs. The taller Vael plants a boot at your shoulder and drives his weight down.\n\nPain spikes. Your grip loosens. Elka slides against your chest, blood slick between your fingers.\n\nThe man with the seal reaches in. He grabs Elka by the shoulder and hauls. His fingers are hard as iron. He doesn't look at you.\n\nYou claw at his wrist. He jerks Elka free. The taller Vael wrenches your arms apart and pins them to the altar.\n\nElka is dragged toward the doorway. She looks at you once. Her eyes go wide and wet.\n\nYou struggle. The Vael men's boots scrape wood. Rain and candle smoke fill your throat.\n\nThey lift Elka over the threshold. The shorter Vael tucks something—your memory of the seal—into his belt as they go.\n\nYou are left pinned, breath rasping, blood hot under your ribs. Immediate danger stands in the doorway and moves away with Elka.",
+      "start_turn": 61
+    },
+    {
+      "id": "b78eea4c-ed62-4711-9d70-7b8e596f8ef5",
+      "access_count": 16,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Jory",
+        "Sister Elka",
+        "Lord Casimir Vael",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180389602,
+      "dense_summary": "Mara Voss charges toward Lord Casimir Vael and the shorter Vael to rescue Sister Elka. Jory remains unmoving at the threshold. Mara Voss is struck by the shorter Vael's crossbow and collapses onto the altar as the Vael men drag Sister Elka away into the rain.",
+      "end_turn": 63,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 61] ASSISTANT: You shout Jory's name. Your voice cracks. Rain slaps the doorway.\n\nYou clamp Elka to your chest and twist your body over hers. Leather presses into your spine. You try to make your shape a shield.\n\nJory doesn't move. He lies at the threshold, eyes half-open, chest barely rising.\n\nThe shorter Vael steps forward. Crossbow trained at your ribs. The taller Vael plants a boot at your shoulder and drives his weight down.\n\nPain spikes. Your grip loosens. Elka slides against your chest, blood slick between your fingers.\n\nThe man with the seal reaches in. He grabs Elka by the shoulder and hauls. His fingers are hard as iron. He doesn't look at you.\n\nYou claw at his wrist. He jerks Elka free. The taller Vael wrenches your arms apart and pins them to the altar.\n\nElka is dragged toward the doorway. She looks at you once. Her eyes go wide and wet.\n\nYou struggle. The Vael men's boots scrape wood. Rain and candle smoke fill your throat.\n\nThey lift Elka over the threshold. The shorter Vael tucks something—your memory of the seal—into his belt as they go.\n\nYou are left pinned, breath rasping, blood hot under your ribs. Immediate danger stands in the doorway and moves away with Elka.\n\n[Content to Extract]\n[Turn 62] USER: I scramble to my feet, pulling Elka up, and yell for Jory to help as I charge towards the Vael men.\n[Turn 63] ASSISTANT: You push up and haul Elka to her feet. Her legs wobble. Blood soaks your palm.\n\nYou shout Jory's name. No movement at the threshold.\n\nYou charge. Wood cracks under your boots. Rain fills the doorway.\n\nThe shorter Vael swings the crossbow. He catches your shoulder with the butt. You stagger but drive forward. Your shoulder screams.\n\nYou slam into the taller Vael. He goes down hard. You yank at his knife arm.\n\nThe shorter Vael fires. The bolt digs into your side. Heat explodes under your ribs. You double over and let go.\n\nHands grab you. A boot plants on your back. The taller Vael scrambles up and slams his knee into your spine. Pain steals your breath.\n\nThey haul Elka over the threshold. She screams once. The shorter Vael tucks something at his belt and looks back with a flat face.\n\nYou collapse onto the altar. Blood pools warm beneath you. Jory lies unmoving in the doorway.\n\nThe Vael men move away into the rain, Elka between them. Immediate danger stands where the chapel door yawns open.",
+      "start_turn": 62
+    },
+    {
+      "id": "9946c773-b121-4d8d-9671-8748e68c2200",
+      "access_count": 23,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Jory",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180389648,
+      "dense_summary": "Mara Voss struggles against the taller Lord Casimir Vael's grip while shouting for help. Mara Voss attempts to free herself and claw at Lord Casimir Vael's knife arm but is met with violence. The shorter Lord Casimir Vael carries Sister Elka away as Mara Voss collapses onto the altar, blood pooling beneath her. Jory lies unmoving in the doorway.",
+      "end_turn": 65,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 62] USER: I scramble to my feet, pulling Elka up, and yell for Jory to help as I charge towards the Vael men.\n[Turn 63] ASSISTANT: You push up and haul Elka to her feet. Her legs wobble. Blood soaks your palm.\n\nYou shout Jory's name. No movement at the threshold.\n\nYou charge. Wood cracks under your boots. Rain fills the doorway.\n\nThe shorter Vael swings the crossbow. He catches your shoulder with the butt. You stagger but drive forward. Your shoulder screams.\n\nYou slam into the taller Vael. He goes down hard. You yank at his knife arm.\n\nThe shorter Vael fires. The bolt digs into your side. Heat explodes under your ribs. You double over and let go.\n\nHands grab you. A boot plants on your back. The taller Vael scrambles up and slams his knee into your spine. Pain steals your breath.\n\nThey haul Elka over the threshold. She screams once. The shorter Vael tucks something at his belt and looks back with a flat face.\n\nYou collapse onto the altar. Blood pools warm beneath you. Jory lies unmoving in the doorway.\n\nThe Vael men move away into the rain, Elka between them. Immediate danger stands where the chapel door yawns open.\n\n[Content to Extract]\n[Turn 64] USER: I strain against the taller Vael's grip, trying to twist free and shout for help again.\n[Turn 65] ASSISTANT: You strain. Leather bites into your wrists. Muscle tears against an iron grip.\n\nYou twist your shoulders. The taller Vael swears and tightens. Pain lances through your ribs.\n\nYou spit blood. You push your weight. Flesh slips. For a beat your hand is free.\n\nYou throw it up, clawing for the man's knife arm. He jerks back. His free hand snaps down.\n\nA boot connects with your jaw. Sound explodes. Teeth chatter. Your head slams the altar.\n\nPain floods black spots across your vision. The Vael hand clamps your hair and drags your face to the wood. Your nose burns. Blood runs warm into your mouth.\n\nThe shorter Vael levels his crossbow. He breathes once. Rain hisses in the doorway.\n\nThey step past you, carrying Elka. The shorter Vael glances down, then away.\n\nYou go limp against the altar. The world tilts. Immediate danger stands in the doorway as the Vael men move into the rain.",
+      "start_turn": 64
+    },
+    {
+      "id": "f1617782-5039-4e8f-8a89-815bfcc78c46",
+      "access_count": 26,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael",
+        "Sister Elka"
+      ],
+      "created_at": 1792180389507,
+      "dense_summary": "Mara Voss struggles against Lord Casimir Vael's grip, experiencing pain and injury. Mara Voss attempts to reach for a knife but finds the sheath empty. Lord Casimir Vael and the shorter Vael threaten Mara Voss with a crossbow, creating immediate danger.",
+      "end_turn": 67,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 64] USER: I strain against the taller Vael's grip, trying to twist free and shout for help again.\n[Turn 65] ASSISTANT: You strain. Leather bites into your wrists. Muscle tears against an iron grip.\n\nYou twist your shoulders. The taller Vael swears and tightens. Pain lances through your ribs.\n\nYou spit blood. You push your weight. Flesh slips. For a beat your hand is free.\n\nYou throw it up, clawing for the man's knife arm. He jerks back. His free hand snaps down.\n\nA boot connects with your jaw. Sound explodes. Teeth chatter. Your head slams the altar.\n\nPain floods black spots across your vision. The Vael hand clamps your hair and drags your face to the wood. Your nose burns. Blood runs warm into your mouth.\n\nThe shorter Vael levels his crossbow. He breathes once. Rain hisses in the doorway.\n\nThey step past you, carrying Elka. The shorter Vael glances down, then away.\n\nYou go limp against the altar. The world tilts. Immediate danger stands in the doorway as the Vael men move into the rain.\n\n[Content to Extract]\n[Turn 66] USER: I reach for the knife still strapped to my thigh and pull it free, ready to confront the Vael men.\n[Turn 67] ASSISTANT: You reach down to your thigh and fumble against wet leather.\n\nYour fingers find strap and frayed cloth. The sheath is empty. Cold sweat from your palm. Blood slick under your nails.\n\nYou yank hard. The strap gives with a whisper. Nothing comes free. There is a rag of leather and a smear of iron where a blade might have been.\n\nA taller Vael sees the movement. He grins without humor. He shifts his weight and drives the crossbow butt into your ribs.\n\nAir leaves you in a single animal shout. Pain detonates across your side. Your hands go slack on empty leather.\n\nThe shorter Vael levels the crossbow again. He murmurs something to his man that you cannot make out over your own breath.\n\nOutside, rain pats the doorway. Inside, wood creaks with the Vael men's boots. Immediate danger looms as they step back into the threshold, crossbow ready.",
+      "start_turn": 66
+    },
+    {
+      "id": "6f84cbb4-7a40-4075-bfc5-9c6f0d342cf2",
+      "access_count": 54,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180389587,
+      "dense_summary": "Mara Voss reaches for the altar's edge in the Drowned Chapel, struggling to gather strength after being attacked by Lord Casimir Vael's men. Mara Voss pulls herself up but is shot by a crossbow bolt from a shorter Vael, causing severe injury. Immediate danger persists as Lord Casimir Vael's men exit into the rain with Sister Elka.",
+      "end_turn": 69,
+      "has_new_entity": false,
+      "is_irreversible": true,
+      "items_involved": [],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 66] USER: I reach for the knife still strapped to my thigh and pull it free, ready to confront the Vael men.\n[Turn 67] ASSISTANT: You reach down to your thigh and fumble against wet leather.\n\nYour fingers find strap and frayed cloth. The sheath is empty. Cold sweat from your palm. Blood slick under your nails.\n\nYou yank hard. The strap gives with a whisper. Nothing comes free. There is a rag of leather and a smear of iron where a blade might have been.\n\nA taller Vael sees the movement. He grins without humor. He shifts his weight and drives the crossbow butt into your ribs.\n\nAir leaves you in a single animal shout. Pain detonates across your side. Your hands go slack on empty leather.\n\nThe shorter Vael levels the crossbow again. He murmurs something to his man that you cannot make out over your own breath.\n\nOutside, rain pats the doorway. Inside, wood creaks with the Vael men's boots. Immediate danger looms as they step back into the threshold, crossbow ready.\n\n[Content to Extract]\n[Turn 68] USER: I reach for the altar's edge, trying to pull myself up and gather my strength to chase after them.\n[Turn 69] ASSISTANT: Your fingers find the altar's edge. Wood is slick with wax and blood.\n\nYou haul. Muscles burn. Ribs protest. You pull your weight and get a knee under you.\n\nRain hisses at the doorway. The Vael men are almost gone, Elka slung between them.\n\nYou push yourself up. The altar tilts under your weight. Your vision skitters.\n\nThe shorter Vael spins. He brings the crossbow to his shoulder with a single smooth motion.\n\nYou are halfway to your feet. Your hand lifts toward the door.\n\nThe bolt flies. It hits the hollow under your collarbone. Heat rakes across your chest. Sound goes thin.\n\nYou double over. Blood floods your mouth. Your fingers slip from the altar. Your knee buckles and you hit the floor hard.\n\nThe Vael men step into the rain. The doorway yawns open. Immediate danger stands in the doorway as you gasp for air and taste iron.",
+      "start_turn": 68
+    },
+    {
+      "id": "e6b3f63c-2a70-4e5c-aab8-fc306c256403",
+      "access_count": 53,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180389633,
+      "dense_summary": "Mara Voss struggles to rise from the altar in the Drowned Chapel while Lord Casimir Vael and another Vael man carry Sister Elka away. Mara Voss is shot by a crossbow bolt, causing injury and blood loss. Mara Voss attempts to kick the taller Vael man to regain control of the situation.",
+      "end_turn": 70,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 68] USER: I reach for the altar's edge, trying to pull myself up and gather my strength to chase after them.\n[Turn 69] ASSISTANT: Your fingers find the altar's edge. Wood is slick with wax and blood.\n\nYou haul. Muscles burn. Ribs protest. You pull your weight and get a knee under you.\n\nRain hisses at the doorway. The Vael men are almost gone, Elka slung between them.\n\nYou push yourself up. The altar tilts under your weight. Your vision skitters.\n\nThe shorter Vael spins. He brings the crossbow to his shoulder with a single smooth motion.\n\nYou are halfway to your feet. Your hand lifts toward the door.\n\nThe bolt flies. It hits the hollow under your collarbone. Heat rakes across your chest. Sound goes thin.\n\nYou double over. Blood floods your mouth. Your fingers slip from the altar. Your knee buckles and you hit the floor hard.\n\nThe Vael men step into the rain. The doorway yawns open. Immediate danger stands in the doorway as you gasp for air and taste iron.\n\n[Content to Extract]\n[Turn 70] USER: I summon my strength and kick out violently at the taller Vael’s knees, aiming to knock him off balance.",
+      "start_turn": 70
+    },
+    {
+      "id": "97188e69-791e-41e0-8d4e-4acd5b8d2544",
+      "access_count": 5,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180448917,
+      "dense_summary": "Mara Voss attempts to kick Lord Casimir Vael but fails, resulting in severe injury. Lord Casimir Vael retaliates, causing Mara Voss to lose consciousness. Mara Voss recalls the brass lockpick set for future use.",
+      "end_turn": 72,
+      "has_new_entity": false,
+      "is_irreversible": true,
+      "items_involved": [
+        "brass lockpick set"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 70] USER: I summon my strength and kick out violently at the taller Vael’s knees, aiming to knock him off balance.\n\n[Content to Extract]\n[Turn 71] ASSISTANT: You plant your foot. Pain screams from your ribs. The shot under your collarbone burns with each breath.\n\nYou swing. The kick is wild and slow.\n\nYour heel clips the air. It strikes the altar leg instead. Wood shudders. Pain lances down your shin.\n\nThe taller Vael laughs once. He steps in close. His knee finds your chest. Air roars out of you.\n\nA boot slams your jaw. Sound breaks. Your tongue tastes metal.\n\nHands drag your head back. The altar grinds beneath your cheek. Warm blood spreads across the wood.\n\nYou try to scream. Your throat closes. Darkness wedges at the edges of your vision.\n\nThe Vael men move past. Rain swallows their bootbeats. The doorway narrows around them.\n\nYour fingers fail. Your eyelids fold. You go out hard, face into the altar, blood pooling beneath you.\n[Turn 72] USER: I recall the brass lockpick set from earlier and focus on retrieving it from my pocket, hoping to use it later.",
+      "start_turn": 71
+    },
+    {
+      "id": "f57e7b45-378d-422c-9170-8990cfe88f87",
+      "access_count": 5,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180448779,
+      "dense_summary": "Mara Voss experiences pain and disorientation after an attack by Lord Casimir Vael. Mara Voss recalls the brass lockpick set, retrieves it from the pocket, but finds it damaged and useless. Despite the pain, Mara Voss prepares to fight back by reaching for a dagger hidden in the boot.",
+      "end_turn": 74,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "brass lockpick set"
+      ],
+      "location": "Saltmarket",
+      "original_text": "[Story Context Overlap]\n[Turn 71] ASSISTANT: You plant your foot. Pain screams from your ribs. The shot under your collarbone burns with each breath.\n\nYou swing. The kick is wild and slow.\n\nYour heel clips the air. It strikes the altar leg instead. Wood shudders. Pain lances down your shin.\n\nThe taller Vael laughs once. He steps in close. His knee finds your chest. Air roars out of you.\n\nA boot slams your jaw. Sound breaks. Your tongue tastes metal.\n\nHands drag your head back. The altar grinds beneath your cheek. Warm blood spreads across the wood.\n\nYou try to scream. Your throat closes. Darkness wedges at the edges of your vision.\n\nThe Vael men move past. Rain swallows their bootbeats. The doorway narrows around them.\n\nYour fingers fail. Your eyelids fold. You go out hard, face into the altar, blood pooling beneath you.\n[Turn 72] USER: I recall the brass lockpick set from earlier and focus on retrieving it from my pocket, hoping to use it later.\n\n[Content to Extract]\n[Turn 73] ASSISTANT: You come up gasping. Salt and blood in your mouth. Vision streaked.\n\nYour fingers move before your head clears. You fumble at your coat pocket.\n\nSomething cold and brass hits your palm. A small clink. You bring it to the light.\n\nThe casing is cracked. Pins bent. Picks splayed and snapped like thin wire. The set is there. It will not open anything.\n\nYour hand closes on useless metal. Pain flares through your ribs. You grit your teeth and hold the pieces anyway.\n\nOutside, rain pats the doorway. A heavier step pauses on the threshold. A boot heel presses the sill.\n\nImmediate danger returns at the door.\n[Turn 74] USER: I force my eyes open and reach for the dagger hidden in my boot, ready to fight back.",
+      "start_turn": 73
+    },
+    {
+      "id": "a09e7ecb-04b9-468c-9267-b63292c1bc79",
+      "access_count": 1,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180448757,
+      "dense_summary": "Mara Voss finds the brass lockpick set in a coat pocket but realizes it is broken and useless. Lord Casimir Vael threatens Mara Voss with a knife while another Lord Casimir Vael aims a crossbow. Immediate danger escalates as Mara Voss prepares to defend against the attack.",
+      "end_turn": 76,
+      "has_new_entity": false,
+      "is_irreversible": true,
+      "items_involved": [
+        "brass lockpick set"
+      ],
+      "location": "Saltmarket",
+      "original_text": "[Story Context Overlap]\n[Turn 73] ASSISTANT: You come up gasping. Salt and blood in your mouth. Vision streaked.\n\nYour fingers move before your head clears. You fumble at your coat pocket.\n\nSomething cold and brass hits your palm. A small clink. You bring it to the light.\n\nThe casing is cracked. Pins bent. Picks splayed and snapped like thin wire. The set is there. It will not open anything.\n\nYour hand closes on useless metal. Pain flares through your ribs. You grit your teeth and hold the pieces anyway.\n\nOutside, rain pats the doorway. A heavier step pauses on the threshold. A boot heel presses the sill.\n\nImmediate danger returns at the door.\n[Turn 74] USER: I force my eyes open and reach for the dagger hidden in my boot, ready to fight back.\n\n[Content to Extract]\n[Turn 75] ASSISTANT: You force your eyes open. Light stabs. Blood coats your lips.\n\nYou shove fingers into your boot. Leather is wet. There is nothing cold against your calf. The sheath is empty.\n\nA boot scrapes the sill. The shorter Vael's shadow fills the doorway.\n\nYou push up, one elbow on the altar. Pain collapses you halfway. You cough blood.\n\nThe taller Vael reaches in without hurry. His hand clamps the back of your neck. He drags you forward until your face is level with his boot.\n\nThe shorter Vael levels the crossbow. The string hums.\n\nThe taller Vael drives the butt of a knife into your ribs. The air leaves you in a single sound.\n\nYou vomit blood. Your fingers fumble at nothing. The crossbow clicks once as it finds you in the chest. Immediate danger pins you under another man's weight and the other's aim.\n[Turn 76] USER: I grip the broken lockpick set tightly and prepare to defend myself, scanning for anything I can use as a weapon nearby.",
+      "start_turn": 75
+    },
+    {
+      "id": "20423441-fb4f-4993-b385-3eafca8930d3",
+      "access_count": 22,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180449179,
+      "dense_summary": "Mara Voss grips the broken brass lockpick set tightly while preparing to defend against Lord Casimir Vael and the shorter Vael. Mara Voss finds the cracked spyglass in her coat and swings it at the shorter Vael, causing him to stagger. The taller Vael retaliates, shooting Mara Voss with a crossbow, resulting in injury. The spyglass breaks, and Mara Voss drops back, blood soaking her sleeve.",
+      "end_turn": 78,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "brass lockpick set",
+        "cracked spyglass"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 75] ASSISTANT: You force your eyes open. Light stabs. Blood coats your lips.\n\nYou shove fingers into your boot. Leather is wet. There is nothing cold against your calf. The sheath is empty.\n\nA boot scrapes the sill. The shorter Vael's shadow fills the doorway.\n\nYou push up, one elbow on the altar. Pain collapses you halfway. You cough blood.\n\nThe taller Vael reaches in without hurry. His hand clamps the back of your neck. He drags you forward until your face is level with his boot.\n\nThe shorter Vael levels the crossbow. The string hums.\n\nThe taller Vael drives the butt of a knife into your ribs. The air leaves you in a single sound.\n\nYou vomit blood. Your fingers fumble at nothing. The crossbow clicks once as it finds you in the chest. Immediate danger pins you under another man's weight and the other's aim.\n[Turn 76] USER: I grip the broken lockpick set tightly and prepare to defend myself, scanning for anything I can use as a weapon nearby.\n\n[Content to Extract]\n[Turn 77] ASSISTANT: You clamp the broken brass in your fist. The metal bites into your palm.\n\nYou sweep your eyes. Candles gutter. Wax flakes crust the altar. The chapel smells of iron.\n\nYour fingers close on the spyglass in your coat. Cold, cracked glass. You bring it up like a club.\n\nYou shove off the altar. Your knees wobble. Pain spikes across your ribs.\n\nYou swing the spyglass at the shorter Vael's temple. The glass snaps with a sharp, high sound.\n\nHe staggers. The taller Vael snarls. The shorter Vael's hand finds the crossbow.\n\nThe string screams. Wood slaps flesh.\n\nSomething hot explodes against your shoulder. You howl. The spyglass falls. It splinters beneath your hand.\n\nYour grip loosens. The broken brass skitters across the altar and clatters to the floor.\n\nYou drop back. Blood soaks your sleeve. The crossbow is set again. Immediate danger stands over you, ready to fire.\n[Turn 78] USER: I twist my body sharply, attempting to throw off the taller Vael and create space to escape.",
+      "start_turn": 77
+    },
+    {
+      "id": "e56f919f-502c-47ce-9159-ce19ac62d305",
+      "access_count": 44,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180448809,
+      "dense_summary": "Mara Voss struggles against Lord Casimir Vael in Drowned Chapel. Mara Voss uses cracked spyglass as a weapon but is injured by a crossbow bolt from shorter Lord Casimir Vael. Mara Voss attempts to escape and reaches for brass lockpick set on the floor.",
+      "end_turn": 80,
+      "has_new_entity": true,
+      "is_irreversible": false,
+      "items_involved": [
+        "brass lockpick set",
+        "cracked spyglass"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 77] ASSISTANT: You clamp the broken brass in your fist. The metal bites into your palm.\n\nYou sweep your eyes. Candles gutter. Wax flakes crust the altar. The chapel smells of iron.\n\nYour fingers close on the spyglass in your coat. Cold, cracked glass. You bring it up like a club.\n\nYou shove off the altar. Your knees wobble. Pain spikes across your ribs.\n\nYou swing the spyglass at the shorter Vael's temple. The glass snaps with a sharp, high sound.\n\nHe staggers. The taller Vael snarls. The shorter Vael's hand finds the crossbow.\n\nThe string screams. Wood slaps flesh.\n\nSomething hot explodes against your shoulder. You howl. The spyglass falls. It splinters beneath your hand.\n\nYour grip loosens. The broken brass skitters across the altar and clatters to the floor.\n\nYou drop back. Blood soaks your sleeve. The crossbow is set again. Immediate danger stands over you, ready to fire.\n[Turn 78] USER: I twist my body sharply, attempting to throw off the taller Vael and create space to escape.\n\n[Content to Extract]\n[Turn 79] ASSISTANT: You twist. Ribs scream. The taller Vael's grip slips.\n\nHe lurches forward. His knee misses your chest. His weight slams into the altar. Wood cracks.\n\nYou shove with what remains. You shove past him toward the doorway.\n\nA string twangs. The crossbow cracks. A bolt tears into your flank under the ribs.\n\nHot pain rips through you. You fold. The world narrows to a ringing at your ear and the smell of wet iron.\n\nThe taller Vael curses and scrambles up. The shorter Vael steps in, crossbow already reloaded. He levels again without hurry.\n\nYou spit blood. Your hands find the broken brass and the splintered spyglass where they fell. Your fingers close weakly.\n\nThe doorway fills with rain and boots. The Vael men move like a wall. Immediate danger presses down; the shorter Vael's bolt is trained on your chest.\n[Turn 80] USER: I reach for the brass lockpick set on the floor, desperate to find a way out of this situation.",
+      "start_turn": 79
+    },
+    {
+      "id": "4bea68c5-070e-41d1-be70-1ffff08014dd",
+      "access_count": 51,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael",
+        "Jory"
+      ],
+      "created_at": 1792180503610,
+      "dense_summary": "Mara Voss struggles against Lord Casimir Vael in the Drowned Chapel. Lord Casimir Vael's grip slips, allowing Mara Voss to attempt escape. A crossbow bolt from the shorter Vael strikes Mara Voss, causing injury. Mara Voss attempts to use a broken brass lockpick set but fails. Lord Casimir Vael discards the broken lockpick set. Mara Voss lunges for a cracked spyglass, using it to disrupt the shorter Vael's crossbow, resulting in Jory being fatally shot. Mara Voss kicks Lord Casimir Vael's knee, breaking free and attempting to escape as danger escalates.",
+      "end_turn": 85,
+      "has_new_entity": false,
+      "is_irreversible": true,
+      "items_involved": [
+        "brass lockpick set",
+        "cracked spyglass"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 79] ASSISTANT: You twist. Ribs scream. The taller Vael's grip slips.\n\nHe lurches forward. His knee misses your chest. His weight slams into the altar. Wood cracks.\n\nYou shove with what remains. You shove past him toward the doorway.\n\nA string twangs. The crossbow cracks. A bolt tears into your flank under the ribs.\n\nHot pain rips through you. You fold. The world narrows to a ringing at your ear and the smell of wet iron.\n\nThe taller Vael curses and scrambles up. The shorter Vael steps in, crossbow already reloaded. He levels again without hurry.\n\nYou spit blood. Your hands find the broken brass and the splintered spyglass where they fell. Your fingers close weakly.\n\nThe doorway fills with rain and boots. The Vael men move like a wall. Immediate danger presses down; the shorter Vael's bolt is trained on your chest.\n[Turn 80] USER: I reach for the brass lockpick set on the floor, desperate to find a way out of this situation.\n\n[Content to Extract]\n[Turn 81] ASSISTANT: Your fingers close on brass. It is colder than you remember.\n\nThe casing splits under your thumb. Metal flakes cut across your palm. Pain flares. Blood beads and drips to the altar.\n\nYou curl the jagged pieces. They bite into your skin. The picks are useless. They snap like twine when you try to lever one free.\n\nThe taller Vael's boot slams down beside your hand. He stoops. His fingers close over the broken set and the blooded pieces. He lifts them, studies them, and tosses them into the gutter outside.\n\nThe shorter Vael levels the crossbow again. The string hums. The taller Vael's hand clamps the back of your neck and hauls you upright by the hair.\n\nYou gasp. Your palm drips onto the wood. Immediate danger looms; the crossbow is aimed at your chest.\n[Turn 82] USER: I lunge towards the altar, grabbing the splintered spyglass and using it to jab at the shorter Vael's crossbow.\n[Turn 83] ASSISTANT: You lunge. Fingers close on glass. Splinters bite your palm.\n\nYou shove the jagged shaft at the shorter Vael's crossbow. The spyglass skids across wood and catches the bow arm.\n\nA high, glassy crack. Metal shudders. The shorter Vael curses.\n\nThe mechanism snaps free with a hard click. The crossbow recoils.\n\nThe bolt flies. It misses your chest by inches. Wind stabs your face.\n\nIt hits Jory at the threshold. A wet sound. His body folds. Eyes open and blank. His chest stops rising.\n\nThe shorter Vael spins. The taller Vael curses and kicks past you toward the doorway.\n\nYou drop the ruined spyglass. Blood runs from your hand. Immediate danger explodes as Vael men surge in, boots and rain and the taste of iron in the air.\n[Turn 84] USER: I kick out hard at the taller Vael's knee, trying to break his grip and create an opening to escape.\n[Turn 85] ASSISTANT: Your boot connects. Bone bangs. The taller Vael's knee snaps inward.\n\nHe grunts. His fingers loosen.\n\nYou wrench free. Pain flares through ribs and flank. Blood slicks your sleeve.\n\nYou scramble toward the altar edge on shaking hands. The altar scrapes under your palms. You throw your weight and crawl, each breath a burn.\n\nBehind you, the taller Vael catches himself and swears. The shorter Vael reloads a crossbow with a slow, methodical motion.\n\nYou haul yourself up on one elbow at the altar lip, the ruined spyglass and jagged brass at your reach. Rain and boots fill the doorway. Immediate danger tightens as the shorter Vael draws aim and the taller Vael lunges forward.",
+      "start_turn": 81
+    },
+    {
+      "id": "89745fc5-ecce-409e-989d-30d742ec4cdf",
+      "access_count": 18,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180503525,
+      "dense_summary": "Mara Voss kicks Lord Casimir Vael's knee, breaking free from his grip. Mara Voss crawls toward the altar, where the ruined spyglass and jagged brass are within reach. The shorter Lord Casimir Vael reloads a crossbow. Mara Voss attempts to escape through a window but is injured by glass and a bolt fired by the shorter Lord Casimir Vael. Mara Voss grabs the cracked spyglass to distract the shorter Lord Casimir Vael while escaping. The taller Lord Casimir Vael catches Mara Voss, pulling her down as the shorter Lord Casimir Vael prepares to shoot.",
+      "end_turn": 89,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "cracked spyglass"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 84] USER: I kick out hard at the taller Vael's knee, trying to break his grip and create an opening to escape.\n[Turn 85] ASSISTANT: Your boot connects. Bone bangs. The taller Vael's knee snaps inward.\n\nHe grunts. His fingers loosen.\n\nYou wrench free. Pain flares through ribs and flank. Blood slicks your sleeve.\n\nYou scramble toward the altar edge on shaking hands. The altar scrapes under your palms. You throw your weight and crawl, each breath a burn.\n\nBehind you, the taller Vael catches himself and swears. The shorter Vael reloads a crossbow with a slow, methodical motion.\n\nYou haul yourself up on one elbow at the altar lip, the ruined spyglass and jagged brass at your reach. Rain and boots fill the doorway. Immediate danger tightens as the shorter Vael draws aim and the taller Vael lunges forward.\n\n[Content to Extract]\n[Turn 86] USER: I rush towards the nearest window, trying to find a way to escape from the chaos.\n[Turn 87] ASSISTANT: You run. Your hands find the sill. Rain drips from your hair.\n\nThe window has an iron grille bolted to the frame. Thick bars. The bolts are rusted but set deep.\n\nYou jam a shard of spyglass under a bolt. Glass bites your palm. Blood slicks the splinter. The bolt won't budge.\n\nThe shorter Vael curses and fires. The bolt tears through the window beside you. Glass explodes across your face. Pain rips from your shoulder.\n\nYou shove through the broken pane. Jagged glass slices your forearm. Your boot scrapes the wet stone outside. You hit the alley hard and roll once in the mud.\n\nYou taste iron. Your ribs flare. You push up on shaking arms.\n\nVoices above. Boots. The taller Vael hauls himself through the gap, rain on his coat, his voice a bark. The shorter Vael is right behind him, crossbow already aimed. Immediate danger closes as they scramble down after you.\n[Turn 88] USER: I grab the cracked spyglass and aim it towards the shorter Vael, hoping to distract him as I prepare to escape.\n[Turn 89] ASSISTANT: You level the cracked spyglass. You catch a sliver of light on the broken lens.\n\nThe shorter Vael’s head snaps toward the flash. His shoulders twitch. His aim wavers.\n\nYou shove off, shoulder-first, scrambling down the alley in a hunched run. Mud slaps your palms. Glass bites your skin.\n\nA hand clamps your ankle. The taller Vael hauls you down with a hard pull. You hit the cobbles. The ruined spyglass skitters free and slashes your forearm. Hot pain blooms.\n\nThe shorter Vael snaps back to the shot. The crossbow clicks. The bolt rests on the string.\n\nThe taller Vael curses and hauls you upright by your collar. Rain runs down your face. Your ribs scream.\n\nThe shorter Vael pulls the trigger. Immediate danger closes as the bolt launches toward you and the taller Vael’s grip tightens.",
+      "start_turn": 86
+    },
+    {
+      "id": "8a828c75-ea4a-470e-a8fd-cb97088a797a",
+      "access_count": 0,
+      "advances_plot": true,
+      "characters_involved": [
+        "Ilya Renn",
+        "Lord Casimir Vael",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180502811,
+      "dense_summary": "Ilya Renn grabs the cracked spyglass to distract Lord Casimir Vael. Ilya Renn attempts to escape but is caught by the taller Lord Casimir Vael. The shorter Lord Casimir Vael prepares to shoot a crossbow bolt at Ilya Renn.",
+      "end_turn": 90,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "cracked spyglass"
+      ],
+      "location": "Saltmarket",
+      "original_text": "[Story Context Overlap]\n[Turn 88] USER: I grab the cracked spyglass and aim it towards the shorter Vael, hoping to distract him as I prepare to escape.\n[Turn 89] ASSISTANT: You level the cracked spyglass. You catch a sliver of light on the broken lens.\n\nThe shorter Vael’s head snaps toward the flash. His shoulders twitch. His aim wavers.\n\nYou shove off, shoulder-first, scrambling down the alley in a hunched run. Mud slaps your palms. Glass bites your skin.\n\nA hand clamps your ankle. The taller Vael hauls you down with a hard pull. You hit the cobbles. The ruined spyglass skitters free and slashes your forearm. Hot pain blooms.\n\nThe shorter Vael snaps back to the shot. The crossbow clicks. The bolt rests on the string.\n\nThe taller Vael curses and hauls you upright by your collar. Rain runs down your face. Your ribs scream.\n\nThe shorter Vael pulls the trigger. Immediate danger closes as the bolt launches toward you and the taller Vael’s grip tightens.\n\n[Content to Extract]\n[Turn 90] USER: I dart down the alley, seeking the nearest corner to hide and catch my breath.",
+      "start_turn": 90
+    },
+    {
+      "id": "aa925a8d-920c-472b-ab12-ae77b3f24e8c",
+      "access_count": 22,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Taller Vael",
+        "Shorter Vael"
+      ],
+      "created_at": 1792180558104,
+      "dense_summary": "Mara Voss darts down a narrow alley in Saltmarket, pursued by Taller Vael and Shorter Vael. Taller Vael grabs Mara Voss, but Mara Voss kicks Taller Vael's knee, breaking free. Shorter Vael shoots Mara Voss with a crossbow, injuring her. Mara Voss scrambles to find the cracked spyglass dropped earlier, retrieves it, and prepares to defend against the advancing Vael men.",
+      "end_turn": 99,
+      "has_new_entity": true,
+      "is_irreversible": false,
+      "items_involved": [
+        "cracked spyglass"
+      ],
+      "location": "Saltmarket - Narrow Alley",
+      "original_text": "[Story Context Overlap]\n[Turn 90] USER: I dart down the alley, seeking the nearest corner to hide and catch my breath.\n\n[Content to Extract]\n[Turn 91] ASSISTANT: You push off. Mud flies. Pain lances your ribs with every step.\n\nYou duck into a narrow side alley between damp warehouses. The alley narrows to a crooked stack of crates and a rusted drainpipe. No cover, only a shadowed corner.\n\nYou press yourself flat against cold stone and force air into your lungs. Blood wets your mouth. Your forearm stings where glass nicked it.\n\nFootsteps pound behind you. The taller Vael's boot scuffs the alley mouth. The shorter Vael's silhouette fills the opening, crossbow trained, rain dripping from his cloak.\n\nHe fires. The bolt thuds into the crates a pace to your left. Wood splinters. A shard ricochets and cuts your cheek.\n\nYou twist to crawl past the crates toward a narrower gap. The taller Vael's hand snakes around the outside of the stack and slams into your shoulder. Metal and timber graze your ribs.\n\nThe shorter Vael re-cocks the crossbow. The taller Vael hauls you backward by the collar. You drop the ruined spyglass. Immediate danger closes as the bolt is set and rain hisses on the stone.\n[Turn 92] USER: I kick backward at the taller Vael’s knee, hoping to break free and dodge the incoming bolt.\n[Turn 93] ASSISTANT: Your heel snaps back. Leather meets bone.\n\nThe taller Vael yelps. His knee buckles. His grip loosens enough for you to wrench free.\n\nYou shove past the crate, shoulder-first, trying to twist away from the line of fire. Mud throws you off balance.\n\nThe shorter Vael's crossbow spits. The bolt slams into your lower ribs with a wet crack. Pain explodes along your flank. You taste metal.\n\nYou fold around the crate and hit the stones, breath leaving you in a ragged sound. Blood soaks your sleeve where the bolt cut deep.\n\nAbove the alley mouth, the taller Vael scrambles upright, one hand pressed to his hurt knee. The shorter Vael reloads with calm, quick motions. Rain drums on wood and metal.\n\nYou clamp your teeth shut and try to rise. Your hands shake. The bolt has stopped you. Immediate danger presses as both Vael men advance into the alley, boots sliding in the mud.\n[Turn 94] USER: I kick backward with my heel, aiming for the taller Vael's knee to break free and escape.\n[Turn 95] ASSISTANT: Your heel snaps back. Leather meets bone.\n\nThe taller Vael swears. His knee folds. He goes down with a hard curse. His hand loosens from your collar.\n\nYou shove past the crate and sprint for the alley mouth. Mud throws you off balance. Rain stings your face.\n\nThe shorter Vael doesn't hesitate. He levels and fires. The bolt thuds into your shoulder with a wet, sick sound. Pain slams through you. Your arms go dead for a heartbeat.\n\nYou slam into the cobbles and skid. The taller Vael scrambles up, one hand pressed to his ruined knee, eyes burning. The shorter Vael reloads with calm fingers.\n\nYour breath comes jagged. Blood runs warm down your side and into your sleeve. Immediate danger closes as both men advance, boots cutting through puddles toward you.\n[Turn 96] USER: I scramble toward the edge of the alley, searching for the cracked spyglass I dropped earlier.\n[Turn 97] ASSISTANT: You scramble past a broken crate. Fingers scrabble on wet wood.\n\nYou find the spyglass. Cold brass under mud. The lens is spidered and loose.\n\nYou snatch it up. Glass bites into your palm. A hot line of pain sears your forearm. Blood beads and runs.\n\nYou tuck the ruined tube into your fist and bring it up. Jagged edges glint in the rain. It will cut, but it will cut back.\n\nBootsteps hammer closer. The taller Vael straightens, favoring a knee. The shorter Vael levels his crossbow at your chest and begins to cock.\n\nYou breathe through the shock. The spyglass is a poor weapon. It is something. Immediate danger narrows to the muzzle aimed at your ribs and the Vael men closing from both ends of the alley.\n[Turn 98] USER: I reach for a nearby broken bottle shard and prepare to defend myself as they approach.\n[Turn 99] ASSISTANT: You dive for the spyglass and tear a jagged shard free with your thumb.\n\nGlass bites deep. Hot blood slicks your palm. The shard clenches between your fingers.\n\nThe shorter Vael steps forward and fires. You lunge, arm out, and drive the glass into his forearm.\n\nHe shouts. The bolt slips from his aim and thuds into the crate above your head. Wood splinters. Rain hisses on broken timber.\n\nThe Vael twists, clutching his wound. Dark blood stains his sleeve. The taller Vael recovers on one knee and rushes you, eyes flat and hard.\n\nYou stagger back, palm burning, ribs screaming. The alley narrows. Both men close in, boots sliding in the mud. Immediate danger presses.",
+      "start_turn": 91
+    },
+    {
+      "id": "1af2b347-0238-4e78-aa92-c996d097f9ea",
+      "access_count": 6,
+      "advances_plot": true,
+      "characters_involved": [
+        "Shorter Vael",
+        "Taller Vael"
+      ],
+      "created_at": 1792180557783,
+      "dense_summary": "Mara Voss reaches for a broken bottle shard to defend against Shorter Vael and Taller Vael. Shorter Vael fires a crossbow, but Mara Voss lunges and drives the glass shard into Shorter Vael's forearm, causing him to miss his shot. Mara Voss then aims the cracked spyglass at Shorter Vael's crossbow and throws it to distract him.",
+      "end_turn": 100,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "cracked spyglass"
+      ],
+      "location": "Saltmarket",
+      "original_text": "[Story Context Overlap]\n[Turn 98] USER: I reach for a nearby broken bottle shard and prepare to defend myself as they approach.\n[Turn 99] ASSISTANT: You dive for the spyglass and tear a jagged shard free with your thumb.\n\nGlass bites deep. Hot blood slicks your palm. The shard clenches between your fingers.\n\nThe shorter Vael steps forward and fires. You lunge, arm out, and drive the glass into his forearm.\n\nHe shouts. The bolt slips from his aim and thuds into the crate above your head. Wood splinters. Rain hisses on broken timber.\n\nThe Vael twists, clutching his wound. Dark blood stains his sleeve. The taller Vael recovers on one knee and rushes you, eyes flat and hard.\n\nYou stagger back, palm burning, ribs screaming. The alley narrows. Both men close in, boots sliding in the mud. Immediate danger presses.\n\n[Content to Extract]\n[Turn 100] USER: I aim the jagged spyglass at the shorter Vael's crossbow and throw it with all my strength to distract him.",
+      "start_turn": 100
+    },
+    {
+      "id": "30064938-f01e-43e0-a8b6-17ce6b2beeb7",
+      "access_count": 4,
+      "advances_plot": true,
+      "characters_involved": [
+        "Shorter Vael",
+        "Taller Vael"
+      ],
+      "created_at": 1792180612554,
+      "dense_summary": "Mara Voss throws the cracked spyglass at the shorter Vael's crossbow, causing it to break and injure the taller Vael. The taller Vael collapses, and the shorter Vael attempts to attack Mara Voss with a knife. Mara Voss stabs the taller Vael with a glass shard, killing him. The shorter Vael is incapacitated after Mara Voss kicks his knee and retrieves the knife. As the shorter Vael lunges again, Mara Voss kicks the knife away and grabs the cracked spyglass shard for defense.",
+      "end_turn": 110,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "cracked spyglass"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 100] USER: I aim the jagged spyglass at the shorter Vael's crossbow and throw it with all my strength to distract him.\n\n[Content to Extract]\n[Turn 101] ASSISTANT: You hurl the jagged spyglass.\n\nIt spins. Brass glints. Rain throws spray.\n\nIt slams into the shorter Vael's crossbow. Wood cracks. The spyglass explodes in shards.\n\nThe crossbow twitches. The bolt tears free with a dry snap. It drives into the taller Vael's shoulder with a wet crack.\n\nHe screams. He reels and collapses, hand clamped to the wound. Mud sprays.\n\nThe shorter Vael drops the ruined stock and stumbles back, clutching his forearm. He bares his teeth and reaches for a knife at his belt.\n\nYou are still on your feet. Your palm throbs. Blood runs between your fingers. Immediate danger returns as the shorter Vael lunges with the knife.\n[Turn 102] USER: I brace myself and lunge forward, aiming to stab the taller Vael with the broken glass shard before he gets too close.\n[Turn 103] ASSISTANT: You push off the wet stones and lunge.\n\nYour shoulder and ribs scream. The shard is slick in your fist.\n\nYou drive it up under his chin. The glass bites through skin and cloth. A thin, hot line of blood bursts free.\n\nThe taller Vael's eyes go wide. He gurgles. His hands reach for your wrist and miss.\n\nHe folds at your feet and slides down the crate, blood dark on his collar. Rain hisses on the stain.\n\nA wet sound. The shorter Vael is on his feet and coming. Knife raised. He steps over the fallen man and lunges straight for you. Immediate danger closes.\n[Turn 104] USER: I pivot and kick the shorter Vael's knee to destabilize him.\n[Turn 105] ASSISTANT: Your heel snaps into his knee.\n\nBone cracks. He staggers.\n\nThe knife slips from his fingers. It skitters over wet stone and stops near your boot.\n\nHe goes down on one side, face slick with rain. His free hand scrabbles at the air.\n\nYou step forward, chest heaving. Ribs flare pain. Your palm drips between your fingers.\n\nThe fallen taller Vael lies a few feet away, chin split and still. The shorter Vael's eyes are hard and sudden. He lunges with his free hand, fingers closing toward the blade at your feet. Immediate danger closes.\n[Turn 106] USER: I sidestep the shorter Vael's lunge and aim a kick at his knee to unbalance him.\n[Turn 107] ASSISTANT: You pivot hard and slide aside.\n\nHis fingers scrape past your sleeve. He lunges.\n\nYour boot snaps into his other knee. Wet pop. He keels.\n\nThe knife flips. It skitters across stone and spins to a stop at your toes.\n\nYou hook the blade with your foot and snatch it up. Cold metal. Rain hiss on the edge.\n\nThe shorter Vael kicks out with his good leg. He flails with his free hand and claws at your wrist. His face is a wet, hard thing.\n\nYou hold the knife up between you. Blood runs from the taller man's throat onto the crate. The chapel smells of wax and iron.\n\nFootsteps pound outside the doorway. Immediate danger closes.\n[Turn 108] USER: I quickly kick the knife away from him, then grab the taller Vael's shard for defense.\n[Turn 109] ASSISTANT: You kick the blade away.\n\nIt skitters, stops under a bench.\n\nYou snatch the cracked spyglass shard from the taller Vael's hand. Glass bites. It tears your palm deeper.\n\nWarm runs over your fingers. You clamp the shard between thumb and knuckle. The edge is jagged and steady.\n\nThe shorter Vael scrabbles up. He sees the blade in your hand. His face goes flat.\n\nHe launches himself at you, shoulder first. Rain drums on the roof. He aims to drive you back into the altar.\n\nImmediate danger closes.\n[Turn 110] USER: I step back, raising the knife defensively, and shout for help while scanning for a possible escape route.",
+      "start_turn": 101
+    },
+    {
+      "id": "fdf4b34d-1879-495e-9b23-f9e2a5a9611e",
+      "access_count": 22,
+      "advances_plot": true,
+      "characters_involved": [
+        "Taller Vael",
+        "Shorter Vael",
+        "Sister Elka"
+      ],
+      "created_at": 1792180668932,
+      "dense_summary": "Mara Voss kicks the blade away and snatches the cracked spyglass shard from Taller Vael, injuring her palm. Shorter Vael charges at Mara Voss, who raises the knife defensively and shouts for help. Two Vael men enter the chapel, one grabbing Mara Voss's ankle. Mara Voss kicks free and attempts to escape through the side corridor. Shorter Vael is injured by the shard as Mara Voss fights off her attackers. Mara Voss escapes into the yard as two Vael figures pursue her with a crossbow.",
+      "end_turn": 119,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "cracked spyglass",
+        "knife"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 109] ASSISTANT: You kick the blade away.\n\nIt skitters, stops under a bench.\n\nYou snatch the cracked spyglass shard from the taller Vael's hand. Glass bites. It tears your palm deeper.\n\nWarm runs over your fingers. You clamp the shard between thumb and knuckle. The edge is jagged and steady.\n\nThe shorter Vael scrabbles up. He sees the blade in your hand. His face goes flat.\n\nHe launches himself at you, shoulder first. Rain drums on the roof. He aims to drive you back into the altar.\n\nImmediate danger closes.\n[Turn 110] USER: I step back, raising the knife defensively, and shout for help while scanning for a possible escape route.\n\n[Content to Extract]\n[Turn 111] ASSISTANT: You step back, knife held up. Rain spatters the blade.\n\nYou shout. Your voice cracks on the wet air. Help, you call. The word comes out ragged.\n\nYou sweep your eyes across the chapel: the doorway, the smashed pews, the low window over the altar, the side corridor that leads to the yard. The doorway is the closest exit.\n\nBoots answer the shout. Heavy steps. A shadow blocks the doorway. Two Vael men push through, cloaks dripping. One lunges, hand like a vice.\n\nSomething clamps around your ankle. Cold leather. You stumble but the knife arm stays high.\n\nThe man at your ankle pulls. You go down toward the altar, palm burning where the glass tore deeper.\n\nThe shorter Vael roars and charges. The new men close ranks across the doorway. The chapel narrows to wet shoulders and steel.\n\nImmediate danger closes as leather fingers twist at your ankle and boots slam you toward the blood-dark altar.\n[Turn 112] USER: I duck to the side, using the shard to defend against his charge while looking for an escape route from the chapel.\n[Turn 113] ASSISTANT: You duck. The shard flashes up.\n\nThe shorter Vael hits wood and leather. Glass rakes across his shoulder. He spits blood and staggers, hand going to the wound.\n\nThe man on your ankle tugs hard. You twist your hip and wrench free. Pain flares from your flank. You bite a sound and shove past a broken pew.\n\nA gap opens toward the side corridor. You move for it, knife held heavy in your hand, shard ready at your ribs.\n\nBoots thunder behind you. A cloak-slotted fist slams into your back. Your breath leaves you. You fold over the altar edge. Blood slicks the stone where your palm drags.\n\nThe shorter Vael rights himself, face white with shock and anger. The doorway fills with two more cloaks. Sister Elka's scream cuts off somewhere beyond them.\n\nImmediate danger closes as hands grab at your shoulders and a Vael foot pins your knee to the floor.\n[Turn 114] USER: I kick out with my free foot, aiming for the man grasping my ankle, while trying to pull myself back up.\n[Turn 115] ASSISTANT: Your heel snaps out.\n\nIt slams into the man's shin. Bone and leather answer with a hard crack. He howls.\n\nHis fingers loosen. Cold leather slips from your ankle. You wrench your leg free, teeth gritted against the pain in your flank.\n\nYou shove off the altar, push past a broken pew. Rain and wax fall in your face. The shard and knife are heavy in your hands.\n\nYou dive for the side corridor. A bolt whistles from the doorway. It slams into the stone at your shoulder, splinters sending dust and cold rain into your face.\n\nImmediate danger closes as Vael hands close the corridor and the bolt embeds inches from your boot.\n[Turn 116] USER: I twist my body, using the shard to stab at the nearest man's hand while trying to kick free from the knee pin.\n[Turn 117] ASSISTANT: You twist. The shard drives into a gloved hand.\n\nLeather splits. Flesh opens. A wet curse and a hand spasms free.\n\nPain flares through your ribs as the Vael's grip loosens. You shove down with your free leg and kick at the knee pin.\n\nYour heel connects. The foot that held you jerks. The Vael loses balance. You wrench your knee free and scramble upright.\n\nBlood slicks the shard. Your palm stings where glass bit deeper. You shove past a toppled pew and stagger into the side corridor.\n\nA bolt cracks from the doorway. It thuds into the far wall, splinters spraying stone and wax. A Vael voice yells. Boots stamp closer.\n\nImmediate danger closes as three cloaked figures fill the chapel mouth and a crossbow clicks, aimed straight down the corridor where you stand.\n[Turn 118] USER: I sprint down the corridor, gripping the shard tightly, and look for any hiding spots or ways to escape.\n[Turn 119] ASSISTANT: You run. The shard digs into your palm.\n\nThe corridor is narrow and slick. Wax flakes and rain drip from the rafters. Light from the chapel mouth slashes the floorboards ahead.\n\nHalfway down you see the side door. It sits ajar, swollen with damp. Beyond, the yard and a strip of harbor rain.\n\nYou dive for it. Your shoulder slams the jamb. Wood bites your ribs. The shard skitters, gouging a thin red line across your forearm.\n\nA crossbow cracks from the chapel mouth. The bolt smashes the doorframe above your head. Splinters spray your face. One sliver stabs your cheek. Hot salt stings.\n\nYou tumble into the yard. Cold wind hits your lungs. Rain soaks the wound on your flank. The side door bangs open behind you.\n\nTwo Vael figures push through the chapel exit and spill into the yard. One levels a crossbow. Their boots sink in mud and rotting planks.\n\nImmediate danger closes as they cock the weapon and walk you down with slow, sure steps.",
+      "start_turn": 111
+    },
+    {
+      "id": "9380d928-7787-4a8d-ba54-1f35d3fdda3b",
+      "access_count": 11,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Ilya Renn",
+        "Lord Casimir Vael",
+        "Taller Vael",
+        "Shorter Vael"
+      ],
+      "created_at": 1792180668503,
+      "dense_summary": "Mara Voss sprints down the corridor gripping the shard. Mara Voss sees the ajar side door and dives for it. A crossbow bolt from Lord Casimir Vael's figures smashes the doorframe. Mara Voss tumbles into the yard, pursued by Lord Casimir Vael's figures.",
+      "end_turn": 120,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "knife"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 118] USER: I sprint down the corridor, gripping the shard tightly, and look for any hiding spots or ways to escape.\n[Turn 119] ASSISTANT: You run. The shard digs into your palm.\n\nThe corridor is narrow and slick. Wax flakes and rain drip from the rafters. Light from the chapel mouth slashes the floorboards ahead.\n\nHalfway down you see the side door. It sits ajar, swollen with damp. Beyond, the yard and a strip of harbor rain.\n\nYou dive for it. Your shoulder slams the jamb. Wood bites your ribs. The shard skitters, gouging a thin red line across your forearm.\n\nA crossbow cracks from the chapel mouth. The bolt smashes the doorframe above your head. Splinters spray your face. One sliver stabs your cheek. Hot salt stings.\n\nYou tumble into the yard. Cold wind hits your lungs. Rain soaks the wound on your flank. The side door bangs open behind you.\n\nTwo Vael figures push through the chapel exit and spill into the yard. One levels a crossbow. Their boots sink in mud and rotting planks.\n\nImmediate danger closes as they cock the weapon and walk you down with slow, sure steps.\n\n[Content to Extract]\n[Turn 120] USER: I sprint towards the Drowned Chapel, hoping to find an escape route or some allies among the ruins.",
+      "start_turn": 120
+    },
+    {
+      "id": "9d2385ac-c49b-484b-8b65-53d9864f3e65",
+      "access_count": 26,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180724154,
+      "dense_summary": "Mara Voss sprints towards Drowned Chapel seeking escape. A crossbow bolt strikes near Mara Voss as Lord Casimir Vael appears, commanding Mara Voss to drop the shard. Mara Voss drops the shard and raises hands in surrender. Lord Casimir Vael orders two men to restrain Mara Voss, who is cuffed and dragged towards the doorway.",
+      "end_turn": 125,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "shard"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 120] USER: I sprint towards the Drowned Chapel, hoping to find an escape route or some allies among the ruins.\n\n[Content to Extract]\n[Turn 121] ASSISTANT: You run. Rain slaps your face. The shard cuts through the palm with every stride.\n\nThe chapel looms ahead, dark and open. The ruined steps glisten. You push for the porch.\n\nA bolt whistles. It strikes the lintel above your head. Wood splinters. Rain and dust shower your shoulders.\n\nA cloaked figure fills the doorway. He steps forward without haste. A crossbow rests against his hip. His hand lifts and trains another bolt on your chest.\n\nYou skid on the steps. Mud sucks at your boots. The shard slides in your grip.\n\nA voice from the doorway says, slow and calm, “Drop it, Voss.”\n\nImmediate danger closes as the cloaked Vael advances and the crossbow tick-clicks ready.\n[Turn 122] USER: I drop to the ground, rolling to the side to avoid the crossbow bolt and look for cover behind any nearby objects.\n[Turn 123] ASSISTANT: You drop and roll. Rain hisses on your back.\n\nA bolt whistles past your shoulder. Wood cracks as it buries itself in the altar beam a handspan from your head. Splinters slap your cheek.\n\nYou scramble behind a toppled pew. Wet wood shields your ribs. The shard presses into your palm; blood beads on the glass.\n\nBoots pound on the chapel steps. The cloaked Vael at the doorway does not hurry. He plants the crossbow, lifts, and begins to span it again.\n\nVoices shout from the yard. More boots answer. Thunder rolls. Immediate danger closes as the Vael levels the reloaded crossbow, sighting from the doorway straight at your hiding place.\n[Turn 124] USER: I drop the shard and raise my hands, trying to show I'm not a threat.\n[Turn 125] ASSISTANT: You let the shard fall. Glass skitters on wet wood.\n\nYou raise both hands. Rain runs down your wrists.\n\nThe cloaked Vael steps forward. He does not hurry. His voice is flat. \"Hands where I can see them.\"\n\nTwo boots cross the chapel floor and kneel near the pew. One man grabs your elbow. The other slams a cuff into your wrist. Cold metal snaps closed. The cuff bites into soaked skin.\n\nYou try to wrench free. A palm pins your shoulder. A boot drives into your ribs. Pain punches air from you. You cough, fingers skidding on wet stone.\n\nThey haul you upright by the cuffs. Your arms hang forward. The Vael at the doorway lifts her chin with the barrel of his crossbow and motions the men forward.\n\nImmediate danger closes as they drag you toward the doorway, bound and watched, rain and splinters pelting your back.",
+      "start_turn": 121
+    },
+    {
+      "id": "4f4c7e08-c4b8-4161-853c-d46b76d0ca5f",
+      "access_count": 2,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180724448,
+      "dense_summary": "Mara Voss drops the shard, raises hands to show no threat. Lord Casimir Vael approaches, commands Mara Voss to keep hands visible. Two men restrain Mara Voss with cuffs, causing pain. Mara Voss throws the shard at Lord Casimir Vael, injuring his wrist. Lord Casimir Vael retaliates by shooting Mara Voss with a crossbow. Mara Voss attempts to retrieve Ilya's black wax seal for leverage but finds it missing. Immediate danger escalates as more Vael enter the chapel.",
+      "end_turn": 129,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 124] USER: I drop the shard and raise my hands, trying to show I'm not a threat.\n[Turn 125] ASSISTANT: You let the shard fall. Glass skitters on wet wood.\n\nYou raise both hands. Rain runs down your wrists.\n\nThe cloaked Vael steps forward. He does not hurry. His voice is flat. \"Hands where I can see them.\"\n\nTwo boots cross the chapel floor and kneel near the pew. One man grabs your elbow. The other slams a cuff into your wrist. Cold metal snaps closed. The cuff bites into soaked skin.\n\nYou try to wrench free. A palm pins your shoulder. A boot drives into your ribs. Pain punches air from you. You cough, fingers skidding on wet stone.\n\nThey haul you upright by the cuffs. Your arms hang forward. The Vael at the doorway lifts her chin with the barrel of his crossbow and motions the men forward.\n\nImmediate danger closes as they drag you toward the doorway, bound and watched, rain and splinters pelting your back.\n\n[Content to Extract]\n[Turn 126] USER: I grasp the shard tightly and prepare to throw it at the Vael, aiming for his hand to disrupt his aim.\n[Turn 127] ASSISTANT: You clamp your cuffed hands around the shard anyway. Rain slicks the glass.\n\nYou hurl it. The shard spins out of your grip and slaps against the Vael's wrist.\n\nA high, wet sound. Blood dots the sleeve. The Vael's crossbow snaps off its line and fires.\n\nA bolt slams into your shoulder. Pain roars. You double, cuffed hands digging into your ribs.\n\nShouts. Boots close. The wounded Vael curses and lifts his bleeding hand. Two men grab you by the collar and shove you toward the doorway.\n\nImmediate danger closes as more Vael spill into the chapel and the crossbow is reloaded.\n[Turn 128] USER: I reach into my pocket for Ilya's black wax seal, hoping it might prove my identity or offer some leverage.\n[Turn 129] ASSISTANT: You jam your cuffed hand into your pocket. Rain soaks the cloth.\n\nYour fingers find lint and a wet coin. No seal.\n\nThe fact is plain: Ilya's black wax seal is not in your pocket.\n\nA Vael's boot connects with your arm. Pain spikes. The man who cuffed you leans close and snatches at the pocket, palms empty. He spits a laugh.\n\n\"Don't lie,\" he says. His hand snaps back to your collar and hauls you upright.\n\nThe cloaked Vael at the doorway re-shoulders his crossbow. It clicks as it's spanned. Other men close ranks at the threshold.\n\nImmediate danger closes as the crossbow is leveled at your chest and rain drums on the chapel roof.",
+      "start_turn": 126
+    },
+    {
+      "id": "5cf66fb6-4941-432d-8823-7efae5e9606b",
+      "access_count": 0,
+      "advances_plot": true,
+      "characters_involved": [
+        "Ilya Renn",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180724012,
+      "dense_summary": "Mara Voss attempts to retrieve Ilya's black wax seal from a pocket but finds it missing. A Vael's boot strikes Mara Voss's arm, and a Vael man threatens Mara Voss while aiming a crossbow. Immediate danger escalates as Mara Voss tries to escape.",
+      "end_turn": 130,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "Ilya's black wax seal"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 128] USER: I reach into my pocket for Ilya's black wax seal, hoping it might prove my identity or offer some leverage.\n[Turn 129] ASSISTANT: You jam your cuffed hand into your pocket. Rain soaks the cloth.\n\nYour fingers find lint and a wet coin. No seal.\n\nThe fact is plain: Ilya's black wax seal is not in your pocket.\n\nA Vael's boot connects with your arm. Pain spikes. The man who cuffed you leans close and snatches at the pocket, palms empty. He spits a laugh.\n\n\"Don't lie,\" he says. His hand snaps back to your collar and hauls you upright.\n\nThe cloaked Vael at the doorway re-shoulders his crossbow. It clicks as it's spanned. Other men close ranks at the threshold.\n\nImmediate danger closes as the crossbow is leveled at your chest and rain drums on the chapel roof.\n\n[Content to Extract]\n[Turn 130] USER: I jerk my body to the side, trying to break free from their grip and escape toward the nearest exit.",
+      "start_turn": 130
+    },
+    {
+      "id": "0e65acc7-a6b3-4394-95c3-dbc0225b63ba",
+      "access_count": 11,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Sister Elka",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180773364,
+      "dense_summary": "Mara Voss struggles against captors in Drowned Chapel. Mara Voss attempts to escape through collapsed side door. Lord Casimir Vael threatens with crossbow, commanding men to find Ilya's black wax seal. Sister Elka is captured and dragged away. Mara Voss fights back, injuring one captor but remains in immediate danger as Lord Casimir Vael demands information.",
+      "end_turn": 140,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 130] USER: I jerk my body to the side, trying to break free from their grip and escape toward the nearest exit.\n\n[Content to Extract]\n[Turn 131] ASSISTANT: You jerk your body. Cuffed wrists pull taut.\n\nA man at your elbow loses his purchase. Your shoulder twists. You shove off his knee with your boot.\n\nYou lurch to the side toward the chapel's collapsed side door. Splinters bite your palm. Rain slaps your cheek.\n\nThe cloaked Vael at the doorway does not move his feet. He levels the crossbow without looking up. The string sings. A bolt slams into the jamb a handspan from your head. Wood explodes. Shrapnel stings your scalp.\n\nSomeone yanks you by the collar. Another hand clamps your hair. You skid on mud and go down on one hip, cuffed hands dragging.\n\nThey haul you upright. A man hooks an arm around your throat and forces you forward. The crossbow clicks as it is re-spanned.\n\nImmediate danger closes as they drag you back toward the door, your boots slipping in the church mud and the Vael's gun trained on your chest.\n[Turn 132] USER: I shout for help, hoping to catch the attention of anyone nearby, while frantically looking for an escape route.\n[Turn 133] ASSISTANT: You shout. Your voice cracks against the wet rafters.\n\nRain and panting fill the space. Sister Elka's scream answers, sharp and ragged as they haul her past the pews. A child's sob comes once from the doorway and stops.\n\nYou scan the walls and floor for an exit. Mud, splintered wood, the collapsed side door. Hands on your cuffs tighten.\n\nFootsteps slow on the steps. Cloak fabric whispers. A figure fills the doorway, taller than the others. Lord Casimir Vael stands framed in rain, crossbow resting in his hand.\n\nHe does not hurry. He looks at you, then at the men holding you. He lifts a finger. One man slips a bolt into a span.\n\nA Vael's boot connects with your ribs. Pain folds you in half. Someone slams your head against wet wood.\n\nCasimir Vael's voice is low. \"Keep her. Find the seal.\"\n\nImmediate danger closes as the crossbow clicks and his men drag you toward the threshold, rain washing blood from your cheek.\n[Turn 134] USER: I twist my body and kick backward hard, aiming for the nearest man's knee.\n[Turn 135] ASSISTANT: You twist. Cuffed wrists tug. Your heel finds the nearest man's knee.\n\nA wet pop. He drops like rotten timber. He claws at his leg, breath snapping out of him.\n\nThe man on your other side stumbles, surprised. Cuffs bite harder. Someone curses and reaches for a knife.\n\nHands haul you upright by the collar. The fallen man's fingers dig at the floor. Rain hisses through the open doorway.\n\nFrom the threshold the cloaked Vael does not move his feet. He lifts the crossbow. It clicks as it's spanned.\n\nImmediate danger closes as the men close ranks around you and the crossbow is sighted at your chest.\n[Turn 136] USER: I glance around for any sign of Sister Elka, praying she's safe, and try to shout her name through the chaos.\n[Turn 137] ASSISTANT: You shout Elka's name. The sound tears the wet air.\n\nThrough the doorway you see her. Vael men have her by the arms. Her robes are dark with damp. Wax flakes and blood smear her sleeve. She screams once, ragged. Her mouth shapes your name, then nothing more than a hiss as they pull her into the rain.\n\nOne of the men jerks her against a shoulder. She does not collapse. She is alive and moving, but held fast and limp against their grips.\n\nA Vael at the threshold lifts a hand to hush the boy who sobs behind him. Lord Casimir Vael does not hurry. He watches you through the open door. His crossbow is already spanned.\n\nA boot clips your ribs. Cuffs bite deep. Men press in close, closing the circle.\n\nYou hear Elka's steps on the wet boards as they pass the threshold. She is taken away, still in their hold.\n\nImmediate danger returns as the crossbow is leveled at your chest and Casimir Vael's voice cuts the rain: \"Tell us where the seal is.\"\n[Turn 138] USER: I jerk to the side and try to elbow the nearest man hard in the stomach.\n[Turn 139] ASSISTANT: You jerk. Your elbow drives into the man's stomach.\n\nHe grunts. Air leaves him in a sharp sound. His grip slips.\n\nCuffs tug. You twist your shoulder to follow the movement. For a breath you have a sliver of room.\n\nSomeone curses. A hand clamps your hair. A boot slams into your side.\n\nA hard, wooden impact cracks against your jaw. The crossbow's stock swings up and connects with a sick, wet sound. Pain blossoms. Your knees wobble.\n\nThe man who held his breath collapses against the pew, clutching his middle. The others close in faster. Rain hisses through the doorway.\n\nImmediate danger returns as hands shove you toward the threshold and the crossbow is re-shouldered and aimed at your chest.\n[Turn 140] USER: I kick the man holding my collar, aiming for his groin, then shout, \"I don't know what you're talking about!",
+      "start_turn": 131
+    },
+    {
+      "id": "00d8a85a-dae9-4df8-8d54-e6e25bc96d2d",
+      "access_count": 22,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael",
+        "Shorter Vael"
+      ],
+      "created_at": 1792180826943,
+      "dense_summary": "Mara Voss struggles against captors in Drowned Chapel. Mara Voss kicks a man, causing him to loosen grip. A crossbow bolt hits Mara Voss's shoulder. Lord Casimir Vael commands search for the seal. Mara Voss lunges for the crossbow but is shot in the chest. Mara Voss yells for help, but Casimir Vael's men silence her. Mara Voss is searched, and the knife is taken. Mara Voss kicks and twists to escape but is shot in the thigh. Mara Voss crashes outside, blood spreading, as Casimir Vael's men drag her back.",
+      "end_turn": 150,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "knife"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 139] ASSISTANT: You jerk. Your elbow drives into the man's stomach.\n\nHe grunts. Air leaves him in a sharp sound. His grip slips.\n\nCuffs tug. You twist your shoulder to follow the movement. For a breath you have a sliver of room.\n\nSomeone curses. A hand clamps your hair. A boot slams into your side.\n\nA hard, wooden impact cracks against your jaw. The crossbow's stock swings up and connects with a sick, wet sound. Pain blossoms. Your knees wobble.\n\nThe man who held his breath collapses against the pew, clutching his middle. The others close in faster. Rain hisses through the doorway.\n\nImmediate danger returns as hands shove you toward the threshold and the crossbow is re-shouldered and aimed at your chest.\n[Turn 140] USER: I kick the man holding my collar, aiming for his groin, then shout, \"I don't know what you're talking about!\n\n[Content to Extract]\n[Turn 141] ASSISTANT: Your heel snaps up. It connects with his groin.\n\nHe doubles. A breath leaves him in a low sound. His hand loosens on your collar.\n\nYou yank free an inch. You shout, \"I don't know what you're talking about!\"\n\nThe shout fills the chapel. Rain drums on the eaves. Wood creaks.\n\nA bolt hissed through the doorway. The crossbow fires.\n\nIt hits your left shoulder. Metal bites bone. Pain splits down your arm. You go to one knee. Rain spatters your face.\n\nThe man you kicked scrabbles back, hand pressed to his belly, eyes wide. The others move in as one. Cuffs bite into your wrist. A gloved hand pins your shoulder to the altar.\n\nFrom the threshold you hear Casimir Vael's voice. It is calm. \"Search her.\"\n\nImmediate danger tightens as they lever you upright and the crossbow is re-spanned with the bolt still quivering from your shoulder.\n[Turn 142] USER: I lunge forward into the doorway, trying to grab the crossbow from Casimir Vael’s hands.\n[Turn 143] ASSISTANT: You lunge. Cuffs bite. Rain lashes your face.\n\nCasimir does not flinch. He grips the crossbow with both hands. He pulls back with a single, smooth motion.\n\nThe string sings. The bolt exits before your fingers close.\n\nIt hits your chest. Metal slams bone. Air blasts from your lungs. You fold backward. Your heels skid on wet wood. Blood hot and fast between your ribs.\n\nHands clamp your arms. Someone drags you upright by the collar. The world tilts. Rain and splinters pepper your cheek.\n\nCasimir stands in the doorway. His crossbow is still spanned. His men press in close, boots in the mud.\n\nYou cough. Your breath comes ragged. The bolt quivers in the wood behind him. The chapel smells of wet wool and iron.\n\nImmediate danger remains as they haul you toward the threshold and the crossbow is trained on you again.\n[Turn 144] USER: I focus on the pain in my shoulder and yell for help, hoping someone nearby will hear me and intervene.\n[Turn 145] ASSISTANT: You howl. Pain rips through your shoulder with every breath.\n\nRain swallows the sound. Wood drums under the steps. The chapel answers with silence, then the rasp of boots.\n\nA Vael man clamps a hand over your mouth. His glove smells of oil. His fingers dig into your cheek.\n\nAnother fist slams into your ribs. You gag around the hand. Cuffs bite. Blood slicks your teeth.\n\nFrom the doorway Casimir's voice is flat. \"No one.\"\n\nThey wrench you upright. A man jerks the knife from your belt and tosses it aside. Someone pats your coat, pulls at seams, searches for the seal.\n\nThe crossbow is leveled at your breast. Rain hisses through the open door. Splinters rake your scalp.\n\nImmediate danger tightens as they drag you toward the threshold and Casimir Vael watches, crossbow ready.\n[Turn 146] USER: I struggle against their grip, trying to twist and kick free while shouting for help.\n[Turn 147] ASSISTANT: You wrench your hips. Cuffs cut into your wrists.\n\nYou twist, shoulders snapping toward the door. Your boot finds flesh. A Vael man stumbles, a wet curse leaving him.\n\nFingers claw at your coat. Someone grabs at your throat. You kick again. Pain lances through your ruined shoulder.\n\nCasimir's hand jerks the crossbow. The shorter Vael, half turned from your kick, fires.\n\nThe bolt slams into the altar behind you. Splinters spray your face. Wood fragments bite your cheek. You collapse forward against the altar rim. Rain spatters across your face.\n\nHands clamp your arms. A boot pins your knee. A cuff clicks closed. The man you kicked groans on the floor, clutching his belly.\n\nCasimir steps into the doorway. He levels the crossbow at your temple. His voice is quiet. \"Where is the seal?\"\n\nYou cough blood. Your mouth tastes of iron. Immediate danger tightens as his finger rests on the trigger and his men close in from the rain.\n[Turn 148] USER: I twist my body to break free from their grip and make a desperate lunge toward the door.\n[Turn 149] ASSISTANT: You twist. Cuffs bite. You throw your weight forward.\n\nBoots skid. Wood groans. You slam into the threshold.\n\nHands close on your jacket. Fingers tear leather. Rain blasts your face. You feel the cold of the night on your cheek.\n\nCasimir's voice is soft. The shorter Vael steps forward. His crossbow snaps.\n\nThe bolt hits your thigh. Metal shoves through muscle. You howl. Your legs give.\n\nYou crash out into the yard. Mud sucks at your boots. Rain soaks through your shirt. Blood spreads across the planks.\n\nGloved hands drag you back by the collar. The cuffed wrist chafes. Someone hauls you upright and shoves you toward the chapel mouth.\n\nCasimir stands in the doorway. The crossbow is leveled at your chest. His men ring you like dogs.\n\nImmediate danger tightens as they half-drag you back inside and the bolt in your leg throbs with every step.\n[Turn 150] USER: I glance around quickly for any means of escape or an object to use as a weapon.",
+      "start_turn": 141
+    },
+    {
+      "id": "80045cf1-95c1-4137-b859-7c31172263b0",
+      "access_count": 13,
+      "advances_plot": true,
+      "characters_involved": [
+        "Lord Casimir Vael",
+        "Shorter Vael",
+        "Jory"
+      ],
+      "created_at": 1792180876957,
+      "dense_summary": "Mara Voss struggles against restraints in Drowned Chapel. Shorter Vael shoots Mara Voss with a crossbow bolt. Mara Voss searches for a knife near the altar. Mara Voss attempts to escape but is restrained by Vael men. Mara Voss kicks Shorter Vael, causing him to drop his crossbow. The bolt narrowly misses Mara Voss. Casimir Vael threatens Mara Voss with a crossbow as the situation escalates.",
+      "end_turn": 160,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "knife",
+        "cracked spyglass"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 149] ASSISTANT: You twist. Cuffs bite. You throw your weight forward.\n\nBoots skid. Wood groans. You slam into the threshold.\n\nHands close on your jacket. Fingers tear leather. Rain blasts your face. You feel the cold of the night on your cheek.\n\nCasimir's voice is soft. The shorter Vael steps forward. His crossbow snaps.\n\nThe bolt hits your thigh. Metal shoves through muscle. You howl. Your legs give.\n\nYou crash out into the yard. Mud sucks at your boots. Rain soaks through your shirt. Blood spreads across the planks.\n\nGloved hands drag you back by the collar. The cuffed wrist chafes. Someone hauls you upright and shoves you toward the chapel mouth.\n\nCasimir stands in the doorway. The crossbow is leveled at your chest. His men ring you like dogs.\n\nImmediate danger tightens as they half-drag you back inside and the bolt in your leg throbs with every step.\n[Turn 150] USER: I glance around quickly for any means of escape or an object to use as a weapon.\n\n[Content to Extract]\n[Turn 151] ASSISTANT: Your eyes sweep the floor.\n\nThe tossed knife lies near the altar, hilt turned up. Shards from the spyglass glitter in the plank seams. Wet rope coils by a pew. Jory's broken crossbow smolders with rain.\n\nYou lunge for the knife. Cuffs tear at your wrists. Your fingers close on cold metal.\n\nA boot slams into your hand. Pain flares. The knife skids, spins, and flies beneath a row of benches.\n\nA Vael hand snaps down, seizing your wrist. Another heel pins your shoulder to the wood. Rain drums the roof.\n\nCasimir's crossbow is raised again. He watches you, steady. The shorter Vael inches forward, crossbow trained on your chest.\n\nImmediate danger tightens as your free hand scrabbles for the blade under the bench and Vael men press in from the doorway.\n[Turn 152] USER: I glance around for the nearest escape, then yell for help, hoping someone will hear me outside the Drowned Chapel.\n[Turn 153] ASSISTANT: You scan the doorway and side corridors. The side door is ajar. The yard beyond is slick and half-dark. The tide thumps at the quay beyond sight.\n\nYou shout. Your voice cracks on the rain.\n\nSound goes out into wet wood and wet air. Nothing answers but the slap of rain.\n\nA Vael hand clamps your jaw. Another slams a rag into your mouth. You bite it. Blood soaks the cloth.\n\nCasimir's boot comes down on the altar board beside your knee. He leans forward, crossbow steady. \"Shout again,\" he says. His voice is low.\n\nThey haul you by the collar. Your cuffed hands scrape raw. The rag mutes you but does not stop the panic in your ribs.\n\nImmediate danger tightens as they drag you back inside, the crossbow barrel resting against your temple and the side door left ajar to the rain.\n[Turn 154] USER: I reach under the bench, my fingers searching desperately for the knife.\n[Turn 155] ASSISTANT: Your fingers scrape wood and wet cloth.\n\nYou find the hilt. Cold metal bites your palm.\n\nYou curl your fingers around it. Leather sears where the cuff rubs.\n\nA Vael boot comes down. It stomps your hand. Pain spikes like a bell.\n\nThe knife spins free. It skitters across the plank and falls under the next bench.\n\nA gloved hand closes on your wrist and twists. Someone jerks you upright. The rag shoves deeper into your mouth.\n\nCasimir's shadow fills the doorway. The shorter Vael levels the crossbow at your breast.\n\nImmediate danger tightens as your palm drips blood and the knife disappears from reach.\n[Turn 156] USER: I twist to kick the shorter Vael in the knee, hoping to break free and reach the open door.\n[Turn 157] ASSISTANT: You twist. Your cuffed leg snaps out.\n\nYour boot connects with the shorter Vael's knee. Bone cracks under leather.\n\nHe staggers, drops a curse. The crossbow jerks in his hands.\n\nHe fires as he falls.\n\nThe bolt slams into the altar board inches from your temple. Wood explodes. Splinters strike your cheek. Blood runs into the rag.\n\nThe shorter Vael collapses, howling. A Vael hand drags him back by the collar. Casimir does not flinch. He levels his crossbow at your head.\n\nSomeone hauls you upright. Your wrists scream where the cuffs bite. Rain hisses on the roof.\n\nImmediate danger tightens as Casimir cocks the crossbow and the shorter Vael claws for a second bolt from a broken quiver.\n[Turn 158] USER: I twist my body and kick out at the Vael holding my wrist, trying to break free.\n[Turn 159] ASSISTANT: Your heel slams into the Vael's thigh. Grip loosens.\n\nYou twist harder. Metal cuffs crack at the wrist. The chain bites your skin.\n\nYou wrench free. A hand rakes your shoulder. You throw your weight and shove the Vael into a pew. He crashes back, wood groaning.\n\nOne Vael lunges. Another slams into your side. Pain flares along the bolt wound in your thigh. You cough blood into the rag.\n\nCasimir moves like a stone. He steps between you and the side door. His boot buries in your ribs and you fold.\n\nA crossbow barrel is pressed to your temple. The shorter Vael gropes for a bolt. Rain hisses on the roof.\n\nImmediate danger tightens as Casimir's finger rests on the trigger.\n[Turn 160] USER: I lunge towards the fallen knife, ignoring the pain in my wrists.",
+      "start_turn": 151
+    },
+    {
+      "id": "e80ba462-39d5-406a-b31c-afdd8c7347e9",
+      "access_count": 10,
+      "advances_plot": true,
+      "characters_involved": [
+        "Lord Casimir Vael",
+        "Shorter Vael"
+      ],
+      "created_at": 1792180937609,
+      "dense_summary": "Mara Voss struggles against Lord Casimir Vael and Shorter Vael in Drowned Chapel. Mara Voss lunges for a knife but is pinned by a crossbow. Lord Casimir Vael shoots a bolt that injures Mara Voss. Mara Voss twists the crossbow away, injuring Lord Casimir Vael. Mara Voss kicks Lord Casimir Vael, causing him to drop the crossbow. Mara Voss kicks the crossbow towards the door to distract the Vael men. Mara Voss kicks Shorter Vael's knee, causing him to release his grip. Mara Voss attempts to break free and reach the crossbow.",
+      "end_turn": 170,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "knife",
+        "crossbow",
+        "cracked spyglass"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 159] ASSISTANT: Your heel slams into the Vael's thigh. Grip loosens.\n\nYou twist harder. Metal cuffs crack at the wrist. The chain bites your skin.\n\nYou wrench free. A hand rakes your shoulder. You throw your weight and shove the Vael into a pew. He crashes back, wood groaning.\n\nOne Vael lunges. Another slams into your side. Pain flares along the bolt wound in your thigh. You cough blood into the rag.\n\nCasimir moves like a stone. He steps between you and the side door. His boot buries in your ribs and you fold.\n\nA crossbow barrel is pressed to your temple. The shorter Vael gropes for a bolt. Rain hisses on the roof.\n\nImmediate danger tightens as Casimir's finger rests on the trigger.\n[Turn 160] USER: I lunge towards the fallen knife, ignoring the pain in my wrists.\n\n[Content to Extract]\n[Turn 161] ASSISTANT: You lunge. Pain claws from your thigh to your jaw.\n\nYour fingers close on cold leather. The hilt bites your palm.\n\nA boot comes down. It crushes the back of your hand. You grunt.\n\nCasimir's crossbow cracks. The bolt slams into your wrist. Wood splinters under you.\n\nThe knife skids free as your grip folds. The bolt pins your hand to the plank. Metal warms against bone.\n\nBlood pours into the rag. Your cuffed arm jerks against the chain. The shorter Vael curses and scrabbles for the weapon he dropped.\n\nCasimir steps forward. He lifts the crossbow, barrel a hair from your ear.\n\nImmediate danger tightens as your pinned hand goes numb and the Vael reach for a second bolt.\n[Turn 162] USER: I grab the crossbow barrel and twist it away from my head, using all my strength.\n[Turn 163] ASSISTANT: You clamp the barrel and twist.\n\nThe crossbow kicks. The shorter Vael's bolt fires wild.\n\nThe bolt rakes across Casimir's forearm. Cloth and skin tear. He howls once, a sharp sound.\n\nThe crossbow tumbles from his grip. It skitters across the wet planks toward you.\n\nVael hands slam at you. A boot drives into your ribs. Pain explodes along the bolt in your wrist.\n\nRain hisses. Blood slicks the floor.\n\nImmediate danger tightens as Vael men reach for the fallen weapon and Casimir, one-armed, snarls and lunges back into the chapel.\n[Turn 164] USER: I twist my body to leverage my pinned wrist and bring my knee up into Casimir's stomach, trying to knock the wind out of him.\n[Turn 165] ASSISTANT: Your knee drives up into Casimir's stomach.\n\nHe folds. Air explodes from him. He spits blood onto the planks.\n\nThe crossbow tumbles from his grip and skids toward the side door. Wood chews at its stock.\n\nVael hands close on you. One seizes your throat. Another yanks your cuffed wrist. Your knee slams into the altar board.\n\nYou cough. Warm slick runs down your forearm from the bolt wound. Rain taps the rafters.\n\nThe shorter Vael scrabbles for the fallen crossbow. Casimir claws for breath and swears, one-eyed with pain.\n\nImmediate danger tightens as two Vael men reach the weapon and a third drags your chest back to the floor.\n[Turn 166] USER: I kick the crossbow towards the door, trying to distract the Vael and get free of the pain gripping my wrist.\n[Turn 167] ASSISTANT: The crossbow skids. It bounces off a bench. It slides under the door.\n\nVael hands stop. Then they move.\n\nShorter Vael lunges. He grabs at the stock as it disappears into the rain. His fingers miss. He curses.\n\nA Vael man shoves you. The chain bites your shoulder. The bolt in your wrist shudders. Pain flares.\n\nCasimir spits blood and pushes himself up on trembling hands. He reaches for the doorway.\n\nThe door bangs open. Cold rain cuts the chapel air. Wet light spills across the floorboards and the scattered shards of spyglass.\n\nImmediate danger tightens as three Vael men pile toward the open doorway and the lost crossbow lies just out of reach in the rain.\n[Turn 168] USER: I kick out at the nearest Vael man, aiming for his knee to break his grip on me.\n[Turn 169] ASSISTANT: Your boot connects with the shorter Vael's knee.\n\nHe howls. His grip seizes then lets go.\n\nThe chain yanks. Your cuffed wrist snaps outward against the bolt.\n\nThe bolt tears deeper. Hot pain floods your arm. Blood soaks the rag and runs in a dark stripe down the plank.\n\nShorter Vael collapses to his knees, clutching his leg, teeth bared.\n\nHands close on your throat. A Vael slams a shoulder into your ribs. Casimir spits blood and lunges for balance.\n\nRain drums the chapel roof. The crossbow lies lost outside.\n\nImmediate danger tightens as three Vael men haul you upright and Casimir, one-armed, reaches for the fallen shorter Vael with a snarl.\n[Turn 170] USER: I twist my body and kick backward to unbalance the Vael holding my throat, trying to break free and reach the crossbow.",
+      "start_turn": 161
+    },
+    {
+      "id": "21f15448-fb50-44a5-9b90-b0f41b4c1d36",
+      "access_count": 6,
+      "advances_plot": true,
+      "characters_involved": [
+        "Shorter Vael",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180993737,
+      "dense_summary": "Mara Voss struggles against three Vael men in Drowned Chapel. Shorter Vael collapses after being kicked. Lord Casimir Vael attempts to reach the doorway but slips and falls. Mara Voss warns Lord Casimir Vael about the threshold. Lord Casimir Vael is injured as he tries to rise. Mara Voss attempts to escape but is pinned down. The crossbow is lost in the rain outside. Mara Voss discovers the knife is missing and is further restrained by the Vael men.",
+      "end_turn": 179,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 169] ASSISTANT: Your boot connects with the shorter Vael's knee.\n\nHe howls. His grip seizes then lets go.\n\nThe chain yanks. Your cuffed wrist snaps outward against the bolt.\n\nThe bolt tears deeper. Hot pain floods your arm. Blood soaks the rag and runs in a dark stripe down the plank.\n\nShorter Vael collapses to his knees, clutching his leg, teeth bared.\n\nHands close on your throat. A Vael slams a shoulder into your ribs. Casimir spits blood and lunges for balance.\n\nRain drums the chapel roof. The crossbow lies lost outside.\n\nImmediate danger tightens as three Vael men haul you upright and Casimir, one-armed, reaches for the fallen shorter Vael with a snarl.\n[Turn 170] USER: I twist my body and kick backward to unbalance the Vael holding my throat, trying to break free and reach the crossbow.\n\n[Content to Extract]\n[Turn 171] ASSISTANT: You twist and kick backward.\n\nThe Vael at your throat staggers. Air snaps back into your lungs for a second.\n\nThe chain yanks. Your cuff bites into bone. The bolt in your wrist tears deeper. Hot light blossoms across the rag.\n\nYou wrench, trying to shift toward the doorway. A second Vael clamps your hair and slams your face to the plank. Your cheek smears wet wood.\n\nShorter Vael scrambles upright, leaning on one good knee. He hisses and staggers back toward the open door.\n\nCasimir pushes to his feet, one hand pressed to his gut. He lunges for the doorway, eyes on the rain.\n\nHands close again. A boot drives into your ribs. Blood runs slick along the floor.\n\nImmediate danger tightens as Casimir reaches the threshold and two Vael men shove you toward the altar, the lost crossbow still sliding in the rain just out the door.\n[Turn 172] USER: I twist my body, elbowing the Vael man holding my throat while trying to shout a warning to Casimir.\n[Turn 173] ASSISTANT: Your elbow snaps into the Vael's jaw.\n\nHe falters and releases your throat. Air rips into your lungs.\n\nYou roar a warning toward the doorway. \"Casimir—watch the threshold!\"\n\nCasimir spins. Rain and weak light hit his face.\n\nHis boot finds wet wood. He slips.\n\nHe goes down hard on one arm. Blood bubbles at his mouth. He swears.\n\nThree Vael men use the moment. Hands clamp your shoulders. A knee drives into your back. Your face hits the plank. The bolt in your wrist twists. Pain flashes.\n\nShorter Vael scrabbles at the open door, fingers scraping for the crossbow in the rain.\n\nImmediate danger tightens as you are pinned flat and Casimir struggles to rise on bleeding hands at the doorway.\n[Turn 174] USER: I brace my feet and push back hard against the Vael men, trying to break free and sprint toward the doorway.\n[Turn 175] ASSISTANT: You shove with your feet and shoulders.\n\nThe Vael stagger. The chain yanks your cuff hard. Skin tears where metal bites.\n\nYou haul yourself up. Blood slicks your palms. You lunge for the doorway.\n\nYour fingers hit wet wood. The crossbow's stock is a hair away in the rain.\n\nShorter Vael lunges. He slams into your side and drives you backward. You crash across the threshold. The butt of the crossbow scrapes away, bobbing in a puddle and then sliding under a stall.\n\nCasimir clambers up on bleeding hands. He brings a boot down across your shoulder. Pain screams through the bolt in your wrist. The rag is sodden and warm.\n\nThree Vael hands clamp your arms. One twists your cuff until your wrist screams.\n\nImmediate danger tightens as the crossbow disappears down the gutter and Casimir, cursing, reaches for you with one good hand.\n[Turn 176] USER: I reach for the knife hidden at my waist, hoping to cut myself free from their grip.\n[Turn 177] ASSISTANT: Your hand slides to your waist.\n\nThe leather sheath is empty. The knife is gone.\n\nYou snatch at fabric. Fingers close on damp cloth and a cold rim of nothing.\n\nA Vael sees the movement. He slams his knee into your hand. Pain white-lights along your arm. The cuff bites deeper. The bolt in your wrist twists. Hot iron spills into the rag.\n\nCasimir swears loud. He levels a shaking hand at you and brings his boot down across your throat. Air chokes out. Your head snaps back. Blood bubbles at your mouth.\n\nShorter Vael's fingers find your hair and yank. Rain slaps the boards. The crossbow remains lost in the market gutters.\n\nImmediate danger tightens as the boot crushes and your vision narrows to wet light and the echo of Casimir's curse.\n[Turn 178] USER: I kick backward violently, aiming to hit the closest Vael man's knee and loosen their grip.\n[Turn 179] ASSISTANT: Your heel connects with a knee.\n\nA grunt. Flesh gives. One Vael's grip loosens.\n\nYou twist under the cuff. The chain snags. Iron bites bone. The bolt in your wrist tears deeper.\n\nYou wrench the slack and shove. Rain slaps your face. The sodden rag gags you. Blood foams at your mouth.\n\nShorter Vael recovers. He slams his shoulder into your ribs and drives you back. The loosened hand closes again, harder.\n\nA Vael catches at your hair. Another pins your shoulder. Your fingers scrape wet wood.\n\nCasimir pushes up on one elbow. He brings his boot down across your throat with the same weight as before. Air leaves you in a thin keening sound.\n\nYou go hazy at the edges. Vision narrows to dripping boards and the scrape of boots.\n\nImmediate danger tightens as the chain pulls your wrist and the boot crushes your wind.",
+      "start_turn": 171
+    },
+    {
+      "id": "9388a4c2-31d5-4d8c-b549-5a2b0c9ffbbf",
+      "access_count": 2,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Shorter Vael",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792180993452,
+      "dense_summary": "Mara Voss kicks backward violently, connecting with Shorter Vael's knee, loosening Shorter Vael's grip. Shorter Vael recovers and slams into Mara Voss, tightening the grip. Lord Casimir Vael pushes up and crushes Mara Voss's throat with a boot, causing air to leave Mara Voss.",
+      "end_turn": 180,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [],
+      "location": "Sunken Docks",
+      "original_text": "[Story Context Overlap]\n[Turn 178] USER: I kick backward violently, aiming to hit the closest Vael man's knee and loosen their grip.\n[Turn 179] ASSISTANT: Your heel connects with a knee.\n\nA grunt. Flesh gives. One Vael's grip loosens.\n\nYou twist under the cuff. The chain snags. Iron bites bone. The bolt in your wrist tears deeper.\n\nYou wrench the slack and shove. Rain slaps your face. The sodden rag gags you. Blood foams at your mouth.\n\nShorter Vael recovers. He slams his shoulder into your ribs and drives you back. The loosened hand closes again, harder.\n\nA Vael catches at your hair. Another pins your shoulder. Your fingers scrape wet wood.\n\nCasimir pushes up on one elbow. He brings his boot down across your throat with the same weight as before. Air leaves you in a thin keening sound.\n\nYou go hazy at the edges. Vision narrows to dripping boards and the scrape of boots.\n\nImmediate danger tightens as the chain pulls your wrist and the boot crushes your wind.\n\n[Content to Extract]\n[Turn 180] USER: I kick out violently with my legs, aiming for the Shorter Vael's knee to break his grip on my hair.",
+      "start_turn": 180
+    },
+    {
+      "id": "e32bc4ae-996f-46f4-b157-b0dc187b48d2",
+      "access_count": 0,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Shorter Vael",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792181042799,
+      "dense_summary": "Mara Voss kicks Shorter Vael's knee, causing him to loosen his grip on Mara Voss's hair. Shorter Vael collapses, and Lord Casimir Vael tightens his grip, choking Mara Voss. Mara Voss head-butts a Vael, causing both men to stumble. Mara Voss reaches for the cracked spyglass, injuring her hand but using the shard to fend off a Vael. Despite efforts, Lord Casimir Vael continues to choke Mara Voss, leading to loss of consciousness.",
+      "end_turn": 187,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "cracked spyglass"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 180] USER: I kick out violently with my legs, aiming for the Shorter Vael's knee to break his grip on my hair.\n\n[Content to Extract]\n[Turn 181] ASSISTANT: Your boot snaps out.\n\nIt hits the Shorter Vael's knee. Bone cracks under cloth.\n\nHe howls. His fingers loosen. Your hair slips free.\n\nHe collapses backward, thigh buckling, forehead slamming the wet plank. Rain spatters his face. He lies still, breath ragged, one hand clutching a ruined knee.\n\nA Vael hand claws for you again. The chain yanks your cuff. The bolt in your wrist burns.\n\nCasimir curses and drives his boot harder across your throat. Sound chokes to a wet gurgle. Blood bubbles at your lips.\n\nImmediate danger tightens as the boot crushes your wind and the chain pulls you toward the altar.\n[Turn 182] USER: I head-butt the Vael pinning my shoulder, aiming for surprise and to break his grip.\n[Turn 183] ASSISTANT: Your forehead slams into the man's shoulder.\n\nBone meets bone. He spits a curse and staggers. His hand slips off your shoulder.\n\nHe crashes into Shorter Vael. Both men pitch forward. Wood cracks under weight.\n\nYou shove with the slack. The chain snags. Iron teeth bite deeper into your wrist. The bolt rips fresh.\n\nRain stings your eyes. The rag fills with blood. You push toward the doorway on one raw elbow.\n\nCasimir hauls himself up. He swings a bleeding hand and drives his boot down across your throat. Air snaps out. Your head swims. Blood floods the chapel plank.\n\nA Vael clamps your hair and another grabs your ankle. The freed shoulder fills with pain as a cuff twists. Immediate danger tightens as the boot crushes your wind and the chain pulls your wrist toward the altar.\n[Turn 184] USER: I reach for the cracked spyglass in my pocket, hoping it might distract or give me leverage against my captors.\n[Turn 185] ASSISTANT: You fish at your coat pocket with a wet, fumbling hand.\n\nFingers close on glass. A jagged shard slices your palm. Pain flares. Blood runs free.\n\nYou bring the shard up like a blade. It glints in the rain-light, edge bright and filthy.\n\nA Vael hand lashes for your wrist. You twist and catch his fingers across the cut. He hisses and lets go.\n\nAnother hand clamps your hair. The chain yanks. Iron chews bone at your cuff. The bolt in your wrist screams.\n\nCasimir drives his boot down across your throat. Air cuts off. Vision narrows to the spyglass shard and the wet plank under you.\n\nImmediate danger tightens as the boot crushes your wind and the chain pulls your bleeding wrist toward the altar.\n[Turn 186] USER: I twist violently, trying to break the grip on my hair and kick at the Vael holding my ankle.\n[Turn 187] ASSISTANT: You twist hard. Tendons pop in your shoulder.\n\nFingers that held your hair slip. A Vael curses and scrabbles for purchase.\n\nYou kick at the ankle holding you. Your heel connects with bone. The man stumbles, foot skidding on wet plank.\n\nSlack opens. The chain bites. Iron teeth saw into your wrist. The bolt rips deeper, white hot.\n\nBlood pours into the rag in your mouth. You cough it up. Noise chokes to a gurgle.\n\nCasimir brings his boot down again, harder. Pain explodes under your ribs as air is driven from you.\n\nThe Vael who staggered recovers and slams a hand into your back. Another clamps your throat with a damp palm. Your legs kick uselessly.\n\nYour vision flares at the spyglass shard in your palm, then narrows to the stain of rain on wood. Your limbs go heavy.\n\nYou stop fighting.\n\nDark closes from the edges. The boot crushes your wind. You lose hold of the shard. Consciousness goes.",
+      "start_turn": 181
+    },
+    {
+      "id": "171a0b4c-58a7-4245-a4b8-5b58521e245f",
+      "access_count": 0,
+      "advances_plot": true,
+      "characters_involved": [
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792181042534,
+      "dense_summary": "Mara Voss struggles against Lord Casimir Vael's grip, attempting to escape. Mara Voss kicks at a Vael's ankle, causing a stumble. Pain escalates as Lord Casimir Vael crushes Mara Voss's wind with a boot. Mara Voss loses consciousness while cuffed and bleeding, dragged toward the altar.",
+      "end_turn": 189,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "cracked spyglass"
+      ],
+      "location": "Sunken Docks",
+      "original_text": "[Story Context Overlap]\n[Turn 186] USER: I twist violently, trying to break the grip on my hair and kick at the Vael holding my ankle.\n[Turn 187] ASSISTANT: You twist hard. Tendons pop in your shoulder.\n\nFingers that held your hair slip. A Vael curses and scrabbles for purchase.\n\nYou kick at the ankle holding you. Your heel connects with bone. The man stumbles, foot skidding on wet plank.\n\nSlack opens. The chain bites. Iron teeth saw into your wrist. The bolt rips deeper, white hot.\n\nBlood pours into the rag in your mouth. You cough it up. Noise chokes to a gurgle.\n\nCasimir brings his boot down again, harder. Pain explodes under your ribs as air is driven from you.\n\nThe Vael who staggered recovers and slams a hand into your back. Another clamps your throat with a damp palm. Your legs kick uselessly.\n\nYour vision flares at the spyglass shard in your palm, then narrows to the stain of rain on wood. Your limbs go heavy.\n\nYou stop fighting.\n\nDark closes from the edges. The boot crushes your wind. You lose hold of the shard. Consciousness goes.\n\n[Content to Extract]\n[Turn 188] USER: I thrust the shard of the spyglass towards the Vael's throat, aiming to cut and create a chance to escape.\n[Turn 189] ASSISTANT: Your hand spasms once.\n\nThe shard slides against your palm. Blood slicks the glass.\n\nYou try to thrust. Your arm falls like wet rope. Muscles refuse.\n\nThe boot holds your throat. Rain drums on the roof. Sound is distant and thin.\n\nA Vael grunts and tugs the chain. Iron bites deeper into your wrist. The cuff grinds bone.\n\nThe shard clatters from your loosened fingers and skitters across the plank, lost in a pool of rain and blood.\n\nYour limbs go limp. Vision blacks at the edges.\n\nImmediate danger: you are unconscious, cuffed, bleeding, and dragged toward the altar.",
+      "start_turn": 188
+    },
+    {
+      "id": "6e489836-3017-443e-8779-e49a7cbb4da7",
+      "access_count": 0,
+      "advances_plot": true,
+      "characters_involved": [
+        "Mara Voss",
+        "Lord Casimir Vael"
+      ],
+      "created_at": 1792181042416,
+      "dense_summary": "Mara Voss attempts to escape from Lord Casimir Vael by thrusting a shard of the cracked spyglass towards Lord Casimir Vael's throat. Mara Voss's strength fails, leading to unconsciousness while cuffed and bleeding, as Lord Casimir Vael drags Mara Voss toward the altar.",
+      "end_turn": 190,
+      "has_new_entity": false,
+      "is_irreversible": false,
+      "items_involved": [
+        "cracked spyglass"
+      ],
+      "location": "Drowned Chapel",
+      "original_text": "[Story Context Overlap]\n[Turn 188] USER: I thrust the shard of the spyglass towards the Vael's throat, aiming to cut and create a chance to escape.\n[Turn 189] ASSISTANT: Your hand spasms once.\n\nThe shard slides against your palm. Blood slicks the glass.\n\nYou try to thrust. Your arm falls like wet rope. Muscles refuse.\n\nThe boot holds your throat. Rain drums on the roof. Sound is distant and thin.\n\nA Vael grunts and tugs the chain. Iron bites deeper into your wrist. The cuff grinds bone.\n\nThe shard clatters from your loosened fingers and skitters across the plank, lost in a pool of rain and blood.\n\nYour limbs go limp. Vision blacks at the edges.\n\nImmediate danger: you are unconscious, cuffed, bleeding, and dragged toward the altar.\n\n[Content to Extract]\n[Turn 190] USER: I force my eyes open and use all my strength to push against Casimir's boot and roll sideways.",
+      "start_turn": 190
+    }
+  ],
+  "finalState": {
+    "world_bible": {
+      "story_framework": "A grounded noir mystery set in the rain-soaked harbor city of Greyhaven. Three rival merchant guilds control commerce and politics; their rivalries and hidden deals form the city's power structure. The protagonist, Mara Voss, a disgraced former guild investigator turned smuggler's fixer, must navigate guild politics, street-level informants, and corrupted authorities to uncover why her old partner, Harbor Watch Captain Ilya Renn, was killed in the Saltmarket holding a black wax seal. Main threads: investigation of Ilya's death, uncovering guild intrigue and cover-ups, balancing survival and reputation while deciding whether to expose or exploit the truth.",
+      "world_mechanics": "Realistic, low-fantasy (no magic). Power derives from wealth, information, and access: merchant guild influence, guard/watch authority, fences and smugglers. Information is currency; favours, debts, and secrets open or close doors. Crime and law are negotiated rather than purely enforced. Physical danger comes from hired muscle, watch patrols, and rival agents. The environment is rainy, urban, and corrosive—safe havens are temporary.",
+      "narrative_style": "Sparse, noir prose with atmospheric description and sharp, morally grey dialogue. Emphasis on internal investigation, slow reveals, and political intrigue. Tone is pragmatic, world-weary, and intimate rather than sensational."
+    },
+    "known_characters": [
+      {
+        "name": "Mara Voss",
+        "description": "Protagonist. Disgraced former guild investigator; now a smuggler's fixer. Cunning, pragmatic, morally flexible but loyal to a few ties. Currently cuffed and bleeding from multiple injuries, with the chain biting into her wrist as a Vael man pins her shoulder to the altar."
+      },
+      {
+        "name": "Ilya Renn",
+        "description": "Former partner of Mara and Captain of the Harbor Watch. Recently found dead in the Saltmarket holding a black wax seal. Respected and well-connected within the Watch; his death is suspicious."
+      },
+      {
+        "name": "Old Tobin",
+        "description": "Blind fence who runs the Lantern Pawnshop. Knows the city's trade in stolen goods and information; a useful but cautious contact."
+      },
+      {
+        "name": "Sister Elka",
+        "description": "Healer at the Drowned Chapel. Now injured after a crossbow bolt drives into her robe, causing her to keel over."
+      },
+      {
+        "name": "Lord Casimir Vael",
+        "description": "Head of the Vael Guild. Now staggering, bleeding from a forearm folded to his chest, and laughing."
+      },
+      {
+        "name": "Jory",
+        "description": "Street kid who carries messages and small packages. Now dead, lying unmoving in the doorway."
+      },
+      {
+        "name": "Taller Vael",
+        "description": "A member of the Vael guild, now dead with a chin split and still, lying a few feet away from the action."
+      },
+      {
+        "name": "Shorter Vael",
+        "description": "A member of the Vael guild, now injured with a ruined knee, collapsed backward on the wet plank, forehead slamming down, breath ragged, one hand clutching his knee."
+      }
+    ],
+    "known_locations": [
+      {
+        "name": "Saltmarket",
+        "description": "A crowded, salt-stung outdoor market along the harbor—where fish, contraband, and rumors trade hands. The scene of Ilya Renn's death."
+      },
+      {
+        "name": "Lantern Pawnshop",
+        "description": "Old Tobin's pawnshop—dim, cluttered, and a crossroads for illicit goods and whispered bargains."
+      },
+      {
+        "name": "Drowned Chapel",
+        "description": "A battered chapel near the waterline where Sister Elka tends to the poor and injured; a place of quiet refuge and overheard confessions. Currently under immediate threat as Mara is dragged toward the altar by Vael men, cuffed and bleeding. The environment has become more chaotic as Mara rolls sideways to escape danger, with rain and splinters biting her cheek."
+      },
+      {
+        "name": "Vael counting house",
+        "description": "The bookkeeping and administrative heart of the Vael Guild—secure, officious, and a likely seat of financial motives."
+      },
+      {
+        "name": "Old lighthouse",
+        "description": "A disused lighthouse overlooking the harbor. Lonely, derelict, and a place for secret meetings or dropped evidence."
+      },
+      {
+        "name": "Sunken Docks",
+        "description": "Partially collapsed docks where illicit cargo is landed at low tide. Dangerous, muddy, and oft-used by smugglers."
+      }
+    ],
+    "known_items": [
+      {
+        "name": "brass lockpick set",
+        "description": "A small set of well-used lockpicks in a brass casing—essential for quick entries and escapes. Now broken and unusable, having split under pressure and become jagged pieces."
+      },
+      {
+        "name": "cracked spyglass",
+        "description": "A hand spyglass that was previously cracked. Now completely ruined after being crushed under Casimir's heel, leaving no usable pieces."
+      },
+      {
+        "name": "Ilya's black wax seal",
+        "description": "A black wax seal that was pressed cold against Mara's palm, warm and wet with blood. Now lost, having been confirmed not in her possession."
+      },
+      {
+        "name": "knife",
+        "description": "A blade that Mara had in her possession, now lost after being snatched away by a Vael man, who holds it up by the blade with the point aimed at Mara's throat."
+      }
+    ],
+    "current_location": "Drowned Chapel",
+    "current_task": "Ask Sister Elka what she knows about Ilya's death.",
+    "inventory": [],
+    "custom_attributes": [
+      {
+        "name": "Reputation",
+        "value": "Disgraced investigator, tolerated in smuggler circles",
+        "type": "text"
+      },
+      {
+        "name": "Guild Heat",
+        "value": "Very High — Vael and rival guilds watching movements closely; increased due to recent violent confrontation and injury.",
+        "type": "text"
+      },
+      {
+        "name": "Contact Web",
+        "value": "Sparse but reliable: Old Tobin, Sister Elka, Jory and several smugglers",
+        "type": "text"
+      },
+      {
+        "name": "Investigator Instinct",
+        "value": "Persistent and perceptive, though resources are limited.",
+        "type": "text"
+      }
+    ]
+  }
+}

@@ -1,0 +1,972 @@
+{
+  "early-vague-1": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-1": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-2": {
+    "valid": false,
+    "reasons": [
+      "screening: The door pressing against her pack is specific to the depicted passage through the opening, but it is incidental physical trivia with no apparent story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-2": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage describes the drone’s single bent rotor arm pressed against its frame or body, supporting the expected answer."
+    }
+  },
+  "early-vague-3": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: drone's bent rotor arm (kept early-detail-2)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-3": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-4": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-4": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-5": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-5": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts restoring power to the docking ring, but the collar's ridged texture is incidental sensory trivia rather than a story-relevant detail to recall."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-6": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage gives the conduit-strain warning as “AVOID REPEATED CLAMP CYCLES,” supporting the expected answer."
+    }
+  },
+  "early-vague-6": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-7": {
+    "valid": false,
+    "reasons": [
+      "screening: The heavy clunk is specific to the clamp release, but the question asks for incidental sensory detail with no story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-8": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-7": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: conduit warning 'avoid repeated clamp cycles' (kept early-detail-6)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-9": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-8": {
+    "valid": false,
+    "reasons": [
+      "screening: The return to the tug occurs as stated, but the ring hum is incidental sensory detail with no story relevance or distinct connection to this moment."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-10": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-9": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 6,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The ship-return passage explicitly says Juno returned without crossing the unsafe gas flow, and the other passages likewise describe her keeping clear of the gas stream."
+    }
+  },
+  "early-detail-11": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-12": {
+    "valid": false,
+    "reasons": [
+      "screening: The bent rotor arm is a moment-specific but incidental visual detail that does not inform the search for shielding or any subsequent action."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-10": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: squeezing sideways past a cable bundle"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-13": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage explicitly says she swept her helmet lamp across the visible deck and the sealed bulkhead, and the second is consistent with that."
+    }
+  },
+  "early-vague-11": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts the stated search, but sweeping a helmet lamp over each section is an incidental procedural detail rather than a meaningful clue, decision, or outcome."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-14": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: drone's bent rotor arm (kept early-detail-2)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-12": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: drone's bent rotor arm (kept early-detail-2)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-15": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: how many times I called out"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-16": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-13": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages identify the intact transmission as “Lantern”; the second states this explicitly during the assessment."
+    }
+  },
+  "early-detail-17": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: proprietor folding the receipt (same kind as screener-dropped early-vague-14)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-14": {
+    "valid": false,
+    "reasons": [
+      "screening: The receipt-folding occurs during the stated inquiry and is specific to this moment, but it is incidental bookkeeping with no apparent story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-18": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: trader shaking head"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-15": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts the trader responding to the salvage inquiry and tapping once, but counting the taps is incidental physical trivia with no story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-19": {
+    "valid": false,
+    "reasons": [
+      "screening: The customer's arrival is specific to the pause after the valuation request, but it is incidental background activity with no apparent story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-20": {
+    "valid": false,
+    "reasons": [
+      "screening: The question targets an incidental counter-tapping gesture with no story relevance rather than the proprietor’s refusal to provide buyer contacts."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-temporal-1": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-temporal-2": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: where the dropped cutter came to rest"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-temporal-3": {
+    "valid": false,
+    "reasons": [
+      "screening: Recalling the final transmission’s word is plausible and moment-specific, but the passage depicts a preliminary appraisal rather than a tense bargain or exchange with a demand in return."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-temporal-4": {
+    "valid": false,
+    "reasons": [
+      "screening: The proprietor is making a trade offer for the slate, but recalling their exact hand position tests incidental posture rather than a meaningful term, decision, or clue in the bargain."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-temporal-5": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-temporal-6": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-temporal-7": {
+    "valid": false,
+    "reasons": [
+      "screening: The buyer’s condition is a plausible, moment-specific detail to recall, but the passage depicts a routine appraisal discussion rather than a tense bargain with someone demanding something in return."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-temporal-8": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-1": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts the requested inquiry and counter tap, but recalling the surface he tapped is incidental physical trivia with no story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-1": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-2": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-2": {
+    "valid": false,
+    "reasons": [
+      "manual review: generic: 'small course corrections' is not specific to the moment"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-3": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-3": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-4": {
+    "valid": false,
+    "reasons": [
+      "screening: Avoiding the marked machinery lanes is incidental movement detail with no demonstrated relevance to the infiltration, though it is specific to this scene."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-4": {
+    "valid": false,
+    "reasons": [
+      "screening: The offer of credits occurs as described and identifies a specific moment, but the worker’s sealed case is incidental cargo with no relevance to the attempt to gain access."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-5": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-5": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-6": {
+    "valid": false,
+    "reasons": [
+      "screening: Identifying ship crews alongside vendors recalls incidental crowd scenery rather than a story-relevant decision, clue, item, or outcome."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-6": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-7": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The depot attendant had turned to the next customer, and the other passage’s mention of a trader turning to another customer does not imply a different answer."
+    }
+  },
+  "late-detail-8": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-7": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-9": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 5,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage says the relay clicks with each signal burst, with no conflicting timing described."
+    }
+  },
+  "late-vague-8": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: what was visible behind me"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-10": {
+    "valid": false,
+    "reasons": [
+      "screening: The relay clicking with each burst is moment-specific but is merely an incidental sound, not a meaningful clue about the signal or the failed attempt to boost it."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-9": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-11": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-12": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage identifies the laboratory’s dark, unresponsive terminal as the only computer and mentions no other computer."
+    }
+  },
+  "late-vague-10": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: leaving fixtures undisturbed"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-13": {
+    "valid": false,
+    "reasons": [
+      "screening: The customer stepping up behind Juno is incidental background activity with no bearing on the missing slate, the buyer’s identity, or Juno’s next lead."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-11": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-14": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-12": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts the attempt to expedite Priya’s review after pocketing the cutter, but the placement of her hands is incidental physical trivia with no story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-15": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage explicitly says Priya suggested checking the reactor and life support readings before buying anything, and the second passage does not imply a different suggestion."
+    }
+  },
+  "late-detail-16": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages say the reactor output faltered or dipped once before settling into a steady, normal range."
+    }
+  },
+  "late-vague-13": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts the inspection before the conduit repair, but recalling the access side is incidental spatial trivia with no meaningful bearing on the repair or its outcome."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-17": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that Voren has two refinery guards nearby, supporting the expected answer."
+    }
+  },
+  "late-vague-14": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-18": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passage describing the blast says the cutter slipped from her grip but was tethered to her suit, and the other passages likewise say it remained secured to her suit."
+    }
+  },
+  "late-vague-15": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: a bend in the passage blocking the view"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-19": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that she was trying to bring up a system status report, and neither suggests a different report."
+    }
+  },
+  "late-detail-20": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-temporal-1": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-temporal-2": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-temporal-3": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-temporal-4": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-temporal-5": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: where a guard glanced"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-temporal-6": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: what I braced my boots against"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-21": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-22": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages indicate that the plug’s flat side aligns with a guide inside the socket, and neither suggests a different orientation feature."
+    }
+  },
+  "early-detail-23": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "All passages report that ring power remained online and steady, with no fault appearing after the clamps were released."
+    }
+  },
+  "early-detail-24": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage establishes that the thin, bent plate was unsafe to brace with, and the second explicitly says Juno told Priya it was not safe to use as a brace."
+    }
+  },
+  "early-detail-25": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-26": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-27": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The cable-compartment passage says moving the cables would risk pulling on the connections, and no passage supports a different risk."
+    }
+  },
+  "early-detail-28": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 9,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passage says escaping gas continued to vent across the route, leaving it unsafe to enter."
+    }
+  },
+  "early-detail-29": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages place the cracked slate behind the counter, and neither suggests a different location."
+    }
+  },
+  "early-detail-30": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 6,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The proprietor explicitly suggested asking around the salvage counters, and the other passages are consistent with that location."
+    }
+  },
+  "early-detail-31": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-32": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-16": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-17": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the plug’s flat side aligns with a guide inside the socket, allowing it to fit in only one orientation."
+    }
+  },
+  "early-vague-18": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: conduit warning (kept early-detail-6)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-19": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-20": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages identify the thin, bent plate at the ring as unsafe or unsuitable for bracing the conduit, and neither implies a different answer."
+    }
+  },
+  "early-vague-21": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-22": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The cable-compartment passage explicitly says no reply came and no one appeared, and the other passage likewise describes no one appearing and only static answering the offer."
+    }
+  },
+  "early-vague-23": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 9,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The search passage says Juno kept away from the gas stream and finished without entering it."
+    }
+  },
+  "early-vague-24": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages indicate that Juno found no loose or detached drone parts she could use."
+    }
+  },
+  "early-vague-25": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 8,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages consistently identify escaping gas venting across the route as the hazard making it unsafe to enter."
+    }
+  },
+  "early-vague-26": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-27": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 6,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The proprietor explicitly suggested asking around the salvage counters, and no passage gives a different location for that advice."
+    }
+  },
+  "early-vague-28": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "All passages say traders would inspect physical salvage and assess its condition before quoting a price."
+    }
+  },
+  "early-vague-29": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages consistently show Juno asking traders where salvage could be found or about potential salvage sources, with none implying a different topic."
+    }
+  },
+  "early-vague-30": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the proprietor does not broker introductions and cannot point Juno to another buyer."
+    }
+  },
+  "late-detail-21": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the proprietor said, “I don’t broker introductions,” and neither gives a different answer."
+    }
+  },
+  "late-detail-22": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-23": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-24": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-25": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-26": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage explicitly says the proprietor remembered the sale but not the buyer, and the others add no conflicting information."
+    }
+  },
+  "late-detail-27": {
+    "valid": false,
+    "reasons": [
+      "manual review: malformed: the answer restates the question"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-28": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-16": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages indicate Juno had no physical salvage, and the search passage explicitly says she found no salvage or usable materials and returned empty-handed."
+    }
+  },
+  "late-vague-17": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-18": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-19": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-20": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-21": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 5,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage says the receiver was strongest beside the beacon and that checking directions while moving away produced no stronger reading."
+    }
+  },
+  "late-vague-22": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage states or confirms that Juno sold the cracked slate and survey logs for 180 credits, with none implying a different amount."
+    }
+  },
+  "late-vague-23": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 6,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The proprietor explicitly said, “I remember the sale, but not who bought it,” and the other passages do not imply a different answer."
+    }
+  },
+  "late-vague-24": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-25": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages indicate that further work could pull the conduit connection loose if it remained unsecured."
+    }
+  },
+  "late-vague-26": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages describe a bare passage with no visible devices, obstructions, or other clues suggesting a trap."
+    }
+  }
+}

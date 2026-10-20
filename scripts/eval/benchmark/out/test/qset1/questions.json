@@ -1,0 +1,1098 @@
+{
+  "story": "test",
+  "model": "gpt-4o-mini",
+  "questions": [
+    {
+      "qid": "early-vague-1",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "93c89872-f2ba-4b34-826a-f36e42e1451c",
+      "source_turns": [
+        1,
+        8
+      ],
+      "question": "How many days' worth of water did I ask to be loaded for the journey?",
+      "expected_answer": "Load enough water for three days to ensure we stay safe and hydrated."
+    },
+    {
+      "qid": "early-detail-1",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "7589652e-2efe-4121-8197-7d3fdcafeaa9",
+      "source_turns": [
+        9,
+        10
+      ],
+      "question": "How many days did we travel before reaching Merrow?",
+      "expected_answer": "Three days."
+    },
+    {
+      "qid": "early-vague-2",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "b381c6ce-cc11-47c1-b688-8fe57023cee1",
+      "source_turns": [
+        11,
+        20
+      ],
+      "question": "What did the stallkeeper say about buyers making offers on a sealed case?",
+      "expected_answer": "No sensible buyer makes an offer on a sealed case without knowing what’s inside—or who else might come looking for it."
+    },
+    {
+      "qid": "early-detail-2",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "31b813fd-4b7d-44ab-b5f1-8afb8ef19509",
+      "source_turns": [
+        21,
+        30
+      ],
+      "question": "What did Wren check to ensure everything was secure before we left Merrow?",
+      "expected_answer": "Wren checked the water vessels and the sealed reliquary."
+    },
+    {
+      "qid": "early-vague-3",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "534ea614-6cda-47dc-8cdc-8bd6901f53e3",
+      "source_turns": [
+        31,
+        40
+      ],
+      "question": "What was the condition of the fastenings on the sealed container during the journey?",
+      "expected_answer": "Its fastenings hold."
+    },
+    {
+      "qid": "early-detail-3",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "907c94ad-f102-46c9-b3d8-13eed3996de4",
+      "source_turns": [
+        41,
+        50
+      ],
+      "question": "What did Wren check to ensure nothing was spilling during our journey?",
+      "expected_answer": "Wren remains beside the water vessels, checking that their covers stay shut."
+    },
+    {
+      "qid": "early-detail-4",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4",
+      "source_turns": [
+        51,
+        57
+      ],
+      "question": "What did Wren say about the supplies while we were traveling?",
+      "expected_answer": "I haven’t seen anything wrong with the supplies."
+    },
+    {
+      "qid": "early-vague-4",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "f2a89212-95b1-48c8-b001-9df63a88e24a",
+      "source_turns": [
+        58,
+        59
+      ],
+      "question": "What did the person checking the water covers do as the wagons rolled along?",
+      "expected_answer": "Wren checks the water covers as the wagons roll."
+    },
+    {
+      "qid": "early-detail-5",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "1de36f50-eaf8-4380-af1b-0bf6eb333ae2",
+      "source_turns": [
+        61,
+        67
+      ],
+      "question": "What did Wren do while we were searching for the waystone?",
+      "expected_answer": "Wren stays beside the water vessels, checking that their covers remain shut."
+    },
+    {
+      "qid": "early-vague-5",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "b7b8c853-cc64-4a4a-a945-88d070ceb736",
+      "source_turns": [
+        68,
+        70
+      ],
+      "question": "What did I urge the drivers to do as we crossed the Glass Flats?",
+      "expected_answer": "I urged the drivers to maintain speed and to stay vigilant."
+    },
+    {
+      "qid": "early-detail-6",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "cefe21c0-65ce-4a24-b725-10d2ed5468f0",
+      "source_turns": [
+        71,
+        73
+      ],
+      "question": "What did Wren check to ensure they remained secure during the journey?",
+      "expected_answer": "Wren stays beside the water vessels, checking that their covers remain shut."
+    },
+    {
+      "qid": "early-vague-6",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "26a3614e-57cb-4ee7-991c-e810cbe1db5f",
+      "source_turns": [
+        75,
+        77
+      ],
+      "question": "What did I find when I checked the remaining water supply?",
+      "expected_answer": "Only a little water remains."
+    },
+    {
+      "qid": "early-detail-7",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "dbe7ef99-04b2-45a4-b12c-dc4badbb1905",
+      "source_turns": [
+        78,
+        80
+      ],
+      "question": "What did I ask Wren to help me search for among the rocks?",
+      "expected_answer": "Signs of the old waystone."
+    },
+    {
+      "qid": "early-detail-8",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "3b23a605-4a42-4f77-9b37-aa6831fe854b",
+      "source_turns": [
+        81,
+        89
+      ],
+      "question": "What did the Hand-drawn Map of the Wastes indicate about the route toward Saint Aurel?",
+      "expected_answer": "The map shows the marked course toward Saint Aurel, but no alternate path or nearby landmark."
+    },
+    {
+      "qid": "early-vague-7",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "c6996d60-254a-464d-9406-5e7c50a006fb",
+      "source_turns": [
+        91,
+        100
+      ],
+      "question": "What did I check at the outcrop for signs of the waystone?",
+      "expected_answer": "I checked the exposed dark stone and the ground at its base for cuts, painted marks, or stones arranged by hand."
+    },
+    {
+      "qid": "early-detail-9",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "cc5bd2fb-8266-4e15-8abc-0c3b9a6e8a89",
+      "source_turns": [
+        101,
+        101
+      ],
+      "question": "What color is the ground after the glass surface?",
+      "expected_answer": "Ash-colored."
+    },
+    {
+      "qid": "early-vague-8",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "247b595d-957c-48e5-88b6-3bffbb694c3f",
+      "source_turns": [
+        102,
+        110
+      ],
+      "question": "What did I secure among the cargo before leaving the oasis town?",
+      "expected_answer": "the reliquary"
+    },
+    {
+      "qid": "early-detail-10",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "608ed96c-898b-46cf-a03d-7771bfa4170f",
+      "source_turns": [
+        111,
+        113
+      ],
+      "question": "What did Wren say she watched for while the caravan was moving?",
+      "expected_answer": "She watched the stalls and the road behind them."
+    },
+    {
+      "qid": "early-vague-9",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "1dd58cc1-82b8-4331-a47b-c75123e01fd9",
+      "source_turns": [
+        114,
+        115
+      ],
+      "question": "What did Wren suggest we should do with the sealed container we brought?",
+      "expected_answer": "We should keep it secured and speak with Abbot Grell."
+    },
+    {
+      "qid": "early-detail-11",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "429de15d-a900-45a1-9ff8-fae2960861e0",
+      "source_turns": [
+        116,
+        117
+      ],
+      "question": "What did Abbot Grell say when he saw the reliquary?",
+      "expected_answer": "You have brought it to my threshold."
+    },
+    {
+      "qid": "early-detail-12",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "99125d9b-3fd0-453c-b91e-2217519a665d",
+      "source_turns": [
+        118,
+        119
+      ],
+      "question": "What does the reliquary house that is important for its security?",
+      "expected_answer": "Ishkar, a bound fire spirit."
+    },
+    {
+      "qid": "early-vague-10",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "df0819f4-0cc5-404b-9dd5-9d78856b6dd2",
+      "source_turns": [
+        121,
+        123
+      ],
+      "question": "What did the person inspecting the container say about the seals after checking them?",
+      "expected_answer": "The seals appear undisturbed."
+    },
+    {
+      "qid": "early-detail-13",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "37d5d6f2-375b-480c-97cd-6ef609da13f0",
+      "source_turns": [
+        124,
+        127
+      ],
+      "question": "What did I trade to Abbot Grell for the water skins?",
+      "expected_answer": "You offered your knowledge of the Wastes and the routes marked on your hand-drawn map."
+    },
+    {
+      "qid": "early-vague-11",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "930265ab-4309-41ff-8315-fb129b7057b1",
+      "source_turns": [
+        128,
+        130
+      ],
+      "question": "What did Wren say about the last time someone followed the caravan?",
+      "expected_answer": "No one has followed us since we left Merrow."
+    },
+    {
+      "qid": "early-detail-14",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "8a56a744-cb02-4138-bbad-062cf1a5749f",
+      "source_turns": [
+        131,
+        133
+      ],
+      "question": "What did Wren say was hired to take the reliquary?",
+      "expected_answer": "He was hired to take the reliquary."
+    },
+    {
+      "qid": "early-vague-12",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "141db6dd-2633-4e94-8ff2-26b0860921eb",
+      "source_turns": [
+        135,
+        137
+      ],
+      "question": "What did the stallkeeper say about where Sir Bastian Crowe went?",
+      "expected_answer": "The stallkeeper has no reliable sighting to offer."
+    },
+    {
+      "qid": "early-detail-15",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "71035d09-1289-48c5-a33a-a18561259b06",
+      "source_turns": [
+        138,
+        139
+      ],
+      "question": "What did the vendor say about whether anyone has seen Sir Bastian Crowe lately?",
+      "expected_answer": "No reliable word. If he passed through Merrow, no one brought it to me."
+    },
+    {
+      "qid": "early-detail-16",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "9c4bdd4f-0323-4048-a1d0-aeb28657e7b2",
+      "source_turns": [
+        141,
+        150
+      ],
+      "question": "What did the vendor say about anyone watching the caravan?",
+      "expected_answer": "I haven’t seen anyone watching a caravan."
+    },
+    {
+      "qid": "early-vague-13",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "f440679e-4844-4de1-ae20-31d0262cc420",
+      "source_turns": [
+        151,
+        160
+      ],
+      "question": "What did the old woman say is the main danger on the hidden path?",
+      "expected_answer": "The heat is danger enough."
+    },
+    {
+      "qid": "early-detail-17",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "d8752f24-0c64-4a94-8a7b-612866eea798",
+      "source_turns": [
+        161,
+        163
+      ],
+      "question": "What did Wren say about the water skins when I arrived?",
+      "expected_answer": "Both large skins are intact, with no dampness around their seams."
+    },
+    {
+      "qid": "early-vague-14",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "b1c53b69-fd87-44b3-89fe-92d61ceda3f9",
+      "source_turns": [
+        164,
+        165
+      ],
+      "question": "What did the leader of the caravan agree to do for us?",
+      "expected_answer": "She already agreed to guide us."
+    },
+    {
+      "qid": "early-detail-18",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "0a2adbc0-3ba3-436c-9c08-75f0f9db3169",
+      "source_turns": [
+        166,
+        167
+      ],
+      "question": "What did Old Mother Sabeth say about the pace of the drivers?",
+      "expected_answer": "Your drivers must keep my pace."
+    },
+    {
+      "qid": "early-vague-15",
+      "pool": "early",
+      "type": "vague",
+      "source_id": "f581cb42-03f9-40d4-a924-5dd7f1460724",
+      "source_turns": [
+        168,
+        169
+      ],
+      "question": "What does the old woman at the well say to keep the water covered?",
+      "expected_answer": "Keep the water covered, and do not let the drivers spend their strength trying to catch up."
+    },
+    {
+      "qid": "early-detail-19",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "2d79a09a-a22a-40f9-989d-b66106b84ad0",
+      "source_turns": [
+        171,
+        179
+      ],
+      "question": "What did Wren say about the water skins before we moved on?",
+      "expected_answer": "No leaks."
+    },
+    {
+      "qid": "early-detail-20",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2",
+      "source_turns": [
+        181,
+        190
+      ],
+      "question": "What did Sabeth say we should keep covered while traveling?",
+      "expected_answer": "The water skins."
+    },
+    {
+      "qid": "early-temporal-1",
+      "pool": "early",
+      "type": "temporal",
+      "source_id": "93c89872-f2ba-4b34-826a-f36e42e1451c",
+      "source_turns": [
+        1,
+        8
+      ],
+      "question": "What did I instruct Ferro to do with the reliquary during the first water shortage crisis?",
+      "expected_answer": "The case stays sealed.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 1
+    },
+    {
+      "qid": "early-temporal-2",
+      "pool": "early",
+      "type": "temporal",
+      "source_id": "93c89872-f2ba-4b34-826a-f36e42e1451c",
+      "source_turns": [
+        1,
+        8
+      ],
+      "question": "What did I instruct Ferro to do with the water casks during the first trade with the caravan?",
+      "expected_answer": "Secure the water casks, then load it for departure.",
+      "event": "a bargain or trade with someone who wants something in return",
+      "ordinal": 1
+    },
+    {
+      "qid": "early-temporal-3",
+      "pool": "early",
+      "type": "temporal",
+      "source_id": "7589652e-2efe-4121-8197-7d3fdcafeaa9",
+      "source_turns": [
+        9,
+        10
+      ],
+      "question": "What was the first thing I did when we reached Merrow for the second time?",
+      "expected_answer": "I inquired about additional supplies and potential buyers for the reliquary.",
+      "event": "a bargain or trade with someone who wants something in return",
+      "ordinal": 2
+    },
+    {
+      "qid": "early-temporal-4",
+      "pool": "early",
+      "type": "temporal",
+      "source_id": "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4",
+      "source_turns": [
+        51,
+        57
+      ],
+      "question": "What was the second time we faced a water shortage or heat-sickness crisis, and what did Wren say about the water?",
+      "expected_answer": "The water remains the concern. We should keep to the measured rations until we reach Saint Aurel.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 2
+    },
+    {
+      "qid": "early-temporal-5",
+      "pool": "early",
+      "type": "temporal",
+      "source_id": "93c89872-f2ba-4b34-826a-f36e42e1451c",
+      "source_turns": [
+        1,
+        8
+      ],
+      "question": "What did I instruct Ferro to do with the water casks during the first heat-sickness crisis?",
+      "expected_answer": "Load enough water for three days to ensure we stay safe and hydrated.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 1
+    },
+    {
+      "qid": "early-temporal-6",
+      "pool": "early",
+      "type": "temporal",
+      "source_id": "93c89872-f2ba-4b34-826a-f36e42e1451c",
+      "source_turns": [
+        1,
+        8
+      ],
+      "question": "What did I say to Ferro regarding the sealed reliquary during the first trade with the caravan?",
+      "expected_answer": "The case stays sealed.",
+      "event": "a bargain or trade with someone who wants something in return",
+      "ordinal": 1
+    },
+    {
+      "qid": "early-temporal-7",
+      "pool": "early",
+      "type": "temporal",
+      "source_id": "7589652e-2efe-4121-8197-7d3fdcafeaa9",
+      "source_turns": [
+        9,
+        10
+      ],
+      "question": "What specific supplies did I inquire about during the second time we reached Merrow?",
+      "expected_answer": "Additional supplies and potential buyers for the reliquary.",
+      "event": "a bargain or trade with someone who wants something in return",
+      "ordinal": 2
+    },
+    {
+      "qid": "early-temporal-8",
+      "pool": "early",
+      "type": "temporal",
+      "source_id": "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4",
+      "source_turns": [
+        51,
+        57
+      ],
+      "question": "What was the second time we faced a water shortage or heat-sickness crisis, and what did Wren say about the water vessels?",
+      "expected_answer": "The covers are still shut, and I haven’t seen anything wrong with the supplies.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 2
+    },
+    {
+      "qid": "late-vague-1",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "3c2300ef-7445-4558-ad14-b3ad8cf5a9c4",
+      "source_turns": [
+        191,
+        200
+      ],
+      "question": "What did the old woman at the bend say about the edges of the path?",
+      "expected_answer": "The edges are not tested."
+    },
+    {
+      "qid": "late-detail-1",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "6dc285d6-264e-4c3c-9088-2eb6d31bb1f1",
+      "source_turns": [
+        203,
+        203
+      ],
+      "question": "What was secured among the supplies during our journey?",
+      "expected_answer": "The water skins."
+    },
+    {
+      "qid": "late-vague-2",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "e74d8f72-0ab4-47b1-8043-8fd1ecc1a173",
+      "source_turns": [
+        206,
+        207
+      ],
+      "question": "What did I hear drop from above while I was moving through the gap?",
+      "expected_answer": "A fragment from the lintel."
+    },
+    {
+      "qid": "late-detail-2",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "db0bf26e-b1bb-4cd2-b432-ce9b6ea37495",
+      "source_turns": [
+        211,
+        215
+      ],
+      "question": "What did I find on the ground that could help me open the reliquary?",
+      "expected_answer": "She finds no tool or loose object that would help open the reliquary or read its wards."
+    },
+    {
+      "qid": "late-vague-3",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "84154912-8068-4387-8e36-bef2a55c6fbc",
+      "source_turns": [
+        221,
+        223
+      ],
+      "question": "What did I find when I checked the walls for hidden mechanisms or loose stones?",
+      "expected_answer": "She found no hidden catch, lever, or opening."
+    },
+    {
+      "qid": "late-detail-3",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "455b5da4-da44-4526-ac81-4754e24b0cf8",
+      "source_turns": [
+        231,
+        238
+      ],
+      "question": "How many water skins do we have left, and what condition are they in?",
+      "expected_answer": "The two water skins are nearly empty; there is enough for small, measured sips."
+    },
+    {
+      "qid": "late-detail-4",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "7c36625a-46e1-449a-ab1b-c24814a53478",
+      "source_turns": [
+        241,
+        245
+      ],
+      "question": "How many measured sips did the water skins hold before Tamsin divided the water?",
+      "expected_answer": "Only a few measured sips."
+    },
+    {
+      "qid": "late-vague-4",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "9152b5df-1b77-4009-87ec-104db6150273",
+      "source_turns": [
+        251,
+        251
+      ],
+      "question": "What did the drivers do to help the weakened driver during the journey?",
+      "expected_answer": "They kept close together to spare the weakened driver from the reins."
+    },
+    {
+      "qid": "late-detail-5",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4debacb8-4da1-45be-a9a5-ef6d9fabaea9",
+      "source_turns": [
+        261,
+        266
+      ],
+      "question": "What did Tamsin find when she checked the water skins?",
+      "expected_answer": "The water skins are still empty."
+    },
+    {
+      "qid": "late-vague-5",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "bd9b31d5-380a-4ea5-8563-4e60f2269f89",
+      "source_turns": [
+        271,
+        275
+      ],
+      "question": "What did the two large containers for water have inside when you checked them?",
+      "expected_answer": "The skins are sound but empty."
+    },
+    {
+      "qid": "late-detail-6",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4a8d9442-7736-47bf-b2ab-dfdaf5269f8d",
+      "source_turns": [
+        291,
+        300
+      ],
+      "question": "What did Tamsin find when she checked the wagon for supplies?",
+      "expected_answer": "There is no hidden water, spare container, or additional supply in the wagon."
+    },
+    {
+      "qid": "late-vague-6",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "961411c4-276e-41bf-92a7-214fa57f9e20",
+      "source_turns": [
+        302,
+        303
+      ],
+      "question": "What was strapped among the cargo when the caravan returned to the docks?",
+      "expected_answer": "The sealed reliquary."
+    },
+    {
+      "qid": "late-detail-7",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "03ea466c-d1c6-4bad-88ab-6bd617f349e0",
+      "source_turns": [
+        306,
+        307
+      ],
+      "question": "What was the name of the bandit leader who attacked us?",
+      "expected_answer": "Yara"
+    },
+    {
+      "qid": "late-detail-8",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "c580eb94-8490-4faf-83ab-ca25831adc60",
+      "source_turns": [
+        311,
+        320
+      ],
+      "question": "What did the guard rub along the edge of Ferro's notebook?",
+      "expected_answer": "The guard rubbed his thumb along the edge of Ferro’s notebook."
+    },
+    {
+      "qid": "late-vague-7",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "3c6e161c-1939-447d-b9cb-9f76074fdc4c",
+      "source_turns": [
+        324,
+        325
+      ],
+      "question": "What did the person check before we left the docks?",
+      "expected_answer": "The water skins."
+    },
+    {
+      "qid": "late-detail-9",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "c7925a25-a485-4cfa-bbb0-77fe394033d4",
+      "source_turns": [
+        331,
+        337
+      ],
+      "question": "What did Wren report after scouting ahead on the Ash Ground?",
+      "expected_answer": "Nothing ahead that I can see. The route is open for now."
+    },
+    {
+      "qid": "late-vague-8",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "4546ff58-a787-4324-9d4e-681b8e8570d7",
+      "source_turns": [
+        341,
+        350
+      ],
+      "question": "What did the workers say about seeing the person who led the attack before it happened?",
+      "expected_answer": "None can place her at the docks beforehand."
+    },
+    {
+      "qid": "late-detail-10",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "71fdfce4-978b-4c7e-8c63-38d25810dbc4",
+      "source_turns": [
+        352,
+        360
+      ],
+      "question": "What did Tamsin use to guide the caravan through the canyon?",
+      "expected_answer": "Her Hand-drawn Map of the Wastes."
+    },
+    {
+      "qid": "late-vague-9",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "7aafac56-c26e-4599-9e3c-c9c90b1ab650",
+      "source_turns": [
+        371,
+        373
+      ],
+      "question": "What did the cargo include that was secured during our journey?",
+      "expected_answer": "The reliquary remains secured among the cargo."
+    },
+    {
+      "qid": "late-detail-11",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "219fed64-4ae3-4ace-8731-ae624ec930c3",
+      "source_turns": [
+        376,
+        377
+      ],
+      "question": "How much water was left in the two large water skins after Tamsin checked them?",
+      "expected_answer": "Only a few measured sips."
+    },
+    {
+      "qid": "late-detail-12",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "91023d67-3b85-4be8-8ad2-18c60a711f3e",
+      "source_turns": [
+        391,
+        400
+      ],
+      "question": "How much water was left in the skin that Tamsin checked?",
+      "expected_answer": "Only a little water, no more than a few measured sips."
+    },
+    {
+      "qid": "late-vague-10",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "8aab5c64-4666-4dd8-a56f-2ccc244c6314",
+      "source_turns": [
+        402,
+        403
+      ],
+      "question": "What did I leave behind that I needed to communicate with the fire spirit?",
+      "expected_answer": "the Sealed Reliquary"
+    },
+    {
+      "qid": "late-detail-13",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4fa8853b-ccec-4219-88da-f2de6468f9b1",
+      "source_turns": [
+        408,
+        410
+      ],
+      "question": "What did I carry back to the Duskwalker camp besides my map and astrolabe?",
+      "expected_answer": "a short sword"
+    },
+    {
+      "qid": "late-vague-11",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "6d80ec3c-9e36-4350-8a0a-3a01bf676729",
+      "source_turns": [
+        415,
+        416
+      ],
+      "question": "What did the old woman say as she approached the sealed object in the hidden shrine?",
+      "expected_answer": "“Now,” she says, “let us see whether there is anything to answer.”"
+    },
+    {
+      "qid": "late-detail-14",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "9cb01ab0-77c9-4d1f-bd43-be35d71ed5d2",
+      "source_turns": [
+        419,
+        419
+      ],
+      "question": "What did Sabeth say about the shrine carrying words through the seals?",
+      "expected_answer": "A shrine cannot carry words through those seals, and I will not pretend otherwise."
+    },
+    {
+      "qid": "late-vague-12",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "c5aa84bf-af77-4dcf-8b11-dd0759294b4d",
+      "source_turns": [
+        431,
+        440
+      ],
+      "question": "What did the engineer say about ancient rites to reach Ishkar while the reliquary is sealed?",
+      "expected_answer": "He cannot name an ancient rite that would let us commune with Ishkar while the reliquary remains closed."
+    },
+    {
+      "qid": "late-detail-15",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "a3066a72-b098-456c-8527-0d01131c3a34",
+      "source_turns": [
+        451,
+        451
+      ],
+      "question": "What did Grell say about the nature of Ishkar?",
+      "expected_answer": "Ishkar is a bound fire spirit housed inside the sealed casing."
+    },
+    {
+      "qid": "late-detail-16",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "fc904a2a-0a7f-4d5a-a550-2f53d3567ec4",
+      "source_turns": [
+        461,
+        470
+      ],
+      "question": "What did the patrol leader tell Tamsin when she asked to walk without being dragged?",
+      "expected_answer": "He told the guards to ease their grip."
+    },
+    {
+      "qid": "late-vague-13",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "c5d6eda3-9459-44c5-988e-974cafa94900",
+      "source_turns": [
+        481,
+        490
+      ],
+      "question": "How much water is left in the remaining water skin?",
+      "expected_answer": "Only a few measured sips remain."
+    },
+    {
+      "qid": "late-detail-17",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "b9d088f2-face-4986-9cec-97685c91a97b",
+      "source_turns": [
+        501,
+        510
+      ],
+      "question": "How much water is left in the last water skin?",
+      "expected_answer": "Only a few measured sips."
+    },
+    {
+      "qid": "late-vague-14",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "db7460e7-be87-4110-a844-06fd13c7a0e1",
+      "source_turns": [
+        524,
+        525
+      ],
+      "question": "What did Tamsin do to manage the remaining water during the journey?",
+      "expected_answer": "She kept the remaining water measured rather than spending it on speed."
+    },
+    {
+      "qid": "late-detail-18",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "b6f0f04f-a26f-4599-b267-4ea84bd93411",
+      "source_turns": [
+        528,
+        530
+      ],
+      "question": "What was already aboard the wagon when we arrived at Abbot Grell's place?",
+      "expected_answer": "The Sealed Reliquary."
+    },
+    {
+      "qid": "late-vague-15",
+      "pool": "late",
+      "type": "vague",
+      "source_id": "a2261f36-1124-4229-a9f0-963e81b695ca",
+      "source_turns": [
+        541,
+        550
+      ],
+      "question": "What did the hand-drawn map show that helped guide the caravan?",
+      "expected_answer": "The hidden route around the exposed approach."
+    },
+    {
+      "qid": "late-detail-19",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4d8370c8-caef-4f2f-a756-c34fa0fe3806",
+      "source_turns": [
+        561,
+        570
+      ],
+      "question": "What did Grell say about breaking the seals of the reliquary?",
+      "expected_answer": "No. I know no safe way to break the seals."
+    },
+    {
+      "qid": "late-detail-20",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "3ebf1a21-2d8c-4409-8ff2-420f170489d4",
+      "source_turns": [
+        581,
+        585
+      ],
+      "question": "What did Grell say about the entrance when we reached the passage?",
+      "expected_answer": "There's no entrance here."
+    },
+    {
+      "qid": "late-temporal-1",
+      "pool": "late",
+      "type": "temporal",
+      "source_id": "70e3ac59-4928-4925-8f22-a1ea61d8bcf6",
+      "source_turns": [
+        224,
+        227
+      ],
+      "question": "What specific detail can you tell me about the 17th water shortage crisis we faced?",
+      "expected_answer": "The water skins grow lighter as the drivers take measured sips.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 17
+    },
+    {
+      "qid": "late-temporal-2",
+      "pool": "late",
+      "type": "temporal",
+      "source_id": "ce367288-d439-4657-b9d5-32b2333efc68",
+      "source_turns": [
+        239,
+        240
+      ],
+      "question": "What specific detail can you tell me about the twentieth water shortage crisis?",
+      "expected_answer": "The two water skins hold only small measured sips.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 20
+    },
+    {
+      "qid": "late-temporal-3",
+      "pool": "late",
+      "type": "temporal",
+      "source_id": "79fcb985-f4f4-4053-a46b-0a45e87798bd",
+      "source_turns": [
+        252,
+        260
+      ],
+      "question": "What happened during the twenty-fourth water shortage crisis regarding the water skins?",
+      "expected_answer": "Both skins are empty.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 24
+    },
+    {
+      "qid": "late-temporal-4",
+      "pool": "late",
+      "type": "temporal",
+      "source_id": "72d643f3-e925-4a32-a51b-d0fabbc7c3ce",
+      "source_turns": [
+        276,
+        280
+      ],
+      "question": "What happened during the twenty-ninth water shortage crisis regarding the drivers' situation?",
+      "expected_answer": "No one has water to drink, and no shelter appears across the open ground.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 29
+    },
+    {
+      "qid": "late-temporal-5",
+      "pool": "late",
+      "type": "temporal",
+      "source_id": "961411c4-276e-41bf-92a7-214fa57f9e20",
+      "source_turns": [
+        302,
+        303
+      ],
+      "question": "What did Tamsin want from Captain Ferro Lusk during the ninth trade?",
+      "expected_answer": "To clear the caravan’s name.",
+      "event": "a bargain or trade with someone who wants something in return",
+      "ordinal": 9
+    },
+    {
+      "qid": "late-temporal-6",
+      "pool": "late",
+      "type": "temporal",
+      "source_id": "c7925a25-a485-4cfa-bbb0-77fe394033d4",
+      "source_turns": [
+        331,
+        337
+      ],
+      "question": "What did Wren do after reporting that the route was open for now during the twelfth occurrence of a trade?",
+      "expected_answer": "Wren eased back beside the weakened driver and turned in the saddle, keeping the wagons and the open ground behind them in view.",
+      "event": "a bargain or trade with someone who wants something in return",
+      "ordinal": 12
+    },
+    {
+      "qid": "late-temporal-7",
+      "pool": "late",
+      "type": "temporal",
+      "source_id": "f0de4138-7838-4f33-a523-67fa24669bb3",
+      "source_turns": [
+        374,
+        375
+      ],
+      "question": "What detail can you tell me about the 34th water shortage crisis we faced?",
+      "expected_answer": "The water is running low, so the drivers take only brief drinks when they can.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 34
+    },
+    {
+      "qid": "late-temporal-8",
+      "pool": "late",
+      "type": "temporal",
+      "source_id": "298ac513-a70f-4d6d-becc-5163d6d16e54",
+      "source_turns": [
+        401,
+        401
+      ],
+      "question": "What specific detail can you tell me about the thirty-eighth water shortage crisis?",
+      "expected_answer": "Tamsin has no known water source there to aim for.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 38
+    },
+    {
+      "qid": "late-temporal-9",
+      "pool": "late",
+      "type": "temporal",
+      "source_id": "c5d6eda3-9459-44c5-988e-974cafa94900",
+      "source_turns": [
+        481,
+        490
+      ],
+      "question": "What did I suggest to Wren regarding our water situation during the undefined time of the crisis?",
+      "expected_answer": "We might need to ration our water until we reach Saint Aurel.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 39
+    },
+    {
+      "qid": "late-temporal-10",
+      "pool": "late",
+      "type": "temporal",
+      "source_id": "db7460e7-be87-4110-a844-06fd13c7a0e1",
+      "source_turns": [
+        524,
+        525
+      ],
+      "question": "What was the condition of the horses during the undefined time of the water shortage crisis number 42?",
+      "expected_answer": "The horses are already breathing hard.",
+      "event": "a water shortage or heat-sickness crisis",
+      "ordinal": 42
+    }
+  ]
+}

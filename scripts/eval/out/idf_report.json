@@ -1,0 +1,642 @@
+[
+  {
+    "field": "dense_summary",
+    "n_docs": 44,
+    "avg_doc_len": 44.9,
+    "entities": [
+      {
+        "type": "character",
+        "name": "Taller Vael",
+        "mention_df_pct": 100.0,
+        "mention_idf_lucene": 0.011,
+        "best_token": "taller",
+        "token_df_pct": 29.5,
+        "idf_rank_bm25": 0.847,
+        "idf_okapi_raw": 0.847,
+        "idf_lucene": 1.204
+      },
+      {
+        "type": "character",
+        "name": "Shorter Vael",
+        "mention_df_pct": 100.0,
+        "mention_idf_lucene": 0.011,
+        "best_token": "shorter",
+        "token_df_pct": 56.8,
+        "idf_rank_bm25": 0.687,
+        "idf_okapi_raw": -0.268,
+        "idf_lucene": 0.568
+      },
+      {
+        "type": "character",
+        "name": "Lord Casimir Vael",
+        "mention_df_pct": 97.7,
+        "mention_idf_lucene": 0.034,
+        "best_token": "casimir",
+        "token_df_pct": 77.3,
+        "idf_rank_bm25": 0.687,
+        "idf_okapi_raw": -1.19,
+        "idf_lucene": 0.266
+      },
+      {
+        "type": "player",
+        "name": "Mara Voss + 'protagonist'",
+        "mention_df_pct": 97.7,
+        "mention_idf_lucene": 0.034,
+        "best_token": "mara",
+        "token_df_pct": 95.5,
+        "idf_rank_bm25": 0.687,
+        "idf_okapi_raw": -2.833,
+        "idf_lucene": 0.057
+      },
+      {
+        "type": "character",
+        "name": "Mara Voss",
+        "mention_df_pct": 95.5,
+        "mention_idf_lucene": 0.057,
+        "best_token": "mara",
+        "token_df_pct": 95.5,
+        "idf_rank_bm25": 0.687,
+        "idf_okapi_raw": -2.833,
+        "idf_lucene": 0.057
+      },
+      {
+        "type": "character",
+        "name": "Sister Elka",
+        "mention_df_pct": 43.2,
+        "mention_idf_lucene": 0.836,
+        "best_token": "elka",
+        "token_df_pct": 43.2,
+        "idf_rank_bm25": 0.268,
+        "idf_okapi_raw": 0.268,
+        "idf_lucene": 0.836
+      },
+      {
+        "type": "character",
+        "name": "Ilya Renn",
+        "mention_df_pct": 34.1,
+        "mention_idf_lucene": 1.066,
+        "best_token": "renn",
+        "token_df_pct": 6.8,
+        "idf_rank_bm25": 2.473,
+        "idf_okapi_raw": 2.473,
+        "idf_lucene": 2.554
+      },
+      {
+        "type": "item",
+        "name": "Ilya's black wax seal",
+        "mention_df_pct": 34.1,
+        "mention_idf_lucene": 1.066,
+        "best_token": "black",
+        "token_df_pct": 34.1,
+        "idf_rank_bm25": 0.644,
+        "idf_okapi_raw": 0.644,
+        "idf_lucene": 1.066
+      },
+      {
+        "type": "location",
+        "name": "Drowned Chapel",
+        "mention_df_pct": 27.3,
+        "mention_idf_lucene": 1.281,
+        "best_token": "drowned",
+        "token_df_pct": 27.3,
+        "idf_rank_bm25": 0.956,
+        "idf_okapi_raw": 0.956,
+        "idf_lucene": 1.281
+      },
+      {
+        "type": "item",
+        "name": "knife",
+        "mention_df_pct": 27.3,
+        "mention_idf_lucene": 1.281,
+        "best_token": "knife",
+        "token_df_pct": 27.3,
+        "idf_rank_bm25": 0.956,
+        "idf_okapi_raw": 0.956,
+        "idf_lucene": 1.281
+      },
+      {
+        "type": "item",
+        "name": "cracked spyglass",
+        "mention_df_pct": 25.0,
+        "mention_idf_lucene": 1.364,
+        "best_token": "cracked",
+        "token_df_pct": 25.0,
+        "idf_rank_bm25": 1.069,
+        "idf_okapi_raw": 1.069,
+        "idf_lucene": 1.364
+      },
+      {
+        "type": "character",
+        "name": "Jory",
+        "mention_df_pct": 18.2,
+        "mention_idf_lucene": 1.667,
+        "best_token": "jory",
+        "token_df_pct": 18.2,
+        "idf_rank_bm25": 1.457,
+        "idf_okapi_raw": 1.457,
+        "idf_lucene": 1.667
+      },
+      {
+        "type": "item",
+        "name": "brass lockpick set",
+        "mention_df_pct": 15.9,
+        "mention_idf_lucene": 1.792,
+        "best_token": "lockpick",
+        "token_df_pct": 15.9,
+        "idf_rank_bm25": 1.609,
+        "idf_okapi_raw": 1.609,
+        "idf_lucene": 1.792
+      },
+      {
+        "type": "location",
+        "name": "Saltmarket",
+        "mention_df_pct": 4.5,
+        "mention_idf_lucene": 2.89,
+        "best_token": "saltmarket",
+        "token_df_pct": 4.5,
+        "idf_rank_bm25": 2.833,
+        "idf_okapi_raw": 2.833,
+        "idf_lucene": 2.89
+      },
+      {
+        "type": "character",
+        "name": "Old Tobin",
+        "mention_df_pct": 0.0,
+        "mention_idf_lucene": 4.5,
+        "best_token": null,
+        "token_df_pct": 0.0,
+        "idf_rank_bm25": null,
+        "idf_okapi_raw": null,
+        "idf_lucene": null
+      },
+      {
+        "type": "location",
+        "name": "Lantern Pawnshop",
+        "mention_df_pct": 0.0,
+        "mention_idf_lucene": 4.5,
+        "best_token": null,
+        "token_df_pct": 0.0,
+        "idf_rank_bm25": null,
+        "idf_okapi_raw": null,
+        "idf_lucene": null
+      },
+      {
+        "type": "location",
+        "name": "Vael counting house",
+        "mention_df_pct": 0.0,
+        "mention_idf_lucene": 4.5,
+        "best_token": null,
+        "token_df_pct": 0.0,
+        "idf_rank_bm25": null,
+        "idf_okapi_raw": null,
+        "idf_lucene": null
+      },
+      {
+        "type": "location",
+        "name": "Old lighthouse",
+        "mention_df_pct": 0.0,
+        "mention_idf_lucene": 4.5,
+        "best_token": null,
+        "token_df_pct": 0.0,
+        "idf_rank_bm25": null,
+        "idf_okapi_raw": null,
+        "idf_lucene": null
+      },
+      {
+        "type": "location",
+        "name": "Sunken Docks",
+        "mention_df_pct": 0.0,
+        "mention_idf_lucene": 4.5,
+        "best_token": null,
+        "token_df_pct": 0.0,
+        "idf_rank_bm25": null,
+        "idf_okapi_raw": null,
+        "idf_lucene": null
+      }
+    ],
+    "event_words": {
+      "vocab_size": 379,
+      "by_vocab": {
+        "lucene": {
+          "p25": 2.89,
+          "median": 3.401,
+          "p75": 3.401
+        },
+        "rank_bm25": {
+          "p25": 2.833,
+          "median": 3.367,
+          "p75": 3.367
+        }
+      },
+      "by_occurrence": {
+        "lucene": {
+          "p25": 1.455,
+          "median": 2.303,
+          "p75": 2.89
+        },
+        "rank_bm25": {
+          "p25": 1.19,
+          "median": 2.197,
+          "p75": 2.833
+        }
+      },
+      "most_frequent": [
+        {
+          "token": "crossbow",
+          "df_pct": 72.7,
+          "idf_lucene": 0.325
+        },
+        {
+          "token": "attempts",
+          "df_pct": 47.7,
+          "idf_lucene": 0.739
+        },
+        {
+          "token": "causing",
+          "df_pct": 40.9,
+          "idf_lucene": 0.889
+        },
+        {
+          "token": "against",
+          "df_pct": 40.9,
+          "idf_lucene": 0.889
+        },
+        {
+          "token": "bolt",
+          "df_pct": 40.9,
+          "idf_lucene": 0.889
+        },
+        {
+          "token": "men",
+          "df_pct": 38.6,
+          "idf_lucene": 0.944
+        },
+        {
+          "token": "kicks",
+          "df_pct": 36.4,
+          "idf_lucene": 1.003
+        },
+        {
+          "token": "escape",
+          "df_pct": 34.1,
+          "idf_lucene": 1.066
+        },
+        {
+          "token": "struggles",
+          "df_pct": 31.8,
+          "idf_lucene": 1.133
+        },
+        {
+          "token": "danger",
+          "df_pct": 31.8,
+          "idf_lucene": 1.133
+        },
+        {
+          "token": "immediate",
+          "df_pct": 29.5,
+          "idf_lucene": 1.204
+        },
+        {
+          "token": "altar",
+          "df_pct": 29.5,
+          "idf_lucene": 1.204
+        },
+        {
+          "token": "grip",
+          "df_pct": 27.3,
+          "idf_lucene": 1.281
+        },
+        {
+          "token": "away",
+          "df_pct": 22.7,
+          "idf_lucene": 1.455
+        },
+        {
+          "token": "lunges",
+          "df_pct": 20.5,
+          "idf_lucene": 1.555
+        }
+      ]
+    }
+  },
+  {
+    "field": "original_text",
+    "n_docs": 44,
+    "avg_doc_len": 202.7,
+    "entities": [
+      {
+        "type": "character",
+        "name": "Lord Casimir Vael",
+        "mention_df_pct": 86.4,
+        "mention_idf_lucene": 0.156,
+        "best_token": "casimir",
+        "token_df_pct": 18.2,
+        "idf_rank_bm25": 1.457,
+        "idf_okapi_raw": 1.457,
+        "idf_lucene": 1.667
+      },
+      {
+        "type": "character",
+        "name": "Taller Vael",
+        "mention_df_pct": 86.4,
+        "mention_idf_lucene": 0.156,
+        "best_token": "taller",
+        "token_df_pct": 45.5,
+        "idf_rank_bm25": 0.178,
+        "idf_okapi_raw": 0.178,
+        "idf_lucene": 0.786
+      },
+      {
+        "type": "character",
+        "name": "Shorter Vael",
+        "mention_df_pct": 86.4,
+        "mention_idf_lucene": 0.156,
+        "best_token": "shorter",
+        "token_df_pct": 59.1,
+        "idf_rank_bm25": 0.642,
+        "idf_okapi_raw": -0.359,
+        "idf_lucene": 0.53
+      },
+      {
+        "type": "character",
+        "name": "Sister Elka",
+        "mention_df_pct": 43.2,
+        "mention_idf_lucene": 0.836,
+        "best_token": "elka",
+        "token_df_pct": 43.2,
+        "idf_rank_bm25": 0.268,
+        "idf_okapi_raw": 0.268,
+        "idf_lucene": 0.836
+      },
+      {
+        "type": "item",
+        "name": "knife",
+        "mention_df_pct": 43.2,
+        "mention_idf_lucene": 0.836,
+        "best_token": "knife",
+        "token_df_pct": 43.2,
+        "idf_rank_bm25": 0.268,
+        "idf_okapi_raw": 0.268,
+        "idf_lucene": 0.836
+      },
+      {
+        "type": "character",
+        "name": "Jory",
+        "mention_df_pct": 22.7,
+        "mention_idf_lucene": 1.455,
+        "best_token": "jory",
+        "token_df_pct": 22.7,
+        "idf_rank_bm25": 1.19,
+        "idf_okapi_raw": 1.19,
+        "idf_lucene": 1.455
+      },
+      {
+        "type": "item",
+        "name": "brass lockpick set",
+        "mention_df_pct": 11.4,
+        "mention_idf_lucene": 2.102,
+        "best_token": "lockpick",
+        "token_df_pct": 11.4,
+        "idf_rank_bm25": 1.972,
+        "idf_okapi_raw": 1.972,
+        "idf_lucene": 2.102
+      },
+      {
+        "type": "item",
+        "name": "Ilya's black wax seal",
+        "mention_df_pct": 11.4,
+        "mention_idf_lucene": 2.102,
+        "best_token": "black",
+        "token_df_pct": 31.8,
+        "idf_rank_bm25": 0.744,
+        "idf_okapi_raw": 0.744,
+        "idf_lucene": 1.133
+      },
+      {
+        "type": "location",
+        "name": "Drowned Chapel",
+        "mention_df_pct": 9.1,
+        "mention_idf_lucene": 2.303,
+        "best_token": "drowned",
+        "token_df_pct": 9.1,
+        "idf_rank_bm25": 2.197,
+        "idf_okapi_raw": 2.197,
+        "idf_lucene": 2.303
+      },
+      {
+        "type": "item",
+        "name": "cracked spyglass",
+        "mention_df_pct": 9.1,
+        "mention_idf_lucene": 2.303,
+        "best_token": "cracked",
+        "token_df_pct": 15.9,
+        "idf_rank_bm25": 1.609,
+        "idf_okapi_raw": 1.609,
+        "idf_lucene": 1.792
+      },
+      {
+        "type": "character",
+        "name": "Ilya Renn",
+        "mention_df_pct": 6.8,
+        "mention_idf_lucene": 2.554,
+        "best_token": "ilya",
+        "token_df_pct": 6.8,
+        "idf_rank_bm25": 2.473,
+        "idf_okapi_raw": 2.473,
+        "idf_lucene": 2.554
+      },
+      {
+        "type": "character",
+        "name": "Mara Voss",
+        "mention_df_pct": 2.3,
+        "mention_idf_lucene": 3.401,
+        "best_token": "voss",
+        "token_df_pct": 2.3,
+        "idf_rank_bm25": 3.367,
+        "idf_okapi_raw": 3.367,
+        "idf_lucene": 3.401
+      },
+      {
+        "type": "character",
+        "name": "Old Tobin",
+        "mention_df_pct": 2.3,
+        "mention_idf_lucene": 3.401,
+        "best_token": "tobin",
+        "token_df_pct": 2.3,
+        "idf_rank_bm25": 3.367,
+        "idf_okapi_raw": 3.367,
+        "idf_lucene": 3.401
+      },
+      {
+        "type": "location",
+        "name": "Saltmarket",
+        "mention_df_pct": 2.3,
+        "mention_idf_lucene": 3.401,
+        "best_token": "saltmarket",
+        "token_df_pct": 2.3,
+        "idf_rank_bm25": 3.367,
+        "idf_okapi_raw": 3.367,
+        "idf_lucene": 3.401
+      },
+      {
+        "type": "location",
+        "name": "Vael counting house",
+        "mention_df_pct": 2.3,
+        "mention_idf_lucene": 3.401,
+        "best_token": "house",
+        "token_df_pct": 2.3,
+        "idf_rank_bm25": 3.367,
+        "idf_okapi_raw": 3.367,
+        "idf_lucene": 3.401
+      },
+      {
+        "type": "player",
+        "name": "Mara Voss + 'protagonist'",
+        "mention_df_pct": 2.3,
+        "mention_idf_lucene": 3.401,
+        "best_token": "voss",
+        "token_df_pct": 2.3,
+        "idf_rank_bm25": 3.367,
+        "idf_okapi_raw": 3.367,
+        "idf_lucene": 3.401
+      },
+      {
+        "type": "location",
+        "name": "Lantern Pawnshop",
+        "mention_df_pct": 0.0,
+        "mention_idf_lucene": 4.5,
+        "best_token": "lantern",
+        "token_df_pct": 2.3,
+        "idf_rank_bm25": 3.367,
+        "idf_okapi_raw": 3.367,
+        "idf_lucene": 3.401
+      },
+      {
+        "type": "location",
+        "name": "Old lighthouse",
+        "mention_df_pct": 0.0,
+        "mention_idf_lucene": 4.5,
+        "best_token": null,
+        "token_df_pct": 0.0,
+        "idf_rank_bm25": null,
+        "idf_okapi_raw": null,
+        "idf_lucene": null
+      },
+      {
+        "type": "location",
+        "name": "Sunken Docks",
+        "mention_df_pct": 0.0,
+        "mention_idf_lucene": 4.5,
+        "best_token": null,
+        "token_df_pct": 0.0,
+        "idf_rank_bm25": null,
+        "idf_okapi_raw": null,
+        "idf_lucene": null
+      }
+    ],
+    "event_words": {
+      "vocab_size": 1351,
+      "by_vocab": {
+        "lucene": {
+          "p25": 2.303,
+          "median": 2.89,
+          "p75": 3.401
+        },
+        "rank_bm25": {
+          "p25": 2.197,
+          "median": 2.833,
+          "p75": 3.367
+        }
+      },
+      "by_occurrence": {
+        "lucene": {
+          "p25": 0.693,
+          "median": 1.364,
+          "p75": 2.102
+        },
+        "rank_bm25": {
+          "p25": 0.642,
+          "median": 1.069,
+          "p75": 1.972
+        }
+      },
+      "most_frequent": [
+        {
+          "token": "blood",
+          "df_pct": 77.3,
+          "idf_lucene": 0.266
+        },
+        {
+          "token": "fingers",
+          "df_pct": 75.0,
+          "idf_lucene": 0.295
+        },
+        {
+          "token": "hand",
+          "df_pct": 72.7,
+          "idf_lucene": 0.325
+        },
+        {
+          "token": "immediate",
+          "df_pct": 72.7,
+          "idf_lucene": 0.325
+        },
+        {
+          "token": "danger",
+          "df_pct": 72.7,
+          "idf_lucene": 0.325
+        },
+        {
+          "token": "back",
+          "df_pct": 70.5,
+          "idf_lucene": 0.357
+        },
+        {
+          "token": "pain",
+          "df_pct": 68.2,
+          "idf_lucene": 0.389
+        },
+        {
+          "token": "ribs",
+          "df_pct": 68.2,
+          "idf_lucene": 0.389
+        },
+        {
+          "token": "rain",
+          "df_pct": 65.9,
+          "idf_lucene": 0.422
+        },
+        {
+          "token": "boot",
+          "df_pct": 65.9,
+          "idf_lucene": 0.422
+        },
+        {
+          "token": "crossbow",
+          "df_pct": 65.9,
+          "idf_lucene": 0.422
+        },
+        {
+          "token": "grip",
+          "df_pct": 63.6,
+          "idf_lucene": 0.457
+        },
+        {
+          "token": "doorway",
+          "df_pct": 63.6,
+          "idf_lucene": 0.457
+        },
+        {
+          "token": "against",
+          "df_pct": 61.4,
+          "idf_lucene": 0.492
+        },
+        {
+          "token": "wood",
+          "df_pct": 59.1,
+          "idf_lucene": 0.53
+        }
+      ]
+    }
+  }
+]

@@ -41,7 +41,12 @@ export class MemoryManager {
 
         // 当积攒了一定数量后触发语义切分（这里设定满了一个 WINDOW_SIZE 就切一次）
         if (this.unprocessedArchive.length >= MEMORY_WINDOW_SIZE) {
-            extractedRecords = await this.processArchive(currentState, sessionId);
+            try {
+                extractedRecords = await this.processArchive(currentState, sessionId);
+            } catch (e) {
+                // 归档失败不能拖垮本回合的保存，未处理的轮次留在归档区，下次再试
+                console.error("[MemoryManager] Archive processing failed, will retry on a later turn:", e);
+            }
         }
 
         return extractedRecords;
@@ -66,17 +71,18 @@ export class MemoryManager {
         });
 
         const output = await structuredLLM.invoke(promptValue);
-        let startIds = output.chunk_start_turn_ids || [];
+        // 去重 + 规避降序
+        const startIds = Array.from(new Set(output.chunk_start_turn_ids || [])).sort((a, b) => a - b);
 
-        // 确保至少有一个起点，防止大模型抽风返回空数组
-        if (startIds.length === 0 && this.unprocessedArchive.length > 0) {
-            startIds.push(this.unprocessedArchive[0].turn_id);
+        // 第一个切分点必须是归档区的第一轮：既防止大模型返回空数组，
+        // 也防止第一个切分点之前的轮次不属于任何 chunk 而被静默丢弃
+        const firstArchivedTurnId = this.unprocessedArchive[0].turn_id;
+        if (startIds.length === 0 || startIds[0] > firstArchivedTurnId) {
+            startIds[0] = firstArchivedTurnId;
         }
 
-        // 规避降序
-        startIds.sort((a, b) => a - b);
-
-        const records: MemoryRecord[] = [];
+        // 先同步切好所有 chunk，再并发提取，缩短后台收尾时间
+        const chunks: { turns: ChatTurn[]; text: string }[] = [];
 
         for (let i = 0; i < startIds.length; i++) {
             const currentStartId = startIds[i];
@@ -87,9 +93,6 @@ export class MemoryManager {
             );
 
             if (chunkTurns.length === 0) continue;
-
-            const actualStartTurn = chunkTurns[0].turn_id;
-            const actualEndTurn = chunkTurns[chunkTurns.length - 1].turn_id;
 
             // ======= 补充 Context Overlap (重叠机制) =======
             let prefixContext = "";
@@ -107,27 +110,42 @@ export class MemoryManager {
                 }
             }
 
-            const chunkText = prefixContext + "[Content to Extract]\n" + this.formatTurns(chunkTurns);
+            chunks.push({
+                turns: chunkTurns,
+                text: prefixContext + "[Content to Extract]\n" + this.formatTurns(chunkTurns)
+            });
+        }
 
+        const settled = await Promise.allSettled(chunks.map(async chunk => {
             // 正式调用 memoryChunkGenerator 生成结构化事实记忆
             const record = await extractAndStoreMemory(
                 currentState,
-                chunkText,
-                actualStartTurn,
-                actualEndTurn
+                chunk.text,
+                chunk.turns[0].turn_id,
+                chunk.turns[chunk.turns.length - 1].turn_id
             );
 
             // 自动存入 Pinecone 向量数据库的指定 sessionId Namespace 中
             await storeMemoryRecord(record, sessionId);
+            return record;
+        }));
 
-            records.push(record);
+        const records: MemoryRecord[] = [];
+        const processedTurnIds = new Set<number>();
 
-            // 更新这轮作为接下来的历史锚点储备
-            this.lastProcessedOverlapTurns = chunkTurns.slice(-CHUNK_OVERLAP);
-        }
+        settled.forEach((result, i) => {
+            if (result.status === "fulfilled") {
+                records.push(result.value);
+                chunks[i].turns.forEach(t => processedTurnIds.add(t.turn_id));
+                // 更新这轮作为接下来的历史锚点储备
+                this.lastProcessedOverlapTurns = chunks[i].turns.slice(-CHUNK_OVERLAP);
+            } else {
+                console.error(`[MemoryManager] Failed to archive chunk starting at turn ${chunks[i].turns[0].turn_id}:`, result.reason);
+            }
+        });
 
-        // 处理完毕，清空当前代处理区
-        this.unprocessedArchive = [];
+        // 只移除成功入库的轮次，失败的留在归档区下次重试，避免记忆丢失或重复入库
+        this.unprocessedArchive = this.unprocessedArchive.filter(t => !processedTurnIds.has(t.turn_id));
 
         return records;
     }

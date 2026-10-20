@@ -1,0 +1,912 @@
+{
+  "early-vague-1": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The twisted strut is a specific docking obstacle with immediate consequences, and the passage depicts the tug’s docking arm snagging on it during the initial approach."
+  },
+  "early-detail-1": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The partly exposed manual release slot is a moment-specific clue relevant to opening the service door, and the passage explicitly depicts its discovery during the examination."
+  },
+  "early-vague-2": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The door pressing against her pack is specific to the depicted passage through the opening, but it is incidental physical trivia with no apparent story relevance."
+  },
+  "early-detail-2": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the drone’s damaged rotor arm is relevant to its condition when first discovered and is specific to this encounter."
+  },
+  "early-vague-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls story-relevant damage to a recovered drone, and the passage explicitly depicts inspecting it after freeing it from the cables on the grated platform."
+  },
+  "early-detail-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The missing pressure-stabilizer function is a plausible and scene-specific detail to recall because its absence prevented the attempted countermeasure against the gas jet."
+  },
+  "early-detail-4": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a concrete, story-relevant use of the cutter to advance against the gas flow, and the passage explicitly identifies the jagged lip as its bracing point."
+  },
+  "early-vague-4": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the manual catch’s location is relevant to opening this particular obstructed panel, and the passage explicitly depicts its inspection."
+  },
+  "early-detail-5": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The fasteners are a story-relevant access point discovered during this particular inspection, but the passage does not establish that this was the first inspection."
+  },
+  "early-vague-5": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts restoring power to the docking ring, but the collar's ridged texture is incidental sensory trivia rather than a story-relevant detail to recall."
+  },
+  "early-detail-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the explicit warning against repeated clamp cycles is relevant to safely releasing the Kestrel and is grounded in the depicted clamp-control check."
+  },
+  "early-vague-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the response to refusing to surrender the slate is story-relevant and specific to this moment, and the passage explicitly depicts the refusal followed by no answer."
+  },
+  "early-detail-7": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The heavy clunk is specific to the clamp release, but the question asks for incidental sensory detail with no story relevance."
+  },
+  "early-detail-8": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the nearby structural panels checked during this search is a plausible, moment-specific detail about an attempt to restore hatch power."
+  },
+  "early-vague-7": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a safety warning relevant to operating the docking ring, and the passage explicitly shows Juno checking hatch diagnostics while being warned to avoid repeated clamp cycles."
+  },
+  "early-detail-9": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The change in the ring’s hum is a relevant diagnostic clue that explicitly coincides with the strained conduit shifting against its support during this inspection."
+  },
+  "early-vague-8": {
+    "keep": false,
+    "realistic": false,
+    "specific": false,
+    "event_matches": true,
+    "reason": "The return to the tug occurs as stated, but the ring hum is incidental sensory detail with no story relevance or distinct connection to this moment."
+  },
+  "early-detail-10": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a consequential risk of taking a conduit support from the cargo bay, explicitly identified during Juno and Priya’s search of the stores."
+  },
+  "early-vague-9": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts the return to the ship for the oxygen canister and explicitly notes avoiding the unsafe gas flow, a story-relevant hazard tied to that trip."
+  },
+  "early-detail-11": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a consequential limitation of the O2 canister during the depicted return to hydroponics, where opening its nozzle would add gas rather than clear the route."
+  },
+  "early-detail-12": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The bent rotor arm is a moment-specific but incidental visual detail that does not inform the search for shielding or any subsequent action."
+  },
+  "early-vague-10": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks the player to recall a specific maneuver used to navigate an obstacle, and the passage explicitly depicts Juno turning sideways between the cable bundle and the wall."
+  },
+  "early-detail-13": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question targets the passage’s sealed bulkhead, a concrete search detail tied to looking for Brandt and the blocked-off hydroponics area, but it is not a temporal-event question."
+  },
+  "early-vague-11": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts the stated search, but sweeping a helmet lamp over each section is an incidental procedural detail rather than a meaningful clue, decision, or outcome."
+  },
+  "early-detail-14": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The bent rotor arm is a story-relevant damage detail tied to freeing the drone and the subsequent unsuccessful attempts to repair it."
+  },
+  "early-vague-12": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The bent rotor is a story-relevant detail of the damaged drone, and the passage explicitly depicts checking it for recordings that could help locate the doctor."
+  },
+  "early-detail-15": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling how many times you called for Dr. Brandt is a plausible question about a specific attempt to contact her beside the open panel."
+  },
+  "early-detail-16": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The receipt’s wording identifies the logs left for examination and serves as proof of the pawnshop’s custody, making it a plausible and moment-specific detail to recall."
+  },
+  "early-vague-13": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling which transmission survived the slate’s damage is story-relevant, specific to this assessment, and grounded in the depicted wait at the pawnshop."
+  },
+  "early-detail-17": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about the disposition of a transaction record, and the passage specifically states that the proprietor folded the receipt into the shop’s records."
+  },
+  "early-vague-14": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The receipt-folding occurs during the stated inquiry and is specific to this moment, but it is incidental bookkeeping with no apparent story relevance."
+  },
+  "early-detail-18": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The trader’s head shake is a meaningful response to Juno having no salvage to show and is specifically depicted during her browsing of the stalls."
+  },
+  "early-vague-15": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts the trader responding to the salvage inquiry and tapping once, but counting the taps is incidental physical trivia with no story relevance."
+  },
+  "early-detail-19": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The customer's arrival is specific to the pause after the valuation request, but it is incidental background activity with no apparent story relevance."
+  },
+  "early-detail-20": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question targets an incidental counter-tapping gesture with no story relevance rather than the proprietor’s refusal to provide buyer contacts."
+  },
+  "early-temporal-1": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Priya’s remark is a plausible story-relevant detail to recall, is specific to this moment, and accompanies clear signs of decompression: escaping air, falling pressure, and an oxygen countdown."
+  },
+  "early-temporal-2": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts a dangerous pressure breach that knocks the plasma cutter from Juno's hand, and recalling where this useful tool stopped is relevant and specific to that emergency."
+  },
+  "early-temporal-3": {
+    "keep": false,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the final transmission’s word is plausible and moment-specific, but the passage depicts a preliminary appraisal rather than a tense bargain or exchange with a demand in return."
+  },
+  "early-temporal-4": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The proprietor is making a trade offer for the slate, but recalling their exact hand position tests incidental posture rather than a meaningful term, decision, or clue in the bargain."
+  },
+  "early-temporal-5": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling which companion bumped against the player's boot is a plausible character-related memory tied to this moment, and the air leak, falling pressure, and oxygen countdown establish a decompression emergency."
+  },
+  "early-temporal-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The gas striking her forearm caused her to drop the plasma cutter during an explicit pressure-breach emergency, making it a consequential detail specific to this moment."
+  },
+  "early-temporal-7": {
+    "keep": false,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The buyer’s condition is a plausible, moment-specific detail to recall, but the passage depicts a routine appraisal discussion rather than a tense bargain with someone demanding something in return."
+  },
+  "early-temporal-8": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the extent of damage to valuable files is story-relevant and specific to this assessment, which occurs during a guarded negotiation to exchange the slate for credits."
+  },
+  "late-vague-1": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts the requested inquiry and counter tap, but recalling the surface he tapped is incidental physical trivia with no story relevance."
+  },
+  "late-detail-1": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Calix’s description of the offered compass as “a fitting token” is a moment-specific remark relevant to the negotiation that a player could plausibly want to recall."
+  },
+  "late-vague-2": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks the player to recall where they placed a key recovered item, and the passage explicitly depicts returning to the tug and setting it beside the navigation console before installation."
+  },
+  "late-detail-2": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the specific piloting action used to navigate the debris belt safely during the calculated approach to Meridian-9."
+  },
+  "late-vague-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a story-relevant radio inquiry prompted by Juno’s contraband distraction, and the passage explicitly depicts both the distraction and the guard’s response."
+  },
+  "late-detail-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The guard’s latch check is a specific, story-relevant precaution depicted immediately before he tells Juno to open the container and reveal the stash."
+  },
+  "late-detail-4": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Avoiding the marked machinery lanes is incidental movement detail with no demonstrated relevance to the infiltration, though it is specific to this scene."
+  },
+  "late-vague-4": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The offer of credits occurs as described and identifies a specific moment, but the worker’s sealed case is incidental cargo with no relevance to the attempt to gain access."
+  },
+  "late-detail-5": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The guard’s threat to report an access violation is a story-relevant consequence explicitly tied to Juno’s insistence that Kessler would confirm shortly."
+  },
+  "late-vague-5": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the player's role in a consequential repair, and the passage explicitly shows Juno holding the panel while Priya repairs the reactor after the ambush."
+  },
+  "late-detail-6": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Identifying ship crews alongside vendors recalls incidental crowd scenery rather than a story-relevant decision, clue, item, or outcome."
+  },
+  "late-vague-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a story-relevant brace placement detail unique to the first section, and the passage explicitly depicts positioning it with Priya."
+  },
+  "late-detail-7": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling whom the attendant began helping is a plausible way to track the failed barter interaction, and the answer is specific to this depot search."
+  },
+  "late-detail-8": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the specific action used to free the stuck hatch, which the passage explicitly describes."
+  },
+  "late-vague-7": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The fastener count is a plausible detail to recall when planning how to open this particular panel, and the passage depicts the stated inspection."
+  },
+  "late-detail-9": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The relay’s synchronization with signal bursts is a relevant clue about the beacon’s normal operation, specifically observed during the close inspection depicted in the passage."
+  },
+  "late-vague-8": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the service hatch as a navigational landmark is plausible, and the passage explicitly shows Juno stopping with the signal still detectable and the hatch visible behind her."
+  },
+  "late-detail-10": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The relay clicking with each burst is moment-specific but is merely an incidental sound, not a meaningful clue about the signal or the failed attempt to boost it."
+  },
+  "late-vague-9": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls the data found during a specific instrument check, a relevant clue explaining why the search yielded no beacon records."
+  },
+  "late-detail-11": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The cable’s endpoint is a concrete clue from the attempt to restore terminal power, but the passage does not name Meridian-9 or identify the laboratory as a core laboratory."
+  },
+  "late-detail-12": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the sole visible computer as a potential source of Lantern records, and the dark, unresponsive terminal is explicitly identified in this laboratory search."
+  },
+  "late-vague-10": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks the player to recall how they handled the fixtures during the depicted search for a power source in the adjacent rooms."
+  },
+  "late-detail-13": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The customer stepping up behind Juno is incidental background activity with no bearing on the missing slate, the buyer’s identity, or Juno’s next lead."
+  },
+  "late-vague-11": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling where the player searched for a missing clue-bearing slate is story-relevant, specific to this return aboard the tug, and supported by the passage."
+  },
+  "late-detail-14": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The panel’s function is a story-relevant clue to Priya’s confinement, explicitly identified by the attendant during the search for a replacement slate."
+  },
+  "late-vague-12": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts the attempt to expedite Priya’s review after pocketing the cutter, but the placement of her hands is incidental physical trivia with no story relevance."
+  },
+  "late-detail-15": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling Priya’s suggested checks before purchasing supplies is story-relevant and specific to this return to the ship."
+  },
+  "late-detail-16": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the reactor test’s diagnostic behavior, and the passage explicitly describes the output dipping once before stabilizing."
+  },
+  "late-vague-13": {
+    "keep": false,
+    "realistic": false,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts the inspection before the conduit repair, but recalling the access side is incidental spatial trivia with no meaningful bearing on the repair or its outcome."
+  },
+  "late-detail-17": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The guard count is a plausible tactical detail to recall and is tied to Juno’s return to the launch bay, but the passage describes a return, search, and negotiation rather than the stated temporal event type."
+  },
+  "late-vague-14": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks the player to recall a guard’s relevant response during the explicitly depicted threat to report the security team for obstruction."
+  },
+  "late-detail-18": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The suit tether is a story-relevant detail explaining how Juno retained her cutter during the first air blast, which the passage explicitly depicts."
+  },
+  "late-vague-15": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The bend is a relevant, moment-specific limit on visibility, but the passage shows Juno already inside rather than depicting her entry through the hatch."
+  },
+  "late-detail-19": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls the specific diagnostic report Juno sought from the reactor panel, a story-relevant attempt to gather information while searching for Odile."
+  },
+  "late-detail-20": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks the player to recall a specific salvage item offered in a trade, and the passage explicitly names structural braces alongside the plasma cutter."
+  },
+  "late-temporal-1": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts a tense exchange of information for a distraction, and the radio response is a specific, relevant indication of how the guards reacted to the offered contraband lead."
+  },
+  "late-temporal-2": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The guard’s question about the slate’s current location is a story-relevant detail specific to this confrontation, which qualifies as a standoff with Ostrander security."
+  },
+  "late-temporal-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a specific bodily impact during a consequential forced-hatch decompression, which the passage explicitly depicts."
+  },
+  "late-temporal-4": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts a tense negotiation trading information for a distraction, during which Juno deliberately withholds the details of Odile’s investigation, a story-relevant choice specific to this encounter."
+  },
+  "late-temporal-5": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The guard’s glance at the unresponsive control panel is a relevant detail in his response to Juno’s demand, and the passage depicts a standoff with Ostrander security."
+  },
+  "late-temporal-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Bracing her boots against the ring’s support is a relevant survival action specific to the depicted decompression emergency caused by cutting open the pressurized hatch."
+  },
+  "early-detail-21": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The unchanged pressure is a relevant safety outcome tied to forcing this door wider, but the question is a detail question rather than a temporal question."
+  },
+  "early-detail-22": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The plug’s flat side matching the socket guide is a moment-specific, actionable clue to reconnecting the docking ring’s power, and the question is about a detail rather than a temporal event."
+  },
+  "early-detail-23": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about the immediate consequence of releasing the clamps despite a warning, and the passage explicitly states that power remained steady with no fault."
+  },
+  "early-detail-24": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a specific safety assessment communicated to Priya during the return to the Kestrel, which directly informs the choice of conduit-bracing materials."
+  },
+  "early-detail-25": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about a distinct obstacle-solving action, and the passage confirms that pulling the catch while pushing the cable bundle through the gap freed it."
+  },
+  "early-detail-26": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling whether anyone answered her offer to trade is a plausible, moment-specific question about an attempted interaction explicitly depicted in the passage."
+  },
+  "early-detail-27": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a relevant hazard encountered during a specific attempt to bypass the gas leak, and the passage explicitly states that moving the cables risked pulling on their connections."
+  },
+  "early-detail-28": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a story-relevant obstacle at a specific moment, and the passage explicitly shows escaping gas making the route unsafe after Juno calls twice for Dr. Brandt."
+  },
+  "early-detail-29": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "A player could plausibly recall where the proprietor put the slate containing the sold survey logs, and the location is specific to this transaction."
+  },
+  "early-detail-30": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The suggested salvage counters are a relevant lead tied to this exchange, but this is a detail question rather than a temporal question."
+  },
+  "early-detail-31": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the trader’s reaction to the plasma cutter is plausible and specific to this exchange, but the passage depicts noticing the tool and asking the question as one exchange rather than a distinct temporal event."
+  },
+  "early-detail-32": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the trader’s specific salvage lead, but the passage describes no actual return journey from the market to the pawnshop."
+  },
+  "early-vague-16": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The scrape marks are a relevant navigation clue leading to a specific maintenance hatch, and the passage depicts entering through the cut-open door."
+  },
+  "early-vague-17": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a specific alignment feature discovered during the coupling inspection that directly guided reconnecting the docking ring’s power."
+  },
+  "early-vague-18": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts restoring power to the docking ring and a subsequent diagnostic warning to avoid repeated clamp cycles, a specific operational clue relevant to the player's next actions."
+  },
+  "early-vague-19": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a story-relevant diagnostic check explicitly depicted in the passage, where the clamp display showed no connection to the closed transfer hatch."
+  },
+  "early-vague-20": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts the return to the tug for bracing supplies and a specific warning to Priya about an unsafe brace, making this a plausible and moment-specific recollection."
+  },
+  "early-vague-21": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a story-relevant obstacle-solving action unique to this moment, and the passage explicitly depicts Juno freeing the catch after reaching it from the edge of the gas stream."
+  },
+  "early-vague-22": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the outcome of a specific attempt to find a trading partner, and the passage explicitly depicts the call receiving no reply and attracting no one."
+  },
+  "early-vague-23": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a meaningful hazard avoided during this specific search, and the passage explicitly depicts Juno searching without entering the gas stream."
+  },
+  "early-vague-24": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a practical search for usable parts, and the passage explicitly depicts Juno climbing back down to inspect the drone and finding none."
+  },
+  "early-vague-25": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a consequential route hazard, and the passage explicitly depicts Juno calling twice beside the open panel while escaping gas makes the route unsafe."
+  },
+  "early-vague-26": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks how payment was handed over in a specific sale, and the passage explicitly depicts accepting the offer and receiving 180 credits across the counter."
+  },
+  "early-vague-27": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls an actionable lead, and the passage explicitly shows the proprietor suggesting the salvage counters when asked about buyers."
+  },
+  "early-vague-28": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a practical trading requirement explicitly stated during Juno’s browsing of the salvage stalls after leaving the pawnshop."
+  },
+  "early-vague-29": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks the player to recall their next inquiry after a specific failed trade, and the passage explicitly shows them approaching another trader about potential salvage sources."
+  },
+  "early-vague-30": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the proprietor’s refusal to broker introductions during the depicted request for survey-log buyers after Juno returned from the salvage stalls."
+  },
+  "late-detail-21": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the proprietor’s refusal to broker introductions is story-relevant and specific, but this is a detail question, not a temporal question."
+  },
+  "late-detail-22": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a story-relevant accusation explicitly made during this confrontation after the guard caught Juno handling the conduit."
+  },
+  "late-detail-23": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a concrete alternative the guard offered at this checkpoint, a story-relevant choice explicitly stated in the passage."
+  },
+  "late-detail-24": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling which belt lanes were avoided is a plausible navigation detail specific to this trip, but the passage does not establish that this was the first flight to the platform."
+  },
+  "late-detail-25": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the outcome of a specific search for signals that might reveal the beacon’s origin, and the passage explicitly states that no second transmission or device response was detected."
+  },
+  "late-detail-26": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks the player to recall a specific, plot-relevant response about the missing slate’s buyer, and the passage explicitly supplies that response."
+  },
+  "late-detail-27": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question recalls the attendant’s specific condition for authorizing Priya’s release, a relevant decision point explicitly stated in the passage."
+  },
+  "late-detail-28": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling whether the inspection revealed a safe cut point is relevant to the player's next decision and is explicitly answered by this particular hatch inspection."
+  },
+  "late-vague-16": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the outcome of a specific scavenging attempt, and the passage explicitly depicts that search yielding no salvage or usable materials."
+  },
+  "late-vague-17": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling whether debris struck the hull is relevant to the ship’s safety, specific to this approach, and directly addressed in the passage."
+  },
+  "late-vague-18": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a consequential failed authorization attempt, and the passage explicitly shows the guard calling twice after receiving the comm code before refusing to issue credentials."
+  },
+  "late-vague-19": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The passage depicts Juno hailing nearby ships after searching the abandoned docks and offering salvage or credits, a specific trade proposal a player could plausibly want to recall."
+  },
+  "late-vague-20": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a specific navigation decision during the depicted flight to trace Odile’s beacon: avoiding the denser debris lanes."
+  },
+  "late-vague-21": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a story-relevant signal-tracing attempt, and the passage explicitly depicts checking several directions after leaving the platform without finding a stronger reading."
+  },
+  "late-vague-22": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the sale price of the missing slate is story-relevant and specific to this moment, which explicitly depicts the attempted examination beside the unpowered terminal."
+  },
+  "late-vague-23": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the proprietor’s specific response during the buyer inquiry, which confirmed that they remembered the sale but could not identify the buyer."
+  },
+  "late-vague-24": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the attendant’s stated reason for stopping the cutter’s use, and the passage explicitly depicts that exchange at the lockup."
+  },
+  "late-vague-25": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a consequential repair risk specific to Juno’s assessment of the unsecured conduit, which the passage explicitly depicts before she braces it."
+  },
+  "late-vague-26": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling whether the initial search beyond the cut hatch revealed traps is a plausible safety concern, and the passage explicitly depicts that search finding no visible trap devices or obstructions."
+  }
+}

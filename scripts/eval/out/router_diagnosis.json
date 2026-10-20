@@ -1,0 +1,290 @@
+{
+  "summary": {
+    "short_circuited_but_not_answerable": 32,
+    "short_circuited_and_answerable": 5,
+    "retrieved_and_answerable": 2,
+    "retrieved_and_not_answerable": 1
+  },
+  "rows": [
+    {
+      "qid": "0-verbatim",
+      "question": "Where is Ilya Renn's corpse discovered?",
+      "short_circuited": true,
+      "evidence": "Ilya Renn was found dead in the Saltmarket holding a black wax seal.",
+      "answerable": true
+    },
+    {
+      "qid": "0-paraphrase",
+      "question": "In which location is the body of Ilya Renn found?",
+      "short_circuited": true,
+      "evidence": "The scene of Ilya Renn's death.",
+      "answerable": true
+    },
+    {
+      "qid": "1-verbatim",
+      "question": "What does the shorter man hold during the confrontation?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "1-paraphrase",
+      "question": "What item is the shorter man gripping in the struggle?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "2-verbatim",
+      "question": "What did I retrieve after throwing a knife at the shorter man?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "2-paraphrase",
+      "question": "What did I obtain following my action of throwing a blade at the shorter man?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "3-verbatim",
+      "question": "What did I feel when I reached for Sister Elka's lifeless hand?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "3-paraphrase",
+      "question": "What did I sense when I extended my hand towards Sister Elka's dead palm?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "4-verbatim",
+      "question": "What does Mara Voss realize about Ilya's black wax seal during the confrontation?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "4-paraphrase",
+      "question": "What does Mara Voss discover regarding Ilya's black wax seal while facing Lord Casimir Vael?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "5-verbatim",
+      "question": "What happened to Jory when I shouted for him to escape?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "5-paraphrase",
+      "question": "What occurred to Jory when I called for him to flee?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "6-verbatim",
+      "question": "Did I feel the taller Vael pin my arms to the altar while Elka was dragged toward the doorway?",
+      "short_circuited": true,
+      "evidence": "The taller Vael pins Mara's arms to the altar while Elka is dragged toward the doorway.",
+      "answerable": true
+    },
+    {
+      "qid": "6-paraphrase",
+      "question": "Did I experience the taller Vael restraining my limbs to the altar as Elka was pulled toward the exit?",
+      "short_circuited": true,
+      "evidence": "The taller Vael pins Mara's arms to the altar while Elka is dragged toward the doorway.",
+      "answerable": true
+    },
+    {
+      "qid": "7-verbatim",
+      "question": "What happened when I collapsed onto the altar, blood pooling beneath me?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "7-paraphrase",
+      "question": "What occurred when I fell onto the altar, with blood gathering under me?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "8-verbatim",
+      "question": "What happened when I reached for the altar's edge in the Drowned Chapel?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "8-paraphrase",
+      "question": "What occurred as I grasped the altar's border in the Drowned Chapel?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "9-verbatim",
+      "question": "Did I try to kick Lord Casimir Vael and fail, leading to my injury?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "9-paraphrase",
+      "question": "Did I make an effort to strike Lord Casimir Vael and not succeed, causing my harm?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "10-verbatim",
+      "question": "What did I find in my coat and swing at the shorter Vael?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "10-paraphrase",
+      "question": "What did I discover in my jacket and strike at the shorter Vael?",
+      "short_circuited": false,
+      "evidence": "Mara Voss finds the cracked spyglass in her coat and swings it at the shorter Vael.",
+      "answerable": true
+    },
+    {
+      "qid": "11-verbatim",
+      "question": "Did a crossbow bolt from the shorter Vael strike me, causing injury?",
+      "short_circuited": true,
+      "evidence": "A crossbow bolt from the shorter Vael strikes Mara Voss, causing injury.",
+      "answerable": true
+    },
+    {
+      "qid": "11-paraphrase",
+      "question": "Did a bolt from the shorter Vael hit me, resulting in harm?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "12-verbatim",
+      "question": "What happened when Ilya Renn attempted to escape from Lord Casimir Vael?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "12-paraphrase",
+      "question": "What occurred when Ilya Renn tried to flee from the taller Casimir Vael?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "13-verbatim",
+      "question": "What did I do to Shorter Vael's forearm during the fight?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "13-paraphrase",
+      "question": "What action did I take against Shorter Vael's arm in the confrontation?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "14-verbatim",
+      "question": "What did I do after I kicked the blade away and snatched the cracked spyglass shard from Taller Vael?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "14-paraphrase",
+      "question": "What action did I take after I booted the weapon aside and seized the broken lens fragment from Taller Vael?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "15-verbatim",
+      "question": "Did I throw the shard at Lord Casimir Vael and injure his wrist?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "15-paraphrase",
+      "question": "Did I hurl the fragment at Lord Casimir Vael, causing harm to his wrist?",
+      "short_circuited": false,
+      "evidence": "Mara Voss throws the shard at Lord Casimir Vael, injuring his wrist.",
+      "answerable": true
+    },
+    {
+      "qid": "16-verbatim",
+      "question": "Did I try to escape through the collapsed side door in Drowned Chapel?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "16-paraphrase",
+      "question": "Did I make an effort to flee through the fallen entrance in the Drowned Chapel?",
+      "short_circuited": false,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "17-verbatim",
+      "question": "Did Shorter Vael shoot me with a crossbow bolt in Drowned Chapel?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "17-paraphrase",
+      "question": "Did Shorter Vael fire a crossbow projectile at me in the Drowned Chapel?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "18-verbatim",
+      "question": "What happened to Shorter Vael after I kicked him in Drowned Chapel?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "18-paraphrase",
+      "question": "What occurred to Shorter Vael following my strike in the Drowned Chapel?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "19-verbatim",
+      "question": "What did I use to fend off a Vael after injuring my hand?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    },
+    {
+      "qid": "19-paraphrase",
+      "question": "What item did I employ to defend myself against a Vael after hurting my hand?",
+      "short_circuited": true,
+      "evidence": "",
+      "answerable": false
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 import { createSession, updateSession } from '../../../../lib/sessionStore';
 import { DEFAULT_STORY_SETTING, PRESET_EXAMPLE_STATE, PRESET_EXAMPLE_CHAT } from '../../../../lib/constants';
-import { MemoryManager } from '../../../../lib/memoryManager';
+import { MemoryManager, ChatTurn } from '../../../../lib/memoryManager';
+import { describeError } from '../../../../lib/errors';
 export const maxDuration = 60;
 
 export async function POST(req: Request) {
@@ -40,14 +41,15 @@ export async function POST(req: Request) {
         }
 
         // 将生成的开场白压入系统记忆，让整个语境拥有起始锚点
-        await sessionData.memoryManager.addTurn({
+        const firstTurn: ChatTurn = {
             turn_id: 1,
             role: "assistant",
             text: firstPrompt
-        }, sessionData.currentState, sessionId);
+        };
+        await sessionData.memoryManager.addTurn(firstTurn, sessionData.currentState, sessionId);
 
         // [Redis] 保存！因为 createSession 里执行 updateSession 时第一段 prompt 还没压入。
-        await updateSession(sessionId, sessionData);
+        await updateSession(sessionId, sessionData, [firstTurn]);
 
         return NextResponse.json({
             sessionId,
@@ -55,7 +57,8 @@ export async function POST(req: Request) {
             currentState: sessionData.currentState,
             metadata: sessionData.metadata
         });
-    } catch (e: any) {
-        return NextResponse.json({ error: e.message }, { status: 500 });
+    } catch (e) {
+        console.error("[StoryStart] Failed to create session:", e);
+        return NextResponse.json({ error: describeError(e) }, { status: 500 });
     }
 }

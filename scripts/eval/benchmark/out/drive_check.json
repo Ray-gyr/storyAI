@@ -1,0 +1,751 @@
+{
+  "turns_per_rollout": 6,
+  "summary": {
+    "before": {
+      "new_development": "9/36",
+      "forward_ending": "6/36",
+      "crisis_ending": "0/36",
+      "median_words": 110
+    },
+    "after": {
+      "new_development": "33/36",
+      "forward_ending": "29/36",
+      "crisis_ending": "0/36",
+      "median_words": 110
+    }
+  },
+  "runs": [
+    {
+      "story": "dev",
+      "round": 100,
+      "variant": "before",
+      "turns": [
+        {
+          "action": "What can I do next?",
+          "response": "The trader has no buyer or contact for survey logs. The market has offered no lead, and Odile’s compass remains with Juno.\n\nShe can leave the stalls and return to the Kestrel, then resume salvage work to bring physical goods to a buyer. She can also pursue the Meridian-9 investigation by seeking out Brother Calix or Director Voren, or return to the station and continue looking for Dr. Brandt. The Kestrel is her next practical stop for supplies and a course.\n\nJuno stands among the counters with 680 credits and the brass compass. The route out of the market is open.",
+          "words": 101,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response offers previously established paths and confirms the market yielded no lead; it introduces no new information, opportunity, or consequence. The ending merely restates Juno’s location and available route, with no immediate danger."
+        },
+        {
+          "action": "Return to the Kestrel for supplies and a course.",
+          "response": "Juno leaves the market and returns to the Kestrel, docked at Port Halcyon. She checks the tug’s stores and secures her existing kit: the plasma cutter, portable O2 canister, and Odile’s brass compass. She confirms the life-support readout and hull status before settling into the pilot’s seat.\n\nShe sets a course back to Meridian-9, where the conduit remains under strain and the hydroponics passage is still blocked by venting gas. The Kestrel is ready to depart, but no additional supplies have been acquired. The departure controls are live beneath her hand.",
+          "words": 91,
+          "new_development": false,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "Juno returns to the Kestrel and sets a course, but the turn adds no new lead, opportunity, consequence, or other story development. The live departure controls offer a clear next action, and there is no immediate danger."
+        },
+        {
+          "action": "Set the departure controls to leave for Meridian-9.",
+          "response": "Juno confirms the plotted course and sets the departure controls. The Kestrel lifts clear of Port Halcyon’s berth and turns away from the dock traffic. She keeps the tug’s patched hull clear of the station’s outer structures as it accelerates onto the route to Meridian-9.\n\nThe trip across the debris belt takes the Kestrel back toward Tessaly’s blue cloud bands. Juno makes small course corrections around drifting wreckage. Meridian-9 appears ahead, rotating slowly against the gas giant’s clouds.\n\nThe Kestrel reaches the station’s docking ring. Its control display is lit, but the docking clamps are disengaged, and the transfer hatch remains closed with its pressure state unknown. Juno has arrived at Meridian-9. The ring controls and the station’s exterior are within reach.",
+          "words": 122,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The Kestrel reaches Meridian-9 and finds the docking clamps disengaged and the hatch pressure unknown, creating a new access problem to investigate. The controls and exterior offer a clear next step, but there is no immediate danger."
+        },
+        {
+          "action": "Check the docking controls for status and engagement options.",
+          "response": "Juno opens **DOCKING CLAMPS** on the ring display. The status confirms that the clamps are disengaged. A command to engage them is available.\n\nThe warning remains on-screen: **POWER CONDUIT UNDER MECHANICAL STRAIN — AVOID REPEATED CLAMP CYCLES**. The display reports no clamp fault. Engaging the clamps would cycle them again while the conduit is still under strain.\n\nThe Kestrel holds position beside the ring. The display waits on the clamp controls, with the engage command available.",
+          "words": 76,
+          "new_development": true,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The warning about mechanical strain adds actionable information that constrains the docking approach. The ending only reiterates the available clamp command and current position; it introduces no distinct next development or immediate danger."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "The safest next step is to leave the docking clamps disengaged. The ring display warns that the power conduit is under mechanical strain, and another clamp cycle could worsen it.\n\nJuno can return to the Kestrel and ask Priya to help find materials to brace the conduit, then inspect it again. The transfer hatch is still closed, with pressure unknown; the controls offer no way to diagnose or open it, so forcing it is not safe. The hydroponics passage remains unsafe because gas is venting across it.\n\nJuno stands at the ring controls beside the Kestrel. The clamp engage command is available, but the strain warning remains on the display.",
+          "words": 110,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "It offers safe next steps, but introduces no new lead, opportunity, consequence, or story development; the ending simply restates the clamp status. The strain warning is not an immediate crisis."
+        },
+        {
+          "action": "I'll return to the Kestrel and ask Priya for help.",
+          "response": "Juno leaves the ring controls and crosses back to the Kestrel. She finds Priya at the engineering station and asks for help with the conduit under strain near the coupling.\n\nPriya listens, then checks the repair supplies. “We came up empty before. The cargo bay frame might give us a rigid support, but taking part of it out could leave the cargo unsecured.” She looks toward the modular bay and pulls up its structural layout on the station display.\n\nThe docking clamps remain disengaged, and the conduit warning is still active. Priya can inspect the cargo bay frame for a removable support, but she waits for Juno’s decision.",
+          "words": 108,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "Priya identifies a possible rigid support in the cargo bay frame, though removing it could leave cargo unsecured, creating a new actionable option with a cost. The turn ends with Juno able to decide whether to inspect it; there is no immediate danger demanding a reaction."
+        }
+      ]
+    },
+    {
+      "story": "dev",
+      "round": 100,
+      "variant": "after",
+      "turns": [
+        {
+          "action": "What can I do next?",
+          "response": "Juno has no logs or salvage to sell, and the traders offer no contacts. She can leave the market and return to the Kestrel, check the port dispatch desk for paid recovery work, or spend some of her 680 credits on supplies before heading back into the debris belt.\n\nAt the market exit, a dock dispatcher pins up a new recovery notice: an abandoned cargo pod has been sighted near Port Halcyon’s outer traffic lanes. The listing gives no details about its contents, but names a payment for whoever brings it in.",
+          "words": 92,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The recovery notice introduces a new paid salvage opportunity with a specific location, giving Juno a lead to pursue. The turn ends with that opportunity, not an immediate danger."
+        },
+        {
+          "action": "Check the port dispatch desk for paid recovery work.",
+          "response": "Juno leaves the market stalls and crosses to the port dispatch desk. A dispatcher pulls up the recovery board and checks the outer-lane listings.\n\n“One job still open,” they say. “Cargo pod, registry stripped, drifting beyond the traffic beacons. No response from its beacon and no manifest on file. Bring it to the Halcyon intake berth, and the recovery fee is 240 credits.”\n\nThe listing marks the pod’s last position on a debris-belt chart. It is within the Kestrel’s range, but the approach route crosses a lane used by incoming freighters. The dispatcher leaves the job unassigned and turns the screen toward Juno.\n\n“Want me to reserve it for you?”",
+          "words": 110,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The dispatch desk turns the earlier sighting into a concrete paid recovery job, with a fee, location, and hazardous route. The dispatcher’s reservation question leaves Juno a clear next choice, but no immediate danger is unfolding."
+        },
+        {
+          "action": "Yes, please reserve the cargo pod recovery job for me.",
+          "response": "Juno confirms the reservation. The dispatcher enters her name on the recovery board and marks the cargo pod job **RESERVED — KESTREL**. The 240-credit fee will be paid after the pod reaches Halcyon’s intake berth and passes inspection.\n\nThe dispatcher sends the last reported coordinates to the Kestrel’s port channel. “Traffic control gives you one clear approach window,” they say, pointing to a time block on the screen. “Freighter traffic thickens in two hours. After that, the outer lane is restricted.”\n\nThe map shows the pod beyond the traffic beacons, with no manifest and no beacon response. The recovery slot is held for Juno, but the approach window is already counting down.",
+          "words": 112,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The reservation is confirmed, and traffic control adds a two-hour approach window before the lane is restricted, giving Juno a new deadline. The ending foregrounds that actionable countdown, but no immediate danger is underway."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "Juno can return to the Kestrel and launch for the pod, ask the dispatcher for a freighter-lane clearance update before departure, or buy supplies at Port Halcyon and risk losing part of the two-hour approach window.\n\nThe dispatcher taps the job map. A fresh, weak transponder return has appeared near the pod’s last reported position. It is intermittent, but gives Juno a tighter search area than the original coordinates. The approach window remains open for two hours.",
+          "words": 77,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The intermittent transponder is new information that narrows the search and gives Juno a concrete lead. The ending leaves her able to act on that lead, but the countdown is not immediate danger."
+        },
+        {
+          "action": "Ask the dispatcher for a freighter-lane clearance update before departure.",
+          "response": "Juno asks the dispatcher for an updated clearance before departure. They check the traffic board and compare the Kestrel’s launch slot with the freighter schedule.\n\n“Your approach corridor is clear for the next ninety minutes,” the dispatcher says. “Stay below the beacon line until traffic control confirms you can cross. The clearance expires when the next freighter enters the lane.”\n\nThey update the recovery job with the route restriction and send the clearance window to the Kestrel’s port channel. The cargo pod remains reserved to Juno, and its intermittent transponder return still marks the tighter search area. The dispatcher points to the new deadline on the board: Juno has ninety minutes to reach the outer lane.",
+          "words": 116,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The clearance update adds a concrete route restriction and a ninety-minute deadline, moving the search forward. The ending gives Juno a new time-sensitive goal, but no immediate danger is present."
+        },
+        {
+          "action": "I check the cargo pod's status and prepare for departure.",
+          "response": "Juno reviews the cargo pod listing on the Kestrel’s port channel. Its registry is stripped, the manifest is missing, and the transponder return remains intermittent. No hazard declaration is attached. She checks the tug’s life support and launch systems, secures the plasma cutter and portable O2 canister, and stows Odile’s compass before sealing the cabin for departure.\n\nA fresh telemetry packet arrives from the dispatcher. The pod is rotating slowly and drifting across the outer-lane search area, so its last fixed coordinates are already outdated. The packet includes a revised drift vector, giving Juno a moving intercept point. Her ninety-minute clearance window is still active.",
+          "words": 105,
+          "new_development": true,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The dispatcher’s telemetry provides a new drift vector and moving intercept point, advancing the search. The ending reiterates that the clearance window is active rather than closing on a distinct new hook, and there is no immediate danger."
+        }
+      ]
+    },
+    {
+      "story": "dev",
+      "round": 200,
+      "variant": "before",
+      "turns": [
+        {
+          "action": "Investigate the service passage where the beacon's pulse is strongest.",
+          "response": "Juno returns to the service passage and follows the receiver’s rising reading to the bend around the platform’s instruments. She checks the wall seams, the panel edges, and the frame around the beacon, looking for a branch or another signal source.\n\nThe pulse peaks beside the compact beacon. The narrow passage continues only around the instrument housings; there is no hidden junction or second device in view. The panel and its retaining bar sit where they did, with no new movement or sound behind them beyond the beacon’s regular relay click.\n\nThe receiver gives no bearing beyond the unit. Juno stands at the bend with the beacon transmitting beside her and the passage back to the service hatch open.",
+          "words": 119,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "Juno's search confirms the pulse comes from the beacon and finds no hidden source, but adds no lead, opportunity, or consequence. The ending restates her position and the open route back, with no immediate danger."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "The receiver has confirmed that the beacon is the only nearby transmitter, but it gives no bearing or destination. Juno can trace the beacon’s visible wiring and mounting to see what it is connected to, or carry the receiver around the platform’s exterior and check whether the signal changes with position. She can also leave the beacon transmitting and return to the Kestrel with what she has learned.\n\nThe service hatch is open, the receiver is in her hand, and the beacon continues to pulse at the bend.",
+          "words": 88,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response offers several possible next actions, but introduces no new lead, event, or consequence beyond confirming the beacon is the only nearby transmitter. It ends by restating the current situation, with no immediate danger."
+        },
+        {
+          "action": "Trace the beacon’s visible wiring and mounting.",
+          "response": "Juno follows the visible wiring from the relay to the beacon’s contact board. The short run stays inside the casing. She checks the casing seams and finds no cable or conduit leaving the unit.\n\nShe examines the beacon’s mounting. Two fasteners hold it against the platform’s internal frame. The frame carries no visible label or separate connection at the mount, and the wiring shows no added splice or alteration. The beacon is fixed to the skimmer structure, but its power and signal path do not continue outside the casing where she can see them.\n\nThe relay keeps clicking, and the receiver’s reading remains strongest beside the unit. Juno has traced every exposed connection; the closed casing and mounting fasteners are the only parts left to inspect.",
+          "words": 126,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "Juno learns the beacon has no exposed external wiring or altered connection, narrowing what could be driving it, but this is a modest investigative finding rather than a new story development. The ending only summarizes the remaining hardware to inspect; it introduces no new actionable hook or immediate danger."
+        },
+        {
+          "action": "Examine the mounting fasteners more closely for signs of tampering.",
+          "response": "Juno brings the receiver’s light close to the two fasteners and checks their heads and the metal around them. Both sit flush against the beacon’s mounting flange. Their slots show ordinary tool marks, but no fresh scoring, stripped edges, or signs that either fastener has been forced.\n\nShe checks the frame beneath each point. The metal is intact, with no pry marks or disturbed coating around the mount. The beacon appears firmly attached to the skimmer frame and shows no visible sign of recent removal or tampering.\n\nThe relay continues its regular clicks. The receiver still reads strongest beside the beacon, and the fasteners reveal no connection beyond the frame. Juno is left beside the secured unit, with its casing closed and the receiver tuned.",
+          "words": 125,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The inspection finds no tampering and only confirms what Juno already knew about the beacon; the relay and receiver readings remain unchanged. The ending leaves her with no new lead, opportunity, or immediate danger to respond to."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "Juno has checked the exposed wiring and the mount. Nothing shows tampering, and the receiver still offers no bearing. She can stop here and return to the Kestrel with the result, or take a closer risk by removing the beacon’s fasteners and inspecting the frame behind it. The second option could reveal a concealed connection, but it would leave the beacon unsecured and might interrupt its transmission.\n\nThe service hatch remains open. The beacon is still fixed to the frame, clicking steadily beside Juno. The receiver is in her hand, and the two fasteners are within reach.",
+          "words": 97,
+          "new_development": true,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "It offers a new investigative option—removing the fasteners to inspect behind the beacon—with a stated risk, so it moves the story forward. The ending only restates the current setup, and there is no immediate danger."
+        },
+        {
+          "action": "Remove the beacon’s fasteners and inspect the frame behind it.",
+          "response": "Juno braces the beacon with one hand and tries to turn the first fastener by its slotted head with her fingertips. It does not move. She tests the second; it holds just as firmly. The fasteners sit flush and offer no edge to grip, and she has no hand tool with her that fits the slots.\n\nShe does not force them. The beacon remains secured to the frame, its status light pulsing and relay clicking steadily. The frame behind it is still concealed, and the receiver continues to register the strongest signal beside the unit.\n\nJuno stands at the mount with the fasteners untouched. Her plasma cutter is secured against her suit, but using it here could damage the beacon or the frame.",
+          "words": 123,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The fasteners won’t budge without a tool, and the narration identifies the plasma cutter as a risky alternative, giving Juno a new option to pursue. The ending leaves that choice open, but presents no immediate danger."
+        }
+      ]
+    },
+    {
+      "story": "dev",
+      "round": 200,
+      "variant": "after",
+      "turns": [
+        {
+          "action": "Investigate the area near the active beacon in the service passage.",
+          "response": "Juno checks the frame around the beacon, tracing its mounting bracket and the service lines nearby. The lines belong to the skimmer’s own instruments; none connects to the beacon. She finds no hidden receiver or second transmitter.\n\nUnder the bracket, a thin metal inventory tag is partly trapped against the frame. Juno eases its edge free enough to read the stamped code: **M-9 / SURVEY RELAY**. The tag is separate from the beacon casing and appears to identify the bracket assembly, not the unit itself.\n\nThe beacon keeps pulsing above it. The marking ties the installation hardware to Meridian-9, giving Juno a concrete link to investigate.",
+          "words": 106,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The inventory tag reveals a concrete Meridian-9 connection, giving Juno a new lead beyond simply inspecting the beacon. The ending leaves that link open to investigate, but introduces no immediate danger."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "The stamped **M-9 / SURVEY RELAY** code gives Juno a lead tied to Meridian-9. She can:\n\n- Search the skimmer’s maintenance records for the relay bracket’s inventory entry.\n- Return to the Kestrel and ask Priya to compare the code with the tug’s salvage records or diagnostic tools.\n- Trace the beacon’s mounting points and nearby service lines farther through the platform, looking for a physical connection or route to the relay.\n\nThe beacon keeps transmitting in the service passage.",
+          "words": 80,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response gives Juno several actionable ways to follow the Meridian-9 lead, creating opportunities for the player to pursue. The final sentence only restates that the beacon is transmitting, and there is no immediate danger."
+        },
+        {
+          "action": "Search the skimmer’s maintenance records for the relay bracket’s inventory entry.",
+          "response": "Juno opens the skimmer’s maintenance archive and searches the inventory code stamped on the tag. The system returns a service entry for a **survey relay mounting bracket**, listed as recovered from Meridian-9 and fitted to the platform during a later repair.\n\nThe entry does not identify the beacon itself. A note says the bracket was removed from the station’s **outer survey spine**, but the recovery record has no coordinates or crew name. The skimmer’s own maintenance logs contain no further details.\n\nJuno copies the entry onto the receiver’s display. The beacon continues its steady transmission behind her; the archive points back to Meridian-9’s outer survey spine.",
+          "words": 106,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The archive reveals the bracket came from Meridian-9’s outer survey spine, giving Juno a new location to investigate. The ending leaves that lead available to pursue, with no immediate danger."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "The archive leaves Juno with three routes: she can search the platform’s maintenance index for more records on the recovered bracket, inspect the beacon’s mounting points for a physical route to the survey relay, or return to the Kestrel and ask Priya to help plot a course to Meridian-9’s outer survey spine.\n\nAs she closes the inventory entry, a maintenance notice appears on the terminal: **LOCAL ARCHIVE CACHE CLEARS AT NEXT POWER CYCLE.** The notice gives no time estimate. The skimmer instruments remain active, and the beacon continues transmitting from the service passage.",
+          "words": 93,
+          "new_development": true,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The cache-clearing notice introduces a new consequence and a time-sensitive reason to act, so the turn moves the story forward. However, the final sentence settles back on the ongoing beacon transmission rather than ending on a fresh actionable hook; no immediate danger is present."
+        },
+        {
+          "action": "Inspect the beacon’s mounting points for a physical route to the survey relay.",
+          "response": "Juno braces herself beside the beacon and examines each mounting point. The bracket is bolted to the platform frame. A short cable bundle runs from the beacon into the frame, but it carries only local power; she finds no route continuing toward the skimmer’s instruments.\n\nBehind the lower edge of the bracket, she finds a capped fiber socket set into the old metal. Its stamped label reads **M-9 / SS-04**. The cap is dusty, and the socket is not connected to the beacon. The marking matches the Meridian-9 survey-spine reference in the maintenance entry, but the port alone does not show where the original line ran.\n\nJuno has found a physical interface from the bracket’s former installation. The fiber socket remains capped beside the active beacon.",
+          "words": 126,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The stamped M-9 / SS-04 fiber socket is new information that links the beacon mount to Meridian-9’s survey spine and offers a lead. The ending merely restates that the socket is capped beside the beacon, rather than closing on a distinct prompt or development; there is no immediate danger."
+        },
+        {
+          "action": "Examine the capped fiber socket more closely.",
+          "response": "Juno steadies the bracket and turns the socket’s cap counterclockwise. It comes free without resistance. Beneath it, a recessed optical connector sits behind a clear dust seal. The contact face is intact, with no cable attached and no visible damage.\n\nShe angles her lamp across the socket rim. A small engraving reads **OPTICAL BUS — SS-04 — OUTBOUND**. The port is not part of the beacon’s power feed. It was intended to carry data away from the survey-spine bracket, but there is no line connected to it now.\n\nThe capped socket offers no signal by itself. Its outbound label points to the Meridian-9 survey relay’s optical bus.",
+          "words": 107,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The engraving identifies the socket as an outbound optical data port and links it to the Meridian-9 survey relay, giving Juno a new lead to pursue. The turn ends on that actionable connection, with no immediate danger."
+        }
+      ]
+    },
+    {
+      "story": "dev",
+      "round": 300,
+      "variant": "before",
+      "turns": [
+        {
+          "action": "What can I do next?",
+          "response": "Juno stands in the reactor spine with the suit light on the bare wall. The passage ahead continues into darkness, but the scanner shows no life signs or active equipment. She can keep advancing and inspect the next stretch, though the search so far has revealed no route or power source.\n\nShe can also turn back toward the reactor approach and check the dark control panel again, or retrace her route to another accessible part of Meridian-9. Returning to the Kestrel would let her search for tools or supplies, but would mean leaving the station for now.\n\nThe comm still carries only static. The way back is visible behind her; the corridor ahead disappears beyond the light.",
+          "words": 117,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response offers possible next actions but introduces no new lead, opportunity, consequence, or change in the situation. It ends by restating the corridor and comm status, with no immediate danger."
+        },
+        {
+          "action": "Inspect the dark control panel again.",
+          "response": "Juno turns back along the reactor spine, keeping her suit light on the sealed access points. The corridor remains silent. Her scanner shows no life signs or active equipment, and the comm carries only static.\n\nAt the reactor approach, she examines the control panel again. She checks its edges and presses the controls, but the display stays dark. No status report appears, and the panel gives no response. The nearby access points remain unlit. She finds no visible power connection or manual control.\n\nJuno stands beside the dead panel. The passage beyond it remains dark, and she has no local power source to restore the controls.",
+          "words": 106,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "Juno repeats the inspection and confirms the panel is still dead, but gains no new clue, lead, or consequence. The ending restates the blocked situation without a new hook or immediate danger."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "The reactor control panel remains dark, and Juno has found no local power source or manual override. She can leave the reactor spine and search another part of Meridian-9 for a power supply, return to the core laboratory and look for another way to revive its terminal, or head back to the Kestrel for tools and materials.\n\nThe passage behind her leads back toward the reactor approach. Her comm still carries only static, and no signs of Odile appear on the suit scanner. Juno stands beside the unresponsive panel, with the dark route back open.",
+          "words": 95,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "It gives Juno possible next actions in response to the question, but introduces no new lead, opportunity, or development beyond the existing situation. The ending simply restates that the panel is dead and the route back is open, with no immediate danger."
+        },
+        {
+          "action": "Search another part of Meridian-9 for a power supply.",
+          "response": "Juno leaves the reactor spine and follows the station passage to the hydroponics deck. She keeps clear of the breach in the sealed bulkhead; gas continues to vent through it, making the route beyond unsafe.\n\nShe searches the accessible section, sweeping her suit light over the walls, equipment, and cable bundle. The compact survey drone remains trapped beside the bundle, inert, with its rotor damaged. Juno finds no battery, power pack, or usable supply connection. The deck’s equipment is dark, and nothing gives a sign of active power.\n\nShe stops short of the gas-filled passage. The drone and cable bundle are within reach, but the route beyond the breach remains unsafe.",
+          "words": 111,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The search finds no power source, but surfaces the damaged drone and reachable cable bundle as possible things to investigate next. The ending offers those actionable objects, without immediate danger beyond the already-present unsafe route."
+        },
+        {
+          "action": "Inspect the damaged survey drone for any useful parts.",
+          "response": "Juno climbs down through the open panel to the grated platform. The compact survey drone rests beside the cable bundle, free of the cables. Its casing is intact, but one rotor arm is sharply bent and the status lamp remains dark.\n\nShe checks the frame and accessible connections for loose components. Nothing has come free, and the casing offers no removable part she can use without damaging the unit. The drone remains inert; she finds no useful salvage on it.\n\nJuno leaves it on the platform and looks up toward the hydroponics deck. The ladder is clear. Above, the breach still vents gas into the passage, blocking the route beyond.",
+          "words": 110,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "Juno confirms the drone has no usable parts, but this is only the result of the requested inspection and adds no story-moving lead or consequence. The ending restates the blocked route, with no new prompt to pursue or immediate danger demanding a response."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "Juno is on the grated platform below the hydroponics deck. The survey drone has no useful loose parts, and the gas vent still makes the passage beyond the breach unsafe.\n\nShe can climb back up and search another accessible section of Meridian-9 for a battery or power connection. She can return to the reactor spine and continue checking for a way to power its control panel, though she found no source there. Or she can head back to the Kestrel and search for tools or supplies before trying again.\n\nThe ladder leads up to the open panel. The gas-filled passage remains beyond it, out of reach.",
+          "words": 106,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response lists possible next actions but introduces no new lead, opportunity, consequence, or other story development. It ends by restating the known access barrier, with no immediate danger."
+        }
+      ]
+    },
+    {
+      "story": "dev",
+      "round": 300,
+      "variant": "after",
+      "turns": [
+        {
+          "action": "What can I do next?",
+          "response": "Juno stands in the dark reactor spine, her light on the sealed access points. Her suit scanner gives a brief electrical reading from one panel behind her: a weak pulse, gone before the display can locate its source more precisely. It is the first sign of current she has registered here.\n\nShe could return to that panel and inspect its seams for a service connection. She could continue farther down the spine to look for another power source. Or she could head back to the Kestrel and bring a tool or power supply for the reactor controls.",
+          "words": 97,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The brief electrical pulse is new evidence and gives Juno a concrete lead to investigate. The response ends with actionable options, but no immediate danger is present."
+        },
+        {
+          "action": "Inspect the seams of the panel for a service connection.",
+          "response": "Juno turns back to the access panel and moves her suit light across its perimeter. She checks each seam with her gloved fingertips, then presses along the lower edge. The panel does not shift.\n\nAt the side, beneath a strip of grime, she finds a narrow service socket with two recessed contacts. Faded lettering beside it reads **AUX POWER / DIAGNOSTIC**. The socket is intact, but her suit scanner shows no voltage at the contacts. The panel itself has no latch or manual release.\n\nThe weak electrical pulse registers again, briefly. This time the scanner places it beyond the panel, deeper in the wall toward the reactor spine’s far end.",
+          "words": 110,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "Juno finds an intact auxiliary diagnostic socket and localizes the intermittent pulse deeper in the wall, giving her a concrete lead toward the power source. The ending points to something she can investigate next; no immediate danger arises."
+        },
+        {
+          "action": "Investigate the weak electrical pulse deeper in the wall.",
+          "response": "Juno follows the scanner’s intermittent reading along the wall, moving her suit light over the metal cladding. The pulse fades, returns, then grows stronger near a section of wall beside the next sealed access point.\n\nShe checks the seams and finds a rectangular maintenance cover, flush with the wall. Its stenciled label reads **AUXILIARY BUS — REACTOR CONTROL**. Four fasteners hold it in place. The scanner registers a weak, irregular voltage behind the cover, but the panel has no external socket or release.\n\nThe pulse cuts out again. Juno places her hand against the cover; it remains fixed. The fasteners are accessible with a tool.",
+          "words": 105,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "Juno localizes the weak voltage to a newly discovered auxiliary-bus maintenance cover, giving her a concrete lead toward a power source. The ending leaves an actionable next step—using a tool on the accessible fasteners—without immediate danger."
+        },
+        {
+          "action": "Search my tools for a suitable one to remove the fasteners.",
+          "response": "Juno checks the equipment secured to her suit. The plasma cutter is the only tool she has that can remove the fasteners. Her structural braces cannot grip or turn them.\n\nShe brings the cutter close without activating it and checks the narrow gap around the cover. The fasteners are exposed, but the weak voltage is directly behind the metal. Cutting them could heat the cover and damage the auxiliary bus or the wiring behind it.\n\nThe scanner registers another irregular pulse through the panel. The cutter can free the cover, but it is not a safe way to do so. Juno has no hand tool suited to the fasteners.",
+          "words": 109,
+          "new_development": true,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The search reveals that the plasma cutter is the only available tool and could damage the energized bus, creating a meaningful risk-and-choice beyond simply finding a tool. The ending leaves Juno with a concrete option to pursue, but no immediate danger demands action."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "Juno keeps the cutter clear of the cover and watches the scanner. The weak voltage returns in three short pulses, pauses, then repeats. The source is still behind the **AUXILIARY BUS — REACTOR CONTROL** cover, but the repeated signal confirms that some part of the circuit is cycling.\n\nShe can return to the Kestrel for a hand tool and open the cover without heating the wiring. She can trace the auxiliary bus farther along the wall to look for an accessible connection. Or she can use the plasma cutter on the fasteners, accepting the risk of damaging the bus and losing the only power source she has found.",
+          "words": 108,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The repeating three-pulse pattern adds information that the circuit is cycling, and the response offers concrete next steps. It ends with choices to pursue, not immediate danger."
+        },
+        {
+          "action": "Return to the Kestrel for a hand tool.",
+          "response": "Juno leaves the maintenance cover untouched and retraces the reactor spine to the docking ring. She crosses to the Kestrel and cycles through the airlock. The trip costs time, but her suit readings remain steady.\n\nIn the engineering bay, she checks the tool rack beside the reactor service panel. Priya’s insulated hand tools are still stowed there. Juno selects a compact driver with a narrow head, suitable for the cover’s fasteners, and clips it to her suit.\n\nThe tool is ready. The auxiliary-bus cover remains secured in Meridian-9, with the weak voltage pulsing behind it.",
+          "words": 95,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "Juno retrieves the needed tool, but nothing new develops beyond making the already-planned cover opening possible. The ending restates the current situation rather than presenting a new lead or actionable complication, and there is no immediate danger."
+        }
+      ]
+    },
+    {
+      "story": "test",
+      "round": 100,
+      "variant": "before",
+      "turns": [
+        {
+          "action": "What can I do next?",
+          "response": "Sabeth is testing the ash ahead with her staff. The lead wagon waits behind her, and the other teams remain in line on the ground she has checked.\n\nYou can hold the caravan while Sabeth examines more of the track, ask her how far the safe ground extends, or signal the lead driver to follow once she gives the all-clear. You can also check that Wren and the water skins remain secure before the wagons move again.\n\nSabeth taps the ash near the track’s edge, then presses her staff into the center. The driver keeps the reins still and looks to you for direction.",
+          "words": 104,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response restates the caravan’s pause and offers possible actions, but introduces no new lead, consequence, opportunity, or other story development. It ends with the driver awaiting direction rather than a new event, and there is no immediate danger."
+        },
+        {
+          "action": "Ask Sabeth how far the safe ground extends.",
+          "response": "Tamsin asks Sabeth how far the safe ground extends.\n\nSabeth keeps her staff pressed to the ash. “Only as far as I have tested it,” she says. She taps the ground ahead, then moves a few paces along the track, testing each patch before stepping onto it. “The next part must be checked as we go. Do not let the wagons pass my steps.”\n\nThe lead driver holds the wagon still. The other teams remain in line behind him. Sabeth continues testing the ground ahead, and the caravan waits for Tamsin’s signal.",
+          "words": 92,
+          "new_development": true,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "Sabeth reveals that safe ground extends only as far as she has tested and instructs the caravan not to pass her steps, giving Tamsin actionable new information. The ending merely leaves the caravan waiting for a signal, with no fresh prompt or immediate danger."
+        },
+        {
+          "action": "I signal the lead driver to hold the wagons steady.",
+          "response": "Tamsin raises her hand to the lead driver. He keeps the wagon steady, reins held, wheels fixed on the tested track. The drivers behind him maintain their places and do not let the line bunch against the lead wagon.\n\nSabeth continues along the ash path, pressing her staff into the ground ahead and testing each patch before she steps onto it. She stays within sight of the caravan. No warning gesture comes, and she does not wave the wagons forward.\n\nThe water skins remain secured among the supplies. The teams stand quietly while Sabeth checks the next few paces. She pauses at a shallow dip and lowers her staff to test the ground there. The wagons remain halted behind her, waiting for her assessment.",
+          "words": 124,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The wagons hold as signaled, while Sabeth continues the already-established ground check; the shallow dip adds no meaningful lead or consequence. The ending only restates that the caravan is waiting, with no immediate danger."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "Sabeth is testing the shallow dip with her staff. The wagons are halted on the ground she has already checked, and the drivers are waiting for your signal.\n\nYou can keep the wagons still while she examines the dip, ask whether it is safe to cross, or tell the lead driver to follow only after Sabeth gives the all-clear. You could also have Wren check the supplies and water skins while the caravan waits.\n\nSabeth presses her staff into the ash again, then pauses to feel how the ground holds. The lead driver keeps the reins steady. The caravan remains in place, awaiting your direction.",
+          "words": 105,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response offers possible actions but introduces no new information, opportunity, or consequence; it ends with the caravan still waiting as before. There is no immediate danger."
+        },
+        {
+          "action": "Ask whether it is safe to cross.",
+          "response": "Tamsin asks Sabeth whether the shallow dip is safe to cross.\n\nSabeth presses her staff into the ash near the center, then tests the ground on either side of the track. She steps into the dip and shifts her weight. The surface holds. She taps the far side before taking another step, checking the ground where the lead wagon’s wheels will pass.\n\n“This line will hold,” she says. “Bring the wagon slowly through the center. Keep to my steps. Do not let the wheels drift toward the edges.”\n\nThe lead driver remains at the reins, waiting. The other wagons stay halted behind him on the tested track. Sabeth stands beyond the dip, staff angled toward the line she checked. The lead wagon is ready to cross when Tamsin signals.",
+          "words": 129,
+          "new_development": true,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "Sabeth confirms the dip is passable and gives a specific safe route, adding actionable information that advances the crossing. The final paragraph returns to the wagon waiting for Tamsin’s signal rather than ending on a new development, and there is no immediate danger."
+        },
+        {
+          "action": "I signal the lead driver to cross the dip slowly.",
+          "response": "Tamsin signals the lead driver. He eases the wagon forward, guiding its wheels into the center of the dip and along the line Sabeth tested. The wheels descend over the shallow slope. The wagon rocks once, then climbs the far side without slipping or sinking.\n\nSabeth waits beyond the dip and tests the ash ahead with her staff. The lead driver brings the wagon to a halt beside her, keeping it on the checked track. The remaining wagons stay in line behind, their teams steady.\n\nThe dip holds beneath the lead wagon. Sabeth turns toward the caravan and taps the ground ahead, preparing to test the next stretch. The lead driver waits for Tamsin’s next signal.",
+          "words": 116,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The wagon crosses safely, resolving Tamsin’s signal, while Sabeth simply resumes the already-established task of checking the ground ahead. The ending leaves the caravan waiting for the next signal, with no new lead, development, or immediate danger."
+        }
+      ]
+    },
+    {
+      "story": "test",
+      "round": 100,
+      "variant": "after",
+      "turns": [
+        {
+          "action": "What can I do next?",
+          "response": "Sabeth tests the ash ahead, pressing her staff into the center of the track and then near its edge. The center holds. At the edge, the staff sinks several inches into a patch of loose ash.\n\n“Keep the wheels in the middle,” she says. “The edge will take a wagon.”\n\nThe lead driver waits behind her, reins drawn tight. The tested line continues forward, narrow but passable. You can signal the driver to follow Sabeth’s steps, ask her to test farther ahead before the wagon moves, or have the drivers check the rear wagons’ spacing so they can stay on the same line.",
+          "words": 103,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "Sabeth discovers that the track’s edge can swallow a wagon, adding a concrete hazard and guidance for the crossing. The ending offers actionable next choices, but no immediate crisis is underway."
+        },
+        {
+          "action": "Signal the driver to follow Sabeth's steps.",
+          "response": "Tamsin signals the lead driver to follow Sabeth’s steps. He guides the wagon along the firm center of the track, keeping its wheels clear of the loose ash at the edge. Sabeth walks ahead, testing each patch with her staff. The wagon crosses without slipping, and the following drivers hold their spacing as they enter the narrow section.\n\nOnce the last wagon reaches firm ground, Sabeth stops. She crouches and runs her fingers over a set of shallow marks pressed into the ash beyond the track. “These are fresh,” she says. The marks run parallel to the caravan’s path, then turn toward a low bank ahead. Sabeth does not move on. She points her staff toward the tracks and waits for Tamsin’s decision.",
+          "words": 123,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The caravan safely crosses the ash, and Sabeth discovers fresh tracks turning toward a bank, creating a new lead and a decision for Tamsin. The ending invites a response but presents no immediate danger."
+        },
+        {
+          "action": "Examine the shallow marks in the ash more closely.",
+          "response": "Tamsin crouches beside Sabeth and studies the marks without stepping on them. They are bootprints, one set, pressed lightly into the ash. The tread is worn smooth at the toe, but a narrow heel cut repeats clearly. The prints run parallel to the caravan’s track, keeping to the bank’s shadow, then angle up toward a break in the low ridge.\n\nTamsin follows them with her eyes. The ash at the break is scuffed where someone climbed, and loose grains have fallen onto the track below. The prints do not return.\n\nSabeth keeps her staff pointed toward the ridge. The caravan waits behind Tamsin, its wheels on the tested ground. From the break in the bank, a strip of dark cloth hangs caught on a sharp stone.",
+          "words": 126,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The examination reveals a single set of tracks leading up the ridge and a strip of dark cloth caught there, giving Tamsin a concrete lead to investigate. The ending offers a new point of interest, but no immediate danger is closing in."
+        },
+        {
+          "action": "Examine the strip of dark cloth caught on the stone.",
+          "response": "Tamsin approaches the stone without stepping on the bootprints and lifts the cloth free. It is a torn strip of dark wool, snagged at the edge of a cloak or coat. The tear is fresh; pale fibers show beneath the dark weave. Ash clings to one side, and a smear of grit marks the other, as if the wearer brushed against the bank while climbing.\n\nA short length of red thread is stitched along one edge, carefully placed rather than part of a repair. Tamsin turns the strip over. There is no badge or name, but the thread forms a small double knot.\n\nSabeth touches the stone with her staff. “Someone left a sign,” she says. The bootprints lead toward the ridge break, where the same red thread is tied around a thorn bush.",
+          "words": 134,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The cloth reveals a deliberate red-thread marker matching another sign farther along the ridge, giving Tamsin a new lead to investigate. The ending points to a specific clue, but introduces no immediate danger."
+        },
+        {
+          "action": "Follow the bootprints toward the ridge break.",
+          "response": "Tamsin follows the bootprints toward the ridge break, placing her feet beside them rather than on top of them. The climb is steep but short. At the top, she crouches behind the bank and looks down the far side.\n\nThe prints continue along a shallow shelf, then stop beside a flat stone. Ash has been brushed from its surface in a narrow strip. From there, the track ahead is visible, including the caravan’s position below. Whoever climbed here had a clear view of the wagons.\n\nTamsin checks the ground around the stone. The prints turn away from the route and descend into a crease in the ridge, partly hidden from below. A fresh heel mark sits at the start of the descent. Behind her, Sabeth calls from the track, asking whether she has found anything.",
+          "words": 135,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The prints reveal someone watched the caravan from the ridge before turning into a concealed descent, giving Tamsin a fresh lead. Sabeth’s call ends on an immediate prompt for Tamsin to answer; there is no immediate danger."
+        },
+        {
+          "action": "I will check the flat stone for any clues or items.",
+          "response": "Tamsin checks the flat stone’s edges, then lifts it carefully. A folded scrap of oiled paper is wedged underneath. She opens it against the stone.\n\nThe paper shows the caravan’s track through the ash and the low ridge. A small cross marks the lookout point where she stands. Farther ahead, a double knot in red ink marks a narrow passage beside the bank. The route is sketched with enough detail to show where the ground rises and where the track tightens.\n\nThe sketch does not name its maker. Its lines are fresh, and the red mark matches the thread on the torn cloth. Below the ridge, Sabeth calls again from the wagon line. The marked passage lies ahead of the caravan.",
+          "words": 121,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The paper reveals a fresh, marked route that matches the torn cloth, giving Tamsin a concrete lead ahead of the caravan. The ending points to a passage she can investigate or respond to, but presents no immediate danger."
+        }
+      ]
+    },
+    {
+      "story": "test",
+      "round": 200,
+      "variant": "before",
+      "turns": [
+        {
+          "action": "What can I do next?",
+          "response": "Tamsin can keep the caravan moving at Wren’s slower pace toward Saint Aurel, conserving the last few sips and watching for the monastery walls. She can consult the Hand-drawn Map of the Wastes for a marked water source or safer route, though none has been identified nearby. She can also halt to let the horses and weakened driver rest, but the Ash Ground offers no shade or water.\n\nBonebridge canyon lies behind, and reaching it would mean turning back. The caravan is still moving, the remaining water is tied shut, and Wren is waiting to know whether to hold the slower pace or change course.",
+          "words": 105,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response offers routine travel choices but introduces no new lead, opportunity, consequence, or development related to catching Ferro. It ends by restating the caravan’s situation and asking for a pace or course decision, not with a new hook or immediate danger."
+        },
+        {
+          "action": "Keep the caravan moving at Wren’s slower pace toward Saint Aurel.",
+          "response": "Tamsin signals Wren to keep the slower pace toward Saint Aurel. Wren holds the reins steady, and the other drivers keep their wagons in formation behind her.\n\nThe horses pull with rough, even breaths. Their harnesses stay steady, without the jolts of the faster pace. The weakened driver remains seated beside Wren, resting against the wagon. The water skin with a few sips left stays tied shut, and the empty skin hangs beside it.\n\nTamsin keeps pace near the lead wagon and watches the open ground ahead. The Ash Ground remains bare. No shade or water appears, and Saint Aurel’s walls are not yet visible. The caravan continues at the slower pace, with Wren watching the team and awaiting any change in direction.",
+          "words": 123,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The caravan follows Tamsin’s chosen slower pace, but the narration adds no new lead, opportunity, consequence, or other story development. It ends by restating the current situation rather than presenting something new to pursue, and there is no immediate danger demanding a reaction."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "Tamsin can keep the caravan at Wren’s slower pace and watch for Saint Aurel’s walls. She can consult the Hand-drawn Map of the Wastes for a marked route or water source, though none has appeared nearby. She can ask Wren to check the horses and the weakened driver while they continue, or call a brief halt to let them rest. There is no shade or water visible on the Ash Ground, and Bonebridge canyon lies behind the caravan.\n\nThe remaining water is limited to a few sips in one skin; the other is empty. Wren holds the team at a steady pull, and the wagons remain together. The drivers await Tamsin’s next direction.",
+          "words": 113,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response offers possible actions but introduces no new lead, opportunity, consequence, or other story development. It ends by restating the caravan’s current situation and awaiting direction, with no immediate danger."
+        },
+        {
+          "action": "Consult the Hand-drawn Map of the Wastes for guidance.",
+          "response": "Tamsin spreads the Hand-drawn Map of the Wastes across the wagon rail and weighs its corners with one hand as the caravan rolls. She compares the marked route with the open Ash Ground ahead.\n\nThe map offers no useful water source near the caravan’s present position. Its route continues toward Saint Aurel, with no marked diversion that promises water before the monastery. Tamsin folds the map and keeps the lead wagon on course.\n\nWren maintains the slower pace. The horses pull with rough, steady breaths, and the weakened driver remains seated beside her. One water skin is empty; the other holds only a few sips. The Ash Ground stays exposed, with no shelter visible ahead.\n\nThe caravan remains together and moving toward Saint Aurel. Tamsin has the map put away, and the drivers wait for her next signal.",
+          "words": 138,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The map confirms there is no nearby water or useful diversion, largely reinforcing the caravan’s already known predicament rather than introducing a new lead or development. The ending returns to the caravan waiting for direction; the danger is serious but not immediate."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "Tamsin can keep the caravan moving at Wren’s slower pace toward Saint Aurel, watching for the monastery walls. She can ask Wren to check the horses and the weakened driver while they travel, or call a brief halt to let them rest. The Ash Ground offers no visible shade or water, so stopping would bring no shelter.\n\nShe can also keep scanning the route for a landmark or sign of the monastery. The map shows no nearby water source or useful diversion. Bonebridge canyon lies behind the caravan, and turning back would take them away from Saint Aurel.\n\nThe remaining water is only a few sips in one skin; the other is empty. Wren holds the team steady, and the drivers wait for Tamsin’s next instruction.",
+          "words": 126,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response suggests possible actions but adds no new lead, event, opportunity, or consequence beyond the established lack of water and exposed terrain. It ends by restating the caravan’s current state, with no immediate danger requiring a reaction."
+        },
+        {
+          "action": "Keep scanning the route for a landmark or sign of the monastery.",
+          "response": "Tamsin keeps pace beside the lead wagon and scans the route ahead, checking the open ground for a landmark or the first sign of Saint Aurel. She looks across the ash-colored plain and toward the low ridges.\n\nNo monastery walls or distinct landmark appear. The route remains clear, but the exposed ground offers no shade or water. Wren holds the team to its slower pull, and the other drivers keep the wagons together. The horses breathe hard as they move. The weakened driver stays seated beside Wren, unable to take the reins.\n\nThe caravan continues toward Saint Aurel. One water skin is empty; the other holds only a few sips. Tamsin watches the horizon as the wagons roll onward.",
+          "words": 119,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response only resolves the scan: no landmark appears, and the caravan continues under the same conditions. The dwindling water is an ongoing hardship, not a new development or immediate crisis, and the ending offers no new lead or choice."
+        }
+      ]
+    },
+    {
+      "story": "test",
+      "round": 200,
+      "variant": "after",
+      "turns": [
+        {
+          "action": "What can I do next?",
+          "response": "A dark watchtower appears on the far horizon, faint but distinct against the mountain slope. Saint Aurel is closer, though the exposed ground still separates the caravan from its walls.\n\nYou can keep the slow pace toward the watchtower, saving the horses’ strength while accepting that the remaining water may not last. You can halt briefly to check the horses and the weakened driver before deciding whether they can continue. Or you can consult your map and compare the approach to Saint Aurel with the ground ahead, looking for a safer route even if it costs time.\n\nWren keeps the team moving steadily and waits for Tamsin’s direction.",
+          "words": 108,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The watchtower is a new landmark, but it only reiterates the caravan’s destination and offers routine travel choices rather than a meaningful new lead or consequence. The response ends with Wren waiting for direction, not with a new prompt or immediate danger."
+        },
+        {
+          "action": "Check the horses and the weakened driver for their condition.",
+          "response": "Tamsin checks the horses as they pull. Their breathing is rough, and sweat darkens the harness straps, but they stay responsive and keep their footing. None is stumbling. She checks the weakened driver next. His pulse is steady; his face remains pale, and he can answer her, but his hands are still too weak to take the reins.\n\nWren keeps the team at the slower pace while Tamsin finishes the check. The driver stays seated against the wagon’s side.\n\nAt the distant watchtower, a figure steps onto the platform and raises a pale cloth, holding it out toward the caravan. Wren sees it and turns to Tamsin, waiting to know whether to keep moving or signal back.",
+          "words": 117,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The horses and driver’s condition are clarified, and a figure at the watchtower signals the caravan, introducing a new contact or possible lead. The turn ends with Wren awaiting Tamsin’s decision about whether to respond, but no immediate danger is unfolding."
+        },
+        {
+          "action": "Signal back to the figure at the watchtower.",
+          "response": "Tamsin raises one arm and waves toward the watchtower. The figure lowers the pale cloth, then lifts it twice in quick succession. Afterward, they point down the slope toward a narrow track running along the mountain’s base.\n\nWren keeps the horses at their slow pull while Tamsin watches the signal. The track may lead toward Saint Aurel, but from here its surface and condition are hard to judge. The figure remains on the platform, one arm extended toward the route.\n\nThe weakened driver stays seated beside Wren. The horses keep their footing, though their breathing remains rough. Wren glances from the track to Tamsin, waiting to hear whether to follow the indicated way or continue on the current road.",
+          "words": 119,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The watchtower figure responds with a repeated signal and points out a possible route, giving Tamsin new information and a choice. The turn ends with Wren awaiting her decision; there is no immediate danger."
+        },
+        {
+          "action": "Let's take the narrow track down the slope.",
+          "response": "Tamsin signals Wren to take the narrow track. Wren eases the team toward the slope, and the other drivers follow in line. The wagons descend slowly, wheels held to the firm center of the path. Tamsin walks beside the lead wagon and watches the edges for loose stones. The horses keep their footing, though they breathe hard through the descent.\n\nThe track bends around the mountain base and reaches a shaded notch. A runner from the watchtower is waiting there beside a stone trough, one hand raised to stop the caravan. He points at the trough, then calls out, “There’s water here—but it’s controlled by the monastery.”",
+          "words": 107,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The caravan reaches a new stopping point, where a watchtower runner reveals that the available water is controlled by the monastery. This gives Tamsin a fresh lead and choice about securing water; there is no immediate danger demanding an instant reaction."
+        },
+        {
+          "action": "I approach the runner and ask about the water access.",
+          "response": "Tamsin approaches with her hands visible and asks who may draw from the trough. The runner says the water is reserved for travelers bound for Saint Aurel, but the monastery’s stores are low. Each caravan may fill one skin and water its animals; the rest must be carried onward under ration.\n\nHe looks past her at the wagons. “If that sealed cargo is yours, the Abbot will want to know you’ve arrived. I can send word ahead, but I won’t let the teams drink until you agree to the ration.”\n\nBehind him, the stone trough holds clear water. The horses shift in their traces, heads lowered toward it. Wren keeps them back while the runner waits for Tamsin’s answer.",
+          "words": 119,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The runner reveals the monastery’s water ration and the Abbot’s interest in the sealed cargo, creating a consequential choice about water and whether to send word ahead. The turn ends with the runner waiting for Tamsin’s answer, giving her a clear next move, but there is no immediate danger."
+        },
+        {
+          "action": "Agree to the ration and fill one skin with water.",
+          "response": "Tamsin agrees to the ration. The runner steps aside and lets her draw from the stone trough. She fills the empty water skin to its neck and ties it shut. The other skin still holds only a few sips.\n\nThe horses stretch toward the trough, but Wren keeps them back while Tamsin secures the water. The runner confirms that the caravan may water them here under the agreement, then raises a strip of pale cloth toward the watchtower.\n\nA moment later, the tower answers with a single flash of reflected light. The runner turns to Tamsin. “Saint Aurel has received word. They’ll send someone to meet you at the gate.”",
+          "words": 110,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The ration is resolved, and the tower’s response confirms Saint Aurel has been alerted and will send someone to meet the caravan at the gate. That creates a new encounter to anticipate, but no immediate danger."
+        }
+      ]
+    },
+    {
+      "story": "test",
+      "round": 300,
+      "variant": "before",
+      "turns": [
+        {
+          "action": "Let's explore the passage and see where it leads.",
+          "response": "Tamsin turns from the panel and follows the sloping passage. Grell comes after her, keeping close behind. The walls draw nearer, forcing them to walk single file. Tamsin tests each step on the dust-coated stones and checks the wall for seams or markings.\n\nThe passage continues downward. No tracks cross the dust, and no sound comes from ahead. The faint draft at the panel fades behind them. After several careful minutes, the way remains narrow and dark, with no branch or opening visible.\n\nThey have left the panel behind, but the passage still leads farther into shadow. Grell stops just behind Tamsin and waits for her to decide whether to continue.",
+          "words": 111,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The passage yields no lead, opening, threat, or other development; it only continues into darkness. The ending asks whether to keep going, but presents no new prompt beyond the current exploration, and there is no immediate danger."
+        },
+        {
+          "action": "I decide to continue down the passage.",
+          "response": "Tamsin continues down the passage, keeping one hand near the wall as the floor slopes beneath her boots. Grell follows close behind. The walls press nearer together, and both move carefully through the narrow stretch.\n\nThe passage bends beyond the dim section. Tamsin checks the stone ahead and the dusty floor, but finds no markings, tracks, or visible mechanism. Nothing shifts underfoot. The way remains clear, though it grows tighter and darker beyond the bend.\n\nGrell stops behind her. The narrow passage continues into shadow, with no sign yet of where it leads. Tamsin stands at the bend, facing the dark stretch ahead.",
+          "words": 103,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response only advances Tamsin a little farther through the same empty passage; it reveals no new information, opportunity, or consequence. It ends by restating that the passage continues into darkness, without a distinct new hook or immediate danger."
+        },
+        {
+          "action": "I carefully walk around the bend into the dark passage.",
+          "response": "Tamsin turns sideways where the walls pinch close and carefully rounds the bend. Her boots scrape over dust-coated stone. Grell follows without touching the walls.\n\nBeyond the bend, the passage continues downward into darkness. Tamsin pauses to inspect the floor and the stone within reach. The dust lies undisturbed. She sees no tracks, markings, or opening in the walls. Nothing moves ahead, and no sound comes from deeper in the tower.\n\nThe passage is still narrow, but there is room to continue. Grell stops behind her, leaving Tamsin clear space to look down the dark stretch. The way forward remains unexamined.",
+          "words": 101,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "Tamsin rounds the bend, but finds only more dark passage and no new clue, threat, or opportunity. The ending restates that the way ahead is unexamined without adding a specific new prompt or immediate danger."
+        },
+        {
+          "action": "Continue down the passage into the darkness.",
+          "response": "Tamsin continues down the passage, placing each boot carefully on the sloping stone. Grell follows close behind. The darkness thickens around them, and the light from the section behind fades until it no longer reaches the walls.\n\nTamsin keeps one hand near the stone and watches the floor directly ahead. Dust remains undisturbed. She finds no tracks, markings, or loose stones underfoot. The passage stays narrow and continues downward; no branch or opening appears.\n\nAfter several minutes, Grell stops behind her. Nothing has shifted or sounded in the darkness ahead. Tamsin stands on the sloping floor with the passage continuing beyond the reach of her sight.",
+          "words": 106,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "Tamsin advances, but the narration introduces no new information, opportunity, consequence, or complication. It ends with the same unexamined dark passage rather than a new hook or immediate danger."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "Tamsin stands on the sloping floor. The passage continues into darkness, with Grell behind her. The dust is undisturbed, and she has found no tracks, markings, or opening.\n\nShe can continue farther, feeling along the wall and testing the floor as she goes. She can stop to examine the stone around her for seams or other signs of a way through. Or she can turn back toward the panel and the tower entrance.\n\nGrell waits close behind, leaving the narrow way forward clear. Tamsin must choose whether to keep descending, search this stretch, or retrace her steps.",
+          "words": 97,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The response restates the passage’s known conditions and offers possible actions, but introduces no new lead, consequence, or opportunity. It ends with a choice, not a new development to pursue, and there is no immediate danger."
+        },
+        {
+          "action": "I will continue farther into the darkness, feeling along the wall.",
+          "response": "Tamsin continues down the passage, moving slowly with one hand against the wall. The stone is cold and uneven beneath her fingertips. She feels across each section within reach, checking for a seam, a latch, or a change in the surface.\n\nGrell follows close behind, quiet in the narrow dark. Tamsin’s boots stir the dust, but she finds no loose stones or markings underfoot. The wall remains solid as the passage slopes farther down. No opening or branch appears within reach.\n\nAfter several careful paces, she stops to listen. The passage ahead remains dark and silent, still descending beyond her sight. Her hand rests against the unbroken wall, and the way forward is clear.",
+          "words": 114,
+          "new_development": false,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "Tamsin searches farther as requested, but finds no new clue, person, opportunity, or consequence; the passage remains unchanged. The ending restates the dark, clear way forward without introducing a new hook or immediate danger."
+        }
+      ]
+    },
+    {
+      "story": "test",
+      "round": 300,
+      "variant": "after",
+      "turns": [
+        {
+          "action": "Let's see where the passage leads.",
+          "response": "Tamsin leaves the panel and follows the narrowing passage with Grell close behind. The floor slopes down, and the walls press near enough that they have to turn their shoulders. It opens into a low stone chamber. Dust coats the floor, but the far wall bears lines of writing cut deep into the stone.\n\nTamsin clears the dust with her sleeve. The inscription reads: “Ishkar was bound beneath the third seal. Let the vessel remain closed until the bound fire answers freely.”\n\nGrell reads it once, then looks back toward the panel. The carving names Ishkar and warns against opening the vessel, but it does not explain how the seal works. Beside the inscription, a narrow stair descends beneath the chamber floor.",
+          "words": 122,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The inscription reveals new information about Ishkar and warns against opening the vessel, while the stair offers another lead to pursue. The turn ends with that new option, not immediate danger."
+        },
+        {
+          "action": "I will descend the narrow stair beneath the chamber floor.",
+          "response": "Tamsin tests the first steps, then descends carefully. Grell follows close behind, one hand on the wall. The stair turns beneath the chamber and ends at a low landing.\n\nA stone door blocks the way. Three shallow circles are cut into its face, each ringed with small marks. The first two are filled with packed dust. The third is blackened, as if something hot has touched it from the other side. No handle or hinge is visible.\n\nGrell leans close without touching the stone. “Three seals,” he says. “This may be what the inscription meant.” The blackened circle gives off no heat, but its center is clean of dust. Beyond the door, something makes a single faint scrape.",
+          "words": 118,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The three marked circles and the blackened third seal offer a new clue about the inscription, while a scrape beyond the door suggests something lies ahead. The sound is faint and not an immediate attack or danger."
+        },
+        {
+          "action": "Examine the three circles on the stone door more closely.",
+          "response": "Tamsin crouches at the door and brushes dust from the first circle. Its shallow center is smooth stone, with a narrow groove cut around the rim. The second circle has the same shape. She clears the packed dust from both, revealing that each groove is interrupted by a small notch.\n\nThe third circle is already clean. Its rim is blackened, and its notch points downward. Tamsin touches the edge lightly. The circle turns a fraction beneath her fingertip, then stops with a hard click.\n\nFrom beyond the door comes a short scrape, louder than before. Grell steps back from the stone. The first two circles remain still, their notches turned in different directions.",
+          "words": 113,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The circles are revealed as a mechanism, and turning the third triggers a louder scrape from behind the door, advancing the mystery and giving Tamsin a mechanism to investigate. The ending leaves the first two circles’ differing notch positions as a clear next action, but the scrape does not establish immediate danger."
+        },
+        {
+          "action": "What can I do next?",
+          "response": "Tamsin remains at the stone door. The first two circles are clear of dust, their notches pointing in different directions. The third is turned slightly, its notch facing down. The scrape from beyond has stopped.\n\nShe can:\n\n- Turn the first two circles and test whether their notches must match the third. This may release the door, but could trigger whatever mechanism lies beyond.\n- Examine the small marks around the rings more closely for a pattern before touching them again.\n- Return to the chamber and compare the circles with the inscription about the third seal, leaving the door untouched for now.\n\nAs she considers the marks, a thin line of dust sifts from the seam beneath the door.",
+          "words": 120,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "The response gives Tamsin several actionable approaches and adds a new clue: dust is sifting from beneath the door. The sign suggests activity beyond it, but presents no immediate danger."
+        },
+        {
+          "action": "Turn the first two circles to see if they match the third.",
+          "response": "Tamsin grips the first circle by its rim and turns it until the notch points down. It moves stiffly, then settles with a click. She turns the second to match. Its stone rim grinds softly before locking into place.\n\nAll three notches now point downward. A low clunk sounds inside the door. The stone slab shifts inward, opening a narrow gap. Dust spills across the landing, and a dry, warm draft brushes Tamsin’s face.\n\nGrell steps aside as Tamsin eases the door wider. Beyond it lies a small square room. Three iron rings are fixed to the far wall, each holding a length of chain. One chain hangs loose; the other two run into dark slots in the stone. Something inside the room gives a faint metallic rattle.",
+          "words": 128,
+          "new_development": true,
+          "forward_ending": true,
+          "crisis_ending": false,
+          "reasoning": "Matching the circles opens the door and reveals a chamber with chained iron rings and a new metallic rattle to investigate. The rattle is intriguing but does not signal immediate danger."
+        },
+        {
+          "action": "I step inside the small square room to investigate.",
+          "response": "Tamsin steps through the gap and pauses to let her eyes adjust. She keeps clear of the chains while examining the iron rings and the dark slots. The two taut chains disappear into the stone; the loose one ends halfway across the floor.\n\nShe crouches beside it. Several links near the end are warped together and blackened. The metal is cold now. The break is jagged, not cut, and small flakes of dark scale cling to the floor beneath it.\n\nGrell stays at the doorway. “That wasn’t done with a tool,” he says.\n\nTamsin looks toward the slots where the other chains vanish. The loose chain appears to have been damaged by intense heat, and the room’s mechanism remains under tension.",
+          "words": 121,
+          "new_development": true,
+          "forward_ending": false,
+          "crisis_ending": false,
+          "reasoning": "The warped, heat-blackened chain is new evidence suggesting an unusual source of damage, and the mechanism is still under tension. The ending flags a hazard but doesn’t present a fresh event or opportunity to pursue, and no immediate danger is unfolding."
+        }
+      ]
+    }
+  ]
+}

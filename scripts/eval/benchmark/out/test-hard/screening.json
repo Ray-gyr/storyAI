@@ -1,0 +1,422 @@
+{
+  "hard-1": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks for the explicit, story-relevant reason behind a particular route-planning decision: avoiding storms and glass splinters that could cripple the wagons."
+  },
+  "hard-2": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The journey’s duration is a plausible detail to recall, and the passage explicitly depicts the caravan reaching Merrow after three days on the road."
+  },
+  "hard-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling Wren’s list-based supply check is relevant to the caravan’s readiness and distinct from her later checks of the secured water vessels."
+  },
+  "hard-4": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question recalls a relevant travel agreement uniquely established in this discussion, and the passage explicitly states that the drivers would halt if the teams began to tire."
+  },
+  "hard-5": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling whose map annotations guided the caravan onto safe ground is a plausible, story-relevant detail tied to this journey."
+  },
+  "hard-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Whether the caravan broke through the glass is a plausible concern about this crossing, and the passage explicitly states that the wheels passed over it without breaking."
+  },
+  "hard-7": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a practical response to the driver's collapse, and the passage specifically describes the drivers moving wagons together to provide shade."
+  },
+  "hard-8": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The map’s annotations are a relevant navigation clue tied to this specific attempt to locate the waystone."
+  },
+  "hard-9": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the order to hold position is plausible and specific, but the passage depicts giving instructions rather than receiving them, as the question’s wording implies."
+  },
+  "hard-10": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The passage states Sir Bastian Crowe is the confirmed threat, hired to intercept the reliquary, so recalling his task is plausible and specific to this moment."
+  },
+  "hard-11": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling Wren’s recommendation to consult Abbot Grell is relevant to securing the reliquary and specific to this exchange, but the question is not temporal."
+  },
+  "hard-12": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls Grell’s consequential warning that the reliquary’s wards restrain the spirit rather than guarantee safety, though this is a detail question rather than a temporal one."
+  },
+  "hard-13": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the two-week scope of route information exchanged for water in this specific trade, but asks about a duration rather than a depicted temporal event."
+  },
+  "hard-14": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question asks about a story-relevant revelation tied to this moment, namely Crowe’s assignment to take the reliquary; it is not a temporal question."
+  },
+  "hard-15": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the vendor’s specific response to inquiries about Crowe’s movements, a relevant clue in the search."
+  },
+  "hard-16": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a specific promise securing Sabeth’s guidance, and the passage explicitly states that the drivers would follow her pace."
+  },
+  "hard-17": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling Wren’s instruction to report spills or leaks is a plausible, moment-specific question about conserving the caravan’s water."
+  },
+  "hard-18": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling Sabeth’s specific conditions for guiding the caravan is a plausible, story-relevant request grounded directly in this passage."
+  },
+  "hard-19": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls Sabeth’s explicit, practically important instruction to stop the caravan rather than guess if her track is lost."
+  },
+  "hard-20": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls Sabeth’s explicit, situationally important instruction to stop if her steps are out of sight, rather than risk an untested path."
+  },
+  "hard-21": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The caravan’s destination is a plausible and moment-specific detail to recall, but the passage attributes the redirection to Tamsin rather than explicitly to the player."
+  },
+  "hard-22": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks the player to recall the specific method used to enter the tower, and the passage explicitly describes squeezing through a gap beside fallen stones."
+  },
+  "hard-23": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about the outcome of a specific search for useful tools, and the passage explicitly reports that none were found."
+  },
+  "hard-24": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling whether the investigation revealed a magical link is story-relevant and specific to this examination, but the passage depicts no connection being found."
+  },
+  "hard-25": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about the explicit motive for a consequential decision in this passage: pushing through dangerous heat to make up time."
+  },
+  "hard-26": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the specific search outcome—shade but no water—which directly affected the caravan’s relief and travel decisions."
+  },
+  "hard-27": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the weakened driver’s steady pulse is a relevant, moment-specific detail from assessing his condition before deciding how the caravan should proceed."
+  },
+  "hard-28": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the weakened driver's physical condition, and his inability to sit up without support is specific to this moment."
+  },
+  "hard-29": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a specific outcome of slowing the caravan, and the passage explicitly states that the wagons slowed without breaking formation."
+  },
+  "hard-30": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls a failed attempt to obtain essential water, and the passage specifically explains that no outside traders were nearby and the drivers had no spare supplies."
+  },
+  "hard-31": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a consequential outcome of the player's push for speed, and the passage explicitly shows the weakened driver stumbling and Wren catching him."
+  },
+  "hard-32": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling an instruction about caravan spacing is plausible and specific to this moment, but the passage does not depict the storm presupposed by the question."
+  },
+  "hard-33": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question asks about a plausible, story-relevant motive for this particular return to Corvane, explicitly stated as clearing the caravan’s name with Captain Ferro Lusk; it is not a temporal question."
+  },
+  "hard-34": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling whom Ferro asked to bring over is plausible and specific, but the passage depicts him instructing Tamsin, not the player, to bring Wren first."
+  },
+  "hard-35": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls Ferro’s assessment of a witness’s reliability, and the answer is specific to his response to the guard’s admitted uncertainty."
+  },
+  "hard-36": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The lack of water is a consequential, moment-specific reason the caravan could not depart, but the passage depicts a blocked departure rather than a journey through the pass."
+  },
+  "hard-37": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling who stayed behind with the witnesses is a plausible, story-relevant question tied to the caravan’s departure, which the passage explicitly depicts."
+  },
+  "hard-38": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question recalls the specific person whose impending departure motivated the route change, but the passage depicts trying to catch him rather than his departure."
+  },
+  "hard-39": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question asks about Ferro’s specific evidentiary support for clearing the caravan’s name, a relevant and clearly established detail of this encounter."
+  },
+  "hard-40": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a meaningful travel choice Wren explicitly offered just after the canyon crossing, with a clear answer tied to that moment."
+  },
+  "hard-41": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls whether the player's order harmed a vulnerable companion, and the passage specifically states that the increased speed did not jolt him."
+  },
+  "hard-42": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the story-specific decision to conserve scarce water for the caravan, but as a detail question it does not require an event-type match."
+  },
+  "hard-43": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling which canyon was already behind the caravan clarifies its location and the mismatch between the player's request and the actual route progress."
+  },
+  "hard-44": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about a consequential route decision, and the passage gives moment-specific reasons for not returning: backtracking would be necessary and no water source was known there."
+  },
+  "hard-45": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling Grell’s referral to Old Mother Sabeth is a plausible, moment-specific lead for learning about Duskwalker rites and communicating with Ishkar."
+  },
+  "hard-46": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question asks about Sabeth’s story-relevant requirement to assess the reliquary, which is explicitly stated and specific to this encounter."
+  },
+  "hard-47": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling who escorted the reliquary is a plausible, story-relevant question with an answer specific to this journey, but this is a detail question rather than a temporal question."
+  },
+  "hard-48": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks for Sabeth’s stated reason for refusing the ritual, which is specific to the sealed reliquary and directly explained in this passage."
+  },
+  "hard-49": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling where the sealed reliquary was left during the archive search is story-relevant and specific, but the passage does not establish that this was the first archive search."
+  },
+  "hard-50": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about the outcome of Tamsin’s specific meditation attempt, which explicitly brought no response or sign of contact with Ishkar."
+  },
+  "hard-51": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The leader’s claim that he was not keeping names is a specific, relevant response to Tamsin’s attempt to obtain information about Wren."
+  },
+  "hard-52": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls a consequential, explicitly stated decision to keep the caravan together for Wren’s safety at this particular moment."
+  },
+  "hard-53": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls Wren’s specific decision about rationing scarce water, but the passage depicts a condition for allowing another drink rather than the event of allowing one."
+  },
+  "hard-54": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a route-planning constraint explicitly established when Tamsin checked the map at the monastery approach."
+  },
+  "hard-55": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks for a relevant scouting report from a specific incident, and the passage explicitly depicts the driver checking the perimeter and reporting no sign of Sir Bastian’s men."
+  },
+  "hard-56": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls Wren’s concrete preparation for a quick departure, and the passage explicitly identifies the reliquary’s existing restraints as what he tightened."
+  },
+  "hard-57": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling how the gates were secured is relevant and tied to this moment, but the passage shows Grell checking and tightening the existing fastening, not clearly reinforcing the gates."
+  },
+  "hard-58": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks the player to recall her explicitly stated preference for Ishkar’s fate at this decision point."
+  },
+  "hard-59": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly asks about Grell’s explicit reason for rejecting this particular trade, a consequential obstacle to opening the reliquary safely."
+  },
+  "hard-60": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a meaningful, moment-specific decision to enter the shadowy passage cautiously while continuing to search for guiding signs."
+  }
+}

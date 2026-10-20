@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, Suspense } from 'react';
 import { DEFAULT_STORY_SETTING } from '../lib/constants';
+import UnfoldingMessage from '../components/UnfoldingMessage';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
@@ -9,6 +10,21 @@ export interface SessionMeta {
     id: string;
     title: string;
     style: string;
+}
+
+/**
+ * 从失败的响应中提取可读的错误信息（兼容 JSON、纯文本以及 Vercel 超时返回的 HTML 页面）
+ */
+async function readErrorMessage(res: Response): Promise<string> {
+    const fallback = `Request failed (HTTP ${res.status}).`;
+    const text = await res.text().catch(() => '');
+    try {
+        const json = JSON.parse(text);
+        if (typeof json?.error === 'string' && json.error) return json.error;
+    } catch { }
+    if (text && text.length < 500 && !text.trimStart().startsWith('<')) return text;
+    if (res.status === 504) return 'The server took too long to respond. Please try again.';
+    return fallback;
 }
 
 export default function Home() {
@@ -105,8 +121,8 @@ function HomeInner() {
                 fetch(`/api/story/load?sessionId=${initialSessionId}`)
                     .then(r => r.ok ? r.json() : null)
                     .then(data => {
-                        if (data?.chatHistory && !data.error) {
-                            const fresh = data.chatHistory.map((t: any) => ({ role: t.role, content: t.text }));
+                        if (data?.transcript && !data.error) {
+                            const fresh = data.transcript.map((t: any) => ({ role: t.role, content: t.text }));
                             setMessages(fresh);
                             setChatCache(prev => ({ ...prev, [initialSessionId]: fresh }));
                             sessionStorage.removeItem(`chat_snapshot_${initialSessionId}`);
@@ -239,8 +255,8 @@ function HomeInner() {
                     fetch(`/api/story/load?sessionId=${sessionId}`)
                         .then(r => r.ok ? r.json() : null)
                         .then(data => {
-                            if (data?.chatHistory && !data.error) {
-                                const fresh = data.chatHistory.map((t: any) => ({ role: t.role, content: t.text }));
+                            if (data?.transcript && !data.error) {
+                                const fresh = data.transcript.map((t: any) => ({ role: t.role, content: t.text }));
                                 setMessages(fresh);
                                 setChatCache(prev => ({ ...prev, [sessionId]: fresh }));
                                 sessionStorage.removeItem(`chat_snapshot_${sessionId}`); // 用完即清
@@ -264,9 +280,9 @@ function HomeInner() {
             const debugRes = await fetch(`/api/story/load?sessionId=${sessionId}`);
             if (debugRes.ok) {
                 const data = await debugRes.json();
-                if (data.chatHistory && !data.error) {
+                if (data.transcript && !data.error) {
                     setActiveSessionId(sessionId);
-                    setMessages(data.chatHistory.map((t: any) => ({
+                    setMessages(data.transcript.map((t: any) => ({
                         role: t.role,
                         content: t.text
                     })));
@@ -293,18 +309,18 @@ function HomeInner() {
         }
     };
 
-    const handleStartDefaultStory = async (e: React.MouseEvent) => {
-        e.preventDefault();
-        if (loading) return;
+    // 开新局；setting 为空时后端会使用默认的末日设定
+    const startStory = async (setting?: string): Promise<boolean> => {
+        if (loading) return false;
         setLoading(true);
         try {
             const res = await fetch('/api/story/start', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({}) // Backend will naturally default to the apocalypse setting
+                body: JSON.stringify({ storySetting: setting })
             });
+            if (!res.ok) throw new Error(await readErrorMessage(res));
             const data = await res.json();
-            if (data.error) throw new Error(data.error);
 
             const meta: SessionMeta = {
                 id: data.sessionId,
@@ -312,44 +328,27 @@ function HomeInner() {
                 style: data.metadata?.style || "UNKNOWN"
             };
             updateSessionMeta(meta);
-
             setActiveSessionId(meta.id);
             setMessages([{ role: 'assistant', content: data.firstPrompt }]);
             setCurrentView('chat');
+            return true;
         } catch (err: any) {
             alert("Fate failed to weave the thread: " + err.message);
+            return false;
         } finally {
             setLoading(false);
         }
     };
 
+    const handleStartDefaultStory = async (e: React.MouseEvent) => {
+        e.preventDefault();
+        await startStory();
+    };
+
     const handleStartStory = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (loading) return;
-        setLoading(true);
-        try {
-            const res = await fetch('/api/story/start', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ storySetting: storySetting.trim() || undefined })
-            });
-            const data = await res.json();
-            if (data.error) throw new Error(data.error);
-
-            const meta: SessionMeta = {
-                id: data.sessionId,
-                title: data.metadata?.title || data.sessionId.slice(-6),
-                style: data.metadata?.style || "UNKNOWN"
-            };
-            updateSessionMeta(meta);
-            setActiveSessionId(meta.id);
-            setMessages([{ role: 'assistant', content: data.firstPrompt }]);
-            setCurrentView('chat');
+        if (await startStory(storySetting.trim() || undefined)) {
             setStorySetting('');
-        } catch (e: any) {
-            alert("Fate failed to weave the thread: " + e.message);
-        } finally {
-            setLoading(false);
         }
     };
 
@@ -362,6 +361,13 @@ function HomeInner() {
         setMessages(prev => [...prev, { role: 'user', content: userMessage }, { role: 'assistant', content: '' }]);
         setLoading(true);
 
+        // 本回合没有被服务器保存：撤回这一对消息，并把玩家的指令放回输入框方便重试
+        const rollbackTurn = (reason: string) => {
+            setMessages(prev => prev.slice(0, -2));
+            setInput(userMessage);
+            alert(reason);
+        };
+
         try {
             const res = await fetch('/api/story/chat', {
                 method: 'POST',
@@ -369,7 +375,10 @@ function HomeInner() {
                 body: JSON.stringify({ sessionId: activeSessionId, userInput: userMessage }),
             });
 
-            if (!res.body) throw new Error('Stream reading failed');
+            if (!res.ok || !res.body) {
+                rollbackTurn(await readErrorMessage(res));
+                return;
+            }
 
             const reader = res.body.getReader();
             const decoder = new TextDecoder();
@@ -389,12 +398,8 @@ function HomeInner() {
                     return newMsgs;
                 });
             }
-        } catch (err) {
-            setMessages(prev => {
-                const newMsgs = [...prev];
-                newMsgs[newMsgs.length - 1].content = "Network connection interrupted...";
-                return newMsgs;
-            });
+        } catch {
+            rollbackTurn("Network connection interrupted. This turn was not saved, please try again.");
         } finally {
             setLoading(false);
         }
@@ -547,14 +552,21 @@ function HomeInner() {
                                     <section id="intro-overview" className="scroll-mt-12">
                                         <h3 className="text-2xl font-bold text-[#4A4743] tracking-widest mb-6 border-l-4 border-[#8D7B68] pl-4">1. Project Overview</h3>
                                         <p className="mb-4 text-lg">
-                                            LLM-powered story games break down at scale. After ~20 turns, models forget earlier plot points. After ~100 turns, context windows overflow. After ~1000 turns, the world loses coherence entirely.
+                                            LLM-powered story games break down at scale. After ~20 turns, models forget earlier plot points. After ~100 turns, context windows overflow. Over hundreds of turns, the world loses coherence entirely.
                                         </p>
                                         <p className="mb-4 text-lg">
-                                            Naive RAG pipeline solve the context overflow problem but fail at exact object recall. Standard semantic similarity is often too "fuzzy" to reliably retrieve specific entities, leading to "entity drift" where critical plot objects vanish or transform.
+                                            Naive RAG pipelines solve the context overflow problem but fail at exact object recall. Standard semantic similarity is often too "fuzzy" to reliably retrieve specific entities, leading to "entity drift" where critical plot objects vanish or transform.
                                         </p>
                                         <p className="mb-6 text-lg">
                                             This project is my attempt to engineer around all three failure modes simultaneously.
                                         </p>
+
+                                        <h4 className="font-bold text-[#4A4743] mt-8 mb-3 uppercase tracking-widest text-sm">Version History</h4>
+                                        <div className="bg-[#FAFAF8] p-4 rounded border border-[#EAE5D9] space-y-3 text-sm sm:text-base">
+                                            <p><strong className="text-[#4A4743]">v3 — Oct 2026 (let the writer read the details).</strong> The writer now gets the original text of all 10 retrieved chunks, in story order with turn numbers, instead of summaries only; chunk summaries were also made longer and more detailed. After play-testing, a Story Drive rule makes every turn add one new development toward the current goal, instead of ending on &ldquo;nothing happens&rdquo;. On a held-out 300-round story, correct answers to questions about the past went from 29/91 to 83/91.</p>
+                                            <p><strong className="text-[#4A4743]">v2 — Oct 2026 (evaluation-driven redesign).</strong> I benchmarked my own design decisions and reversed three of them: replaced vector-only tier search with BM25 + vector hybrid retrieval, removed the intent short-circuit router, and rewrote the writer prompt for memory fidelity. Recall on the held-out story went from 82% to 95%, and it no longer decays as the story grows. Details are in Key Engineering Decisions.</p>
+                                            <p><strong className="text-[#4A4743]">v1 — Mar 2026 (initial release).</strong> Dual-track memory with entity-filtered vector &ldquo;tier search&rdquo;, and an LLM router that skipped retrieval when it judged the state sufficient.</p>
+                                        </div>
 
                                         <h4 className="font-bold text-[#4A4743] mt-8 mb-3 uppercase tracking-widest text-sm">Tech Stack</h4>
                                         <div className="bg-[#FAFAF8] p-4 rounded border border-[#EAE5D9] overflow-x-auto">
@@ -579,13 +591,18 @@ function HomeInner() {
                                                 <tbody>
                                                     <tr className="border-b border-[#EAE5D9]">
                                                         <td className="py-3 pr-4 font-bold text-[#4A4743]">Story Writer</td>
+                                                        <td className="py-3 pr-4"><code className="bg-[#F2F0E9] px-1 rounded text-[#8D7B68]">gpt-6-luna</code></td>
+                                                        <td className="py-3">A newer model at about 1/3 the cost of gpt-5-mini per turn; memory fidelity held steady after the switch (75/88 vs 73/88)</td>
+                                                    </tr>
+                                                    <tr className="border-b border-[#EAE5D9]">
+                                                        <td className="py-3 pr-4 font-bold text-[#4A4743]">World Setup</td>
                                                         <td className="py-3 pr-4"><code className="bg-[#F2F0E9] px-1 rounded text-[#8D7B68]">gpt-5-mini</code></td>
-                                                        <td className="py-3">Capability in story generation, long-context narrative coherence, fast streaming, cost-efficient</td>
+                                                        <td className="py-3">The original writer model; still used for the initial state and title, which run once per story</td>
                                                     </tr>
                                                     <tr>
-                                                        <td className="py-3 pr-4 font-bold text-[#4A4743]">State Worker</td>
+                                                        <td className="py-3 pr-4 font-bold text-[#4A4743]">State Worker, Summaries, Query Rewriter</td>
                                                         <td className="py-3 pr-4"><code className="bg-[#F2F0E9] px-1 rounded text-[#8D7B68]">gpt-4o-mini</code></td>
-                                                        <td className="py-3">Even cheaper than gpt-5-mini, and reliable structured JSON output via native JSON mode</td>
+                                                        <td className="py-3">Used since v1 and kept unchanged; cheap, with reliable structured JSON output</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -602,14 +619,14 @@ function HomeInner() {
                                         <div className="space-y-6">
                                             <div className="bg-[#FAFAF8] p-6 rounded border border-[#EAE5D9]">
                                                 <h4 className="font-bold text-[#4A4743] mb-3 text-lg">Track 1 — Global State Machine</h4>
-                                                <p className="mb-4">After the story generator LLM (gpt-5-mini) finishes generating a response, a background Worker LLM (gpt-4o-mini) runs independently of the main story generation. It reads the latest dialogue and extracts <strong>only what changed</strong> — a structured <code>StateDiff</code> validated against a Zod schema:</p>
+                                                <p className="mb-4">After the story generator LLM (gpt-6-luna) finishes generating a response, a background Worker LLM (gpt-4o-mini) runs independently of the main story generation. It reads the latest dialogue and extracts <strong>only what changed</strong> — a structured <code>StateDiff</code> validated against a Zod schema:</p>
                                                 <pre className="text-xs sm:text-sm text-gray-700 bg-white p-4 rounded border border-[#EAE5D9] overflow-x-auto mb-4 leading-relaxed">
                                                     {`// Example diff extracted after "I pick up the ancient sword"
 {
-  updated_character:[{name:"player",description:"A young man from the Shire holds the ancient sword"}],
-  added_item:[{name:"Ancient Sword of Angles",description:"A magical sword made by angles that glows in the dark."}],
-  inventory_added: ["Ancient Sword of Angles"],
-  state_summary:"The player picked up the ancient sword of angles."
+  updated_characters:[{name:"player",description:"A young man from the Shire holds the ancient sword"}],
+  added_items:[{name:"Ancient Sword of Angels",description:"A magical sword made by angels that glows in the dark."}],
+  inventory_added: ["Ancient Sword of Angels"],
+  state_summary:"The player picked up the Ancient Sword of Angels."
 }`}
                                                 </pre>
                                                 <p className="mb-2">This diff is merged into <strong>CurrentState</strong> in Redis. The state table stays bounded regardless of play length, and every future generation gets the full world state as a constraint without any growing overhead.</p>
@@ -622,9 +639,9 @@ function HomeInner() {
                                                 <ul className="list-decimal pl-5 space-y-2 mb-4">
                                                     <li><strong>Sliding Window</strong> — recent turns are kept in memory for immediate context.</li>
                                                     <li><strong>Unprocessed Archive</strong> — turns that overflow the sliding window are stored here.</li>
-                                                    <li><strong>Semantic Chunking</strong> — when the buffer hits threshold, text is split with <strong>context overlap between chunks</strong> to prevent semantic fragmentation at boundaries. Fed into LLM to generate a dense summary and entities involved in the chunk.</li>
-                                                    <li><strong>Vectorization → Pinecone</strong> — dense narrative embeddings stored with metadata (turn number, active quests, location).</li>
-                                                    <li><strong>Retrieval</strong> — when the player needs to recall past events, the system retrieves relevant chunks based on by metadata and semantic similarity and feed into the story generator LLM.</li>
+                                                    <li><strong>Semantic Chunking</strong> — when the buffer hits threshold, text is split with <strong>context overlap between chunks</strong> to prevent semantic fragmentation at boundaries. An LLM writes a detailed summary of each chunk (every story-relevant fact, in the story&apos;s own words) and lists the entities involved.</li>
+                                                    <li><strong>Vectorization → Pinecone</strong> — summary embeddings stored with metadata (turn range, location, characters and items involved, importance flags). Summaries and original text are also kept in Redis.</li>
+                                                    <li><strong>Retrieval</strong> — every turn, the system retrieves the 10 most relevant chunks with hybrid BM25 + vector search, and gives the story generator LLM each chunk&apos;s summary and original text, in story order.</li>
                                                 </ul>
                                                 <p className="text-sm bg-[#F2F0E9] p-3 rounded text-[#5C554B] mt-4"><strong>Why this matters:</strong> Separating memory into sliding window and long-term memory allows the system to maintain both immediate context and long-term coherence without overflowing the context window.</p>
                                             </div>
@@ -647,41 +664,101 @@ function HomeInner() {
 
                                         <div className="space-y-8">
                                             <div>
-                                                <h4 className="text-xl font-bold text-[#4A4743] mb-3">Tiered Search (not just vector similarity)</h4>
-                                                <p className="mb-4">Short player commands like "attack the guard" don't embed well — they lack semantic richness. Pure vector search returns noisy, loosely-related memories.</p>
-
-                                                <div className="pl-4 border-l-2 border-[#8D7B68] mb-4">
-                                                    <strong className="block text-[#4A4743] mb-2">Step 1: Query Enhancement</strong>
-                                                    <ul className="list-disc pl-5 space-y-1 mb-4 text-sm sm:text-base">
-                                                        <li><strong>Expansion:</strong> Converts telegraphic commands into descriptive sentences to improve embedding quality.</li>
-                                                        <li><strong>De-reference:</strong> Replaces pronouns with actual entity names.</li>
-                                                        <li><strong>Entity extraction:</strong> Extracts entities from the query to improve metadata filtering.</li>
-                                                    </ul>
-
-                                                    <strong className="block text-[#4A4743] mb-2">Step 2: Tiered Search</strong>
-                                                    <ul className="list-disc pl-5 space-y-1 mb-4 text-sm sm:text-base">
-                                                        <li><strong>Tier 1: <strong>Metadata-filtered Vector Search</strong></strong> — The system first queries Pinecone with a metadata filter requiring at least one entity identified by the rewriter. This forces the retrieval to stay anchored to the current scene, location, or involved NPCs.</li>
-                                                        <li><strong>Tier 2: <strong>Unconstrained Fallback Search</strong></strong> — Concurrently, the system performs a broad semantic sweep without metadata constraints.</li>
-                                                    </ul>
-                                                </div>
-                                                <p className="mb-4">If Tier 1's result doesn't meet the threshold, the system will deduplicate the results from Tier 1 and Tier 2 and merge them.</p>
-
-                                                <div className="bg-[#FAFAF8] p-4 rounded border border-[#EAE5D9] mb-4">
-                                                    <p className="mb-2"><strong>Why this matters:</strong> multi-tier search ensures both precision and recall, solving the short-query retrieval problem.</p>
-                                                    <strong className="block text-[#4A4743] mb-2">Why not hybrid search (BM25+RRF)?</strong>
-                                                    <ul className="list-disc pl-5 space-y-1 text-sm sm:text-base">
-                                                        <li>Key entities appear frequently across almost every story turn. This causes IDF weights to lose their effectiveness. BM25 fails to accurately rank the most relevant plot points.</li>
-                                                        <li>Reciprocal Rank Fusion (RRF) is only effective when both retrieval paths provide reliable, independent signals. In a narrative environment where keyword scores are flat, fusing them with high-quality vector results would simply dilute the precision of the dense embeddings.</li>
-                                                        <li>Hybrid search adds latency and complexity without significant benefit in this domain.</li>
-                                                    </ul>
+                                                <h4 className="text-xl font-bold text-[#4A4743] mb-3">Benchmark: two 300-round stories</h4>
+                                                <p className="mb-4">Every decision below was tested, not assumed. Two stories were played for 300 rounds by an AI auto-player (130 memory chunks each). The <strong>dev story</strong> is for trying ideas; the <strong>test story</strong> is only used to check a version after its code is frozen. The <strong>main</strong> question set has fairly long questions with context; the <strong>hard</strong> set has short, low-context questions, the way a real player types. <strong>Recall@10</strong> asks whether a correct chunk is among the 10 given to the writer; <strong>end to end</strong> asks whether the writer&apos;s answer agrees with the story, judged by an LLM I checked by hand (about 94% accurate).</p>
+                                                <div className="bg-[#FAFAF8] p-4 rounded border border-[#EAE5D9] overflow-x-auto mb-2">
+                                                    <table className="w-full text-left border-collapse text-sm sm:text-base">
+                                                        <thead>
+                                                            <tr className="border-b-2 border-[#D8D3C4] text-[#4A4743]"><th className="py-2 pr-4">Test story</th><th className="py-2 pr-4">Recall@10, main</th><th className="py-2 pr-4">Recall@10, hard</th><th className="py-2 pr-4">Correct, main</th><th className="py-2">Correct, hard</th></tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr className="border-b border-[#EAE5D9]"><td className="py-2 pr-4">v1</td><td className="py-2 pr-4">82.4%</td><td className="py-2 pr-4">70.2%</td><td className="py-2 pr-4">—</td><td className="py-2">—</td></tr>
+                                                            <tr className="border-b border-[#EAE5D9]"><td className="py-2 pr-4">v2</td><td className="py-2 pr-4">94.5%</td><td className="py-2 pr-4">83.0%</td><td className="py-2 pr-4">29 / 91</td><td className="py-2">21 / 47</td></tr>
+                                                            <tr><td className="py-2 pr-4 font-bold text-[#4A4743]">v3 (deployed)</td><td className="py-2 pr-4 font-bold">94.5%</td><td className="py-2 pr-4 font-bold">89.4%</td><td className="py-2 pr-4 font-bold">83 / 91</td><td className="py-2 font-bold">40 / 47</td></tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
 
                                             <div>
-                                                <h4 className="text-xl font-bold text-[#4A4743] mb-3">Intent Short-Circuit</h4>
-                                                <p className="mb-4">Before any retrieval, the system evaluates: <em>"Can the current UI state + recent history answer this without going to the DB?"</em></p>
-                                                <p className="mb-4">Simple actions like drawing a sword, checking inventory, or repeating a known location don't need vector search. Skipping it eliminates 200–400ms of latency on ~30% of turns.</p>
-                                                <p className="text-sm bg-[#F2F0E9] p-3 rounded text-[#5C554B]"><strong>Trade-off acknowledged:</strong> This requires accurate intent classification. A false positive (incorrectly short-circuiting a turn that actually needed memory) produces plot inconsistencies. Current threshold is conservative.</p>
+                                                <h4 className="text-xl font-bold text-[#4A4743] mb-3">Hybrid Retrieval (BM25 + vector, quota fusion) <span className="text-sm font-normal text-[#8D7B68]">v2, Oct 2026</span></h4>
+                                                <p className="mb-4">Every turn runs two retrievers over the session&apos;s memory chunks and merges them:</p>
+                                                <ul className="list-disc pl-5 space-y-1 mb-4 text-sm sm:text-base">
+                                                    <li><strong>Vector:</strong> the player&apos;s raw input is embedded and searched in Pinecone. It starts in parallel with the LLM query rewriter, so it adds no latency after rewriting.</li>
+                                                    <li><strong>BM25:</strong> the raw input plus the rewriter&apos;s output (pronouns replaced with entity names, entities appended) is scored with Okapi BM25 over the chunk summaries, kept in Redis and scored in memory per request.</li>
+                                                    <li><strong>Fusion:</strong> BM25&apos;s top 3 take the first slots, and the vector ranking fills the rest up to 10.</li>
+                                                </ul>
+
+                                                <div className="bg-[#FAFAF8] p-4 rounded border border-[#EAE5D9] mb-4">
+                                                    <strong className="block text-[#4A4743] mb-2">How I got here</strong>
+                                                    <p className="mb-2 text-sm sm:text-base">The first version used vector-only &ldquo;tier search&rdquo; (an entity-filtered vector query topped up with an unfiltered one), because I assumed frequent entity names would flatten BM25&apos;s IDF. I tested that on a machine-played 100-round pilot story: 44 chunks, 88 recall questions, half reusing the chunk&apos;s wording and half paraphrased.</p>
+                                                    <ul className="list-disc pl-5 space-y-1 mb-2 text-sm sm:text-base">
+                                                        <li>The premise held only for core characters: the protagonist appears in 95% of chunk summaries (IDF 0.06 vs 2.3 for a typical event word), largely because the summarizer replaces pronouns with names.</li>
+                                                        <li>BM25 still matched or beat tier search, and removing entity terms from its query <em>hurt</em> it.</li>
+                                                        <li>The entity filter barely filtered: 77% of chunks passed it on average.</li>
+                                                        <li>Vector search won where wording diverged (&ldquo;jacket&rdquo; vs &ldquo;coat&rdquo;); BM25 won where it matched. They were complementary.</li>
+                                                    </ul>
+                                                    <p className="text-sm sm:text-base">Tuning 9 parameters on 40 questions overfit (0.78 → 0.60 MRR on held-out questions), so I used grouped cross-validation to decide <em>how much</em> to tune. The pilot picked weighted RRF. On the 300-round dev story, though, RRF with BM25 weight 4 let BM25 decide the whole candidate set, so I replaced it with the simpler quota rule (fewest parameters within 0.01 of the best).</p>
+                                                </div>
+
+                                                <div className="bg-[#FAFAF8] p-4 rounded border border-[#EAE5D9] overflow-x-auto mb-2">
+                                                    <table className="w-full text-left border-collapse text-sm sm:text-base">
+                                                        <thead>
+                                                            <tr className="border-b-2 border-[#D8D3C4] text-[#4A4743]"><th className="py-2 pr-4">Pilot story</th><th className="py-2 pr-4">MRR@10</th><th className="py-2 pr-4">Hit@5</th><th className="py-2">Hit@5 (paraphrased)</th></tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr className="border-b border-[#EAE5D9]"><td className="py-2 pr-4">Tier search (v1)</td><td className="py-2 pr-4">0.49</td><td className="py-2 pr-4">0.66</td><td className="py-2">0.61</td></tr>
+                                                            <tr className="border-b border-[#EAE5D9]"><td className="py-2 pr-4">BM25 only</td><td className="py-2 pr-4">0.66</td><td className="py-2 pr-4">0.81</td><td className="py-2">0.64</td></tr>
+                                                            <tr><td className="py-2 pr-4 font-bold text-[#4A4743]">Hybrid (RRF, out-of-sample)</td><td className="py-2 pr-4 font-bold">0.67</td><td className="py-2 pr-4 font-bold">0.88</td><td className="py-2 font-bold">0.77</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p className="text-sm text-[#8D7B68] italic">Tier search and BM25-only have no tuned parameters, so they are scored directly on all 88 questions. The hybrid numbers are out-of-sample (4-fold cross-validation grouped by source chunk, repeated 25 times); scored on the questions it was tuned on, it would read 0.70 / 0.91 / 0.84.</p>
+                                                <p className="mt-4 text-sm bg-[#F2F0E9] p-3 rounded text-[#5C554B]"><strong>Result on the held-out test story:</strong> Recall@10 rose from 82.4% to 94.5% (main set) and from 70.2% to 83.0% (hard set). On early events, v1 fell from 93% to 78% as the story tripled in length, while v2 stayed at 100% → 98%.</p>
+                                            </div>
+
+                                            <div>
+                                                <h4 className="text-xl font-bold text-[#4A4743] mb-3">Removed: Intent Short-Circuit <span className="text-sm font-normal text-[#8D7B68]">v2, Oct 2026</span></h4>
+                                                <p className="mb-4">The first version asked an LLM router before every retrieval: <em>&ldquo;Can the current state + recent history answer this without going to the DB?&rdquo;</em> If yes, retrieval was skipped to save latency.</p>
+                                                <p className="mb-4">I measured it on a machine-played 100-round story and removed it. It skipped retrieval on <strong>37 of 40</strong> recall questions, and for <strong>32</strong> of those the answer was not in the state or recent history, so the writer had to make up the past. For ordinary actions it short-circuited only 4 of 100 turns, saving ~0.6s on 4% of turns instead of the ~30% I had assumed.</p>
+                                                <p className="text-sm bg-[#F2F0E9] p-3 rounded text-[#5C554B]"><strong>Lesson:</strong> the router was inverted. Questions about the past looked &ldquo;answerable&rdquo; because their entities appear in the state, while actions almost always went to retrieval. Every turn now retrieves.</p>
+                                            </div>
+
+                                            <div>
+                                                <h4 className="text-xl font-bold text-[#4A4743] mb-3">Memory Fidelity in the Writer Prompt <span className="text-sm font-normal text-[#8D7B68]">v2, Oct 2026</span></h4>
+                                                <p className="mb-4">Retrieval was not the only failure point. In an end-to-end check (88 recall questions; the story model answers, an LLM judge compares the answer with the recorded fact), most wrong answers happened even though the right memory <em>was</em> in the prompt. The writer prompt was working against it: &ldquo;only use elements present in the current state&rdquo; excluded everything retrieved, memories sat in an unlabeled &ldquo;Context&rdquo; line, and &ldquo;no inner thoughts&rdquo; ruled out recalling anything.</p>
+                                                <p className="mb-4">The prompt now labels the memory inputs and adds a Memory Fidelity rule. The past is fixed. When the player asks about an earlier event, the writer answers from memory exactly as recorded, or says the protagonist can&apos;t recall it. For ordinary actions, memories are used silently as background.</p>
+                                                <div className="bg-[#FAFAF8] p-4 rounded border border-[#EAE5D9] overflow-x-auto mb-2">
+                                                    <table className="w-full text-left border-collapse text-sm sm:text-base">
+                                                        <thead>
+                                                            <tr className="border-b-2 border-[#D8D3C4] text-[#4A4743]"><th className="py-2 pr-4">Writer prompt</th><th className="py-2 pr-4">Consistent with the past</th><th className="py-2">Contradicts it</th></tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr className="border-b border-[#EAE5D9]"><td className="py-2 pr-4">Before</td><td className="py-2 pr-4">48 / 88</td><td className="py-2">37 / 88</td></tr>
+                                                            <tr><td className="py-2 pr-4 font-bold text-[#4A4743]">After</td><td className="py-2 pr-4 font-bold">78 / 88</td><td className="py-2 font-bold">10 / 88</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p className="text-sm text-[#8D7B68] italic">31 answers improved and 1 got worse; action turns keep their length and style. The first draft of the new prompt was also run on these questions; the follow-up edit only targeted action turns, but the set is not fully unseen.</p>
+                                            </div>
+
+                                            <div>
+                                                <h4 className="text-xl font-bold text-[#4A4743] mb-3">Fixing the Benchmark Itself</h4>
+                                                <p className="mb-4">Two problems were in the measurement, not the system. The first judge had no &ldquo;can&apos;t recall&rdquo; verdict, so it scored honest uncertainty as a contradiction; the new judge separates the two (majority of 3, checked by hand against a second judge model). And many wrong answers came from bad questions: &ldquo;the 42nd water crisis&rdquo;, amounts that change over time, facts that happen several times. I rebuilt the set with stricter generation, LLM screening, manual review, and a check that every question has one answer across the story.</p>
+                                                <p className="text-sm bg-[#F2F0E9] p-3 rounded text-[#5C554B]"><strong>Lesson:</strong> with the same stories and the same system, the test score went from 55% to 79%. Check the test, not just the system.</p>
+                                            </div>
+
+                                            <div>
+                                                <h4 className="text-xl font-bold text-[#4A4743] mb-3">Original Text for Every Retrieved Memory <span className="text-sm font-normal text-[#8D7B68]">v3, Oct 2026</span></h4>
+                                                <p className="mb-4">With v2, retrieval found a correct chunk for 94.5% of test questions, but the writer answered only 29 of 91 correctly. It only saw summaries (about 55 words for 413 words of story), and only 10–19% of answers were still in the summary. v3 gives the writer the original text of all 10 retrieved chunks, in story order with turn numbers.</p>
+                                                <p className="mb-4">An intermediate build attached original text to the top 3 only. It showed that when the right chunk sat at rank 4–10 (summary only), the writer answered just 2 of 16 correctly; with original text for all 10, it answered 16 of 16.</p>
+                                                <p className="text-sm bg-[#F2F0E9] p-3 rounded text-[#5C554B]"><strong>Result on the test story:</strong> correct answers went from 29/91 to 82/91 (main set) and from 21/47 to 37/47 (hard set), for about 2,500 extra input tokens per turn (about $0.00025) and no change in latency.</p>
+                                            </div>
+
+                                            <div>
+                                                <h4 className="text-xl font-bold text-[#4A4743] mb-3">Detailed Chunk Summaries <span className="text-sm font-normal text-[#8D7B68]">v3, Oct 2026</span></h4>
+                                                <p className="mb-4">After that, almost every remaining error was a retrieval miss: search only sees summaries, so a detail the summary dropped can&apos;t be found. The summary prompt now keeps every story-relevant fact (what was said, items, prices, decisions, outcomes, clues) in the story&apos;s own words, about 125 words instead of 55. Both BM25 and the vector index use them.</p>
+                                                <p className="text-sm bg-[#F2F0E9] p-3 rounded text-[#5C554B]"><strong>Result on the test story:</strong> a small extra gain. On the hard set, Recall@10 went from 83.0% to 89.4% and correct answers from 37/47 to 40/47, exactly the 3 extra chunks found; not statistically significant at n=47, but the same direction as on the dev story. On the main set, no change (82 → 83, within noise).</p>
                                             </div>
                                         </div>
                                     </section>
@@ -695,12 +772,9 @@ function HomeInner() {
 
                                         <div className="space-y-6">
                                             <div className="bg-[#FDFBF7] p-6 rounded border border-[#D8D3C4]">
-                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">Agentic RAG (LangGraph) Document Grading</h4>
-                                                <p className="mb-2"><strong>Current issue 1:</strong> Results from Tier 1 and Tier 2 search are assigned equal significance in the final prompt. In practice, their actual relevance to the player's immediate intent can vary significantly, sometimes introducing narrative noise that distracts the writer model.</p>
-                                                <p className="mb-2"><strong>Next:</strong> Introduce a self-reflection loop post-retrieval: a fast grading model evaluates each retrieved chunk's relevance before it enters the prompt. Active filtering instead of passive retrieval.</p>
-                                                <p className="text-[#8D7B68] text-sm mt-4 p-3 bg-red-50 rounded border border-red-100 italic">
-                                                    <strong>⚠️ Risk:</strong> An intermediate grading LLM adds ~150–300ms TTFT. For a real-time game, that's meaningful. Possible mitigation: run grading only when retrieval confidence score is below a threshold, not on every turn.
-                                                </p>
+                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">Timeline Questions</h4>
+                                                <p className="mb-2"><strong>Current issue 1:</strong> Questions like &ldquo;the third time I faced a water shortage&rdquo; remain the weakest category. The retrieved set usually holds only some occurrences of a recurring event, so the writer can&apos;t tell which one is &ldquo;the third&rdquo;.</p>
+                                                <p className="mb-2"><strong>Next:</strong> Ordinal-aware retrieval: the rewriter detects &ldquo;Nth time&rdquo;, retrieves many chunks matching the event, sorts them by turn, and picks the Nth episode.</p>
                                             </div>
 
                                             <div className="bg-[#FDFBF7] p-6 rounded border border-[#D8D3C4]">
@@ -711,6 +785,17 @@ function HomeInner() {
                                                     <strong>⚠️ Risk:</strong> It's hard to distinguish whether a state is relevant to the scene. Some items may have a hidden-trigger linked to a world state in a far-off region. Moreover, to know what sub-states are relevant, the system must first understand the player intent. However, to fully comprehend the intent, the LLM often requires the context provided by those sub-states. This creates a chicken-and-egg problem.
                                                 </p>
                                             </div>
+
+                                            <div className="bg-[#FDFBF7] p-6 rounded border border-[#D8D3C4]">
+                                                <h4 className="font-bold text-[#4A4743] mb-3 text-lg">Benchmark Limits</h4>
+                                                <p className="mb-2"><strong>Current issue 3:</strong> The benchmark has only two stories, both played by an AI, and the test story has been reused for several versions. Each version was frozen before its test run, but the results are likely somewhat optimistic; a fresh test story would give a cleaner number.</p>
+                                                <p className="mb-2"><strong>Other ideas, not yet tested:</strong></p>
+                                                <ol className="list-decimal pl-5 space-y-1 text-sm sm:text-base">
+                                                    <li>Document expansion at write time: the summary call also emits synonyms and likely questions for BM25.</li>
+                                                    <li>Deeper candidates + re-ranking: take the top 30 from each retriever and let a small model pick the final 10.</li>
+                                                    <li>MMR diversity: recurring scenes produce near-duplicate chunks that can fill the top 10.</li>
+                                                </ol>
+                                            </div>
                                         </div>
                                     </section>
 
@@ -718,10 +803,10 @@ function HomeInner() {
                                     <section id="intro-learned" className="scroll-mt-12">
                                         <h3 className="text-2xl font-bold text-[#4A4743] tracking-widest mb-6 border-l-4 border-[#8D7B68] pl-4">5. What I Learned</h3>
                                         <p className="mb-4 text-lg">
-                                            Building this forced me to think carefully about <strong className="text-[#4A4743]">token budget as a first-class engineering constraint</strong> — every architectural decision (state diffs instead of full state, sliding window instead of full history, short-circuit before retrieval) was made to reduce tokens per request without sacrificing coherence.
+                                            Building this forced me to think carefully about <strong className="text-[#4A4743]">token budget as a first-class engineering constraint</strong> — every architectural decision (state diffs instead of full state, sliding window instead of full history) was made to reduce tokens per request without sacrificing coherence.
                                         </p>
                                         <div className="text-lg bg-[#FAFAF8] p-5 rounded border border-[#EAE5D9] mt-6 font-medium text-[#5C554B]">
-                                            The biggest insight: <strong className="text-[#4A4743]">memory in LLM systems isn't a storage problem, it's a retrieval precision problem.</strong> Having the right context matters more than having all the context.
+                                            The biggest insight: <strong className="text-[#4A4743]">finding the right memory and reading it are two different problems.</strong> v2 made retrieval find the right chunk 95% of the time, but correct answers stayed at 32% until v3 let the writer read the original text (91%).
                                         </div>
                                     </section>
 
@@ -956,9 +1041,7 @@ function HomeInner() {
                                         style={m.role === 'assistant' ? { textIndent: '1.5em' } : {}}
                                     >
                                         {m.role === 'assistant' && m.content === '' && loading && i === messages.length - 1 ? (
-                                            <span className="text-[#8D7B68] italic tracking-widest text-sm sm:text-base animate-pulse block" style={{ textIndent: 0 }}>
-                                                The world is unfolding...
-                                            </span>
+                                            <UnfoldingMessage />
                                         ) : (
                                             m.content.split('\n').filter(line => line.trim() !== '').map((line, idx) => (
                                                 <p key={idx} className="mb-3 last:mb-0 min-h-[1.5rem]">{line}</p>

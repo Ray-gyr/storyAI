@@ -1,0 +1,422 @@
+{
+  "hard-1": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The transmission’s single word is a distinctive potential clue that a player could plausibly want to recall from this moment."
+  },
+  "hard-2": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The scrape marks are a specific, story-relevant clue that directly guided the player to the service door."
+  },
+  "hard-3": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The matching orange survey tape is a story-relevant clue identifying the drone’s owner, specific to this discovery."
+  },
+  "hard-4": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about the outcome of a specific attempted shield, and the passage confirms that the gas tore the cable away and swept it through the breach."
+  },
+  "hard-5": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the cable bundle blocking access is relevant to deciding how to open this particular panel, and the passage explicitly describes the obstruction."
+  },
+  "hard-6": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question asks about a story-relevant repair step, and the passage shows bracing the conduit, aligning the plug to the socket, and tightening the collar by hand."
+  },
+  "hard-7": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the warning to avoid repeated clamp cycles is relevant to safely operating the docking clamps and is specific to this situation."
+  },
+  "hard-8": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks the player to recall the specific command used to release the docking clamps, which the passage explicitly identifies as RELEASE CLAMPS."
+  },
+  "hard-9": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The strained exposed coupling is a relevant clue about the repaired conduit’s condition at this moment that a player could plausibly want to recall."
+  },
+  "hard-10": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question recalls a specific, actionable warning to avoid repeated clamp cycles, which matters to preventing further strain on the power conduit."
+  },
+  "hard-11": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question recalls a concrete risk relevant to choosing whether to dismantle the cargo bay for conduit support."
+  },
+  "hard-12": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the equipment locker aboard the Kestrel as the canister’s pickup location is a plausible, story-relevant detail tied to this retrieval."
+  },
+  "hard-13": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about a specific obstacle-solving action, and the passage confirms she freed the catch by pulling it while pushing the obstructing cable bundle through the gap."
+  },
+  "hard-14": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about a scene-specific obstacle to finding Dr. Brandt, but the passage depicts only Juno staying outside the gas stream and finding no sign of Brandt in the area she can safely inspect, not an attempted deeper search being stopped."
+  },
+  "hard-15": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The bent rotor arm is a specific, story-relevant discovery that explains the player's attempts to repair the survey drone."
+  },
+  "hard-16": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question asks about a story-relevant hazard at this specific blocked route, and the passage explicitly identifies escaping gas as what made it unsafe."
+  },
+  "hard-17": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the distinctive word in Odile’s final transmission is a plausible story-relevant question tied to the proprietor’s examination of these survey logs."
+  },
+  "hard-18": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling that the “Lantern” transmission survived the file damage is a plausible, story-relevant detail specific to the proprietor’s assessment."
+  },
+  "hard-19": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The proprietor’s suggestion to ask at the salvage counters is a specific, story-relevant lead a player could plausibly want to recall."
+  },
+  "hard-20": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question plausibly recalls the trader’s refusal to provide salvage leads, and the answer is specific to this exchange."
+  },
+  "hard-21": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The sale price is a plausible and moment-specific transaction detail to recall, and the passage explicitly confirms it was 180 credits."
+  },
+  "hard-22": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls the pawnbroker’s explicit refusal to broker introductions or identify another buyer, a relevant obstacle to Juno’s search for buyers."
+  },
+  "hard-23": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The credit amount is a relevant negotiation detail specific to this exchange, and the passage explicitly states an offer of 300 credits."
+  },
+  "hard-24": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about the specific payment in a consequential trade, explicitly recorded as 300 credits and Odile’s brass compass."
+  },
+  "hard-25": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about the story-relevant navigation capability restored by installing this core, and the passage explicitly identifies it as calculating routes through the debris belt."
+  },
+  "hard-26": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question concerns a meaningful obstacle at this exposed coupling, and the passage explicitly states that the surrounding structure provided no solid bracing point."
+  },
+  "hard-27": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a specific accusation made during the confrontation, and the passage explicitly identifies it as stealing from the cargo holds."
+  },
+  "hard-28": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the guards’ offer of supplies or negotiable credits is a plausible, story-relevant question tied to this specific exchange."
+  },
+  "hard-29": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the department named as Aiden Kessler’s affiliation is a plausible and scene-specific detail relevant to the player’s attempt to gain authorization."
+  },
+  "hard-30": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the 180-credit sale price of a specific item is a plausible player question, and the passage explicitly states that amount."
+  },
+  "hard-31": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the choice between waiting for Kessler’s confirmation and withdrawing the pending request is relevant to the player’s decision at this checkpoint."
+  },
+  "hard-32": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls localized hull damage discovered during the post-ambush inspection, a story-relevant finding that informed the decision to seek bracing materials."
+  },
+  "hard-33": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a specific travel decision made to obtain needed bracing materials, and the passage explicitly names Port Halcyon."
+  },
+  "hard-34": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the 420-credit cost of the structural braces is a plausible, story-relevant question about this specific purchase."
+  },
+  "hard-35": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The 120-credit shortfall is explicitly stated and directly explains why Juno could not buy the spare plating at this point."
+  },
+  "hard-36": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks for a story-relevant signal localization explicitly established at this moment as the Tessaly cloud skimmer platform itself."
+  },
+  "hard-37": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the panel that blocked access to the beacon is story-relevant and specific to this moment, though this detail question is not temporal."
+  },
+  "hard-38": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a story-relevant action that exposed the beacon’s contacts, and the passage specifically confirms that pressing both recessed catches simultaneously released the cover."
+  },
+  "hard-39": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question recalls the outcome of a specific attempt to trace the beacon’s signal, a relevant clue that established it did not lead to another location."
+  },
+  "hard-40": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling where the receiver could not guide the player is relevant to navigation and specific to this attempt to trace the beacon signal beyond the platform."
+  },
+  "hard-41": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a useful capability checked during this beacon inspection, and the passage explicitly states that no transmission-strength or boost control was available."
+  },
+  "hard-42": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a relevant investigation finding specific to the skimmer’s records: sampling operations but no beacon transmission records."
+  },
+  "hard-43": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about a meaningful decision to leave the laboratory cables intact, and the passage explicitly explains that there was no clear connection point for restoring power."
+  },
+  "hard-44": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling whether the laboratory search uncovered physical Lantern project records is a plausible, story-relevant question with an answer specific to this search."
+  },
+  "hard-45": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "The question asks about the story-relevant outcome of this particular search, which found no usable power source."
+  },
+  "hard-46": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the proprietor’s inability to identify the buyer of Odile’s slate and logs, a specific detail that leaves Juno without a lead."
+  },
+  "hard-47": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls a specific investigative dead end: the ledger entry for Odile’s slate contained no buyer name or contact information."
+  },
+  "hard-48": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The missing buyer name and contact information are transaction-specific clues that explain why Juno cannot trace the slate's buyer."
+  },
+  "hard-49": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the supervisor’s specific inability to supply Juno’s authorization for Priya’s release, an important constraint on freeing her."
+  },
+  "hard-50": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about a specific warning and its stated rationale, but it is a detail question rather than a temporal question."
+  },
+  "hard-51": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "This plausibly recalls Priya’s specific priority before purchasing supplies, but the passage states an intended purchase rather than depicting supplies being bought."
+  },
+  "hard-52": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks about the outcome of this particular reactor diagnostic, which confirmed stable regulation, no active faults, and steady life-support readings."
+  },
+  "hard-53": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly asks which repair item was used in this specific moment, and the passage explicitly identifies structural braces."
+  },
+  "hard-54": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the insulated tool used for a particular repair step is plausible and specific, but the question is a detail question rather than a temporal one."
+  },
+  "hard-55": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls Voren’s specific safety restriction on cutting into the transfer hatch, but this is a detail question rather than a temporal question."
+  },
+  "hard-56": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question asks about guards saying they couldn't offer an access code or override, a plausible and moment-specific access limitation, but the passage narrates that limitation rather than depicting the guards stating it."
+  },
+  "hard-57": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "Recalling the search for Hal Voren or potential traps is story-relevant and specific to entering this passage, though this is a detail question rather than a temporal one."
+  },
+  "hard-58": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The sensors’ inability to detect anyone beyond their range is a relevant limitation during the search for Odile and is explicitly established in this passage."
+  },
+  "hard-59": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": true,
+    "reason": "Recalling the suit supply check is a plausible, moment-specific concern about oxygen management, and the passage explicitly places it after the failed canister activation."
+  },
+  "hard-60": {
+    "keep": true,
+    "realistic": true,
+    "specific": true,
+    "event_matches": false,
+    "reason": "The question plausibly recalls the result of this particular scanner sweep, which found no active electronic equipment or equipment that could restore power."
+  }
+}

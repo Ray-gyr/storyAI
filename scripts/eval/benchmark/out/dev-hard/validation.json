@@ -1,0 +1,487 @@
+{
+  "hard-1": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage identifies the transmission as “LANTERN” (with capitalization differing only in the later references)."
+    }
+  },
+  "hard-2": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-3": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-4": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-5": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage identifies the cable bundle across or behind the panel as obstructing or holding the manual catch."
+    }
+  },
+  "hard-6": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages describe supporting the conduit, aligning the plug with the socket, and tightening the collar by hand."
+    }
+  },
+  "hard-7": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage repeats the warning to avoid repeated clamp cycles, with none suggesting a different prohibited action."
+    }
+  },
+  "hard-8": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-9": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 5,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage locates the mechanical strain at the conduit’s coupling, specifically the exposed coupling."
+    }
+  },
+  "hard-10": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: conduit warning 'avoid repeated clamp cycles' (kept hard-7)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-11": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-12": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages say the canister was retrieved from the equipment locker aboard the Kestrel, and none gives a different pickup location."
+    }
+  },
+  "hard-13": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-14": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 6,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage identifies the venting gas as making the passage toward the deeper hydroponics deck unsafe to enter; the cable blockage is described separately in the compartment below."
+    }
+  },
+  "hard-15": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 5,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage describing the drone identifies its rotor arm as bent against its frame or body, and later passages explicitly call it sharply bent; none gives a different damage."
+    }
+  },
+  "hard-16": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 11,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage attributes the route’s danger to escaping gas venting across it, with no passage giving a different cause."
+    }
+  },
+  "hard-17": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages consistently identify “Lantern” as the word in Odile’s final transmission."
+    }
+  },
+  "hard-18": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: the 'Lantern' transmission (kept hard-17)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-19": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 6,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The proprietor explicitly suggests asking around the salvage counters, and the other passages describe Juno going to those counters or market stalls without implying a different place."
+    }
+  },
+  "hard-20": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages consistently indicate that traders do not track or provide locations for wrecks in the belt."
+    }
+  },
+  "hard-21": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 7,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage states that the cracked slate was sold for 180 credits, even where the sale is described as including the survey logs."
+    }
+  },
+  "hard-22": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the proprietor does not broker introductions or point Juno to another buyer."
+    }
+  },
+  "hard-23": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that Juno offered Brother Calix 300 credits."
+    }
+  },
+  "hard-24": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages establish that Juno exchanged 300 credits and Odile’s brass compass for the navigation core."
+    }
+  },
+  "hard-25": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages state that installing the navigation core restored the Kestrel’s ability to calculate routes through the debris belt, and the later passages show it calculating and following such a route."
+    }
+  },
+  "hard-26": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-27": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-28": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-29": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-30": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: cracked slate sold for 180 credits (kept hard-21)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-31": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-32": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "All passages describe fresh scoring and a shallow crease in the cargo-bay plating, with the seam closed and no escaping air; none suggests different damage."
+    }
+  },
+  "hard-33": {
+    "valid": false,
+    "reasons": [
+      "ambiguous across 5 passages: The passages first describe suggesting the old docks for bracing materials, then later describe suggesting Port Halcyon, so they imply different answers."
+    ],
+    "accepted_passages": 5,
+    "consistency": {
+      "consistent": false,
+      "reasoning": "The passages first describe suggesting the old docks for bracing materials, then later describe suggesting Port Halcyon, so they imply different answers."
+    }
+  },
+  "hard-34": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Each passage states that Juno paid the vendor 420 credits for the structural braces."
+    }
+  },
+  "hard-35": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage states the plating costs 260 credits and Juno has 140, confirming she was 120 credits short."
+    }
+  },
+  "hard-36": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 7,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage places the initial localization on the Tessaly cloud skimmer platform, with later passages narrowing the source to inside the platform and ultimately to the beacon unit."
+    }
+  },
+  "hard-37": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages identify the panel with a small gap along one edge as blocking the way to the beacon, and none suggests a different obstruction."
+    }
+  },
+  "hard-38": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-39": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-40": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-41": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-42": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-43": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages consistently indicate that no accessible or clear connection point was available to restore power, and none gives a conflicting reason for leaving the cables intact."
+    }
+  },
+  "hard-44": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-45": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-46": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages indicate the proprietor could not identify who bought Odile’s cracked data slate and survey logs."
+    }
+  },
+  "hard-47": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages say the ledger recorded only the slate and sale price, with no buyer name or contact information."
+    }
+  },
+  "hard-48": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: ledger had no buyer details (kept hard-47)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-49": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage states that the supervisor could review Priya’s hold but could not provide Juno’s authorization for her release."
+    }
+  },
+  "hard-50": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-51": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages show Priya wanted the reactor and life support readings checked before buying supplies, and none gives a different answer."
+    }
+  },
+  "hard-52": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-53": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages say the docking-ring conduit was stabilized with structural braces."
+    }
+  },
+  "hard-54": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the bent retaining clip was pressed into place using the insulated tool, with no conflicting tool identified."
+    }
+  },
+  "hard-55": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Voren explicitly forbade cutting into the transfer hatch until Juno knew its pressure, and the later passage confirms the hatch remained unsafe to force while pressure was unknown."
+    }
+  },
+  "hard-56": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The guards explicitly said they had no code or override to offer, and the later passage confirms they had no access method or hatch override to provide."
+    }
+  },
+  "hard-57": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages establish that Juno searched the passage for signs of Hal Voren and potential traps."
+    }
+  },
+  "hard-58": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "hard-59": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "hard-60": {
+    "valid": false,
+    "reasons": [
+      "manual review: null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  }
+}

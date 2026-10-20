@@ -1,0 +1,1326 @@
+{
+  "variant": {
+    "tag": "qset2_o0",
+    "originalTextFor": 0
+  },
+  "summary": {
+    "judge": "judge-v2/gpt-6-luna",
+    "n": 91,
+    "all": {
+      "correct": 29,
+      "contradicts": 36,
+      "cannot_recall": 22,
+      "absent": 4
+    },
+    "gold_retrieved": {
+      "n": 86,
+      "correct": 29,
+      "contradicts": 31,
+      "cannot_recall": 22,
+      "absent": 4
+    },
+    "gold_not_retrieved": {
+      "n": 5,
+      "correct": 0,
+      "contradicts": 5,
+      "cannot_recall": 0,
+      "absent": 0
+    },
+    "by_type": {
+      "detail": {
+        "correct": 16,
+        "contradicts": 20,
+        "cannot_recall": 10,
+        "absent": 2
+      },
+      "vague": {
+        "correct": 12,
+        "contradicts": 12,
+        "cannot_recall": 12,
+        "absent": 2
+      },
+      "temporal": {
+        "correct": 1,
+        "contradicts": 4,
+        "cannot_recall": 0,
+        "absent": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "qid": "early-detail-3",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage records that the drivers agreed to halt if the teams began to tire, contrary to the reply’s claim that the account does not record their agreement.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly what would prompt a halt; the available account does not record what she and the drivers agreed."
+    },
+    {
+      "qid": "early-vague-4",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reference says Tamsin’s annotations identified the safe ground, while the reply only says the narrator cannot recall clearly.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly what the map showed to identify the safe ground."
+    },
+    {
+      "qid": "early-vague-6",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says the drivers pulled the wagons close to cast narrow strips of shade, while the reply honestly says Tamsin cannot recall how they made shade and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly how the drivers made shade. She remembers distributing the remaining water and urging them to rest in shade, but not how they created it."
+    },
+    {
+      "qid": "early-detail-10",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says Wren watched the stalls and the road behind them, while the reply says Tamsin cannot recall those places and only remembers the report that nobody followed.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall Wren naming two specific places she watched. She remembers Wren reporting no followers since they left Merrow."
+    },
+    {
+      "qid": "early-detail-11",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply says the reliquary was brought with the caravan to Saint Aurel’s gates, consistent with Grell saying it had been brought to his threshold there.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You brought the reliquary with the caravan to the Gates of Saint Aurel. Grell came out there and asked about its protection."
+    },
+    {
+      "qid": "early-detail-12",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Grell said the wards were a restraint, but the reply instead characterizes them as intact seals.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Grell advised keeping the reliquary closed and offered to inspect its seals; Tamsin cannot recall him describing the wards as anything other than intact seals, or calling them a guarantee of safety."
+    },
+    {
+      "qid": "early-vague-10",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reference says Grell studied the container without touching its locks before examining the seals, while the reply expresses uncertainty and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly what Abbot Grell avoided touching before examining the seals. She recalls only that he inspected the reliquary and confirmed the seals were undisturbed."
+    },
+    {
+      "qid": "early-detail-13",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says Tamsin pointed out the old war-ruins so Grell could keep travelers clear of them, contrary to the reply’s claim that no specific ruins were named.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly which ruins, if any, she identified for travelers to avoid. She remembers trading route knowledge for two water skins, but no specific ruins were named."
+    },
+    {
+      "qid": "early-detail-14",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Wren explicitly suggested that Tamsin could ask around again if she went back, contrary to the reply’s claim that she suggested no specific action.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren said she had no local contacts in Merrow and no lead on Sir Bastian. She did not suggest a specific course of action if Tamsin went back."
+    },
+    {
+      "qid": "early-detail-17",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says Wren told the drivers to report any spill or leak at once, while the narrator says Tamsin cannot clearly recall that instruction.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin recalls Wren telling the drivers to ration the water carefully, but she cannot clearly recall being told to report anything immediately."
+    },
+    {
+      "qid": "early-detail-18",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Sabeth asked only that the drivers keep her pace and stay on the path; she did not require them to keep the water covered.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Old Mother Sabeth did not ask for extra payment. She required the drivers to keep her pace, stay on her track, and keep the water covered."
+    },
+    {
+      "qid": "early-vague-15",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply is unsure who would choose the stopping place and makes no conflicting claim; Sabeth said the caravan would stop where she said.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly who would choose the stopping place if the heat forced a halt. Old Mother Sabeth warned her about heat and thirst and told her to keep the caravan close to her track."
+    },
+    {
+      "qid": "early-detail-19",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reference says to stop the caravan and not guess, while the narrator says they can’t recall that specific instruction.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Sabeth told you to stay close and follow her track carefully, watching the ground for bad footing. You can’t recall her giving a specific instruction for what to do if you lost sight of it."
+    },
+    {
+      "qid": "late-vague-1",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says smooth surfaces can hide bad footing especially by the banks; the reply says Tamsin cannot recall where, without making a conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall Old Mother Sabeth saying where smooth surfaces were especially deceptive. She remembers Sabeth warning about bad footing and advising her to follow the tested track closely."
+    },
+    {
+      "qid": "late-detail-2",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says the vibration was strongest near the lid, so the reply’s claim that the recorded details do not specify where contradicts it.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly where on the casing the vibration was strongest. The recorded details only say the reliquary hummed steadily and showed no visible openings or wear."
+    },
+    {
+      "qid": "late-detail-4",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage clearly says he answered when spoken to, so claiming his response was not recorded clearly contradicts it.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The weakened driver’s response to being spoken to isn’t recorded clearly. Wren found his pulse steady, but he remained too weak to take the reins."
+    },
+    {
+      "qid": "late-vague-4",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference passage says the weakened driver could not sit up without Wren’s support, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "He couldn’t sit up without Wren’s support."
+    },
+    {
+      "qid": "late-detail-5",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply is unsure what Wren took care not to disturb and makes no conflicting claim, though it correctly recalls the search and its results.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly that Wren took care not to disturb anything. She remembers Wren searching the wagon and finding no hidden water containers or spare supplies."
+    },
+    {
+      "qid": "late-vague-5",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says Tamsin asked the drivers whether they had anything to spare, so the reply falsely claims the events do not specify whom she asked.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly whom she asked; the recorded events do not specify."
+    },
+    {
+      "qid": "late-detail-6",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": false,
+      "verdict": "contradicts",
+      "reasoning": "The passage says Tamsin searched beneath the driver’s seat, not that Wren checked the wagon, so the reply includes a false claim.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly which seat she searched beneath. The account only records that Wren checked the wagon for hidden water containers and spare supplies, finding none."
+    },
+    {
+      "qid": "late-detail-7",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says Ferro waited beside the dock office entrance, while the narrator cannot recall the exact spot and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall exactly where Ferro waited at the docks. She remembers that he stayed there and wanted to hear Wren’s account separately."
+    },
+    {
+      "qid": "late-detail-9",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says you planned to ask for any witness detail checkable against another account, not specifically whether someone had seen Yara before the attack.",
+      "votes": [
+        "contradicts",
+        "correct",
+        "contradicts"
+      ],
+      "response": "You planned to ask Captain Ferro for more detail about Yara’s involvement, especially whether anyone had seen her before the attack. The witnesses confirmed that Yara led the bandits but had no further specifics."
+    },
+    {
+      "qid": "late-vague-8",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says Ferro had the dockworkers carry the request to caravan crews, contrary to the reply’s claim that no one was named.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Captain Ferro said he would send word to nearby caravans asking for more information. No specific person was named to carry the request."
+    },
+    {
+      "qid": "late-vague-9",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "absent",
+      "reasoning": "The reference says Wren sped up without jolting the weakened driver, while the reply only says he did not take the reins.",
+      "votes": [
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "response": "Wren kept the weakened driver seated beside her and did not make him take the reins; he was too weak to drive."
+    },
+    {
+      "qid": "late-detail-11",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says Tamsin kept the water skins tied shut after checking them, leaving the remaining sips for later.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You found only a few measured sips left and kept the water skins tied shut to conserve them while the teams rested in the shade."
+    },
+    {
+      "qid": "late-vague-10",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says the Sealed Reliquary remained at Saint Aurel during your first shrine visit, leaving you unable to reach Ishkar.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You had left the Sealed Reliquary at Saint Aurel. Without it, you couldn’t communicate with Ishkar at the hidden Duskwalker shrine."
+    },
+    {
+      "qid": "late-detail-14",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says Sabeth knew rites for listening to what is present, but the reply claims she named no rites.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Sabeth named no rites she knew. She said that without more information about the encounter with the reliquary, she could not perform a rite to reach Ishkar."
+    },
+    {
+      "qid": "late-vague-12",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says Tamsin lifted the reliquary only enough to inspect its underside, contrary to the reply’s claim that the record does not specify which part she lifted.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly which part she lifted. The record only says she examined the sealed reliquary at the shrine."
+    },
+    {
+      "qid": "late-detail-15",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply attributes the refusal to Sabeth, but its explanation that they lacked information reflects Grell’s stated reason for refusing to attempt an unknown ritual.",
+      "votes": [
+        "correct",
+        "correct",
+        "absent"
+      ],
+      "response": "At the Duskwalker shrine, Sabeth refused to attempt a ritual because they had no further information and no way to bypass the reliquary’s seals. Grell warned that there was no safe way to open it."
+    },
+    {
+      "qid": "late-detail-16",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says the patrol leader told the guards to ease their grip, but the reply claims no exact instruction is preserved.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly what the patrol leader specifically ordered the guards to do; the account only records that guards intercepted her as she tried to leave, and that a brief conversation followed. Captain Ferro Lusk then allowed her to leave Merrow and warned her not to return, but no exact instruction to the guards is preserved."
+    },
+    {
+      "qid": "late-vague-13",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says Tamsin checked whether the mirage held its shape as the wagons moved, while the reply says she cannot recall that detail and correctly notes that no water source appeared.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly what she was checking about the mirage as the wagons moved. She remembers searching for water after the horses rested, but no water source appeared."
+    },
+    {
+      "qid": "late-vague-14",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply says the caravan made up no lost time, matching the passage, and accurately reflects that it reached Grell’s location despite the heat.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You made up no lost time. The horses struggled in the heat, and the caravan reached Grell’s location without incident."
+    },
+    {
+      "qid": "late-temporal-2",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": false,
+      "verdict": "contradicts",
+      "reasoning": "The reference records Wren saying they couldn’t take the teams into the Wastes, so the narrator’s claim that the account omits the warning is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly what Wren said they couldn’t take into the Wastes. The account of that third crisis records the water shortage and weakened driver, but not Wren’s exact warning."
+    },
+    {
+      "qid": "late-temporal-3",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply matches the passage: Wren said the lead team needed shade and rest before safely continuing to pull.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren said the lead team needed shade and rest before continuing."
+    },
+    {
+      "qid": "late-temporal-6",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": false,
+      "verdict": "contradicts",
+      "reasoning": "Although Tamsin says she cannot recall clearly, she falsely claims the account omits the drivers’ response, while the passage says they held their places.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly what the drivers did after Wren warned against setting out. The account of the third crisis says only that a driver weakened and she had to decide whether to rest or continue."
+    },
+    {
+      "qid": "late-temporal-7",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": false,
+      "verdict": "contradicts",
+      "reasoning": "The passage says you pushed onward to make up time, while the reply gives a different reason and claims you halted to search for shade or water.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You halted to assess the weakened driver and searched for shade or water, but found neither. After distributing the last water, you led the caravan onward toward Saint Aurel rather than remain exposed with no relief nearby."
+    },
+    {
+      "qid": "late-temporal-8",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says Tamsin looked for dark patches and low depressions, while the reply claims the detail is not stated and cannot be recalled.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The record doesn’t say which ground features you looked for as signs of water during the fifth shortage or heat-sickness crisis. You cannot recall that detail clearly."
+    },
+    {
+      "qid": "early-detail-21",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says you ruled out the faster Glass Flats crossing because storms and glass splinters could cripple the wagons, while the reply says you cannot recall the specific reason.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "At Corvane’s docks, you planned a safe route to Merrow and told Ferro to avoid risks. You can’t recall clearly whether you specifically ruled out the faster crossing over the Glass Flats, or what reason you gave."
+    },
+    {
+      "qid": "early-detail-22",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly says the journey took three days, matching the passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The first journey from Corvane to Merrow took three days. Tamsin halted the lead wagon at the edge of town to replenish supplies."
+    },
+    {
+      "qid": "early-detail-23",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The stallkeeper warned that no buyer would name a price while the caravan was watching, but the reply says Tamsin cannot clearly recall that warning.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin recalls the stallkeeper was skeptical about selling the reliquary without knowing what was inside, but she cannot clearly recall anyone being warned not to watch while buyers named a price."
+    },
+    {
+      "qid": "early-detail-24",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says Tamsin cannot recall how Wren recorded the supplies, though the passage says Wren marked each confirmed supply off her list.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin remembers Wren confirming that the supplies were accounted for in Merrow, but she cannot recall how Wren recorded which items were present."
+    },
+    {
+      "qid": "early-detail-25",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The map explicitly marked old war-ruins for Tamsin to examine, although they provided no clear waystone clue, so saying it showed no specific ruins contradicts the passage.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The map showed no specific ruins or landmarks near the Glass Flats that could help locate the waystone. Tamsin found no alternate route or clue there."
+    },
+    {
+      "qid": "early-detail-26",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says you gathered the drivers to search nearby for the waystone before the heat peaked, and they found nothing.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You gathered the drivers to search the nearby area for signs of the waystone before the heat peaked. The search found nothing."
+    },
+    {
+      "qid": "early-detail-27",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says the wheels passed over the hard glass without breaking, and the reply consistently says the caravan crossed without damage or wheel trouble.",
+      "votes": [
+        "correct",
+        "cannot_recall",
+        "correct"
+      ],
+      "response": "The caravan crossed the Glass Flats without damage, and no wheel trouble was recorded. You cannot recall any more specific detail about how the wheels handled the glass."
+    },
+    {
+      "qid": "early-detail-28",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says the wagons crossed the Glass Flats without damage, with Wren staying beside the collapsed driver on a wagon.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The wagons crossed the Glass Flats without damage. The collapsed driver remained under Wren’s care as the caravan continued."
+    },
+    {
+      "qid": "early-detail-30",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says you told the drivers to hold position while you scouted the outcrop, and the narrator’s reply accurately reflects that.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You told the drivers to maintain position while you went ahead to scout the outcrop. You found no markings and returned to them."
+    },
+    {
+      "qid": "early-detail-31",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly indicates the drivers did not leave the marked route, which the passage explicitly confirms.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The caravan crossed the Glass Flats after you signaled the drivers to increase pace. The account doesn’t say that they left the marked route."
+    },
+    {
+      "qid": "early-detail-32",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Wren recommended keeping the reliquary secured and speaking with Abbot Grell.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren recommended securing the reliquary and speaking with Abbot Grell."
+    },
+    {
+      "qid": "early-detail-33",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "Wren’s report of no follower sightings is consistent with her saying she had seen no one near the gates, and the warning about Sir Bastian is also accurate.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren reported no sightings of followers since the caravan left Merrow. She warned that Sir Bastian Crowe had been hired to take the reliquary."
+    },
+    {
+      "qid": "early-detail-34",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says the caravan and reliquary were under Abbot Grell’s watch, not Wren’s.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren was watching over the caravan at Saint Aurel, where the reliquary remained strapped to a wagon in the inner court."
+    },
+    {
+      "qid": "early-detail-35",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The vendor said they had heard Crowe’s name but could not tell you who had said it, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "No. The Merrow vendors had heard Crowe’s name, but none identified who had mentioned him or offered a useful lead."
+    },
+    {
+      "qid": "early-detail-36",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Sabeth warned that straying could make you lose the way back to the path, not that the ground might change or footing become bad.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Sabeth warned that the ground could change and footing could be bad if the caravan strayed from her track. She told you to stay close and watch the ground ahead."
+    },
+    {
+      "qid": "early-detail-37",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Wren explicitly said she didn’t know what else Sabeth expected, so the reply’s claim that she didn’t say this contradicts the passage.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren didn’t say she didn’t know; she told you Sabeth had already agreed to guide the caravan, provided the drivers kept her pace."
+    },
+    {
+      "qid": "early-vague-16",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": false,
+      "verdict": "contradicts",
+      "reasoning": "The reference says you marked the Glass Flats as a risk to avoid because storms and glass splinters could cripple the wagons, but the reply falsely claims the caravan crossed them.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "I don’t recall rejecting the faster crossing at the river docks; the record shows that we crossed the Glass Flats. They were dangerous because of heat mirages, glass-splinter hazards, and the risk of storms."
+    },
+    {
+      "qid": "early-vague-17",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says the caravan reached Merrow after three days, when the lead wagon was halted.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You traveled for three days before halting the lead wagon at Merrow to replenish supplies."
+    },
+    {
+      "qid": "early-vague-18",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says Tamsin cannot recall the warning and makes no conflicting claim; the stallkeeper did say the caravan’s presence would stop anyone naming a price.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall the stallkeeper saying anyone’s presence would stop a price being named. The stallkeeper was skeptical about selling the sealed reliquary without knowing what it contained."
+    },
+    {
+      "qid": "early-vague-19",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says Wren marked each confirmed supply off her list, while the reply says Tamsin cannot clearly recall how she recorded them and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Wren confirmed the supplies were accounted for before the caravan left Merrow. Tamsin cannot recall clearly how Wren recorded which supplies were present."
+    },
+    {
+      "qid": "early-vague-21",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says you gathered the drivers to search the nearby ground, and they found no sign of the waystone.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You gathered the drivers to search the nearby ground for signs of the old waystone. The search found nothing."
+    },
+    {
+      "qid": "early-vague-22",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply matches the passage, which says the wheels passed over the hard glass without breaking it.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "No. The caravan crossed the Glass Flats without damage; the hard glass did not break beneath the wagon wheels."
+    },
+    {
+      "qid": "early-vague-23",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says the wagons crossed without damage, with the collapsed driver aboard and Wren beside him.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The wagons crossed the Glass Flats without damage. The collapsed driver remained aboard while Wren assisted him."
+    },
+    {
+      "qid": "early-vague-24",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says the nearby glass formations did not match any feature on the map, consistent with the reply’s “No” and its description of the searches.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "No. Tamsin checked the map for landmarks or alternate paths near the Glass Flats, but it showed no useful feature there; her searches of the glass formations and nearby outcrop found no markings or match."
+    },
+    {
+      "qid": "early-vague-25",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says you told the drivers to hold position while you searched the outcrop, which matches the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You instructed the wagon drivers to hold their position while you searched the outcrop. You found no markings and returned to suggest continuing along the marked track."
+    },
+    {
+      "qid": "early-vague-26",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says the drivers held the quicker pace without leaving the route, but the reply claims the account does not establish whether they deviated.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly whether the drivers strayed from the marked route. She recalls urging them to move faster across the Glass Flats to avoid the heat; the caravan crossed safely and reached the ash-colored ground, but no recorded detail says whether they left the route. The map had identified safe ground, and she had previously found no waystone on the crossing. Nothing in the account confirms a deviation or rules one out."
+    },
+    {
+      "qid": "early-vague-27",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "Wren recommended speaking with Abbot Grell, and the reply correctly identifies him as the person to consult.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Wren recommended consulting Abbot Grell about securing the sealed reliquary."
+    },
+    {
+      "qid": "early-vague-28",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "absent",
+      "reasoning": "The reply mentions that Wren saw no one following the caravan but omits that she hadn’t seen anyone near the gates.",
+      "votes": [
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "response": "Wren said she had seen no one following the caravan since it left Merrow. She warned Tamsin that Sir Bastian Crowe had been hired to take the reliquary."
+    },
+    {
+      "qid": "early-vague-29",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says Grell watched the caravan and reliquary, but the reply instead claims the record only mentions Tamsin speaking with Wren.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "I can’t recall clearly who was specifically left watching the caravan and reliquary. The record only says Tamsin spoke with Wren about contacts before returning to the market."
+    },
+    {
+      "qid": "early-vague-30",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says Tamsin questioned both a vendor and a passing traveler, so the claim that all inquiries were with vendors is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall questioning anyone besides vendors about unusual activity around the caravan. The recorded inquiries in Merrow were all with vendors."
+    },
+    {
+      "qid": "early-vague-31",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Sabeth warned that leaving the path could make the caravan lose its way back, not that it would encounter changing ground or hidden bad footing.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "She warned that leaving her track could put the caravan onto changing ground with hidden bad footing. She told you to stay close to her tested path."
+    },
+    {
+      "qid": "early-vague-32",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Wren explicitly said she didn’t know what else Sabeth expected, contrary to the narrator’s claim that she admitted no such uncertainty.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Wren didn’t admit that she lacked any particular knowledge. She said Old Mother Sabeth had already agreed to guide the caravan if the drivers kept her pace, and suggested asking Sabeth directly about further support."
+    },
+    {
+      "qid": "late-detail-21",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "absent",
+      "reasoning": "The reply describes the driver following Sabeth across the checked stretch but does not say what he did when she stopped to test the ash ahead.",
+      "votes": [
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "response": "The lead driver kept the wagon aligned behind Sabeth and followed her as she tested the ground ahead. The caravan passed safely over the checked stretch."
+    },
+    {
+      "qid": "late-detail-22",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says you cannot recall whether the gap was blocked, without asserting anything that conflicts with the passage, which says the entrance remained open.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "You squeezed through a gap beside the fallen stones to enter the tower. You cannot recall clearly whether anything blocked that gap from the inside."
+    },
+    {
+      "qid": "late-detail-23",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply accurately states that the midday heat weakened a driver and Wren assisted him, forcing the caravan to halt.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The midday heat slowed the caravan, and one driver grew weak enough that Wren had to assist him."
+    },
+    {
+      "qid": "late-detail-25",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says the other drivers left space around the weakened driver’s wagon and matched its speed, while the reply says they closed the gaps and urged their teams faster.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The drivers closed the gaps between wagons and urged their teams faster, keeping the caravan in formation. Wren stayed beside the weakened driver, steadying him in his wagon."
+    },
+    {
+      "qid": "late-detail-26",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "absent",
+      "reasoning": "The reply discusses Ferro’s request for an account but does not say that he wanted it entered into the record.",
+      "votes": [
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "response": "Ferro wanted a clear account of the events and witnesses to support the caravan’s reputation. There’s no record of a specific book or document he wanted it entered into."
+    },
+    {
+      "qid": "late-detail-27",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says you told Wren to buy as much water as the caravan could carry, not enough for three days as the narrator claims.",
+      "votes": [
+        "contradicts",
+        "absent",
+        "contradicts"
+      ],
+      "response": "The record doesn’t say you gave Wren a spending limit. You sent her to find a vendor, and she bought two large water skins; earlier, you’d ordered enough water for three days."
+    },
+    {
+      "qid": "late-detail-28",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says you told Wren to keep moving and urged the drivers to increase their pace, then later eased the pace for the weakened driver.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You told Wren to keep moving and urged the drivers to increase pace rather than stop. Later, when the driver weakened, you eased the pace to let him recover."
+    },
+    {
+      "qid": "late-detail-30",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Tamsin carried her short sword when she left for the Duskwalker camp, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You brought Patience, your short sword, when you left Abbot Grell to ask Old Mother Sabeth about Duskwalker rites."
+    },
+    {
+      "qid": "late-detail-31",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "Grell said he could not tell whether the records held another means of contact, and the archives were the only lead; the later search found no safe way to reach Ishkar.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "At the shrine, Grell said he had no information on whether the monastery’s records could help contact Ishkar; the archives at Saint Aurel were the only lead. When you searched them later, they revealed no safe way to reach Ishkar."
+    },
+    {
+      "qid": "late-detail-32",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says the narrator cannot recall either decision, without contradicting the passage’s decision not to send scouts ahead or split the caravan.",
+      "votes": [
+        "contradicts",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "After clearing the Narrow Pass, you stayed alert for Crowe’s mercenaries, scanned the horizon, and decided to keep the caravan moving toward Saint Aurel. The record does not say that you sent scouts ahead or divided the caravan, so you cannot recall making either decision."
+    },
+    {
+      "qid": "late-detail-33",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly places the sealed reliquary within the guarded center of the wagon formation, contrary to the reply’s claim that no more specific position was recorded.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The reliquary remained secured among the wagon cargo while Wren kept the wagons tightly grouped in a defensive formation. No more specific position for it was recorded."
+    },
+    {
+      "qid": "late-detail-34",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says Grell tightened the gates’ existing fastening, so claiming the record does not specify what he did contradicts it.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Grell reinforced Saint Aurel’s inner court gates while you searched for secret paths, but the record doesn’t specify what he did. Wren later inspected the gates and found them sound and secure."
+    },
+    {
+      "qid": "late-detail-35",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says Grell’s raised hand struck the wagon rail, contradicting the reply’s claim that no hand injury or cause was recorded.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Tamsin cannot recall clearly how Grell injured his hand, because the account of that confrontation does not mention any hand injury. She remembers that Grell blocked her path to the reliquary and that she pushed past him, but nothing recorded says his hand was hurt, how it happened, or whether it was hurt at all."
+    },
+    {
+      "qid": "late-vague-16",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says the lead driver stopped behind Sabeth at the far end and waited for her signal, while the reply says he kept following her as she tested the ash.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The lead driver kept the wagon aligned behind Old Mother Sabeth, following closely as she tested the ash ahead with her staff. The caravan passed safely across the checked ground."
+    },
+    {
+      "qid": "late-vague-17",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says the gaps revealed only rough stone and no opening, but the reply invents a low panel with a faint draft.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The gaps in the broken masonry revealed no secret passage. Tamsin found a bare stone patch and later a low panel with a faint draft, but no way to open it."
+    },
+    {
+      "qid": "late-vague-18",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says Tamsin told the drivers to slow to a crawl, while the reply says she cannot recall the specific pace.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly how slowly she told the drivers to move at the sandstorm’s edge. She remembers guiding the caravan through the storm, but not a specific pace."
+    },
+    {
+      "qid": "late-vague-19",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "Ferro explicitly asked what Tamsin wanted entered into the record, while the reply says she cannot recall where and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly where Ferro wanted her account entered. She remembers that he asked for a clear account of events and witnesses to support the caravan’s reputation."
+    },
+    {
+      "qid": "late-vague-20",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reply says you returned to speak with Ferro, but falsely adds that the detour was needed to secure water skins, which the passage says remained secured throughout.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "correct"
+      ],
+      "response": "You turned back to Corvane to speak with Captain Ferro Lusk and clear the caravan’s name by pursuing witness accounts about Yara’s role in the attack. The return also let you secure water skins; Ferro gathered the statements, dockworkers confirmed they had not seen Yara, and he sent word to nearby caravans for more information."
+    },
+    {
+      "qid": "late-vague-21",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says Tamsin had no known water source in Bonebridge Canyon, and the reply reflects that uncertainty without contradicting it.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The record doesn’t say Tamsin knew of a water source in Bonebridge Canyon. When she checked the empty skin, the canyon was too far behind to reach without turning back."
+    },
+    {
+      "qid": "late-vague-22",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says Tamsin offered Grell her knowledge of the Wastes in exchange for a way to reach Ishkar without opening the reliquary.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "At the Duskwalker shrine, you offered Abbot Grell your knowledge of the Wastes in exchange for information on contacting Ishkar without opening the reliquary. Grell had no method to offer."
+    },
+    {
+      "qid": "late-vague-23",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says Tamsin cannot recall and that no route is specified in the records, which does not conflict with the map showing no alternative around the monastery.",
+      "votes": [
+        "correct",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly what the map showed about a route around the monastery itself. The records she can recall do not specify one."
+    },
+    {
+      "qid": "late-vague-24",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The route went around the exposed approach, and although Tamsin says she cannot recall clearly, her added details—that it was marked on the map and led toward the foothills—do not conflict.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Tamsin cannot recall clearly what the hidden route went around. She remembers that it was marked on her hand-drawn map and led the caravan toward the foothills below Saint Aurel."
+    }
+  ]
+}

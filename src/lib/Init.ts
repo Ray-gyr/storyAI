@@ -45,7 +45,19 @@ export const getManagerLLM = () => {
 //     });
 // };
 
+/** 叙事模型：每回合的剧情与开场白 */
 export const getStoryLLM = () => {
+    return new ChatOpenAI({
+        modelName: "gpt-6-luna",
+        openAIApiKey: process.env.OPENAI_API_KEY,
+        reasoning: {
+            effort: "low"
+        }
+    });
+};
+
+/** 开局时生成初始世界状态与标题（结构化输出），沿用原来的模型 */
+export const getSetupLLM = () => {
     return new ChatOpenAI({
         modelName: "gpt-5-mini",
         openAIApiKey: process.env.OPENAI_API_KEY,

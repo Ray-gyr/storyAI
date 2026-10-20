@@ -1,0 +1,727 @@
+{
+  "story": "test-hard",
+  "version": "hard-1",
+  "model": "gpt-6.1-sol",
+  "questions": [
+    {
+      "qid": "hard-1",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "93c89872-f2ba-4b34-826a-f36e42e1451c",
+      "source_turns": [
+        1,
+        8
+      ],
+      "question": "Why did I avoid the Glass Flats in my original route?",
+      "expected_answer": "Storms and glass splinters could cripple the wagons."
+    },
+    {
+      "qid": "hard-2",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "7589652e-2efe-4121-8197-7d3fdcafeaa9",
+      "source_turns": [
+        9,
+        10
+      ],
+      "question": "How many days did it take me to first reach Merrow?",
+      "expected_answer": "Three days."
+    },
+    {
+      "qid": "hard-3",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "31b813fd-4b7d-44ab-b5f1-8afb8ef19509",
+      "source_turns": [
+        21,
+        30
+      ],
+      "question": "How did Wren verify our remaining supplies?",
+      "expected_answer": "She compared her list with the loads, marking off each supply after confirming it was present."
+    },
+    {
+      "qid": "hard-4",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "907c94ad-f102-46c9-b3d8-13eed3996de4",
+      "source_turns": [
+        41,
+        50
+      ],
+      "question": "What condition did I agree on with the drivers for stopping?",
+      "expected_answer": "They would halt if the teams began to tire."
+    },
+    {
+      "qid": "hard-5",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "f2a89212-95b1-48c8-b001-9df63a88e24a",
+      "source_turns": [
+        58,
+        59
+      ],
+      "question": "Whose annotations identified safe ground for my caravan?",
+      "expected_answer": "Tamsin Vale’s."
+    },
+    {
+      "qid": "hard-6",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "b7b8c853-cc64-4a4a-a945-88d070ceb736",
+      "source_turns": [
+        68,
+        70
+      ],
+      "question": "Did we break through the glass?",
+      "expected_answer": "No. The wagon wheels passed over the hard glass without breaking through."
+    },
+    {
+      "qid": "hard-7",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "26a3614e-57cb-4ee7-991c-e810cbe1db5f",
+      "source_turns": [
+        75,
+        77
+      ],
+      "question": "How did we make shade for the collapsed driver?",
+      "expected_answer": "The drivers pulled the wagons close together to cast narrow strips of shade."
+    },
+    {
+      "qid": "hard-8",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "3b23a605-4a42-4f77-9b37-aa6831fe854b",
+      "source_turns": [
+        81,
+        89
+      ],
+      "question": "What did my map’s annotations identify?",
+      "expected_answer": "Safe ground, with no further clues to the waystone’s location."
+    },
+    {
+      "qid": "hard-9",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "c6996d60-254a-464d-9406-5e7c50a006fb",
+      "source_turns": [
+        91,
+        100
+      ],
+      "question": "What were my instructions before scouting the outcrop?",
+      "expected_answer": "The drivers were to hold position."
+    },
+    {
+      "qid": "hard-10",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "247b595d-957c-48e5-88b6-3bffbb694c3f",
+      "source_turns": [
+        102,
+        110
+      ],
+      "question": "What was Sir Bastian Crowe hired to do?",
+      "expected_answer": "Intercept the reliquary."
+    },
+    {
+      "qid": "hard-11",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "1dd58cc1-82b8-4331-a47b-c75123e01fd9",
+      "source_turns": [
+        114,
+        115
+      ],
+      "question": "Who did Wren recommend consulting about security?",
+      "expected_answer": "Abbot Grell."
+    },
+    {
+      "qid": "hard-12",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "99125d9b-3fd0-453c-b91e-2217519a665d",
+      "source_turns": [
+        118,
+        119
+      ],
+      "question": "What did I learn the wards were for?",
+      "expected_answer": "They were a restraint, not a guarantee of safety."
+    },
+    {
+      "qid": "hard-13",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "37d5d6f2-375b-480c-97cd-6ef609da13f0",
+      "source_turns": [
+        124,
+        127
+      ],
+      "question": "How far ahead did the route information I traded cover?",
+      "expected_answer": "The next two weeks."
+    },
+    {
+      "qid": "hard-14",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "8a56a744-cb02-4138-bbad-062cf1a5749f",
+      "source_turns": [
+        131,
+        133
+      ],
+      "question": "What did I learn Sir Bastian Crowe was hired to do?",
+      "expected_answer": "Take the reliquary."
+    },
+    {
+      "qid": "hard-15",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "71035d09-1289-48c5-a33a-a18561259b06",
+      "source_turns": [
+        138,
+        139
+      ],
+      "question": "What did the vendor say about reports of him passing through town?",
+      "expected_answer": "If Crowe had passed through Merrow, no one had brought word to the vendor."
+    },
+    {
+      "qid": "hard-16",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "f440679e-4844-4de1-ae20-31d0262cc420",
+      "source_turns": [
+        151,
+        160
+      ],
+      "question": "What did I promise Old Mother Sabeth about the drivers?",
+      "expected_answer": "The drivers would follow her pace."
+    },
+    {
+      "qid": "hard-17",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "d8752f24-0c64-4a94-8a7b-612866eea798",
+      "source_turns": [
+        161,
+        163
+      ],
+      "question": "What did Wren tell us to report immediately?",
+      "expected_answer": "Any spill or leak."
+    },
+    {
+      "qid": "hard-18",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "0a2adbc0-3ba3-436c-9c08-75f0f9db3169",
+      "source_turns": [
+        166,
+        167
+      ],
+      "question": "What did Old Mother Sabeth require from my drivers in exchange for guiding us?",
+      "expected_answer": "Keep her pace, without rushing ahead or straying from the path."
+    },
+    {
+      "qid": "hard-19",
+      "pool": "early",
+      "type": "detail",
+      "source_id": "2d79a09a-a22a-40f9-989d-b66106b84ad0",
+      "source_turns": [
+        171,
+        179
+      ],
+      "question": "What did Sabeth tell me to do if I lost sight of her track?",
+      "expected_answer": "Stop the caravan and do not guess the route."
+    },
+    {
+      "qid": "hard-20",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "3c2300ef-7445-4558-ad14-b3ad8cf5a9c4",
+      "source_turns": [
+        191,
+        200
+      ],
+      "question": "What did Sabeth tell me to do if I lost sight of her steps?",
+      "expected_answer": "Stop rather than continue along an untested path."
+    },
+    {
+      "qid": "hard-21",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "6dc285d6-264e-4c3c-9088-2eb6d31bb1f1",
+      "source_turns": [
+        203,
+        203
+      ],
+      "question": "Where did I redirect the caravan off the hidden path?",
+      "expected_answer": "Toward the ruined mage tower of Velk."
+    },
+    {
+      "qid": "hard-22",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "e74d8f72-0ab4-47b1-8043-8fd1ecc1a173",
+      "source_turns": [
+        206,
+        207
+      ],
+      "question": "How did I get past the tower's blocked entrance?",
+      "expected_answer": "By squeezing through a narrow gap beside the fallen stones."
+    },
+    {
+      "qid": "hard-23",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "db0bf26e-b1bb-4cd2-b432-ce9b6ea37495",
+      "source_turns": [
+        211,
+        215
+      ],
+      "question": "Did I find any tools to help open the reliquary?",
+      "expected_answer": "No suitable tools or loose objects were found."
+    },
+    {
+      "qid": "hard-24",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "7d00241f-a9e6-435e-9a3c-8881d56cb281",
+      "source_turns": [
+        216,
+        219
+      ],
+      "question": "Did I find a magical connection while investigating the reliquary’s hum?",
+      "expected_answer": "No clear connection to the ruined tower or its magic."
+    },
+    {
+      "qid": "hard-25",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "70e3ac59-4928-4925-8f22-a1ea61d8bcf6",
+      "source_turns": [
+        224,
+        227
+      ],
+      "question": "Why did I push through the hottest hours despite low water?",
+      "expected_answer": "To make up time."
+    },
+    {
+      "qid": "hard-26",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "455b5da4-da44-4526-ac81-4754e24b0cf8",
+      "source_turns": [
+        231,
+        238
+      ],
+      "question": "What did searching the rocks turn up?",
+      "expected_answer": "A narrow strip of shade on their western face, but no water."
+    },
+    {
+      "qid": "hard-27",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "7c36625a-46e1-449a-ab1b-c24814a53478",
+      "source_turns": [
+        241,
+        245
+      ],
+      "question": "What did I find when checking the weakened driver's pulse?",
+      "expected_answer": "His pulse was steady."
+    },
+    {
+      "qid": "hard-28",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "9152b5df-1b77-4009-87ec-104db6150273",
+      "source_turns": [
+        251,
+        251
+      ],
+      "question": "What couldn't the weakened driver do without support?",
+      "expected_answer": "Sit up."
+    },
+    {
+      "qid": "hard-29",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4debacb8-4da1-45be-a9a5-ef6d9fabaea9",
+      "source_turns": [
+        261,
+        266
+      ],
+      "question": "Did slowing down after the storm break our formation?",
+      "expected_answer": "No. The wagons slowed without breaking formation."
+    },
+    {
+      "qid": "hard-30",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "bd9b31d5-380a-4ea5-8563-4e60f2269f89",
+      "source_turns": [
+        271,
+        275
+      ],
+      "question": "Why couldn't I barter for water?",
+      "expected_answer": "No one outside the caravan was nearby, and the drivers had no spare water or supplies."
+    },
+    {
+      "qid": "hard-31",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "061f2cec-bf29-4ebf-bbeb-4927d22621f1",
+      "source_turns": [
+        281,
+        289
+      ],
+      "question": "What happened to the weakened driver when I pushed for more speed?",
+      "expected_answer": "He stumbled beside his wagon, and Wren caught him before he fell."
+    },
+    {
+      "qid": "hard-32",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4a8d9442-7736-47bf-b2ab-dfdaf5269f8d",
+      "source_turns": [
+        291,
+        300
+      ],
+      "question": "What did I tell the drivers about spacing while speeding through the storm?",
+      "expected_answer": "Keep the caravan close together."
+    },
+    {
+      "qid": "hard-33",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "961411c4-276e-41bf-92a7-214fa57f9e20",
+      "source_turns": [
+        302,
+        303
+      ],
+      "question": "Why did I take the forced detour back to Corvane?",
+      "expected_answer": "To clear the caravan’s name with Captain Ferro Lusk."
+    },
+    {
+      "qid": "hard-34",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "03ea466c-d1c6-4bad-88ab-6bd617f349e0",
+      "source_turns": [
+        306,
+        307
+      ],
+      "question": "Who did Ferro want me to bring over first?",
+      "expected_answer": "Wren."
+    },
+    {
+      "qid": "hard-35",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "c580eb94-8490-4faf-83ab-ca25831adc60",
+      "source_turns": [
+        311,
+        320
+      ],
+      "question": "What did Ferro say was better than guessing?",
+      "expected_answer": "Admitting he couldn’t clearly remember any further details."
+    },
+    {
+      "qid": "hard-36",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "3c6e161c-1939-447d-b9cb-9f76074fdc4c",
+      "source_turns": [
+        324,
+        325
+      ],
+      "question": "Why couldn't I start the journey through the narrow pass?",
+      "expected_answer": "Both water skins were empty, so the caravan needed water before leaving."
+    },
+    {
+      "qid": "hard-37",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "444c9b08-414e-4416-855a-34e7459eaa3b",
+      "source_turns": [
+        328,
+        329
+      ],
+      "question": "Who did I leave behind with the gathered witnesses?",
+      "expected_answer": "Captain Ferro Lusk."
+    },
+    {
+      "qid": "hard-38",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "3c15366c-45a8-4b7a-b44c-4c938df3ded3",
+      "source_turns": [
+        338,
+        340
+      ],
+      "question": "Who was I hoping to catch before he left town?",
+      "expected_answer": "Captain Ferro Lusk."
+    },
+    {
+      "qid": "hard-39",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4546ff58-a787-4324-9d4e-681b8e8570d7",
+      "source_turns": [
+        341,
+        350
+      ],
+      "question": "What could Ferro attest to in my case?",
+      "expected_answer": "The witnesses’ accounts agreed that an attack occurred and that Yara led it."
+    },
+    {
+      "qid": "hard-40",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "71fdfce4-978b-4c7e-8c63-38d25810dbc4",
+      "source_turns": [
+        352,
+        360
+      ],
+      "question": "What alternative to moving on did Wren offer me after the canyon crossing?",
+      "expected_answer": "Stop and check the teams."
+    },
+    {
+      "qid": "hard-41",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "7aafac56-c26e-4599-9e3c-c9c90b1ab650",
+      "source_turns": [
+        371,
+        373
+      ],
+      "question": "Did my order to speed up jolt the weakened driver?",
+      "expected_answer": "No. The wagon gained speed without jolting him."
+    },
+    {
+      "qid": "hard-42",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "219fed64-4ae3-4ace-8731-ae624ec930c3",
+      "source_turns": [
+        376,
+        377
+      ],
+      "question": "Why did I keep the water skins tied shut after checking them?",
+      "expected_answer": "To conserve the few remaining sips for the caravan rather than use them immediately."
+    },
+    {
+      "qid": "hard-43",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "4ae70988-1145-46b0-8724-ffc8080e5e49",
+      "source_turns": [
+        381,
+        390
+      ],
+      "question": "Which canyon was already behind us despite my request to hurry across it?",
+      "expected_answer": "Bonebridge canyon."
+    },
+    {
+      "qid": "hard-44",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "298ac513-a70f-4d6d-becc-5163d6d16e54",
+      "source_turns": [
+        401,
+        401
+      ],
+      "question": "Why didn't I return to Bonebridge canyon for water?",
+      "expected_answer": "It required turning back, and I had no known water source there."
+    },
+    {
+      "qid": "hard-45",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "86e2d8ae-f55c-4165-acc7-c3c1e0963e2e",
+      "source_turns": [
+        404,
+        407
+      ],
+      "question": "Who did Grell suggest I consult about Duskwalker rites?",
+      "expected_answer": "Old Mother Sabeth."
+    },
+    {
+      "qid": "hard-46",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "5dfb1852-5bbc-4555-bf56-cb665e4b943e",
+      "source_turns": [
+        411,
+        413
+      ],
+      "question": "What did Sabeth need before she could judge whether anything would answer me?",
+      "expected_answer": "She needed to be beside the reliquary to judge whether there was anything to answer."
+    },
+    {
+      "qid": "hard-47",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "6d80ec3c-9e36-4350-8a0a-3a01bf676729",
+      "source_turns": [
+        415,
+        416
+      ],
+      "question": "Who escorted the reliquary to the shrine for me?",
+      "expected_answer": "Abbot Grell."
+    },
+    {
+      "qid": "hard-48",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "9cb01ab0-77c9-4d1f-bd43-be35d71ed5d2",
+      "source_turns": [
+        419,
+        419
+      ],
+      "question": "Why did Sabeth refuse to try a ritual for me?",
+      "expected_answer": "She heard no answer and could not carry words through the reliquary’s seals."
+    },
+    {
+      "qid": "hard-49",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "acb7b12b-5a97-4acd-98f6-e693ebd2e381",
+      "source_turns": [
+        428,
+        429
+      ],
+      "question": "Where did I leave the reliquary during my first archive search?",
+      "expected_answer": "At the Duskwalker shrine."
+    },
+    {
+      "qid": "hard-50",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "dfec61b9-3aa5-466f-8f86-e5f7a2e89400",
+      "source_turns": [
+        441,
+        450
+      ],
+      "question": "Did my meditation bring any response from Ishkar?",
+      "expected_answer": "No. There was no response or sign of contact."
+    },
+    {
+      "qid": "hard-51",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "e0c0db0c-3216-43b8-a0fe-1f47af03982b",
+      "source_turns": [
+        452,
+        460
+      ],
+      "question": "What did the patrol leader claim he wasn't keeping track of?",
+      "expected_answer": "The names of people moved through the market lanes."
+    },
+    {
+      "qid": "hard-52",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "f63f0a52-699d-45f1-b6f5-771e80636096",
+      "source_turns": [
+        471,
+        480
+      ],
+      "question": "What did I decide about splitting up to keep Wren safe?",
+      "expected_answer": "Not to send anyone ahead or split the caravan."
+    },
+    {
+      "qid": "hard-53",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "88914ad0-91da-4235-b73e-26d948361e7c",
+      "source_turns": [
+        491,
+        500
+      ],
+      "question": "What did Wren tell me she'd decide before allowing another drink?",
+      "expected_answer": "Who needed a drink most."
+    },
+    {
+      "qid": "hard-54",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "b9d088f2-face-4986-9cec-97685c91a97b",
+      "source_turns": [
+        501,
+        510
+      ],
+      "question": "Did my map show an alternative route around the monastery itself?",
+      "expected_answer": "No. It only showed the route around the pass, continuing toward the gates."
+    },
+    {
+      "qid": "hard-55",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "261031f3-f497-461d-8674-34366158f284",
+      "source_turns": [
+        521,
+        523
+      ],
+      "question": "What did the driver report after scouting the perimeter for me?",
+      "expected_answer": "He found no sign of Sir Bastian’s men."
+    },
+    {
+      "qid": "hard-56",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "a04cb9cd-4225-4923-9633-c69703c88609",
+      "source_turns": [
+        526,
+        527
+      ],
+      "question": "What did Wren tighten to prepare us for a quick departure?",
+      "expected_answer": "The reliquary’s existing restraints."
+    },
+    {
+      "qid": "hard-57",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "07bcfed6-0d91-4ab9-a6a5-1a8c260f05ba",
+      "source_turns": [
+        531,
+        539
+      ],
+      "question": "How did I have the inner court gates reinforced?",
+      "expected_answer": "By tightening their existing fastening."
+    },
+    {
+      "qid": "hard-58",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "5749d1ef-abc2-4937-ac28-4f20d23e5884",
+      "source_turns": [
+        551,
+        560
+      ],
+      "question": "What fate did I want for Ishkar?",
+      "expected_answer": "A chance for redemption, but with consequences for his actions."
+    },
+    {
+      "qid": "hard-59",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "0efde590-be05-41a2-b1ab-db2fd89c9e8f",
+      "source_turns": [
+        571,
+        580
+      ],
+      "question": "Why did Grell reject my trade as a solution to opening it safely?",
+      "expected_answer": "He had no safe method to offer, and a trade could not make an unsafe opening safe."
+    },
+    {
+      "qid": "hard-60",
+      "pool": "late",
+      "type": "detail",
+      "source_id": "3d7df85e-ab74-45b1-af0d-ebfb46afb0f2",
+      "source_turns": [
+        586,
+        588
+      ],
+      "question": "What did I decide about entering the shadowy passage?",
+      "expected_answer": "To proceed cautiously, still searching for signs to guide us."
+    }
+  ]
+}

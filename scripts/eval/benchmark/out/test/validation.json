@@ -1,0 +1,1054 @@
+{
+  "early-vague-1": {
+    "valid": false,
+    "reasons": [
+      "screening: The arrival and runaway cask are depicted, but the ropes’ smell is incidental sensory trivia with no story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-1": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: taking hold of the reins"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-2": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts approaching the trade stall to ask about selling the sealed case, but the shade’s material is incidental sensory trivia with no story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-2": {
+    "valid": false,
+    "reasons": [
+      "screening: The fossilized remains are specific to Bonebridge canyon but serve only as scenery, with no relevance to a decision, clue, or outcome."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-3": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: drivers inspecting the horses' legs"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-3": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-4": {
+    "valid": false,
+    "reasons": [
+      "screening: The wagon rail is a moment-specific but incidental physical detail with no bearing on the map search, its clues, or its outcome."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-4": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the map’s annotations identify safe ground, supporting the expected answer without implying a different one."
+    }
+  },
+  "early-detail-5": {
+    "valid": false,
+    "reasons": [
+      "screening: The wagons providing shade is incidental environmental trivia rather than a meaningful clue, decision, or outcome, though it is specific to this stop."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-5": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts the crossing, but recalling the surface beneath the wheels is incidental material trivia with no demonstrated relevance to finding the waystone or a consequential outcome."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-6": {
+    "valid": false,
+    "reasons": [
+      "manual review: recurring fact: search for cuts, paint and arranged stones (screener dropped early-detail-8 for this)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-6": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-7": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: steering around rough patches"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-8": {
+    "valid": false,
+    "reasons": [
+      "screening: The signs are relevant clues to the missing waystone, but the same search targets—cuts, paint, and deliberately arranged stones—also appear in an earlier search."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-7": {
+    "valid": false,
+    "reasons": [
+      "manual review: recurring fact: search for cuts, paint and arranged stones"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-9": {
+    "valid": false,
+    "reasons": [
+      "manual review: scenery: the colour of the ground"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-8": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: where my companion looked"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-10": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages indicate Wren watched the stalls and the road behind or beyond the caravan, with no conflicting locations."
+    }
+  },
+  "early-vague-9": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: where my companion glanced"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-11": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-12": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-10": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-13": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage explicitly says you pointed out the old war-ruins to keep travelers clear of them, and the later passage mentions no different ruins for that exchange."
+    }
+  },
+  "early-vague-11": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts Wren tightening a stopper before her warning, but recalling this incidental action is story-irrelevant trivia rather than a meaningful clue or outcome."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-14": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "All passages support that Wren suggested asking around again if the player returned to Merrow."
+    }
+  },
+  "early-vague-12": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: what a vendor was doing"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-15": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage does depict the vendor finishing serving a customer before answering, but recalling this incidental action has no bearing on the inquiry about Crowe."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-16": {
+    "valid": false,
+    "reasons": [
+      "screening: The vendor setting down a small bundle is specific to this exchange and occurs before the reply, but it is incidental staging with no relevance to the search for Crowe."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-13": {
+    "valid": false,
+    "reasons": [
+      "screening: The vendor is explicitly sorting goods before answering, but this incidental activity has no relevance to the inquiry, any clue, or a player decision."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-17": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-14": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: whom my companion glanced toward"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-18": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-15": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage explicitly says they will stop where Sabeth decides, and the second also shows the caravan stopping at her signal without suggesting another person chooses the place."
+    }
+  },
+  "early-detail-19": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Each passage says to stop if Sabeth’s track or steps are out of sight and warns against guessing or choosing an easier-looking path."
+    }
+  },
+  "early-detail-20": {
+    "valid": false,
+    "reasons": [
+      "manual review: duplicate fact: 'stop the caravan, do not guess' (kept early-detail-19)"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-temporal-1": {
+    "valid": false,
+    "reasons": [
+      "screening: Recalling the royal-cartographer background is plausible and specific, but the passage shows the caravan being hired without depicting a bargain or anyone requesting something in return."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-temporal-2": {
+    "valid": false,
+    "reasons": [
+      "screening: Recalling Grell’s request to examine the reliquary’s seals is relevant and specific, but the passage depicts a safety condition for taking custody, not a bargain or trade for something in return."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-temporal-3": {
+    "valid": false,
+    "reasons": [
+      "screening: The crossbow is a relevant, moment-specific detail, but the passage depicts a confrontation and caravan hiring rather than a bargain with someone explicitly seeking something in return."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-temporal-4": {
+    "valid": false,
+    "reasons": [
+      "screening: The handling restriction is a relevant, moment-specific warning, but Grell offers advice and requests permission to inspect the seals rather than bargaining for something in return."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-1": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages consistently identify the banks as concealing bad or changing footing, and the final passage explicitly says smooth surfaces can hide it especially by the banks."
+    }
+  },
+  "late-detail-1": {
+    "valid": false,
+    "reasons": [
+      "screening: The question asks for incidental background sounds masking the reliquary’s hum without any stated consequence or clue, and the passage depicts the caravan stopping rather than the player halting it."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-2": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: a fragment falling from the lintel"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-2": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the vibration was strongest near the lid, with no passage implying a different location."
+    }
+  },
+  "late-vague-3": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts pressing uneven blocks and dust falling from cracks, but recalling the dust is pure sensory trivia with no story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-3": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: which face of the rocks gave shade"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-4": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "All passages describe the weakened driver as conscious or answering when spoken to, with none indicating a different response."
+    }
+  },
+  "late-vague-4": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the weakened driver could not sit up or sit upright without Wren’s support."
+    }
+  },
+  "late-detail-5": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages consistently establish that the reliquary’s restraints or straps should remain undisturbed, and the Ash Ground passage explicitly says Wren took care not to disturb them."
+    }
+  },
+  "late-vague-5": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-6": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-6": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: dockhands pausing their work"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-7": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-8": {
+    "valid": false,
+    "reasons": [
+      "screening: The thumb-rubbing gesture is incidental physical trivia with no story relevance, although it is unique to this moment."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-7": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: the captain's notebook being open"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-9": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The Ash Ground passage explicitly says Tamsin planned to ask Ferro for a detail that could be checked against another account, and the earlier passage reinforces the same kind of corroborating witness detail."
+    }
+  },
+  "late-vague-8": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-10": {
+    "valid": false,
+    "reasons": [
+      "screening: The question targets incidental sensory detail about windblown grit rather than a meaningful story event, although the detail is specific to this canyon crossing."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-9": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages indicate the wagon moved without jolting, and neither suggests Wren jolted the weakened driver."
+    }
+  },
+  "late-detail-11": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The rock-shade passage says Tamsin kept the checked skins tied shut, and the later passages likewise describe keeping the remaining water sealed rather than using it at once."
+    }
+  },
+  "late-detail-12": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: harnesses no longer jerking"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-10": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The passages consistently indicate that the Sealed Reliquary was absent on Tamsin’s first shrine visit and was later brought there."
+    }
+  },
+  "late-detail-13": {
+    "valid": false,
+    "reasons": [
+      "manual review: not specific: Sabeth's blindness is a permanent trait stated throughout the story"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-11": {
+    "valid": false,
+    "reasons": [
+      "screening: The question targets an incidental hand position with no clear story relevance, though it is specific to the depicted moment when Sabeth approaches the sealed reliquary."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-14": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-12": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-15": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages say Grell refuses because he cannot verify the ritual’s safety or effects, and neither gives a conflicting reason."
+    }
+  },
+  "late-detail-16": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-13": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages describe checking whether the mirage or distant shapes held steady as the wagons moved, and neither suggests a different check."
+    }
+  },
+  "late-detail-17": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: where Wren looked during the search"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-14": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-18": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: the pace of the horses"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-vague-15": {
+    "valid": false,
+    "reasons": [
+      "screening: The passage depicts opening the gates, but the hinges’ grinding is pure sensory trivia with no story relevance."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-19": {
+    "valid": false,
+    "reasons": [
+      "screening: Closing and shelving the last ledger is incidental handling rather than a meaningful clue, decision, or outcome a player would plausibly want to recall."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-20": {
+    "valid": false,
+    "reasons": [
+      "screening: The question targets the cleared floor’s incidental appearance rather than the story-relevant discovery that no hidden entrance or identifying marks were found."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-temporal-1": {
+    "valid": false,
+    "reasons": [
+      "screening: Ferro offers guard support in return for a corroborated account, but recalling that he waited for dockhands to resume work before lowering his voice is incidental staging rather than a meaningful story detail."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-temporal-2": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-temporal-3": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage explicitly says Wren called for shade and rest before the lead team continued, and the second confirms the team rested in shade without implying a different need."
+    }
+  },
+  "late-temporal-4": {
+    "valid": false,
+    "reasons": [
+      "manual review: trivia: watching the horses' breathing settle"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-temporal-5": {
+    "valid": false,
+    "reasons": [
+      "screening: Ferro offers guard support in return for a clear, corroborated account, but his folded arms are incidental body-language trivia rather than a meaningful or distinctive detail of the bargain."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-temporal-6": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-temporal-7": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-temporal-8": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-21": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-22": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-23": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-24": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-25": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage says the map was checked for landmarks including old war-ruins, and the second also identifies an old war ruin on the map, so neither supports a different answer."
+    }
+  },
+  "early-detail-26": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-27": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 5,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage says the wagons crossed the glass without damage, and turns 68–70 explicitly state that the wheels passed over it without breaking."
+    }
+  },
+  "early-detail-28": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage describing the crossing says the wagons suffered no damage, including the cautious crossing with the collapsed driver aboard."
+    }
+  },
+  "early-detail-29": {
+    "valid": false,
+    "reasons": [
+      "screening: The question is anchored to Wren joining the search, but asks for incidental ground material rather than a meaningful clue, action, or outcome."
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-detail-30": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-31": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages keep the caravan on the marked route; the second explicitly says the drivers held the quicker pace without leaving it."
+    }
+  },
+  "early-detail-32": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Wren explicitly recommended speaking with Abbot Grell about the reliquary, and the other passages confirm that discussion with him."
+    }
+  },
+  "early-detail-33": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage explicitly gives Wren’s report, and the other passages describe no one appearing near or beyond the gates, with no conflicting report."
+    }
+  },
+  "early-detail-34": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-35": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-36": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-detail-37": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-16": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-17": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-18": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-19": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-20": {
+    "valid": false,
+    "reasons": [
+      "manual review: malformed question ('what did we cross before? the noon heat')"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "early-vague-21": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-22": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-23": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 5,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage describes the wagons crossing without damage, and none reports any damage."
+    }
+  },
+  "early-vague-24": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages state that the nearby glass formations matched no feature or landmark on the map."
+    }
+  },
+  "early-vague-25": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-26": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 5,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The turn 101 passage explicitly says the drivers held the quicker pace without leaving the marked route, and no other passage implies they strayed."
+    }
+  },
+  "early-vague-27": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Wren recommends speaking with Abbot Grell, and the other passages are consistent with consulting him."
+    }
+  },
+  "early-vague-28": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-29": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-30": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-31": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "early-vague-32": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-21": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage describes the lead driver stopping or waiting behind Sabeth while she checks the ground and awaits her signal."
+    }
+  },
+  "late-detail-22": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "All passages indicate the way back remained clear or open, and the first explicitly says the lintel held."
+    }
+  },
+  "late-detail-23": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Every passage identifies the same weakened driver as unable to continue, and none gives a conflicting cause for the halt."
+    }
+  },
+  "late-detail-24": {
+    "valid": false,
+    "reasons": [
+      "ambiguous across 2 passages: The halted, equal-share distribution gives the first sip to the weakened driver, but the other passage says Tamsin drinks first before offering him a sip."
+    ],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": false,
+      "reasoning": "The halted, equal-share distribution gives the first sip to the weakened driver, but the other passage says Tamsin drinks first before offering him a sip."
+    }
+  },
+  "late-detail-25": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-26": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The first passage explicitly says Ferro wanted the precise account entered into the record, and the later passages describe statements being kept and recorded without giving a conflicting answer."
+    }
+  },
+  "late-detail-27": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-28": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 4,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The Bonebridge passage explicitly says you told Wren to keep moving and urged the drivers to increase their pace; the later pace changes occur in different circumstances and do not give a different answer to her question."
+    }
+  },
+  "late-detail-29": {
+    "valid": false,
+    "reasons": [
+      "manual review: malformed: asks where we 'actually' were rather than a fact"
+    ],
+    "accepted_passages": 0,
+    "consistency": null
+  },
+  "late-detail-30": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-31": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The shrine passage gives the expected statement verbatim, and the later archive search finding no answer does not contradict what Grell said at the shrine."
+    }
+  },
+  "late-detail-32": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-33": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-34": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-detail-35": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-16": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages say the lead driver stopped behind Sabeth while she tested the ash ahead, waiting for her signal."
+    }
+  },
+  "late-vague-17": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-18": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-19": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 3,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "The captain explicitly asks what Tamsin wants entered into the record, and later passages likewise describe keeping the witnesses’ statements together as a record."
+    }
+  },
+  "late-vague-20": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-21": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-22": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-23": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 1,
+    "consistency": null
+  },
+  "late-vague-24": {
+    "valid": true,
+    "reasons": [],
+    "accepted_passages": 2,
+    "consistency": {
+      "consistent": true,
+      "reasoning": "Both passages describe choosing the hidden route at the foothills as going around or away from the exposed approach, with no conflicting answer."
+    }
+  }
+}

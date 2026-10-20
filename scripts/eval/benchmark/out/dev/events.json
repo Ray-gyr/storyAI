@@ -1,0 +1,160 @@
+{
+  "version": 2,
+  "events": [
+    "a hull breach or decompression emergency",
+    "a firefight or standoff with Ostrander security",
+    "a tense bargain or trade with someone who wants something in return"
+  ],
+  "episodes": [
+    [
+      {
+        "ordinal": 1,
+        "id": "7d933640-58d6-43e5-97ae-e0f8c9da6ff1",
+        "turns": [
+          1,
+          4
+        ]
+      },
+      {
+        "ordinal": 2,
+        "id": "ed2354ec-1dcf-47a7-bd74-ed8560f1b5f8",
+        "turns": [
+          21,
+          30
+        ]
+      },
+      {
+        "ordinal": 3,
+        "id": "c2e9e441-49af-41a9-ab03-f28a9dff7f63",
+        "turns": [
+          151,
+          151
+        ]
+      },
+      {
+        "ordinal": 4,
+        "id": "6f64e013-f53c-473a-8a4e-509c6221a96b",
+        "turns": [
+          541,
+          547
+        ]
+      }
+    ],
+    [
+      {
+        "ordinal": 1,
+        "id": "84cdce70-4072-4653-b27c-257e04abc4da",
+        "turns": [
+          224,
+          229
+        ]
+      },
+      {
+        "ordinal": 2,
+        "id": "c7462d8a-b085-4ce7-a647-7281c0e0a30e",
+        "turns": [
+          503,
+          507
+        ]
+      },
+      {
+        "ordinal": 3,
+        "id": "6b9f1ad4-e16a-44d1-b247-2dc1ca93180b",
+        "turns": [
+          521,
+          529
+        ]
+      }
+    ],
+    [
+      {
+        "ordinal": 1,
+        "id": "beeb8eb9-01af-43a1-8065-fbf95f2140c0",
+        "turns": [
+          152,
+          160
+        ]
+      },
+      {
+        "ordinal": 2,
+        "id": "1430c97b-59d4-4adc-a6ad-68256ef3e749",
+        "turns": [
+          164,
+          165
+        ]
+      },
+      {
+        "ordinal": 3,
+        "id": "ffd4b226-d2fc-4f33-8740-2a6503ce586b",
+        "turns": [
+          190,
+          190
+        ]
+      },
+      {
+        "ordinal": 4,
+        "id": "fcd9bb4a-a618-4925-bec1-cae0bca67d36",
+        "turns": [
+          202,
+          202
+        ]
+      },
+      {
+        "ordinal": 5,
+        "id": "84cdce70-4072-4653-b27c-257e04abc4da",
+        "turns": [
+          224,
+          229
+        ]
+      },
+      {
+        "ordinal": 6,
+        "id": "80793cce-9c3e-4bf8-836b-c787c19cae0b",
+        "turns": [
+          231,
+          240
+        ]
+      },
+      {
+        "ordinal": 7,
+        "id": "d84b2050-381a-4e40-a9f5-1c39d6564e06",
+        "turns": [
+          271,
+          280
+        ]
+      },
+      {
+        "ordinal": 8,
+        "id": "6254f548-e360-4256-9abc-e7a534fb5f59",
+        "turns": [
+          318,
+          319
+        ]
+      },
+      {
+        "ordinal": 9,
+        "id": "aa72caa9-c4cb-4a62-8820-f1a18de79381",
+        "turns": [
+          331,
+          340
+        ]
+      },
+      {
+        "ordinal": 10,
+        "id": "c7462d8a-b085-4ce7-a647-7281c0e0a30e",
+        "turns": [
+          503,
+          507
+        ]
+      },
+      {
+        "ordinal": 11,
+        "id": "6b67faa6-8f62-4dc3-807f-b48321395feb",
+        "turns": [
+          517,
+          518
+        ]
+      }
+    ]
+  ]
+}
