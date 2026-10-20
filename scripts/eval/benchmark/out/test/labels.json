@@ -166,6 +166,34 @@
       "658ba114-a9e2-4711-b528-fe593722a77b": {
         "acceptable": false,
         "reasoning": "The reference says they would halt if the teams began to tire, but the candidate only describes stopping at Sabeth’s signal."
+      },
+      "03ea466c-d1c6-4bad-88ab-6bd617f349e0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses witness accounts after an attack and does not mention halting when the teams tire."
+      },
+      "31b813fd-4b7d-44ab-b5f1-8afb8ef19509": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say that the caravan would halt if the teams began to tire."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate describes taking a halt and resting the horses, but does not say a halt would be prompted if the teams began to tire."
+      },
+      "07bcfed6-0d91-4ab9-a6a5-1a8c260f05ba": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention agreeing to halt if the teams begin to tire."
+      },
+      "a04cb9cd-4225-4923-9633-c69703c88609": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says the wagon is ready to move once ordered, but does not mention halting if the teams begin to tire."
+      },
+      "3b23a605-4a42-4f77-9b37-aa6831fe854b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions a measured pace and avoiding unnecessary stops, but does not say a halt would be prompted if the teams begin to tire."
+      },
+      "71fdfce4-978b-4c7e-8c63-38d25810dbc4": {
+        "acceptable": false,
+        "reasoning": "The candidate discusses checking or easing the teams because a driver is weakened, but does not state that they agreed to halt if the teams begin to tire."
       }
     },
     "early-detail-4": {
@@ -258,6 +286,34 @@
       "31b813fd-4b7d-44ab-b5f1-8afb8ef19509": {
         "acceptable": false,
         "reasoning": "The candidate mentions map markings guiding the caravan onto a safer route, but does not state that annotations identified the safe ground."
+      },
+      "8b730eb8-ad81-47cb-abad-c7c2e5939775": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions only increasing the caravan’s pace and does not identify what marked safe ground on the map."
+      },
+      "3c15366c-45a8-4b7a-b44c-4c938df3ded3": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions a hand-drawn map but does not say that annotations identified safe ground."
+      },
+      "1de36f50-eaf8-4380-af1b-0bf6eb333ae2": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions a marked route but does not say that annotations identify the safe ground."
+      },
+      "455b5da4-da44-4526-ac81-4754e24b0cf8": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions checking a hand-drawn map, but not annotations identifying safe ground."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions a marked route and firm ground but does not say that annotations on the map identified the safe ground."
+      },
+      "0efde590-be05-41a2-b1ab-db2fd89c9e8f": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions a marked route on the map but does not say annotations identified the safe ground."
+      },
+      "37d5d6f2-375b-480c-97cd-6ef609da13f0": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions safe routes and wells marked on the map, but does not say that annotations identified the safe ground."
       }
     },
     "early-detail-5": {
@@ -418,6 +474,26 @@
       "fbcc1469-563f-4fb8-8b08-7ec4460ae589": {
         "acceptable": false,
         "reasoning": "The candidate says the wagons moved closer to maintain formation, but does not say they created shade for a brief rest."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes following Sabeth’s track but does not mention the drivers pulling wagons together to create shade."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says nothing about creating shade during the rest."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes searching for a waystone and does not say how the drivers created shade."
+      },
+      "061f2cec-bf29-4ebf-bbeb-4927d22621f1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say that the drivers pulled the wagons together to cast strips of shade."
+      },
+      "46e97a67-00be-47e9-b150-32786eae519b": {
+        "acceptable": false,
+        "reasoning": "The candidate says the wagons depart from the shade but does not state that the drivers pulled them close together to create it."
       }
     },
     "early-detail-7": {
@@ -546,6 +622,22 @@
       "93c89872-f2ba-4b34-826a-f36e42e1451c": {
         "acceptable": false,
         "reasoning": "The candidate passage does not say Wren watched the stalls and the road behind them after leaving Merrow."
+      },
+      "28a0b138-3da6-4fa7-8b1e-db36ca223d3d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage asks Sabeth about route safety and does not mention the stalls or the road behind them."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only discusses the drivers following Old Mother Sabeth’s instructions and does not mention the stalls or the road behind them."
+      },
+      "22c8524e-f52a-4b11-bc6e-08950050e5df": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses asking a vendor about Sir Bastian Crowe and does not mention the two places Wren watched."
+      },
+      "b381c6ce-cc11-47c1-b688-8fe57023cee1": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions trade stalls but does not say Wren watched the stalls and the road behind the caravan to check for pursuers."
       }
     },
     "early-vague-9": {
@@ -654,6 +746,38 @@
       "a04cb9cd-4225-4923-9633-c69703c88609": {
         "acceptable": false,
         "reasoning": "The candidate passage does not say that Grell described the reliquary as having been brought to his threshold."
+      },
+      "28a0b138-3da6-4fa7-8b1e-db36ca223d3d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses asking Sabeth about route safety, but does not say where the reliquary was brought."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions searching for a waystone and does not say where Grell said the reliquary was brought."
+      },
+      "1e15592a-ac4b-48b2-8c39-6992d519a90a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes returning to the market and asking about Sir Bastian, not where the reliquary was brought."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses Sabeth’s route and hazards but does not say where the reliquary was brought."
+      },
+      "67f217d0-13e4-441b-9478-1d281597396a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say that the reliquary was brought to Grell’s threshold."
+      },
+      "141db6dd-2633-4e94-8ff2-26b0860921eb": {
+        "acceptable": false,
+        "reasoning": "The candidate says the reliquary remains in the monastery’s inner court, but does not state Grell’s remark that it was brought to his threshold."
+      },
+      "dfec61b9-3aa5-466f-8f86-e5f7a2e89400": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not state that Grell said the reliquary had been brought to his threshold."
+      },
+      "acb7b12b-5a97-4acd-98f6-e693ebd2e381": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say that Grell described the reliquary as being brought to his threshold."
       }
     },
     "early-detail-12": {
@@ -772,6 +896,30 @@
       "9cb01ab0-77c9-4d1f-bd43-be35d71ed5d2": {
         "acceptable": false,
         "reasoning": "The candidate passage does not say the wards are a restraint; it only says there is no safe way to open the reliquary."
+      },
+      "1e15592a-ac4b-48b2-8c39-6992d519a90a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only mentions asking about Sir Bastian Crowe and contains nothing about the reliquary’s wards."
+      },
+      "28a0b138-3da6-4fa7-8b1e-db36ca223d3d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Grell or the reliquary’s wards."
+      },
+      "e47ae59c-3ccb-4d13-a9ab-3b3b32ec9c8c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Grell or describe the reliquary’s wards as a restraint."
+      },
+      "141db6dd-2633-4e94-8ff2-26b0860921eb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention what Grell said the reliquary’s wards were."
+      },
+      "0d879152-0478-4d67-86bb-5510a3416b5d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Grell or what the reliquary’s wards were."
+      },
+      "acb7b12b-5a97-4acd-98f6-e693ebd2e381": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not state that the wards are a restraint rather than a guarantee of safety."
       }
     },
     "early-vague-10": {
@@ -894,6 +1042,62 @@
       "1a4bbcf3-6a57-4ee4-abcf-1a2030d2171c": {
         "acceptable": false,
         "reasoning": "The candidate says Sabeth listens without touching the casing, but it does not state that Grell avoided touching the container’s locks before examining the seals."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns following Sabeth along a hazardous track and does not mention the container’s locks."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only says the drivers will follow Old Mother Sabeth’s instructions and does not mention the abbot avoiding the container’s locks."
+      },
+      "cefe21c0-65ce-4a24-b725-10d2ed5468f0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns searching for a waystone and does not mention the abbot inspecting the container or avoiding its locks."
+      },
+      "b381c6ce-cc11-47c1-b688-8fe57023cee1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses caravan supplies and the reliquary but does not say what the abbot avoided touching during an inspection."
+      },
+      "03ea466c-d1c6-4bad-88ab-6bd617f349e0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the abbot inspecting the container or avoiding its locks."
+      },
+      "c7925a25-a485-4cfa-bbb0-77fe394033d4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not state that the abbot avoided touching the container’s locks before examining the seals."
+      },
+      "444c9b08-414e-4416-855a-34e7459eaa3b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions the sealed reliquary but does not say that the abbot avoided touching its locks."
+      },
+      "6dc285d6-264e-4c3c-9088-2eb6d31bb1f1": {
+        "acceptable": false,
+        "reasoning": "The candidate says the reliquary remains sealed and strapped to the wagon, but does not say the abbot avoided touching its locks before examining the seals."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says the reliquary’s fastenings hold but does not state that the abbot avoided touching its locks before inspecting the seals."
+      },
+      "7aafac56-c26e-4599-9e3c-c9c90b1ab650": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes the caravan’s travel and does not mention Grell avoiding the container’s locks."
+      },
+      "707b34e1-aece-4355-8a40-ad2470bf21c7": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention what the abbot avoided touching during the inspection."
+      },
+      "261031f3-f497-461d-8674-34366158f284": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the abbot inspecting the container or avoiding its locks."
+      },
+      "a3066a72-b098-456c-8527-0d01131c3a34": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Grell avoiding the container’s locks before inspecting the seals."
+      },
+      "5749d1ef-abc2-4937-ac28-4f20d23e5884": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Grell avoiding the reliquary’s locks before inspecting its seals."
       }
     },
     "early-detail-13": {
@@ -1024,6 +1228,34 @@
       "0efde590-be05-41a2-b1ab-db2fd89c9e8f": {
         "acceptable": true,
         "reasoning": "The passage identifies the old war ruins and says the marked route skirts them, matching the ruins named in the reference."
+      },
+      "1e15592a-ac4b-48b2-8c39-6992d519a90a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only mentions asking about Sir Bastian Crowe and does not identify the old war-ruins."
+      },
+      "141db6dd-2633-4e94-8ff2-26b0860921eb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not identify the old war-ruins or say they should be avoided."
+      },
+      "f440679e-4844-4de1-ae20-31d0262cc420": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses travel with Old Mother Sabeth but does not mention the old war-ruins."
+      },
+      "86e2d8ae-f55c-4165-acc7-c3c1e0963e2e": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the old war-ruins or any ruins to avoid."
+      },
+      "5749d1ef-abc2-4937-ac28-4f20d23e5884": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the old war-ruins or any ruins travelers should avoid."
+      },
+      "3ebf1a21-2d8c-4409-8ff2-420f170489d4": {
+        "acceptable": true,
+        "reasoning": "The candidate mentions a route skirting the old war ruins, the same ruins identified in the reference for travelers to avoid."
+      },
+      "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions Grell and the inner court but does not identify the old war-ruins for travelers to avoid."
       }
     },
     "early-vague-11": {
@@ -1144,6 +1376,22 @@
       "fc904a2a-0a7f-4d5a-a550-2f53d3567ec4": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention Wren suggesting that the user ask around again in Merrow."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses following Sabeth’s track and travel hazards, but does not say to ask around again if returning to Merrow."
+      },
+      "22c8524e-f52a-4b11-bc6e-08950050e5df": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes asking the vendor about Crowe and does not state Wren’s suggestion to ask around again if returning to Merrow."
+      },
+      "28a0b138-3da6-4fa7-8b1e-db36ca223d3d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only asks Sabeth about route safety and dangers, and does not mention Wren’s suggestion to ask around again."
+      },
+      "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Wren suggesting that Tamsin ask around again if she returned to Merrow."
       }
     },
     "early-vague-12": {
@@ -1290,6 +1538,42 @@
       "8eb2102a-516f-427f-befc-d973e4151b76": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention Wren telling the drivers to report spills or leaks."
+      },
+      "608ed96c-898b-46cf-a03d-7771bfa4170f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say that drivers were told to report any spill or leak immediately."
+      },
+      "658ba114-a9e2-4711-b528-fe593722a77b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes the caravan following Sabeth but does not mention Wren or reporting spills or leaks."
+      },
+      "b381c6ce-cc11-47c1-b688-8fe57023cee1": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions checking for leaks but does not say Wren told the drivers to report spills or leaks immediately."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes searching for a waystone and does not mention what the drivers should report."
+      },
+      "8b730eb8-ad81-47cb-abad-c7c2e5939775": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only mentions increasing the caravan’s pace and does not say what the drivers should report immediately."
+      },
+      "9152b5df-1b77-4009-87ec-104db6150273": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention what the drivers were told to report."
+      },
+      "a58163d6-056d-421e-953d-018523e3a84d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes purchasing and securing water but does not say what drivers were told to report."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions keeping the water covered and secured, but does not say to report any spill or leak immediately."
+      },
+      "88914ad0-91da-4235-b73e-26d948361e7c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions rationing and checking the water skin, but does not say to report any spill or leak immediately."
       }
     },
     "early-vague-14": {
@@ -1366,6 +1650,26 @@
       "0d879152-0478-4d67-86bb-5510a3416b5d": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention Old Mother Sabeth’s requirements or whether she requested extra water or payment."
+      },
+      "707b34e1-aece-4355-8a40-ad2470bf21c7": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses returning to Saint Aurel and does not state whether Old Mother Sabeth requested extra payment."
+      },
+      "4fa8853b-ccec-4219-88da-f2de6468f9b1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention any extra payment or water request from Old Mother Sabeth."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Old Mother Sabeth’s requirements or whether she requested extra water or payment."
+      },
+      "8aab5c64-4666-4dd8-a56f-2ccc244c6314": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say whether Old Mother Sabeth requested extra payment or water."
+      },
+      "67f217d0-13e4-441b-9478-1d281597396a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses Sabeth’s advice about the reliquary but does not say whether she requested extra water or payment."
       }
     },
     "early-vague-15": {
@@ -1452,6 +1756,14 @@
       "f2a89212-95b1-48c8-b001-9df63a88e24a": {
         "acceptable": false,
         "reasoning": "The candidate says you call the halt, not that the elderly guide chooses the stopping place."
+      },
+      "0efde590-be05-41a2-b1ab-db2fd89c9e8f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say who would choose the stopping place if the heat forced a halt."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes Wren and the caravan stopping on the exposed track, but does not say the elderly guide would choose the stopping place."
       }
     },
     "early-detail-19": {
@@ -1538,6 +1850,22 @@
       "8431516e-46ab-47e6-9794-c1091d7c35f5": {
         "acceptable": false,
         "reasoning": "The candidate only describes crossing the Glass Flats and does not say what to do if Sabeth’s track is lost from sight."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes halting for an exhausted driver, but does not say to stop the caravan and not guess if Sabeth’s track is lost."
+      },
+      "4fa8853b-ccec-4219-88da-f2de6468f9b1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes Tamsin speaking with Sabeth about rites and contains no instruction about losing sight of the track."
+      },
+      "658ba114-a9e2-4711-b528-fe593722a77b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say to stop the caravan and not guess if Sabeth’s track is lost."
+      },
+      "3b23a605-4a42-4f77-9b37-aa6831fe854b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say to stop the caravan and not guess if Sabeth’s track is lost."
       }
     },
     "early-detail-20": {
@@ -1642,6 +1970,22 @@
       "2d79a09a-a22a-40f9-989d-b66106b84ad0": {
         "acceptable": true,
         "reasoning": "The candidate says the banks can hide changes in footing, identifying them as the deceptive area."
+      },
+      "4fa8853b-ccec-4219-88da-f2de6468f9b1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage contains no information about where smooth surfaces are deceptive."
+      },
+      "fd02f55e-d790-492a-83c2-b4fb39f0aae8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes a hidden panel and does not mention smooth surfaces being deceptive by the banks."
+      },
+      "5dfb1852-5bbc-4555-bf56-cb665e4b943e": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention smooth surfaces or banks as signs of unstable ground."
+      },
+      "67f217d0-13e4-441b-9478-1d281597396a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention smooth surfaces being deceptive by the banks."
       }
     },
     "late-detail-1": {
@@ -1708,6 +2052,14 @@
       "0d879152-0478-4d67-86bb-5510a3416b5d": {
         "acceptable": false,
         "reasoning": "The candidate passage only says the speaker travels to Velk’s tower and does not state where the vibration was strongest."
+      },
+      "5dfb1852-5bbc-4555-bf56-cb665e4b943e": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says the hum remained steady but does not state that the vibration was strongest near the lid."
+      },
+      "6dc285d6-264e-4c3c-9088-2eb6d31bb1f1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say where the vibration was strongest; that detail appears only in the reference."
       }
     },
     "late-vague-3": {
@@ -1790,6 +2142,30 @@
       "fbcc1469-563f-4fb8-8b08-7ec4460ae589": {
         "acceptable": false,
         "reasoning": "The candidate passage says nothing about how the weakened driver responds when spoken to."
+      },
+      "60c99235-564b-4653-9df6-1fef916350cc": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say how the weakened driver responded when spoken to."
+      },
+      "298ac513-a70f-4d6d-becc-5163d6d16e54": {
+        "acceptable": false,
+        "reasoning": "The candidate says the weakened driver is resting beside Wren but does not state how he responded when spoken to."
+      },
+      "4ae70988-1145-46b0-8724-ffc8080e5e49": {
+        "acceptable": false,
+        "reasoning": "The candidate says the weakened driver remains slumped and unable to take the reins, but does not say whether he answers when spoken to."
+      },
+      "f0de4138-7838-4f33-a523-67fa24669bb3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says the weakened driver sags against the wagon but does not state that he answered when spoken to."
+      },
+      "ce367288-d439-4657-b9d5-32b2333efc68": {
+        "acceptable": false,
+        "reasoning": "The candidate says the driver is still too weak to take the reins, but does not say how he responds when spoken to."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The candidate says the driver is conscious, but does not state that he answers when spoken to."
       }
     },
     "late-vague-4": {
@@ -1852,6 +2228,30 @@
       "061f2cec-bf29-4ebf-bbeb-4927d22621f1": {
         "acceptable": false,
         "reasoning": "The candidate describes Wren supporting him while walking and helping him into a wagon, but does not state that he could not sit up without her support."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions following instructions but does not state that the weakened driver cannot sit up without Wren’s support."
+      },
+      "455b5da4-da44-4526-ac81-4754e24b0cf8": {
+        "acceptable": false,
+        "reasoning": "The candidate says Wren remains beside the weakened driver but does not state that he cannot sit up without her support."
+      },
+      "dbe7ef99-04b2-45a4-b12c-dc4badbb1905": {
+        "acceptable": false,
+        "reasoning": "The candidate says Wren stays beside the collapsed driver but does not state that he cannot sit up without her support."
+      },
+      "bd9b31d5-380a-4ea5-8563-4e60f2269f89": {
+        "acceptable": false,
+        "reasoning": "The candidate says Wren supports the weakened driver, but does not state that he cannot sit up without her support."
+      },
+      "f0de4138-7838-4f33-a523-67fa24669bb3": {
+        "acceptable": false,
+        "reasoning": "The candidate says the weakened driver sags against the wagon, but does not state that he cannot sit up without Wren’s support."
+      },
+      "4ae70988-1145-46b0-8724-ffc8080e5e49": {
+        "acceptable": false,
+        "reasoning": "The candidate says Wren steadies him as he lifts his head, but does not state that he cannot sit up without her support."
       }
     },
     "late-detail-5": {
@@ -1930,6 +2330,34 @@
       "07bcfed6-0d91-4ab9-a6a5-1a8c260f05ba": {
         "acceptable": false,
         "reasoning": "The candidate mentions undisturbed seals and restraints while handling the reliquary, but does not say Wren avoided disturbing its straps while searching for supplies."
+      },
+      "bd9b31d5-380a-4ea5-8563-4e60f2269f89": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the reliquary’s straps or that Wren avoided disturbing them."
+      },
+      "4ae70988-1145-46b0-8724-ffc8080e5e49": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Wren searching the wagon or avoiding the reliquary’s straps."
+      },
+      "261031f3-f497-461d-8674-34366158f284": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Wren avoiding disturbing the reliquary’s straps."
+      },
+      "b381c6ce-cc11-47c1-b688-8fe57023cee1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions the reliquary staying secured but does not say Wren took care not to disturb its straps."
+      },
+      "db7460e7-be87-4110-a844-06fd13c7a0e1": {
+        "acceptable": false,
+        "reasoning": "The candidate says the reliquary remains secured among the cargo, but does not say Wren took care not to disturb its straps."
+      },
+      "6dc285d6-264e-4c3c-9088-2eb6d31bb1f1": {
+        "acceptable": false,
+        "reasoning": "The candidate says the reliquary remains strapped to the wagon, but does not state that Wren took care not to disturb its straps."
+      },
+      "37d5d6f2-375b-480c-97cd-6ef609da13f0": {
+        "acceptable": false,
+        "reasoning": "The candidate says the reliquary remained strapped and secured, but does not state that Wren took care not to disturb its straps while searching for supplies."
       }
     },
     "late-vague-5": {
@@ -2028,6 +2456,42 @@
       "79fcb985-f4f4-4053-a46b-0a45e87798bd": {
         "acceptable": false,
         "reasoning": "The candidate passage mentions the drivers but does not say that Tamsin asked them whether they had anything to spare."
+      },
+      "247b595d-957c-48e5-88b6-3bffbb694c3f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say that anyone asked the drivers whether they had anything to spare."
+      },
+      "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention asking the drivers whether they had anything to spare."
+      },
+      "8431516e-46ab-47e6-9794-c1091d7c35f5": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say whom the narrator asked whether they had anything to spare."
+      },
+      "b381c6ce-cc11-47c1-b688-8fe57023cee1": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions the drivers waiting nearby but does not say that you asked them whether they had anything to spare."
+      },
+      "1de36f50-eaf8-4380-af1b-0bf6eb333ae2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions the drivers but does not say you asked them whether they had anything to spare."
+      },
+      "60c99235-564b-4653-9df6-1fef916350cc": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions rationing water but does not say whom Tamsin asked for spare supplies."
+      },
+      "d8752f24-0c64-4a94-8a7b-612866eea798": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions the drivers in connection with water rationing, but does not say they were asked whether they had anything to spare."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions the drivers receiving water, but does not say they were asked whether they had anything to spare."
+      },
+      "f2a89212-95b1-48c8-b001-9df63a88e24a": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions the drivers, but does not say that they were asked whether they had anything to spare."
       }
     },
     "late-detail-6": {
@@ -2110,6 +2574,46 @@
       "72d643f3-e925-4a32-a51b-d0fabbc7c3ce": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention looking beneath the driver’s seat."
+      },
+      "7d00241f-a9e6-435e-9a3c-8881d56cb281": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes examining the reliquary and does not mention looking beneath the driver’s seat."
+      },
+      "db7460e7-be87-4110-a844-06fd13c7a0e1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention searching beneath the driver’s seat."
+      },
+      "71fdfce4-978b-4c7e-8c63-38d25810dbc4": {
+        "acceptable": false,
+        "reasoning": "The reference says Tamsin searched beneath the driver’s seat, but the candidate passage does not contain that detail."
+      },
+      "cc5bd2fb-8266-4e15-8abc-0c3b9a6e8a89": {
+        "acceptable": false,
+        "reasoning": "The reference says the wagon was searched beneath the driver’s seat, but the candidate passage does not mention looking beneath any seat."
+      },
+      "6dc285d6-264e-4c3c-9088-2eb6d31bb1f1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention looking beneath the driver’s seat."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say that you searched beneath the driver’s seat."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes searching for an old waystone and does not mention looking beneath the driver’s seat."
+      },
+      "07bcfed6-0d91-4ab9-a6a5-1a8c260f05ba": {
+        "acceptable": false,
+        "reasoning": "The candidate passage never mentions searching beneath the driver’s seat."
+      },
+      "608ed96c-898b-46cf-a03d-7771bfa4170f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention searching beneath the driver’s seat."
+      },
+      "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions checking water vessels and supplies but does not say anyone looked beneath the driver’s seat."
       }
     },
     "late-vague-6": {
@@ -2178,6 +2682,14 @@
       "444c9b08-414e-4416-855a-34e7459eaa3b": {
         "acceptable": false,
         "reasoning": "The candidate says Ferro stayed behind with the witnesses but does not state that he waited beside the dock office entrance."
+      },
+      "a58163d6-056d-421e-953d-018523e3a84d": {
+        "acceptable": false,
+        "reasoning": "The candidate says Ferro remains near the gathered witnesses, but does not state that he waited beside the dock office entrance."
+      },
+      "3c6e161c-1939-447d-b9cb-9f76074fdc4c": {
+        "acceptable": false,
+        "reasoning": "The candidate says Ferro remained by the witnesses at the docks but does not state that he waited beside the dock office entrance."
       }
     },
     "late-detail-8": {
@@ -2244,6 +2756,10 @@
       "55f22585-5ce3-4e40-be9f-ca22a62b7e68": {
         "acceptable": false,
         "reasoning": "The candidate only says Wren should stay vigilant and does not mention asking Ferro for a detail that could be checked against another account."
+      },
+      "3c6e161c-1939-447d-b9cb-9f76074fdc4c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses the caravan waiting for water and does not mention asking Ferro for a witness detail that could be checked against another account."
       }
     },
     "late-vague-8": {
@@ -2294,6 +2810,14 @@
       "c580eb94-8490-4faf-83ab-ca25831adc60": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention sending dockworkers to carry the request to other caravans."
+      },
+      "3c6e161c-1939-447d-b9cb-9f76074fdc4c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says nothing about sending dockworkers to carry a request to nearby caravans."
+      },
+      "b381c6ce-cc11-47c1-b688-8fe57023cee1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Captain Ferro or who carried his request to other caravans."
       }
     },
     "late-detail-10": {
@@ -2370,6 +2894,18 @@
       "061f2cec-bf29-4ebf-bbeb-4927d22621f1": {
         "acceptable": false,
         "reasoning": "The candidate says Wren seats the weakened driver in the wagon, but does not state that she avoids jolting him while speeding up."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only says the drivers will follow Old Mother Sabeth’s instructions and does not mention avoiding jolting the weakened driver."
+      },
+      "4ae70988-1145-46b0-8724-ffc8080e5e49": {
+        "acceptable": true,
+        "reasoning": "The candidate says Wren increased the pace without making the wagon lurch, avoiding jolting the weakened driver."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate says the wheels jolt over uneven ground and does not state that Wren avoided jolting the weakened driver."
       }
     },
     "late-detail-11": {
@@ -2432,6 +2968,30 @@
       "a58163d6-056d-421e-953d-018523e3a84d": {
         "acceptable": false,
         "reasoning": "The candidate says the newly filled skins were tied shut, but does not say Tamsin kept the remaining water sealed after checking it rather than spending it."
+      },
+      "46e97a67-00be-47e9-b150-32786eae519b": {
+        "acceptable": true,
+        "reasoning": "The candidate says the remaining water stays tied shut, matching the action after checking the skins."
+      },
+      "9152b5df-1b77-4009-87ec-104db6150273": {
+        "acceptable": false,
+        "reasoning": "The candidate says the water skins are empty and does not say they were kept tied shut after inspection."
+      },
+      "061f2cec-bf29-4ebf-bbeb-4927d22621f1": {
+        "acceptable": false,
+        "reasoning": "The candidate says the water skins were empty and secured, but does not say Tamsin kept them tied shut after checking them."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses assuring Old Mother Sabeth about the drivers and contains no information about the water skins."
+      },
+      "c5d6eda3-9459-44c5-988e-974cafa94900": {
+        "acceptable": true,
+        "reasoning": "The passage says Tamsin checks the remaining water, ties the skin shut again, and keeps the last water for careful rationing rather than using it all at once."
+      },
+      "d8752f24-0c64-4a94-8a7b-612866eea798": {
+        "acceptable": true,
+        "reasoning": "The candidate says to keep the skins’ covers closed and that no water is drawn, conveying that the remaining water was kept secured rather than spent at once."
       }
     },
     "late-detail-12": {
@@ -2492,6 +3052,22 @@
       "9cb01ab0-77c9-4d1f-bd43-be35d71ed5d2": {
         "acceptable": false,
         "reasoning": "The candidate mentions the Sealed Reliquary but does not say it was left behind during the first shrine visit; it instead has Tamsin and the reliquary together at the shrine."
+      },
+      "84154912-8068-4387-8e36-bef2a55c6fbc": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes searching a tower and does not state that Tamsin left the sealed reliquary behind at the shrine."
+      },
+      "707b34e1-aece-4355-8a40-ad2470bf21c7": {
+        "acceptable": true,
+        "reasoning": "The candidate identifies the reliquary at Saint Aurel as the item to bring to the shrine, matching what she had left behind."
+      },
+      "86e2d8ae-f55c-4165-acc7-c3c1e0963e2e": {
+        "acceptable": true,
+        "reasoning": "The candidate says Tamsin returns to Saint Aurel to retrieve the Sealed Reliquary, indicating she had left it behind."
+      },
+      "5dfb1852-5bbc-4555-bf56-cb665e4b943e": {
+        "acceptable": true,
+        "reasoning": "The passage states that the sealed reliquary remained at Saint Aurel while Tamsin was away, matching what she had left behind."
       }
     },
     "late-detail-13": {
@@ -2632,6 +3208,14 @@
       "707b34e1-aece-4355-8a40-ad2470bf21c7": {
         "acceptable": false,
         "reasoning": "The candidate only says the reliquary was brought to the shrine and does not mention lifting it to inspect the underside."
+      },
+      "2423aef5-6766-439f-8ef5-5edc468cf34d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes searching a ruined mage tower and does not mention lifting the vessel or inspecting its underside."
+      },
+      "7d00241f-a9e6-435e-9a3c-8881d56cb281": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes examining the reliquary but does not say it was lifted to inspect the underside."
       }
     },
     "late-detail-15": {
@@ -2694,6 +3278,10 @@
       "dfec61b9-3aa5-466f-8f86-e5f7a2e89400": {
         "acceptable": false,
         "reasoning": "The candidate says Grell will not invent instructions for an unverified rite, but does not state that he refuses because he does not know what it requires or might do."
+      },
+      "293a3a40-022b-42d2-97a9-b441522d2c2e": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes examining the reliquary and does not explain why Grell refused to attempt a ritual."
       }
     },
     "late-detail-16": {
@@ -2756,6 +3344,22 @@
       "429de15d-a900-45a1-9ff8-fae2960861e0": {
         "acceptable": false,
         "reasoning": "The candidate passage concerns requesting an audience with Abbot Grell and does not mention the patrol leader easing the guards’ grip."
+      },
+      "0efde590-be05-41a2-b1ab-db2fd89c9e8f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the patrol leader telling guards to ease their grip."
+      },
+      "8a56a744-cb02-4138-bbad-062cf1a5749f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses Wren and locating Sir Bastian Crowe, but does not mention the patrol leader or easing the guards’ grip."
+      },
+      "b381c6ce-cc11-47c1-b688-8fe57023cee1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses caravan supplies and does not mention the patrol leader telling guards to ease their grip."
+      },
+      "141db6dd-2633-4e94-8ff2-26b0860921eb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns searching for Sir Bastian Crowe in Merrow and does not mention the patrol leader or easing the guards’ grip."
       }
     },
     "late-vague-13": {
@@ -2838,6 +3442,42 @@
       "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
         "acceptable": false,
         "reasoning": "The candidate passage mentions no mirage or checking whether it holds its shape as the wagons move."
+      },
+      "db7460e7-be87-4110-a844-06fd13c7a0e1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention checking whether the mirage held its shape as the wagons moved."
+      },
+      "46e97a67-00be-47e9-b150-32786eae519b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions departure and watching for danger, but not checking whether a mirage held its shape as the wagons moved."
+      },
+      "91023d67-3b85-4be8-8ad2-18c60a711f3e": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses water skins and travel pace but does not mention checking whether a mirage held its shape as the wagons moved."
+      },
+      "8b730eb8-ad81-47cb-abad-c7c2e5939775": {
+        "acceptable": false,
+        "reasoning": "The candidate only says to increase pace toward Saint Aurel; it does not mention checking whether the mirage held its shape as the wagons moved."
+      },
+      "1c0324db-6849-4421-adad-c8f688dbab58": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions low water and pushing on, but not checking whether the mirage held its shape as the wagons moved."
+      },
+      "444c9b08-414e-4416-855a-34e7459eaa3b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention searching for water or checking whether a mirage held its shape as the wagons moved."
+      },
+      "1de36f50-eaf8-4380-af1b-0bf6eb333ae2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes searching for a waystone, not checking whether a mirage held its shape as the wagons moved."
+      },
+      "cefe21c0-65ce-4a24-b725-10d2ed5468f0": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions heat shimmer but does not describe checking whether a mirage held its shape as the wagons moved."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions searching for a waystone, not checking whether a mirage held its shape as the wagons moved."
       }
     },
     "late-detail-17": {
@@ -2930,6 +3570,42 @@
       "7aafac56-c26e-4599-9e3c-c9c90b1ab650": {
         "acceptable": false,
         "reasoning": "The candidate says the caravan moved faster but does not state that it made up no time."
+      },
+      "1c0324db-6849-4421-adad-c8f688dbab58": {
+        "acceptable": false,
+        "reasoning": "The candidate says the caravan was pushed to make up time but does not state how much time it actually made up."
+      },
+      "1e15592a-ac4b-48b2-8c39-6992d519a90a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns asking about Sir Bastian Crowe and does not state whether the caravan made up time."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes searching for a waystone and does not state how much time the caravan made up."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate describes travel across the Glass Flats but does not state whether the caravan made up any time."
+      },
+      "86e2d8ae-f55c-4165-acc7-c3c1e0963e2e": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the caravan or whether it made up time."
+      },
+      "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say how much time the caravan made up."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The candidate says the pace gains ground but does not state that the caravan made up no time."
+      },
+      "907c94ad-f102-46c9-b3d8-13eed3996de4": {
+        "acceptable": false,
+        "reasoning": "The candidate describes the caravan traveling at a measured pace but does not state whether it made up any time."
+      },
+      "7589652e-2efe-4121-8197-7d3fdcafeaa9": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes a steady pace and arrival after three days, but does not say whether the caravan made up any time."
       }
     },
     "late-detail-18": {
@@ -3058,6 +3734,38 @@
       "93c89872-f2ba-4b34-826a-f36e42e1451c": {
         "acceptable": false,
         "reasoning": "The candidate describes an earlier incident involving one runaway water cask, after which the caravan has enough water, not the third crisis where Wren says the teams cannot enter the Wastes."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate only says the drivers will follow Old Mother Sabeth’s instructions and does not depict the water shortage at the docks or mention the teams."
+      },
+      "455b5da4-da44-4526-ac81-4754e24b0cf8": {
+        "acceptable": false,
+        "reasoning": "The candidate describes an earlier heat crisis with nearly empty water skins, not the later occurrence where Wren says the teams cannot be taken into the Wastes."
+      },
+      "4ae70988-1145-46b0-8724-ffc8080e5e49": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a later heat-and-water strain while the caravan is already crossing the Ash Ground, not the third crisis at the docks when Wren said they couldn’t take the teams into the Wastes."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The candidate depicts a different crisis in the Glass Flats, not the third water-shortage occurrence at the docks in the reference."
+      },
+      "1c0324db-6849-4421-adad-c8f688dbab58": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a different episode of low water during travel and does not depict the referenced third crisis or Wren’s statement about the teams."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate shows adequate measured water and the caravan traveling across the Wastes; it does not depict the third shortage crisis or Wren saying the teams could not go."
+      },
+      "113adf28-afab-467f-bea6-eadf75c3bca1": {
+        "acceptable": false,
+        "reasoning": "The candidate describes an earlier heat-and-water crisis, not the third occurrence shown in the reference, so it does not answer that specific event."
+      },
+      "9152b5df-1b77-4009-87ec-104db6150273": {
+        "acceptable": false,
+        "reasoning": "The candidate describes an earlier crisis with empty water skins and a weakened driver, not the specific later occurrence in which Wren says they cannot take the teams into the Wastes."
       }
     },
     "late-temporal-3": {
@@ -3136,6 +3844,34 @@
       "219fed64-4ae3-4ace-8731-ae624ec930c3": {
         "acceptable": true,
         "reasoning": "The candidate continues the same crisis, showing the teams resting in shade, which matches Wren’s stated need of shade and rest."
+      },
+      "d8752f24-0c64-4a94-8a7b-612866eea798": {
+        "acceptable": false,
+        "reasoning": "The candidate describes water rationing and intact water skins, not the fourth heat crisis where Wren says the lead team needs shade and rest."
+      },
+      "8b730eb8-ad81-47cb-abad-c7c2e5939775": {
+        "acceptable": false,
+        "reasoning": "The candidate only says to increase the caravan’s pace and does not depict the fourth heat-and-water crisis or Wren calling for shade and rest."
+      },
+      "9152b5df-1b77-4009-87ec-104db6150273": {
+        "acceptable": false,
+        "reasoning": "The candidate depicts a different occurrence and does not include Wren saying the lead team needs shade and rest before continuing."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a brief halt and water ration, but not the fourth heat crisis or Wren saying the lead team needed shade and rest."
+      },
+      "455b5da4-da44-4526-ac81-4754e24b0cf8": {
+        "acceptable": false,
+        "reasoning": "The candidate describes an earlier shortage and search for shelter, not the fourth crisis in the reference passage where Wren says the lead team needs shade and rest."
+      },
+      "4ae70988-1145-46b0-8724-ffc8080e5e49": {
+        "acceptable": false,
+        "reasoning": "The candidate describes continued heat and exhaustion but does not have Wren say that the lead team needs shade and rest before continuing."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a different heat crisis involving a collapsed driver, not the fourth occurrence where Wren said the lead team needed shade and rest before continuing."
       }
     },
     "late-temporal-4": {
@@ -3226,6 +3962,34 @@
       "c6996d60-254a-464d-9406-5e7c50a006fb": {
         "acceptable": false,
         "reasoning": "The reference describes the caravan waiting at the docks after Wren finds the water skins empty, while the candidate depicts a separate journey across the Glass Flats with the drivers moving onward."
+      },
+      "1c0324db-6849-4421-adad-c8f688dbab58": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a different episode of traveling with low water and does not show Wren warning the drivers or their holding their places."
+      },
+      "f0de4138-7838-4f33-a523-67fa24669bb3": {
+        "acceptable": false,
+        "reasoning": "The candidate depicts a different heat-and-low-water episode, where the drivers continue moving, not the referenced occurrence where they held their places after Wren warned them not to set out."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate only says the drivers will follow Old Mother Sabeth’s instructions and does not depict the third water-shortage crisis or say they held their places."
+      },
+      "31b813fd-4b7d-44ab-b5f1-8afb8ef19509": {
+        "acceptable": false,
+        "reasoning": "The candidate passage shows the drivers taking their places and departing after supplies are confirmed, not the third water-shortage crisis in which Wren warns against setting out and the drivers hold their places."
+      },
+      "72d643f3-e925-4a32-a51b-d0fabbc7c3ce": {
+        "acceptable": false,
+        "reasoning": "The candidate depicts the caravan already moving across the Ash Ground, not the dockside occurrence where Wren warns against setting out and the drivers hold their places."
+      },
+      "4a8d9442-7736-47bf-b2ab-dfdaf5269f8d": {
+        "acceptable": false,
+        "reasoning": "The candidate describes an earlier crisis where the drivers continue moving at a faster pace, not the occurrence where Wren warns against setting out and they hold their places."
+      },
+      "455b5da4-da44-4526-ac81-4754e24b0cf8": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a different crisis in the Wastes, not the reference occurrence where Wren warns the drivers not to set out from the docks."
       }
     },
     "late-temporal-7": {
@@ -3304,6 +4068,34 @@
       "1c0324db-6849-4421-adad-c8f688dbab58": {
         "acceptable": false,
         "reasoning": "The candidate gives the reason, but it is from turn 74 rather than the fourth occurrence depicted in the reference at turns 374–375."
+      },
+      "0d879152-0478-4d67-86bb-5510a3416b5d": {
+        "acceptable": false,
+        "reasoning": "The candidate describes traveling to a ruined mage tower, not the fourth water-shortage or heat-sickness crisis or the reason the caravan continued."
+      },
+      "cefe21c0-65ce-4a24-b725-10d2ed5468f0": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a different stretch of travel and does not depict the fourth water-shortage or heat-sickness crisis or say the caravan was pushed onward to make up time."
+      },
+      "b7b8c853-cc64-4a4a-a945-88d070ceb736": {
+        "acceptable": false,
+        "reasoning": "The candidate describes crossing the Glass Flats before the heat peaks and does not depict the fourth water-shortage or heat-sickness crisis or pushing on to make up time."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate describes assuring Old Mother Sabeth about following her pace, but it does not depict the fourth heat-and-water crisis or say the caravan was pushed onward to make up time."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions heat and thirst as general dangers but does not depict the fourth crisis or pushing onward to make up time."
+      },
+      "79fcb985-f4f4-4053-a46b-0a45e87798bd": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a different episode involving a sandstorm and empty water skins, and does not say the caravan was pushed onward to make up time."
+      },
+      "8b730eb8-ad81-47cb-abad-c7c2e5939775": {
+        "acceptable": false,
+        "reasoning": "The candidate describes increasing pace to reach Saint Aurel sooner, not the fourth water-shortage or heat-sickness crisis or pushing onward to make up time."
       }
     },
     "late-temporal-8": {
@@ -3398,6 +4190,34 @@
       "36931edf-5851-4b4a-b8ab-9d37ea4f1881": {
         "acceptable": false,
         "reasoning": "The candidate describes a different occurrence and does not give the reference occurrence’s signs of water, dark patches or low depressions."
+      },
+      "1c0324db-6849-4421-adad-c8f688dbab58": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a different episode of low water and does not mention looking for dark patches or low depressions."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate describes searching for an old waystone, not the fifth water-shortage crisis or its signs of water."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate only says the drivers will follow Old Mother Sabeth’s pace and instructions; it does not depict the fifth crisis or mention dark patches or low depressions."
+      },
+      "f2a89212-95b1-48c8-b001-9df63a88e24a": {
+        "acceptable": false,
+        "reasoning": "The candidate describes an earlier uneventful march and does not depict the fifth water-shortage or heat-sickness crisis or mention the ground features sought."
+      },
+      "93c89872-f2ba-4b34-826a-f36e42e1451c": {
+        "acceptable": false,
+        "reasoning": "The candidate covers the caravan’s preparations and departure, not the fifth shortage crisis or a search for signs of water."
+      },
+      "f581cb42-03f9-40d4-a924-5dd7f1460724": {
+        "acceptable": false,
+        "reasoning": "The candidate describes an earlier warning about heat and unsafe ground, not the fifth water-shortage crisis or its search for dark patches or low depressions as signs of water."
+      },
+      "8eb2102a-516f-427f-befc-d973e4151b76": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a different water-shortage episode, so it does not depict the fifth occurrence from the reference, even though it also involves searching for water."
       }
     },
     "early-detail-21": {
@@ -3488,6 +4308,34 @@
       "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
         "acceptable": false,
         "reasoning": "The candidate passage describes heat and water shortages while crossing the Glass Flats, but not the storms and glass splinters that could cripple the wagons."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes searching for a waystone and does not mention why the Glass Flats crossing was ruled out."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses hidden footing, heat, and thirst but does not say the Glass Flats were avoided because storms and glass splinters could cripple the wagons."
+      },
+      "a58163d6-056d-421e-953d-018523e3a84d": {
+        "acceptable": false,
+        "reasoning": "The candidate discusses buying water, not ruling out the Glass Flats because storms and glass splinters could cripple the wagons."
+      },
+      "f2a89212-95b1-48c8-b001-9df63a88e24a": {
+        "acceptable": false,
+        "reasoning": "The candidate says the caravan stays away from the Glass Flats but does not mention storms or glass splinters threatening the wagons."
+      },
+      "c7925a25-a485-4cfa-bbb0-77fe394033d4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention ruling out the Glass Flats or the risk of storms and glass splinters crippling the wagons."
+      },
+      "444c9b08-414e-4416-855a-34e7459eaa3b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes the caravan departing but does not mention the Glass Flats or the risks of storms and glass splinters damaging the wagons."
+      },
+      "3c6e161c-1939-447d-b9cb-9f76074fdc4c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses an unsafe water shortage and a narrow pass, but not storms or glass splinters crippling the wagons on the Glass Flats."
       }
     },
     "early-detail-22": {
@@ -3590,6 +4438,30 @@
       "93c89872-f2ba-4b34-826a-f36e42e1451c": {
         "acceptable": false,
         "reasoning": "The candidate says Merrow is reachable within three days and that three days of water should be loaded, but it does not state that the journey took three days."
+      },
+      "429de15d-a900-45a1-9ff8-fae2960861e0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes arrival at Saint Aurel and does not state how long the journey from Corvane to Merrow took."
+      },
+      "99125d9b-3fd0-453c-b91e-2217519a665d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not state how many days the journey from Corvane to Merrow took."
+      },
+      "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not state how many days the journey from Corvane to Merrow took."
+      },
+      "3c6e161c-1939-447d-b9cb-9f76074fdc4c": {
+        "acceptable": false,
+        "reasoning": "The candidate says the journey cannot begin and gives no duration, so it does not contain the fact that the trip took three days."
+      },
+      "3c15366c-45a8-4b7a-b44c-4c938df3ded3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes returning toward Corvane but does not state how many days the first journey to Merrow took."
+      },
+      "17dc6e89-a794-45bc-aeda-45e48e3c29b8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses dockworkers and suspicious activity but does not state how many days the journey took."
       }
     },
     "early-detail-23": {
@@ -3664,6 +4536,14 @@
       "fc904a2a-0a7f-4d5a-a550-2f53d3567ec4": {
         "acceptable": false,
         "reasoning": "The candidate mentions the caravan only in a different context and does not contain the stallkeeper’s warning about who should not be watching buyers name a price."
+      },
+      "817696f6-2b0f-4125-af44-76609e81b559": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses Abbot Grell inspecting the reliquary and does not mention the caravan watching buyers name a price."
+      },
+      "7589652e-2efe-4121-8197-7d3fdcafeaa9": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions seeking buyers but does not say the stallkeeper warned that the caravan should not be watching."
       }
     },
     "early-detail-24": {
@@ -3762,6 +4642,30 @@
       "b381c6ce-cc11-47c1-b688-8fe57023cee1": {
         "acceptable": false,
         "reasoning": "The candidate says Wren marked the water on her list, but does not say she marked each confirmed supply off the list."
+      },
+      "36931edf-5851-4b4a-b8ab-9d37ea4f1881": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes distributing the remaining water, not how Wren recorded confirmed supplies on her list."
+      },
+      "d8752f24-0c64-4a94-8a7b-612866eea798": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes checking and rationing water, but not Wren marking confirmed supplies off her list."
+      },
+      "4546ff58-a787-4324-9d4e-681b8e8570d7": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say how Wren recorded the supplies she confirmed were present."
+      },
+      "261031f3-f497-461d-8674-34366158f284": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Wren recording confirmed supplies by marking them off a list."
+      },
+      "a58163d6-056d-421e-953d-018523e3a84d": {
+        "acceptable": false,
+        "reasoning": "The candidate says Wren checked the water skins’ closures, but does not say she marked confirmed supplies off her list."
+      },
+      "22c8524e-f52a-4b11-bc6e-08950050e5df": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses asking a vendor about Sir Bastian Crowe and does not say how Wren recorded confirmed supplies."
       }
     },
     "early-detail-25": {
@@ -3860,6 +4764,22 @@
       "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
         "acceptable": false,
         "reasoning": "The candidate passage discusses Sabeth’s track and hazards but does not mention the old war-ruins on the map."
+      },
+      "db0bf26e-b1bb-4cd2-b432-ce9b6ea37495": {
+        "acceptable": false,
+        "reasoning": "The reference says the map showed old war-ruins, but the candidate passage does not mention that landmark or the map check."
+      },
+      "31b813fd-4b7d-44ab-b5f1-8afb8ef19509": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions consulting the map but does not say that old war-ruins were marked or examined."
+      },
+      "3ebf1a21-2d8c-4409-8ff2-420f170489d4": {
+        "acceptable": true,
+        "reasoning": "The candidate passage explicitly mentions “old war ruins,” the same kind of ruins named in the reference."
+      },
+      "37d5d6f2-375b-480c-97cd-6ef609da13f0": {
+        "acceptable": true,
+        "reasoning": "The candidate passage identifies the ruins on the map as old war-ruins, matching the reference."
       }
     },
     "early-detail-26": {
@@ -3958,6 +4878,14 @@
       "f63f0a52-699d-45f1-b6f5-771e80636096": {
         "acceptable": false,
         "reasoning": "The candidate passage does not say that the drivers were recruited to search for the waystone."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions the drivers, but does not say they were recruited to search for the waystone."
+      },
+      "455b5da4-da44-4526-ac81-4754e24b0cf8": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions drivers searching rocks for water, not recruiting them to search for the waystone after the narrator’s search failed."
       }
     },
     "early-detail-27": {
@@ -4056,6 +4984,10 @@
       "6dc285d6-264e-4c3c-9088-2eb6d31bb1f1": {
         "acceptable": false,
         "reasoning": "The candidate passage describes crossing ash toward a ruined tower and does not say what happened to the wheels on the Glass Flats."
+      },
+      "93c89872-f2ba-4b34-826a-f36e42e1451c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says the Glass Flats were marked as a risk to avoid and does not say what happened to the wheels crossing them."
       }
     },
     "early-detail-28": {
@@ -4130,6 +5062,26 @@
       "70e3ac59-4928-4925-8f22-a1ea61d8bcf6": {
         "acceptable": false,
         "reasoning": "The candidate says no wagon was damaged during a different stretch of travel, but does not state what happened during the cautious Glass Flats crossing."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a different route and does not state that the wagons crossed without damage."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes searching for the waystone and does not state whether the wagons suffered damage."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says nothing about the wagons crossing the Glass Flats or whether they suffered damage."
+      },
+      "fbcc1469-563f-4fb8-8b08-7ec4460ae589": {
+        "acceptable": false,
+        "reasoning": "The candidate describes travel through an ash storm and maintaining formation, but does not state that the wagons crossed without damage."
+      },
+      "71fdfce4-978b-4c7e-8c63-38d25810dbc4": {
+        "acceptable": false,
+        "reasoning": "The candidate says the caravan cleared Bonebridge without losing a wagon or cargo, but does not state that the wagons crossed the Glass Flats without damage."
       }
     },
     "early-detail-29": {
@@ -4276,6 +5228,18 @@
       "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
         "acceptable": false,
         "reasoning": "The candidate says the route is still clear, but does not state that the drivers kept a faster pace without leaving it."
+      },
+      "907c94ad-f102-46c9-b3d8-13eed3996de4": {
+        "acceptable": false,
+        "reasoning": "The candidate says the drivers kept to the marked route at a measured or steady pace, but it does not state that they held a quicker pace across the Glass Flats."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate says the wagons followed the marked route elsewhere at a steady pace, but does not state what happened on the Glass Flats when the pace was increased."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate says the caravan stayed on Sabeth’s track during a later ash-path section, but it does not state what the drivers did on the Glass Flats."
       }
     },
     "early-detail-32": {
@@ -4398,6 +5362,54 @@
       "5749d1ef-abc2-4937-ac28-4f20d23e5884": {
         "acceptable": false,
         "reasoning": "The candidate mentions Abbot Grell, but does not say Wren recommended speaking with him about the reliquary."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Abbot Grell or recommend anyone to speak with about the reliquary."
+      },
+      "1e15592a-ac4b-48b2-8c39-6992d519a90a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only mentions asking about Crowe and does not say Wren recommended speaking with Abbot Grell about the reliquary."
+      },
+      "f2a89212-95b1-48c8-b001-9df63a88e24a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes traveling toward Saint Aurel and stopping along the route; it does not say whom Wren recommended speaking with about the reliquary."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Abbot Grell or whom Wren recommended speaking with about the reliquary."
+      },
+      "28a0b138-3da6-4fa7-8b1e-db36ca223d3d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only asks Sabeth about route safety and does not mention whom Wren recommended speaking with about the reliquary."
+      },
+      "f0de4138-7838-4f33-a523-67fa24669bb3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention whom Wren recommended speaking with about the reliquary."
+      },
+      "c5daaa98-41c8-41a6-8a7e-0b411c82c20f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Abbot Grell or whom Wren recommended speaking with about the reliquary."
+      },
+      "5735b5bd-165d-4801-b242-7fc823886ff3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions the reliquary but does not say Wren recommended speaking with Abbot Grell."
+      },
+      "141db6dd-2633-4e94-8ff2-26b0860921eb": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions Grell watching the reliquary but does not say Wren recommended speaking with Abbot Grell."
+      },
+      "ce367288-d439-4657-b9d5-32b2333efc68": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Abbot Grell or Wren’s recommendation about the reliquary."
+      },
+      "c580eb94-8490-4faf-83ab-ca25831adc60": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses witness accounts of a bandit attack and does not mention whom Wren recommended speaking with about the reliquary."
+      },
+      "261031f3-f497-461d-8674-34366158f284": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention whom Wren recommended speaking with about the reliquary."
       }
     },
     "early-detail-33": {
@@ -4536,6 +5548,46 @@
       "4b690615-e1be-4566-a685-52f0b66e0652": {
         "acceptable": true,
         "reasoning": "The passage states that no figures appear on the approach to Saint Aurel, conveying that no one was seen near the gates."
+      },
+      "28a0b138-3da6-4fa7-8b1e-db36ca223d3d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns Sabeth and route dangers, and does not report Wren’s gate sightings."
+      },
+      "b1c53b69-fd87-44b3-89fe-92d61ceda3f9": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses gaining Sabeth’s support and contains no report about sightings near the gates."
+      },
+      "d8752f24-0c64-4a94-8a7b-612866eea798": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses water rationing and contains no report about sightings near the gates."
+      },
+      "22c8524e-f52a-4b11-bc6e-08950050e5df": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only mentions asking a vendor about Sir Bastian Crowe and contains no report about sightings near the gates."
+      },
+      "141db6dd-2633-4e94-8ff2-26b0860921eb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses searching for Sir Bastian Crowe in Merrow and contains no report from Wren about sightings near the gates."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not report whether Wren saw anyone near the gates."
+      },
+      "444c9b08-414e-4416-855a-34e7459eaa3b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not report whether Wren saw anyone near the gates."
+      },
+      "bd9b31d5-380a-4ea5-8563-4e60f2269f89": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not report whether Wren saw anyone near the gates."
+      },
+      "261031f3-f497-461d-8674-34366158f284": {
+        "acceptable": true,
+        "reasoning": "The candidate says no figure moves at the gates and no one approaches, conveying the same absence of sightings near the gates."
+      },
+      "07bcfed6-0d91-4ab9-a6a5-1a8c260f05ba": {
+        "acceptable": true,
+        "reasoning": "The candidate reports no watchers, movement, or signs of anyone near the gates, conveying the same absence of sightings."
       }
     },
     "early-detail-34": {
@@ -4622,6 +5674,10 @@
       "07bcfed6-0d91-4ab9-a6a5-1a8c260f05ba": {
         "acceptable": false,
         "reasoning": "The candidate says Wren watches the wagon and horses while Grell watches the reliquary, rather than stating that Grell watched over both the caravan and reliquary."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention who watched over the caravan and reliquary at Saint Aurel."
       }
     },
     "early-detail-35": {
@@ -4688,6 +5744,10 @@
       "71035d09-1289-48c5-a33a-a18561259b06": {
         "acceptable": false,
         "reasoning": "The candidate says the vendor had heard Crowe’s name but does not say whether they could identify who mentioned it."
+      },
+      "f440679e-4844-4de1-ae20-31d0262cc420": {
+        "acceptable": false,
+        "reasoning": "The candidate says the vendor has heard Crowe’s name but does not say whether they could identify who mentioned it."
       }
     },
     "early-detail-36": {
@@ -4778,6 +5838,26 @@
       "71fdfce4-978b-4c7e-8c63-38d25810dbc4": {
         "acceptable": false,
         "reasoning": "The candidate passage concerns travel through Bonebridge canyon and contains no warning from Sabeth about straying from the hidden path."
+      },
+      "8431516e-46ab-47e6-9794-c1091d7c35f5": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions crossing the Glass Flats and heat, but does not say that straying from the hidden path could make them lose their way back to it."
+      },
+      "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses the Glass Flats and the missing waystone, but does not say that straying from the hidden path could make them lose their way back."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses travel across the Glass Flats and does not mention straying from a hidden path or losing the way back."
+      },
+      "707b34e1-aece-4355-8a40-ad2470bf21c7": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes returning to Saint Aurel and asking Abbot Grell to bring the reliquary; it does not mention losing the way back to the path."
+      },
+      "658ba114-a9e2-4711-b528-fe593722a77b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes Sabeth checking the track but does not mention that straying could make them lose the way back."
       }
     },
     "early-detail-37": {
@@ -4920,6 +6000,26 @@
       "141db6dd-2633-4e94-8ff2-26b0860921eb": {
         "acceptable": false,
         "reasoning": "The candidate passage concerns searching for Sir Bastian Crowe and does not say what Sabeth expected."
+      },
+      "22c8524e-f52a-4b11-bc6e-08950050e5df": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention what Wren didn’t know Sabeth expected."
+      },
+      "a58163d6-056d-421e-953d-018523e3a84d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes Wren buying water and does not mention what she did not know about Sabeth."
+      },
+      "8a56a744-cb02-4138-bbad-062cf1a5749f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says Wren does not know where Sir Bastian is or who can locate him, not what else Sabeth expects."
+      },
+      "444c9b08-414e-4416-855a-34e7459eaa3b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes the caravan leaving Corvane and does not say what Wren didn’t know Sabeth expected."
+      },
+      "03ea466c-d1c6-4bad-88ab-6bd617f349e0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention what Sabeth expected beyond her agreement to guide them."
       }
     },
     "early-vague-16": {
@@ -5014,6 +6114,38 @@
       "3c15366c-45a8-4b7a-b44c-4c938df3ded3": {
         "acceptable": false,
         "reasoning": "The candidate passage only describes returning to Corvane and does not mention storms or glass splinters as hazards of the faster crossing."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes searching for a waystone and does not mention the hazards of the Glass Flats."
+      },
+      "28a0b138-3da6-4fa7-8b1e-db36ca223d3d": {
+        "acceptable": false,
+        "reasoning": "The candidate only asks Sabeth about route safety and does not mention storms or glass splinters threatening the wagons."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions hidden bad footing, heat, and thirst, but not storms and glass splinters that could cripple the wagons."
+      },
+      "f2a89212-95b1-48c8-b001-9df63a88e24a": {
+        "acceptable": false,
+        "reasoning": "The candidate says the caravan avoids the Glass Flats but does not mention storms or glass splinters as hazards that could cripple the wagons."
+      },
+      "7589652e-2efe-4121-8197-7d3fdcafeaa9": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the storms or glass splinters that made the faster crossing dangerous."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only says the drivers will follow Old Mother Sabeth’s pace and instructions; it does not mention storms or glass splinters threatening the wagons."
+      },
+      "a58163d6-056d-421e-953d-018523e3a84d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions replenishing water but does not state that storms and glass splinters could cripple the wagons."
+      },
+      "f440679e-4844-4de1-ae20-31d0262cc420": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses hazards on the hidden path but does not mention storms or glass splinters that could cripple the wagons."
       }
     },
     "early-vague-17": {
@@ -5154,6 +6286,34 @@
         "reasoning": "The candidate passage gives no travel duration and does not state that the lead wagon halted after three days."
       },
       "70e3ac59-4928-4925-8f22-a1ea61d8bcf6": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not state how many days the journey lasted before the lead wagon halted."
+      },
+      "141db6dd-2633-4e94-8ff2-26b0860921eb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes a return journey and market inquiries but does not state how many days the first journey took."
+      },
+      "b7b8c853-cc64-4a4a-a945-88d070ceb736": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes travel across the Glass Flats but does not state that the lead wagon was halted after three days."
+      },
+      "1de36f50-eaf8-4380-af1b-0bf6eb333ae2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes halting the caravan but does not say how many days had passed since leaving the docks."
+      },
+      "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not state how many days elapsed before the lead wagon halted at the oasis town."
+      },
+      "608ed96c-898b-46cf-a03d-7771bfa4170f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes continued travel from Merrow toward Saint Aurel, but does not state that the lead wagon was halted after three days on the first journey."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes a halt in the Glass Flats but does not state that the lead wagon was halted after three days on the journey to Merrow."
+      },
+      "a58163d6-056d-421e-953d-018523e3a84d": {
         "acceptable": false,
         "reasoning": "The candidate passage does not state how many days the journey lasted before the lead wagon halted."
       }
@@ -5424,6 +6584,50 @@
       "b9d088f2-face-4986-9cec-97685c91a97b": {
         "acceptable": false,
         "reasoning": "The candidate passage does not say how Wren recorded which supplies were confirmed present."
+      },
+      "3b23a605-4a42-4f77-9b37-aa6831fe854b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Wren marking confirmed supplies off her list."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes checking and rationing water, but not marking confirmed supplies off a list."
+      },
+      "4546ff58-a787-4324-9d4e-681b8e8570d7": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Wren marking confirmed supplies off her list."
+      },
+      "b7b8c853-cc64-4a4a-a945-88d070ceb736": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes crossing the Glass Flats and checking water-vessel covers, but does not say she marked confirmed supplies off her list."
+      },
+      "2d79a09a-a22a-40f9-989d-b66106b84ad0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions Wren checking and securing the water skins, but does not say she marked confirmed supplies off a list."
+      },
+      "c5daaa98-41c8-41a6-8a7e-0b411c82c20f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses the reliquary and caravan reputation, but does not say how Wren recorded confirmed supplies."
+      },
+      "e0c0db0c-3216-43b8-a0fe-1f47af03982b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes Tamsin seeking Wren in occupied Merrow and does not mention checking supplies or marking them off a list."
+      },
+      "60c99235-564b-4653-9df6-1fef916350cc": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions assessing supplies and rationing water, but not that she marked confirmed supplies off her list."
+      },
+      "444c9b08-414e-4416-855a-34e7459eaa3b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say that Wren marked confirmed supplies off her list."
+      },
+      "fc904a2a-0a7f-4d5a-a550-2f53d3567ec4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Wren checking supplies or marking confirmed items off a list."
+      },
+      "84154912-8068-4387-8e36-bef2a55c6fbc": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes Tamsin searching a tower, not Wren marking confirmed supplies off her list."
       }
     },
     "early-vague-20": {
@@ -5544,6 +6748,26 @@
       "219fed64-4ae3-4ace-8731-ae624ec930c3": {
         "acceptable": false,
         "reasoning": "The candidate passage describes a shaded halt and checking water, but does not say the drivers were recruited to search for the waystone."
+      },
+      "f440679e-4844-4de1-ae20-31d0262cc420": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention recruiting anyone to search for the waystone; the drivers are only described as following the guide."
+      },
+      "8b730eb8-ad81-47cb-abad-c7c2e5939775": {
+        "acceptable": false,
+        "reasoning": "The reference says you asked the drivers to search nearby ground, while the candidate only directs Wren to increase the caravan’s pace."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The reference says you gathered the drivers to search the nearby ground, but the candidate only mentions them resting and no waystone being in sight."
+      },
+      "455b5da4-da44-4526-ac81-4754e24b0cf8": {
+        "acceptable": false,
+        "reasoning": "The candidate has the drivers help search rocks for water and shade, not for signs of the missing waystone."
+      },
+      "b9d088f2-face-4986-9cec-97685c91a97b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes Tamsin and Wren searching for water, not recruiting the drivers to search for signs of the waystone."
       }
     },
     "early-vague-22": {
@@ -5614,6 +6838,30 @@
       "cefe21c0-65ce-4a24-b725-10d2ed5468f0": {
         "acceptable": false,
         "reasoning": "The candidate says the caravan moved without damage, but it does not state that the hard glass passed beneath the wheels without breaking."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes searching for the waystone and does not say whether the glass broke beneath the wheels."
+      },
+      "f2a89212-95b1-48c8-b001-9df63a88e24a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says the wagons are intact but does not state that their wheels crossed hard glass without breaking it."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate only says the drivers will maintain pace and follow instructions; it does not state whether the glass broke beneath the wheels."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes travel over hard, pale ground but does not say the wheels crossed hard glass without breaking it."
+      },
+      "f0de4138-7838-4f33-a523-67fa24669bb3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes travel through the heat but does not say whether the hard glass broke beneath the wheels."
+      },
+      "93c89872-f2ba-4b34-826a-f36e42e1451c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions avoiding the Glass Flats but does not say the wagon wheels crossed hard glass without breaking it."
       }
     },
     "early-vague-23": {
@@ -5692,6 +6940,30 @@
       "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4": {
         "acceptable": true,
         "reasoning": "The candidate states that the crossing was completed without damage, matching the fact that the wagons suffered none."
+      },
+      "28a0b138-3da6-4fa7-8b1e-db36ca223d3d": {
+        "acceptable": false,
+        "reasoning": "The candidate discusses asking about route safety and does not state whether the wagons were damaged."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes searching for the waystone and does not state whether the wagons suffered damage."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate describes cautious travel on an ash track but does not state whether the wagons suffered damage."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate only says the drivers will follow Old Mother Sabeth’s instructions and does not state whether the wagons suffered damage."
+      },
+      "fbcc1469-563f-4fb8-8b08-7ec4460ae589": {
+        "acceptable": false,
+        "reasoning": "The candidate describes travel through an ash storm but does not say that the wagons crossed without damage."
+      },
+      "71fdfce4-978b-4c7e-8c63-38d25810dbc4": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a different crossing at Bonebridge and does not state whether the wagons suffered damage on the Glass Flats."
       }
     },
     "early-vague-24": {
@@ -5774,6 +7046,18 @@
       "ce367288-d439-4657-b9d5-32b2333efc68": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention comparing the map with nearby glass formations or whether they matched anything on it."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses Sabeth’s track and hidden footing, but does not say whether the glass formations matched features on a map."
+      },
+      "cc5bd2fb-8266-4e15-8abc-0c3b9a6e8a89": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention comparing the map with the nearby glass formations or whether they matched."
+      },
+      "37d5d6f2-375b-480c-97cd-6ef609da13f0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses sharing routes from the map but does not say whether the nearby glass formations matched anything drawn on it."
       }
     },
     "early-vague-25": {
@@ -5860,6 +7144,14 @@
       "2d79a09a-a22a-40f9-989d-b66106b84ad0": {
         "acceptable": false,
         "reasoning": "The candidate mentions stopping the caravan if Sabeth’s track is lost, but not telling the drivers to hold position while you scout the outcrop for the waystone."
+      },
+      "6dc285d6-264e-4c3c-9088-2eb6d31bb1f1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes the caravan approaching a ruined tower and does not say to hold position while scouting the outcrop."
+      },
+      "bd9b31d5-380a-4ea5-8563-4e60f2269f89": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions holding position as an option, but does not say the drivers were told to hold position while Tamsin searched the outcrop."
       }
     },
     "early-vague-26": {
@@ -5958,6 +7250,22 @@
       "658ba114-a9e2-4711-b528-fe593722a77b": {
         "acceptable": true,
         "reasoning": "The candidate says the wheels follow the track without straying and the other drivers keep in line, conveying that they stayed on route."
+      },
+      "28a0b138-3da6-4fa7-8b1e-db36ca223d3d": {
+        "acceptable": false,
+        "reasoning": "The candidate only asks about route safety and future dangers; it does not state whether the drivers left the marked route while speeding up."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate says the drivers can maintain pace and follow instructions, but does not say whether they stayed on the marked route."
+      },
+      "fbcc1469-563f-4fb8-8b08-7ec4460ae589": {
+        "acceptable": false,
+        "reasoning": "The candidate describes faster travel while following tracks and maintaining formation, but does not state that the drivers stayed on the marked route across the glass-covered stretch."
+      },
+      "0a5c3e12-bd97-43dc-9364-0d0c84ecc7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate says the caravan stayed on Sabeth’s track, but it does not describe the faster pace across the last glass-covered stretch."
       }
     },
     "early-vague-27": {
@@ -6116,6 +7424,38 @@
       "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
         "acceptable": false,
         "reasoning": "The candidate mentions Abbot Grell but does not say that the companion recommended consulting him."
+      },
+      "7c36625a-46e1-449a-ab1b-c24814a53478": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention whom Wren recommended consulting."
+      },
+      "608ed96c-898b-46cf-a03d-7771bfa4170f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say whom Wren recommended consulting."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention whom Wren recommends consulting."
+      },
+      "9152b5df-1b77-4009-87ec-104db6150273": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say whom Wren recommended consulting."
+      },
+      "c7925a25-a485-4cfa-bbb0-77fe394033d4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention consulting Abbot Grell or recommend whom to consult."
+      },
+      "c5daaa98-41c8-41a6-8a7e-0b411c82c20f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Abbot Grell or recommend consulting him."
+      },
+      "930265ab-4309-41ff-8315-fb129b7057b1": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions Grell preparing a place for the cargo, but does not say Wren recommended consulting him."
+      },
+      "a2261f36-1124-4229-a9f0-963e81b695ca": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions Grell but does not say Wren recommended consulting him."
       }
     },
     "early-vague-28": {
@@ -6286,6 +7626,42 @@
       "07bcfed6-0d91-4ab9-a6a5-1a8c260f05ba": {
         "acceptable": false,
         "reasoning": "The candidate mentions gates and finds no signs of anyone there, but it does not state that Wren said she had seen no one near the gates."
+      },
+      "8431516e-46ab-47e6-9794-c1091d7c35f5": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Wren or where she had not seen anyone."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only says the drivers will follow Old Mother Sabeth’s instructions and does not mention where Wren had not seen anyone."
+      },
+      "df0819f4-0cc5-404b-9dd5-9d78856b6dd2": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions the wagon entering through the gates but does not say Wren had seen no one near them."
+      },
+      "8a56a744-cb02-4138-bbad-062cf1a5749f": {
+        "acceptable": false,
+        "reasoning": "The candidate says Wren had not seen anyone following them there, but it does not mention the gates."
+      },
+      "60c99235-564b-4653-9df6-1fef916350cc": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only discusses rationing water and does not say where Wren had not seen anyone."
+      },
+      "1e15592a-ac4b-48b2-8c39-6992d519a90a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only says the speaker returns to the market to ask about Sir Bastian Crowe and does not mention where Wren had not seen anyone."
+      },
+      "f581cb42-03f9-40d4-a924-5dd7f1460724": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say where Wren had not seen anyone nearby."
+      },
+      "608ed96c-898b-46cf-a03d-7771bfa4170f": {
+        "acceptable": false,
+        "reasoning": "The reference says Wren had seen no one near the gates, but the candidate only mentions the road and wagons, not the gates."
+      },
+      "4b690615-e1be-4566-a685-52f0b66e0652": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions no figures or attacks near the gates, but it does not say Wren hadn’t seen anyone there."
       }
     },
     "early-vague-29": {
@@ -6416,6 +7792,18 @@
       "07bcfed6-0d91-4ab9-a6a5-1a8c260f05ba": {
         "acceptable": false,
         "reasoning": "The candidate passage says Grell watches the reliquary while Wren watches the wagon and horses, rather than stating that Grell watched both the caravan and reliquary."
+      },
+      "f440679e-4844-4de1-ae20-31d0262cc420": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say that Grell was left watching the caravan and reliquary."
+      },
+      "31b813fd-4b7d-44ab-b5f1-8afb8ef19509": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention leaving anyone to watch the caravan and reliquary; it identifies Wren with checking supplies and water instead."
+      },
+      "961411c4-276e-41bf-92a7-214fa57f9e20": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not identify Grell or anyone else as watching the caravan and reliquary."
       }
     },
     "early-vague-30": {
@@ -6562,6 +7950,18 @@
       "60c99235-564b-4653-9df6-1fef916350cc": {
         "acceptable": false,
         "reasoning": "The candidate passage mentions assessing supplies and rationing water, but does not say who was questioned in the market."
+      },
+      "e0c0db0c-3216-43b8-a0fe-1f47af03982b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes Tamsin questioning a patrol leader in occupied Merrow, not a passing traveler about the caravan."
+      },
+      "8a56a744-cb02-4138-bbad-062cf1a5749f": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions a stallkeeper but does not say you questioned a passing traveler."
+      },
+      "17dc6e89-a794-45bc-aeda-45e48e3c29b8": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions dockworkers, not a passing traveler questioned alongside a vendor."
       }
     },
     "early-vague-31": {
@@ -6652,6 +8052,18 @@
       "3d7df85e-ab74-45b1-af0d-ebfb46afb0f2": {
         "acceptable": false,
         "reasoning": "The candidate passage describes searching a shadowy ruin for signs of a path, but does not mention losing the way back if leaving it."
+      },
+      "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses the Glass Flats and searching for a waystone, but it does not mention a blind guide warning that leaving the hidden path could make the group lose its way back."
+      },
+      "3ebf1a21-2d8c-4409-8ff2-420f170489d4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the blind guide warning that leaving the path could make them lose their way back to it."
+      },
+      "658ba114-a9e2-4711-b528-fe593722a77b": {
+        "acceptable": false,
+        "reasoning": "The candidate describes staying on Sabeth’s checked track but does not state that leaving it could make them lose the way back."
       }
     },
     "early-vague-32": {
@@ -6746,6 +8158,18 @@
       "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention Wren or what Old Mother Sabeth expected."
+      },
+      "8a56a744-cb02-4138-bbad-062cf1a5749f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says Wren doesn’t know where Sir Bastian is or who in Merrow could help find him, not what else Old Mother Sabeth expects."
+      },
+      "8aab5c64-4666-4dd8-a56f-2ccc244c6314": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention what Old Mother Sabeth expected."
+      },
+      "67f217d0-13e4-441b-9478-1d281597396a": {
+        "acceptable": false,
+        "reasoning": "The candidate discusses Sabeth and Grell not knowing ways to reach Ishkar, but it does not say Wren didn’t know what else Old Mother Sabeth expected."
       }
     },
     "late-detail-21": {
@@ -6824,6 +8248,34 @@
       "fbcc1469-563f-4fb8-8b08-7ec4460ae589": {
         "acceptable": false,
         "reasoning": "The candidate passage does not say that the lead driver stopped behind Sabeth and waited for her signal."
+      },
+      "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not describe the lead driver stopping behind Sabeth as she tests the ash."
+      },
+      "b1c53b69-fd87-44b3-89fe-92d61ceda3f9": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not describe what the lead driver did after Sabeth tested the ash ahead."
+      },
+      "1a4bbcf3-6a57-4ee4-abcf-1a2030d2171c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes Sabeth examining the reliquary and does not say what the lead driver did."
+      },
+      "ce367288-d439-4657-b9d5-32b2333efc68": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes a later halt to check the teams and route, not the lead driver stopping behind Sabeth while she tests the ash and waits for her signal."
+      },
+      "46e97a67-00be-47e9-b150-32786eae519b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes the caravan departing and moving ahead, but does not say the lead driver stopped behind Sabeth and waited for her signal."
+      },
+      "db7460e7-be87-4110-a844-06fd13c7a0e1": {
+        "acceptable": false,
+        "reasoning": "The candidate says Wren holds the lead team and looks to Tamsin for an order, but does not state that the lead driver stopped behind Sabeth after she tested the ash."
+      },
+      "7aafac56-c26e-4599-9e3c-c9c90b1ab650": {
+        "acceptable": false,
+        "reasoning": "The candidate describes the lead wagon continuing and speeding up, but does not say the lead driver stopped behind Sabeth while awaiting her signal."
       }
     },
     "late-detail-22": {
@@ -6882,6 +8334,10 @@
       "301bf834-2e37-42e0-bfe9-6f6817eafcd3": {
         "acceptable": true,
         "reasoning": "The candidate says the way back is behind her, indicating it remains available rather than blocked."
+      },
+      "8431516e-46ab-47e6-9794-c1091d7c35f5": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes leading the caravan across the Glass Flats and says nothing about whether the tower entrance was blocked."
       }
     },
     "late-detail-23": {
@@ -6968,6 +8424,34 @@
       "ce367288-d439-4657-b9d5-32b2333efc68": {
         "acceptable": false,
         "reasoning": "The candidate mentions a weakened driver who remains too weak to take the reins, but the caravan’s halt is for checking the teams and route, and it does not say the driver had to sit down and forced the halt."
+      },
+      "131781d1-ffe1-41ca-a8f6-2cb17bd6bb23": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes Tamsin inspecting the tower while the caravan waits; it does not mention a driver weakening and being unable to continue in the heat."
+      },
+      "7d00241f-a9e6-435e-9a3c-8881d56cb281": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes examining and listening to the reliquary, and does not mention a driver weakening or the caravan halting."
+      },
+      "8b730eb8-ad81-47cb-abad-c7c2e5939775": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes increasing the caravan’s pace and does not mention a driver weakening and being unable to continue."
+      },
+      "f2a89212-95b1-48c8-b001-9df63a88e24a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says the caravan halted before the noon heat grew severe, but does not mention a driver weakening and being unable to continue."
+      },
+      "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a halt after crossing the Glass Flats, but does not mention a driver weakening and being unable to continue in the heat."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": true,
+        "reasoning": "The candidate says a driver became unsteady in the heat and could not continue, forcing the caravan to halt."
+      },
+      "1de36f50-eaf8-4380-af1b-0bf6eb333ae2": {
+        "acceptable": false,
+        "reasoning": "The candidate says the caravan halted because the heat made travel unwise, but it does not mention a driver weakening, sitting down, or being unable to continue."
       }
     },
     "late-detail-24": {
@@ -7034,6 +8518,26 @@
       "91023d67-3b85-4be8-8ad2-18c60a711f3e": {
         "acceptable": true,
         "reasoning": "The candidate says Tamsin gives the remaining water first to the weakened driver, matching the reference’s first recipient."
+      },
+      "9152b5df-1b77-4009-87ec-104db6150273": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions the weakened driver but does not say who received the first sip."
+      },
+      "b9d088f2-face-4986-9cec-97685c91a97b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say who received the first sip; it only notes that the last water remains in the skin."
+      },
+      "b1c53b69-fd87-44b3-89fe-92d61ceda3f9": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses Wren and the water stores but does not say who received the first sip."
+      },
+      "d8752f24-0c64-4a94-8a7b-612866eea798": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses conserving and rationing water but does not say who received the first sip."
+      },
+      "c5d6eda3-9459-44c5-988e-974cafa94900": {
+        "acceptable": false,
+        "reasoning": "The candidate says the Driver is weak and the water must be shared carefully, but does not state that he received the first sip."
       }
     },
     "late-detail-25": {
@@ -7092,6 +8596,26 @@
       "5735b5bd-165d-4801-b242-7fc823886ff3": {
         "acceptable": false,
         "reasoning": "The candidate says the caravan maintains its pace, but does not state that the other drivers left space around the weakened driver’s wagon."
+      },
+      "60c99235-564b-4653-9df6-1fef916350cc": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses rationing supplies but does not say how the drivers positioned their wagons around the weakened driver."
+      },
+      "f0de4138-7838-4f33-a523-67fa24669bb3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say that the other drivers left space around the weakened driver’s wagon."
+      },
+      "46e97a67-00be-47e9-b150-32786eae519b": {
+        "acceptable": false,
+        "reasoning": "The candidate says the weakened driver cannot take the reins but does not state that the other drivers left space around his wagon."
+      },
+      "dbe7ef99-04b2-45a4-b12c-dc4badbb1905": {
+        "acceptable": false,
+        "reasoning": "The candidate says the collapsed driver was helped onto a wagon but does not say the other drivers left space around it."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention a weakened driver or the other drivers leaving space around his wagon."
       }
     },
     "late-detail-26": {
@@ -7146,6 +8670,10 @@
       "c580eb94-8490-4faf-83ab-ca25831adc60": {
         "acceptable": true,
         "reasoning": "The candidate says Ferro opens a notebook and writes down the guard’s account, conveying that it is being entered into the record."
+      },
+      "3c6e161c-1939-447d-b9cb-9f76074fdc4c": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions Ferro’s open notebook but does not say that he wanted the precise account entered into the record."
       }
     },
     "late-detail-27": {
@@ -7228,6 +8756,14 @@
       "03ea466c-d1c6-4bad-88ab-6bd617f349e0": {
         "acceptable": false,
         "reasoning": "The candidate passage discusses the bandit attack and witness accounts, but does not mention a water-purchasing limit."
+      },
+      "608ed96c-898b-46cf-a03d-7771bfa4170f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions Wren watching the water vessels but does not state how much water she was told to buy."
+      },
+      "d8752f24-0c64-4a94-8a7b-612866eea798": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses rationing existing water, not the limit given when Wren was sent to buy water."
       }
     },
     "late-detail-28": {
@@ -7294,6 +8830,22 @@
       "4ae70988-1145-46b0-8724-ffc8080e5e49": {
         "acceptable": true,
         "reasoning": "The candidate says to increase the pace and that the other drivers match, conveying the same instruction to keep moving faster."
+      },
+      "9c4bdd4f-0323-4048-a1d0-aeb28657e7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses searching market vendors for rumors about Crowe and does not mention Wren, the teams, or increasing the caravan’s pace."
+      },
+      "22c8524e-f52a-4b11-bc6e-08950050e5df": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes asking a vendor about Sir Bastian Crowe and does not state what Tamsin told Wren after Bonebridge canyon."
+      },
+      "444c9b08-414e-4416-855a-34e7459eaa3b": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes leaving Corvane, not telling Wren to keep moving and urging the drivers to increase pace after Bonebridge canyon."
+      },
+      "4b690615-e1be-4566-a685-52f0b66e0652": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not say to keep the caravan moving and increase the drivers’ pace after clearing Bonebridge canyon."
       }
     },
     "late-detail-29": {
@@ -7358,6 +8910,14 @@
       "67f217d0-13e4-441b-9478-1d281597396a": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention what weapon Tamsin brought."
+      },
+      "a3066a72-b098-456c-8527-0d01131c3a34": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention what weapon Tamsin brought."
+      },
+      "37d5d6f2-375b-480c-97cd-6ef609da13f0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions a map and water skins but does not state that you brought a short sword."
       }
     },
     "late-detail-31": {
@@ -7424,6 +8984,14 @@
       "4d8370c8-caef-4f2f-a756-c34fa0fe3806": {
         "acceptable": true,
         "reasoning": "The passage says the archives were only a lead and Grell made no promise they would provide an answer, conveying that he did not know whether the records could help contact Ishkar."
+      },
+      "293a3a40-022b-42d2-97a9-b441522d2c2e": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes examining the reliquary and does not mention whether the archives could help contact Ishkar."
+      },
+      "4fa8853b-ccec-4219-88da-f2de6468f9b1": {
+        "acceptable": false,
+        "reasoning": "The candidate only says Grell knows no safe way to open the reliquary and does not mention whether the archives could provide another means of contact."
       }
     },
     "late-detail-32": {
@@ -7494,6 +9062,30 @@
       "2d79a09a-a22a-40f9-989d-b66106b84ad0": {
         "acceptable": false,
         "reasoning": "The candidate says to keep the wagons together on Sabeth’s track, but does not state the decision after checking for Crowe’s mercenaries not to send scouts ahead or split the caravan."
+      },
+      "07bcfed6-0d91-4ab9-a6a5-1a8c260f05ba": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention deciding against sending scouts ahead or splitting the caravan."
+      },
+      "9c4bdd4f-0323-4048-a1d0-aeb28657e7b2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns asking market vendors about Crowe and contains no decision about scouts or dividing the caravan."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage never states the decision not to send scouts ahead or split the caravan."
+      },
+      "55f22585-5ce3-4e40-be9f-ca22a62b7e68": {
+        "acceptable": false,
+        "reasoning": "The candidate only says to stay vigilant for an ambush and does not state that no one should be sent ahead or the caravan split."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns scouting for a waystone on the Glass Flats and does not state a decision about sending scouts ahead or splitting the caravan after clearing a pass."
+      },
+      "907c94ad-f102-46c9-b3d8-13eed3996de4": {
+        "acceptable": false,
+        "reasoning": "The candidate says the wagons stay close together, but it does not state the decision not to send anyone ahead or split the caravan."
       }
     },
     "late-detail-33": {
@@ -7564,6 +9156,18 @@
       "b9d088f2-face-4986-9cec-97685c91a97b": {
         "acceptable": false,
         "reasoning": "The candidate says the reliquary remained secure among the wagons but does not state that Wren placed it within the guarded center of the formation."
+      },
+      "930265ab-4309-41ff-8315-fb129b7057b1": {
+        "acceptable": false,
+        "reasoning": "The candidate only says the reliquary remained strapped to its wagon and does not state that Wren placed it in the guarded center of the formation."
+      },
+      "99125d9b-3fd0-453c-b91e-2217519a665d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says the reliquary remains in a wagon but does not state that Wren placed it within the guarded center of the formation."
+      },
+      "55f22585-5ce3-4e40-be9f-ca22a62b7e68": {
+        "acceptable": false,
+        "reasoning": "The candidate only says Wren stayed vigilant and prepared for an ambush; it does not state where the sealed reliquary was positioned."
       }
     },
     "late-detail-34": {
@@ -7642,6 +9246,18 @@
       "261031f3-f497-461d-8674-34366158f284": {
         "acceptable": false,
         "reasoning": "The candidate passage does not mention Grell or how he secured the gates."
+      },
+      "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes Grell accompanying the reliquary but does not say how he secured the gates."
+      },
+      "dfec61b9-3aa5-466f-8f86-e5f7a2e89400": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses the reliquary and Ishkar but does not mention Grell securing the gates or tightening their fastening."
+      },
+      "1dd58cc1-82b8-4331-a47b-c75123e01fd9": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions a fortified entrance but does not say Grell tightened the gates’ existing fastening."
       }
     },
     "late-detail-35": {
@@ -7720,6 +9336,26 @@
       "9cb01ab0-77c9-4d1f-bd43-be35d71ed5d2": {
         "acceptable": false,
         "reasoning": "The candidate passage does not say how Grell injured his hand."
+      },
+      "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention Grell injuring his hand or striking the wagon rail."
+      },
+      "0d879152-0478-4d67-86bb-5510a3416b5d": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes traveling to a ruined mage tower and does not explain how Grell injured his hand."
+      },
+      "86e2d8ae-f55c-4165-acc7-c3c1e0963e2e": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says Grell rests a hand on the wagon rail but does not say that his raised hand struck it or that he injured it."
+      },
+      "acb7b12b-5a97-4acd-98f6-e693ebd2e381": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention how Grell injured his hand."
+      },
+      "1a4bbcf3-6a57-4ee4-abcf-1a2030d2171c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says nothing about Grell injuring his hand or striking the wagon rail."
       }
     },
     "late-vague-16": {
@@ -7802,6 +9438,26 @@
       "f0de4138-7838-4f33-a523-67fa24669bb3": {
         "acceptable": false,
         "reasoning": "The candidate passage describes pushing the caravan through heat and resting the team, not the lead driver stopping behind the guide while she tested the ash."
+      },
+      "8b730eb8-ad81-47cb-abad-c7c2e5939775": {
+        "acceptable": false,
+        "reasoning": "The candidate only says the caravan is told to speed up and does not mention the lead driver stopping behind the guide while awaiting a signal."
+      },
+      "298ac513-a70f-4d6d-becc-5163d6d16e54": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says the caravan continues toward Saint Aurel but does not describe the lead driver stopping behind the guide."
+      },
+      "71fdfce4-978b-4c7e-8c63-38d25810dbc4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not describe the guide testing ash ahead or the lead driver stopping behind her for a signal."
+      },
+      "907c94ad-f102-46c9-b3d8-13eed3996de4": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions the caravan halting and drivers waiting for instructions, but not the lead driver stopping behind the guide while she tests the ash ahead."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions the drivers waiting for a signal, but not the lead driver stopping behind the guide while she tests the ash ahead."
       }
     },
     "late-vague-17": {
@@ -7860,6 +9516,10 @@
       "6dc285d6-264e-4c3c-9088-2eb6d31bb1f1": {
         "acceptable": false,
         "reasoning": "The candidate passage describes arriving at the tower but does not say what the wall gaps revealed."
+      },
+      "e47ae59c-3ccb-4d13-a9ab-3b3b32ec9c8c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses opening a gate and does not say what the gaps in the tower masonry revealed."
       }
     },
     "late-vague-18": {
@@ -7938,6 +9598,58 @@
       "f0de4138-7838-4f33-a523-67fa24669bb3": {
         "acceptable": false,
         "reasoning": "The candidate passage describes a faster pull through the heat and does not say the drivers were told to slow to a crawl at the sandstorm’s edge."
+      },
+      "fc904a2a-0a7f-4d5a-a550-2f53d3567ec4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage contains no mention of reaching a sandstorm’s edge or telling drivers to move the wagons to a crawl."
+      },
+      "1c0324db-6849-4421-adad-c8f688dbab58": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says only that the caravan is pushed through the hottest hours and does not state that the wagons should move at a crawl."
+      },
+      "8b730eb8-ad81-47cb-abad-c7c2e5939775": {
+        "acceptable": false,
+        "reasoning": "The reference says the drivers were told to slow to a crawl at the sandstorm’s edge, while the candidate only says to increase the caravan’s pace later."
+      },
+      "3c6e161c-1939-447d-b9cb-9f76074fdc4c": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention reaching a sandstorm’s edge or instructing the drivers to move slowly to a crawl."
+      },
+      "3ebf1a21-2d8c-4409-8ff2-420f170489d4": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention reaching the sandstorm’s edge or telling drivers to slow the wagons to a crawl."
+      },
+      "b6f0f04f-a26f-4599-b267-4ea84bd93411": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a wagon moving at a careful walk near Abbot Grell’s prepared place, not the drivers slowing to a crawl at the sandstorm’s edge."
+      },
+      "55f22585-5ce3-4e40-be9f-ca22a62b7e68": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention how slowly the drivers should move the wagons."
+      },
+      "26a3614e-57cb-4ee7-991c-e810cbe1db5f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention reaching a sandstorm’s edge or telling the drivers to slow to a crawl."
+      },
+      "b7b8c853-cc64-4a4a-a945-88d070ceb736": {
+        "acceptable": false,
+        "reasoning": "The candidate only says to keep a steady pace across the Glass Flats and does not mention slowing the wagons to a crawl at the sandstorm’s edge."
+      },
+      "534ea614-6cda-47dc-8cdc-8bd6901f53e3": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention reaching a sandstorm’s edge or telling the drivers to move at a crawl."
+      },
+      "488ed804-288c-41ee-b48f-8760ee121ec8": {
+        "acceptable": false,
+        "reasoning": "The candidate only says the drivers can maintain Old Mother Sabeth’s pace; it does not state they were told to move slowly to a crawl at the sandstorm’s edge."
+      },
+      "2d79a09a-a22a-40f9-989d-b66106b84ad0": {
+        "acceptable": false,
+        "reasoning": "The candidate describes following Sabeth at a measured pace, but does not say the drivers were told to move slowly to a crawl at the sandstorm’s edge."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate discusses travel across the Glass Flats and does not say the drivers were told to move slowly to a crawl at the sandstorm’s edge."
       }
     },
     "late-vague-19": {
@@ -7992,6 +9704,18 @@
       "c580eb94-8490-4faf-83ab-ca25831adc60": {
         "acceptable": true,
         "reasoning": "The candidate says Ferro records the witness accounts in his notebook, conveying that the account is to be entered into the record."
+      },
+      "429de15d-a900-45a1-9ff8-fae2960861e0": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention entering the account into the record."
+      },
+      "b381c6ce-cc11-47c1-b688-8fe57023cee1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage concerns the reliquary, water, and supplies, and does not say where the guard captain wanted the account entered."
+      },
+      "c7925a25-a485-4cfa-bbb0-77fe394033d4": {
+        "acceptable": false,
+        "reasoning": "The candidate does not say where Ferro wanted the account entered."
       }
     },
     "late-vague-20": {
@@ -8054,6 +9778,22 @@
       "03ea466c-d1c6-4bad-88ab-6bd617f349e0": {
         "acceptable": false,
         "reasoning": "The candidate says Ferro is waiting at the dock to hear witnesses, but does not say the caravan turned back to catch him before he left town."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes traveling across the Glass Flats toward Saint Aurel and does not say the caravan turned back to catch the captain before he left town."
+      },
+      "608ed96c-898b-46cf-a03d-7771bfa4170f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage says the caravan continued toward Saint Aurel while watching for pursuit; it does not say the route was reversed to catch the captain before he left town."
+      },
+      "1de36f50-eaf8-4380-af1b-0bf6eb333ae2": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses searching for a waystone and continuing toward Saint Aurel, not turning back to catch the captain before he left town."
+      },
+      "344fec22-7a8d-4ab6-b4cd-70d0c9950c53": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes searching for a waystone and does not explain why the caravan turned back."
       }
     },
     "late-vague-21": {
@@ -8128,6 +9868,30 @@
       "f2a89212-95b1-48c8-b001-9df63a88e24a": {
         "acceptable": false,
         "reasoning": "The candidate passage does not say whether Tamsin knew of a water source in the canyon."
+      },
+      "4a8d9442-7736-47bf-b2ab-dfdaf5269f8d": {
+        "acceptable": false,
+        "reasoning": "The candidate says no water is visible ahead, but it does not state whether Tamsin knew of a water source in the canyon behind her."
+      },
+      "36931edf-5851-4b4a-b8ab-9d37ea4f1881": {
+        "acceptable": false,
+        "reasoning": "The candidate describes finding no nearby water in the ash ground, but does not say whether Tamsin knew of a water source back in the canyon."
+      },
+      "5f3b12cc-b79c-483d-ab11-cf5586eeaaa4": {
+        "acceptable": false,
+        "reasoning": "The candidate mentions water rationing but does not state whether Tamsin knew of a water source in the canyon."
+      },
+      "a58163d6-056d-421e-953d-018523e3a84d": {
+        "acceptable": false,
+        "reasoning": "The candidate says Wren bought water from a river-dock seller, but does not state that Tamsin knew of no water source in the canyon."
+      },
+      "d8752f24-0c64-4a94-8a7b-612866eea798": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses water rationing and intact skins but does not say whether Tamsin knew of a water source in the canyon."
+      },
+      "c5d6eda3-9459-44c5-988e-974cafa94900": {
+        "acceptable": false,
+        "reasoning": "The candidate says there is no nearby water visible on the open ground, but it does not state whether Tamsin knew of a water source back in the canyon."
       }
     },
     "late-vague-22": {
@@ -8194,6 +9958,18 @@
       "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
         "acceptable": false,
         "reasoning": "The candidate passage mentions traveling across the Wastes but does not say Tamsin offered her knowledge of them to the abbot."
+      },
+      "293a3a40-022b-42d2-97a9-b441522d2c2e": {
+        "acceptable": false,
+        "reasoning": "The candidate only describes examining the reliquary and does not mention offering her knowledge of the Wastes."
+      },
+      "8aab5c64-4666-4dd8-a56f-2ccc244c6314": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention offering her knowledge of the Wastes to the abbot."
+      },
+      "37d5d6f2-375b-480c-97cd-6ef609da13f0": {
+        "acceptable": true,
+        "reasoning": "The candidate says she offered Grell her knowledge of the Wastes, the same item asked for in the reference."
       }
     },
     "late-vague-23": {
@@ -8268,6 +10044,34 @@
       "88914ad0-91da-4235-b73e-26d948361e7c": {
         "acceptable": false,
         "reasoning": "The candidate only says there is no nearby branch toward water or shelter; it does not say whether the map shows an alternative route around the monastery itself."
+      },
+      "930265ab-4309-41ff-8315-fb129b7057b1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage mentions Crowe and the caravan inside Saint Aurel but says nothing about the map or an alternative route around the monastery."
+      },
+      "0efde590-be05-41a2-b1ab-db2fd89c9e8f": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses a hidden route through the Wastes, not whether the map shows an alternative path around Saint Aurel itself."
+      },
+      "28a0b138-3da6-4fa7-8b1e-db36ca223d3d": {
+        "acceptable": false,
+        "reasoning": "The candidate only asks whether the route is safe and mentions possible dangers; it does not say whether the map shows another path around the monastery."
+      },
+      "67f217d0-13e4-441b-9478-1d281597396a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses contacting Ishkar and monastery archives, but does not state whether the map shows an alternative route around the monastery."
+      },
+      "3ebf1a21-2d8c-4409-8ff2-420f170489d4": {
+        "acceptable": false,
+        "reasoning": "The candidate describes a passage around old war ruins and says it does not reach Ishkar, but does not state that there is no alternative route around the monastery and the marked track continues toward its gates."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes the Glass Flats route and does not state whether there is an alternative path around the monastery."
+      },
+      "37d5d6f2-375b-480c-97cd-6ef609da13f0": {
+        "acceptable": false,
+        "reasoning": "The candidate discusses sharing safe routes through the Wastes but does not state whether the map showed an alternative route around the monastery."
       }
     },
     "late-vague-24": {
@@ -8358,6 +10162,34 @@
       "71fdfce4-978b-4c7e-8c63-38d25810dbc4": {
         "acceptable": false,
         "reasoning": "The candidate passage discusses Bonebridge canyon and the Ash Ground, but does not mention a hidden route around the exposed approach."
+      },
+      "141db6dd-2633-4e94-8ff2-26b0860921eb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage does not mention the hidden route or what it went around."
+      },
+      "6d80ec3c-9e36-4350-8a0a-3a01bf676729": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes returning to the hidden shrine and does not mention the foothill route or what it went around."
+      },
+      "86e2d8ae-f55c-4165-acc7-c3c1e0963e2e": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes the reliquary in the inner court but does not mention the hidden route or what it went around."
+      },
+      "8431516e-46ab-47e6-9794-c1091d7c35f5": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes crossing the Glass Flats and does not say what the hidden route went around."
+      },
+      "930265ab-4309-41ff-8315-fb129b7057b1": {
+        "acceptable": false,
+        "reasoning": "The candidate passage discusses Wren, the caravan, and Sir Bastian but does not mention the hidden route or the exposed approach."
+      },
+      "c6996d60-254a-464d-9406-5e7c50a006fb": {
+        "acceptable": false,
+        "reasoning": "The candidate passage describes crossing the Glass Flats and does not mention a hidden route going around the exposed approach."
+      },
+      "1e15592a-ac4b-48b2-8c39-6992d519a90a": {
+        "acceptable": false,
+        "reasoning": "The candidate passage only describes returning to the market and asking about Sir Bastian, and does not say what the hidden route went around."
       }
     }
   },

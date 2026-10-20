@@ -262,3 +262,25 @@ Recall@10 at round 300:
 - **Long summaries win 5 questions and lose none** across both sets. Two dev-hard wins are facts the short summary left out: the word "Lantern" in the transmission and in the survey logs. The third had the fact in the short summary but not the question's words ("cut transfer hatch").
 - **The vector index gains the most** on short questions: 0.872 → 0.979.
 - **Caveats.** These results come from the dev story only, and the samples are small (the confidence interval of the paired difference touches 0). The summary prompt was written once and not tuned on these results. The hard set turned out less hard than intended: short-summary v2 already reaches 0.936. Before anything goes to production, the change needs one run on the test story.
+
+## v5 test run (frozen at `b682c8e`, fifth use of the test story)
+
+The test summaries were regenerated with the production extractor. They average 129 words.
+
+| test, round 300 (n=91) | short summaries (v4) | long summaries (v5) |
+|---|---|---|
+| v2 hybrid Recall@10 | 0.945 | 0.945 (1 won, 1 lost) |
+| v2 hybrid Recall@5 | 0.890 | 0.901 |
+| BM25 only, Recall@10 | 0.912 | 0.945 |
+| vector only, Recall@10 | 0.956 | **0.912** |
+| End to end, correct / contradicts | 82 / 7 | 83 / 6 |
+
+- **No gain on the test story.** The dev gain on question set 2 (0.957 → 0.978, end to end 84 → 91) did not replicate. The dev end-to-end jump was probably partly run-to-run noise.
+- **Test question set 2 has little room left.** Outside temporal questions, short summaries already miss only 2 of 86. Of the 5 misses, 3 are temporal and are still missed with long summaries.
+- **The one win and the one loss follow the same pattern as on dev.**
+  - Win: the long summary puts the right chunk at BM25 rank 1, against 17 with the short summary.
+  - Loss: the right chunk drops from BM25 rank 3 to 4, just outside the quota of 3, and the vector index ranks it at 18.
+- **Long summaries help BM25 but hurt the vector index on the test story** (0.956 → 0.912). One embedding of a 130-word summary is less focused than one of a 55-word summary. Fusion hides this, because BM25 improves at the same time.
+- **Open question:** the dev-hard gain (short, low-context questions, 0.936 → 1.000) has no held-out counterpart yet. This test run does not confirm or refute it.
+
+**Overall:** on question set 2, v5 equals v4 on the test story (Recall@10 0.945, end to end 83/91 against 82/91). Whether long summaries help short, low-context questions needs a hard set on the test story.
