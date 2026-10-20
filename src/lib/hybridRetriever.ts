@@ -33,7 +33,7 @@ export const HYBRID_RETRIEVAL_CONFIG = {
     /** 最终放进 prompt 的记忆条数 */
     topK: 10,
     /** 排名前几的记忆附上片段原文给写作模型（0 = 只给摘要） */
-    originalTextFor: 3,
+    originalTextFor: 10,
     bm25: DEFAULT_BM25_PARAMS,
 };
 

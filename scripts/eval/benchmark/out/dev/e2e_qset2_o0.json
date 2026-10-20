@@ -1,0 +1,1340 @@
+{
+  "variant": {
+    "tag": "qset2_o0",
+    "originalTextFor": 0
+  },
+  "summary": {
+    "judge": "judge-v2/gpt-6-luna",
+    "n": 92,
+    "all": {
+      "correct": 28,
+      "contradicts": 45,
+      "cannot_recall": 18,
+      "absent": 1
+    },
+    "gold_retrieved": {
+      "n": 88,
+      "correct": 28,
+      "contradicts": 41,
+      "cannot_recall": 18,
+      "absent": 1
+    },
+    "gold_not_retrieved": {
+      "n": 4,
+      "correct": 0,
+      "contradicts": 4,
+      "cannot_recall": 0,
+      "absent": 0
+    },
+    "by_type": {
+      "detail": {
+        "correct": 17,
+        "contradicts": 19,
+        "cannot_recall": 10,
+        "absent": 0
+      },
+      "vague": {
+        "correct": 10,
+        "contradicts": 20,
+        "cannot_recall": 7,
+        "absent": 1
+      },
+      "temporal": {
+        "correct": 1,
+        "contradicts": 6,
+        "cannot_recall": 1,
+        "absent": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "qid": "early-vague-1",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says the docking arm caught on a twisted strut, so claiming the recorded account does not say what it snagged on is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly what the tug’s docking arm snagged on. The recorded account only says she released the arm and secured the Kestrel to Meridian-9."
+    },
+    {
+      "qid": "early-detail-1",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says a partly exposed narrow manual release slot lay beneath the panel, while Juno says she cannot recall clearly and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall clearly what lay beneath the recessed panel. She remembers scrape marks on the closed service door and cutting a narrow opening into the cramped passage."
+    },
+    {
+      "qid": "early-detail-2",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says one rotor arm was bent against the drone’s frame, so the claim that no bent part was noted is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly which part, if any, was bent against the drone’s frame. She remembers finding it trapped beside a cable bundle near the ladder platform, but no bent part was noted."
+    },
+    {
+      "qid": "early-detail-3",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says there was no pressure-stabilizer function to engage, contradicting the reply’s claim that no specific missing suit function is identified.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You found no usable shield against the gas flow, and the portable O2 canister wasn’t with you when you tried to redirect it. The record doesn’t identify a specific suit function you lacked."
+    },
+    {
+      "qid": "early-detail-4",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says Juno wedged the cutter casing against a jagged lip of the breach, contrary to the reply’s claim that the account does not say what it was braced against and that she severed a cable.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly what she wedged the cutter casing against. The account records that she used the cutter to sever a cable and struggled through the gas flow, but not what the casing was braced against."
+    },
+    {
+      "qid": "early-vague-4",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Although Juno says she cannot recall the catch’s location, she falsely claims she freed it from the cable bundle; the passage places it near the lower corner and says the cables still partly blocked access.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly where on the panel the recessed manual catch was; the account only records that she found it and freed it from the cable bundle."
+    },
+    {
+      "qid": "early-detail-5",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply accurately recalls that fasteners were at the buckled plate’s edge and that no conductors were exposed; the passage specifies two recessed fasteners.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The first inspection found fasteners at the buckled plate’s edge, but no exposed conductors."
+    },
+    {
+      "qid": "early-detail-6",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The display explicitly warned to avoid repeated clamp cycles, contrary to the reply’s claim that it specified no action to avoid.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The control screen warned that the power conduit was under mechanical strain. It did not specify an action to avoid."
+    },
+    {
+      "qid": "early-vague-6",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says no one answers and no security team is visible, while the reply claims the team remained vigilant.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The Ostrander security team did not block you, but remained vigilant as you examined the transfer-hatch controls."
+    },
+    {
+      "qid": "early-detail-8",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says you checked nearby structural panels, while the reply instead says you searched for other power conduits and a maintenance access point.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Besides the visible conduit run, you searched the docking ring for other power conduits and a maintenance access point. You found neither."
+    },
+    {
+      "qid": "early-detail-9",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says Juno cannot recall what coincided with the shift, and its note that the inspection did not establish a cause does not conflict with the ring’s hum changing slightly at the same time.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall clearly what coincided with the conduit shifting against its support. The recorded inspection confirms strain at the coupling, but not what caused that movement."
+    },
+    {
+      "qid": "early-detail-10",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly says that removing part of the modular cargo bay risked cargo security, matching the reference passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Priya considered using part of the modular cargo bay structure to brace the conduit, but removing it risked cargo security. You found no suitable materials in the stores."
+    },
+    {
+      "qid": "early-vague-9",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reference says Juno returned without crossing the unsafe gas flow, while the reply says it cannot recall whether she avoided crossing it and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "The hydroponics breach was venting gas and blocking safe access. I can’t clearly recall whether you specifically avoided crossing the gas stream on the return trip."
+    },
+    {
+      "qid": "early-detail-11",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply says opening the nozzle released oxygen without blocking or steering the breach flow, consistent with adding gas rather than clearing the route.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Opening the nozzle released oxygen from the canister, but it did not block or steer the gas escaping from the hydroponics breach. The oxygen escaped without forming visible mist."
+    },
+    {
+      "qid": "early-detail-13",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says Juno swept her helmet lamp across both the visible deck and the sealed bulkhead, so the reply falsely claims nothing else was specified.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Your suit light swept across the hydroponics deck, but the record doesn’t specify anything else it illuminated. You found no sign of Dr. Brandt."
+    },
+    {
+      "qid": "early-detail-16",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says Juno cannot recall the exact wording, without contradicting the passage that the receipt read “Odile Marsh survey logs.”",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall the receipt’s exact wording clearly. She remembers the proprietor gave it to her when she left Odile’s cracked slate for assessment."
+    },
+    {
+      "qid": "early-vague-13",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The proprietor explicitly said the ‘Lantern’ transmission was intact, contrary to the reply’s claim that no specific intact transmission was identified.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall the proprietor naming a transmission as intact. She remembers that the slate’s file damage was substantial and that the proprietor offered 180 credits for the survey logs, but no specific intact transmission was identified."
+    },
+    {
+      "qid": "early-temporal-1",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": false,
+      "verdict": "contradicts",
+      "reasoning": "The passage says Priya exclaimed, “Tell me that’s not our air leaving,” during the decompression emergency, and does not describe a hydroponics-deck breach; the reply’s claim about that breach is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly what Priya said over the intercom during the first decompression emergency. The record only notes that a breach on Meridian-9’s hydroponics deck vented gas."
+    },
+    {
+      "qid": "early-temporal-5",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": false,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says Mox bumped against her boot, so the reply’s claim that no one was identified contradicts it.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly who bumped against her boot. The record of the first decompression emergency describes gas venting and her struggle to get through it, but does not identify anyone who touched her boot."
+    },
+    {
+      "qid": "early-temporal-6",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reference says the first jet struck her forearm, while the reply says she cannot recall where it hit and does not deny that detail.",
+      "votes": [
+        "cannot_recall",
+        "contradicts",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall clearly which part of her body the first jet struck. She remembers the pressure blast knocking her back, but not where the gas hit first."
+    },
+    {
+      "qid": "early-temporal-8",
+      "type": "temporal",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply says the pawnshop proprietor described the file damage as substantial, matching the passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The pawnshop proprietor said the file damage was substantial. They offered 180 credits for the logs if Juno accepted."
+    },
+    {
+      "qid": "late-detail-1",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage explicitly says Calix called the compass “a fitting token,” while the reply only says Juno cannot recall and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall what Calix called the compass besides an old navigational instrument. She remembers offering it during the negotiation, and Calix accepting it without confirming the core was there."
+    },
+    {
+      "qid": "late-vague-2",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says Juno set the core beside the navigation console, while the reply says she cannot recall where she set it and does not assert a conflicting location.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall setting the navigation core down before installation; she only remembers carrying it back to the Kestrel, where the console was prepared, and installing it."
+    },
+    {
+      "qid": "late-vague-3",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says the guard asked whether the team had any reports of concealed cargo, so claiming the events establish only that he was distracted is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly what the guard asked his team over the radio; the recorded events only establish that her claim about the stash distracted him."
+    },
+    {
+      "qid": "late-detail-3",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Although Juno says she cannot recall clearly, she falsely claims the account omits the guard’s latch action; the passage says he tested the latch without opening it.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly what the guard did to the latch. The recorded account says only that she led the guards to a cargo container at the old docks, revealed the stash of supplies, and the guards confirmed it was genuine; it does not describe the latch or any action the guard took before asking her to reveal the stash."
+    },
+    {
+      "qid": "late-detail-5",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says the guard threatened to report Juno for an access violation if she kept pushing past, but the reply denies that any threat was made.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall the guard threatening to report anything. The checkpoint guard said he could not approve access without Kessler’s confirmation; no threat is recorded."
+    },
+    {
+      "qid": "late-vague-5",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says you held the panel while Priya made the repair, but the reply says you held and used an insulated hand tool to secure the connector.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You held the insulated hand tool and used it to secure the faulty connector while Priya stabilized the cable."
+    },
+    {
+      "qid": "late-vague-6",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says the first brace’s ends rested on flatter, undamaged areas, so claiming the record does not specify this is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The record doesn’t specify what the brace ends rested on. It says you and Priya secured the braces against the damaged cargo-bay plating, stabilizing the crease."
+    },
+    {
+      "qid": "late-detail-7",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says the attendant turned to the next customer, so the reply falsely claims the account only records the refusal and search.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot clearly recall whom the attendant turned to help. The recorded account only says the attendant refused the trade, and Juno searched the depot for something to barter."
+    },
+    {
+      "qid": "late-detail-8",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says Juno cannot recall how she freed the hatch and makes no claim that conflicts with the passage.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall clearly how she freed the service hatch after it caught. She remembers opening it and finding a dark passage beyond."
+    },
+    {
+      "qid": "late-vague-7",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says Juno cannot recall the number and makes no claim that conflicts with the passage, which specifies two recessed fasteners.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall clearly how many recessed fasteners held the retaining bar. The panel had a retaining bar and fasteners preventing it from opening."
+    },
+    {
+      "qid": "late-detail-9",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply says the relay clicked in time with each signal burst, matching the reference passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The relay clicked in time with each signal burst from the compact beacon unit. The beacon’s status light pulsed steadily as it transmitted."
+    },
+    {
+      "qid": "late-vague-9",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The displays showed atmospheric sampling data and platform status, so saying the check established only that there were no beacon records contradicts the passage.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall clearly what sampling data the skimmer’s displays showed. The check established only that the instruments held no records of the beacon’s transmission or activity."
+    },
+    {
+      "qid": "late-detail-11",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says the cable disappeared behind the work surface, so claiming no recorded detail establishes its location is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly where the cable disappeared. She remembers the core laboratory terminal was dark and unresponsive, but no recorded detail establishes where its cable went."
+    },
+    {
+      "qid": "late-detail-12",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply identifies the dark, unresponsive laboratory terminal as the only computer, matching the passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The only computer you saw was the laboratory’s computer terminal. It was dark and unresponsive, and you found no physical Lantern project records."
+    },
+    {
+      "qid": "late-vague-11",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says Juno checked the accessible work surfaces and storage area, while the reply only says she cannot clearly recall which areas she searched.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno returned to the Kestrel to review Odile’s cracked data slate, but found she had already sold it. She cannot clearly recall searching any particular areas aboard the tug."
+    },
+    {
+      "qid": "late-detail-14",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says the panel beside Priya’s partition controlled the door, so the claim that the record does not state what it controlled is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly. The available record says she searched for an alternative to the data slate, but it does not state what the panel beside Priya’s partition controlled."
+    },
+    {
+      "qid": "late-detail-15",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly says Priya suggested checking the reactor and life-support readings before buying supplies.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "After Priya joined you in the corridor, you both went to the Kestrel. She checked the dock seal and suggested getting reactor and life-support readings before buying supplies."
+    },
+    {
+      "qid": "late-detail-16",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reply claims the output stabilized after you secured the connector, but the passage says Priya watched the connector without disturbing its clip and the output dipped once before settling.",
+      "votes": [
+        "contradicts",
+        "absent",
+        "contradicts"
+      ],
+      "response": "The reactor output stabilized after you secured the connector. The fresh diagnostic confirmed stable regulation and steady life-support readings."
+    },
+    {
+      "qid": "late-detail-17",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply says there were two refinery guards near Voren, matching the reference passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "There were two refinery guards near Director Voren in the launch bay."
+    },
+    {
+      "qid": "late-vague-14",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The nearer guard said Voren had not authorized the guards to leave their post, while the reply incorrectly says they could not provide a code.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly what the nearer guard said wasn’t authorized. The record only says the guards confirmed Voren had permitted her to work the transfer-hatch controls, but they could not provide a code."
+    },
+    {
+      "qid": "late-detail-18",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says the cutter slipped from Juno’s grip during the blast but remained tethered to her suit.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Your plasma cutter was secured to your suit, which kept it from drifting away when the pressure blast knocked you back."
+    },
+    {
+      "qid": "late-detail-19",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says Juno tried to bring up a system status report, while the reply says she cannot recall which report and makes no incompatible claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall clearly which report she was trying to bring up. She remembers only that the reactor control panel stayed dark and gave her no access to any report."
+    },
+    {
+      "qid": "late-detail-20",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reply says no second item was named, but Juno offered structural braces as well as the plasma cutter.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno recalls offering the plasma cutter, but cannot clearly recall offering anything else. The record names no second item."
+    },
+    {
+      "qid": "late-temporal-1",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": false,
+      "verdict": "contradicts",
+      "reasoning": "Although Juno says she cannot recall, the passage records a second guard answering with a short burst of static and then silence, so claiming the events do not record the reply is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly which tense bargain was the fifth or what response came over the radio. The events she remembers do not record that reply."
+    },
+    {
+      "qid": "late-temporal-2",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The guard asked where the slate was now, not for Juno to hand it over, though she did refuse and say she had sold it at Port Halcyon.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The guard asked you to hand over Odile’s cracked data slate. You refused and said you had sold it at Port Halcyon."
+    },
+    {
+      "qid": "late-temporal-3",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage says the final blast caught Juno across the shoulder, so the reply falsely claims the record does not specify where it struck.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The blast from the transfer hatch knocked you back, but the record doesn’t specify which part of your body it struck. You can’t recall that detail clearly."
+    },
+    {
+      "qid": "late-temporal-4",
+      "type": "temporal",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says Juno bargained with an Ostrander guard and kept Odile’s investigation to herself, not Brother Calix, so the reply’s claims conflict with what happened.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The fifth recorded bargain was with Brother Calix over the navigation core, but the record does not say whose investigation Juno kept to herself. She cannot recall that detail clearly."
+    },
+    {
+      "qid": "early-detail-21",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says the pressure change was negligible and the passage remained sealed from vacuum, but the reply claims gas vented strongly enough to make it unsafe.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "When Juno widened the breach in the sealed bulkhead, gas vented into the passage. The leak continued strongly enough to make the route beyond unsafe; no exact pressure reading was recorded."
+    },
+    {
+      "qid": "early-detail-22",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says the plug’s flat side matched a guide inside the socket, while the reply says Juno cannot recall that feature and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno recalls inspecting the circular coupling and determining how to align the plug, but she cannot recall which feature indicated its orientation."
+    },
+    {
+      "qid": "early-detail-23",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply matches the passage: ring power stayed online and steady, the conduit warning remained, and no fault or power loss appeared.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The docking clamps disengaged, and the ring’s power remained online; the display still warned that the conduit was under mechanical strain. There’s no record that releasing the clamps caused a power loss."
+    },
+    {
+      "qid": "early-detail-24",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly identifies the bent plate as unsafe to use as a brace, matching the thin, bent plate at the ring.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You told Priya that the bent protective plate was unsafe to use as a brace."
+    },
+    {
+      "qid": "early-detail-25",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The passage says you pulled the manual catch while pushing the cable bundle through the narrow gap beside the panel, but the reply says the exact method is unclear without asserting anything false.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "You reached the manual catch from the edge of the gas stream, where a cable bundle was blocking it. You freed the catch and opened the panel, revealing a dark compartment with a ladder; the exact way you cleared it isn’t clear."
+    },
+    {
+      "qid": "early-detail-26",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says no reply came when Juno called out, matching the narrator’s reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You received no response when you called out from the cable-filled compartment beneath hydroponics."
+    },
+    {
+      "qid": "early-detail-27",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": false,
+      "verdict": "contradicts",
+      "reasoning": "The passage says moving the cables risked pulling on the connections, while the reply falsely says the danger was not established and adds an unrelated claim about a panel catch.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The cable bundle was pressing against the sealed panel’s manual catch and preventing it from opening. The record does not establish what specific danger moving the cables posed, so Juno cannot recall that clearly."
+    },
+    {
+      "qid": "early-detail-28",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says escaping gas continued to vent across the route and made it unsafe to enter, matching the reply’s explanation.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The breach on the hydroponics deck was venting gas into the passage, making the route beyond the open panel unsafe to enter. You checked the portable O2 canister and called twice for Dr. Ilse Brandt, but received no response; the gas leak remained the obstacle."
+    },
+    {
+      "qid": "early-detail-29",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says the proprietor drew the cracked slate back behind the counter, so the reply’s claim that the record gives no location is false.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You left the cracked slate with the pawnshop proprietor for examination, then sold it to him for 180 credits. The record does not say where he took it afterward."
+    },
+    {
+      "qid": "early-detail-30",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The proprietor explicitly suggested asking around the salvage counters, so the reply falsely says they suggested nowhere.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The pawnshop proprietor didn’t suggest anywhere to ask; they offered no leads or contacts for buyers of salvage or ship logs."
+    },
+    {
+      "qid": "early-detail-31",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The trader asked “You planning to cut something here?”, but Juno says she cannot recall the question and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot recall clearly what the trader asked about the plasma cutter. She remembers finding no bulkhead to cut and getting no wreck-location leads."
+    },
+    {
+      "qid": "early-detail-32",
+      "type": "detail",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The trader said salvage could be found “out in the belt” and offered no specific wreck or location, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The trader said salvage could be found in the belt, but he didn’t know of any specific wrecks or locations."
+    },
+    {
+      "qid": "early-vague-16",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says the scrape marks led to a maintenance hatch farther into the passage, so the reply falsely claims their direction and destination were not recorded.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno remembers scrape marks on the floor by the closed service door, but not where they led. The record gives no direction or destination for them."
+    },
+    {
+      "qid": "early-vague-17",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reply says the inspection only described alignment generally, but the passage explicitly identifies the plug’s flat side and the matching guide inside the socket.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno cannot recall clearly what feature keyed the plug to a single orientation; the recorded inspection only says she determined how to align the plug with the socket before tightening the connection."
+    },
+    {
+      "qid": "early-vague-19",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reply correctly says the display showed no connection between the systems, but falsely claims the clamps were engaged and that a RELEASE CLAMPS command was offered; the reference says they were disengaged and no clamp fault was listed.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The display showed no connection between the docking clamps and the transfer hatch: the clamp screen confirmed the clamps were engaged around the Kestrel and offered a RELEASE CLAMPS command, while the transfer-hatch control was a separate option showing the hatch closed with unknown status and pressure. The power conduit warning concerned mechanical strain; the display gave no indication that the clamps controlled the hatch or explained why it stayed shut."
+    },
+    {
+      "qid": "early-vague-20",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Juno told Priya the thin, bent plate at the ring was unsafe as a brace, which the reply clearly reflects.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You told Priya that the bent protective plate at the conduit was unsafe to use as a brace."
+    },
+    {
+      "qid": "early-vague-21",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reference says you freed the catch by pulling it while pushing the cable bundle through the narrow gap, and the reply says it cannot recall the exact maneuver without contradicting that account.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "You cleared the cable bundle that was resisting the manual catch, then opened the panel. You cannot recall the exact maneuver you used to free it."
+    },
+    {
+      "qid": "early-vague-22",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Juno called out from the cable-filled compartment and no reply came, matching the narrator’s response.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "In the cramped compartment beneath the open panel, among the thick cable bundles, you called out to find someone willing to trade. No one answered; you received no response."
+    },
+    {
+      "qid": "early-vague-23",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Juno kept clear of the gas stream and did not enter the unsafe route beyond the breach, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You avoided entering the passage beyond the breached bulkhead because gas was venting through it, making the route unsafe."
+    },
+    {
+      "qid": "early-vague-24",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Although the reply correctly says there were no usable loose parts, the drone had already been freed from the cable bundle, so saying it remained trapped contradicts the passage.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "No usable loose parts were recorded. The drone remained trapped and inert, and you lacked the parts needed to free or repair it."
+    },
+    {
+      "qid": "early-vague-25",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply states that gas venting from the breach made the route unsafe, matching the passage.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The breach was venting gas into the passage, making the route beyond unsafe to enter."
+    },
+    {
+      "qid": "early-vague-26",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reference says the proprietor counted out 180 credits and slid them across the counter, while Juno says she cannot recall how the payment was delivered and makes no conflicting claim.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno recalls accepting 180 credits for Odile’s survey logs and receiving the payment, but she cannot recall how the proprietor delivered it."
+    },
+    {
+      "qid": "early-vague-27",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The proprietor explicitly suggested asking around the salvage counters, contrary to the reply that they suggested nowhere.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The pawnshop proprietor gave you no leads and did not suggest anywhere to ask."
+    },
+    {
+      "qid": "early-vague-28",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The traders would inspect physical salvage and judge its condition before pricing it, and none named a specific item in demand.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The traders needed to see physical salvage before they would price it. They did not specify items in demand beforehand."
+    },
+    {
+      "qid": "early-vague-29",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says you approached the next trader to ask about potential salvage sources, not about selling Odile’s survey logs.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You approached the next trader to ask about selling Odile’s survey logs. They made no offer."
+    },
+    {
+      "qid": "early-vague-30",
+      "type": "vague",
+      "pool": "early",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The proprietor explicitly said he didn’t broker introductions and couldn’t point Juno to another buyer, which the reply accurately reflects.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "He said he couldn’t help find buyers for the survey logs or provide contacts."
+    },
+    {
+      "qid": "late-detail-21",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The proprietor said he didn’t broker introductions and couldn’t point Juno to another buyer, which the reply accurately reflects.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The proprietor said they couldn’t identify the buyer or provide leads, and offered no introductions to other buyers for the logs or salvage."
+    },
+    {
+      "qid": "late-detail-22",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference passage says Juno accused the guard of stealing from the cargo holds, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Juno accused the guard of stealing from the cargo holds."
+    },
+    {
+      "qid": "late-detail-23",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says the guard offered withdrawing the request as an alternative, but the reply claims he offered no alternative to waiting.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The guard said your access request was still pending and he could not connect you to Director Voren from the checkpoint. He offered no alternative to waiting for Kessler’s confirmation."
+    },
+    {
+      "qid": "late-detail-24",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The reply says Juno cannot recall which parts of the belt she avoided, without making a conflicting claim; the passage says she kept clear of the denser debris lanes.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "Juno cannot clearly recall which parts of the belt she avoided on that flight. She remembers only that she reached the Tessaly cloud skimmer platform and localized Odile’s beacon there."
+    },
+    {
+      "qid": "late-detail-25",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply matches the passage: the receiver detected only the beacon and no second transmission or device response.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The receiver detected no transmissions besides the compact beacon on the Tessaly cloud skimmer platform. No other nearby signals registered."
+    },
+    {
+      "qid": "late-detail-26",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply correctly reflects that the pawnbroker could not identify the buyer, though it omits that they remembered the sale itself.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "The pawnbroker said they couldn’t identify who bought Odile’s slate or offer any leads. Their sales ledger contained no buyer information."
+    },
+    {
+      "qid": "late-detail-28",
+      "type": "detail",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "Juno did identify no safe cut point, but the reply implies she later cut the hatch, which remained sealed in the reference passage.",
+      "votes": [
+        "correct",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno found no weaknesses in the sealed transfer hatch and identified no safe cut point before cutting it."
+    },
+    {
+      "qid": "late-vague-16",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference says Juno found no salvage or usable materials and returned empty-handed, consistent with the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You collected no abandoned materials from the market stalls. The traders required physical salvage before they would discuss pricing, and none had a wreck location to point you toward; you left without anything to sell."
+    },
+    {
+      "qid": "late-vague-17",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The passage says nothing struck the hull and the Kestrel arrived without damage, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "No debris struck the Kestrel’s hull on the calculated route to Meridian-9. The ship arrived without damage."
+    },
+    {
+      "qid": "late-vague-18",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says the guard tried once, then tried again, so the reply falsely claims the record gives no count.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "The record says the guard tried calling Aiden Kessler but got no response; it does not say how many times. Juno cannot recall a count."
+    },
+    {
+      "qid": "late-vague-19",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly says Juno offered salvage or credits, contrary to the reply’s claim that no trade offer was recorded.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "You requested hull-bracing supplies over the local channel after you and Priya found no suitable materials at the old docks, but no ship responded. The record does not say that you offered anything in trade."
+    },
+    {
+      "qid": "late-vague-20",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says Juno kept clear of the denser debris lanes, but the reply claims the route was not specified.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "Juno recalls flying to the Tessaly cloud skimmer platform and locating the beacon there, but she cannot recall clearly which parts of the debris belt she steered clear of. The recorded events do not specify her route."
+    },
+    {
+      "qid": "late-vague-21",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The reference says Juno checked several directions and none produced a stronger reading, but the reply falsely claims the record does not show that she tested several directions.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "No. The receiver showed the signal weakening as Juno moved farther from the beacon, but it did not reveal a direction to follow. The record does not show that she tested several different directions or found one with a stronger reading; after moving away, she had no visible landmarks to identify the source, and the signal remained faint."
+    },
+    {
+      "qid": "late-vague-22",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reference passage says Juno sold the cracked slate and Odile’s survey logs at the Port Halcyon pawnshop for 180 credits, matching the reply.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "You sold the cracked slate with Odile’s survey logs at the Port Halcyon pawnshop for 180 credits."
+    },
+    {
+      "qid": "late-vague-23",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "absent",
+      "reasoning": "The reply discusses the unknown buyer and missing records but does not say that the pawnbroker remembered the sale.",
+      "votes": [
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "response": "The pawnbroker said they couldn’t identify the buyer or offer a lead. The sales ledger had no buyer information, and there were no security feeds."
+    },
+    {
+      "qid": "late-vague-24",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "cannot_recall",
+      "reasoning": "The attendant explicitly said, “This is a security station,” and the reply agrees it happened at the security station but says you cannot recall the specific reason.",
+      "votes": [
+        "cannot_recall",
+        "cannot_recall",
+        "cannot_recall"
+      ],
+      "response": "The attendant stopped you from using the plasma cutter at the security station, but you cannot recall a specific reason they gave."
+    },
+    {
+      "qid": "late-vague-25",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "contradicts",
+      "reasoning": "The passage explicitly warns that further work could pull the connection loose, but the reply says the warning only identified strain.",
+      "votes": [
+        "contradicts",
+        "contradicts",
+        "contradicts"
+      ],
+      "response": "At Meridian-9’s docking ring, you found the power conduit under mechanical strain at its coupling. You can’t recall a specific part that would pull loose; the recorded warning only identified the strain."
+    },
+    {
+      "qid": "late-vague-26",
+      "type": "vague",
+      "pool": "late",
+      "gold_retrieved": true,
+      "verdict": "correct",
+      "reasoning": "The reply matches the passage: Juno found no visible devices or obstructions suggesting a trap, and the passage was empty and still.",
+      "votes": [
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "response": "Juno found no signs of traps in the passage beyond the cut transfer hatch. It was empty, with no movement or obstructions."
+    }
+  ]
+}

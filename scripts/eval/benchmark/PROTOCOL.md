@@ -141,3 +141,22 @@ Top 3 was chosen: 10 adds 2 answers, within run-to-run noise (about ±5), for ab
 - Two stories, both machine-played. Questions and labels come from LLMs, judged by a single model.
 - Recall@10 depends on corpus size: the later snapshots have more chunks, which is the point of the curve, but absolute numbers do not transfer to other story lengths.
 - The pilot results (`scripts/eval/out`) were produced before this protocol and are development data only.
+
+## 12. Amendment 3: question set 2, and v4 (original text for all 10 memories)
+
+**Question set 2.** The questions were replaced on the same stories, by the project owner's decision (RESULTS.md, "Question set 2"); the stories themselves are unchanged. This makes question set 2 on the test story the **third use** of that story.
+
+**v4** changes one parameter: `originalTextFor` goes from 3 to 10, so every retrieved memory includes its original text. Retrieval is unchanged. It was chosen on the dev story with question set 2 (end to end at round 300):
+
+| Writer receives | Correct | Correct when the right chunk is at rank 4–10 |
+|---|---|---|
+| summaries only | 28/92 | 1/10 |
+| top 3 with original text (v3) | 76/92 | 1/10 |
+| **all 10 with original text (v4)** | **84/92** | **9/10** |
+
+Ordinary action turns on dev, 6 turns:
+- input grows from about 5,400 to 7,900 tokens; latency is unchanged (about 5.5 s in total);
+- average length is 108 words;
+- no copying of 8 or more words from originals, and no inserted recall lines.
+
+**Test run:** end to end on the test story with question set 2, once, at the v4 freeze commit (FREEZE.md). This is the fourth use of the test story. A summaries-only run is added for reference; it is a comparison, not a decision input.
