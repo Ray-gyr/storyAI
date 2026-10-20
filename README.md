@@ -28,7 +28,7 @@
 
 ## Version History
 
-**v3 — Oct 2026 (let the writer read the details).** The writer now gets the original text of all 10 retrieved chunks, listed in story order with turn numbers, instead of summaries only. Chunk summaries were also made longer and more detailed, so details are easier to find. On a held-out 300-round story, correct answers to questions about the past went from 29/91 to 83/91.
+**v3 — Oct 2026 (let the writer read the details).** The writer now gets the original text of all 10 retrieved chunks, listed in story order with turn numbers, instead of summaries only. Chunk summaries were also made longer and more detailed, so details are easier to find. After play-testing, a Story Drive rule makes every turn add one new development toward the current goal, instead of ending on "nothing happens". On a held-out 300-round story, correct answers to questions about the past went from 29/91 to 83/91.
 
 **v2 — Oct 2026 (evaluation-driven redesign).** I benchmarked my own design decisions and reversed three of them:
 - Replaced vector-only tier search with BM25 + vector hybrid retrieval.

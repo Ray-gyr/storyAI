@@ -306,3 +306,31 @@ End to end (judge v2), with each writer configuration on the same retrieval:
 | **all 10 with original text, long summaries (v5)** | **45** | **40** |
 
 On test-hard, v5 retrieves a correct chunk for 42 of 47 questions, against 39 for v4. It answers 40 correctly, against 37. The end-to-end gain matches the retrieval gain exactly. Short, low-context questions are where long summaries help. The difference is not significant at n=47, but its direction matches dev-hard and the prediction made before the run.
+
+---
+
+# Story drive: writer prompt fix after play-testing
+
+**Problem.** In play-testing, turns kept ending with "no one appears", "it stays quiet" or a restatement of the current situation. Nothing pulled the player toward the goal. The cause was in the writer prompt:
+- The Grounding rule banned any new people, items or knowledge, so it blocked new story developments as well as invented history.
+- The required ending ("a concrete situation the player can act on") was met by restating the scene.
+
+**Fix** (`prompt.ts`; the old prompt is kept as `PRE_DRIVE_STORY_WORKER_SYSTEM_TEMPLATE` in `legacy_prompts.ts`):
+- Grounding now restricts only facts about the past. New people, places and events may appear if they fit the world.
+- A new Story Drive rule asks for exactly one new development per turn, tied to the current task or the main conflict.
+- When asked "what can I do?", the writer offers 2–3 options.
+- The turn must end on the new development, never on a restatement.
+
+**Check** (`drive_check.ts`):
+- Setup: 6 rollouts of 6 turns each, from the round-100/200/300 snapshots of both stories.
+- Player: a passive auto-player that only reacts to what it is offered, or asks what to do.
+- Judge: `gpt-6-luna`, majority of 3.
+
+| | before | after |
+|---|---|---|
+| Turn adds a new development | 9/36 | **33/36** |
+| Ends on something to pursue, not a restatement | 6/36 | **29/36** |
+| Ends in immediate danger | 0/36 | 0/36 |
+| Median length (words) | 110 | 110 |
+
+**Memory fidelity is unchanged** (dev, end to end with long summaries): 91/92 before and after on question set 2, and 45/47 → 46/47 on dev-hard. Lifting the "nothing new" ban did not make the writer invent the past.

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, Suspense } from 'react';
 import { DEFAULT_STORY_SETTING } from '../lib/constants';
+import UnfoldingMessage from '../components/UnfoldingMessage';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
@@ -562,7 +563,7 @@ function HomeInner() {
 
                                         <h4 className="font-bold text-[#4A4743] mt-8 mb-3 uppercase tracking-widest text-sm">Version History</h4>
                                         <div className="bg-[#FAFAF8] p-4 rounded border border-[#EAE5D9] space-y-3 text-sm sm:text-base">
-                                            <p><strong className="text-[#4A4743]">v3 — Oct 2026 (let the writer read the details).</strong> The writer now gets the original text of all 10 retrieved chunks, in story order with turn numbers, instead of summaries only; chunk summaries were also made longer and more detailed. On a held-out 300-round story, correct answers to questions about the past went from 29/91 to 83/91.</p>
+                                            <p><strong className="text-[#4A4743]">v3 — Oct 2026 (let the writer read the details).</strong> The writer now gets the original text of all 10 retrieved chunks, in story order with turn numbers, instead of summaries only; chunk summaries were also made longer and more detailed. After play-testing, a Story Drive rule makes every turn add one new development toward the current goal, instead of ending on &ldquo;nothing happens&rdquo;. On a held-out 300-round story, correct answers to questions about the past went from 29/91 to 83/91.</p>
                                             <p><strong className="text-[#4A4743]">v2 — Oct 2026 (evaluation-driven redesign).</strong> I benchmarked my own design decisions and reversed three of them: replaced vector-only tier search with BM25 + vector hybrid retrieval, removed the intent short-circuit router, and rewrote the writer prompt for memory fidelity. Recall on the held-out story went from 82% to 95%, and it no longer decays as the story grows. Details are in Key Engineering Decisions.</p>
                                             <p><strong className="text-[#4A4743]">v1 — Mar 2026 (initial release).</strong> Dual-track memory with entity-filtered vector &ldquo;tier search&rdquo;, and an LLM router that skipped retrieval when it judged the state sufficient.</p>
                                         </div>
@@ -1040,9 +1041,7 @@ function HomeInner() {
                                         style={m.role === 'assistant' ? { textIndent: '1.5em' } : {}}
                                     >
                                         {m.role === 'assistant' && m.content === '' && loading && i === messages.length - 1 ? (
-                                            <span className="text-[#8D7B68] italic tracking-widest text-sm sm:text-base animate-pulse block" style={{ textIndent: 0 }}>
-                                                The world is unfolding...
-                                            </span>
+                                            <UnfoldingMessage />
                                         ) : (
                                             m.content.split('\n').filter(line => line.trim() !== '').map((line, idx) => (
                                                 <p key={idx} className="mb-3 last:mb-0 min-h-[1.5rem]">{line}</p>
