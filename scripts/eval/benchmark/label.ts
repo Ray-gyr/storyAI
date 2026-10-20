@@ -74,10 +74,10 @@ async function main() {
     for (const q of questions) {
         const pool = new Set<string>([q.source_id]);
         for (const row of rows.filter(r => r.qid === q.qid)) {
-            row.rankings.tier.slice(0, 10).forEach(id => pool.add(id));
-            row.rankings.v2.slice(0, 10).forEach(id => pool.add(id));
-            row.rankings.bm25.slice(0, DEEP_POOL).forEach(id => pool.add(id));
-            row.rankings.vector.slice(0, DEEP_POOL).forEach(id => pool.add(id));
+            // 所有方法（含长摘要实验补充的 *_long）：融合结果取前 10，单路取前 DEEP_POOL
+            for (const [method, ranked] of Object.entries(row.rankings)) {
+                ranked.slice(0, method === "tier" || method.startsWith("v2") ? 10 : DEEP_POOL).forEach(id => pool.add(id));
+            }
         }
         labels.candidates[q.qid] ??= {};
         for (const id of pool) {

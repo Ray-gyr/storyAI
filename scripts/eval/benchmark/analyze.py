@@ -21,7 +21,8 @@ STORY = sys.argv[1]
 DIR = Path(__file__).resolve().parent / "out" / STORY
 SNAPSHOTS = [100, 200, 300]
 METHODS = ["tier", "bm25", "vector", "v2"]
-LABELS = {"tier": "v1 tier search", "bm25": "BM25 only", "vector": "vector only", "v2": "v2 hybrid", "union": "union ceiling (BM25 ∪ vector)"}
+LABELS = {"tier": "v1 tier search", "bm25": "BM25 only", "vector": "vector only", "v2": "v2 hybrid", "union": "union ceiling (BM25 ∪ vector)",
+          "bm25_long": "BM25 only, long summaries", "vector_long": "vector only, long summaries", "v2_long": "v2 hybrid, long summaries"}
 BOOTSTRAP = 10_000
 rng = np.random.default_rng(0)
 
@@ -32,6 +33,10 @@ def load(name):
 
 questions = {q["qid"]: q for q in load("questions.json")["questions"]}
 rows = load("retrieval.json")["rows"]
+# 长摘要实验（long_summaries.ts）补充的排序
+LONG = all("v2_long" in r["rankings"] for r in rows)
+if LONG:
+    METHODS += ["bm25_long", "vector_long", "v2_long"]
 labels = load("labels.json")
 created = {c["id"]: c["created_at"] for c in load("corpus.json")["chunks"]}
 taken = {r: load(f"snapshot_{r}.json")["taken_at"] for r in SNAPSHOTS}
@@ -81,6 +86,10 @@ report = {
 # v2 相对 v1 的配对差值
 diff = [int(hit(r, "v2", 10)) - int(hit(r, "tier", 10)) for r in at300]
 report["paired_v2_minus_tier_at_300"] = {"mean": round(float(np.mean(diff)), 3), "ci95": ci(diff)}
+if LONG:
+    diff = [int(hit(r, "v2_long", 10)) - int(hit(r, "v2", 10)) for r in at300]
+    report["paired_v2_long_minus_v2_at_300"] = {"mean": round(float(np.mean(diff)), 3), "ci95": ci(diff),
+                                                "long_only": diff.count(1), "short_only": diff.count(-1)}
 
 # 长度曲线：在三个快照上都有结果的 early 题
 early_q = {qid for qid in valid if questions[qid]["pool"] == "early"}
@@ -106,6 +115,10 @@ report["summary_attribution_at_300"] = {
     "v2_misses": len(misses),
     "v2_misses_answer_in_summary": sum(labels["summary_has_answer"][r["qid"]]["acceptable"] for r in misses),
 }
+if LONG:
+    report["summary_attribution_at_300"]["v2_long_recall@10_answer_only_in_original"] = summarize(
+        [r for r in at300 if not labels["summary_has_answer"][r["qid"]]["acceptable"]], "v2_long")
+
 
 (DIR / "results.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -122,6 +135,9 @@ for m in [*METHODS, "union"]:
     print(f"  {LABELS[m]:<32} R@10 {fmt(r10)}   R@5 {fmt(r5) if r5 else '-'}")
 p = report["paired_v2_minus_tier_at_300"]
 print(f"  paired v2 - v1: {p['mean']:+.3f} [{p['ci95'][0]:+.2f}, {p['ci95'][1]:+.2f}]")
+if LONG:
+    p = report["paired_v2_long_minus_v2_at_300"]
+    print(f"  paired v2_long - v2: {p['mean']:+.3f} [{p['ci95'][0]:+.2f}, {p['ci95'][1]:+.2f}]  (hit only with long {p['long_only']}, only with short {p['short_only']})")
 print(f"\nLength curve (early questions, n={len(curve_q)}), Recall@10 at rounds {SNAPSHOTS}, corpus {[corpus_size[s] for s in SNAPSHOTS]} chunks:")
 for m in [*METHODS, "union"]:
     print(f"  {LABELS[m]:<32}" + "   ".join(f"{report['curve_early'][m][s]['recall']:.3f}" for s in SNAPSHOTS))
@@ -133,3 +149,5 @@ print(f"\nAnswer present in the source chunk's summary: {a['share_of_questions_w
 print(f"  v2 R@10 when answer in summary: {fmt(a['v2_recall@10_answer_in_summary'])}")
 print(f"  v2 R@10 when answer only in original text: {fmt(a['v2_recall@10_answer_only_in_original'])}")
 print(f"  v2 misses: {a['v2_misses']} ({a['v2_misses_answer_in_summary']} had the answer in the summary)")
+if LONG:
+    print(f"  v2_long R@10 when answer only in original text (of the short summary): {fmt(a['v2_long_recall@10_answer_only_in_original'])}")

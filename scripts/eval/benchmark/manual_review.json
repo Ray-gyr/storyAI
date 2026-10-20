@@ -43,5 +43,20 @@
     "early-vague-20": "malformed question ('what did we cross before? the noon heat')",
     "late-detail-29": "malformed: asks where we 'actually' were rather than a fact"
   },
-  "note_topup": "Top-up questions (topup: true) were reviewed the same way; detail/vague pairs asking the same fact from the same passage were kept as phrasing pairs and are not independent samples."
+  "note_topup": "Top-up questions (topup: true) were reviewed the same way; detail/vague pairs asking the same fact from the same passage were kept as phrasing pairs and are not independent samples.",
+  "dev-hard": {
+    "hard-10": "duplicate fact: conduit warning 'avoid repeated clamp cycles' (kept hard-7)",
+    "hard-18": "duplicate fact: the 'Lantern' transmission (kept hard-17)",
+    "hard-30": "duplicate fact: cracked slate sold for 180 credits (kept hard-21)",
+    "hard-48": "duplicate fact: ledger had no buyer details (kept hard-47)",
+    "hard-39": "null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)",
+    "hard-40": "null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)",
+    "hard-41": "null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)",
+    "hard-42": "null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)",
+    "hard-44": "null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)",
+    "hard-45": "null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)",
+    "hard-58": "null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)",
+    "hard-60": "null result: the answer is that nothing was found or possible, not a recallable event (such negative findings recur in the story)"
+  },
+  "note_dev_hard": "dev-hard: hard retrieval question set (make_hard_questions.ts), short low-context questions on the dev story; reviewed by Claude before any retrieval result was looked at. The screener kept 60/60."
 }

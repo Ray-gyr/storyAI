@@ -240,3 +240,25 @@ By where the right chunk was retrieved (test story):
 - **Cost:** about 2,500 extra input tokens per turn (about +$0.00025 with `gpt-6-luna`). Latency is unchanged in the dev check.
 
 **Overall, v4 on the 300-round test story:** retrieval Recall@10 0.945; end-to-end answers consistent with the past 90%, contradicting it 8%.
+
+---
+
+# Long summaries (dev story only, not yet tested)
+
+Retrieval on question set 2 is near its ceiling, so a hard set was added to measure summary quality. `make_hard_questions.ts` writes 60 short, low-context questions on the dev story (at most 15 words, no scene-setting, e.g. "What did the pawnbroker refuse to do?"). The screener kept all 60. Manual review dropped 12: 4 duplicates and 8 "nothing was found" answers. The consistency check dropped 1 more, leaving **47 valid**. This is `out/dev-hard/`, and it was reviewed before any retrieval result was seen.
+
+`long_summaries.ts` regenerates every chunk summary with the same helper model (`gpt-4o-mini`). The new prompt keeps every story-relevant fact: what was said, items, prices, decisions, outcomes, clues. It also keeps the story's own words for things. Summaries average **154 words**, against 55 for the production summaries and 413 for the original text. BM25 and the vector index both use the long summaries; the vectors sit in a separate Pinecone namespace. Fusion is unchanged (BM25 top 3, then vector). Each question reuses the same intent rewrite, so the comparison is paired. New candidates were labelled with the same judge; `label.ts` now pools the top 10 of every method.
+
+Recall@10 at round 300:
+
+| | dev-hard (n=47) | dev, question set 2 (n=92) |
+|---|---|---|
+| BM25, short / long | 0.936 / **1.000** | 0.935 / 0.967 |
+| vector, short / long | 0.872 / **0.979** | 0.957 / 0.967 |
+| v2 hybrid, short / long | 0.936 / **1.000** | 0.957 / **0.978** |
+| v2 hybrid R@5, short / long | 0.851 / 0.957 | 0.924 / 0.913 |
+| paired questions: hit only with long / only with short | 3 / 0 | 2 / 0 |
+
+- **Long summaries win 5 questions and lose none** across both sets. Two dev-hard wins are facts the short summary left out: the word "Lantern" in the transmission and in the survey logs. The third had the fact in the short summary but not the question's words ("cut transfer hatch").
+- **The vector index gains the most** on short questions: 0.872 → 0.979.
+- **Caveats.** These results come from the dev story only, and the samples are small (the confidence interval of the paired difference touches 0). The summary prompt was written once and not tuned on these results. The hard set turned out less hard than intended: short-summary v2 already reaches 0.936. Before anything goes to production, the change needs one run on the test story.
