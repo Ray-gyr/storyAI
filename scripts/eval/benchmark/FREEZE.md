@@ -46,3 +46,14 @@ The protocol asks for 10 temporal questions per pool. On the dev story, the earl
 - The writer receives the top 3 memories by retrieval rank with their original chunk text (the other 7 as summaries), all listed oldest first with turn numbers. Prompt and model are as at `2730731` (`gpt-6-luna`).
 - Chosen on the dev story only: summaries only 53/88, top 3 62/88, all 10 64/88 (end to end at round 300).
 - Test run: `e2e.ts test --originals 3 --tag v3`, once, reusing the frozen v2 query rewrites.
+
+---
+
+# Freeze record: v4 (fourth use of the test story, end to end only, question set 2)
+
+**Frozen code: commit `425fb54`** ("v4: original text for all 10 retrieved memories"). See PROTOCOL.md Section 12.
+
+- Retrieval is unchanged from `a8c7510`.
+- The writer receives all 10 retrieved memories with their original chunk text, listed oldest first with turn numbers.
+- Chosen on the dev story only: top 3 76/92, all 10 84/92.
+- Test run: `e2e.ts test --originals 10 --tag qset2_o10`, once. Reference run: `--originals 0 --tag qset2_o0`.
