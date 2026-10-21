@@ -1,11 +1,13 @@
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { Pinecone } from "@pinecone-database/pinecone";
+import { usageTracker } from "./usageLimit";
 
 // 这是一个工厂函数，或者配置导出，可以用来集中管理模型实例化
 export const getManagerLLM = () => {
     return new ChatOpenAI({
         modelName: "gpt-4o-mini",
         openAIApiKey: process.env.OPENAI_API_KEY,
+        callbacks: [usageTracker], // token 用量限制（usageLimit.ts）
         temperature: 0, // Manager 需要精确提取，温度设为0
     });
 };
@@ -50,6 +52,7 @@ export const getStoryLLM = () => {
     return new ChatOpenAI({
         modelName: "gpt-6-luna",
         openAIApiKey: process.env.OPENAI_API_KEY,
+        callbacks: [usageTracker],
         reasoning: {
             effort: "low"
         }
@@ -61,6 +64,7 @@ export const getSetupLLM = () => {
     return new ChatOpenAI({
         modelName: "gpt-5-mini",
         openAIApiKey: process.env.OPENAI_API_KEY,
+        callbacks: [usageTracker],
         reasoning: {
             effort: "low"
         }

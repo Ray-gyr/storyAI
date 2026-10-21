@@ -3,9 +3,20 @@ import { createSession, updateSession } from '../../../../lib/sessionStore';
 import { DEFAULT_STORY_SETTING, PRESET_EXAMPLE_STATE, PRESET_EXAMPLE_CHAT } from '../../../../lib/constants';
 import { MemoryManager, ChatTurn } from '../../../../lib/memoryManager';
 import { describeError } from '../../../../lib/errors';
+import { checkUsage, clientIdFrom, runWithUsageClient } from '../../../../lib/usageLimit';
 export const maxDuration = 60;
 
 export async function POST(req: Request) {
+    // Token 用量限制：超限时不开新局；开局的模型调用记到这个客户端名下
+    const clientId = clientIdFrom(req);
+    const usage = await checkUsage(clientId);
+    if (!usage.allowed) {
+        return NextResponse.json({ error: usage.message }, { status: 429, headers: { "Retry-After": String(usage.retryAfterSeconds) } });
+    }
+    return runWithUsageClient(clientId, () => startStory(req));
+}
+
+async function startStory(req: Request) {
     try {
         const { storySetting } = await req.json().catch(() => ({}));
 
