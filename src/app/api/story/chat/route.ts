@@ -2,6 +2,7 @@ import { NextRequest, after } from 'next/server';
 import { getSession, acquireSessionLock, releaseSessionLock, SessionData } from '../../../../lib/sessionStore';
 import { generateNextStoryTurnStream, finalizeStoryTurn, StoryTurnResult } from '../../../../lib/storyGenerator';
 import { describeError } from '../../../../lib/errors';
+import { checkUsage, clientIdFrom, runWithUsageClient, usageLimitResponse } from '../../../../lib/usageLimit';
 
 export const maxDuration = 60;
 
@@ -11,6 +12,15 @@ export async function POST(req: NextRequest) {
     if (!sessionId || typeof userInput !== "string" || !userInput.trim()) {
         return new Response("Missing sessionId or userInput", { status: 400 });
     }
+
+    // 0. Token 用量限制：超限时不调用任何模型；本回合的模型调用都记到这个客户端名下
+    const clientId = clientIdFrom(req);
+    const usage = await checkUsage(clientId);
+    if (!usage.allowed) return usageLimitResponse(usage);
+    return runWithUsageClient(clientId, () => handleTurn(req, sessionId, userInput, clientId));
+}
+
+async function handleTurn(req: NextRequest, sessionId: string, userInput: string, clientId: string): Promise<Response> {
 
     // 1. 获取会话锁，确保上一回合的后台保存已经完成，避免读到旧存档并互相覆盖
     let lockToken: string | null = null;
@@ -59,7 +69,7 @@ export async function POST(req: NextRequest) {
         settleTurn(turn);
     };
 
-    after(async () => {
+    after(() => runWithUsageClient(clientId, async () => {
         try {
             const turn = await turnDone;
             if (turn) {
@@ -70,7 +80,7 @@ export async function POST(req: NextRequest) {
         } finally {
             await releaseLock();
         }
-    });
+    }));
 
     // 玩家中途断开：本回合不保存，并直接释放锁
     // 若在流被读取前就断开，框架既不会 pull / cancel 这个流，也不会认为响应已结束，
